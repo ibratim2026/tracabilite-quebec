@@ -1,0 +1,12 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "tracabilite-quebec",
+      "runtimeExecutable": "/Users/williamcarrier/Desktop/Travail/Traçabilité Québec/.venv/bin/python",
+      "runtimeArgs": ["app/app.py"],
+      "cwd": "/Users/williamcarrier/Desktop/Travail/Traçabilité Québec",
+      "port": 5071
+    }
+  ]
+}

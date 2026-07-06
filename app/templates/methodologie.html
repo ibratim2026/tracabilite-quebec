@@ -1,0 +1,86 @@
+{% extends "base.html" %}
+{% block titre %}Méthodologie — Traçabilité Québec{% endblock %}
+{% block contenu %}
+<h1>Méthodologie</h1>
+
+<h2>Notre posture</h2>
+<p>Traçabilité Québec est un outil <strong>pro-transparence et anti-complot</strong>.
+Nous ne disons jamais « le gouvernement cache quelque chose ». Nous disons :
+« voici ce que les données publiques permettent de voir, voici ce qu'elles ne
+permettent pas encore de voir, et voici ce qui mérite une explication ».
+Un signal n'est pas une accusation. Un écart n'est pas un scandale. Une donnée
+manquante n'est pas une preuve.</p>
+
+<h2>D'où viennent les données</h2>
+<p>Toutes les données proviennent des
+<a href="https://www.donneesquebec.ca/recherche/dataset/systeme-electronique-dappel-doffres-seao">données
+ouvertes du Système électronique d'appel d'offres (SEAO)</a>, le système officiel
+par lequel les organismes publics québécois — ministères, organismes, réseaux de
+la santé et de l'éducation, municipalités — publient leurs appels d'offres et les
+résultats de leurs contrats. Elles sont diffusées par le Secrétariat du Conseil
+du trésor au standard international
+<a href="https://standard.open-contracting.org/">Open Contracting</a>.</p>
+<p>Période actuellement intégrée : <strong>{{ s.nb_fichiers }} fichiers de
+données couvrant janvier 2025 à juin 2026</strong>, soit
+{{ s.nb_processus | nombre }} processus d'achat consolidés et
+{{ s.valeur_octrois | montant }} en contrats octroyés. L'historique remonte à
+2009 et sera intégré progressivement.</p>
+
+<h2>Ce que les données contiennent — et ne contiennent pas</h2>
+<ul>
+  <li><strong>Elles contiennent :</strong> qui achète, qui reçoit (avec le numéro
+  d'entreprise du Québec), combien a été octroyé, par quel mécanisme (appel
+  d'offres ouvert, sur invitation, gré à gré), les modifications au contrat
+  (avenants) et la dépense finale des contrats terminés.</li>
+  <li><strong>Elles ne contiennent pas :</strong> les salaires du secteur public,
+  les transferts entre organismes, le service de la dette, les dépenses sous les
+  seuils de publication, ni la justification d'affaires derrière chaque achat.
+  Le SEAO montre les <em>contrats publics</em>, pas l'ensemble des dépenses de
+  l'État.</li>
+  <li><strong>Elles sont déclaratives :</strong> ce sont les organismes publics
+  eux-mêmes qui saisissent les données. Des erreurs de saisie existent et sont
+  documentées. Quand un ratio est invraisemblable, nous le classons comme
+  « donnée aberrante » plutôt que de le présenter comme un dépassement réel.</li>
+</ul>
+
+<h2>Les signaux « Ce qui ne fait pas de sens »</h2>
+<p>Chaque signal est une règle objective appliquée uniformément à tous les
+contrats. Aucune sélection manuelle, aucun ciblage.</p>
+<dl class="regles">
+  {% for code, t in types.items() %}
+  <dt><span class="badge badge-{{ t.couleur }}">{{ t.nom }}</span></dt>
+  <dd>{{ t.explication }}</dd>
+  {% endfor %}
+</dl>
+<p>Seuils : un dépassement est signalé à partir de +10 % (gravité 1), +25 %
+(gravité 2) et +50 % (gravité 3), uniquement pour les contrats d'au moins
+25 000 $. Le seuil de 100 000 $ pour le gré à gré correspond au niveau au-delà
+duquel un appel d'offres public est normalement attendu pour la plupart des
+organismes. Un ratio dépense finale / montant octroyé supérieur à 20 est traité
+comme une erreur de saisie probable.</p>
+
+<h2>Consolidation</h2>
+<p>Le SEAO publie un journal d'événements : avis, octroi, modification,
+terminaison. Nous consolidons ces événements par processus d'achat (identifiant
+« ocid ») en conservant l'état le plus récent de chaque information. Chaque
+fiche indique le nombre d'événements consolidés et le fichier source le plus
+récent.</p>
+
+<h2>Limites connues</h2>
+<ul>
+  <li>Les fichiers mensuels de novembre 2025 à mars 2026 sont absents du
+  catalogue officiel; cette période est couverte par les fichiers hebdomadaires,
+  qui peuvent être moins complets.</li>
+  <li>Une même entreprise peut apparaître sous plusieurs graphies; le
+  regroupement par NEQ est en cours de développement.</li>
+  <li>Les montants incluent généralement les options et peuvent inclure ou non
+  les taxes selon la saisie de l'organisme.</li>
+  <li>Cet outil couvre les contrats publiés au SEAO. Il ne prétend pas couvrir
+  l'ensemble des dépenses publiques du Québec.</li>
+</ul>
+
+<h2>Corrections</h2>
+<p>Vous représentez un organisme ou une entreprise et constatez une erreur?
+Les corrections à la source se font auprès du SEAO; notre base reflétera la
+correction à la mise à jour suivante des données ouvertes.</p>
+{% endblock %}

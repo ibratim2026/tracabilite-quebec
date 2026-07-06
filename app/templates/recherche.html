@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% block titre %}Recherche : {{ q }} — Traçabilité Québec{% endblock %}
+{% block contenu %}
+<h1>Recherche</h1>
+<form class="recherche-hero" action="/recherche" method="get">
+  <input type="search" name="q" value="{{ q }}" placeholder="Fournisseur, organisme, mot-clé…">
+  <button type="submit">Chercher</button>
+</form>
+
+{% if q %}
+<p class="explication">{{ resultats | length }} résultat(s){% if resultats | length == 100 %} (premiers 100 affichés){% endif %} pour « {{ q }} »</p>
+<table>
+  <thead><tr><th>Contrat</th><th>Organisme</th><th>Fournisseur</th><th class="num">Montant</th><th>Mode</th></tr></thead>
+  <tbody>
+  {% for r in resultats %}
+    <tr>
+      <td><a href="/contrat/{{ r.ocid }}">{{ (r.titre or '(sans titre)') | truncate(70) }}</a></td>
+      <td><a href="/organisme?nom={{ r.acheteur_nom | urlencode }}">{{ (r.acheteur_nom or '—') | truncate(40) }}</a></td>
+      <td>{% if r.fournisseur %}<a href="/fournisseur?nom={{ r.fournisseur | urlencode }}">{{ r.fournisseur | truncate(35) }}</a>{% else %}—{% endif %}</td>
+      <td class="num">{{ r.montant | montant }}</td>
+      <td>{{ {'direct': 'Gré à gré', 'open': 'Appel d’offres', 'limited': 'Sur invitation', 'selective': 'Sélectif'}.get(r.methode, r.methode or '—') }}</td>
+    </tr>
+  {% else %}
+    <tr><td colspan="5">Aucun résultat. Essayez avec moins de mots ou une autre orthographe.</td></tr>
+  {% endfor %}
+  </tbody>
+</table>
+{% endif %}
+{% endblock %}

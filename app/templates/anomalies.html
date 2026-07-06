@@ -1,0 +1,60 @@
+{% extends "base.html" %}
+{% block titre %}Ce qui ne fait pas de sens — Traçabilité Québec{% endblock %}
+{% block contenu %}
+<h1>Ce qui ne fait pas de sens</h1>
+<p class="explication">Des signaux détectés par des règles objectives dans les
+données ouvertes du SEAO. <strong>Un signal n'est pas une accusation</strong> :
+chaque situation peut avoir une explication légitime. Ce que cette page dit,
+c'est : « voici ce qui, dans les données publiques, mérite une explication ».</p>
+
+<nav class="onglets">
+  {% for code, t in types.items() %}
+    <a href="?type={{ code }}" class="onglet {{ 'actif' if code == type_filtre }}">
+      {{ t.nom }} <span class="compte">{{ compte.get(code, 0) | nombre }}</span>
+    </a>
+  {% endfor %}
+</nav>
+
+<div class="encadre encadre-{{ types[type_filtre].couleur }}">
+  <strong>{{ types[type_filtre].nom }} — comment lire ce signal :</strong>
+  {{ types[type_filtre].explication }}
+</div>
+
+<table>
+  <thead><tr>
+    <th>Contrat</th><th>Organisme</th><th>Fournisseur</th>
+    {% if type_filtre in ('DEPASSEMENT', 'ABERRATION') %}
+      <th class="num">Octroyé</th><th class="num">Final</th><th class="num">Écart</th>
+    {% else %}
+      <th class="num">Montant</th><th>Détail</th>
+    {% endif %}
+  </tr></thead>
+  <tbody>
+  {% for l in lignes %}
+    <tr>
+      <td><a href="/contrat/{{ l.ocid }}">{{ (l.titre or '(sans titre)') | truncate(65) }}</a></td>
+      <td><a href="/organisme?nom={{ l.acheteur_nom | urlencode }}">{{ (l.acheteur_nom or '—') | truncate(38) }}</a></td>
+      <td>{% if l.fournisseur %}<a href="/fournisseur?nom={{ l.fournisseur | urlencode }}">{{ l.fournisseur | truncate(32) }}</a>{% else %}—{% endif %}</td>
+      {% if type_filtre in ('DEPASSEMENT', 'ABERRATION') %}
+        <td class="num">{{ l.montant_octroye | montant }}</td>
+        <td class="num">{{ l.montant_final | montant }}</td>
+        <td class="num"><span class="badge badge-{{ types[type_filtre].couleur }}">
+          {% if l.ratio and l.ratio < 20 %}+{{ ((l.ratio - 1) * 100) | round(0) | int }} %{% else %}×{{ l.ratio | round(0) | int }}{% endif %}
+        </span></td>
+      {% else %}
+        <td class="num">{{ l.montant_octroye | montant }}</td>
+        <td class="detail">{{ l.details | truncate(60) }}</td>
+      {% endif %}
+    </tr>
+  {% else %}
+    <tr><td colspan="6">Aucun signal de ce type.</td></tr>
+  {% endfor %}
+  </tbody>
+</table>
+
+<nav class="pagination">
+  {% if page > 1 %}<a href="?type={{ type_filtre }}&page={{ page - 1 }}">← Précédent</a>{% endif %}
+  <span>Page {{ page }}</span>
+  {% if lignes | length == 50 %}<a href="?type={{ type_filtre }}&page={{ page + 1 }}">Suivant →</a>{% endif %}
+</nav>
+{% endblock %}

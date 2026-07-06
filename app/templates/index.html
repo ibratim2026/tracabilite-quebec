@@ -1,0 +1,125 @@
+{% extends "base.html" %}
+{% block contenu %}
+<section class="hero">
+  <h1>Où va l'argent public au Québec?</h1>
+  <p class="sous-titre">Les contrats publics du SEAO, rendus lisibles et traçables.
+  Chaque chiffre est relié à sa source officielle.</p>
+  <form class="recherche-hero" action="/recherche" method="get">
+    <input type="search" name="q" placeholder="Cherchez un fournisseur, un ministère, une ville, un projet…" autofocus>
+    <button type="submit">Chercher</button>
+  </form>
+</section>
+
+<h2>Où va l'argent en 2026</h2>
+<p class="explication">{{ a.total | montant }} en contrats publics octroyés depuis
+le 1<sup>er</sup> janvier 2026 ({{ a.nb | nombre }} octrois), répartis par
+catégorie d'achat. Source : données ouvertes du SEAO.</p>
+
+<div class="graphique">
+  {% for c in a.categories %}
+  <div class="ligne-graphique">
+    <div class="etiquette-barre">{{ c.nom }}</div>
+    <div class="piste">
+      <div class="barre-h {{ 'barre-autres' if loop.last and 'Autres' in c.nom }}"
+           style="width: {{ (100 * c.valeur / a.max_categorie) | round(1) }}%"></div>
+      <span class="valeur-barre">{{ c.valeur | montant }} <small>({{ c.pct | round(0) | int }} %)</small></span>
+    </div>
+  </div>
+  {% endfor %}
+</div>
+
+<h3>Par mode d'attribution (part de la valeur 2026)</h3>
+<div class="empile">
+  {% for m in a.modes %}
+  <div class="segment {{ m.classe }}" style="width: {{ m.pct | round(1) }}%"
+       title="{{ m.nom }} : {{ m.valeur | montant }}"></div>
+  {% endfor %}
+</div>
+<div class="legende">
+  {% for m in a.modes %}
+  <span><i class="pastille {{ m.classe }}"></i>{{ m.nom }} —
+    {{ m.valeur | montant }} ({{ m.pct | round(0) | int }} %)</span>
+  {% endfor %}
+</div>
+
+<section class="deux-colonnes">
+  <div>
+    <h2>Ce qui va bien</h2>
+    <p class="explication">La transparence, c'est aussi montrer ce qui fonctionne.</p>
+    <div class="carte carte-verte">
+      <div class="chiffre">{{ (100 * a.respect_budget / a.termines_comparables) | round(0) | int if a.termines_comparables else 0 }} %</div>
+      <div class="etiquette">des contrats terminés ont coûté le montant prévu — ou moins
+      ({{ a.respect_budget | nombre }} sur {{ a.termines_comparables | nombre }} contrats comparables)</div>
+    </div>
+    <div class="carte carte-verte">
+      <div class="chiffre">{{ a.modes[0].pct | round(0) | int }} %</div>
+      <div class="etiquette">de la valeur 2026 attribuée par appel d'offres ouvert,
+      avec en moyenne {{ ('%.1f' % a.soumissions_moyennes) | replace('.', ',') }} soumissionnaires par appel</div>
+    </div>
+    <div class="carte carte-verte">
+      <div class="chiffre">{{ a.fournisseurs_distincts | nombre }}</div>
+      <div class="etiquette">fournisseurs distincts ont obtenu au moins un contrat
+      public en 2026 — l'argent ne va pas à un petit cercle</div>
+    </div>
+  </div>
+  <div>
+    <h2>Ce qui mérite une explication</h2>
+    <p class="explication">Des règles objectives, appliquées uniformément.
+    Un signal n'est pas une accusation —
+    <a href="/methodologie">voir la méthodologie</a>.</p>
+    <div class="carte">
+      <div class="chiffre">{{ s.signaux.get('DEPASSEMENT', 0) | nombre }}</div>
+      <div class="etiquette">contrats terminés au-dessus du montant octroyé
+        <a href="/ce-qui-ne-fait-pas-de-sens?type=DEPASSEMENT">voir →</a></div>
+    </div>
+    <div class="carte">
+      <div class="chiffre">{{ s.signaux.get('GRE_A_GRE', 0) | nombre }}</div>
+      <div class="etiquette">contrats de gré à gré de 100 k$ et plus
+        <a href="/ce-qui-ne-fait-pas-de-sens?type=GRE_A_GRE">voir →</a></div>
+    </div>
+    <div class="carte">
+      <div class="chiffre">{{ s.signaux.get('SOUM_UNIQUE', 0) | nombre }}</div>
+      <div class="etiquette">appels d'offres à soumissionnaire unique
+        <a href="/ce-qui-ne-fait-pas-de-sens?type=SOUM_UNIQUE">voir →</a></div>
+    </div>
+  </div>
+</section>
+
+<h2>Les plus grands acheteurs publics de 2026</h2>
+<table>
+  <thead><tr><th>Organisme</th><th class="num">Valeur octroyée 2026</th><th class="num">Octrois</th></tr></thead>
+  <tbody>
+  {% for o in a.organismes %}
+    <tr>
+      <td><a href="/organisme?nom={{ o.nom | urlencode }}">{{ o.nom | truncate(70) }}</a></td>
+      <td class="num">{{ o.valeur | montant }}</td>
+      <td class="num">{{ o.nb | nombre }}</td>
+    </tr>
+  {% endfor %}
+  </tbody>
+</table>
+
+<h2>Les plus grands écarts observés</h2>
+<p class="explication">Aperçu — l'analyse complète est dans l'onglet
+<a href="/ce-qui-ne-fait-pas-de-sens">Ce qui ne fait pas de sens</a>.</p>
+<table>
+  <thead><tr><th>Contrat</th><th>Organisme</th>
+    <th class="num">Octroyé</th><th class="num">Dépense finale</th><th class="num">Écart</th></tr></thead>
+  <tbody>
+  {% for d in depassements %}
+    <tr>
+      <td><a href="/contrat/{{ d.ocid }}">{{ (d.titre or '(sans titre)') | truncate(60) }}</a></td>
+      <td><a href="/organisme?nom={{ d.acheteur_nom | urlencode }}">{{ d.acheteur_nom | truncate(38) }}</a></td>
+      <td class="num">{{ d.montant_octroye | montant }}</td>
+      <td class="num">{{ d.montant_final | montant }}</td>
+      <td class="num"><span class="badge badge-rouge">+{{ ((d.ratio - 1) * 100) | round(0) | int }} %</span></td>
+    </tr>
+  {% endfor %}
+  </tbody>
+</table>
+
+<p class="note-periode">Données : {{ s.nb_processus | nombre }} processus d'achat
+consolidés, janvier 2025 → juin 2026 ({{ s.nb_fichiers }} fichiers de données
+ouvertes du SEAO). Ministères, organismes, réseaux de la santé et de l'éducation,
+municipalités.</p>
+{% endblock %}

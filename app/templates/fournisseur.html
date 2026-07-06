@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+{% block titre %}{{ nom }} — Traçabilité Québec{% endblock %}
+{% block contenu %}
+<nav class="fil"><a href="/">Accueil</a> › Fournisseur</nav>
+<h1>{{ nom }}</h1>
+{% if neq %}<p class="meta-fiche">NEQ {{ neq }} —
+  <a href="https://www.registreentreprises.gouv.qc.ca/RQEntrepriseGRExt/GR/GR03/GR03A2_19A_PIU_RechEnt_PC/PageRechSimple.aspx">vérifier au Registre des entreprises du Québec</a></p>{% endif %}
+
+<section class="cartes-stats">
+  <div class="carte">
+    <div class="chiffre">{{ lignes | length }}</div>
+    <div class="etiquette">octrois observés (200 max affichés)</div>
+  </div>
+  <div class="carte">
+    <div class="chiffre">{{ total | montant }}</div>
+    <div class="etiquette">valeur totale des octrois affichés</div>
+  </div>
+  <div class="carte">
+    <div class="chiffre">{{ acheteurs }}</div>
+    <div class="etiquette">organismes publics clients</div>
+  </div>
+</section>
+
+<h2>Contrats obtenus (par montant)</h2>
+<table>
+  <thead><tr><th>Contrat</th><th>Organisme</th><th class="num">Montant</th><th>Mode</th><th>Date</th></tr></thead>
+  <tbody>
+  {% for l in lignes %}
+    <tr>
+      <td><a href="/contrat/{{ l.ocid }}">{{ (l.titre or '(sans titre)') | truncate(70) }}</a></td>
+      <td><a href="/organisme?nom={{ l.acheteur_nom | urlencode }}">{{ (l.acheteur_nom or '—') | truncate(40) }}</a></td>
+      <td class="num">{{ l.montant | montant }}</td>
+      <td>{{ {'direct': 'Gré à gré', 'open': 'Appel d’offres', 'limited': 'Sur invitation', 'selective': 'Sélectif'}.get(l.methode, l.methode or '—') }}</td>
+      <td>{{ l.date | datefr }}</td>
+    </tr>
+  {% endfor %}
+  </tbody>
+</table>
+<p class="explication">Note : les entreprises peuvent apparaître sous plusieurs
+graphies légèrement différentes dans les données sources. Le regroupement par
+NEQ (identité juridique unique) est prévu à une prochaine étape.</p>
+{% endblock %}

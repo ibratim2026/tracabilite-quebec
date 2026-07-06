@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{% block titre %}Traçabilité Québec{% endblock %}</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+<header class="entete">
+  <div class="contenant">
+    <a class="logo" href="/">Traçabilité <span>Québec</span></a>
+    <nav>
+      <a href="/ce-qui-ne-fait-pas-de-sens">Ce qui ne fait pas de sens</a>
+      <a href="/meilleur-des-mondes">Dans le meilleur des mondes</a>
+      <a href="/methodologie">Méthodologie</a>
+    </nav>
+    <form class="recherche-entete" action="/recherche" method="get">
+      <input type="search" name="q" placeholder="Fournisseur, organisme, mot-clé…"
+             value="{{ request.args.get('q','') }}">
+      <button type="submit">Chercher</button>
+    </form>
+  </div>
+</header>
+
+<main class="contenant">
+{% block contenu %}{% endblock %}
+</main>
+
+<footer class="pied">
+  <div class="contenant">
+    <p><strong>Traçabilité Québec</strong> — un outil d'intelligence citoyenne.
+    Posture éditoriale : pro-transparence, anti-complot. Un signal n'est pas une
+    accusation; chaque écart mérite une explication avant une interprétation.</p>
+    <p>Source des données : <a href="https://www.donneesquebec.ca/recherche/dataset/systeme-electronique-dappel-doffres-seao">
+    Système électronique d'appel d'offres (SEAO), données ouvertes — Données Québec</a>,
+    diffusées par le Secrétariat du Conseil du trésor. Les données sources peuvent
+    contenir des erreurs de saisie; voir la <a href="/methodologie">méthodologie</a>.</p>
+  </div>
+</footer>
+</body>
+</html>

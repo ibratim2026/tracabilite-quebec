@@ -1,0 +1,115 @@
+{% extends "base.html" %}
+{% block titre %}{{ p.titre or p.ocid }} — Traçabilité Québec{% endblock %}
+{% block contenu %}
+<nav class="fil"><a href="/">Accueil</a> › Fiche de contrat</nav>
+<h1>{{ p.titre or '(sans titre)' }}</h1>
+<p class="meta-fiche">
+  <a href="/organisme?nom={{ p.acheteur_nom | urlencode }}">{{ p.acheteur_nom }}</a>
+  {% if p.municipal %} · organisme municipal{% endif %}
+  · numéro d'avis {{ p.tender_id or '—' }}
+</p>
+
+{% if signaux %}
+<div class="signaux">
+  {% for s in signaux %}
+    <div class="encadre encadre-{{ types[s.type].couleur }}">
+      <span class="badge badge-{{ types[s.type].couleur }}">{{ types[s.type].nom }}</span>
+      {{ s.details }}
+      <details><summary>Explications possibles</summary>
+        <p>{{ types[s.type].explication }}</p></details>
+    </div>
+  {% endfor %}
+</div>
+{% endif %}
+
+{% for c in comparaisons %}
+<div class="comparaison">
+  <div class="ligne-comparaison">
+    <span>Montant octroyé</span><strong>{{ c.octroye | montant }}</strong>
+  </div>
+  <div class="barre"><div class="barre-octroye" style="width: {{ (100 / c.ratio) | round(1) if c.ratio > 1 else 100 }}%"></div></div>
+  <div class="ligne-comparaison">
+    <span>Dépense finale déclarée</span>
+    <strong>{{ c.final | montant }}
+    {% if c.ratio > 1.005 %}<span class="badge badge-rouge">+{{ ((c.ratio - 1) * 100) | round(0) | int }} %</span>
+    {% elif c.ratio < 0.995 %}<span class="badge badge-vert">{{ ((c.ratio - 1) * 100) | round(0) | int }} %</span>{% endif %}
+    </strong>
+  </div>
+</div>
+{% endfor %}
+
+<h2>Ce qu'on sait précisément</h2>
+<table class="table-details">
+  <tr><th>Mode d'attribution</th><td>{{ p.methode_details or p.methode or '—' }}
+    {% if p.nb_soumissionnaires %} · {{ p.nb_soumissionnaires }} soumissionnaire(s){% endif %}</td></tr>
+  <tr><th>Catégorie</th><td>{{ p.categorie or '—' }}
+    {% if p.unspsc_desc %} · {{ p.unspsc_desc }} (UNSPSC {{ p.unspsc_id }}){% endif %}</td></tr>
+  <tr><th>Période observée</th><td>{{ p.premiere_date | datefr }} → {{ p.derniere_date | datefr }}</td></tr>
+</table>
+
+{% if octrois %}
+<h3>Octrois</h3>
+<table>
+  <thead><tr><th>Fournisseur</th><th>NEQ</th><th>Date</th><th class="num">Montant octroyé</th></tr></thead>
+  <tbody>
+  {% for o in octrois %}
+    <tr>
+      <td>{% if o.fournisseur_nom %}<a href="/fournisseur?nom={{ o.fournisseur_nom | urlencode }}">{{ o.fournisseur_nom }}</a>{% else %}—{% endif %}</td>
+      <td>{{ o.fournisseur_neq or '—' }}</td>
+      <td>{{ o.date | datefr }}</td>
+      <td class="num">{{ o.montant | montant }}</td>
+    </tr>
+  {% endfor %}
+  </tbody>
+</table>
+{% endif %}
+
+{% if contrats %}
+<h3>Contrats</h3>
+<table>
+  <thead><tr><th>Statut</th><th>Signé le</th><th>Fin</th><th class="num">Montant</th></tr></thead>
+  <tbody>
+  {% for c in contrats %}
+    <tr>
+      <td>{{ {'active': 'Actif', 'terminated': 'Terminé', 'pending': 'En attente'}.get(c.statut, c.statut or '—') }}</td>
+      <td>{{ c.date_signature | datefr }}</td>
+      <td>{{ c.date_fin | datefr }}</td>
+      <td class="num">{{ c.montant | montant }}</td>
+    </tr>
+  {% endfor %}
+  </tbody>
+</table>
+{% endif %}
+
+{% if avenants %}
+<h3>Avenants ({{ avenants | length }})</h3>
+<table>
+  <thead><tr><th>Date</th><th>Justification déclarée</th></tr></thead>
+  <tbody>
+  {% for a in avenants %}
+    <tr><td>{{ a.date | datefr }}</td><td>{{ a.justification or '—' }}</td></tr>
+  {% endfor %}
+  </tbody>
+</table>
+{% endif %}
+
+<section class="sources">
+  <h2>Sources</h2>
+  <ul>
+    {% if p.url_seao %}
+    <li><strong>Avis officiel :</strong> <a href="{{ p.url_seao }}">consulter sur seao.gouv.qc.ca</a>
+      (système officiel du gouvernement du Québec)</li>
+    {% endif %}
+    <li><strong>Données :</strong> fichier <code>{{ p.dernier_fichier }}</code> des
+      <a href="https://www.donneesquebec.ca/recherche/dataset/systeme-electronique-dappel-doffres-seao">données
+      ouvertes du SEAO sur Données Québec</a>
+      {% if fichier and fichier.date_publication %} · publié le {{ fichier.date_publication | datefr }}{% endif %}</li>
+    <li><strong>Institution responsable :</strong> Secrétariat du Conseil du trésor du Québec</li>
+    <li><strong>Identifiant Open Contracting :</strong> <code>{{ p.ocid }}</code>
+      · consolidé à partir de {{ p.nb_releases }} événement(s) publié(s)</li>
+    <li><strong>Niveau de confiance :</strong> données déclarées par les organismes
+      publics au SEAO; des erreurs de saisie sont possibles (voir
+      <a href="/methodologie">méthodologie</a>).</li>
+  </ul>
+</section>
+{% endblock %}

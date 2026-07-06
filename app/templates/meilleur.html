@@ -1,0 +1,73 @@
+{% extends "base.html" %}
+{% block titre %}Dans le meilleur des mondes — Traçabilité Québec{% endblock %}
+{% block contenu %}
+<h1>Dans le meilleur des mondes</h1>
+<p class="explication">À quoi ressemblerait une gestion contractuelle publique
+en pleine santé — et où en sommes-nous, selon les données? Cette page compare
+nos observations à des <strong>repères publics et documentés</strong> (OCDE,
+Commission européenne). Quand aucun repère officiel n'existe, nous le disons
+plutôt que d'en inventer un. Un écart avec un repère n'est pas une faute :
+c'est un point de départ pour poser de meilleures questions.</p>
+
+<h2>Les repères, comparés à nos données</h2>
+<div class="indicateurs">
+  {% for i in indicateurs %}
+  <div class="indicateur">
+    <div class="tete-indicateur">
+      <span class="pastille-statut statut-{{ i.statut }}"></span>
+      <span class="valeur-indicateur">{{ i.valeur }}</span>
+    </div>
+    <div class="nom-indicateur">{{ i.nom }}</div>
+    <div class="repere"><strong>Dans le meilleur des mondes :</strong> {{ i.repere }}</div>
+    <div class="source-repere">Repère : {{ i.source }}</div>
+    {% if i.note %}<div class="note-indicateur">{{ i.note }}</div>{% endif %}
+  </div>
+  {% endfor %}
+</div>
+<div class="legende legende-statuts">
+  <span><i class="pastille-statut statut-vert"></i>Conforme au repère</span>
+  <span><i class="pastille-statut statut-jaune"></i>Zone à surveiller</span>
+  <span><i class="pastille-statut statut-rouge"></i>Loin du repère</span>
+  <span><i class="pastille-statut statut-gris"></i>Pas de repère officiel — observation seulement</span>
+</div>
+
+<h2>La grille : dix questions qu'une dépense saine devrait pouvoir répondre</h2>
+<p class="explication">Dans le meilleur des mondes, chaque grande dépense
+publique — programme, projet, contrat majeur — pourrait répondre publiquement
+à ces dix questions <em>avant</em> que l'argent soit engagé. C'est la grille
+que nous utiliserons pour analyser les grands projets, un par un.</p>
+
+<ol class="questions">
+  <li><strong>Quel problème public cette dépense est-elle censée régler?</strong>
+    <span>Un problème nommé, documenté, mesuré — pas un slogan.</span></li>
+  <li><strong>Quel objectif mesurable est poursuivi?</strong>
+    <span>« Améliorer l'accès » n'est pas mesurable; « réduire l'attente de X jours à Y » l'est.</span></li>
+  <li><strong>Quel résultat attendu justifie ce montant-là?</strong>
+    <span>Le lien entre l'ampleur du problème et l'ampleur de la dépense devrait être explicite.</span></li>
+  <li><strong>Quel indicateur dira si ça a fonctionné?</strong>
+    <span>Défini avant la dépense, publié après — pas choisi rétroactivement.</span></li>
+  <li><strong>Est-ce ponctuel ou récurrent?</strong>
+    <span>Un engagement récurrent de 100 M$/an vaut 1 G$ sur dix ans; il devrait être présenté ainsi.</span></li>
+  <li><strong>Le montant est-il proportionnel au problème?</strong>
+    <span>Que coûte le problème lui-même chaque année? La solution coûte-t-elle plus cher que le mal?</span></li>
+  <li><strong>Des alternatives moins coûteuses ont-elles été évaluées?</strong>
+    <span>Et si oui, pourquoi ont-elles été écartées — publiquement?</span></li>
+  <li><strong>Le délai, le fournisseur et le mécanisme d'attribution semblent-ils normaux?</strong>
+    <span>Gré à gré, soumissionnaire unique, échéancier compressé : possibles, mais à justifier.</span></li>
+  <li><strong>D'où vient la dépense : promesse politique, urgence, obligation légale, priorité documentée?</strong>
+    <span>Aucune de ces origines n'est illégitime — mais elles ne se justifient pas de la même façon.</span></li>
+  <li><strong>Peut-on relier la dépense à un résultat concret pour les citoyens?</strong>
+    <span>Au bout du compte : qu'est-ce qui a changé, pour qui, et où peut-on le vérifier?</span></li>
+</ol>
+
+<div class="encadre encadre-bleu">
+  <strong>Ce que les données actuelles permettent — et ne permettent pas.</strong>
+  Les données du SEAO répondent partiellement aux questions 5 et 8 (mécanisme
+  d'attribution, récurrence, fournisseur) : c'est ce que mesurent les repères
+  ci-dessus. Les questions 1 à 4, 6, 7, 9 et 10 exigent d'autres sources —
+  budgets, études justificatives, indicateurs de résultats — qui seront
+  intégrées progressivement. D'ici là, la grille sert d'outil d'analyse
+  éditoriale : nous l'appliquerons manuellement aux grands projets, en citant
+  chaque document public disponible… et en notant honnêtement chaque case vide.
+</div>
+{% endblock %}

@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+{% block titre %}{{ nom }} — Traçabilité Québec{% endblock %}
+{% block contenu %}
+<nav class="fil"><a href="/">Accueil</a> › Organisme public</nav>
+<h1>{{ nom }}</h1>
+
+<section class="cartes-stats">
+  <div class="carte">
+    <div class="chiffre">{{ total }}</div>
+    <div class="etiquette">processus d'achat observés</div>
+  </div>
+  <div class="carte">
+    <div class="chiffre">{{ valeur | montant }}</div>
+    <div class="etiquette">en contrats octroyés</div>
+  </div>
+  <div class="carte">
+    <div class="chiffre">{{ (100 * gre_a_gre / valeur) | round(0) | int if valeur else 0 }} %</div>
+    <div class="etiquette">de la valeur octroyée de gré à gré</div>
+  </div>
+</section>
+
+<h2>Contrats (par montant, 100 premiers)</h2>
+<table>
+  <thead><tr><th>Contrat</th><th>Fournisseur</th><th class="num">Montant</th><th>Mode</th><th>Dernière activité</th></tr></thead>
+  <tbody>
+  {% for l in lignes %}
+    <tr>
+      <td><a href="/contrat/{{ l.ocid }}">{{ (l.titre or '(sans titre)') | truncate(70) }}</a></td>
+      <td>{% if l.fournisseur %}<a href="/fournisseur?nom={{ l.fournisseur | urlencode }}">{{ l.fournisseur | truncate(35) }}</a>{% else %}—{% endif %}</td>
+      <td class="num">{{ l.montant | montant }}</td>
+      <td>{{ {'direct': 'Gré à gré', 'open': 'Appel d’offres', 'limited': 'Sur invitation', 'selective': 'Sélectif'}.get(l.methode, l.methode or '—') }}</td>
+      <td>{{ l.derniere_date | datefr }}</td>
+    </tr>
+  {% endfor %}
+  </tbody>
+</table>
+{% endblock %}
