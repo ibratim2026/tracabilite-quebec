@@ -210,6 +210,9 @@ code { background: #e4e9ee; padding: 0.05rem 0.35rem; border-radius: 4px; font-s
 .test-questions dd { margin: 0.3rem 0 0 0; color: var(--encre); }
 .carte-fiche-projet { border-left: 4px solid var(--bleu); line-height: 1.6; }
 
+.mention-demo { margin-left: auto; color: #9cc3ea; font-size: 0.85rem;
+  border: 1px solid #40608a; padding: 0.15rem 0.6rem; border-radius: 99px; }
+
 /* Divers */
 .pagination { display: flex; gap: 1.5rem; justify-content: center; margin: 1.5rem 0; }
 .regles dt { margin-top: 1rem; }

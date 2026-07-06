@@ -15,11 +15,15 @@
       <a href="/meilleur-des-mondes">Dans le meilleur des mondes</a>
       <a href="/methodologie">Méthodologie</a>
     </nav>
+    {% if not config.get('STATIQUE') %}
     <form class="recherche-entete" action="/recherche" method="get">
       <input type="search" name="q" placeholder="Fournisseur, organisme, mot-clé…"
              value="{{ request.args.get('q','') }}">
       <button type="submit">Chercher</button>
     </form>
+    {% else %}
+    <span class="mention-demo">Démo</span>
+    {% endif %}
   </div>
 </header>
 

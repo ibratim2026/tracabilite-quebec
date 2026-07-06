@@ -4,10 +4,15 @@
   <h1>Où va l'argent public au Québec?</h1>
   <p class="sous-titre">Les contrats publics du SEAO, rendus lisibles et traçables.
   Chaque chiffre est relié à sa source officielle.</p>
+  {% if not config.get('STATIQUE') %}
   <form class="recherche-hero" action="/recherche" method="get">
     <input type="search" name="q" placeholder="Cherchez un fournisseur, un ministère, une ville, un projet…" autofocus>
     <button type="submit">Chercher</button>
   </form>
+  {% else %}
+  <p class="note-periode">Version démo — la recherche en direct et les 215 000
+  fiches complètes sont dans la version intégrale, en cours de mise en ligne.</p>
+  {% endif %}
 </section>
 
 <h2>Où va l'argent en 2026</h2>

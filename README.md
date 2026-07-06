@@ -1,5 +1,9 @@
 # Traçabilité Québec
 
+**Démo en ligne : https://ibratim2026.github.io/tracabilite-quebec/**
+(version statique — pages principales et ~500 fiches; la version complète avec
+recherche et 215 000 fiches tourne en local, régénérable avec `export_static.py`)
+
 Outil d'intelligence citoyenne pour suivre où va l'argent public au Québec.
 Posture éditoriale : **pro-transparence, anti-complot**. Un signal n'est pas une
 accusation; chaque écart mérite une explication avant une interprétation.
