@@ -524,6 +524,30 @@ def meilleur_des_mondes():
                            a=stats_2026())
 
 
+@app.route("/meilleur-des-mondes/saaqclic")
+def fiche_saaqclic():
+    cur = db()
+    nb_saaq, total_saaq = cur.execute("""
+        SELECT COUNT(DISTINCT p.ocid), COALESCE(SUM(o.montant),0)
+        FROM processus p JOIN octroi o ON o.ocid = p.ocid
+        WHERE p.acheteur_nom LIKE '%assurance automobile%' AND o.montant > 0
+    """).fetchone()
+    lgs = cur.execute("""
+        SELECT p.ocid, p.titre, p.methode, o.montant, o.date
+        FROM octroi o JOIN processus p ON p.ocid = o.ocid
+        WHERE p.acheteur_nom LIKE '%assurance automobile%'
+          AND o.fournisseur_nom LIKE '%LGS%' AND o.montant > 0
+        ORDER BY o.montant DESC LIMIT 5
+    """).fetchall()
+    nom_saaq = cur.execute("""
+        SELECT acheteur_nom FROM processus
+        WHERE acheteur_nom LIKE '%assurance automobile%' LIMIT 1
+    """).fetchone()
+    return render_template("saaqclic.html", nb_saaq=nb_saaq,
+                           total_saaq=total_saaq, lgs=lgs,
+                           nom_saaq=nom_saaq[0] if nom_saaq else "")
+
+
 @app.route("/methodologie")
 def methodologie():
     return render_template("methodologie.html", s=stats_globales(),
