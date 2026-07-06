@@ -50,6 +50,16 @@ n'est jamais interrompu. Une routine `launchd`
 (`~/Library/LaunchAgents/com.tracabilite-quebec.maj.plist`) l'exécute chaque
 jour à 6 h 30 (ou au réveil de la machine).
 
+## Publication de la démo (GitHub Pages)
+
+```bash
+./publish_demo.sh   # régénère l'export statique et le pousse sur gh-pages
+```
+
+Une seconde routine `launchd` (`com.tracabilite-quebec.demo.plist`) publie la
+démo chaque lundi à 7 h 30, une heure après la mise à jour des données —
+la démo en ligne reflète donc toujours les données de la semaine.
+
 ## Installation (nouvelle machine)
 
 ```bash
