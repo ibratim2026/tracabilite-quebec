@@ -138,6 +138,20 @@ def fermer_db(exc):
         d.close()
 
 
+MOIS_FR = ["janvier", "février", "mars", "avril", "mai", "juin", "juillet",
+           "août", "septembre", "octobre", "novembre", "décembre"]
+
+
+@app.context_processor
+def injecter_derniere_maj():
+    """Date et heure de la dernière mise à jour des données (horodatage de la
+    base), affichées dans l'en-tête de la version démo."""
+    from datetime import datetime
+    t = datetime.fromtimestamp(BASE.stat().st_mtime)
+    return {"derniere_maj":
+            f"{t.day} {MOIS_FR[t.month - 1]} {t.year}, {t.hour} h {t.minute:02d}"}
+
+
 _cache_stats = {}
 
 
