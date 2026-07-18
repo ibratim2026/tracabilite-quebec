@@ -2,12 +2,21 @@
 {% block titre %}Aux nouvelles — Traçabilité Québec{% endblock %}
 {% block contenu %}
 <h1>Aux nouvelles</h1>
-<p class="explication">L'actualité fonctionne à l'indignation rapide : un titre,
-une réaction, on passe. Cette section fait l'inverse. On prend un dossier qui
-fait du bruit, on démêle le vrai du bruit, on va à la source, et on dit
-clairement <strong>ce qui se défend</strong>, <strong>ce qui cloche</strong> et
-<strong>ce qu'on ne peut pas encore trancher</strong>. Objectif : rendre lisible
-ce qui semblait confus — sans jamais crier au scandale avant d'avoir vérifié.</p>
+<p class="explication">On ne prend aucun parti. Aujourd'hui tout pousse aux
+extrêmes : d'un côté la confiance aveugle, de l'autre le procès permanent. Cette
+section tient la ligne étroite du milieu — <strong>questionner sans inventer,
+douter sans accuser</strong>. Chaque dossier qui fait du bruit est lu à travers
+trois filtres, et rien d'autre :</p>
+<div class="filtres">
+  <div class="filtre filtre-verifiable"><span class="etiquette-filtre">Vérifiable</span>
+    Les faits établis, sources officielles à l'appui.</div>
+  <div class="filtre filtre-logique"><span class="etiquette-filtre">Logique</span>
+    Ce qui se tient au raisonnement, même sans preuve directe.</div>
+  <div class="filtre filtre-ni"><span class="etiquette-filtre">Ni l'un ni l'autre</span>
+    Là où les chiffres ne s'expliquent pas — qu'on nomme au lieu de trancher.</div>
+</div>
+<p class="explication">Pas de titre-choc, pas de coupable désigné. Une lecture
+du vrai, c'est tout.</p>
 
 <div class="liste-actus">
   {% for a in articles %}

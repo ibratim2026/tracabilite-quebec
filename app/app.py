@@ -541,12 +541,12 @@ def meilleur_des_mondes():
 ACTUALITES = [
     {
         "slug": "saaqclic",
-        "titre": "SAAQclic : « ça ne vaut pas 1 milliard »… vraiment?",
+        "titre": "SAAQclic (programme CASA)",
         "date": "2026-02-16",
-        "etiquette": "Deux enquêtes publiques",
-        "resume": "Le public voit un site web bogué et conclut au gaspillage. "
-                  "La réalité est double : le projet lui-même se défend — mais son "
-                  "dérapage de coût, lui, est bien réel et documenté. Démêlons.",
+        "etiquette": "SAAQ · refonte informatique",
+        "resume": "Refonte des systèmes de la SAAQ. Coût passé de 638 M$ à au "
+                  "moins 1,1 G$. Lu en trois temps : ce qui est vérifiable, ce "
+                  "qui est logique, ce qui n'est ni l'un ni l'autre.",
     },
 ]
 

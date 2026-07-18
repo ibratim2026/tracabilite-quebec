@@ -242,6 +242,29 @@ code { background: #e4e9ee; padding: 0.05rem 0.35rem; border-radius: 4px; font-s
 .mention-analyse { font-size: 0.86rem; color: var(--gris); font-style: italic;
   border-left: 3px solid #d5dde5; padding-left: 0.8rem; }
 
+/* Trois filtres : vérifiable / logique / ni l'un ni l'autre */
+.filtres { display: grid; gap: 0.6rem; margin: 1rem 0 1.2rem; max-width: 780px; }
+.filtre { padding: 0.7rem 1rem; border-radius: 8px; font-size: 0.95rem;
+  border-left: 4px solid var(--gris); background: #fff; border-top: 1px solid #e2e8ee;
+  border-right: 1px solid #e2e8ee; border-bottom: 1px solid #e2e8ee; }
+.etiquette-filtre { display: inline-block; font-weight: 700; font-size: 0.82rem;
+  text-transform: uppercase; letter-spacing: 0.4px; margin-right: 0.5rem; }
+.filtre-verifiable { border-left-color: var(--vert); }
+.filtre-verifiable .etiquette-filtre { color: var(--vert); }
+.filtre-logique { border-left-color: var(--bleu); }
+.filtre-logique .etiquette-filtre { color: var(--bleu); }
+.filtre-ni { border-left-color: #c9852a; }
+.filtre-ni .etiquette-filtre { color: #a86a1a; }
+
+.lentille { max-width: 780px; margin: 1.5rem 0; border-radius: 8px;
+  padding: 0.3rem 1.3rem 1rem; border: 1px solid #e2e8ee; border-left-width: 4px; }
+.lentille-verifiable { border-left-color: var(--vert); background: #f2f9f5; }
+.lentille-logique { border-left-color: var(--bleu); background: var(--bleu-pale); }
+.lentille-ni { border-left-color: #c9852a; background: #fdf6ea; }
+.tete-lentille { font-weight: 600; color: var(--encre); margin: 0.9rem 0 0.3rem;
+  font-size: 1.05rem; }
+.tete-lentille .etiquette-filtre { vertical-align: 1px; }
+
 /* Divers */
 .pagination { display: flex; gap: 1.5rem; justify-content: center; margin: 1.5rem 0; }
 .regles dt { margin-top: 1rem; }
