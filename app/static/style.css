@@ -265,6 +265,24 @@ code { background: #e4e9ee; padding: 0.05rem 0.35rem; border-radius: 4px; font-s
   font-size: 1.05rem; }
 .tete-lentille .etiquette-filtre { vertical-align: 1px; }
 
+/* Infographies (SVG inline, sans dépendance externe) */
+.infographie { margin: 1.4rem 0; max-width: 680px; background: #fff;
+  border: 1px solid #e2e8ee; border-radius: 8px; padding: 1.1rem 1.3rem; }
+.ig-scroll { overflow-x: auto; }
+.infographie svg { width: 100%; min-width: 600px; height: auto; display: block; }
+.infographie figcaption { font-size: 0.88rem; color: var(--gris); margin-top: 0.7rem;
+  line-height: 1.5; }
+.ig-titre { font-size: 0.95rem; font-weight: 700; color: var(--bleu-fonce);
+  margin-bottom: 0.2rem; }
+.ig-source { display: block; margin-top: 0.3rem; font-style: italic; font-size: 0.82rem; }
+.ig-label { font: 600 13px -apple-system, "Segoe UI", sans-serif; fill: #21272e; }
+.ig-sub { font: 12px -apple-system, "Segoe UI", sans-serif; fill: #5b6673; }
+.ig-val { font: 700 15px -apple-system, "Segoe UI", sans-serif; fill: #21272e; }
+.ig-gap { font: 700 12px -apple-system, "Segoe UI", sans-serif; fill: #a86a1a; }
+.ig-note { font: 11px -apple-system, "Segoe UI", sans-serif; fill: #5b6673; }
+.ig-year { font: 700 12px -apple-system, "Segoe UI", sans-serif; fill: #1a3a5c; }
+.ig-event { font: 11px -apple-system, "Segoe UI", sans-serif; fill: #5b6673; }
+
 /* Divers */
 .pagination { display: flex; gap: 1.5rem; justify-content: center; margin: 1.5rem 0; }
 .regles dt { margin-top: 1rem; }
