@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% block titre %}Aux nouvelles — Traçabilité Québec{% endblock %}
+{% block contenu %}
+<h1>Aux nouvelles</h1>
+<p class="explication">L'actualité fonctionne à l'indignation rapide : un titre,
+une réaction, on passe. Cette section fait l'inverse. On prend un dossier qui
+fait du bruit, on démêle le vrai du bruit, on va à la source, et on dit
+clairement <strong>ce qui se défend</strong>, <strong>ce qui cloche</strong> et
+<strong>ce qu'on ne peut pas encore trancher</strong>. Objectif : rendre lisible
+ce qui semblait confus — sans jamais crier au scandale avant d'avoir vérifié.</p>
+
+<div class="liste-actus">
+  {% for a in articles %}
+  <a class="carte-actu" href="/aux-nouvelles/{{ a.slug }}">
+    <div class="actu-etiquette">{{ a.etiquette }} · {{ a.date | datefr }}</div>
+    <h2>{{ a.titre }}</h2>
+    <p>{{ a.resume }}</p>
+    <span class="actu-lien">Lire l'analyse →</span>
+  </a>
+  {% endfor %}
+</div>
+
+<p class="explication">Une suggestion de dossier à décortiquer? Cette section
+grandira au rythme de l'actualité — toujours avec la même règle : sources
+officielles, prudence, et l'honnêteté de dire ce qu'on ignore.</p>
+{% endblock %}

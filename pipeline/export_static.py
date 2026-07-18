@@ -83,7 +83,8 @@ def main():
     app.config["STATIQUE"] = True
     client = app.test_client()
 
-    graines = ["/", "/meilleur-des-mondes", "/meilleur-des-mondes/saaqclic",
+    graines = ["/", "/aux-nouvelles", "/aux-nouvelles/saaqclic",
+               "/meilleur-des-mondes", "/meilleur-des-mondes/saaqclic",
                "/methodologie"]
     for t in TYPES:
         for pg in range(1, PAGES_PAR_TYPE + 1):

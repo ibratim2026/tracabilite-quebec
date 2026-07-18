@@ -538,6 +538,30 @@ def meilleur_des_mondes():
                            a=stats_2026())
 
 
+ACTUALITES = [
+    {
+        "slug": "saaqclic",
+        "titre": "SAAQclic : « ça ne vaut pas 1 milliard »… vraiment?",
+        "date": "2026-02-16",
+        "etiquette": "Deux enquêtes publiques",
+        "resume": "Le public voit un site web bogué et conclut au gaspillage. "
+                  "La réalité est double : le projet lui-même se défend — mais son "
+                  "dérapage de coût, lui, est bien réel et documenté. Démêlons.",
+    },
+]
+
+
+@app.route("/aux-nouvelles")
+def actualites():
+    return render_template("actualites.html", articles=ACTUALITES)
+
+
+@app.route("/aux-nouvelles/saaqclic")
+def actualite_saaqclic():
+    art = next(a for a in ACTUALITES if a["slug"] == "saaqclic")
+    return render_template("actu_saaqclic.html", art=art)
+
+
 @app.route("/meilleur-des-mondes/saaqclic")
 def fiche_saaqclic():
     cur = db()

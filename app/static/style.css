@@ -213,6 +213,35 @@ code { background: #e4e9ee; padding: 0.05rem 0.35rem; border-radius: 4px; font-s
 .mention-demo { margin-left: auto; color: #9cc3ea; font-size: 0.85rem;
   border: 1px solid #40608a; padding: 0.15rem 0.6rem; border-radius: 99px; }
 
+/* Section « Aux nouvelles » */
+.liste-actus { display: grid; gap: 1rem; margin: 1.2rem 0; }
+.carte-actu { display: block; background: #fff; border: 1px solid #e2e8ee;
+  border-radius: 8px; padding: 1.2rem 1.4rem; color: var(--encre); }
+.carte-actu:hover { text-decoration: none; border-color: var(--bleu);
+  box-shadow: 0 2px 12px rgba(26,58,92,0.08); }
+.carte-actu h2 { margin: 0.3rem 0 0.5rem; color: var(--bleu-fonce); }
+.carte-actu p { color: var(--gris); font-size: 0.95rem; }
+.actu-etiquette { font-size: 0.78rem; text-transform: uppercase;
+  letter-spacing: 0.4px; color: var(--bleu); font-weight: 700; }
+.actu-lien { display: inline-block; margin-top: 0.6rem; color: var(--bleu);
+  font-weight: 600; font-size: 0.9rem; }
+
+.actu-chapeau { font-size: 1.15rem; color: var(--encre); line-height: 1.5;
+  margin: 0.4rem 0 1.5rem; max-width: 780px; font-weight: 500; }
+.bloc-actu { max-width: 780px; margin: 1.6rem 0; }
+.bloc-actu p { margin-bottom: 0.7rem; }
+.bloc-actu h2 { border-bottom: 2px solid var(--gris-pale); padding-bottom: 0.3rem; }
+.bloc-cle { background: var(--rouge-pale); border-radius: 8px; padding: 0.2rem 1.3rem 1rem;
+  max-width: 780px; border-left: 4px solid var(--rouge); }
+.bloc-cle h2 { border-bottom: none; color: var(--rouge); }
+.bloc-prudence { background: var(--bleu-pale); border-radius: 8px;
+  padding: 0.2rem 1.3rem 1rem; border-left: 4px solid var(--bleu); }
+.bloc-prudence h2 { border-bottom: none; }
+.liste-actu { margin: 0.5rem 0 0.5rem 1.2rem; }
+.liste-actu li { padding: 0.35rem 0; }
+.mention-analyse { font-size: 0.86rem; color: var(--gris); font-style: italic;
+  border-left: 3px solid #d5dde5; padding-left: 0.8rem; }
+
 /* Divers */
 .pagination { display: flex; gap: 1.5rem; justify-content: center; margin: 1.5rem 0; }
 .regles dt { margin-top: 1rem; }

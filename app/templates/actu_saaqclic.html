@@ -1,0 +1,129 @@
+{% extends "base.html" %}
+{% block titre %}{{ art.titre }} — Aux nouvelles — Traçabilité Québec{% endblock %}
+{% block contenu %}
+<nav class="fil"><a href="/aux-nouvelles">Aux nouvelles</a> › Dossier</nav>
+<h1>{{ art.titre }}</h1>
+<p class="actu-chapeau">{{ art.resume }}</p>
+
+<section class="bloc-actu">
+  <h2>Ce qu'on entend</h2>
+  <p>« Un site web qui plante au lancement, et ça aurait coûté des centaines de
+  millions? Le gouvernement gaspille notre argent. » L'agacement est
+  compréhensible : ce que le citoyen voit, c'est une page pour renouveler son
+  permis ou immatriculer sa voiture — et elle a mal fonctionné au lancement de
+  février 2023. De là à conclure que « ça ne vaut pas 1 milliard », il n'y a
+  qu'un pas. Mais ce raisonnement compare le prix d'un immeuble à celui de sa
+  porte d'entrée.</p>
+</section>
+
+<section class="bloc-actu">
+  <h2>Prenons du recul : ce n'est pas qu'un site web</h2>
+  <p>Le site SAAQclic n'est que la vitrine d'un chantier bien plus vaste : le
+  programme CASA (2014-2027), qui refaisait les <strong>systèmes informatiques
+  centraux</strong> de la SAAQ, en service depuis les années 1980-1990. On parle
+  de la gestion des permis de conduire, de l'immatriculation, des dossiers des
+  personnes accidentées de la route, du traitement des paiements, et des accès
+  utilisés en arrière-plan par les agents en centre de service et les partenaires
+  autorisés. Un système transactionnel de cette taille doit être disponible en
+  tout temps, sécurisé, et connecté à quantité d'autres. Ça ne se compare pas à
+  un site vitrine.</p>
+  <p class="mention-analyse">Cette mise en contexte est notre lecture du
+  périmètre du projet, à partir des documents publics. Elle explique pourquoi un
+  gros montant peut être normal — elle ne juge pas la gestion, ce que font les
+  sections suivantes, sourcées.</p>
+</section>
+
+<section class="bloc-actu">
+  <h2>Ce qui est légitime</h2>
+  <p>Refaire ce genre de socle informatique coûte cher partout — au fédéral, dans
+  les autres provinces, dans le secteur privé. Qu'un tel chantier se chiffre en
+  <strong>centaines de millions sur dix ans</strong> n'a, en soi, rien
+  d'anormal. Le budget initial de <strong>638 M$ (2017)</strong> était un ordre
+  de grandeur défendable pour l'ampleur du travail. Autrement dit : « ça ne vaut
+  pas 500 M$ » est probablement faux — l'ampleur réelle du projet justifie un
+  budget de cette taille.</p>
+</section>
+
+<section class="bloc-actu bloc-cle">
+  <h2>Ce qui cloche vraiment</h2>
+  <p>Le problème n'est pas que le projet existe, ni qu'il coûte cher. C'est que
+  le coût est passé de <strong>638 M$ à au moins 1,1 G$</strong> — et que, selon
+  la Vérificatrice générale (février 2025), cette hausse de près de 500 M$
+  <strong>n'a pas été clairement communiquée aux décideurs</strong>. Voilà
+  l'anomalie réelle : pas les 638 M$ de départ, mais l'écart et la façon dont il
+  a été géré. C'est là qu'il faut regarder — pas sur la page web.</p>
+</section>
+
+<section class="bloc-actu">
+  <h2>Les erreurs, selon les enquêtes</h2>
+  <ul class="liste-actu">
+    <li><strong>Tests insuffisants.</strong> Près de 20 % des tests intégrés
+    finaux n'étaient pas complétés à la date de confirmation de janvier 2023.
+    Le système a été mis en service en février 2023 quand même — d'où les
+    pannes et les files d'attente. <em>(Vérificatrice générale)</em></li>
+    <li><strong>Reddition de comptes trompeuse.</strong> La direction affirmait
+    dans ses rapports que le développement se déroulait comme prévu pendant que
+    les retards s'accumulaient. <em>(Vérificatrice générale)</em></li>
+    <li><strong>Dépendance à un fournisseur unique.</strong> La SAAQ « s'est
+    liée pendant des années à un fournisseur unique, se laissant peu de portes
+    de sortie en cas de désaccord » — ce qui, selon le rapport, a ouvert la
+    porte aux dépassements. <em>(Commission Gallant)</em></li>
+  </ul>
+</section>
+
+<section class="bloc-actu">
+  <h2>Les responsables — avec prudence</h2>
+  <p>La commission d'enquête présidée par le juge Denis Gallant (rapport du
+  16 février 2026) conclut, « sur la base d'une preuve particulièrement
+  significative », que la SAAQ a transmis une information fallacieuse
+  <strong>non pas par négligence, mais par une action consciente</strong> visant
+  à cacher le coût total du programme aux parlementaires, au gouvernement « et
+  donc à la population ». Le rapport indique aussi que des ministres avaient été
+  informés de dépassements en 2023.</p>
+  <p>Nous rapportons ici les conclusions de la commission, telles qu'elle les a
+  formulées. L'établissement des responsabilités individuelles — administratives,
+  civiles ou autres — appartient aux instances compétentes, pas à un outil
+  citoyen. Notre rôle s'arrête à rendre les faits lisibles et à pointer vers les
+  sources officielles.</p>
+</section>
+
+<section class="bloc-actu bloc-prudence">
+  <h2>Ce qu'on ne peut pas encore trancher</h2>
+  <ul class="liste-actu">
+    <li>Le coût « juste » d'un tel système, à périmètre équivalent, n'a pas de
+    comparable public établi. On ne peut donc pas chiffrer précisément quelle
+    part du milliard était « en trop » — seulement constater, avec la
+    Vérificatrice générale, l'ampleur et l'opacité de l'écart.</li>
+    <li>Les bénéfices à long terme, une fois le système stabilisé, restent à
+    évaluer. Un lancement raté ne condamne pas nécessairement l'outil final.</li>
+  </ul>
+  <p>On préfère nommer ces zones d'ombre que de faire semblant de tout savoir.
+  C'est la différence entre décortiquer un dossier et crier au scandale.</p>
+</section>
+
+<section class="bloc-actu">
+  <h2>Pour creuser</h2>
+  <ul class="liste-actu">
+    <li>Notre analyse détaillée du projet au test des dix questions de bonne
+    gouvernance : <a href="/meilleur-des-mondes/saaqclic">SAAQclic dans « Le
+    meilleur des mondes »</a>.</li>
+    <li>Les contrats de la SAAQ, un par un, dans nos données :
+    <a href="/organisme?nom=Soci%C3%A9t%C3%A9%20de%20l%27assurance%20automobile%20du%20Qu%C3%A9bec%20.">fiche
+    de l'organisme</a>.</li>
+  </ul>
+</section>
+
+<section class="sources">
+  <h2>Sources</h2>
+  <ul>
+    <li><strong>Vérificatrice générale du Québec</strong>, rapport de février 2025,
+      chapitre 2 « CASA/SAAQclic : coûts, échéanciers et qualité » —
+      <a href="https://www.vgq.qc.ca/Fichiers/Publications/rapport-annuel/212/VGQ_Fevr2025_ch2_web.pdf">document officiel (PDF)</a>.</li>
+    <li><strong>Commission d'enquête sur la gestion du programme CASA (commission
+      Gallant)</strong>, rapport final déposé le 16 février 2026 —
+      <a href="https://ici.radio-canada.ca/info/en-direct/1013463/fiasco-saaqclic-rapport-gallant">faits saillants (Radio-Canada)</a> ·
+      <a href="https://www.lapresse.ca/actualites/2026-02-16/rapport-gallant-sur-le-fiasco-saaqclic/la-saaq-a-menti-quebec-etait-informe-de-depassements-de-couts.php">La Presse</a>.</li>
+    <li>Données de contrats : <a href="https://www.donneesquebec.ca/recherche/dataset/systeme-electronique-dappel-doffres-seao">données ouvertes du SEAO — Données Québec</a>.</li>
+  </ul>
+</section>
+{% endblock %}
