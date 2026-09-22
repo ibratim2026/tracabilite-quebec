@@ -5,12 +5,14 @@
 <p class="explication">Des signaux détectés par des règles objectives dans les
 données ouvertes du SEAO. <strong>Un signal n'est pas une accusation</strong> :
 chaque situation peut avoir une explication légitime. Ce que cette page dit,
-c'est : « voici ce qui, dans les données publiques, mérite une explication ».</p>
+c'est : « voici ce qui, dans les données publiques, mérite une explication ».
+Et, dans le dernier onglet, ce qui a coûté moins cher que prévu.</p>
 
 <nav class="onglets">
   {% for code, t in types.items() %}
-    <a href="?type={{ code }}" class="onglet {{ 'actif' if code == type_filtre }}">
-      {{ t.nom }} <span class="compte">{{ compte.get(code, 0) | nombre }}</span>
+    <a href="?type={{ code }}" class="onglet {{ 'actif' if code == type_filtre }}{{ ' onglet-etoile' if code == 'CUMUL' }}{{ ' onglet-vert' if code == 'ECONOMIE' }}">
+      {% if code == 'CUMUL' %}★ {% endif %}{{ t.nom }}
+      <span class="compte">{{ compte.get(code, 0) | nombre }}</span>
     </a>
   {% endfor %}
 </nav>
@@ -20,7 +22,52 @@ c'est : « voici ce qui, dans les données publiques, mérite une explication »
   {{ types[type_filtre].explication }}
 </div>
 
-<table>
+{# ---------------------------------------------- À examiner en priorité #}
+{% if type_filtre == 'CUMUL' %}
+<table class="table-cartes">
+  <thead><tr><th>Contrat</th><th>Organisme</th><th>Fournisseur</th>
+    <th>Signaux cumulés</th><th class="num">Montant</th></tr></thead>
+  <tbody>
+  {% for l in lignes %}
+    <tr>
+      <td><span class="etoile" title="Cumule {{ l.nb_signaux }} signaux">★</span>
+        <a href="/contrat/{{ l.ocid }}">{{ (l.titre or '(sans titre)') | truncate(62) }}</a></td>
+      <td data-label="Organisme"><a href="/organisme?nom={{ l.acheteur_nom | urlencode }}">{{ (l.acheteur_nom or '—') | truncate(38) }}</a></td>
+      <td data-label="Fournisseur">{% if l.fournisseur %}<a href="/fournisseur?nom={{ l.fournisseur | urlencode }}">{{ l.fournisseur | truncate(30) }}</a>{% else %}—{% endif %}</td>
+      <td data-label="Signaux">{% for code in l.signaux.split(',') %}<span class="badge badge-{{ types[code].couleur }}">{{ noms_signaux[code] }}</span> {% endfor %}</td>
+      <td class="num" data-label="Montant">{{ l.montant | montant }}</td>
+    </tr>
+  {% else %}
+    <tr><td colspan="5">Aucun contrat ne cumule trois signaux ou plus.</td></tr>
+  {% endfor %}
+  </tbody>
+</table>
+
+{# ---------------------------------------------- Économies réalisées #}
+{% elif type_filtre == 'ECONOMIE' %}
+<table class="table-cartes">
+  <thead><tr><th>Contrat</th><th>Organisme</th>
+    <th class="num">Octroyé</th><th class="num">Dépense finale</th><th class="num">Économie</th></tr></thead>
+  <tbody>
+  {% for l in lignes %}
+    <tr>
+      <td><a href="/contrat/{{ l.ocid }}">{{ (l.titre or '(sans titre)') | truncate(62) }}</a>
+        {% if l.fournisseur %}<br><span class="detail">{{ l.fournisseur | truncate(40) }}</span>{% endif %}</td>
+      <td data-label="Organisme"><a href="/organisme?nom={{ l.acheteur_nom | urlencode }}">{{ (l.acheteur_nom or '—') | truncate(38) }}</a></td>
+      <td class="num" data-label="Octroyé">{{ l.montant_octroye | montant }}</td>
+      <td class="num" data-label="Dépense finale">{{ l.montant_final | montant }}</td>
+      <td class="num" data-label="Économie"><span class="badge badge-vert">−{{ ((1 - l.ratio) * 100) | round(0) | int }} %</span>
+        <br><span class="detail">{{ l.economie | montant }}</span></td>
+    </tr>
+  {% else %}
+    <tr><td colspan="5">Aucun contrat terminé sous le montant prévu.</td></tr>
+  {% endfor %}
+  </tbody>
+</table>
+
+{# ---------------------------------------------- Signaux classiques #}
+{% else %}
+<table class="table-cartes">
   <thead><tr>
     <th>Contrat</th><th>Organisme</th><th>Fournisseur</th>
     {% if type_filtre in ('DEPASSEMENT', 'ABERRATION') %}
@@ -32,18 +79,19 @@ c'est : « voici ce qui, dans les données publiques, mérite une explication »
   <tbody>
   {% for l in lignes %}
     <tr>
-      <td><a href="/contrat/{{ l.ocid }}">{{ (l.titre or '(sans titre)') | truncate(65) }}</a></td>
-      <td><a href="/organisme?nom={{ l.acheteur_nom | urlencode }}">{{ (l.acheteur_nom or '—') | truncate(38) }}</a></td>
-      <td>{% if l.fournisseur %}<a href="/fournisseur?nom={{ l.fournisseur | urlencode }}">{{ l.fournisseur | truncate(32) }}</a>{% else %}—{% endif %}</td>
+      <td>{% if etoiles.get(l.ocid) %}<a class="etoile" href="?type=CUMUL" title="Ce contrat cumule {{ etoiles[l.ocid] }} signaux : à examiner en priorité">★</a> {% endif %}
+        <a href="/contrat/{{ l.ocid }}">{{ (l.titre or '(sans titre)') | truncate(62) }}</a></td>
+      <td data-label="Organisme"><a href="/organisme?nom={{ l.acheteur_nom | urlencode }}">{{ (l.acheteur_nom or '—') | truncate(38) }}</a></td>
+      <td data-label="Fournisseur">{% if l.fournisseur %}<a href="/fournisseur?nom={{ l.fournisseur | urlencode }}">{{ l.fournisseur | truncate(30) }}</a>{% else %}—{% endif %}</td>
       {% if type_filtre in ('DEPASSEMENT', 'ABERRATION') %}
-        <td class="num">{{ l.montant_octroye | montant }}</td>
-        <td class="num">{{ l.montant_final | montant }}</td>
-        <td class="num"><span class="badge badge-{{ types[type_filtre].couleur }}">
+        <td class="num" data-label="Octroyé">{{ l.montant_octroye | montant }}</td>
+        <td class="num" data-label="Dépense finale">{{ l.montant_final | montant }}</td>
+        <td class="num" data-label="Écart"><span class="badge badge-{{ types[type_filtre].couleur }}">
           {% if l.ratio and l.ratio < 20 %}+{{ ((l.ratio - 1) * 100) | round(0) | int }} %{% else %}×{{ l.ratio | round(0) | int }}{% endif %}
         </span></td>
       {% else %}
-        <td class="num">{{ l.montant_octroye | montant }}</td>
-        <td class="detail">{{ l.details | truncate(60) }}</td>
+        <td class="num" data-label="Montant">{{ l.montant_octroye | montant }}</td>
+        <td class="detail" data-label="Détail">{{ l.details | truncate(60) }}</td>
       {% endif %}
     </tr>
   {% else %}
@@ -52,9 +100,19 @@ c'est : « voici ce qui, dans les données publiques, mérite une explication »
   </tbody>
 </table>
 
+<p class="explication"><span class="etoile">★</span> Une étoile signale un contrat
+qui cumule trois signaux ou plus. <a href="?type=CUMUL">Voir tous les contrats
+à examiner en priorité →</a></p>
+{% endif %}
+
 <nav class="pagination">
   {% if page > 1 %}<a href="?type={{ type_filtre }}&page={{ page - 1 }}">← Précédent</a>{% endif %}
   <span>Page {{ page }}</span>
   {% if lignes | length == 50 %}<a href="?type={{ type_filtre }}&page={{ page + 1 }}">Suivant →</a>{% endif %}
 </nav>
+
+<div class="note-verif">Règles de détection et limites des données : voir la
+<a href="/methodologie">méthodologie</a>. Les données du SEAO sont déclaratives et
+peuvent contenir des erreurs de saisie. Un contrat signalé ici n'est ni illégal ni
+frauduleux : c'est un contrat dont les chiffres méritent une explication.</div>
 {% endblock %}

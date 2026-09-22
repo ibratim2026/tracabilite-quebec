@@ -23,6 +23,16 @@
 {% endif %}
 
 {% for c in comparaisons %}
+{% if c.ratio < 0.98 %}
+<div class="encadre" style="border-left-color: var(--vert)">
+  <strong style="color: var(--vert)">Ce contrat a coûté moins cher que prévu.</strong>
+  La dépense finale déclarée est inférieure de
+  <strong>{{ (c.octroye - c.final) | montant }}</strong> au montant octroyé, soit
+  {{ ((1 - c.ratio) * 100) | round(0) | int }} % de moins. C'est le genre de
+  résultat qu'on voit rarement rapporté.
+  <a href="/ce-qui-ne-fait-pas-de-sens?type=ECONOMIE">Voir les plus grandes économies →</a>
+</div>
+{% endif %}
 <div class="comparaison">
   <div class="ligne-comparaison">
     <span>Montant octroyé</span><strong>{{ c.octroye | montant }}</strong>

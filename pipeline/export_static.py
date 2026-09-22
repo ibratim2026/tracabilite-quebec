@@ -27,7 +27,8 @@ BASE = "/tracabilite-quebec"  # préfixe des pages de projet GitHub
 sys.path.insert(0, str(RACINE / "app"))
 from app import app  # noqa: E402
 
-TYPES = ["DEPASSEMENT", "GRE_A_GRE", "SOUM_UNIQUE", "AVENANTS_SERIE", "ABERRATION"]
+TYPES = ["DEPASSEMENT", "GRE_A_GRE", "SOUM_UNIQUE", "AVENANTS_SERIE", "ABERRATION",
+         "CUMUL", "ECONOMIE"]
 PAGES_PAR_TYPE = 3
 MAX_PAGES = 4000
 

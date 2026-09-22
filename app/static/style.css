@@ -108,7 +108,7 @@ code { background: var(--surface-2); padding: .05rem .35rem; border-radius: 4px;
 .entete .nav-principale a.actif { color: #fff; border-bottom-color: #ffab3d; }
 .recherche-entete { background: rgba(255,255,255,.12); border-color: rgba(255,255,255,.22); }
 .recherche-entete input { color: #fff; }
-.recherche-entete input::placeholder { color: rgba(255,255,255,.6); }
+.recherche-entete input::placeholder { color: rgba(255,255,255,.78); }
 .recherche-entete:focus-within { border-color: #9dbdff; box-shadow: 0 0 0 4px rgba(157,189,255,.25); }
 .mention-demo { color: rgba(255,255,255,.8); background: rgba(255,255,255,.1);
   border-color: rgba(255,255,255,.22); }
@@ -766,3 +766,11 @@ input[type="search"], input[type="text"], textarea { cursor: text; }
   margin: 0 .45rem 0 0; }
 .illu-bandeau { width: 92px; height: 76px; margin: 0 0 0 auto; }
 .bande-bleue .illu rect[fill="#fff"], .bande-bleue .illu rect[fill="#ffffff"] { opacity: .95; }
+
+/* Étoile « à examiner en priorité » et onglets spéciaux */
+.etoile { color: #e0a300; font-size: 1.05rem; text-decoration: none; }
+a.etoile:hover { color: var(--ambre); text-decoration: none; }
+.onglet-etoile.actif { background: var(--rouge); border-color: var(--rouge); }
+.onglet-vert.actif { background: var(--vert); border-color: var(--vert); }
+.badge-vert { background: var(--vert-pale); color: var(--vert); }
+.economie-badge { color: var(--vert); font-weight: 700; }

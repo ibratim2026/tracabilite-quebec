@@ -124,6 +124,35 @@ SEGMENTS_UNSPSC = {
 }
 
 
+# Vues qui ne sont pas des signaux : le cumul (priorité d'examen) et les
+# économies réalisées. Elles complètent la page « Ce qui ne fait pas de sens ».
+VUES_SPECIALES = {
+    "CUMUL": {
+        "nom": "À examiner en priorité",
+        "couleur": "rouge",
+        "explication": (
+            "Ces contrats cumulent plusieurs signaux à la fois : par exemple "
+            "attribué sans appel d'offres, modifié trois fois ou plus, et terminé "
+            "au-dessus du montant prévu. Aucun de ces éléments n'est une faute en "
+            "soi, et leur cumul ne prouve rien. Mais c'est la combinaison qui, "
+            "historiquement, a le plus souvent justifié un examen approfondi. "
+            "Nous les remontons ici pour qu'ils soient regardés en premier, pas "
+            "pour désigner des coupables."
+        ),
+    },
+    "ECONOMIE": {
+        "nom": "Économies réalisées",
+        "couleur": "vert",
+        "explication": (
+            "La transparence, c'est aussi montrer ce qui fonctionne. Ces contrats "
+            "terminés ont coûté moins cher que le montant octroyé. Les écarts "
+            "peuvent venir d'une bonne gestion, d'options non exercées ou d'un "
+            "volume de travail moindre que prévu."
+        ),
+    },
+}
+
+
 def db():
     if "db" not in g:
         g.db = sqlite3.connect(BASE)
@@ -493,9 +522,45 @@ def fiche(ocid):
 @app.route("/ce-qui-ne-fait-pas-de-sens")
 def anomalies():
     type_filtre = request.args.get("type", "DEPASSEMENT")
-    if type_filtre not in TYPES_SIGNAUX:
+    if type_filtre not in TYPES_SIGNAUX and type_filtre not in VUES_SPECIALES:
         type_filtre = "DEPASSEMENT"
     page = max(1, request.args.get("page", 1, type=int))
+    compte = dict(db().execute(
+        "SELECT type, COUNT(*) FROM signal GROUP BY type").fetchall())
+    compte["CUMUL"] = cumul_compte()
+    compte["ECONOMIE"] = economies_compte()
+
+    if type_filtre == "CUMUL":
+        lignes = db().execute("""
+            SELECT p.ocid, p.titre, p.acheteur_nom, p.methode,
+                   (SELECT COUNT(DISTINCT type) FROM signal x WHERE x.ocid = p.ocid) AS nb_signaux,
+                   (SELECT GROUP_CONCAT(DISTINCT type) FROM signal x WHERE x.ocid = p.ocid) AS signaux,
+                   (SELECT MAX(montant) FROM octroi o WHERE o.ocid = p.ocid) AS montant,
+                   (SELECT fournisseur_nom FROM octroi o WHERE o.ocid = p.ocid
+                    ORDER BY montant DESC LIMIT 1) AS fournisseur
+            FROM processus p
+            WHERE (SELECT COUNT(DISTINCT type) FROM signal x WHERE x.ocid = p.ocid) >= 3
+            ORDER BY nb_signaux DESC, montant DESC LIMIT 50 OFFSET ?
+        """, ((page - 1) * 50,)).fetchall()
+        return render_template("anomalies.html", lignes=lignes,
+                               types={**TYPES_SIGNAUX, **VUES_SPECIALES},
+                               type_filtre=type_filtre, compte=compte, page=page,
+                               noms_signaux={c: t["nom"] for c, t in TYPES_SIGNAUX.items()})
+
+    if type_filtre == "ECONOMIE":
+        lignes = db().execute("""
+            SELECT p.ocid, p.titre, p.acheteur_nom, o.montant AS montant_octroye,
+                   c.montant AS montant_final, (o.montant - c.montant) AS economie,
+                   (c.montant / o.montant) AS ratio, o.fournisseur_nom AS fournisseur
+            FROM contrat c
+            JOIN octroi o ON o.ocid = c.ocid AND o.octroi_id = c.octroi_id
+            JOIN processus p ON p.ocid = c.ocid
+            WHERE c.statut = 'terminated' AND c.montant > 0 AND o.montant > c.montant * 1.02
+            ORDER BY economie DESC LIMIT 50 OFFSET ?
+        """, ((page - 1) * 50,)).fetchall()
+        return render_template("anomalies.html", lignes=lignes,
+                               types={**TYPES_SIGNAUX, **VUES_SPECIALES},
+                               type_filtre=type_filtre, compte=compte, page=page)
     ordre = {
         "DEPASSEMENT": "(s.montant_final - s.montant_octroye) DESC",
         "GRE_A_GRE": "s.montant_octroye DESC",
@@ -511,10 +576,38 @@ def anomalies():
         WHERE s.type = ?
         ORDER BY {ordre} LIMIT 50 OFFSET ?
     """, (type_filtre, (page - 1) * 50)).fetchall()
-    compte = dict(db().execute(
-        "SELECT type, COUNT(*) FROM signal GROUP BY type").fetchall())
-    return render_template("anomalies.html", lignes=lignes, types=TYPES_SIGNAUX,
-                           type_filtre=type_filtre, compte=compte, page=page)
+    return render_template("anomalies.html", lignes=lignes,
+                           types={**TYPES_SIGNAUX, **VUES_SPECIALES},
+                           type_filtre=type_filtre, compte=compte, page=page,
+                           etoiles=etoiles_des(lignes))
+
+
+@cache_selon_base
+def cumul_compte():
+    return db().execute("""
+        SELECT COUNT(*) FROM (SELECT ocid FROM signal GROUP BY ocid
+                              HAVING COUNT(DISTINCT type) >= 3)""").fetchone()[0]
+
+
+@cache_selon_base
+def economies_compte():
+    return db().execute("""
+        SELECT COUNT(*) FROM contrat c
+        JOIN octroi o ON o.ocid = c.ocid AND o.octroi_id = c.octroi_id
+        WHERE c.statut = 'terminated' AND c.montant > 0 AND o.montant > c.montant * 1.02
+    """).fetchone()[0]
+
+
+def etoiles_des(lignes):
+    """Contrats de la page qui cumulent au moins trois signaux : ils portent
+    une étoile « à examiner en priorité »."""
+    ocids = [l["ocid"] for l in lignes]
+    if not ocids:
+        return {}
+    q = ",".join("?" * len(ocids))
+    return dict(db().execute(f"""
+        SELECT ocid, COUNT(DISTINCT type) FROM signal WHERE ocid IN ({q})
+        GROUP BY ocid HAVING COUNT(DISTINCT type) >= 3""", ocids).fetchall())
 
 
 @app.route("/organisme")
