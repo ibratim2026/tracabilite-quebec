@@ -38,8 +38,9 @@ NAVIGATION = [
               ("/election/comparateur/", "Comparateur"),
               ("/election/decoder", "Décoder la campagne"), ("/election/jouer", "Testez-vous")]},
     {"cle": "comprendre", "nom": "Comprendre", "url": "/secteurs",
-     "prefixes": ["/secteurs", "/economie-expliquee", "/quebec-canada", "/lois-et-projets", "/quebec-prospere"],
-     "sous": [("/secteurs", "Secteurs et indicateurs"), ("/economie-expliquee", "L'économie expliquée"),
+     "prefixes": ["/etat-du-quebec", "/secteurs", "/economie-expliquee", "/quebec-canada",
+                  "/lois-et-projets", "/quebec-prospere"],
+     "sous": [("/etat-du-quebec", "L'état du Québec"), ("/secteurs", "Secteurs et indicateurs"), ("/economie-expliquee", "L'économie expliquée"),
               ("/quebec-canada", "Le Québec dans le Canada"),
               ("/lois-et-projets", "Lois et projets"), ("/quebec-prospere", "Québec prospère")]},
     {"cle": "argent", "nom": "Suivre l'argent", "url": "/",
@@ -244,6 +245,107 @@ def secteur(slug):
                            seao=depenses_seao(current_app.extensions["tq_db"](), s.get("motifs_seao")),
                            engagements=engagements, projets=projets, lois=lois,
                            p=p)
+
+
+# ---------------------------------------------------------------- Indice « état du Québec »
+
+def note_sur_100(valeur, borne0, borne100):
+    """Ramène une valeur brute sur 100, entre deux repères explicites.
+    borne0 peut être plus grand que borne100 (ex. une dette : moins, c'est mieux)."""
+    if valeur is None or borne0 == borne100:
+        return None
+    note = 100 * (valeur - borne0) / (borne100 - borne0)
+    return max(0, min(100, round(note, 1)))
+
+
+def indice_etat():
+    """Calcule la note de chaque secteur à partir des indicateurs sourcés.
+    Renvoie aussi la tendance : la même note calculée sur la plus ancienne
+    valeur connue de la série, pour dire si ça s'améliore ou non."""
+    reglages = charger("indice")
+    secteurs = {s["slug"]: s for s in (charger("secteurs") or [])}
+    if not reglages or not secteurs:
+        return None
+
+    par_secteur = {}
+    for c in reglages["composantes"]:
+        s = secteurs.get(c["secteur"])
+        if not s:
+            continue
+        k = next((x for x in s["kpis"] if x["nom"] == c["kpi"]), None)
+        if not k or k.get("valeur_num") is None:
+            continue
+        note = note_sur_100(k["valeur_num"], c["borne0"], c["borne100"])
+        if note is None:
+            continue
+        note_avant = None
+        serie = sorted(k.get("serie") or [], key=lambda p: p["annee"])
+        if len(serie) >= 2:
+            note_avant = note_sur_100(serie[0]["valeur"], c["borne0"], c["borne100"])
+        par_secteur.setdefault(c["secteur"], {"nom": s["nom"], "slug": s["slug"],
+                                              "accroche": s["accroche"], "composantes": []})
+        par_secteur[c["secteur"]]["composantes"].append({
+            "nom": k["nom"], "valeur": k["valeur"], "annee": k["annee"], "note": note,
+            "note_avant": note_avant,
+            "depuis": serie[0]["annee"] if len(serie) >= 2 else None,
+            "repere": c["repere"], "borne0": c["borne0"], "borne100": c["borne100"],
+            "unite": k.get("unite"), "source_url": k.get("source_url"),
+            "source_nom": k.get("source_nom"),
+        })
+
+    # Composante maison : la transparence des contrats publics, calculée en direct.
+    g = reglages.get("gouvernance")
+    if g:
+        db = current_app.extensions["tq_db"]()
+        ouvert, total = db.execute("""
+            SELECT SUM(CASE WHEN p.methode = 'open' THEN o.montant ELSE 0 END),
+                   SUM(o.montant)
+            FROM octroi o JOIN processus p ON p.ocid = o.ocid
+            WHERE o.montant > 0 AND o.date >= '2025-01-01'
+        """).fetchone()
+        if total:
+            pct = round(100 * ouvert / total, 1)
+            par_secteur.setdefault(g["secteur"], {"nom": secteurs[g["secteur"]]["nom"],
+                                                  "slug": g["secteur"],
+                                                  "accroche": secteurs[g["secteur"]]["accroche"],
+                                                  "composantes": []})
+            par_secteur[g["secteur"]]["composantes"].append({
+                "nom": g["nom"], "valeur": f"{pct} %".replace(".", ","), "annee": "2025-2026",
+                "note": note_sur_100(pct, g["borne0"], g["borne100"]), "note_avant": None,
+                "depuis": None, "repere": g["repere"], "borne0": g["borne0"],
+                "borne100": g["borne100"], "unite": "%", "source_url": "/methodologie",
+                "source_nom": "Traçabilité Québec, données du SEAO", "maison": True,
+            })
+
+    for sec in par_secteur.values():
+        notes = [c["note"] for c in sec["composantes"]]
+        sec["note"] = round(sum(notes) / len(notes), 1)
+        avec_serie = [c for c in sec["composantes"] if c["note_avant"] is not None]
+        if avec_serie:
+            base = sum(c["note_avant"] for c in avec_serie) / len(avec_serie)
+            actuelle = sum(c["note"] for c in avec_serie) / len(avec_serie)
+            sec["tendance"] = round(actuelle - base, 1)
+            sec["depuis"] = min(c["depuis"] for c in avec_serie)
+        else:
+            sec["tendance"] = None
+            sec["depuis"] = None
+        sec["poids"] = reglages["poids_defaut"].get(sec["slug"], 0)
+
+    ordre = list(reglages["poids_defaut"])
+    secteurs_tries = sorted(par_secteur.values(),
+                            key=lambda s: ordre.index(s["slug"]) if s["slug"] in ordre else 99)
+    poids_total = sum(s["poids"] for s in secteurs_tries) or 1
+    global_ = round(sum(s["note"] * s["poids"] for s in secteurs_tries) / poids_total, 1)
+    return {"reglages": reglages, "secteurs": secteurs_tries, "note": global_,
+            "nb_indicateurs": sum(len(s["composantes"]) for s in secteurs_tries)}
+
+
+@bp.route("/etat-du-quebec")
+def etat():
+    i = indice_etat()
+    if not i:
+        abort(404)
+    return render_template("etat.html", i=i)
 
 
 # ---------------------------------------------------------------- Lois et projets

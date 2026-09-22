@@ -1,0 +1,78 @@
+{% extends "base.html" %}
+{% block titre %}L'état du Québec — une note sur 100 — Traçabilité Québec{% endblock %}
+{% block contenu %}
+<div class="surtitre">Comprendre</div>
+<h1>L'état du Québec</h1>
+<p class="chapeau">{{ i.reglages.chapeau }}</p>
+
+<section class="bande bande-bleue" data-indice>
+  <script type="application/json">{{ i | tojson }}</script>
+</section>
+
+<h2>Comment la note est calculée</h2>
+<div class="prose">
+<p>Chaque indicateur est ramené sur 100 entre <strong>deux repères affichés</strong> :
+une valeur jugée mauvaise (0) et un objectif (100). Quand une cible officielle
+existe, c'est elle qui sert de 100 : la diplomation de 90 % en 2030, la cible de
+dette de 32,5 % du PIB, la réduction des émissions de 37,5 %. Sinon, le repère est
+la meilleure province, la moyenne de l'OCDE ou un seuil reconnu, et c'est indiqué.</p>
+<p>La note d'un secteur est la moyenne de ses indicateurs. La note globale est la
+moyenne des secteurs, <strong>pondérée selon vos réglages</strong>.
+{{ i.reglages.note_poids }}</p>
+<p>La <strong>tendance</strong> compare la note d'aujourd'hui à celle calculée sur la
+plus ancienne valeur disponible de la série, avec les mêmes repères. Elle dit si ça
+s'améliore, pas si c'est bon.</p>
+</div>
+
+<div class="encadre encadre-jaune"><strong>Ce que cette note n'est pas.</strong>
+{{ i.reglages.avertissement }}</div>
+
+<h2>Le détail, indicateur par indicateur</h2>
+<p class="explication">Chaque ligne montre la valeur réelle, les deux repères et la
+note obtenue. Tout est vérifiable : cliquez sur la source.</p>
+{% for s in i.secteurs %}
+<details class="loi">
+  <summary><h3>{{ s.nom }} — {{ s.note }}/100</h3>
+    <div class="meta">{{ s.composantes | length }} indicateur(s){% if s.tendance is not none %} · tendance {{ '%+.1f' % s.tendance }} point(s){% if s.depuis %} depuis {{ s.depuis }}{% endif %}{% endif %}</div></summary>
+  <div class="corps">
+    {% for c in s.composantes %}
+    <div class="composante">
+      <div class="composante-tete">
+        <strong>{{ c.nom }}</strong>
+        <span class="badge {{ 'badge-vert' if c.note >= 70 else ('badge-jaune' if c.note >= 40 else 'badge-rouge') }}">{{ c.note }}/100</span>
+      </div>
+      <div class="detail">Valeur actuelle : <strong>{{ c.valeur }}</strong>{% if c.annee %} ({{ c.annee }}){% endif %}
+        {% if c.note_avant is not none %} · note en {{ c.depuis }} : {{ c.note_avant }}/100{% endif %}</div>
+      <div class="echelle-note">
+        <span class="borne">{{ c.borne0 }}{{ ' ' ~ c.unite if c.unite and c.unite|length < 4 }}</span>
+        <div class="rail"><div class="jauge-note" style="width: {{ c.note }}%"></div></div>
+        <span class="borne">{{ c.borne100 }}{{ ' ' ~ c.unite if c.unite and c.unite|length < 4 }}</span>
+      </div>
+      <p class="detail">{{ c.repere }}
+        {% if c.source_url %}<a class="source" href="{{ c.source_url }}">{{ c.source_nom or 'Source' }}</a>{% endif %}
+        {% if c.maison %}<span class="badge badge-bleu">Calcul maison</span>{% endif %}</p>
+    </div>
+    {% endfor %}
+    <p><a href="/secteurs/{{ s.slug }}">Voir la fiche complète du secteur →</a></p>
+  </div>
+</details>
+{% endfor %}
+
+<h2>Les limites, dites franchement</h2>
+<ul class="prose">
+  <li><strong>{{ i.nb_indicateurs }} indicateurs</strong> pour {{ i.secteurs | length }} secteurs :
+  c'est peu pour résumer une société. Les régions et plusieurs dimensions de la
+  qualité de vie n'ont pas encore d'indicateur ici.</li>
+  <li><strong>Les repères sont des choix.</strong> Déplacer le 0 ou le 100 change la
+  note. Ils sont donc tous affichés, avec leur justification.</li>
+  <li><strong>Les années diffèrent</strong> d'un indicateur à l'autre : certains datent
+  de 2021, d'autres d'août 2026. Chaque valeur porte son année.</li>
+  <li><strong>Ce n'est pas un bulletin de gouvernement.</strong> La plupart de ces
+  chiffres bougent sur dix ans et dépendent aussi d'Ottawa, des municipalités, de la
+  démographie et de l'économie mondiale.</li>
+</ul>
+
+<div class="note-verif">Mis à jour le {{ i.reglages.maj_texte }}. Une idée d'indicateur ou
+un repère mal choisi? <a href="https://github.com/ibratim2026/tracabilite-quebec/issues">Dites-le-nous</a> :
+la méthode se corrige en public.</div>
+{% endblock %}

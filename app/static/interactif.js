@@ -435,6 +435,7 @@
     { cle: "page:/lois-et-projets", nom: "Voir les lois et les grands projets" },
     { cle: "page:/election/decoder", nom: "Décoder la campagne" },
     { cle: "priorites", nom: "Choisir mes priorités" },
+    { cle: "indice", nom: "Régler ma note du Québec" },
     { cle: "quiz", nom: "Jouer à « Devinez le chiffre »" },
     { cle: "aveugle", nom: "Faire le comparateur à l'aveugle" },
     { cle: "budget", nom: "Jouer au ministre des Finances" },
@@ -466,6 +467,102 @@
       }
       h("p", "detail", "Votre progression reste dans votre navigateur. Elle n'est jamais envoyée nulle part.", el);
     });
+  }
+
+  /* ---------------------------------------------------------- l'état du Québec */
+  function indice(el) {
+    var d = donnees(el);
+    if (!d) return;
+    var poids = {};
+    d.secteurs.forEach(function (s) { poids[s.slug] = s.poids; });
+    try {
+      var garde = JSON.parse(localStorage.getItem("tq-poids") || "null");
+      if (garde) d.secteurs.forEach(function (s) {
+        if (typeof garde[s.slug] === "number") poids[s.slug] = garde[s.slug];
+      });
+    } catch (e) { /* ignoré */ }
+
+    var zone = h("div", "indice", null, el);
+    var tete = h("div", "indice-tete", null, zone);
+    var bloc = h("div", "indice-note", null, tete);
+    var chiffre = h("div", "indice-chiffre", null, bloc);
+    var libelle = h("div", "indice-libelle", null, bloc);
+    var jauge = h("div", "indice-anneau", null, tete);
+    var resume = h("p", "indice-resume", null, tete);
+
+    var grille = h("div", "indice-secteurs", null, zone);
+    var reglages = h("details", "indice-reglages", null, zone);
+    h("summary", null, "Régler l'importance de chaque secteur", reglages);
+    h("p", "detail", d.reglages.note_poids, reglages);
+    var curseurs = h("div", "indice-curseurs", null, reglages);
+
+    function qualite(n) {
+      return n >= 75 ? "bon" : n >= 55 ? "moyen" : n >= 40 ? "faible" : "mauvais";
+    }
+
+    function calculer() {
+      var total = 0, somme = 0;
+      d.secteurs.forEach(function (s) { total += poids[s.slug]; somme += s.note * poids[s.slug]; });
+      var note = total ? somme / total : 0;
+      chiffre.textContent = nf(note, 1);
+      libelle.textContent = "sur 100";
+      jauge.style.setProperty("--part", note + "%");
+      jauge.dataset.qualite = qualite(note);
+      resume.textContent = "Moyenne pondérée de " + d.secteurs.length + " secteurs et "
+        + d.nb_indicateurs + " indicateurs sourcés. Réglez les pondérations : la note est la vôtre.";
+
+      grille.textContent = "";
+      d.secteurs.slice().sort(function (a, b) { return b.note - a.note; }).forEach(function (s) {
+        var c = h("a", "indice-secteur", null, grille);
+        c.href = (window.TQ_BASE || "") + "/secteurs/" + s.slug;
+        c.dataset.qualite = qualite(s.note);
+        var t = h("div", "indice-secteur-tete", null, c);
+        h("span", null, s.nom, t);
+        h("strong", null, nf(s.note, 0), t);
+        var rail = h("div", "rail", null, c);
+        h("div", "jauge-note", null, rail).style.width = s.note + "%";
+        var bas = h("div", "indice-secteur-bas", null, c);
+        h("span", null, "poids " + poids[s.slug] + " %", bas);
+        if (s.tendance !== null && s.tendance !== undefined) {
+          var fleche = s.tendance > 1 ? "▲" : s.tendance < -1 ? "▼" : "→";
+          var e = h("span", "tendance tendance-" + (s.tendance > 1 ? "haut" : s.tendance < -1 ? "bas" : "stable"), null, bas);
+          e.textContent = fleche + " " + (s.tendance > 0 ? "+" : "") + nf(s.tendance, 1) + " pt"
+            + (s.depuis ? " depuis " + s.depuis : "");
+          e.title = "Évolution de la note des indicateurs qui ont une série historique";
+        }
+      });
+    }
+
+    d.secteurs.forEach(function (s) {
+      var l = h("label", "indice-curseur", null, curseurs);
+      var t = h("span", null, s.nom, l);
+      var v = h("span", "indice-curseur-val", null, l);
+      var r = h("input", null, null, l);
+      r.type = "range"; r.min = 0; r.max = 30; r.step = 1; r.value = poids[s.slug];
+      r.setAttribute("aria-label", "Importance du secteur " + s.nom);
+      function maj() {
+        poids[s.slug] = +r.value;
+        v.textContent = r.value + " %";
+        try { localStorage.setItem("tq-poids", JSON.stringify(poids)); } catch (e) { /* ignoré */ }
+        marquer("indice");
+        calculer();
+      }
+      r.addEventListener("input", maj);
+      v.textContent = poids[s.slug] + " %";
+    });
+
+    var remise = h("button", "tq-lien", "Revenir à la pondération par défaut", reglages);
+    remise.addEventListener("click", function () {
+      d.secteurs.forEach(function (s) { poids[s.slug] = s.poids; });
+      try { localStorage.removeItem("tq-poids"); } catch (e) { /* ignoré */ }
+      curseurs.querySelectorAll("input").forEach(function (r, n) { r.value = d.secteurs[n].poids; });
+      curseurs.querySelectorAll(".indice-curseur-val").forEach(function (v, n) {
+        v.textContent = d.secteurs[n].poids + " %";
+      });
+      calculer();
+    });
+
+    calculer();
   }
 
   /* ---------------------------------------------------------- vos priorités */
@@ -562,6 +659,7 @@
     document.querySelectorAll("[data-budget]").forEach(budget);
     document.querySelectorAll("[data-filtre-lexique]").forEach(lexique);
     document.querySelectorAll("[data-priorites]").forEach(priorites);
+    document.querySelectorAll("[data-indice]").forEach(indice);
     majParcours();
     // Sous-navigation : amener l'onglet actif dans la zone visible (téléphone).
     var actif = document.querySelector(".sous-nav a.actif");

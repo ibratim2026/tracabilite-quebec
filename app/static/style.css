@@ -774,3 +774,55 @@ a.etoile:hover { color: var(--ambre); text-decoration: none; }
 .onglet-vert.actif { background: var(--vert); border-color: var(--vert); }
 .badge-vert { background: var(--vert-pale); color: var(--vert); }
 .economie-badge { color: var(--vert); font-weight: 700; }
+
+/* ============================ L'état du Québec =========================== */
+.indice-tete { display: grid; grid-template-columns: auto 120px 1fr; gap: 1.6rem;
+  align-items: center; margin-bottom: 1.4rem; }
+.indice-chiffre { font-size: 4.2rem; font-weight: 800; letter-spacing: -.04em; line-height: .95;
+  color: #fff; font-variant-numeric: tabular-nums; }
+.indice-libelle { color: #cbdcf2; font-size: .9rem; }
+.indice-anneau { width: 120px; height: 120px; border-radius: 50%;
+  background: conic-gradient(var(--teinte, #ffab3d) var(--part, 0%), rgba(255,255,255,.14) 0);
+  display: grid; place-items: center; }
+.indice-anneau::after { content: ""; width: 86px; height: 86px; border-radius: 50%; background: #12325f; }
+.indice-anneau[data-qualite="bon"] { --teinte: #43c98c; }
+.indice-anneau[data-qualite="moyen"] { --teinte: #ffab3d; }
+.indice-anneau[data-qualite="faible"] { --teinte: #ff9d5c; }
+.indice-anneau[data-qualite="mauvais"] { --teinte: #ff7a7a; }
+.indice-resume { color: #cbdcf2; font-size: .95rem; }
+.indice-secteurs { display: grid; grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); gap: .7rem; }
+.indice-secteur { background: rgba(255,255,255,.08); border: 1px solid rgba(255,255,255,.16);
+  border-radius: var(--r-m); padding: .8rem .9rem; color: #e8f0fb; transition: var(--t); }
+.indice-secteur:hover { background: rgba(255,255,255,.15); text-decoration: none; transform: translateY(-2px); }
+.indice-secteur-tete { display: flex; justify-content: space-between; align-items: baseline;
+  gap: .6rem; font-size: .92rem; }
+.indice-secteur-tete strong { font-size: 1.35rem; font-variant-numeric: tabular-nums; color: #fff; }
+.indice-secteur .rail { background: rgba(255,255,255,.16); border-radius: 999px; height: 7px;
+  overflow: hidden; margin: .45rem 0 .35rem; }
+.indice-secteur .jauge-note { height: 100%; border-radius: 999px; background: #ffab3d; }
+.indice-secteur[data-qualite="bon"] .jauge-note { background: #43c98c; }
+.indice-secteur[data-qualite="faible"] .jauge-note { background: #ff9d5c; }
+.indice-secteur[data-qualite="mauvais"] .jauge-note { background: #ff7a7a; }
+.indice-secteur-bas { display: flex; justify-content: space-between; font-size: .8rem; color: #a8c0dc; }
+.tendance-haut { color: #43c98c; } .tendance-bas { color: #ff9d9d; }
+.indice-reglages { margin-top: 1.4rem; }
+.indice-reglages summary { cursor: pointer; color: #ffd79a; font-weight: 600; }
+.indice-curseurs { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: .3rem 1.4rem; margin: .8rem 0; }
+.indice-curseur { display: grid; grid-template-columns: 1fr auto; align-items: center;
+  gap: .2rem .6rem; font-size: .9rem; color: #e8f0fb; }
+.indice-curseur input { grid-column: 1 / -1; accent-color: #ffab3d; }
+.indice-curseur-val { font-variant-numeric: tabular-nums; color: #ffd79a; font-weight: 600; }
+.composante { padding: .7rem 0; border-bottom: 1px solid var(--bordure); }
+.composante:last-of-type { border-bottom: none; }
+.composante-tete { display: flex; justify-content: space-between; gap: .8rem; align-items: baseline; }
+.echelle-note { display: grid; grid-template-columns: auto 1fr auto; gap: .6rem;
+  align-items: center; margin: .4rem 0; font-size: .78rem; color: var(--gris-badge); }
+.echelle-note .rail { background: var(--surface-2); border-radius: 999px; height: 8px; overflow: hidden; }
+.jauge-note { height: 100%; background: linear-gradient(90deg, var(--bleu), #7aa7ff); border-radius: 999px; }
+@media (max-width: 720px) {
+  .indice-tete { grid-template-columns: auto 1fr; }
+  .indice-anneau { width: 84px; height: 84px; }
+  .indice-anneau::after { width: 58px; height: 58px; }
+  .indice-resume { grid-column: 1 / -1; }
+}
