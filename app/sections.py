@@ -34,7 +34,8 @@ def charger(nom):
 # appartient à la rubrique dont un préfixe correspond à son chemin.
 NAVIGATION = [
     {"cle": "election", "nom": "Élection 2026", "url": "/election", "prefixes": ["/election"],
-     "sous": [("/election", "Vue d'ensemble"), ("/election/comparateur/", "Comparateur"),
+     "sous": [("/election", "Vue d'ensemble"), ("/election/mieux-voter", "Mieux voter"),
+              ("/election/comparateur/", "Comparateur"),
               ("/election/decoder", "Décoder la campagne"), ("/election/jouer", "Testez-vous")]},
     {"cle": "comprendre", "nom": "Comprendre", "url": "/secteurs",
      "prefixes": ["/secteurs", "/economie-expliquee", "/quebec-canada", "/lois-et-projets", "/quebec-prospere"],
@@ -139,6 +140,36 @@ def jouer():
                    "partis": {pa["slug"]: pa["nom"] for pa in p["partis"]}}
     return render_template("jouer.html", quiz=charger("quiz"), aveugle=aveugle,
                            budget=charger("budget"))
+
+
+@bp.route("/election/mieux-voter")
+def decider():
+    """Aide à la décision, centrée sur l'électeur : ses priorités, l'état du
+    secteur, les questions à poser et le délai d'effet des leviers. Aucun
+    jugement sur les partis (charte + Loi électorale en période électorale)."""
+    e = charger("election") or {}
+    secteurs = charger("secteurs") or []
+    capsule = charger("capsule") or {}
+    plateformes = charger("plateformes") or {}
+    themes = {t["slug"]: t for t in plateformes.get("themes", [])}
+    leviers_par_secteur = {lv["secteur"]: lv for lv in capsule.get("leviers", []) if lv.get("secteur")}
+
+    priorites = []
+    for s in secteurs:
+        kpis = [k for k in s["kpis"] if k.get("valeur")][:3]
+        theme = next((themes[t] for t in s.get("themes_plateformes", []) if t in themes), None)
+        lv = leviers_par_secteur.get(s["slug"])
+        priorites.append({
+            "slug": s["slug"], "nom": s["nom"], "accroche": s["accroche"],
+            "budget": (s.get("budget") or {}).get("montant"),
+            "kpis": [{"nom": k["nom"], "valeur": k["valeur"], "annee": k["annee"],
+                      "comparaison": k.get("comparaison")} for k in kpis],
+            "question": theme["question"] if theme else None,
+            "levier": {"titre": lv["titre_court"], "delai": lv["delai"], "preuve": lv["preuve"],
+                       "effet": lv["effet"], "slug": lv["slug"]} if lv else None,
+        })
+    return render_template("decider.html", e=e, priorites=priorites,
+                           leviers=capsule.get("leviers", []))
 
 
 @bp.route("/election/decoder")

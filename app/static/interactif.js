@@ -434,6 +434,7 @@
     { cle: "page:/secteurs/", nom: "Lire la fiche d'un secteur" },
     { cle: "page:/lois-et-projets", nom: "Voir les lois et les grands projets" },
     { cle: "page:/election/decoder", nom: "Décoder la campagne" },
+    { cle: "priorites", nom: "Choisir mes priorités" },
     { cle: "quiz", nom: "Jouer à « Devinez le chiffre »" },
     { cle: "aveugle", nom: "Faire le comparateur à l'aveugle" },
     { cle: "budget", nom: "Jouer au ministre des Finances" },
@@ -467,6 +468,75 @@
     });
   }
 
+  /* ---------------------------------------------------------- vos priorités */
+  function priorites(el) {
+    var d = donnees(el);
+    if (!d || !d.length) return;
+    var choisis = [];
+    var zone = h("div", null, null, el);
+    var choix = h("div", "tq-priorites", null, zone);
+    var resultat = h("div", null, null, zone);
+
+    d.forEach(function (s) {
+      var b = h("button", "tq-priorite", s.nom, choix);
+      b.addEventListener("click", function () {
+        var i = choisis.indexOf(s.slug);
+        if (i >= 0) { choisis.splice(i, 1); }
+        else if (choisis.length < 3) { choisis.push(s.slug); }
+        else { return; }
+        b.classList.toggle("choisi", i < 0);
+        afficher();
+      });
+    });
+    var aide = h("p", "detail", "Jusqu'à trois sujets.", zone);
+
+    function afficher() {
+      resultat.textContent = "";
+      aide.textContent = choisis.length >= 3
+        ? "Trois sujets choisis. Retirez-en un pour en ajouter un autre."
+        : "Jusqu'à trois sujets. " + (3 - choisis.length) + " restant(s).";
+      if (!choisis.length) return;
+      marquer("priorites");
+      choisis.forEach(function (slug) {
+        var s = d.filter(function (x) { return x.slug === slug; })[0];
+        var c = h("div", "carte tq-fiche-priorite", null, resultat);
+        var t = h("h3", null, s.nom, c);
+        h("p", null, s.accroche, c);
+        if (s.budget) h("p", "detail", "Budget : " + s.budget, c);
+        if (s.kpis.length) {
+          h("div", "surtitre", "L'état des lieux", c);
+          var ul = h("ul", "tq-kpis-priorite", null, c);
+          s.kpis.forEach(function (k) {
+            var li = h("li", null, null, ul);
+            h("strong", null, k.valeur + " ", li);
+            li.appendChild(document.createTextNode(k.nom + (k.annee ? " (" + k.annee + ")" : "")));
+            if (k.comparaison) h("span", "detail", " · " + k.comparaison, li);
+          });
+        }
+        if (s.question) {
+          h("div", "surtitre", "La question de fond", c);
+          h("p", null, s.question, c);
+        }
+        if (s.levier) {
+          h("div", "surtitre", "Ce que dit la recherche", c);
+          var p = h("p", null, null, c);
+          h("span", "badge delai-" + s.levier.delai,
+            { court: "Effet en moins de 2 ans", moyen: "Effet en 2 à 10 ans", long: "Effet après 10 ans" }[s.levier.delai], p);
+          p.appendChild(document.createTextNode(" " + s.levier.effet));
+        }
+        var liens = h("p", null, null, c);
+        var a1 = h("a", null, "Voir la fiche complète du secteur →", liens);
+        a1.href = (window.TQ_BASE || "") + "/secteurs/" + s.slug;
+      });
+      if (!window.TQ_PRUDENT) {
+        var note = h("p", "note-verif", "Comparez ensuite ce que proposent les partis sur ces sujets : ", resultat);
+        var a = h("a", null, "ouvrir le comparateur", note);
+        a.href = (window.TQ_BASE || "") + "/election/comparateur/";
+      }
+    }
+    afficher();
+  }
+
   /* ---------------------------------------------------------- filtre du lexique */
   function lexique(champ) {
     var termes = document.querySelectorAll("[data-terme]");
@@ -491,6 +561,7 @@
     document.querySelectorAll("[data-aveugle]").forEach(aveugle);
     document.querySelectorAll("[data-budget]").forEach(budget);
     document.querySelectorAll("[data-filtre-lexique]").forEach(lexique);
+    document.querySelectorAll("[data-priorites]").forEach(priorites);
     majParcours();
     // Sous-navigation : amener l'onglet actif dans la zone visible (téléphone).
     var actif = document.querySelector(".sous-nav a.actif");

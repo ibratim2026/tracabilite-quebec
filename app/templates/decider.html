@@ -1,0 +1,117 @@
+{% extends "base.html" %}
+{% block titre %}Mieux voter : juger une promesse par vous-même — Traçabilité Québec{% endblock %}
+{% block contenu %}
+<div class="surtitre">Élection 2026</div>
+<h1>Mieux voter : juger par vous-même</h1>
+<p class="chapeau">Nous ne dirons jamais quel parti est le meilleur : ce n'est ni
+notre rôle, ni permis à un site comme le nôtre pendant une campagne. Ce que nous
+pouvons faire, c'est vous donner exactement ce qu'il faut pour juger : l'état réel
+de chaque secteur, ce que la recherche dit des solutions proposées, le temps qu'elles
+prennent à produire un effet, et les questions qui démasquent une promesse creuse.</p>
+
+<section class="bande bande-bleue">
+  <div class="surtitre">En 4 étapes</div>
+  <h2>La méthode</h2>
+  <div class="grille-cartes">
+    <div class="carte"><h3>1. Vos priorités</h3>
+      <p>Choisissez les deux ou trois sujets qui comptent le plus pour vous. Le reste
+      est du bruit.</p></div>
+    <div class="carte"><h3>2. L'état des lieux</h3>
+      <p>Regardez où en est vraiment ce secteur : les chiffres de départ, pas les
+      slogans.</p></div>
+    <div class="carte"><h3>3. Les promesses</h3>
+      <p>Lisez ce que chaque parti propose, dans ses propres mots, et passez-le au
+      test des six questions.</p></div>
+    <div class="carte"><h3>4. Le délai</h3>
+      <p>Vérifiez si l'effet promis est possible en un mandat. Beaucoup de solutions
+      réelles prennent dix ans.</p></div>
+  </div>
+</section>
+
+{# ------------------------------------------------ 1. Priorités #}
+<h2 id="priorites">1. Quelles sont vos priorités?</h2>
+<p class="explication">Choisissez jusqu'à trois sujets. Le site rassemble pour vous
+l'état des lieux, les questions à poser et où lire les propositions.</p>
+<div data-priorites>
+  <script type="application/json">{{ priorites | tojson }}</script>
+</div>
+
+{# ------------------------------------------------ 2. Six questions #}
+<h2 id="questions">2. Les six questions qui démasquent une promesse creuse</h2>
+<p class="explication">Appliquez-les à n'importe quelle promesse, de n'importe quel
+parti. Une promesse solide résiste aux six.</p>
+<ol class="questions">
+  {% for q in e.lire_une_promesse %}
+  <li><strong>{{ q.question }}</strong><span>{{ q.pourquoi }}</span></li>
+  {% endfor %}
+</ol>
+<div class="encadre encadre-bleu"><strong>Un exemple de calcul que vous pouvez faire
+vous-même.</strong> Une mesure à 1 G$ par année représente environ 110 $ par
+Québécois, ou l'équivalent d'environ 36 écoles primaires par année. Sur un mandat
+de quatre ans, c'est 4 G$. Comparez toujours au budget du secteur concerné, que
+vous trouverez sur sa fiche.</div>
+
+{# ------------------------------------------------ 3. Délais #}
+<h2 id="delais">3. Ce qu'un gouvernement peut vraiment changer en quatre ans</h2>
+<p class="explication">Le mandat dure quatre ans. Or, selon la recherche, les leviers
+les plus puissants sont aussi les plus lents. Voici le délai avant qu'un effet soit
+mesurable, d'après les études citées dans notre capsule
+<a href="/quebec-prospere">« Un Québec prospère et heureux »</a>.</p>
+<table class="table-cartes">
+  <thead><tr><th>Levier</th><th>Effet mesurable après</th><th>Solidité de la preuve</th><th>Secteur</th></tr></thead>
+  <tbody>
+    {% for lv in leviers %}
+    <tr>
+      <td><strong>{{ lv.titre_court }}</strong><br><span class="detail">{{ lv.resume | truncate(110) }}</span></td>
+      <td data-label="Délai"><span class="badge delai-{{ lv.delai }}">{{ {'court':'Moins de 2 ans','moyen':'2 à 10 ans','long':'10 ans et plus'}[lv.delai] }}</span></td>
+      <td data-label="Preuve"><span class="badge preuve-{{ lv.preuve }}">{{ {'forte':'Solide','moyenne':'Modérée','debattue':'Débattue'}[lv.preuve] }}</span></td>
+      <td data-label="Secteur">{% if lv.secteur %}<a href="/secteurs/{{ lv.secteur }}">Voir la fiche</a>{% endif %}</td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+<div class="piege"><strong>Le piège du cycle électoral.</strong> Les mesures qui
+donnent un résultat rapide sont surtout des transferts d'argent ou des changements
+de règles. Celles qui enrichissent durablement une société sont presque toutes
+lentes. Un parti qui promet un redressement rapide de la productivité ou des
+résultats scolaires promet quelque chose que la recherche n'observe nulle part.</div>
+
+{# ------------------------------------------------ 4. Vérifier #}
+<h2 id="verifier">4. Vérifier ce qu'on vous dit</h2>
+<div class="grille-cartes">
+  <a class="carte carte-lien" href="/election/decoder">
+    <h3>Les notions qu'on confond</h3>
+    <p>Déficit ou dette, promesse ou cadre financier, qui décide quoi entre Québec,
+    Ottawa et les villes.</p></a>
+  <a class="carte carte-lien" href="/economie-expliquee">
+    <h3>L'économie expliquée</h3>
+    <p>D'où vient l'argent, où il va, et le lexique des mots des débats.</p></a>
+  <a class="carte carte-lien" href="/lois-et-projets">
+    <h3>Le bilan de la législature</h3>
+    <p>Les lois adoptées depuis 2022 et l'écart entre le coût annoncé et le coût
+    actuel des grands projets.</p></a>
+</div>
+<p class="explication">Pour les affirmations entendues en campagne, consultez
+directement les vérificateurs :
+{% for v in e.verificateurs %}<a href="{{ v.url }}">{{ v.nom }}</a>{{ ', ' if not loop.last }}{% endfor %}.</p>
+
+{# ------------------------------------------------ 5. Voter #}
+<section class="bande bande-claire">
+  <div class="surtitre">Pratique</div>
+  <h2>Aller voter</h2>
+  <ul class="dates-cles">
+    {% for d in e.dates %}
+    <li><strong>{{ d.date }}</strong><span>{{ d.quoi }}</span></li>
+    {% endfor %}
+  </ul>
+  <p class="explication">{{ e.pieces_identite }}</p>
+  <p><a href="{{ e.lien_dgeq }}">Trouver mon bureau de vote et vérifier mon inscription sur le site d'Élections Québec →</a></p>
+</section>
+
+<div class="note-verif"><strong>Pourquoi nous n'évaluons pas les partis.</strong>
+Deux raisons. D'abord notre charte : nous donnons les faits, le choix revient aux
+citoyens. Ensuite la loi : pendant la période électorale, un tiers qui commente ou
+analyse les programmes engage une dépense électorale au sens de la Loi électorale du
+Québec. Nous nous en tenons donc aux faits, aux sources et aux outils de jugement.
+<a href="/a-propos">Notre charte complète</a>.</div>
+{% endblock %}
