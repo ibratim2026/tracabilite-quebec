@@ -724,3 +724,14 @@ a.bandeau-election:hover { text-decoration: none; box-shadow: var(--ombre-3); tr
 .tq-kpis-priorite li { padding: .3rem 0; border-bottom: 1px solid var(--bordure); font-size: .93rem; }
 .tq-kpis-priorite li:last-child { border-bottom: none; }
 .tq-kpis-priorite strong { color: var(--encre); font-variant-numeric: tabular-nums; }
+
+/* ============================ Curseur fleur de lys ======================= */
+/* Le lys bleu remplace la flèche; une variante ambre marque ce qui est
+   cliquable. Les navigateurs sans curseur SVG (Safari) reprennent les
+   curseurs du système, et les champs de saisie gardent le curseur texte. */
+body { cursor: url("curseur-lys.svg") 15 2, auto; }
+a, button, summary, label, .onglet, .carte-lien, .tq-priorite, .tq-option,
+[role="button"], input[type="range"], select {
+  cursor: url("curseur-lys-actif.svg") 15 2, pointer;
+}
+input[type="search"], input[type="text"], textarea { cursor: text; }
