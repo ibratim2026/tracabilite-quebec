@@ -134,11 +134,16 @@ règles d'Élections Québec sur les comparatifs de programmes. Le jour du scrut
 aucune mise à jour n'est publiée.</p>
 </div>
 
-<h2>Corrections</h2>
+<h2 id="corrections">Journal des corrections</h2>
+<p class="explication">Un site qui ne se trompe jamais ment. Voici nos erreurs et ce
+qu'on en a fait, dans l'ordre où elles ont été corrigées.</p>
 {% if corrections %}
-<ul class="prose">
-  {% for c in corrections %}<li><strong>{{ c.date }}</strong> : {{ c.texte }}{% if c.page %} (<a href="{{ c.page }}">page</a>){% endif %}</li>{% endfor %}
-</ul>
+<ol class="corrections">
+  {% for c in corrections %}
+  <li><div class="correction-date">{{ c.date }}</div>
+    <p>{{ c.texte }}{% if c.page %} <a href="{{ c.page }}">Voir la page corrigée →</a>{% endif %}</p></li>
+  {% endfor %}
+</ol>
 {% else %}
 <p class="explication">Aucune correction publiée à ce jour. Si vous repérez une
 erreur, elle sera corrigée et listée ici avec sa date.</p>

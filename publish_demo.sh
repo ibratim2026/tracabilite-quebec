@@ -28,6 +28,7 @@ echo ""
 echo "=== Publication de la démo, $(date '+%Y-%m-%d %H:%M') ==="
 
 .venv/bin/python pipeline/export_static.py
+.venv/bin/python pipeline/export_donnees.py
 
 TMPGIT=$(mktemp -d)/git
 export GIT_DIR="$TMPGIT" GIT_WORK_TREE="$PWD/data/site_statique"

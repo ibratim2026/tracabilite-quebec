@@ -1,1 +1,32 @@
-[]
+[
+ {
+  "date": "22 septembre 2026",
+  "texte": "Les comparaisons de coûts dans le temps ne tenaient pas compte de l'inflation. Nous comparions des dollars de 2017 à des dollars de 2026 comme s'ils valaient la même chose, ce qui exagérait les dépassements. Nous avons intégré l'indice des prix du Québec et affichons désormais, quand l'année d'annonce est connue, la hausse en dollars courants et la hausse réelle. Exemple : SAAQclic passe de « ×1,7 » à « ×1,4 une fois l'inflation retirée ».",
+  "page": "/lois-et-projets"
+ },
+ {
+  "date": "22 septembre 2026",
+  "texte": "Le site ne signalait que les écarts de coût vers le haut. Un lecteur a fait remarquer qu'un contrat de la Société de transport de Montréal, octroyé à 59,2 M$ et terminé à 48,8 M$, n'était présenté que par son signal « gré à gré », sans mention de l'économie de 10,5 M$. Nous avons ajouté un onglet « Économies réalisées » (28 794 contrats) et un encadré sur les fiches concernées.",
+  "page": "/ce-qui-ne-fait-pas-de-sens?type=ECONOMIE"
+ },
+ {
+  "date": "22 septembre 2026",
+  "texte": "Une estimation du solde fiscal Québec-Canada, tirée d'un document partisan et rapportée par un seul journal, figurait dans notre dossier de recherche. Faute de vérification dans le document d'origine, elle a été retirée avant publication.",
+  "page": "/quebec-canada"
+ },
+ {
+  "date": "22 septembre 2026",
+  "texte": "Trois coûts de départ de grands projets étaient affichés comme « Non vérifié », une formule ambiguë. Ils indiquent maintenant « Pas de source officielle trouvée », et ces projets sont exclus du graphique de comparaison des coûts.",
+  "page": "/lois-et-projets"
+ },
+ {
+  "date": "22 septembre 2026",
+  "texte": "Le nombre de contrats affiché sur l'accueil et dans la page d'erreur était figé à « 215 000 » depuis juillet. Il est désormais calculé à partir de la base, qui en contient 229 167.",
+  "page": "/"
+ },
+ {
+  "date": "22 septembre 2026",
+  "texte": "La mise à jour quotidienne des données échouait silencieusement depuis le 8 juillet : macOS empêche les tâches planifiées de lire le Bureau. Les données affichées dataient donc de plus de deux mois. Le problème est corrigé et les contrats vont maintenant jusqu'en août 2026.",
+  "page": "/methodologie"
+ }
+]

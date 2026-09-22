@@ -15,6 +15,9 @@
     <div class="carte"><h3>Ce qui reste débattu</h3>
       <p>Quand la réponse dépend d'un choix de valeurs ou d'une méthode contestée,
       c'est dit dans un bloc séparé. On ne tranche pas.</p></div>
+    <div class="carte"><h3>D'où vient l'impression</h3>
+      <p>Quand une idée répandue ne colle pas aux chiffres, on explique aussi
+      pourquoi elle circule. Elle a presque toujours une raison.</p></div>
     <div class="carte"><h3>Aucun parti</h3>
       <p>On corrige des chiffres, pas des adversaires. Aucune réponse ne vise ni ne
       soutient un parti.</p></div>
@@ -44,6 +47,9 @@
     <div class="faq-corps">
       <p class="faq-courte">{{ q.reponse_courte }}</p>
       <p>{{ q.details }}</p>
+      {% if q.origine %}
+      <div class="faq-origine"><strong>D'où vient l'impression :</strong> {{ q.origine }}</div>
+      {% endif %}
       {% if q.debat %}
       <div class="faq-debat"><strong>Ce qui reste débattu :</strong> {{ q.debat }}</div>
       {% endif %}

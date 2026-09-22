@@ -1,6 +1,6 @@
 {
  "maj_texte": "22 septembre 2026",
- "chapeau": "« On clarifie » répond aux questions que les Québécois posent le plus souvent en ligne sur les sujets chauds de l'heure. Chaque réponse s'appuie sur des chiffres sourcés, avec l'année et le lien vers le document d'origine. Et chaque fois que c'est nécessaire, elle sépare nettement ce que les données montrent de ce qui reste débattu — quand deux sources crédibles se contredisent, les deux sont présentées.",
+ "chapeau": "« On clarifie » reprend les questions que les Québécois posent le plus souvent en ligne et va voir ce que disent les sources. On ne corrige pas des gens : on compare des chiffres à leur origine. Quand une impression répandue ne colle pas aux données, on explique aussi d'où elle vient, parce qu'elle a presque toujours une raison. Et quand deux sources crédibles se contredisent, on montre les deux.",
  "categories": [
   {
    "slug": "immigration",
@@ -144,7 +144,8 @@
        "nom": "Commissaire à la langue française, rapport annuel 2025-2026, 3 juin 2026",
        "url": "https://www.commissairelanguefrancaise.quebec/nouvelles/communique/rapport-annuel-regard-avenir/"
       }
-     ]
+     ],
+     "origine": "L'impression vient de plusieurs faits réels : la hausse rapide des résidents non permanents, très concentrée à Montréal, l'anglais entendu dans les commerces du centre-ville, et des titres de presse annonçant des données qui n'existent pas encore. Les chiffres les plus récents du recensement datent de 2021."
     },
     {
      "question": "Le recensement de 2026 a-t-il montré une baisse du français ?",
@@ -231,7 +232,8 @@
        "nom": "Commissaire à la santé et au bien-être, Rapport de performance, 11 juin 2026",
        "url": "https://www.csbe.gouv.qc.ca/publication/rapport-performance-2025-2026.html"
       }
-     ]
+     ],
+     "origine": "L'expérience vécue est bien réelle : des centaines de milliers de personnes cherchent un médecin de famille et les urgences débordent. Le nombre de médecins par habitant ne contredit pas ce vécu ; il indique que l'explication est ailleurs, du côté du volume de services rendus, du travail administratif et de l'organisation de la première ligne."
     },
     {
      "question": "Le Québec dépense-t-il trop en santé ?",
@@ -294,7 +296,8 @@
        "nom": "SCHL, Rapport sur le marché locatif 2025 (enquête d'octobre 2025, publiée le 11 décembre 2025)",
        "url": "https://www.cmhc-schl.gc.ca/professionals/housing-markets-data-and-research/market-reports/rental-market-reports-major-centres"
       }
-     ]
+     ],
+     "origine": "Ce n'est pas une impression sortie de nulle part. Le loyer moyen mélange les baux anciens, protégés par la reconduction, et les nouveaux. Quelqu'un qui déménage aujourd'hui ne paie pas la moyenne : il paie le prix du marché actuel, qui a souvent bondi de bien plus de 62 % pour un même logement. Pour un ménage qui a changé de logement deux fois depuis 2018, l'écart ressenti peut effectivement approcher le double."
     },
     {
      "question": "Pourquoi les loyers montent-ils autant, même quand il y a plus de logements vides ?",

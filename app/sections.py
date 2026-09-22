@@ -49,8 +49,9 @@ NAVIGATION = [
                   "/recherche", "/contrat", "/organisme", "/fournisseur"],
      "sous": [("/", "Où va l'argent"), ("/ce-qui-ne-fait-pas-de-sens", "Ce qui ne fait pas de sens"),
               ("/aux-nouvelles", "Aux nouvelles"), ("/meilleur-des-mondes", "Meilleur des mondes")]},
-    {"cle": "apropos", "nom": "À propos", "url": "/a-propos", "prefixes": ["/a-propos", "/methodologie"],
-     "sous": [("/a-propos", "Qui fait ce site"), ("/methodologie", "Méthodologie")]},
+    {"cle": "apropos", "nom": "À propos", "url": "/a-propos", "prefixes": ["/a-propos", "/methodologie", "/donnees"],
+     "sous": [("/a-propos", "Qui fait ce site"), ("/methodologie", "Méthodologie"),
+              ("/donnees", "Données brutes")]},
 ]
 
 
@@ -424,6 +425,14 @@ def faq():
 @bp.route("/quebec-prospere")
 def capsule():
     return render_template("capsule.html", c=charger("capsule"))
+
+
+@bp.route("/donnees")
+def donnees():
+    fichiers = charger("donnees")
+    if not fichiers:
+        abort(404)
+    return render_template("donnees.html", fichiers=fichiers)
 
 
 @bp.route("/a-propos")

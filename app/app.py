@@ -7,7 +7,8 @@ seao.gouv.qc.ca et fichier de données ouvertes d'origine.
 import sqlite3
 from pathlib import Path
 
-from flask import Flask, abort, g, render_template, request
+from flask import (Flask, abort, g, render_template, request,
+                   send_from_directory)
 
 RACINE = Path(__file__).resolve().parent.parent
 BASE = RACINE / "data" / "seao.db"
@@ -701,6 +702,13 @@ def fiche_saaqclic():
     return render_template("saaqclic.html", nb_saaq=nb_saaq,
                            total_saaq=total_saaq, lgs=lgs,
                            nom_saaq=nom_saaq[0] if nom_saaq else "")
+
+
+@app.route("/donnees/<path:nom>")
+def fichier_donnees(nom):
+    """Sert les exports CSV en local; en version publiée, ce sont des fichiers
+    statiques produits par pipeline/export_donnees.py."""
+    return send_from_directory(RACINE / "data" / "site_statique" / "donnees", nom)
 
 
 @app.route("/methodologie")

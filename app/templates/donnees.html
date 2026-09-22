@@ -1,0 +1,64 @@
+{% extends "base.html" %}
+{% block titre %}Données brutes à télécharger — Traçabilité Québec{% endblock %}
+{% block contenu %}
+<div class="surtitre">À propos</div>
+<h1>Les données, sans passer par nous</h1>
+<p class="chapeau">Tout ce que ce site affiche vient de fichiers publics et de
+calculs que vous pouvez refaire. Voici nos fichiers de travail, en format ouvert.
+Si un de nos chiffres est faux, ces fichiers permettent de le prouver.</p>
+
+<section class="bande bande-bleue">
+  <div class="surtitre">Trois niveaux</div>
+  <h2>Remonter la chaîne jusqu'à la source</h2>
+  <div class="grille-cartes">
+    <a class="carte carte-lien" href="https://www.donneesquebec.ca/recherche/dataset/systeme-electronique-dappel-doffres-seao">
+      <h3>1. La source officielle</h3>
+      <p>Les fichiers du SEAO, publiés par le Secrétariat du Conseil du trésor sur
+      Données Québec. Nous ne les modifions jamais.</p></a>
+    <a class="carte carte-lien" href="#fichiers">
+      <h3>2. Nos consolidations</h3>
+      <p>Ce que notre pipeline en tire : signaux détectés, économies, indicateurs.
+      Format CSV, ouvrable dans Excel ou Numbers.</p></a>
+    <a class="carte carte-lien" href="https://github.com/ibratim2026/tracabilite-quebec">
+      <h3>3. Le code</h3>
+      <p>Les règles de détection, les calculs de notes et les conversions
+      d'inflation, lisibles ligne par ligne.</p></a>
+  </div>
+</section>
+
+<h2 id="fichiers">Les fichiers</h2>
+<table class="table-cartes">
+  <thead><tr><th>Fichier</th><th>Contenu</th><th class="num">Lignes</th><th class="num">Taille</th></tr></thead>
+  <tbody>
+  {% for f in fichiers %}
+  <tr>
+    <td><a href="/donnees/{{ f.fichier }}" download><strong>{{ f.fichier }}</strong></a></td>
+    <td data-label="Contenu">{{ f.description }}</td>
+    <td class="num" data-label="Lignes">{{ f.lignes | nombre }}</td>
+    <td class="num" data-label="Taille">{{ (f.octets / 1000000) | round(1) }} Mo</td>
+  </tr>
+  {% endfor %}
+  </tbody>
+</table>
+<p class="explication">Les deux plus gros fichiers sont compressés (.zip) pour ne pas
+alourdir chaque publication du site. Encodage UTF-8, séparateur virgule.</p>
+
+<h2>Ce que vous pouvez vérifier avec ça</h2>
+<ul class="prose">
+  <li><strong>Recompter nos signaux.</strong> Le fichier des signaux contient l'identifiant
+  de chaque contrat et son lien vers l'avis officiel au SEAO. Vous pouvez remonter
+  n'importe quelle ligne jusqu'à sa source.</li>
+  <li><strong>Refaire la note « état du Québec ».</strong> Le fichier des indicateurs donne
+  chaque valeur, son année et l'adresse de sa source. Les repères de calcul sont
+  affichés sur la page de la note.</li>
+  <li><strong>Contester un écart de coût.</strong> Le fichier des grands projets donne le coût
+  annoncé, le coût actuel, l'année d'annonce quand elle est connue, et les sources.</li>
+  <li><strong>Vérifier nos conversions d'inflation</strong> avec la série officielle de
+  l'indice des prix.</li>
+</ul>
+
+<div class="note-verif">Licence : les données du SEAO restent soumises à la licence de
+Données Québec. Nos fichiers dérivés et notre code peuvent être réutilisés librement,
+avec mention de la source. Mise à jour à chaque publication du site.
+Voir aussi la <a href="/methodologie#verifier">méthodologie</a>.</div>
+{% endblock %}
