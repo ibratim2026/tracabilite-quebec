@@ -2040,5 +2040,95 @@
    "constat": "Synthèse des cinq cadres financiers (19 septembre 2026). Tous partent du rapport préélectoral et « sur papier, ça balance » pour tous les partis. La Chaire précise ne porter « aucune appréciation de la pertinence des mesures ».",
    "url": "https://cffp.recherche.usherbrooke.ca/wp-content/uploads/2026/09/r2026-19_cadres_financiers_Qc_vf.pdf"
   }
- ]
+ ],
+ "tous_les_partis": {
+  "intro": "Vingt partis autorisés présentent au moins deux candidatures à cette élection, pour un total de 908 candidatures, auxquelles s'ajoutent 19 candidats indépendants. Les voici tous, en ordre alphabétique, avec leur nombre de candidatures.",
+  "source_nom": "Élections Québec, communiqué du 17 septembre 2026",
+  "source_url": "https://www.electionsquebec.qc.ca/communiques/elections-provinciales-de-2026-908-candidatures-acceptees/",
+  "liste": [
+   {
+    "nom": "Bloc pot",
+    "candidatures": 5
+   },
+   {
+    "nom": "Climat Québec",
+    "candidatures": 52
+   },
+   {
+    "nom": "Démocratie directe",
+    "candidatures": 28
+   },
+   {
+    "nom": "Osons Québec",
+    "candidatures": 2
+   },
+   {
+    "nom": "Parti accès propriété et équité – Équipe Québec debout",
+    "candidatures": 6
+   },
+   {
+    "nom": "Parti canadien du Québec / Canadian Party of Québec",
+    "candidatures": 29
+   },
+   {
+    "nom": "Parti communiste du Québec",
+    "candidatures": 10
+   },
+   {
+    "nom": "Parti conservateur du Québec",
+    "candidatures": 127
+   },
+   {
+    "nom": "Parti culinaire du Québec",
+    "candidatures": 4
+   },
+   {
+    "nom": "Parti libertarien du Québec",
+    "candidatures": 3
+   },
+   {
+    "nom": "Parti libéral du Québec / Quebec Liberal Party",
+    "candidatures": 127
+   },
+   {
+    "nom": "Parti marxiste-léniniste du Québec",
+    "candidatures": 12
+   },
+   {
+    "nom": "Parti nul",
+    "candidatures": 38
+   },
+   {
+    "nom": "Parti québécois",
+    "candidatures": 127
+   },
+   {
+    "nom": "Parti vert du Québec / Green Party of Québec",
+    "candidatures": 37
+   },
+   {
+    "nom": "Présence Québec",
+    "candidatures": 18
+   },
+   {
+    "nom": "Québec innovant",
+    "candidatures": 2
+   },
+   {
+    "nom": "Québec solidaire",
+    "candidatures": 127
+   },
+   {
+    "nom": "Équipe autonomiste",
+    "candidatures": 8
+   },
+   {
+    "nom": "Équipe Christine Fréchette – Coalition avenir Québec",
+    "candidatures": 127
+   }
+  ],
+  "independants": 19,
+  "total": 908,
+  "circonscriptions": 127
+ }
 }

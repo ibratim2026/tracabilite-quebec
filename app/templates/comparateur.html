@@ -4,6 +4,38 @@
 <h1>Ce que proposent les partis</h1>
 {% if prudent %}
 <div class="encadre encadre-bleu">{{ note_prudent }}</div>
+
+{% if p.tous_les_partis %}
+<section class="bande bande-bleue">
+  <div class="surtitre">La liste officielle</div>
+  <h2>Qui se présente le 5 octobre</h2>
+  <p class="chapeau">{{ p.tous_les_partis.intro }}</p>
+  <div class="grille-partis">
+    {% for x in p.tous_les_partis.liste %}
+    <div class="parti-ligne"><span>{{ x.nom }}</span><strong class="num">{{ x.candidatures }}</strong></div>
+    {% endfor %}
+    <div class="parti-ligne parti-independants"><span>Candidats indépendants</span><strong class="num">{{ p.tous_les_partis.independants }}</strong></div>
+  </div>
+  <p class="source">Source : <a href="{{ p.tous_les_partis.source_url }}">{{ p.tous_les_partis.source_nom }}</a>.
+  {{ p.tous_les_partis.total }} candidatures dans {{ p.tous_les_partis.circonscriptions }} circonscriptions.
+  Un parti qui présente moins de deux candidatures perd son autorisation.</p>
+</section>
+{% endif %}
+
+<h2>Pourquoi nous ne comparons pas encore les engagements</h2>
+<div class="prose">
+<p>Pendant la période électorale, un site comme le nôtre ne peut pas présenter les
+partis à sa guise. L'exception qui autorise un comparatif de programmes impose trois
+conditions : couvrir <strong>tous</strong> les partis autorisés qui présentent au
+moins deux candidatures, soit les vingt ci-dessus, n'ajouter <strong>aucun
+commentaire ni analyse</strong>, et publier sa méthode.</p>
+<p>Nous avons relevé 183 engagements, mais seulement pour les cinq partis qui ont
+publié une plateforme ou un cadre financier. Les présenter sans les quinze autres
+serait un traitement inégal. Nous demandons donc une confirmation écrite à Élections
+Québec avant de publier cette comparaison. D'ici là, voici où lire les programmes
+par vous-même.</p>
+</div>
+
 <h2>Où consulter les plateformes</h2>
 <ul class="prose">
   <li><a href="https://ici.radio-canada.ca/info/2026/elections-quebec/comparateur-programmes-plateformes-partis/">Le comparateur des programmes de Radio-Canada</a></li>
