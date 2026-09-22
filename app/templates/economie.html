@@ -74,6 +74,7 @@ pour voir le détail. En {{ e.annee }}, le Québec prévoit percevoir
 </div>
 
 {# ------------------------------------------------ 2. Déficit (cascade) #}
+<section class="bande bande-bleue">
 <h2 id="deficit">2. Pourquoi on entend deux chiffres de déficit</h2>
 <p class="explication">Le déficit n'est pas seulement « revenus moins dépenses ».
 Voici, étape par étape, comment on passe des revenus au déficit officiel. Les
@@ -88,6 +89,7 @@ deux chiffres qu'on entend en campagne sont vrais : ils ne mesurent pas la même
   {% endfor %}
 </div>
 <p class="source">Source : <a href="{{ e.source_url }}">{{ e.source_nom }}</a>, tableau du cadre financier.</p>
+</section>
 
 {# ------------------------------------------------ 3. Dettes #}
 <h2 id="dette">3. Les trois dettes du Québec ({{ e.dette_date }})</h2>

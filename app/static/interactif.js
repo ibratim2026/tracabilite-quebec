@@ -16,7 +16,7 @@
 
   var NS = "http://www.w3.org/2000/svg";
 
-  // Les couleurs viennent des jetons CSS : elles suivent donc le mode sombre.
+  // Les couleurs des graphiques viennent des jetons CSS, comme le reste du site.
   function jeton(nom, secours) {
     var v = getComputedStyle(document.documentElement).getPropertyValue(nom).trim();
     return v || secours;
@@ -482,28 +482,7 @@
     });
   }
 
-  /* ---------------------------------------------------------- thème clair/sombre */
-  function theme() {
-    var b = document.getElementById("bascule-theme");
-    if (!b) return;
-    b.addEventListener("click", function () {
-      var sombre = document.documentElement.dataset.theme === "sombre";
-      document.documentElement.dataset.theme = sombre ? "clair" : "sombre";
-      try { localStorage.setItem("tq-theme", sombre ? "clair" : "sombre"); } catch (e) { /* ignoré */ }
-      // Les graphiques sont dessinés en SVG : on les redessine aux couleurs du thème.
-      relireCouleurs();
-      document.querySelectorAll("[data-graph-serie], [data-haltere]").forEach(function (el) {
-        var svg = el.querySelector("svg"), tab = el.querySelector(".tq-table"), scroll = el.querySelector(".ig-scroll");
-        if (svg) svg.remove();
-        if (tab) tab.remove();
-        if (scroll) scroll.remove();
-        (el.hasAttribute("data-haltere") ? haltere : grapheSerie)(el);
-      });
-    });
-  }
-
   function init() {
-    theme();
     var chemin = location.pathname.replace(/^\/tracabilite-quebec/, "").replace(/\/$/, "") || "/";
     if (/^\/(election|secteurs|lois-et-projets|quebec-prospere|economie-expliquee|quebec-canada)/.test(chemin)) marquer("page:" + chemin);
     document.querySelectorAll("[data-graph-serie]").forEach(grapheSerie);

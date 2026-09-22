@@ -62,7 +62,9 @@ provinces. Certains domaines sont exclusifs, d'autres sont partagés.</p>
 </div>
 {% endif %}
 {% if q.argent.solde_fiscal %}
-<h3>Le Québec donne-t-il plus qu'il ne reçoit?</h3>
+<section class="bande bande-bleue">
+<div class="surtitre">Le chiffre le plus contesté du débat</div>
+<h2>Le Québec donne-t-il plus qu'il ne reçoit?</h2>
 <p class="explication">{{ q.argent.solde_fiscal.texte }}</p>
 <table class="table-cartes">
   <thead><tr><th>Qui a fait le calcul</th><th>Orientation</th><th>Résultat</th><th>Année</th></tr></thead>
@@ -72,6 +74,7 @@ provinces. Certains domaines sont exclusifs, d'autres sont partagés.</p>
   {% endfor %}
   </tbody>
 </table>
+</section>
 {% endif %}
 
 <h2 id="ententes">Les ententes particulières</h2>

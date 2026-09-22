@@ -80,6 +80,14 @@ aux électeurs.</p>
 </section>
 <div class="encadre encadre-jaune"><strong>Le piège du court terme.</strong> {{ c.piege_court_terme }}</div>
 
+{% if c.paradoxe %}
+<section class="bande bande-bleue">
+  <div class="surtitre">Le paradoxe québécois</div>
+  <h2>Plus heureux que riche</h2>
+  <p class="chapeau">{{ c.paradoxe }}</p>
+</section>
+{% endif %}
+
 <h2>Et la transparence dans tout ça?</h2>
 <div class="prose"><p>{{ c.transparence }}</p></div>
 

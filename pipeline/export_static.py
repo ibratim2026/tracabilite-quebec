@@ -164,9 +164,9 @@ def main():
     (SORTIE / ".nojekyll").write_text("")
     dossier_static = SORTIE / "static"
     dossier_static.mkdir(exist_ok=True)
-    for f in (RACINE / "app" / "static").iterdir():
-        if f.is_file():
-            shutil.copy(f, dossier_static / f.name)
+    # Copie tout le dossier static, sous-dossiers compris (polices, images).
+    shutil.rmtree(dossier_static)
+    shutil.copytree(RACINE / "app" / "static", dossier_static)
 
     print(f"{len(exportes)} pages exportées vers {SORTIE}")
 

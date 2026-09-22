@@ -5,12 +5,13 @@
 <h1>Élection 2026 : comprendre avant de choisir</h1>
 <p class="chapeau">{{ e.chapeau }}{% if e.chapeau_source %} <a class="source" href="{{ e.chapeau_source.url }}">(source)</a>{% endif %}</p>
 
-<div class="bandeau-election">
-  <div><div class="chiffre" id="jours">{{ e.jours_restants }}</div><div class="detail">jours avant le scrutin</div></div>
+<section class="bande bande-bleue bandeau-election">
+  <div><div class="chiffre" id="jours">{{ e.jours_restants }}</div>
+    <div class="detail">jours avant le scrutin</div></div>
   <p>Le vote a lieu le <strong>{{ e.date_scrutin_texte }}</strong>. Vous pouvez aussi voter
-  par anticipation ou au bureau du directeur du scrutin.
-  <a href="{{ e.lien_dgeq }}">Tout savoir sur Élections Québec →</a></p>
-</div>
+  par anticipation, les <strong>27 et 28 septembre</strong>, ou au bureau du directeur du
+  scrutin. <a href="{{ e.lien_dgeq }}">Tout savoir sur Élections Québec →</a></p>
+</section>
 
 <div data-parcours></div>
 
