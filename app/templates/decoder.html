@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+{% block titre %}Décoder la campagne — Élection 2026 — Traçabilité Québec{% endblock %}
+{% block contenu %}
+<h1>Décoder la campagne</h1>
+<p class="chapeau">{{ e.decoder_chapeau }}</p>
+
+<div class="encadre encadre-bleu"><strong>Budget, déficit, dette : tout comprendre en 5 minutes.</strong>
+La page <a href="/economie-expliquee">L'économie expliquée</a> montre où va l'argent
+du Québec, pourquoi il y a deux chiffres de déficit, les trois dettes, et un lexique
+de tous les mots du débat.</div>
+
+<h2>Qui décide quoi?</h2>
+<p class="explication">Beaucoup de promesses touchent des sujets qui relèvent
+en partie d'Ottawa ou des villes. Savoir qui tient le levier permet de juger
+ce qu'un gouvernement du Québec peut vraiment livrer.</p>
+<div class="qui-fait-quoi">
+  {% for pal in e.qui_fait_quoi %}
+  <div class="carte"><h3>{{ pal.palier }}</h3><p>{{ pal.responsable_de }}</p></div>
+  {% endfor %}
+</div>
+
+<h2>Les notions qu'on confond souvent</h2>
+{% for n in e.notions %}
+<div class="encadre encadre-bleu"><strong>{{ n.titre }}</strong><br>{{ n.texte | safe }}
+  {% if n.source_url %}<span class="source"><a href="{{ n.source_url }}">{{ n.source_nom }}</a></span>{% endif %}</div>
+{% endfor %}
+
+<h2>Vérifier une affirmation</h2>
+<p class="explication">Des médias vérifient les affirmations des partis et les
+rumeurs qui circulent pendant la campagne. Nous ne reprenons pas leurs verdicts
+ici : consultez directement leur travail.</p>
+<ul class="prose">
+  {% for v in e.verificateurs %}<li><a href="{{ v.url }}">{{ v.nom }}</a> : {{ v.quoi }}</li>{% endfor %}
+</ul>
+
+{% if e.mythes and not prudent %}
+<h2>Les affirmations de la campagne, vérifiées</h2>
+<p class="explication">Ces vérifications viennent de médias qui font de la
+vérification des faits. Nous résumons leur verdict et renvoyons à leur analyse
+complète. Tous les partis y passent.</p>
+{% for m in e.mythes %}
+<div class="mythe">
+  <span class="verdict verdict-{{ m.verdict }}">{{ {'vrai':'Vrai','nuance':'À nuancer','faux':'Faux'}[m.verdict] }}</span>
+  <span class="affirmation">« {{ m.affirmation }} »</span>
+  {% if m.qui %}<span class="detail"> ({{ m.qui }})</span>{% endif %}
+  <p>{{ m.explication }}</p>
+  <span class="source">Vérification : <a href="{{ m.source_url }}">{{ m.source_nom }}</a></span>
+</div>
+{% endfor %}
+{% endif %}
+{% endblock %}

@@ -1,0 +1,109 @@
+{% extends "base.html" %}
+{% block titre %}{{ s.nom }} — Secteurs et indicateurs — Traçabilité Québec{% endblock %}
+{% block contenu %}
+<nav class="fil"><a href="/secteurs">Secteurs et indicateurs</a> › {{ s.nom }}</nav>
+<h1>{{ s.nom }}</h1>
+<p class="chapeau">{{ s.accroche }}</p>
+
+<h2>C'est quoi?</h2>
+<div class="prose"><p>{{ s.cest_quoi }}</p>
+{% if s.qui_decide %}<p><strong>Qui décide :</strong> {{ s.qui_decide }}</p>{% endif %}</div>
+
+{% if s.budget %}
+<h2>Ce que ça coûte</h2>
+<ul class="prose">
+  <li><strong>{{ s.budget.montant }}</strong>{% if s.budget.annee %} <span class="detail">({{ s.budget.annee }})</span>{% endif %}</li>
+  {% if s.budget.part %}<li>{{ s.budget.part }}</li>{% endif %}
+</ul>
+{% if s.budget.note %}<p class="explication">{{ s.budget.note }}</p>{% endif %}
+{% if s.budget.source_url %}<p class="source">Source : <a href="{{ s.budget.source_url }}">{{ s.budget.source_nom }}</a></p>{% endif %}
+{% endif %}
+
+<h2>Les indicateurs à surveiller</h2>
+<div class="kpis">
+  {% for k in s.kpis %}
+  <div class="kpi">
+    <div class="nom-kpi">{{ k.nom }}</div>
+    <div class="valeur-kpi">{{ k.valeur }} {% if k.annee %}<small>({{ k.annee }})</small>{% endif %}</div>
+    <div class="def">{{ k.definition }}</div>
+    {% if k.serie and k.serie | length > 1 %}<div data-graph-serie><script type="application/json">{{ k | tojson }}</script></div>{% endif %}
+    <dl>
+      {% if k.tendance %}<dt>Tendance</dt><dd>{{ k.tendance }}</dd>{% endif %}
+      {% if k.comparaison %}<dt>Ailleurs</dt><dd>{{ k.comparaison }}</dd>{% endif %}
+      {% if k.cible %}<dt>Cible</dt><dd>{{ k.cible }}</dd>{% endif %}
+    </dl>
+    <div class="source">Source : {% if k.source_url %}<a href="{{ k.source_url }}">{{ k.source_nom }}</a>{% else %}{{ k.source_nom }}{% endif %}{% for a in k.autres_sources %} · <a href="{{ a.url }}">{{ a.nom }}</a>{% endfor %}</div>
+  </div>
+  {% endfor %}
+</div>
+
+{% if s.pieges %}
+<h2>Les chiffres qui trompent</h2>
+{% for pg in s.pieges %}
+<div class="piege"><strong>{{ pg.titre }}</strong><br>{{ pg.texte }}</div>
+{% endfor %}
+{% endif %}
+
+{% if seao and seao.nb %}
+<h2>Les contrats publics de ce secteur</h2>
+<p class="explication">Contrats octroyés depuis janvier 2025 par les organismes
+associés à ce secteur, repérés par le nom de l'organisme acheteur dans le SEAO.
+C'est un ordre de grandeur : les salaires et les transferts n'y sont pas, et
+certains achats passent par des centres d'acquisition communs.</p>
+<div class="cartes-stats">
+  <div class="carte"><div class="chiffre">{{ seao.total | montant }}</div>
+    <div class="etiquette">en contrats ({{ seao.nb | nombre }} octrois)</div></div>
+  <div class="carte"><div class="chiffre">{{ seao.pct_gag | round(0) | int }} %</div>
+    <div class="etiquette">de cette valeur octroyée de gré à gré</div></div>
+  <div class="carte"><div class="chiffre">{{ seao.signaux.get('DEPASSEMENT', 0) | nombre }}</div>
+    <div class="etiquette">contrats terminés au-dessus du montant octroyé</div></div>
+</div>
+<table>
+  <thead><tr><th>Principaux organismes acheteurs</th><th class="num">Valeur</th><th class="num">Octrois</th></tr></thead>
+  <tbody>
+  {% for o in seao.acheteurs %}
+    <tr><td><a href="/organisme?nom={{ o.nom | urlencode }}">{{ o.nom | truncate(70) }}</a></td>
+      <td class="num">{{ o.valeur | montant }}</td><td class="num">{{ o.nb | nombre }}</td></tr>
+  {% endfor %}
+  </tbody>
+</table>
+{% endif %}
+
+{% if lois %}
+<h2>Les lois récentes qui touchent ce secteur</h2>
+<ul class="prose">
+  {% for l in lois %}<li><a href="{{ l.url }}">{{ l.numero }} : {{ l.titre }}</a>. {{ l.change }}</li>{% endfor %}
+</ul>
+{% endif %}
+
+{% if projets %}
+<h2>Les grands projets</h2>
+{% for pr in projets %}
+<div class="encadre encadre-jaune"><strong>{{ pr.nom }}</strong>. {{ pr.resume }}
+  {% if pr.cout_actuel %}<br><span class="detail">Coût : {{ pr.cout_initial or '—' }} → <strong>{{ pr.cout_actuel }}</strong> · {{ pr.statut }}</span>{% endif %}</div>
+{% endfor %}
+<p><a href="/lois-et-projets">Tous les projets et leurs coûts →</a></p>
+{% endif %}
+
+{% if engagements and not prudent %}
+<h2>Ce que proposent les partis dans ce secteur</h2>
+<p class="explication">Extrait du <a href="/election/comparateur/{{ s.themes_plateformes[0] }}">comparateur électoral</a>.
+Partis en ordre alphabétique.</p>
+<div class="colonnes-partis">
+  {% for pa in p.partis %}
+  <div class="col-parti"><h3>{{ pa.nom }}</h3>
+    {% for eng in engagements if eng.parti == pa.slug %}
+    <div class="engagement">{{ eng.texte }}
+      {% if eng.cout %}<br><span class="cout">{{ eng.cout }}</span>{% endif %}
+      <span class="source"><a href="{{ eng.source_url }}">Source</a></span></div>
+    {% else %}<p class="vide">Aucun engagement repéré.</p>{% endfor %}
+  </div>
+  {% endfor %}
+</div>
+{% endif %}
+
+<h2>Les autres secteurs</h2>
+<div class="themes">
+  {% for x in tous if x.slug != s.slug %}<a class="onglet" href="/secteurs/{{ x.slug }}">{{ x.nom }}</a>{% endfor %}
+</div>
+{% endblock %}

@@ -1,0 +1,1165 @@
+{
+ "maj_texte": "22 septembre 2026",
+ "chapeau": "Cette page rassemble les lois adoptées pendant la 43e législature (2022-2026) et les projets de loi morts à la dissolution de l'Assemblée nationale, le 27 août 2026. Elle présente aussi les grands projets publics, avec leur coût annoncé et leur coût actuel, et les mesures récentes qui touchent le portefeuille des ménages. Chaque information renvoie à sa source.",
+ "projets_intro": "Les coûts viennent du Plan québécois des infrastructures, du tableau de bord des projets de 20 M$ et plus du Conseil du trésor (données ouvertes) et, à défaut, de reportages de presse. Un coût qui augmente n'est pas forcément une faute : un projet peut grossir ou changer en route, et l'inflation fait monter les prix de construction.",
+ "lois_intro": "Voici 40 lois adoptées par l'Assemblée nationale et sanctionnées entre décembre 2022 et juin 2026, choisies pour leur effet direct sur la vie des gens. Les descriptions viennent surtout des notes explicatives des projets de loi ; un texte a pu être modifié avant son adoption.",
+ "mortes_intro": "Au Québec, un projet de loi qui n'est pas adopté avant la dissolution de l'Assemblée nationale meurt : on dit qu'il « meurt au feuilleton ». Pour le faire revivre, il faudrait le déposer de nouveau après l'élection et reprendre toutes les étapes.",
+ "pqi": {
+  "titre": "Le Plan québécois des infrastructures 2026-2036",
+  "texte": "Québec prévoit investir 167 G$ dans ses infrastructures sur 10 ans, soit 3 G$ de plus que dans le plan précédent. De cette somme, 105,8 G$ (71 %) servent à entretenir et remettre en état les infrastructures existantes, et 43,2 G$ à en construire de nouvelles. Les routes reçoivent la plus grosse part, 35,7 G$, dont 88 % pour le maintien.",
+  "source_nom": "Plan québécois des infrastructures 2026-2036 (Conseil du trésor, 18 mars 2026)",
+  "source_url": "https://cdn-contenu.quebec.ca/cdn-contenu/adm/min/secretariat-du-conseil-du-tresor/publications-adm/budgets/2026-2027/6_plan_quebecois_infrastructures.pdf"
+ },
+ "projets": [
+  {
+   "nom": "Tramway de Québec",
+   "nom_court": "Tramway de Québec",
+   "secteur": "transport",
+   "cout_initial": "Pas de source officielle trouvée",
+   "cout_actuel": "7,6 G$ (décembre 2024)",
+   "cout_initial_num": null,
+   "cout_actuel_num": null,
+   "echeance_initiale": "Automne 2026",
+   "echeance_actuelle": "2033",
+   "statut": "en planification",
+   "resume": "En décembre 2024, le coût a été fixé à 7,6 G$ et la mise en service reportée à 2033, avec CDPQ Infra comme maître d'œuvre. Selon la Ville, le projet reste dans cette enveloppe ; le coût final est attendu en 2027.",
+   "sources": [
+    {
+     "nom": "Radio-Canada, 16 décembre 2024",
+     "url": "https://ici.radio-canada.ca/nouvelle/2127171/tramway-tramcite-projet-milliards"
+    },
+    {
+     "nom": "Le Soleil, 1er avril 2026",
+     "url": "https://www.lesoleil.com/actualites/actualites-locales/la-capitale/2026/04/01/tramway-rien-ne-laisse-croire-a-des-depassements-de-couts-HPHDZMX7SNDODGSMFBTWU5R3BA/"
+    },
+    {
+     "nom": "Conseil du trésor, tableau de bord des projets de 20 M$ et plus (données ouvertes, 20 août 2026)",
+     "url": "https://www.donneesquebec.ca/recherche/dataset/67d85a7a-10af-4af0-b4da-abc64cfd735a/resource/1f3ea7fa-d8c6-4054-937d-fcc76be81803/download/donnees_ouvertes_tb_20260820.csv"
+    }
+   ]
+  },
+  {
+   "nom": "Troisième lien Québec-Lévis",
+   "nom_court": "Troisième lien",
+   "secteur": "transport",
+   "cout_initial": "6 à 7 G$ (tunnel, mai 2021)",
+   "cout_actuel": "Aucun coût officiel",
+   "cout_initial_num": null,
+   "cout_actuel_num": null,
+   "echeance_initiale": null,
+   "echeance_actuelle": null,
+   "statut": "en planification",
+   "resume": "Le projet a changé plusieurs fois de forme depuis 2021 ; en juillet 2025, un pont-tunnel était estimé entre 5,3 et 9,3 G$. Un appel d'intérêt international lancé en juin 2026 a reçu 21 propositions, sans coût ni échéancier officiels.",
+   "sources": [
+    {
+     "nom": "Radio-Canada, 17 mai 2021",
+     "url": "https://ici.radio-canada.ca/nouvelle/1793883/"
+    },
+    {
+     "nom": "La Presse, 8 juillet 2025",
+     "url": "https://www.lapresse.ca/actualites/politique/2025-07-08/troisieme-lien-quebec-levis/le-projet-pourrait-couter-pres-de-10-milliards.php"
+    },
+    {
+     "nom": "Québec.ca, appel d'intérêt, 25 juin 2026",
+     "url": "https://www.quebec.ca/nouvelles/actualites/details/troisieme-lien-entre-quebec-et-levis-le-gouvernement-frechette-lance-lappel-dinteret-international-71449"
+    },
+    {
+     "nom": "La Presse, 11 août 2026",
+     "url": "https://www.lapresse.ca/actualites/politique/2026-08-11/troisieme-lien-quebec-levis/le-gouvernement-a-recu-21-propositions-d-entreprises.php"
+    }
+   ]
+  },
+  {
+   "nom": "Prolongement de la ligne bleue du métro de Montréal",
+   "nom_court": "Ligne bleue (Montréal)",
+   "secteur": "transport",
+   "cout_initial": "6,4 G$ (estimation avant 2024)",
+   "cout_actuel": "7,6 G$ (7 576,5 M$, juillet 2024)",
+   "cout_initial_num": 6.4,
+   "cout_actuel_num": 7.5765,
+   "echeance_initiale": "2026",
+   "echeance_actuelle": "Mai 2031",
+   "statut": "en réalisation",
+   "resume": "Le coût est passé de 6,4 à 7,6 G$ après les appels d'offres, et la mise en service a été repoussée à 2031. Le tunnelier a commencé à creuser en mai 2026, pour environ 6 km.",
+   "sources": [
+    {
+     "nom": "Radio-Canada, 23 août 2024",
+     "url": "https://ici.radio-canada.ca/nouvelle/2099178/prolongement-ligne-bleue-2031"
+    },
+    {
+     "nom": "La Presse, 13 mai 2026",
+     "url": "https://www.lapresse.ca/actualites/grand-montreal/2026-05-13/prolongement-de-la-ligne-bleue/le-tunnelier-entrera-finalement-en-action.php"
+    },
+    {
+     "nom": "Conseil du trésor, tableau de bord des projets de 20 M$ et plus (données ouvertes, 20 août 2026)",
+     "url": "https://www.donneesquebec.ca/recherche/dataset/67d85a7a-10af-4af0-b4da-abc64cfd735a/resource/1f3ea7fa-d8c6-4054-937d-fcc76be81803/download/donnees_ouvertes_tb_20260820.csv"
+    }
+   ]
+  },
+  {
+   "nom": "REM de l'Est / Projet structurant de l'Est (Montréal)",
+   "nom_court": "Projet structurant de l'Est",
+   "secteur": "transport",
+   "cout_initial": "Pas de source officielle trouvée",
+   "cout_actuel": "Non publié",
+   "cout_initial_num": null,
+   "cout_actuel_num": null,
+   "echeance_initiale": null,
+   "echeance_actuelle": null,
+   "statut": "à l'étude",
+   "resume": "Le REM de l'Est, annoncé par CDPQ Infra en 2020, a été abandonné en 2022. Le projet qui l'a remplacé est « à l'étude » depuis mars 2023, sans coût ni échéancier publiés.",
+   "sources": [
+    {
+     "nom": "Conseil du trésor, tableau de bord des projets de 20 M$ et plus (données ouvertes, 20 août 2026)",
+     "url": "https://www.donneesquebec.ca/recherche/dataset/67d85a7a-10af-4af0-b4da-abc64cfd735a/resource/1f3ea7fa-d8c6-4054-937d-fcc76be81803/download/donnees_ouvertes_tb_20260820.csv"
+    }
+   ]
+  },
+  {
+   "nom": "Hôpital de Vaudreuil-Soulanges",
+   "nom_court": "Hôpital Vaudreuil-Soulanges",
+   "secteur": "sante",
+   "cout_initial": "2,6 G$ (2 595 M$, juin 2022)",
+   "cout_actuel": "2,6 G$ (2 595 M$)",
+   "cout_initial_num": 2.595,
+   "cout_actuel_num": 2.595,
+   "echeance_initiale": "Novembre 2026",
+   "echeance_actuelle": "Août 2027",
+   "statut": "en réalisation",
+   "resume": "Le coût n'a pas changé depuis 2022, mais l'ouverture a été reportée de novembre 2026 à août 2027 (report autorisé en juin 2025).",
+   "sources": [
+    {
+     "nom": "Conseil du trésor, tableau de bord des projets de 20 M$ et plus (données ouvertes, 20 août 2026)",
+     "url": "https://www.donneesquebec.ca/recherche/dataset/67d85a7a-10af-4af0-b4da-abc64cfd735a/resource/1f3ea7fa-d8c6-4054-937d-fcc76be81803/download/donnees_ouvertes_tb_20260820.csv"
+    }
+   ]
+  },
+  {
+   "nom": "Nouveau complexe hospitalier de l'Hôpital de l'Enfant-Jésus (CHU de Québec)",
+   "nom_court": "Hôpital Enfant-Jésus",
+   "secteur": "sante",
+   "cout_initial": "2,0 G$ (1 967,5 M$, 2018)",
+   "cout_actuel": "2,7 G$ (2 656,9 M$)",
+   "cout_initial_num": 1.9675,
+   "cout_actuel_num": 2.6569,
+   "echeance_initiale": "Décembre 2025",
+   "echeance_actuelle": "Décembre 2031",
+   "statut": "en réalisation",
+   "resume": "Le coût a augmenté deux fois (271,1 M$ en 2022, puis 418,3 M$ en 2025) et la mise en service a reculé de six ans.",
+   "sources": [
+    {
+     "nom": "Conseil du trésor, tableau de bord des projets de 20 M$ et plus (données ouvertes, 20 août 2026)",
+     "url": "https://www.donneesquebec.ca/recherche/dataset/67d85a7a-10af-4af0-b4da-abc64cfd735a/resource/1f3ea7fa-d8c6-4054-937d-fcc76be81803/download/donnees_ouvertes_tb_20260820.csv"
+    }
+   ]
+  },
+  {
+   "nom": "Nouveau pont de l'Île-d'Orléans",
+   "nom_court": "Pont de l'Île-d'Orléans",
+   "secteur": "transport",
+   "cout_initial": "Non retracé",
+   "cout_actuel": "2,8 G$ (2 759,1 M$, mars 2024)",
+   "cout_initial_num": null,
+   "cout_actuel_num": null,
+   "echeance_initiale": null,
+   "echeance_actuelle": "Décembre 2033",
+   "statut": "en réalisation",
+   "resume": "Le coût de 2,8 G$ a été autorisé en mars 2024, après les appels d'offres. La mise en service est prévue en décembre 2033.",
+   "sources": [
+    {
+     "nom": "Conseil du trésor, tableau de bord des projets de 20 M$ et plus (données ouvertes, 20 août 2026)",
+     "url": "https://www.donneesquebec.ca/recherche/dataset/67d85a7a-10af-4af0-b4da-abc64cfd735a/resource/1f3ea7fa-d8c6-4054-937d-fcc76be81803/download/donnees_ouvertes_tb_20260820.csv"
+    }
+   ]
+  },
+  {
+   "nom": "Réfection du tunnel Louis-Hippolyte-La Fontaine",
+   "nom_court": "Tunnel La Fontaine",
+   "secteur": "transport",
+   "cout_initial": "1,3 G$ (1 254,2 M$)",
+   "cout_actuel": "2,8 G$ (2 796,1 M$)",
+   "cout_initial_num": 1.2542,
+   "cout_actuel_num": 2.7961,
+   "echeance_initiale": "Novembre 2024",
+   "echeance_actuelle": "Août 2027",
+   "statut": "en réalisation",
+   "resume": "Le coût a plus que doublé, avec des hausses en 2020, 2022 et 2025. La fin des travaux a été repoussée de près de trois ans.",
+   "sources": [
+    {
+     "nom": "Conseil du trésor, tableau de bord des projets de 20 M$ et plus (données ouvertes, 20 août 2026)",
+     "url": "https://www.donneesquebec.ca/recherche/dataset/67d85a7a-10af-4af0-b4da-abc64cfd735a/resource/1f3ea7fa-d8c6-4054-937d-fcc76be81803/download/donnees_ouvertes_tb_20260820.csv"
+    }
+   ]
+  },
+  {
+   "nom": "Nouveau pont de l'Île-aux-Tourtes",
+   "nom_court": "Pont de l'Île-aux-Tourtes",
+   "secteur": "transport",
+   "cout_initial": "1,5 G$ (1 475,4 M$)",
+   "cout_actuel": "2,3 G$ (2 301,6 M$, avril 2023)",
+   "cout_initial_num": 1.4754,
+   "cout_actuel_num": 2.3016,
+   "echeance_initiale": null,
+   "echeance_actuelle": "Décembre 2027 (ouverture partielle en décembre 2026)",
+   "statut": "en réalisation",
+   "resume": "Le coût a augmenté de 826 M$ en 2023. Le pont doit ouvrir en partie en décembre 2026 et au complet en décembre 2027.",
+   "sources": [
+    {
+     "nom": "Conseil du trésor, tableau de bord des projets de 20 M$ et plus (données ouvertes, 20 août 2026)",
+     "url": "https://www.donneesquebec.ca/recherche/dataset/67d85a7a-10af-4af0-b4da-abc64cfd735a/resource/1f3ea7fa-d8c6-4054-937d-fcc76be81803/download/donnees_ouvertes_tb_20260820.csv"
+    }
+   ]
+  },
+  {
+   "nom": "SAAQclic (programme CASA de la SAAQ)",
+   "nom_court": "SAAQclic",
+   "secteur": "transport",
+   "cout_initial": "638 M$ (dossier d'affaires de 2017)",
+   "cout_actuel": "Au moins 1,1 G$ d'ici mars 2027",
+   "cout_initial_num": 0.638,
+   "cout_actuel_num": 1.1,
+   "echeance_initiale": null,
+   "echeance_actuelle": null,
+   "statut": "en service, en partie abandonné",
+   "resume": "Le service SAAQclic est en ligne depuis février 2023, mais les dernières étapes du programme ont été abandonnées. La commission Gallant a conclu en février 2026 que la SAAQ avait caché le coût total et les dépassements, et a fait 26 recommandations.",
+   "sources": [
+    {
+     "nom": "Vérificateur général du Québec, rapport de février 2025",
+     "url": "https://www.quebec.ca/nouvelles/actualites/details/le-verificateur-general-du-quebec-presente-le-tome-de-fevrier-2025-de-son-rapport-a-lassemblee-nationale-61131"
+    },
+    {
+     "nom": "Radio-Canada, 20 février 2025",
+     "url": "https://ici.radio-canada.ca/nouvelle/2142323/saaqclic-verificatrice-fiasco-saaq"
+    },
+    {
+     "nom": "Radio-Canada, 16 février 2026 (rapport Gallant)",
+     "url": "https://ici.radio-canada.ca/nouvelle/2229424/depot-rapport-commission-gallant-saaq-clic"
+    },
+    {
+     "nom": "La Presse, 16 février 2026",
+     "url": "https://www.lapresse.ca/actualites/2026-02-16/fiasco-saaqclic/quelles-sont-les-recommandations-du-rapport-gallant.php"
+    }
+   ]
+  },
+  {
+   "nom": "Musée national de l'histoire du Québec (ex-Espace bleu de la Capitale-Nationale)",
+   "nom_court": "Musée de l'histoire (Qc)",
+   "secteur": "culture",
+   "cout_initial": "49,8 M$",
+   "cout_actuel": "105,0 M$ (août 2025)",
+   "cout_initial_num": 0.0498,
+   "cout_actuel_num": 0.105,
+   "echeance_initiale": "Mai 2025",
+   "echeance_actuelle": "Mars 2026 (bâtiment)",
+   "statut": "bâtiment livré, équipements à installer",
+   "resume": "Le projet a été réorienté en musée en 2024, et son coût a plus que doublé. Le bâtiment devait être prêt en mars 2026 ; les équipements restent à installer avant l'ouverture.",
+   "sources": [
+    {
+     "nom": "Conseil du trésor, tableau de bord des projets de 20 M$ et plus (données ouvertes, 20 août 2026)",
+     "url": "https://www.donneesquebec.ca/recherche/dataset/67d85a7a-10af-4af0-b4da-abc64cfd735a/resource/1f3ea7fa-d8c6-4054-937d-fcc76be81803/download/donnees_ouvertes_tb_20260820.csv"
+    },
+    {
+     "nom": "Assemblée nationale, loi 64 (2024)",
+     "url": "https://www.assnat.qc.ca/fr/travaux-parlementaires/projets-loi/projet-loi-64-43-1.html"
+    }
+   ]
+  },
+  {
+   "nom": "Northvolt (usine de batteries en Montérégie)",
+   "nom_court": "Northvolt",
+   "secteur": "economie",
+   "cout_initial": "2,7 G$ promis par Québec et Ottawa pour la construction (septembre 2023)",
+   "cout_actuel": "270 M$ perdus par Québec ; prêt de 240 M$ pour le terrain, en partie récupéré",
+   "cout_initial_num": null,
+   "cout_actuel_num": null,
+   "echeance_initiale": null,
+   "echeance_actuelle": null,
+   "statut": "abandonné",
+   "resume": "La maison mère suédoise a fait faillite en 2025 et Québec a mis fin à l'entente le 2 septembre 2025. Northvolt avait reçu 510 M$ en tout ; près de 800 M$ promis n'ont pas été versés.",
+   "sources": [
+    {
+     "nom": "Radio-Canada, 28 septembre 2023",
+     "url": "https://ici.radio-canada.ca/nouvelle/2013496/"
+    },
+    {
+     "nom": "Radio-Canada, 2 septembre 2025",
+     "url": "https://ici.radio-canada.ca/nouvelle/2189759/northvolt-fin-entente-quebec-investissements"
+    },
+    {
+     "nom": "CBC, 6 septembre 2025",
+     "url": "https://www.cbc.ca/news/canada/montreal/northvolt-quebec-1.7626327"
+    }
+   ]
+  },
+  {
+   "nom": "Aide publique à la filière batterie",
+   "nom_court": "Filière batterie",
+   "secteur": "economie",
+   "cout_initial": "Environ 2,2 G$ d'aide autorisée (au 30 septembre 2025)",
+   "cout_actuel": "Pertes estimées de 375,2 M$",
+   "cout_initial_num": null,
+   "cout_actuel_num": null,
+   "echeance_initiale": null,
+   "echeance_actuelle": null,
+   "statut": "en partie abandonné",
+   "resume": "Selon la vérificatrice générale (juin 2026), 11 entreprises ont reçu de l'aide, dont environ 1,9 G$ déjà versés. Les pertes estimées, environ 15 % de l'aide autorisée, viennent à 95 % de Northvolt et de Lion Électrique ; la vérificatrice critique une « approche peu planifiée ».",
+   "sources": [
+    {
+     "nom": "Les Affaires",
+     "url": "https://www.lesaffaires.com/dossiers/developpement-durable-etre-a-lavant-garde/filiere-batterie-6-des-11-projets-finances-par-quebec-sont-tombes-a-leau/"
+    },
+    {
+     "nom": "Radio-Canada, juin 2026",
+     "url": "https://ici.radio-canada.ca/nouvelle/2260580/filiere-batterie-quebec-rapport-vg"
+    },
+    {
+     "nom": "CBC, juin 2026",
+     "url": "https://www.cbc.ca/news/canada/montreal/quebec-auditor-general-battery-sector-northvolt-9.7230352"
+    }
+   ]
+  },
+  {
+   "nom": "Plan d'action 2035 d'Hydro-Québec",
+   "nom_court": "Hydro-Québec 2035",
+   "secteur": "energie",
+   "cout_initial": "155 à 185 G$ d'ici 2035 (novembre 2023)",
+   "cout_actuel": null,
+   "cout_initial_num": null,
+   "cout_actuel_num": null,
+   "echeance_initiale": "2035",
+   "echeance_actuelle": null,
+   "statut": "en réalisation",
+   "resume": "Hydro-Québec prévoit d'ajouter 8 000 à 9 000 MW de puissance d'ici 2035, dont plus de 10 000 MW d'éolien et 3 800 à 4 200 MW d'hydroélectricité. Le plan inclut 45 à 50 G$ pour entretenir les installations existantes.",
+   "sources": [
+    {
+     "nom": "Hydro-Québec, Plan d'action 2035",
+     "url": "https://www.hydroquebec.com/data/a-propos/pdf/plan-action-2035.pdf"
+    }
+   ]
+  },
+  {
+   "nom": "Entente sur Churchill Falls et Gull Island (Terre-Neuve-et-Labrador)",
+   "nom_court": "Churchill Falls",
+   "secteur": "energie",
+   "cout_initial": null,
+   "cout_actuel": "60 G$ d'investissements d'Hydro-Québec et de NL Hydro, plus environ 10 G$ du fédéral",
+   "cout_initial_num": null,
+   "cout_actuel_num": null,
+   "echeance_initiale": null,
+   "echeance_actuelle": null,
+   "statut": "en négociation",
+   "resume": "Une entente-cadre signée le 17 août 2026 donnerait au Québec accès à environ 10 000 MW, à 6,2 ¢/kWh en moyenne. Elle n'est pas contraignante : l'Assemblée de Terre-Neuve-et-Labrador a approuvé la suite des négociations le 17 septembre 2026, par 21 voix contre 18.",
+   "sources": [
+    {
+     "nom": "Radio-Canada, 17 août 2026",
+     "url": "https://ici.radio-canada.ca/nouvelle/2275789/churchill-falls-signature-entente-carney-frechette-wakeham"
+    },
+    {
+     "nom": "CBC, 17 septembre 2026",
+     "url": "https://www.cbc.ca/news/canada/newfoundland-labrador/churchill-falls-debate-vote-9.7347352"
+    }
+   ]
+  },
+  {
+   "nom": "Maisons des aînés",
+   "nom_court": "Maisons des aînés",
+   "secteur": "sante",
+   "cout_initial": "Non publié pour l'ensemble du programme",
+   "cout_actuel": "Environ 2,13 G$ pour 18 projets de 20 M$ et plus",
+   "cout_initial_num": null,
+   "cout_actuel_num": null,
+   "echeance_initiale": "2022 (2 600 résidents visés)",
+   "echeance_actuelle": null,
+   "statut": "en réalisation",
+   "resume": "Parmi les 23 projets de 20 M$ et plus, 2 sont en service, 16 en réalisation et 5 en planification. Plusieurs coûts ont beaucoup augmenté (Maniwaki : de 70 à 127,4 M$), d'autres ont baissé (Jeanne-Le Ber, Montréal : de 269,7 à 237,7 M$).",
+   "sources": [
+    {
+     "nom": "Radio-Canada, 24 avril 2020",
+     "url": "https://ici.radio-canada.ca/nouvelle/1697082/"
+    },
+    {
+     "nom": "Conseil du trésor, tableau de bord des projets de 20 M$ et plus (données ouvertes, 20 août 2026)",
+     "url": "https://www.donneesquebec.ca/recherche/dataset/67d85a7a-10af-4af0-b4da-abc64cfd735a/resource/1f3ea7fa-d8c6-4054-937d-fcc76be81803/download/donnees_ouvertes_tb_20260820.csv"
+    }
+   ]
+  },
+  {
+   "nom": "Modernisation de l'Hôpital Maisonneuve-Rosemont (Montréal)",
+   "nom_court": "Maisonneuve-Rosemont",
+   "secteur": "sante",
+   "cout_initial": "Non publié",
+   "cout_actuel": "Non publié",
+   "cout_initial_num": null,
+   "cout_actuel_num": null,
+   "echeance_initiale": null,
+   "echeance_actuelle": null,
+   "statut": "en planification",
+   "resume": "En planification depuis août 2021 ; des travaux préparatoires ont été autorisés en mai 2025 et en avril 2026. Le coût et la date de fin ne sont pas publiés.",
+   "sources": [
+    {
+     "nom": "Conseil du trésor, tableau de bord des projets de 20 M$ et plus (données ouvertes, 20 août 2026)",
+     "url": "https://www.donneesquebec.ca/recherche/dataset/67d85a7a-10af-4af0-b4da-abc64cfd735a/resource/1f3ea7fa-d8c6-4054-937d-fcc76be81803/download/donnees_ouvertes_tb_20260820.csv"
+    },
+    {
+     "nom": "Plan québécois des infrastructures 2026-2036 (18 mars 2026)",
+     "url": "https://cdn-contenu.quebec.ca/cdn-contenu/adm/min/secretariat-du-conseil-du-tresor/publications-adm/budgets/2026-2027/6_plan_quebecois_infrastructures.pdf"
+    }
+   ]
+  },
+  {
+   "nom": "Centre hospitalier affilié universitaire (CHAU) de l'Outaouais, Gatineau",
+   "nom_court": "CHAU de l'Outaouais",
+   "secteur": "sante",
+   "cout_initial": "Non publié",
+   "cout_actuel": "Non publié",
+   "cout_initial_num": null,
+   "cout_actuel_num": null,
+   "echeance_initiale": null,
+   "echeance_actuelle": null,
+   "statut": "en planification",
+   "resume": "Des travaux préparatoires ont été autorisés en mars 2026. Le coût et la date de mise en service ne sont pas publiés.",
+   "sources": [
+    {
+     "nom": "Conseil du trésor, tableau de bord des projets de 20 M$ et plus (données ouvertes, 20 août 2026)",
+     "url": "https://www.donneesquebec.ca/recherche/dataset/67d85a7a-10af-4af0-b4da-abc64cfd735a/resource/1f3ea7fa-d8c6-4054-937d-fcc76be81803/download/donnees_ouvertes_tb_20260820.csv"
+    },
+    {
+     "nom": "Plan québécois des infrastructures 2026-2036 (18 mars 2026)",
+     "url": "https://cdn-contenu.quebec.ca/cdn-contenu/adm/min/secretariat-du-conseil-du-tresor/publications-adm/budgets/2026-2027/6_plan_quebecois_infrastructures.pdf"
+    }
+   ]
+  },
+  {
+   "nom": "8 000 logements sociaux et abordables",
+   "nom_court": "8 000 logements",
+   "secteur": "logement",
+   "cout_initial": "1,8 G$ sur 5 ans (novembre 2023)",
+   "cout_actuel": "Pas de source officielle trouvée",
+   "cout_initial_num": null,
+   "cout_actuel_num": null,
+   "echeance_initiale": null,
+   "echeance_actuelle": null,
+   "statut": "bilan non publié",
+   "resume": "Annoncé en novembre 2023, la moitié du financement vient d'un transfert fédéral de 900 M$. Le nombre de logements livrés n'a pas été trouvé.",
+   "sources": [
+    {
+     "nom": "Radio-Canada, 7 novembre 2023",
+     "url": "https://ici.radio-canada.ca/nouvelle/2024718/enonce-economique-quebec-automne-2023"
+    }
+   ]
+  },
+  {
+   "nom": "Tramway Gatineau-Ottawa",
+   "nom_court": "Tramway Gatineau-Ottawa",
+   "secteur": "transport",
+   "cout_initial": "Non publié",
+   "cout_actuel": "Non publié",
+   "cout_initial_num": null,
+   "cout_actuel_num": null,
+   "echeance_initiale": null,
+   "echeance_actuelle": null,
+   "statut": "à l'étude",
+   "resume": "Le projet est « à l'étude » depuis mars 2018, sans coût ni échéancier officiels.",
+   "sources": [
+    {
+     "nom": "Conseil du trésor, tableau de bord des projets de 20 M$ et plus (données ouvertes, 20 août 2026)",
+     "url": "https://www.donneesquebec.ca/recherche/dataset/67d85a7a-10af-4af0-b4da-abc64cfd735a/resource/1f3ea7fa-d8c6-4054-937d-fcc76be81803/download/donnees_ouvertes_tb_20260820.csv"
+    }
+   ]
+  },
+  {
+   "nom": "Boulevard Taschereau et prolongement de la ligne jaune (Rive-Sud)",
+   "nom_court": "Taschereau / ligne jaune",
+   "secteur": "transport",
+   "cout_initial": "Non publié",
+   "cout_actuel": "Non publié",
+   "cout_initial_num": null,
+   "cout_actuel_num": null,
+   "echeance_initiale": null,
+   "echeance_actuelle": null,
+   "statut": "à l'étude",
+   "resume": "Le projet est « à l'étude » depuis 2019, sans coût ni échéancier officiels.",
+   "sources": [
+    {
+     "nom": "Conseil du trésor, tableau de bord des projets de 20 M$ et plus (données ouvertes, 20 août 2026)",
+     "url": "https://www.donneesquebec.ca/recherche/dataset/67d85a7a-10af-4af0-b4da-abc64cfd735a/resource/1f3ea7fa-d8c6-4054-937d-fcc76be81803/download/donnees_ouvertes_tb_20260820.csv"
+    }
+   ]
+  },
+  {
+   "nom": "Remplacement du tablier du pont de Québec",
+   "nom_court": "Tablier du pont de Québec",
+   "secteur": "transport",
+   "cout_initial": "Non publié",
+   "cout_actuel": "Non publié",
+   "cout_initial_num": null,
+   "cout_actuel_num": null,
+   "echeance_initiale": null,
+   "echeance_actuelle": null,
+   "statut": "en planification",
+   "resume": "Le projet est en planification, sans coût publié.",
+   "sources": [
+    {
+     "nom": "Conseil du trésor, tableau de bord des projets de 20 M$ et plus (données ouvertes, 20 août 2026)",
+     "url": "https://www.donneesquebec.ca/recherche/dataset/67d85a7a-10af-4af0-b4da-abc64cfd735a/resource/1f3ea7fa-d8c6-4054-937d-fcc76be81803/download/donnees_ouvertes_tb_20260820.csv"
+    }
+   ]
+  },
+  {
+   "nom": "Échangeur Saint-Pierre (Montréal)",
+   "nom_court": "Échangeur Saint-Pierre",
+   "secteur": "transport",
+   "cout_initial": "Non publié",
+   "cout_actuel": "Non publié",
+   "cout_initial_num": null,
+   "cout_actuel_num": null,
+   "echeance_initiale": null,
+   "echeance_actuelle": null,
+   "statut": "en planification",
+   "resume": "Le projet est en planification, sans coût publié.",
+   "sources": [
+    {
+     "nom": "Conseil du trésor, tableau de bord des projets de 20 M$ et plus (données ouvertes, 20 août 2026)",
+     "url": "https://www.donneesquebec.ca/recherche/dataset/67d85a7a-10af-4af0-b4da-abc64cfd735a/resource/1f3ea7fa-d8c6-4054-937d-fcc76be81803/download/donnees_ouvertes_tb_20260820.csv"
+    }
+   ]
+  }
+ ],
+ "adoptees": [
+  {
+   "numero": "Loi 3 (PL 3, 2023)",
+   "titre": "Renseignements de santé",
+   "date": "4 avril 2023",
+   "secteur": "sante",
+   "change": "Crée des règles propres aux renseignements de santé. Certaines données peuvent être utilisées ou transmises sans votre consentement, pour améliorer les services et gérer le réseau. C'est la base de la circulation des données dans le réseau de la santé.",
+   "cout": null,
+   "pour": null,
+   "contre": null,
+   "url": "https://www.assnat.qc.ca/fr/travaux-parlementaires/projets-loi/projet-loi-3-43-1.html"
+  },
+  {
+   "numero": "Loi 10 (PL 10, 2023)",
+   "titre": "Moins d'agences privées de personnel en santé",
+   "date": "20 avril 2023",
+   "secteur": "sante",
+   "change": "Le réseau public ne peut plus faire appel aux agences privées de personnel ni à la main-d'œuvre indépendante, sauf exceptions prévues par règlement. Des inspections et des amendes sont prévues. La loi a été adoptée à l'unanimité (116 voix contre 0).",
+   "cout": null,
+   "pour": null,
+   "contre": null,
+   "url": "https://www.assnat.qc.ca/fr/travaux-parlementaires/projets-loi/projet-loi-10-43-1.html"
+  },
+  {
+   "numero": "Loi 11 (PL 11, 2023)",
+   "titre": "Aide médicale à mourir : demandes anticipées",
+   "date": "7 juin 2023",
+   "secteur": "sante",
+   "change": "Une personne atteinte d'une maladie grave et incurable qui mènera à l'inaptitude (par exemple l'Alzheimer) peut demander à l'avance l'aide médicale à mourir. Elle n'a donc pas à être encore apte au moment du soin. La loi a été adoptée par 103 voix contre 2.",
+   "cout": null,
+   "pour": null,
+   "contre": null,
+   "url": "https://www.assnat.qc.ca/fr/travaux-parlementaires/projets-loi/projet-loi-11-43-1.html"
+  },
+  {
+   "numero": "Loi 15 (PL 15, 2023)",
+   "titre": "Création de Santé Québec",
+   "date": "13 décembre 2023",
+   "secteur": "sante",
+   "change": "Crée Santé Québec, une société d'État qui devient l'employeur unique et le gestionnaire des hôpitaux et établissements publics. Le ministre garde les grandes orientations et la supervision. La loi reconnaît un droit à des services adéquats, continus, personnalisés et sécuritaires.",
+   "cout": null,
+   "pour": "Le gouvernement présente la réforme comme un moyen de rendre le réseau plus agile et plus imputable, géré par un opérateur plutôt que par le ministère.",
+   "contre": "Les partis d'opposition ont voté contre (75 voix pour, 27 contre) et critiquent une centralisation accrue.",
+   "url": "https://www.assnat.qc.ca/fr/travaux-parlementaires/projets-loi/projet-loi-15-43-1.html"
+  },
+  {
+   "numero": "Loi 83 (PL 83, 2025)",
+   "titre": "Nouveaux médecins : 5 ans dans le réseau public",
+   "date": "24 avril 2025",
+   "secteur": "sante",
+   "change": "Tout nouveau médecin doit pratiquer 5 ans dans le régime public avant de pouvoir le quitter pour le privé, sinon il commet une infraction. Le gouvernement peut aussi exiger des étudiants et résidents en médecine un engagement à pratiquer au Québec.",
+   "cout": null,
+   "pour": null,
+   "contre": null,
+   "url": "https://www.assnat.qc.ca/fr/travaux-parlementaires/projets-loi/projet-loi-83-43-1.html"
+  },
+  {
+   "numero": "Loi 2 (PL 2, 2025)",
+   "titre": "Rémunération et accès aux médecins",
+   "date": "25 octobre 2025",
+   "secteur": "sante",
+   "change": "Chaque personne devait être rattachée à un lieu de pratique médicale, et le gouvernement se donnait le pouvoir de fixer par règlement la rémunération des médecins. Selon La Presse, la loi gelait les enveloppes de rémunération jusqu'en 2028 et liait 15 % de la paie à des indicateurs de performance. Elle a été adoptée sous bâillon (procédure qui limite la durée du débat), puis largement modifiée par la loi 19 en février 2026.",
+   "cout": null,
+   "pour": "Le gouvernement disait agir pour les patients, afin d'augmenter le nombre de personnes suivies par un médecin.",
+   "contre": "Les fédérations de médecins (FMSQ et FMOQ) ont annoncé des recours en justice, et l'opposition a dénoncé l'adoption sous bâillon.",
+   "url": "https://www.assnat.qc.ca/fr/travaux-parlementaires/projets-loi/projet-loi-2-43-2.html"
+  },
+  {
+   "numero": "Loi 19 (PL 19, 2026)",
+   "titre": "Entente avec les médecins de famille",
+   "date": "26 février 2026",
+   "secteur": "sante",
+   "change": "Retire au gouvernement le pouvoir de fixer par règlement la rémunération des médecins, cœur de la loi 2. Permet de payer les médecins en partie selon le nombre de patients inscrits (« capitation ») et inscrit d'office certaines personnes auprès d'un médecin. Selon la FMOQ, l'entente prévoit des primes pour la prise en charge d'environ 500 000 patients de plus.",
+   "cout": null,
+   "pour": null,
+   "contre": "Des Médecins québécois pour le régime public (MQRP) jugent que l'approche reste la même et qu'elle coûte cher.",
+   "url": "https://www.assnat.qc.ca/fr/travaux-parlementaires/projets-loi/projet-loi-19-43-2.html"
+  },
+  {
+   "numero": "Loi 9 (PL 9, session 2026)",
+   "titre": "Boissons énergisantes interdites aux moins de 16 ans",
+   "date": "11 juin 2026",
+   "secteur": "sante",
+   "change": "À partir du 11 décembre 2026, il sera interdit de vendre ou de donner une boisson énergisante à une personne de moins de 16 ans. La vente devra se faire en personne. Santé Québec fera les inspections.",
+   "cout": null,
+   "pour": null,
+   "contre": null,
+   "url": "https://www.assnat.qc.ca/fr/travaux-parlementaires/projets-loi/projet-loi-9-43-3.html"
+  },
+  {
+   "numero": "Loi 23 (PL 23, 2026)",
+   "titre": "Hospitalisation forcée en santé mentale (réforme de la loi P-38)",
+   "date": "12 juin 2026",
+   "secteur": "sante",
+   "change": "Il ne sera plus nécessaire qu'une personne présente un danger « grave et immédiat » pour la garder à l'hôpital contre son gré : un danger suffira. Les dossiers passeront au Tribunal administratif du Québec. Une personne pourra aussi écrire à l'avance ses volontés de soins psychiatriques (directive psychiatrique anticipée). La loi entre en vigueur par décret.",
+   "cout": null,
+   "pour": "Des organismes de familles et de proches, comme CAP santé mentale, disent que la loi « enlève un poids sur les épaules des familles ».",
+   "contre": "La Ligue des droits et libertés et une douzaine d'organismes communautaires craignent qu'on confonde danger et simple dérangement, et dénoncent une adoption rapide.",
+   "url": "https://www.assnat.qc.ca/fr/travaux-parlementaires/projets-loi/projet-loi-23-43-2.html"
+  },
+  {
+   "numero": "Loi 23 (PL 23, 2023)",
+   "titre": "Gouvernance scolaire et Institut national d'excellence en éducation",
+   "date": "7 décembre 2023",
+   "secteur": "education",
+   "change": "Le gouvernement nomme désormais les directeurs généraux des centres de services scolaires. Le ministre peut annuler une décision d'un centre de services qui ne respecte pas ses cibles. La loi crée aussi l'Institut national d'excellence en éducation.",
+   "cout": null,
+   "pour": null,
+   "contre": null,
+   "url": "https://www.assnat.qc.ca/fr/travaux-parlementaires/projets-loi/projet-loi-23-43-1.html"
+  },
+  {
+   "numero": "Loi 94 (PL 94, 2025)",
+   "titre": "Laïcité et visage découvert dans les écoles",
+   "date": "30 octobre 2025",
+   "secteur": "education",
+   "change": "Les élèves (écoles publiques et privées, formation professionnelle, éducation des adultes) doivent avoir le visage découvert, tout comme les personnes qui leur donnent des services. La loi précise que le système scolaire repose sur la laïcité et sur des valeurs québécoises comme l'égalité entre les femmes et les hommes.",
+   "cout": null,
+   "pour": null,
+   "contre": null,
+   "url": "https://www.assnat.qc.ca/fr/travaux-parlementaires/projets-loi/projet-loi-94-43-1.html"
+  },
+  {
+   "numero": "Loi 56 (PL 56, 2024)",
+   "titre": "Union parentale pour les conjoints de fait",
+   "date": "4 juin 2024",
+   "secteur": "famille",
+   "change": "Depuis le 30 juin 2025, les conjoints de fait qui ont un enfant né ou adopté après cette date forment une « union parentale ». En cas de rupture, ils partagent un patrimoine commun, dont la résidence familiale, sauf s'ils choisissent ensemble de s'en retirer.",
+   "cout": null,
+   "pour": null,
+   "contre": null,
+   "url": "https://www.assnat.qc.ca/fr/travaux-parlementaires/projets-loi/projet-loi-56-43-1.html"
+  },
+  {
+   "numero": "Loi 12 (PL 12, 2026)",
+   "titre": "Garde subventionnée « en communauté »",
+   "date": "11 juin 2026",
+   "secteur": "famille",
+   "change": "Une responsable de garde reconnue pourra offrir des places subventionnées ailleurs que chez elle, par exemple dans un local communautaire, seule ou avec une autre responsable. La loi entre en vigueur par décret.",
+   "cout": null,
+   "pour": null,
+   "contre": null,
+   "url": "https://www.assnat.qc.ca/fr/travaux-parlementaires/projets-loi/projet-loi-12-43-2.html"
+  },
+  {
+   "numero": "Loi 25 (PL 25, 2023)",
+   "titre": "Location de courte durée (type Airbnb)",
+   "date": "7 juin 2023",
+   "secteur": "logement",
+   "change": "Les plateformes comme Airbnb doivent afficher et vérifier le numéro d'enregistrement de chaque logement offert. Il est interdit de louer à court terme un logement qui n'est pas enregistré.",
+   "cout": null,
+   "pour": null,
+   "contre": null,
+   "url": "https://www.assnat.qc.ca/fr/travaux-parlementaires/projets-loi/projet-loi-25-43-1.html"
+  },
+  {
+   "numero": "Loi 31 (PL 31, 2024)",
+   "titre": "Bail, cession de bail et évictions",
+   "date": "21 février 2024",
+   "secteur": "logement",
+   "change": "Dans un immeuble neuf, le propriétaire doit inscrire au bail le loyer maximal qu'il pourra exiger pendant 5 ans. Quand un locataire veut céder son bail, le propriétaire peut plutôt y mettre fin. L'indemnité d'éviction augmente et c'est au propriétaire de prouver sa bonne foi.",
+   "cout": null,
+   "pour": "Le gouvernement parle d'un meilleur équilibre entre propriétaires et locataires.",
+   "contre": null,
+   "url": "https://www.assnat.qc.ca/fr/travaux-parlementaires/projets-loi/projet-loi-31-43-1.html"
+  },
+  {
+   "numero": "Loi 65 (PL 65, 2024)",
+   "titre": "Moratoire sur certaines évictions",
+   "date": "6 juin 2024",
+   "secteur": "logement",
+   "change": "Pendant 3 ans, un propriétaire ne peut pas évincer un locataire pour agrandir, diviser ou changer l'usage d'un logement (le moratoire prend fin plus tôt si le taux de logements vacants atteint 3 %). Les locataires de 65 ans et plus à revenu modeste sont mieux protégés contre l'éviction. Adoptée à l'unanimité.",
+   "cout": null,
+   "pour": null,
+   "contre": null,
+   "url": "https://www.assnat.qc.ca/fr/travaux-parlementaires/projets-loi/projet-loi-65-43-1.html"
+  },
+  {
+   "numero": "Loi 22 (PL 22, 2026)",
+   "titre": "Nouveaux pouvoirs des municipalités en habitation",
+   "date": "12 juin 2026",
+   "secteur": "logement",
+   "change": "Les municipalités peuvent acquérir des immeubles dont les taxes sont impayées depuis 3 ans, et acheter ou construire des immeubles pour les louer. Elles peuvent aussi adopter des règles de construction sur l'efficacité énergétique.",
+   "cout": null,
+   "pour": null,
+   "contre": null,
+   "url": "https://www.assnat.qc.ca/fr/travaux-parlementaires/projets-loi/projet-loi-22-43-2.html"
+  },
+  {
+   "numero": "Loi 52 (PL 52, 2024)",
+   "titre": "Renouvellement de la protection de la loi 21 sur la laïcité",
+   "date": "7 mai 2024",
+   "secteur": "justice",
+   "change": "Reconduit pour 5 ans la disposition de dérogation qui protège la loi 21 (signes religieux interdits pour certains employés de l'État en position d'autorité, dont les enseignants). Cette disposition empêche les tribunaux d'invalider la loi au nom des droits garantis par les chartes.",
+   "cout": null,
+   "pour": null,
+   "contre": null,
+   "url": "https://www.assnat.qc.ca/fr/travaux-parlementaires/projets-loi/projet-loi-52-43-1.html"
+  },
+  {
+   "numero": "Loi 9 (PL 9, session 2025-2026)",
+   "titre": "Renforcement de la laïcité",
+   "date": "2 avril 2026",
+   "secteur": "justice",
+   "change": "Étend les règles de laïcité aux CPE, garderies subventionnées, garde en milieu familial subventionnée, écoles privées subventionnées et à certains établissements de santé privés. Il faut avoir le visage découvert pour recevoir un service de garde ou d'enseignement supérieur.",
+   "cout": null,
+   "pour": "Le gouvernement parle de rendre la laïcité de l'État plus cohérente.",
+   "contre": "La Ligue des droits et libertés y voit « un nouveau recul pour les droits et libertés ».",
+   "url": "https://www.assnat.qc.ca/fr/travaux-parlementaires/projets-loi/projet-loi-9-43-2.html"
+  },
+  {
+   "numero": "Loi 13 (PL 13, 2026)",
+   "titre": "Délinquants sexuels et emblèmes de groupes criminels",
+   "date": "2 avril 2026",
+   "secteur": "justice",
+   "change": "Un comité pourra rendre publics, pour 3 ans au plus, des renseignements sur certains délinquants sexuels à risque élevé de récidive. La loi interdit aussi d'afficher des emblèmes de groupes criminels (mesure « anti-patch »).",
+   "cout": null,
+   "pour": "Le gouvernement parle de lutte au crime organisé et de protection des victimes.",
+   "contre": "La Ligue des droits et libertés dénonce des pouvoirs « excessivement larges ».",
+   "url": "https://www.assnat.qc.ca/fr/travaux-parlementaires/projets-loi/projet-loi-13-43-2.html"
+  },
+  {
+   "numero": "Loi 4 (PL 4, 2026)",
+   "titre": "« Loi de Clare » sur la violence conjugale",
+   "date": "11 juin 2026",
+   "secteur": "justice",
+   "change": "Une personne inquiète, dès 14 ans, pourra demander à la police si son partenaire a des antécédents de violence. La loi entrera en vigueur au plus tard le 11 décembre 2027. Adoptée à l'unanimité (75 voix contre 0).",
+   "cout": null,
+   "pour": null,
+   "contre": null,
+   "url": "https://www.assnat.qc.ca/fr/travaux-parlementaires/projets-loi/projet-loi-4-43-3.html"
+  },
+  {
+   "numero": "Loi 109 (PL 109, 2025)",
+   "titre": "Contenus culturels en français sur les plateformes",
+   "date": "12 décembre 2025",
+   "secteur": "culture",
+   "change": "La Charte des droits reconnaît maintenant un droit de trouver facilement des contenus culturels en français. Les plateformes de vidéo et de musique en ligne et les fabricants de téléviseurs intelligents visés par règlement devront s'enregistrer et mettre ces contenus en valeur.",
+   "cout": null,
+   "pour": null,
+   "contre": null,
+   "url": "https://www.assnat.qc.ca/fr/travaux-parlementaires/projets-loi/projet-loi-109-43-1.html"
+  },
+  {
+   "numero": "Loi 29 (PL 29, 2023)",
+   "titre": "Obsolescence programmée et réparation",
+   "date": "5 octobre 2023",
+   "secteur": "economie",
+   "change": "Crée une garantie de bon fonctionnement pour certains biens neufs courants, comme les électroménagers et appareils électroniques (en vigueur le 5 octobre 2026). Les pièces, la réparation et les renseignements d'entretien doivent être offerts à un prix raisonnable.",
+   "cout": null,
+   "pour": null,
+   "contre": null,
+   "url": "https://www.assnat.qc.ca/fr/travaux-parlementaires/projets-loi/projet-loi-29-43-1.html"
+  },
+  {
+   "numero": "Loi 72 (PL 72, 2024)",
+   "titre": "Prix en épicerie, pourboires et crédit",
+   "date": "7 novembre 2024",
+   "secteur": "economie",
+   "change": "Les épiceries doivent afficher le prix à l'unité (par exemple au kilo) et le prix sans carte de fidélité. L'indemnité est plus élevée en cas d'erreur de prix à la caisse. Les pourcentages de pourboire suggérés doivent être calculés sur le prix avant taxes.",
+   "cout": null,
+   "pour": null,
+   "contre": null,
+   "url": "https://www.assnat.qc.ca/fr/travaux-parlementaires/projets-loi/projet-loi-72-43-1.html"
+  },
+  {
+   "numero": "Loi 89 (PL 89, 2025)",
+   "titre": "Services à maintenir pendant les grèves",
+   "date": "30 mai 2025",
+   "secteur": "economie",
+   "change": "Depuis le 30 novembre 2025, le gouvernement peut demander au Tribunal administratif du travail d'ordonner le maintien de services nécessaires au bien-être de la population pendant une grève ou un lock-out. La santé et la fonction publique, déjà encadrées, ne sont pas visées.",
+   "cout": null,
+   "pour": null,
+   "contre": "Les syndicats y voient une atteinte au droit de grève, protégé par la Constitution.",
+   "url": "https://www.assnat.qc.ca/fr/travaux-parlementaires/projets-loi/projet-loi-89-43-1.html"
+  },
+  {
+   "numero": "Loi 112 (PL 112, 2025)",
+   "titre": "Commerce et travail entre provinces",
+   "date": "30 octobre 2025",
+   "secteur": "economie",
+   "change": "Un produit fabriqué dans une autre province peut être vendu au Québec sans exigence supplémentaire, sauf exceptions publiées. Les travailleurs qualifiés d'autres provinces sont reconnus sans exigence supplémentaire importante.",
+   "cout": null,
+   "pour": null,
+   "contre": null,
+   "url": "https://www.assnat.qc.ca/fr/travaux-parlementaires/projets-loi/projet-loi-112-43-1.html"
+  },
+  {
+   "numero": "Loi 3 (PL 3, session 2025-2026)",
+   "titre": "Cotisations syndicales facultatives",
+   "date": "2 avril 2026",
+   "secteur": "economie",
+   "change": "La cotisation syndicale est divisée en deux : une cotisation principale, votée au scrutin secret, et une cotisation facultative. Seule la partie facultative peut payer certaines activités, comme des campagnes publicitaires ou des contestations de lois. Les votes secrets doivent durer au moins 12 heures.",
+   "cout": null,
+   "pour": "Le gouvernement affirme que les syndiqués ont le droit de savoir comment leur cotisation est utilisée.",
+   "contre": "Huit grandes centrales syndicales dénoncent une ingérence « antidémocratique » dans leurs affaires internes, lourde et coûteuse.",
+   "url": "https://www.assnat.qc.ca/fr/travaux-parlementaires/projets-loi/projet-loi-3-43-2.html"
+  },
+  {
+   "numero": "Loi 10 (PL 10, 2026)",
+   "titre": "Revente de billets et abonnements en ligne",
+   "date": "12 juin 2026",
+   "secteur": "economie",
+   "change": "Depuis le 12 septembre 2026, les sites de revente doivent indiquer clairement qu'il s'agit de revente et que le billet peut coûter moins cher chez le vendeur officiel. Les renouvellements d'abonnements en ligne sont mieux encadrés.",
+   "cout": null,
+   "pour": null,
+   "contre": null,
+   "url": "https://www.assnat.qc.ca/fr/travaux-parlementaires/projets-loi/projet-loi-10-43-2.html"
+  },
+  {
+   "numero": "Loi 1 (PL 1, 2022)",
+   "titre": "Hausse des tarifs gouvernementaux limitée à 3 %",
+   "date": "9 décembre 2022",
+   "secteur": "finances",
+   "change": "Du 1er janvier 2023 au 31 décembre 2026, la hausse annuelle de nombreux tarifs publics est limitée à 3 %. Cela touche notamment le tarif des garderies subventionnées, les droits de scolarité et le stationnement dans les hôpitaux. La règle prend fin en 2026 : la suite dépendra du prochain gouvernement.",
+   "cout": null,
+   "pour": null,
+   "contre": null,
+   "url": "https://www.assnat.qc.ca/fr/travaux-parlementaires/projets-loi/projet-loi-1-43-1.html"
+  },
+  {
+   "numero": "Loi 24 (PL 24, 2023)",
+   "titre": "Salaire des députés",
+   "date": "7 juin 2023",
+   "secteur": "finances",
+   "change": "Le salaire annuel de base des députés passe à 131 766 $, avec des hausses prévues par la suite. La loi a été adoptée par 68 voix contre 15.",
+   "cout": null,
+   "pour": "La hausse suit les recommandations d'un comité consultatif indépendant.",
+   "contre": null,
+   "url": "https://www.assnat.qc.ca/fr/travaux-parlementaires/projets-loi/projet-loi-24-43-1.html"
+  },
+  {
+   "numero": "Loi 7 (PL 7, 2026)",
+   "titre": "Moins d'organismes publics",
+   "date": "2 avril 2026",
+   "secteur": "finances",
+   "change": "Fusionne ou abolit plus de 40 entités publiques. Par exemple, l'INESSS et l'INSPQ sont fusionnés, Transplant Québec est intégré à Héma-Québec, et la Commission d'évaluation de l'enseignement collégial est abolie.",
+   "cout": null,
+   "pour": "Le gouvernement promet plus d'efficacité, moins de bureaucratie et plus d'imputabilité.",
+   "contre": null,
+   "url": "https://www.assnat.qc.ca/fr/travaux-parlementaires/projets-loi/projet-loi-7-43-2.html"
+  },
+  {
+   "numero": "Loi 2 (PL 2, 2023)",
+   "titre": "Hausse des tarifs d'électricité limitée à 3 %",
+   "date": "16 février 2023",
+   "secteur": "energie",
+   "change": "La hausse annuelle des tarifs d'électricité résidentiels est plafonnée à 3 %. Le gouvernement peut aussi permettre à d'autres qu'Hydro-Québec de distribuer de l'électricité dans certains cas, par exemple pour l'autoproduction.",
+   "cout": null,
+   "pour": null,
+   "contre": null,
+   "url": "https://www.assnat.qc.ca/fr/travaux-parlementaires/projets-loi/projet-loi-2-43-1.html"
+  },
+  {
+   "numero": "Loi 41 (PL 41, 2024)",
+   "titre": "Cote environnementale des bâtiments",
+   "date": "27 mars 2024",
+   "secteur": "energie",
+   "change": "Certains bâtiments, désignés par règlement, recevront une cote de performance environnementale. Leurs propriétaires devront déclarer leur consommation d'énergie, et des normes pourront s'appliquer lors de travaux.",
+   "cout": null,
+   "pour": null,
+   "contre": null,
+   "url": "https://www.assnat.qc.ca/fr/travaux-parlementaires/projets-loi/projet-loi-41-43-1.html"
+  },
+  {
+   "numero": "Loi 69 (PL 69, 2025)",
+   "titre": "Gouvernance de l'énergie et d'Hydro-Québec",
+   "date": "7 juin 2025",
+   "secteur": "energie",
+   "change": "Hydro-Québec n'est plus obligée de lancer des appels d'offres pour acheter de l'électricité. Les règles de fixation des tarifs par la Régie de l'énergie changent, et un programme d'aide doit limiter la hausse des tarifs résidentiels. Des producteurs privés peuvent exploiter des centrales jusqu'à 100 MW.",
+   "cout": null,
+   "pour": "Le gouvernement dit moderniser les règles pour répondre à la hausse de la demande d'électricité.",
+   "contre": null,
+   "url": "https://www.assnat.qc.ca/fr/travaux-parlementaires/projets-loi/projet-loi-69-43-1.html"
+  },
+  {
+   "numero": "Loi 86 (PL 86, 2025)",
+   "titre": "Protection des terres agricoles",
+   "date": "25 mars 2025",
+   "secteur": "agriculture",
+   "change": "Certains achats de terres agricoles sont suivis et contrôlés, notamment pour freiner la spéculation et l'achat par des fonds d'investissement. Les amendes sont plus élevées.",
+   "cout": null,
+   "pour": null,
+   "contre": null,
+   "url": "https://www.assnat.qc.ca/fr/travaux-parlementaires/projets-loi/projet-loi-86-43-1.html"
+  },
+  {
+   "numero": "Loi 48 (PL 48, 2024)",
+   "titre": "Radars photo : amendes administratives",
+   "date": "2 mai 2024",
+   "secteur": "transport",
+   "change": "Quand un radar photo ou une caméra de feu rouge capte une infraction, la SAAQ impose une sanction financière au propriétaire du véhicule, sans passer par le tribunal. Adoptée à l'unanimité.",
+   "cout": null,
+   "pour": null,
+   "contre": null,
+   "url": "https://www.assnat.qc.ca/fr/travaux-parlementaires/projets-loi/projet-loi-48-43-1.html"
+  },
+  {
+   "numero": "Loi 61 (PL 61, 2024)",
+   "titre": "Création de Mobilité Infra Québec",
+   "date": "5 décembre 2024",
+   "secteur": "transport",
+   "change": "Crée Mobilité Infra Québec, une agence chargée de planifier et construire les grands projets de transport que le gouvernement lui confie. Elle peut exproprier.",
+   "cout": null,
+   "pour": null,
+   "contre": null,
+   "url": "https://www.assnat.qc.ca/fr/travaux-parlementaires/projets-loi/projet-loi-61-43-1.html"
+  },
+  {
+   "numero": "Loi 3 (PL 3, session 2026)",
+   "titre": "Carte électorale à 127 circonscriptions",
+   "date": "12 juin 2026",
+   "secteur": "regions",
+   "change": "L'Assemblée nationale passe de 125 à 127 députés. Quatre circonscriptions de la Gaspésie et du Bas-Saint-Laurent et huit de l'île de Montréal gardent leurs limites. Un comité étudiera la représentation électorale.",
+   "cout": null,
+   "pour": "Préserver le poids politique des régions, dont la Gaspésie.",
+   "contre": "La loi contourne en partie la Commission de la représentation, qui proposait de modifier 51 circonscriptions (39 l'ont été au final).",
+   "url": "https://www.assnat.qc.ca/fr/travaux-parlementaires/projets-loi/projet-loi-3-43-3.html"
+  },
+  {
+   "numero": "Loi 74 (PL 74, 2024)",
+   "titre": "Plafond d'étudiants étrangers",
+   "date": "6 décembre 2024",
+   "secteur": "immigration",
+   "change": "Le gouvernement peut limiter le nombre de demandes d'étudiants étrangers, et moduler ce plafond selon l'établissement, le programme ou la région.",
+   "cout": null,
+   "pour": null,
+   "contre": null,
+   "url": "https://www.assnat.qc.ca/fr/travaux-parlementaires/projets-loi/projet-loi-74-43-1.html"
+  },
+  {
+   "numero": "Loi 84 (PL 84, 2025)",
+   "titre": "Intégration des personnes immigrantes",
+   "date": "28 mai 2025",
+   "secteur": "immigration",
+   "change": "Définit un modèle québécois d'intégration : la culture québécoise est la culture commune et le français, la langue principale. L'État et les personnes immigrantes ont des engagements réciproques. Le ministre doit préparer une politique nationale.",
+   "cout": null,
+   "pour": null,
+   "contre": null,
+   "url": "https://www.assnat.qc.ca/fr/travaux-parlementaires/projets-loi/projet-loi-84-43-1.html"
+  }
+ ],
+ "mortes": [
+  {
+   "numero": "PL 1 (session 2025-2026)",
+   "titre": "Constitution du Québec",
+   "change": "Aurait donné au Québec une constitution écrite, placée au-dessus des lois ordinaires, et créé un Conseil constitutionnel. Il aurait aussi interdit à plus d'une centaine d'organismes financés par l'État d'utiliser ces fonds pour contester certaines lois.",
+   "url": "https://www.assnat.qc.ca/fr/travaux-parlementaires/projets-loi/projet-loi-1-43-2.html"
+  },
+  {
+   "numero": "PL 5 (session 2025-2026)",
+   "titre": "Autorisation accélérée des grands projets",
+   "change": "Le gouvernement aurait pu désigner quelques grands projets « d'intérêt supérieur » et leur donner une autorisation unique, en modifiant l'application d'une trentaine de lois, dont des lois environnementales.",
+   "url": "https://www.assnat.qc.ca/fr/travaux-parlementaires/projets-loi/projet-loi-5-43-2.html"
+  },
+  {
+   "numero": "PL 20 (session 2025-2026)",
+   "titre": "Accès au logement abordable",
+   "change": "Aurait créé un guichet unique pour demander un logement abordable ou à loyer modique, avec des règles d'attribution. Il aurait aussi encadré les baux étudiants.",
+   "url": "https://www.assnat.qc.ca/fr/travaux-parlementaires/projets-loi/projet-loi-20-43-2.html"
+  },
+  {
+   "numero": "PL 25 (session 2025-2026)",
+   "titre": "Déontologie des juges",
+   "change": "Aurait réformé le Conseil de la magistrature et le traitement des plaintes contre les juges, avec de nouvelles sanctions.",
+   "url": "https://www.assnat.qc.ca/fr/travaux-parlementaires/projets-loi/projet-loi-25-43-2.html"
+  },
+  {
+   "numero": "PL 27 (session 2025-2026)",
+   "titre": "Décrets de convention collective et construction",
+   "change": "Aurait assoupli, sans les abolir, les décrets de convention collective qui fixent les conditions de travail d'environ 90 000 travailleurs, et adapté des règles de la construction.",
+   "url": null
+  },
+  {
+   "numero": "PL 2 (session 2026)",
+   "titre": "Protection de la loi 101 et de la loi 96",
+   "change": "Aurait renouvelé d'avance la disposition de dérogation qui protège la Charte de la langue française et la loi 96 contre les contestations fondées sur les chartes des droits.",
+   "url": "https://www.assnat.qc.ca/fr/travaux-parlementaires/projets-loi/projet-loi-2-43-3.html"
+  },
+  {
+   "numero": "PL 6 (session 2026)",
+   "titre": "Mesures fiscales du budget 2026",
+   "change": "Devait inscrire dans la loi les mesures fiscales du budget du 18 mars 2026 et de la mise à jour de novembre 2025, dont la baisse du taux de cotisation au Régime de rentes du Québec. Plusieurs de ces mesures sont pourtant déjà appliquées.",
+   "url": "https://www.assnat.qc.ca/fr/travaux-parlementaires/projets-loi/projet-loi-6-43-3.html"
+  },
+  {
+   "numero": "PL 8 (session 2026)",
+   "titre": "Langue d'enseignement en formation professionnelle et aux adultes",
+   "change": "À partir de juin 2028, les élèves qui n'ont pas droit à l'école anglaise n'auraient plus pu étudier en anglais en formation professionnelle ou à l'éducation des adultes. Environ 27 000 des 36 000 élèves de ces secteurs du réseau anglophone étaient visés.",
+   "url": null
+  },
+  {
+   "numero": "PL 191 (session 2026)",
+   "titre": "Approches complémentaires en santé (projet d'une députée)",
+   "change": "Aurait encadré les approches complémentaires et intégratives en santé.",
+   "url": "https://www.assnat.qc.ca/fr/travaux-parlementaires/projets-loi/projet-loi-191-43-3.html"
+  },
+  {
+   "numero": "PL 8 (session 2025-2026)",
+   "titre": "Entrée en vigueur plus rapide de la loi 89 sur les grèves",
+   "change": "Aurait avancé l'entrée en vigueur de la loi 89. Il est devenu sans objet quand la loi 89 s'est appliquée le 30 novembre 2025.",
+   "url": "https://www.assnat.qc.ca/fr/travaux-parlementaires/projets-loi/projet-loi-8-43-2.html"
+  },
+  {
+   "numero": "PL 97 (session 2022-2025)",
+   "titre": "Réforme du régime forestier",
+   "change": "Aurait réservé environ 135 000 km² de forêt en priorité à la coupe, où aucune nouvelle aire protégée n'aurait été possible. Abandonné par le gouvernement en septembre 2025 après une forte opposition, il est mort à la prorogation.",
+   "url": null
+  },
+  {
+   "numero": "PL 106 (session 2022-2025)",
+   "titre": "Première réforme de la rémunération des médecins",
+   "change": "Aurait permis de fixer par règlement la rémunération des médecins, avec des cibles. Mort à la prorogation de septembre 2025, il a été remplacé par la loi 2 d'octobre 2025.",
+   "url": "https://www.assnat.qc.ca/fr/travaux-parlementaires/projets-loi/projet-loi-106-43-1.html"
+  }
+ ],
+ "mesures": [
+  {
+   "titre": "Baisse des cotisations au RRQ et au RQAP",
+   "date": "1er janvier 2026",
+   "texte": "Le taux de base du Régime de rentes passe de 10,8 % à 10,6 % (5,3 % pour le salarié). La cotisation au Régime d'assurance parentale d'un salarié baisse de 0,494 % à 0,430 % du salaire. Le projet de loi qui devait inscrire ces baisses dans la loi est mort à la dissolution.",
+   "source_nom": "Ministère des Finances, bulletin 2025-8 (25 novembre 2025)",
+   "source_url": "https://cdn-contenu.quebec.ca/cdn-contenu/adm/min/finances/publications-adm/Bulletins/FR/BULFR_2025-8.pdf"
+  },
+  {
+   "titre": "Impôt : seuils indexés de 2,05 %",
+   "date": "1er janvier 2026",
+   "texte": "Les tranches d'imposition et les crédits augmentent de 2,05 % en 2026 ; le montant personnel de base passe à 18 952 $. Les taux d'impôt (14 %, 19 %, 24 % et 25,75 %) ne changent pas.",
+   "source_nom": "Ministère des Finances, paramètres du régime d'imposition 2026",
+   "source_url": "https://cdn-contenu.quebec.ca/cdn-contenu/adm/min/finances/publications-adm/parametres/AUTFR_RegimeImpot2026.pdf"
+  },
+  {
+   "titre": "Plus de TVQ sur certains produits d'épicerie",
+   "date": "15 juillet 2026",
+   "texte": "La TVQ ne s'applique plus aux collations en portions individuelles (crème glacée, pâtisseries, barres tendres, noix assaisonnées), aux plateaux de fruits et légumes coupés, au papier hygiénique et aux mouchoirs. Les restaurants et les distributrices ne sont pas visés.",
+   "source_nom": "Ministère des Finances, bulletin 2026-4 (25 mai 2026)",
+   "source_url": "https://cdn-contenu.quebec.ca/cdn-contenu/adm/min/finances/publications-adm/Bulletins/FR/BULFR_2026-4.pdf"
+  },
+  {
+   "titre": "Versement spécial « épicerie et énergie »",
+   "date": "À partir du 4 juin 2026",
+   "texte": "Un paiement unique de 100 $ pour une personne seule ou de 150 $ pour un couple, plus 50 $ pour les ménages avec enfants mineurs. Il est versé automatiquement, sans demande, aux personnes qui reçoivent le crédit pour la solidarité.",
+   "source_nom": "Ministère des Finances, bulletin 2026-4 (25 mai 2026)",
+   "source_url": "https://cdn-contenu.quebec.ca/cdn-contenu/adm/min/finances/publications-adm/Bulletins/FR/BULFR_2026-4.pdf"
+  },
+  {
+   "titre": "Remboursement de la « taxe de bienvenue » pour un premier achat",
+   "date": "Maisons achetées depuis le 1er janvier 2026",
+   "texte": "Un crédit d'impôt rembourse les droits de mutation d'un premier acheteur, jusqu'à 5 875 $. Le montant baisse pour une maison de plus de 750 000 $ et tombe à zéro à 1 M$.",
+   "source_nom": "Ministère des Finances, bulletin 2026-2 (17 avril 2026)",
+   "source_url": "https://cdn-contenu.quebec.ca/cdn-contenu/adm/min/finances/publications-adm/Bulletins/FR/BULFR_2026-2.pdf"
+  },
+  {
+   "titre": "Allocation famille",
+   "date": "2026",
+   "texte": "Jusqu'à 3 068 $ par enfant en 2026 (3 006 $ en 2025), et au moins 1 221 $. Les familles monoparentales reçoivent un supplément de 1 077 $.",
+   "source_nom": "Ministère des Finances, paramètres du régime d'imposition 2026",
+   "source_url": "https://cdn-contenu.quebec.ca/cdn-contenu/adm/min/finances/publications-adm/parametres/AUTFR_RegimeImpot2026.pdf"
+  },
+  {
+   "titre": "Crédit pour la solidarité",
+   "date": "Juillet 2026 à juin 2027",
+   "texte": "Le montant de base passe à 363 $ (356 $ avant) et la composante logement pour une personne seule à 746 $. Le crédit diminue quand le revenu familial dépasse 43 195 $.",
+   "source_nom": "Ministère des Finances, paramètres du régime d'imposition 2026",
+   "source_url": "https://cdn-contenu.quebec.ca/cdn-contenu/adm/min/finances/publications-adm/parametres/AUTFR_RegimeImpot2026.pdf"
+  },
+  {
+   "titre": "Électricité : hausse plus forte pour les gros consommateurs",
+   "date": "1er avril 2026",
+   "texte": "Pour le tarif résidentiel, les frais fixes sont gelés, le prix de la première tranche de consommation monte de 2,3 % et celui de la deuxième tranche de 4,6 %. En 2025, tous les prix avaient augmenté de 3 %.",
+   "source_nom": "Hydro-Québec, grille tarifaire 2026",
+   "source_url": "https://www.hydroquebec.com/data/documents-donnees/pdf/tarifs-electricite.pdf?v=20260224"
+  },
+  {
+   "titre": "Loyers : nouveau calcul du Tribunal administratif du logement",
+   "date": "Baux commençant entre le 2 avril 2026 et le 1er avril 2027",
+   "texte": "Le pourcentage de base de hausse de loyer est de 3,1 % (4,5 % l'année précédente), selon une nouvelle méthode de calcul. Il s'applique aux avis de hausse donnés à partir du 1er janvier 2026.",
+   "source_nom": "Tribunal administratif du logement, 19 janvier 2026",
+   "source_url": "https://www.tal.gouv.qc.ca/fr/actualites/detail?code=le-calcul-de-l-ajustement-des-loyers-en-2026"
+  },
+  {
+   "titre": "Garderies subventionnées à 9,65 $ par jour",
+   "date": "2026",
+   "texte": "Le tarif d'une place subventionnée est de 9,65 $ par jour. Le budget prévoit aussi de convertir 5 000 places non subventionnées en places subventionnées, pour 396,5 M$ sur 5 ans.",
+   "source_nom": "Plan budgétaire 2026-2027",
+   "source_url": "https://www.finances.gouv.qc.ca/Budget_et_mise_a_jour/budget/documents/Budget2627_PlanBudgetaire.pdf"
+  },
+  {
+   "titre": "Tarifs gouvernementaux : +2,05 %",
+   "date": "1er janvier 2026",
+   "texte": "La plupart des tarifs publics augmentent de 2,05 % en 2026. Le plafond de 3 % prévu par la loi 1 prend fin le 31 décembre 2026 ; la règle pour 2027 dépendra du prochain gouvernement.",
+   "source_nom": "Québec.ca, communiqué du 25 novembre 2025",
+   "source_url": "https://www.quebec.ca/nouvelles/actualites/details/indexation-des-parametres-du-regime-dimposition-des-particuliers-des-prestations-dassistance-sociale-et-de-certains-tarifs-gouvernementaux-pour-lannee-dimposition-2026-67248"
+  },
+  {
+   "titre": "Taxe scolaire : hausse limitée à 3 %",
+   "date": "Année 2026-2027",
+   "texte": "La hausse moyenne de la taxe scolaire est plafonnée à 3 %. Le gouvernement verse une subvention de 95,7 M$ par année scolaire pour compenser.",
+   "source_nom": "Plan budgétaire 2026-2027",
+   "source_url": "https://www.finances.gouv.qc.ca/Budget_et_mise_a_jour/budget/documents/Budget2627_PlanBudgetaire.pdf"
+  },
+  {
+   "titre": "Assurance médicaments de la RAMQ",
+   "date": "1er juillet 2025",
+   "texte": "La coassurance (part du prix payée à la pharmacie) est de 30 %, avec une franchise de 264 $. La prime maximale était de 755 $ par adulte en 2025.",
+   "source_nom": "Ministère des Finances, bulletin 2025-8 (25 novembre 2025)",
+   "source_url": "https://cdn-contenu.quebec.ca/cdn-contenu/adm/min/finances/publications-adm/Bulletins/FR/BULFR_2025-8.pdf"
+  },
+  {
+   "titre": "Garantie légale sur les électroménagers et l'électronique",
+   "date": "5 octobre 2026",
+   "texte": "Les électroménagers et appareils électroniques neufs sont couverts par une garantie légale de bon fonctionnement, prévue par la loi contre l'obsolescence programmée. Depuis le 12 septembre 2026, la revente de billets et les abonnements en ligne sont aussi mieux encadrés.",
+   "source_nom": "Office de la protection du consommateur, « Nouvelles protections »",
+   "source_url": "https://www.opc.gouv.qc.ca/consommateur/nouvelles-protections"
+  }
+ ],
+ "a_verifier": [
+  "RRQ et projet de loi fiscal mort : la baisse des cotisations au RRQ et au RQAP s'applique depuis le 1er janvier 2026, mais le projet de loi 6 (session 2026), qui devait lui donner force de loi avec les autres mesures fiscales du budget 2026, est mort à la dissolution du 27 août 2026. Base juridique à confirmer auprès du ministère des Finances ou de Retraite Québec.",
+  "Même question pour les autres mesures du PL 6 (déduction pour petite entreprise, congé de cotisation au Fonds des services de santé pour l'agriculture, la forêt et les pêches, crédit d'impôt en Gaspésie).",
+  "Bâillons : confirmé pour la loi 2 (2025). Pour la loi 15 (décembre 2023) et la loi 69 (juin 2025), la fiche officielle montre seulement une séance prolongée dans la nuit.",
+  "Loi 9 sur la laïcité (2026) : recours aux dispositions de dérogation et interdiction des prières collectives à vérifier dans le texte sanctionné (L.Q. 2026, c. 6).",
+  "Dérogation de la loi 96 : date exacte d'expiration (2027 ?), puisque le projet de loi de renouvellement est mort.",
+  "Filière batterie : écart entre 760 M$ (Les Affaires) et 676 à 700 M$ (Radio-Canada) pour les 4 entreprises sous protection de la LACC ; lire le rapport de la vérificatrice générale du 10 juin 2026.",
+  "SAAQclic : budget initial de 638 M$ (2017) et contrat de 458,4 M$ tirés d'un site non officiel ; 570 M$ versés à LGS et SAP et 916 M$ dépensés non relus ; lire le rapport Gallant et celui de la vérificatrice générale.",
+  "Tramway de Québec : coût initial d'environ 3 G$ (2018) et de 3,3 G$ (2021) relevés via Wikipédia seulement.",
+  "Ligne bleue : coût d'environ 3,9 G$ en 2018 non vérifié. REM de l'Est (10 G$) et Projet structurant de l'Est (environ 36 G$) : chiffres tirés de Wikipédia.",
+  "Troisième lien : choix d'un tracé à l'est, à péage et en partenariat public-privé, tiré d'un résumé de recherche.",
+  "Musée national de l'histoire du Québec : coût annoncé de 92 M$ (2024) non concilié avec les 49,8 M$ du tableau de bord.",
+  "Loi 7 : économies de 35 M$ d'ici 2029-2030 et environ 220 postes retranchés, tirés d'articles non lus en entier ; critiques sur la perte d'expertise en don d'organes (titres d'articles seulement).",
+  "Loi 19 : entente avec la FMOQ de +14,5 % sur 5 ans plus 2,5 % liés à des cibles, source primaire non consultée.",
+  "Garderies : tarif 2025 de 9,35 $ (source non fiable), qui donnerait une hausse de plus de 3 % en 2026.",
+  "Hydro-Québec : aucun communiqué ne confirme une hausse moyenne de 3 % en 2026.",
+  "Maisons des aînés et 8 000 logements : aucun bilan global (coût total, unités livrées) trouvé.",
+  "Dates d'application non vérifiées : demandes anticipées d'aide médicale à mourir (loi 11), pourboires avant taxes (loi 72), fin du moratoire sur les évictions (loi 65, vers juin 2027).",
+  "Non retenus faute de source solide : salaire minimum (16,60 $ au 1er mai 2026), fin du bouclier fiscal, contribution annuelle de 125 $ pour les véhicules électriques, fin de Roulez vert en 2027, tarifs SAAQ et droits de scolarité.",
+  "Les descriptions des lois reprennent les notes explicatives des projets tels que présentés : vérifier les amendements dans les lois sanctionnées avant de citer un détail."
+ ]
+}

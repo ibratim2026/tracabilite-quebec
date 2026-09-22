@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+{% block titre %}Secteurs et indicateurs — Traçabilité Québec{% endblock %}
+{% block contenu %}
+<h1>Les secteurs de l'État et leurs indicateurs</h1>
+<p class="chapeau">L'État québécois, c'est une douzaine de grands secteurs. Pour
+chacun, on explique ce qu'il fait, ce qu'il coûte et les indicateurs qui disent
+s'il va bien. On donne aussi les chiffres qui trompent. Juger un gouvernement
+ou une promesse devient plus simple quand on sait quoi regarder.</p>
+
+{% if budget %}
+<h2>Où va l'argent : le budget {{ budget.annee }}</h2>
+<p class="explication">Dépenses prévues de l'État québécois, par grande mission,
+en milliards de dollars. Total : environ {{ '%.0f' % (budget.missions | sum(attribute='montant')) }} G$.</p>
+<div class="graphique">
+  {% set mx = budget.missions | map(attribute='montant') | max %}
+  {% set total = budget.missions | sum(attribute='montant') %}
+  {% for m in budget.missions %}
+  <div class="ligne-graphique">
+    <div class="etiquette-barre">{{ m.nom }}</div>
+    <div class="piste">
+      <div class="barre-h{{ ' barre-autres' if m.fixe }}" style="width: {{ (100 * m.montant / mx) | round(1) }}%" title="{{ m.nom }} : {{ m.montant }} G$"></div>
+      <span class="valeur-barre">{{ ('%.1f' % m.montant) | replace('.', ',') }} G$ <small>({{ (100 * m.montant / total) | round(0) | int }} %)</small></span>
+    </div>
+  </div>
+  {% endfor %}
+  <p class="source">Source : <a href="{{ budget.source_url }}">{{ budget.source_nom }}</a>.
+  {{ budget.note_methode }}</p>
+</div>
+<p><a href="/election/jouer#budget">Essayez de boucler ce budget vous-même →</a></p>
+{% endif %}
+
+<h2>Les secteurs</h2>
+<div class="grille-cartes">
+  {% for s in secteurs %}
+  <a class="carte carte-lien" href="/secteurs/{{ s.slug }}">
+    <h3>{{ s.nom }}</h3>
+    <p>{{ s.accroche }}</p>
+    {% if s.budget and s.budget.part %}<p class="detail"><strong>{{ s.budget.part }}</strong> des dépenses de programmes</p>{% endif %}
+  </a>
+  {% endfor %}
+</div>
+
+<div class="encadre encadre-bleu"><strong>Comment lire un indicateur.</strong>
+Un bon indicateur a une valeur récente, une tendance et un point de
+comparaison : une autre province, la moyenne canadienne ou celle de l'OCDE.
+Un chiffre seul ne dit presque rien. « 4 millions de rendez-vous » peut être
+beaucoup ou peu : tout dépend de la demande, de l'an dernier et du voisin.</div>
+{% endblock %}

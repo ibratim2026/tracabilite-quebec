@@ -1,0 +1,67 @@
+{% extends "base.html" %}
+{% block titre %}{{ theme.nom }} : ce que proposent les partis — Élection 2026 — Traçabilité Québec{% endblock %}
+{% block contenu %}
+<h1>Ce que proposent les partis</h1>
+{% if prudent %}
+<div class="encadre encadre-bleu">{{ note_prudent }}</div>
+<h2>Où consulter les plateformes</h2>
+<ul class="prose">
+  <li><a href="https://ici.radio-canada.ca/info/2026/elections-quebec/comparateur-programmes-plateformes-partis/">Le comparateur des programmes de Radio-Canada</a></li>
+  <li><a href="https://cffp.recherche.usherbrooke.ca/elections-du-quebec-2026-synthese-des-cadres-financiers-des-partis-politiques/">La synthèse des cadres financiers de la Chaire en fiscalité et en finances publiques (Université de Sherbrooke)</a></li>
+  <li><a href="https://www.electionsquebec.qc.ca/">Élections Québec</a> : la liste officielle des partis et des candidats de votre circonscription</li>
+</ul>
+<p class="explication">Pour juger une promesse, les pages <a href="/secteurs">Secteurs
+et indicateurs</a> donnent l'état de départ de chaque domaine, et la page
+<a href="/election/decoder">Décoder la campagne</a> explique les notions qu'on confond souvent.</p>
+{% else %}
+<p class="explication">{{ p.note }}</p>
+
+<div class="themes">
+  {% for t in p.themes %}
+  <a class="onglet{{ ' actif' if t.slug == theme.slug }}" href="/election/comparateur/{{ t.slug }}">{{ t.nom }}</a>
+  {% endfor %}
+</div>
+
+<h2>{{ theme.nom }}</h2>
+{% if theme.question %}<p class="explication"><strong>La question de fond :</strong> {{ theme.question }}</p>{% endif %}
+{% if secteur %}
+<p class="explication">Pour situer le débat, consultez l'état des lieux :
+<a href="/secteurs/{{ secteur.slug }}">{{ secteur.nom }} : ce que c'est et ses indicateurs →</a></p>
+{% endif %}
+
+<div class="colonnes-partis">
+  {% for pa in p.partis %}
+  <div class="col-parti">
+    <h3>{{ pa.nom }}</h3>
+    <div class="chef">{{ pa.chef }}</div>
+    {% for eng in par_parti[pa.slug] %}
+    <div class="engagement">
+      {{ eng.texte }}
+      {% if eng.cout %}<br><span class="cout">{{ eng.cout }}</span>{% endif %}
+      {% if eng.echeance %}<span class="detail"> · {{ eng.echeance }}</span>{% endif %}
+      <span class="source"><a href="{{ eng.source_url }}">{{ eng.source_nom or 'Source' }}</a>{% if eng.source_date %}, {{ eng.source_date }}{% endif %}</span>
+    </div>
+    {% else %}
+    <p class="vide">Aucun engagement repéré sur ce thème au {{ p.maj_texte }}.</p>
+    {% endfor %}
+  </div>
+  {% endfor %}
+</div>
+
+<div class="note-verif">Les engagements sont résumés fidèlement à partir des
+plateformes officielles et de la couverture médiatique, avec le lien vers la
+source. Un coût absent signifie qu'aucun coût n'a été annoncé, et non que la
+mesure est gratuite. Mis à jour le {{ p.maj_texte }}.</div>
+
+{% endif %}
+{% if p.evaluations and not prudent %}
+<h2>Ce qu'en disent les analystes indépendants</h2>
+<p class="explication">Des économistes et des instituts ont évalué les
+cadres financiers. Leur orientation est indiquée : lisez-les ensemble.</p>
+{% for ev in p.evaluations %}
+<div class="encadre encadre-gris"><strong>{{ ev.qui }}</strong>
+  {% if ev.orientation %}<span class="detail">({{ ev.orientation }})</span>{% endif %}<br>
+  {{ ev.constat }} <span class="source"><a href="{{ ev.url }}">Source</a></span></div>
+{% endfor %}
+{% endif %}
+{% endblock %}

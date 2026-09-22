@@ -10,10 +10,19 @@
     <button type="submit">Chercher</button>
   </form>
   {% else %}
-  <p class="note-periode">Version démo — la recherche en direct et les 215 000
-  fiches complètes sont dans la version intégrale, en cours de mise en ligne.</p>
+  <p class="note-periode">Version démo — la recherche en direct et les
+  {{ s.nb_processus | nombre }} fiches complètes sont dans la version intégrale,
+  en cours de mise en ligne.</p>
   {% endif %}
 </section>
+
+<a class="bandeau-election carte-lien" href="/election">
+  <div><div class="surtitre">Élection du 5 octobre 2026</div>
+  <strong>Comprendre avant de choisir</strong> : ce que proposent les partis,
+  l'état de chaque secteur en indicateurs, les lois adoptées et le vrai coût
+  des grands projets.</div>
+  <span class="actu-lien">Ouvrir la section Élection →</span>
+</a>
 
 <h2>Où va l'argent en 2026</h2>
 <p class="explication">{{ a.total | montant }} en contrats publics octroyés depuis
@@ -124,7 +133,7 @@ catégorie d'achat. Source : données ouvertes du SEAO.</p>
 </table>
 
 <p class="note-periode">Données : {{ s.nb_processus | nombre }} processus d'achat
-consolidés, janvier 2025 → juin 2026 ({{ s.nb_fichiers }} fichiers de données
+consolidés, janvier 2025 → {{ periode_fin }} ({{ s.nb_fichiers }} fichiers de données
 ouvertes du SEAO). Ministères, organismes, réseaux de la santé et de l'éducation,
 municipalités.</p>
 {% endblock %}

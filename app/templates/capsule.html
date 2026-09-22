@@ -1,0 +1,88 @@
+{% extends "base.html" %}
+{% block titre %}Un Québec prospère et heureux : ce que la recherche dit — Traçabilité Québec{% endblock %}
+{% block contenu %}
+<div class="surtitre">Capsule</div>
+<h1>Un Québec prospère et heureux : ce que la recherche dit</h1>
+<p class="chapeau">{{ c.chapeau }}</p>
+
+<div class="encadre encadre-bleu"><strong>Ce que cette page n'est pas.</strong>
+{{ c.avertissement }}</div>
+
+<h2>D'abord : comment mesure-t-on une société qui va bien?</h2>
+{% for m in c.mesurer %}
+<div class="encadre encadre-gris"><strong>{{ m.titre }}</strong><br>{{ m.texte }}
+  {% if m.source_url %}<span class="source"><a href="{{ m.source_url }}">{{ m.source_nom }}</a></span>{% endif %}</div>
+{% endfor %}
+
+<h2>Le Québec aujourd'hui : forces et faiblesses</h2>
+<section class="deux-colonnes">
+  <div><h3>Là où le Québec se démarque</h3>
+    {% for f in c.forces %}<div class="carte carte-verte"><p><strong>{{ f.titre }}</strong><br>{{ f.texte }}
+      <span class="source"><a href="{{ f.source_url }}">{{ f.source_nom }}</a></span></p></div>{% endfor %}</div>
+  <div><h3>Là où il accuse un retard</h3>
+    {% for f in c.faiblesses %}<div class="carte"><p><strong>{{ f.titre }}</strong><br>{{ f.texte }}
+      <span class="source"><a href="{{ f.source_url }}">{{ f.source_nom }}</a></span></p></div>{% endfor %}</div>
+</section>
+
+<h2>Les leviers, un par un</h2>
+<p class="explication">Pour chaque levier, on indique la solidité de la preuve,
+le délai avant d'en voir l'effet et ce qu'il coûte. Le choix entre eux revient
+aux électeurs.</p>
+<div class="legende">
+  <span><span class="badge preuve-forte">Preuve solide</span> large consensus des études</span>
+  <span><span class="badge preuve-moyenne">Preuve modérée</span> effet probable, ampleur incertaine</span>
+  <span><span class="badge preuve-debattue">Débattu</span> les écoles de pensée divergent</span>
+</div>
+<figure class="matrice" aria-label="Les leviers selon la solidité de la preuve et le délai d'effet">
+  <div class="matrice-grille">
+    <div></div>
+    <div class="matrice-col">Moins de 2 ans</div><div class="matrice-col">2 à 10 ans</div><div class="matrice-col">10 ans et plus</div>
+    {% for pr, nom_pr in [('forte','Preuve solide'),('moyenne','Preuve modérée'),('debattue','Débattu')] %}
+    <div class="matrice-lig">{{ nom_pr }}</div>
+    {% for dl in ['court','moyen','long'] %}
+    <div class="matrice-case">
+      {% for lv in c.leviers if lv.preuve == pr and lv.delai == dl %}<a class="puce-levier" href="#{{ lv.slug }}">{{ lv.titre_court or lv.titre }}</a>{% endfor %}
+    </div>
+    {% endfor %}
+    {% endfor %}
+  </div>
+  <figcaption>En haut à gauche : les leviers dont l'effet est le mieux démontré et
+  le plus rapide. Cliquez sur un levier pour lire le détail. Classement établi par
+  notre lecture des études citées.</figcaption>
+</figure>
+
+{% for lv in c.leviers %}
+<div class="levier" id="{{ lv.slug }}">
+  <h3>{{ loop.index }}. {{ lv.titre }}</h3>
+  <div class="levier-meta">
+    <span class="badge preuve-{{ lv.preuve }}">{{ {'forte':'Preuve solide','moyenne':'Preuve modérée','debattue':'Débattu'}[lv.preuve] }}</span>
+    <span class="badge delai-{{ lv.delai }}">{{ {'court':'Effet en moins de 2 ans','moyen':'Effet en 2 à 10 ans','long':'Effet après 10 ans et plus'}[lv.delai] }}</span>
+    {% if lv.secteur %}<a class="badge badge-gris" href="/secteurs/{{ lv.secteur }}">Voir le secteur →</a>{% endif %}
+  </div>
+  <div class="prose">
+    <p>{{ lv.resume }}</p>
+    <p><strong>Ce que dit la recherche :</strong> {{ lv.effet }}</p>
+    {% if lv.exemples %}<p><strong>Ailleurs :</strong> {{ lv.exemples }}</p>{% endif %}
+    <p><strong>Coût et compromis :</strong> {{ lv.compromis }}</p>
+    {% if lv.debat %}<p><strong>Le débat :</strong> {{ lv.debat }}</p>{% endif %}
+    {% if lv.quebec %}<p><strong>Au Québec :</strong> {{ lv.quebec }}</p>{% endif %}
+  </div>
+  <p class="source">Sources : {% for so in lv.sources %}<a href="{{ so.url }}">{{ so.nom }}</a>{{ ' · ' if not loop.last }}{% endfor %}</p>
+</div>
+{% endfor %}
+
+<h2>Dans un mandat de quatre ans : les gains rapides et les chantiers de fond</h2>
+<section class="deux-colonnes">
+  <div><h3>Effet mesurable en moins de quatre ans</h3>
+    <ul class="prose">{% for r in c.rapides %}<li>{{ r }}</li>{% endfor %}</ul></div>
+  <div><h3>Chantiers qui dépassent un mandat</h3>
+    <ul class="prose">{% for r in c.fond %}<li>{{ r }}</li>{% endfor %}</ul></div>
+</section>
+<div class="encadre encadre-jaune"><strong>Le piège du court terme.</strong> {{ c.piege_court_terme }}</div>
+
+<h2>Et la transparence dans tout ça?</h2>
+<div class="prose"><p>{{ c.transparence }}</p></div>
+
+<div class="note-verif">Capsule préparée à partir de sources publiques citées
+sur chaque levier. Elle ne recommande aucun parti. Mise à jour le {{ c.maj_texte }}.</div>
+{% endblock %}

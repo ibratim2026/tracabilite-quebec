@@ -4,18 +4,12 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{% block titre %}Traçabilité Québec{% endblock %}</title>
-<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}?v={{ v_statique }}">
 </head>
 <body>
 <header class="entete">
   <div class="contenant">
     <a class="logo" href="/">Traçabilité <span>Québec</span></a>
-    <nav>
-      <a href="/aux-nouvelles">Aux nouvelles</a>
-      <a href="/ce-qui-ne-fait-pas-de-sens">Ce qui ne fait pas de sens</a>
-      <a href="/meilleur-des-mondes">Dans le meilleur des mondes</a>
-      <a href="/methodologie">Méthodologie</a>
-    </nav>
     {% if not config.get('STATIQUE') %}
     <form class="recherche-entete" action="/recherche" method="get">
       <input type="search" name="q" placeholder="Fournisseur, organisme, mot-clé…"
@@ -26,7 +20,21 @@
     <span class="mention-demo" title="Date de la dernière mise à jour des données">Données à jour au {{ derniere_maj }}</span>
     {% endif %}
   </div>
+  <nav class="contenant nav-principale" aria-label="Navigation principale">
+    {% for r in navigation %}
+    <a href="{{ r.url }}" class="{{ 'nav-election ' if r.cle == 'election' }}{{ 'actif' if rubrique and rubrique.cle == r.cle }}">{{ r.nom }}</a>
+    {% endfor %}
+  </nav>
 </header>
+{% if rubrique %}
+<nav class="sous-nav" aria-label="{{ rubrique.nom }}">
+  <div class="contenant">
+    {% for url, nom in rubrique.sous %}
+    <a href="{{ url }}"{{ ' class=actif aria-current=page' if sous_onglet_actif(request.path, url) }}>{{ nom }}</a>
+    {% endfor %}
+  </div>
+</nav>
+{% endif %}
 
 <main class="contenant">
 {% block contenu %}{% endblock %}
@@ -41,7 +49,11 @@
     Système électronique d'appel d'offres (SEAO), données ouvertes — Données Québec</a>,
     diffusées par le Secrétariat du Conseil du trésor. Les données sources peuvent
     contenir des erreurs de saisie; voir la <a href="/methodologie">méthodologie</a>.</p>
+    <p>Site indépendant, non partisan, sans publicité ni financement politique.
+    <a href="/a-propos">Qui fait ce site et comment</a>.</p>
   </div>
 </footer>
+<script>window.TQ_BASE = "{{ '/tracabilite-quebec' if config.get('STATIQUE') else '' }}"; window.TQ_PRUDENT = {{ 'true' if prudent else 'false' }};</script>
+<script src="/static/interactif.js?v={{ v_statique }}" defer></script>
 </body>
 </html>

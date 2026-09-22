@@ -85,7 +85,9 @@ def main():
 
     graines = ["/", "/aux-nouvelles", "/aux-nouvelles/saaqclic",
                "/meilleur-des-mondes", "/meilleur-des-mondes/saaqclic",
-               "/methodologie"]
+               "/methodologie", "/election", "/election/comparateur/",
+               "/election/decoder", "/election/jouer", "/secteurs", "/economie-expliquee", "/quebec-canada", "/lois-et-projets",
+               "/quebec-prospere", "/a-propos"]
     for t in TYPES:
         for pg in range(1, PAGES_PAR_TYPE + 1):
             graines.append(f"/ce-qui-ne-fait-pas-de-sens?type={t}&page={pg}")
@@ -102,6 +104,11 @@ def main():
     # Vague 0 : pages principales
     for u in graines:
         rendre(u)
+    # Pages éditoriales liées (thèmes du comparateur, fiches de secteur)
+    for u, contenu in list(rendus.items()):
+        for lien in liens_internes(contenu, u):
+            if lien.startswith(("/election/", "/secteurs/")):
+                rendre(lien.split("#")[0])
     # Vague 1 : fiches de contrats liées aux pages principales
     for u, contenu in list(rendus.items()):
         for lien in liens_internes(contenu, u):
@@ -146,6 +153,7 @@ def main():
         if not c:
             continue
         contenu = re.sub(r'href="([^"]+)"', reecrire, contenu)
+        contenu = contenu.replace('src="/static/', f'src="{BASE}/static/')
         dest = SORTIE / c
         dest.parent.mkdir(parents=True, exist_ok=True)
         dest.write_text(contenu)
@@ -157,7 +165,9 @@ def main():
     (SORTIE / ".nojekyll").write_text("")
     dossier_static = SORTIE / "static"
     dossier_static.mkdir(exist_ok=True)
-    shutil.copy(RACINE / "app" / "static" / "style.css", dossier_static / "style.css")
+    for f in (RACINE / "app" / "static").iterdir():
+        if f.is_file():
+            shutil.copy(f, dossier_static / f.name)
 
     print(f"{len(exportes)} pages exportées vers {SORTIE}")
 

@@ -1,0 +1,66 @@
+{
+ "annee": "2026-2027",
+ "solde": -7.69,
+ "population": 9030000,
+ "source_nom": "Rapport préélectoral du ministère des Finances, août 2026 (regroupement par mission : Traçabilité Québec)",
+ "source_url": "https://cdn-contenu.quebec.ca/cdn-contenu/adm/min/finances/publications-adm/Rapport_preelectoral/FR/MINFR_RP_2026.pdf",
+ "revenus": {
+  "montant": 135.343
+ },
+ "missions": [
+  {
+   "nom": "Santé et services sociaux",
+   "montant": 69.99,
+   "exemple": "hôpitaux, médecins, CHSLD"
+  },
+  {
+   "nom": "Éducation et culture",
+   "montant": 38.38,
+   "exemple": "écoles, cégeps, universités, culture"
+  },
+  {
+   "nom": "Économie et environnement",
+   "montant": 23.87,
+   "exemple": "transports, municipalités, habitation, économie, environnement"
+  },
+  {
+   "nom": "Soutien aux personnes et aux familles",
+   "montant": 17.25,
+   "exemple": "garderies, aide sociale, allocations"
+  },
+  {
+   "nom": "Gouverne et justice",
+   "montant": 12.19,
+   "exemple": "tribunaux, police, administration"
+  },
+  {
+   "nom": "Service de la dette (intérêts)",
+   "montant": 10.516,
+   "exemple": "difficile à réduire à court terme",
+   "fixe": true
+  }
+ ],
+ "equivalences": [
+  {
+   "libelle": "écoles primaires comme celle de Farnham (27,3 M$ chacune)",
+   "cout_unitaire": 27300000.0,
+   "source_url": "https://cdn-contenu.quebec.ca/cdn-contenu/adm/min/secretariat-du-conseil-du-tresor/publications-adm/budgets/2026-2027/6_plan_quebecois_infrastructures.pdf"
+  },
+  {
+   "libelle": "maisons des aînés comme celle de Lac-Mégantic (101,6 M$ chacune)",
+   "cout_unitaire": 101600000.0,
+   "source_url": "https://cdn-contenu.quebec.ca/cdn-contenu/adm/min/secretariat-du-conseil-du-tresor/publications-adm/budgets/2026-2027/6_plan_quebecois_infrastructures.pdf"
+  },
+  {
+   "libelle": "logements sociaux (environ 411 000 $ chacun, selon un projet récent à Québec)",
+   "cout_unitaire": 411000.0,
+   "source_url": "https://cdn-contenu.quebec.ca/cdn-contenu/adm/min/secretariat-du-conseil-du-tresor/publications-adm/budgets/2026-2027/6_plan_quebecois_infrastructures.pdf"
+  },
+  {
+   "libelle": "places en garderie converties en places subventionnées pendant un an (environ 19 000 $ chacune)",
+   "cout_unitaire": 19000.0,
+   "source_url": "https://www.finances.gouv.qc.ca/Budget_et_mise_a_jour/budget/documents/Budget2627_PlanBudgetaire.pdf"
+  }
+ ],
+ "note_methode": "Les documents budgétaires actuels du Québec ne présentent plus les dépenses par « grande mission » : ils les présentent par portefeuille ministériel. Le regroupement en 5 missions ci-dessous a été fait par Traçabilité Québec à partir des 25 portefeuilles officiels (liste fournie pour chaque mission). Choix discutables à signaler : Transports et Affaires municipales et Habitation classés dans « Économie et environnement »; Immigration classée dans « Soutien aux personnes et aux familles »; Finances (qui inclut notamment des provisions) classé dans « Gouverne et justice »."
+}

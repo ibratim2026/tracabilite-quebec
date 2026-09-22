@@ -1,0 +1,3400 @@
+[
+ {
+  "slug": "sante",
+  "nom": "Santé et services sociaux",
+  "accroche": "Le plus gros poste du budget : hôpitaux, médecins, CLSC, soins aux aînés, santé publique.",
+  "cest_quoi": "Les hôpitaux, CLSC, CHSLD, groupes de médecine de famille (GMF), la protection de la jeunesse, les soins à domicile et la santé publique. Au Canada, organiser et payer les soins est une responsabilité des provinces : Québec gère le réseau et paie les médecins (via la RAMQ). Ottawa fixe les grands principes de la Loi canadienne sur la santé et verse un transfert (le Transfert canadien en matière de santé), mais ne soigne pas directement, sauf certains groupes (ex. Premières Nations dans les réserves, militaires). Les municipalités n'ont presque aucun rôle, sauf en prévention (eau potable, sécurité, parcs). Responsables : ministère de la Santé et des Services sociaux (MSSS), qui fixe les orientations, et Santé Québec, la société d'État créée en 2024-2025 qui gère désormais les établissements.",
+  "budget": {
+   "montant": "60 578,8 M$ (budget de dépenses de programmes du MSSS, mesures du Budget incluses) ; 68 708 M$ en dépenses consolidées du portefeuille (incluant le réseau et les fonds spéciaux)",
+   "part": "45,2 % des dépenses de programmes (133 989,2 M$) ; 42,8 % des dépenses consolidées des portefeuilles (160 489 M$)",
+   "annee": "2026-2027",
+   "note": null,
+   "source_url": "https://cdn-contenu.quebec.ca/cdn-contenu/adm/min/secretariat-du-conseil-du-tresor/publications-adm/budgets/2026-2027/1_strategie_gestion_depenses.pdf",
+   "source_nom": "Gouvernement du Québec"
+  },
+  "kpis": [
+   {
+    "nom": "Durée moyenne de séjour sur civière aux urgences",
+    "definition": "Temps moyen entre l'inscription à l'urgence et la sortie (hospitalisation, congé ou transfert) pour les patients installés sur une civière.",
+    "valeur": "16 h 48",
+    "annee": "2025-2026",
+    "tendance": "Hausse depuis la pandémie (≈15 h 12 pour avril 2019 à février 2020 ; 16 h 45 en 2021-2022 ; 17 h 12 en 2024-2025), puis légère baisse de 24 min en 2025-2026. Reste au-dessus du niveau d'avant la pandémie.",
+    "comparaison": "Pas de comparaison interprovinciale directe (définition propre au Québec). La norme clinique idéale citée par le MSSS est de 8 h (patients non admis) à 12 h (patients admis).",
+    "cible": "Plan stratégique MSSS 2023-2027 : 15 h en 2025-2026 (non atteinte), 14 h en 2026-2027.",
+    "source_url": "https://msss.gouv.qc.ca/repertoires/indicateurs-gestion/indicateur-000027/",
+    "source_nom": "Ministère de la Santé",
+    "autres_sources": [],
+    "unite": "heures",
+    "sens": "bas_mieux",
+    "serie": [
+     {
+      "annee": 2020,
+      "valeur": 15.2
+     },
+     {
+      "annee": 2022,
+      "valeur": 16.75
+     },
+     {
+      "annee": 2025,
+      "valeur": 17.2
+     },
+     {
+      "annee": 2026,
+      "valeur": 16.8
+     }
+    ],
+    "valeur_num": 16.8,
+    "comparaison_num": 15,
+    "comparaison_nom": "Cible MSSS 2025-2026"
+   },
+   {
+    "nom": "Personnes ayant un fournisseur habituel de soins (médecin de famille, IPS, etc.)",
+    "definition": "Part des adultes qui disent consulter régulièrement un même professionnel (médecin de famille, infirmière praticienne spécialisée ou autre) quand ils ont besoin de soins.",
+    "valeur": "74 %",
+    "annee": "2024",
+    "tendance": "Toujours le plus bas des grandes provinces. Selon l'ancienne question de l'Enquête sur la santé dans les collectivités canadiennes : 72,2 % (2015) → 80,6 % (2020) → 78,7 % (2022). L'entente MSSS-FMOQ de 2025 a permis de prendre en charge 556 473 personnes de plus (fin mai 2026), en bonne partie par inscription collective à un GMF.",
+    "comparaison": "Ontario 88 %, moyenne canadienne 83 % (2024, ICIS).",
+    "cible": "Cible gouvernementale (entente MSSS-FMOQ) : 85 % de la population inscrite auprès d'un médecin de famille.",
+    "source_url": "https://ici.radio-canada.ca/nouvelle/2201718/quebec-acces-fournisseur-soins-sante-faible",
+    "source_nom": "ici.radio-canada.ca",
+    "autres_sources": [],
+    "unite": "%",
+    "sens": "haut_mieux",
+    "serie": [
+     {
+      "annee": 2015,
+      "valeur": 72.2
+     },
+     {
+      "annee": 2016,
+      "valeur": 74.4
+     },
+     {
+      "annee": 2017,
+      "valeur": 77.7
+     },
+     {
+      "annee": 2018,
+      "valeur": 79.4
+     },
+     {
+      "annee": 2019,
+      "valeur": 78.5
+     },
+     {
+      "annee": 2020,
+      "valeur": 80.6
+     },
+     {
+      "annee": 2021,
+      "valeur": 78.4
+     },
+     {
+      "annee": 2022,
+      "valeur": 78.7
+     }
+    ],
+    "valeur_num": 74,
+    "comparaison_num": 88,
+    "comparaison_nom": "Ontario"
+   },
+   {
+    "nom": "Patients en attente d'une chirurgie depuis plus d'un an",
+    "definition": "Nombre de demandes de chirurgie (au bloc opératoire) en attente depuis plus de 365 jours, à la fin d'une période financière.",
+    "valeur": "3 822 (sur 126 209 demandes en attente)",
+    "annee": "Période 4 de 2026-2027 (fin juillet 2026)",
+    "tendance": "Très forte hausse pendant la pandémie (2 645 en mars 2020 → 21 295 en mars 2022 ; les médias ont rapporté un sommet d'environ 22 000 en septembre 2022), puis baisse continue : 7 121 (mars 2025), 3 969 (mars 2026).",
+    "comparaison": "Pas de donnée comparable publiée pour l'Ontario ; niveau d'avant la pandémie (mars 2020) : 2 645.",
+    "cible": "Objectif du MSSS de revenir au seuil d'avant la pandémie (environ 2 500).",
+    "source_url": "https://www.donneesquebec.ca/recherche/dataset/chirurgies-portrait-de-la-liste-d-attente",
+    "source_nom": "donneesquebec.ca",
+    "autres_sources": [],
+    "unite": "demandes",
+    "sens": "bas_mieux",
+    "serie": [
+     {
+      "annee": 2020,
+      "valeur": 2645
+     },
+     {
+      "annee": 2021,
+      "valeur": 19045
+     },
+     {
+      "annee": 2022,
+      "valeur": 21295
+     },
+     {
+      "annee": 2023,
+      "valeur": 18908
+     },
+     {
+      "annee": 2024,
+      "valeur": 12221
+     },
+     {
+      "annee": 2025,
+      "valeur": 7121
+     },
+     {
+      "annee": 2026,
+      "valeur": 3969
+     }
+    ],
+    "valeur_num": 3822,
+    "comparaison_num": 2645,
+    "comparaison_nom": "Mars 2020 (avant la pandémie)"
+   },
+   {
+    "nom": "Prothèses du genou faites dans le délai de référence",
+    "definition": "Part des patients opérés pour un remplacement du genou dans les 26 semaines (6 mois) suivant la décision d'opérer, délai de référence fixé par les provinces en 2005.",
+    "valeur": "42 %",
+    "annee": "2025",
+    "tendance": "Effondrement pendant la pandémie (72 % en 2019 → 31,7 % en 2022), remontée lente depuis (37,8 % en 2024, 42 % en 2025). Hanche : 76 % (2019) → 54 % (2025). Cataracte (16 semaines) : 82 % (2019) → 65 % (2025).",
+    "comparaison": "Ontario 82,1 %, Canada 62,8 % (2025). Le Québec est passé d'au-dessus de la moyenne canadienne en 2019 à nettement sous celle-ci.",
+    "cible": "Délai de référence pancanadien : 26 semaines. Aucun pourcentage cible officiel québécois trouvé.",
+    "source_url": "https://www.cihi.ca/sites/default/files/document/wait-times-priority-procedures-in-canada-2008-2025-data-tables-en.xlsx",
+    "source_nom": "Institut canadien d'information sur la santé",
+    "autres_sources": [],
+    "unite": "%",
+    "sens": "haut_mieux",
+    "serie": [
+     {
+      "annee": 2019,
+      "valeur": 72.2
+     },
+     {
+      "annee": 2021,
+      "valeur": 44.3
+     },
+     {
+      "annee": 2022,
+      "valeur": 31.7
+     },
+     {
+      "annee": 2023,
+      "valeur": 38.1
+     },
+     {
+      "annee": 2024,
+      "valeur": 37.8
+     },
+     {
+      "annee": 2025,
+      "valeur": 42
+     }
+    ],
+    "valeur_num": 42,
+    "comparaison_num": 82.1,
+    "comparaison_nom": "Ontario"
+   },
+   {
+    "nom": "Espérance de vie à la naissance",
+    "definition": "Nombre moyen d'années qu'un nouveau-né peut espérer vivre si les taux de décès de l'année restaient les mêmes toute sa vie.",
+    "valeur": "82,7 ans (2024, hommes et femmes) ; 2025 : 81,1 ans (hommes) et 84,4 ans (femmes)",
+    "annee": "2024-2025",
+    "tendance": "Quasi stable depuis 2016 (rupture avec la hausse des décennies précédentes) ; baisse ponctuelle en 2020 et 2022.",
+    "comparaison": "Canada 82,2 ans, Ontario 82,9 ans (2024, Statistique Canada). Le Québec dépasse la moyenne canadienne.",
+    "cible": null,
+    "source_url": "https://statistique.quebec.ca/fr/fichier/bilan-demographique-quebec-edition-2025.pdf",
+    "source_nom": "Institut de la statistique du Québec",
+    "autres_sources": [],
+    "unite": "ans",
+    "sens": "haut_mieux",
+    "serie": [
+     {
+      "annee": 2014,
+      "valeur": 82.06
+     },
+     {
+      "annee": 2015,
+      "valeur": 82.12
+     },
+     {
+      "annee": 2016,
+      "valeur": 82.57
+     },
+     {
+      "annee": 2017,
+      "valeur": 82.44
+     },
+     {
+      "annee": 2018,
+      "valeur": 82.42
+     },
+     {
+      "annee": 2019,
+      "valeur": 82.84
+     },
+     {
+      "annee": 2020,
+      "valeur": 82.18
+     },
+     {
+      "annee": 2021,
+      "valeur": 82.84
+     },
+     {
+      "annee": 2022,
+      "valeur": 82.03
+     },
+     {
+      "annee": 2023,
+      "valeur": 82.52
+     },
+     {
+      "annee": 2024,
+      "valeur": 82.65
+     }
+    ],
+    "valeur_num": 82.7,
+    "comparaison_num": 82.16,
+    "comparaison_nom": "Canada"
+   },
+   {
+    "nom": "Espérance de vie en bonne santé",
+    "definition": "Nombre d'années qu'on peut espérer vivre en bonne santé, c'est-à-dire en retirant les années vécues avec une maladie ou une incapacité.",
+    "valeur": "70,4 ans",
+    "annee": "2023",
+    "tendance": "71,1 ans (2019), 71,2 ans (2020), 70,4 ans (2023) : légère baisse.",
+    "comparaison": "Ontario 67,1 ans, Canada 66,9 ans (2023). Le Québec est nettement au-dessus.",
+    "cible": null,
+    "source_url": "https://www150.statcan.gc.ca/t1/tbl1/fr/tv.action?pid=1310097101",
+    "source_nom": "Statistique Canada",
+    "autres_sources": [],
+    "unite": "ans",
+    "sens": "haut_mieux",
+    "serie": [
+     {
+      "annee": 2019,
+      "valeur": 71.1
+     },
+     {
+      "annee": 2020,
+      "valeur": 71.2
+     },
+     {
+      "annee": 2023,
+      "valeur": 70.4
+     }
+    ],
+    "valeur_num": 70.4,
+    "comparaison_num": 66.9,
+    "comparaison_nom": "Canada"
+   },
+   {
+    "nom": "Dépenses totales de santé par habitant",
+    "definition": "Tout l'argent dépensé en santé dans la province (public et privé : hôpitaux, médecins, médicaments, dentistes, etc.), divisé par la population.",
+    "valeur": "9 320 $ (prévision)",
+    "annee": "2025",
+    "tendance": "Série provinciale non extraite pour cette fiche. En 2024, la dépense publique réelle par habitant a reculé au Canada (-1,4 %), la population ayant crû plus vite que les budgets.",
+    "comparaison": "Ontario 9 045 $ (le plus bas), Nouvelle-Écosse 11 617 $ (le plus haut). Le Québec est parmi les trois provinces qui dépensent le moins par habitant.",
+    "cible": null,
+    "source_url": "https://www.cihi.ca/en/national-health-expenditure-trends/nhex-trends-reports/nhex-trends-2025-snapshot",
+    "source_nom": "Institut canadien d'information sur la santé",
+    "autres_sources": [],
+    "unite": "$",
+    "sens": ""
+   }
+  ],
+  "pieges": [
+   {
+    "titre": "",
+    "texte": "La durée moyenne aux urgences ne décrit que les patients sur civière, pas ceux qui attendent assis (« ambulatoires »), et une moyenne est tirée vers le haut par quelques séjours très longs. Une baisse de la moyenne peut cacher une hausse du nombre de personnes qui repartent sans avoir vu de médecin."
+   },
+   {
+    "titre": "« Inscrit à un médecin de famille » n'est plus synonyme d'« avoir son médecin »",
+    "texte": "depuis 2025, une grande partie des nouvelles inscriptions sont collectives (à un GMF, pas à un médecin nommé). Par ailleurs, la question de Statistique Canada a changé en 2022-2023 : comparer 74 % (2024) à 78,7 % (2022) mélange deux mesures."
+   },
+   {
+    "titre": "",
+    "texte": "Une liste d'attente qui fond d'un coup (ex. -13 800 demandes entre les périodes 1 et 2 de 2026-2027) peut refléter une révision administrative des listes autant que des opérations faites : vérifier le nombre de chirurgies réalisées avant de conclure."
+   },
+   {
+    "titre": "Des dépenses par habitant plus basses ne veulent pas dire que le système est plus efficace",
+    "texte": "les salaires, la structure d'âge et ce que couvre le régime public varient d'une province à l'autre."
+   }
+  ],
+  "motifs_seao": [
+   "Santé",
+   "CISSS",
+   "CIUSSS",
+   "CHU",
+   "Héma-Québec",
+   "assurance maladie",
+   "Hôpital",
+   "hospitalier"
+  ],
+  "themes_plateformes": [
+   "sante"
+  ]
+ },
+ {
+  "slug": "education",
+  "nom": "Éducation (primaire, secondaire, cégep, université)",
+  "accroche": "Des services de garde éducatifs jusqu'à l'université : écoles, cégeps, enseignants, réussite.",
+  "cest_quoi": "L'école de la maternelle au secondaire, la formation professionnelle, l'éducation des adultes, les cégeps et les universités. Selon la Constitution, l'éducation relève exclusivement des provinces : Québec fixe les programmes, les diplômes, le calendrier et finance les écoles publiques, les cégeps et les universités. Ottawa finance surtout la recherche universitaire, l'aide financière aux études dans les autres provinces (le Québec gère son propre régime de prêts et bourses) et contrôle l'immigration des étudiants étrangers. Les centres de services scolaires (qui ont remplacé les commissions scolaires francophones en 2020) gèrent les écoles ; les municipalités n'ont pas de rôle direct. Responsables : ministère de l'Éducation (préscolaire, primaire, secondaire) et ministère de l'Enseignement supérieur (cégeps et universités).",
+  "budget": {
+   "montant": "29 874,9 M$ : Éducation 20 521,9 M$ + Enseignement supérieur 9 353,0 M$ (dépenses de programmes, mesures du Budget incluses) ; 35 824,1 M$ en dépenses consolidées des deux portefeuilles",
+   "part": "22,3 % des dépenses de programmes (Éducation 15,3 % ; Enseignement supérieur 7,0 %) ; 22,3 % des dépenses consolidées des portefeuilles",
+   "annee": "2026-2027",
+   "note": null,
+   "source_url": "https://cdn-contenu.quebec.ca/cdn-contenu/adm/min/secretariat-du-conseil-du-tresor/publications-adm/budgets/2026-2027/1_strategie_gestion_depenses.pdf",
+   "source_nom": "Gouvernement du Québec"
+  },
+  "kpis": [
+   {
+    "nom": "Taux de diplomation et de qualification au secondaire (après 7 ans)",
+    "definition": "Part des élèves entrés en 1re secondaire qui ont obtenu un diplôme (DES, DEP) ou une qualification sept ans plus tard, donc en général avant 20 ans.",
+    "valeur": "82,7 %",
+    "annee": "2024-2025",
+    "tendance": "Hausse d'environ 11 points depuis 2008-2009 ; première baisse en 16 ans en 2023-2024 (84,3 % → 82,4 %), puis stabilisation (82,7 %). Garçons 79,2 %, filles 86,2 %.",
+    "comparaison": "Pas de mesure identique publiée pour l'Ontario.",
+    "cible": "Politique de la réussite éducative (2017) : 90 % des moins de 20 ans avec un premier diplôme ou une qualification d'ici 2030 (et 85 % avec un diplôme).",
+    "source_url": "https://statistique.quebec.ca/vitrine/egalite/dimensions-egalite/education/diplomation-qualification-secondaire?onglet=ensemble-de-la-population",
+    "source_nom": "Institut de la statistique du Québec",
+    "autres_sources": [],
+    "unite": "%",
+    "sens": "haut_mieux",
+    "serie": [
+     {
+      "annee": 2023,
+      "valeur": 84.3
+     },
+     {
+      "annee": 2024,
+      "valeur": 82.4
+     },
+     {
+      "annee": 2025,
+      "valeur": 82.7
+     }
+    ],
+    "valeur_num": 82.7,
+    "comparaison_num": 90,
+    "comparaison_nom": "Cible 2030"
+   },
+   {
+    "nom": "Taux de sorties sans diplôme ni qualification (décrochage)",
+    "definition": "Part des élèves qui ont quitté le secondaire une année donnée sans diplôme ni qualification et qui ne sont pas revenus l'année suivante.",
+    "valeur": "14 %",
+    "annee": "2023-2024",
+    "tendance": "22 % en 1999-2000 ; 16 % (2021-2022), 15 % (2022-2023), 14 % (2023-2024). Écart garçons-filles : 5 points.",
+    "comparaison": "Pas de mesure identique publiée pour l'Ontario.",
+    "cible": null,
+    "source_url": "https://statistique.quebec.ca/vitrine/15-29-ans/theme/education/sorties-sans-diplome-ni-qualification-au-secondaire",
+    "source_nom": "Institut de la statistique du Québec",
+    "autres_sources": [],
+    "unite": "%",
+    "sens": "bas_mieux",
+    "serie": [
+     {
+      "annee": 2022,
+      "valeur": 16
+     },
+     {
+      "annee": 2023,
+      "valeur": 15
+     },
+     {
+      "annee": 2024,
+      "valeur": 14
+     }
+    ],
+    "valeur_num": 14
+   },
+   {
+    "nom": "Résultats PISA en mathématiques (élèves de 15 ans)",
+    "definition": "Score moyen à l'évaluation internationale PISA de l'OCDE (échelle centrée sur 500).",
+    "valeur": "514 points",
+    "annee": "2022",
+    "tendance": "Baisse : 536 (2003), 536 (2012), 514 (2022). Lecture 2022 : 501 ; sciences : 512. Les résultats PISA 2025 n'étaient pas encore intégrés à cette fiche.",
+    "comparaison": "1er au Canada et 7e au monde en mathématiques. Ontario 495, Canada 497, moyenne OCDE 472.",
+    "cible": null,
+    "source_url": "https://cdn-contenu.quebec.ca/cdn-contenu/education/recherches/Resultats-pisa-2022.pdf",
+    "source_nom": "Gouvernement du Québec",
+    "autres_sources": [],
+    "unite": "points",
+    "sens": "haut_mieux",
+    "serie": [
+     {
+      "annee": 2003,
+      "valeur": 536
+     },
+     {
+      "annee": 2012,
+      "valeur": 536
+     },
+     {
+      "annee": 2022,
+      "valeur": 514
+     }
+    ],
+    "valeur_num": 514,
+    "comparaison_num": 497,
+    "comparaison_nom": "Canada"
+   },
+   {
+    "nom": "Enseignants non légalement qualifiés",
+    "definition": "Personnes qui enseignent sans brevet d'enseignement, embauchées par tolérance faute de personnel qualifié.",
+    "valeur": "Environ 10 110 (avril 2026, écoles publiques)",
+    "annee": "2025-2026",
+    "tendance": "Hausse : 9 184 en décembre 2024 (+38 % par rapport à mai 2023). Près de 6 % du personnel enseignant était en « tolérance d'engagement » en 2024-2025.",
+    "comparaison": "Pas de comparaison interprovinciale fiable trouvée.",
+    "cible": null,
+    "source_url": "https://www.lapresse.ca/actualites/education/2026-08-26/rentree-scolaire/plus-d-argent-pour-la-qualification-d-enseignants.php",
+    "source_nom": "lapresse.ca",
+    "autres_sources": [],
+    "unite": "enseignants",
+    "sens": "bas_mieux"
+   },
+   {
+    "nom": "Diplomation au cégep (DEC préuniversitaire)",
+    "definition": "Part des étudiants inscrits pour la première fois à un DEC préuniversitaire (2 ans) qui obtiennent leur sanction dans la durée prévue.",
+    "valeur": "36 % dans les 2 ans (cohorte de l'automne 2021) ; 72 % après 4 ans (cohorte 2019)",
+    "annee": "cohorte 2021",
+    "tendance": "Baisse depuis 15 ans : 43 % pour la cohorte 2005. L'écart femmes-hommes se réduit (38 % c. 33 %).",
+    "comparaison": "Aucune (le cégep n'existe qu'au Québec).",
+    "cible": null,
+    "source_url": "https://statistique.quebec.ca/vitrine/15-29-ans/theme/education/obtention-sanction-etudes-collegiales-formation-preuniversitaire",
+    "source_nom": "Institut de la statistique du Québec",
+    "autres_sources": [],
+    "unite": "%",
+    "sens": "haut_mieux"
+   },
+   {
+    "nom": "Adultes de 25 à 64 ans titulaires d'un grade universitaire",
+    "definition": "Part des 25-64 ans qui détiennent au moins un baccalauréat.",
+    "valeur": "29,5 %",
+    "annee": "2021 (recensement)",
+    "tendance": "Hausse continue depuis des décennies (une personne sur dix en 1990).",
+    "comparaison": "Moyenne canadienne 32,9 % ; le Québec est sous l'Ontario, l'Alberta et la Colombie-Britannique.",
+    "cible": null,
+    "source_url": "https://statistique.quebec.ca/fr/fichier/titulaires-grade-universitaire-quebec-2021.pdf",
+    "source_nom": "Institut de la statistique du Québec",
+    "autres_sources": [],
+    "unite": "%",
+    "sens": "haut_mieux"
+   },
+   {
+    "nom": "Dépense globale par élève (préscolaire, primaire, secondaire)",
+    "definition": "Total des dépenses des écoles (publiques) divisé par le nombre d'élèves.",
+    "valeur": "13 987 $",
+    "annee": "2017-2018 (plus récente valeur publiée sur la page du ministère)",
+    "tendance": "+12,3 % entre 2013-2014 (12 460 $) et 2017-2018.",
+    "comparaison": "Ontario 14 254 $, Canada 14 253 $ ; mais une fois ajustée au coût de la vie, la dépense québécoise est la plus élevée (Ontario 12 087 $, Canada 12 956 $ en dollars ajustés).",
+    "cible": null,
+    "source_url": "https://www.quebec.ca/education/indicateurs-statistiques/prescolaire-primaire-secondaire/depense-globale-eleve",
+    "source_nom": "Gouvernement du Québec",
+    "autres_sources": [],
+    "unite": "$",
+    "sens": "",
+    "serie": [
+     {
+      "annee": 2014,
+      "valeur": 12460
+     },
+     {
+      "annee": 2018,
+      "valeur": 13987
+     }
+    ],
+    "valeur_num": 13987,
+    "comparaison_num": 14254,
+    "comparaison_nom": "Ontario (dollars courants)"
+   }
+  ],
+  "pieges": [
+   {
+    "titre": "",
+    "texte": "Le taux de diplomation « et de qualification » additionne les diplômes (DES, DEP) et des qualifications plus courtes (ex. certificat de formation à un métier semi-spécialisé). Il n'est donc pas comparable au « taux d'obtention du diplôme d'études secondaires » de l'Ontario ou de Statistique Canada."
+   },
+   {
+    "titre": "Le taux de « sorties sans diplôme » n'est pas un taux de décrochage au sens courant",
+    "texte": "il compte aussi les élèves partis hors Québec ou décédés, et un élève « sorti » peut revenir plus tard à l'éducation des adultes."
+   },
+   {
+    "titre": "Au PISA 2022, seulement 79 % des élèves québécois sélectionnés ont participé, sous le seuil de l'OCDE",
+    "texte": "si les élèves absents sont en moyenne plus faibles, le score est surestimé. Le rang « 1er au Canada » reste une information utile mais à nuancer."
+   }
+  ],
+  "motifs_seao": [
+   "scolaire",
+   "Université",
+   "Cégep",
+   "Collège",
+   "Polytechnique",
+   "HEC Montréal",
+   "Éducation",
+   "Enseignement supérieur",
+   "-CHU",
+   "-santé"
+  ],
+  "themes_plateformes": [
+   "education"
+  ]
+ },
+ {
+  "slug": "famille",
+  "nom": "Famille, aînés et solidarité sociale",
+  "accroche": "Garderies, allocations, aide sociale, lutte contre la pauvreté, soutien aux aînés et aux proches aidants.",
+  "cest_quoi": "Les services de garde éducatifs (CPE, garderies subventionnées, milieu familial), l'aide aux familles, l'aide sociale (aide financière de dernier recours), la lutte contre la pauvreté et le soutien aux aînés et aux proches aidants. Québec gère son propre réseau de garderies à contribution réduite (depuis 1997), l'aide sociale et l'Allocation famille ; Ottawa verse l'Allocation canadienne pour enfants, la Pension de la Sécurité de la vieillesse et le Supplément de revenu garanti, et finance en partie les garderies par une entente fédérale-provinciale. Les municipalités jouent un rôle d'appoint (politiques familiales et « Municipalité amie des aînés », loisirs, parfois logement social). Responsables : ministère de la Famille, ministère de l'Emploi et de la Solidarité sociale ; la Loi visant à reconnaître et à soutenir les personnes proches aidantes (2020) relève du MSSS.",
+  "budget": {
+   "montant": "10 061,5 M$ : Famille 4 749,0 M$ + Emploi et Solidarité sociale 5 312,5 M$ (dépenses de programmes, mesures du Budget incluses)",
+   "part": "7,5 % des dépenses de programmes (Famille 3,5 % ; Emploi et Solidarité sociale 4,0 %)",
+   "annee": "2026-2027",
+   "note": null,
+   "source_url": "https://cdn-contenu.quebec.ca/cdn-contenu/adm/min/secretariat-du-conseil-du-tresor/publications-adm/budgets/2026-2027/1_strategie_gestion_depenses.pdf",
+   "source_nom": "Gouvernement du Québec"
+  },
+  "kpis": [
+   {
+    "nom": "Taux de pauvreté (Mesure du panier de consommation, MPC)",
+    "definition": "Part des personnes dont le revenu disponible ne permet pas d'acheter un panier de biens et services de base (logement, nourriture, vêtements, transport, etc.) dans leur région. C'est le seuil officiel de pauvreté du Canada.",
+    "valeur": "7,0 %",
+    "annee": "2024",
+    "tendance": "Forte baisse de 2015 (13,5 %) à 2020 (4,8 %, effet des aides d'urgence de la pandémie), remontée ensuite (7,5 % en 2023), puis 7,0 % en 2024.",
+    "comparaison": "Ontario 12,5 %, Canada 11,0 % (2024) : le Québec a le taux le plus bas au pays.",
+    "cible": "Cible fédérale (Stratégie canadienne de réduction de la pauvreté) : réduire la pauvreté de 50 % d'ici 2030 par rapport à 2015. La loi québécoise (2002) vise à placer le Québec parmi les nations industrialisées comptant le moins de personnes pauvres, sans taux chiffré.",
+    "source_url": "https://www150.statcan.gc.ca/t1/tbl1/fr/tv.action?pid=1110013501",
+    "source_nom": "Statistique Canada",
+    "autres_sources": [],
+    "unite": "%",
+    "sens": "bas_mieux",
+    "serie": [
+     {
+      "annee": 2015,
+      "valeur": 13.5
+     },
+     {
+      "annee": 2016,
+      "valeur": 11.0
+     },
+     {
+      "annee": 2017,
+      "valeur": 10.9
+     },
+     {
+      "annee": 2018,
+      "valeur": 9.9
+     },
+     {
+      "annee": 2019,
+      "valeur": 9.0
+     },
+     {
+      "annee": 2020,
+      "valeur": 4.8
+     },
+     {
+      "annee": 2021,
+      "valeur": 5.3
+     },
+     {
+      "annee": 2022,
+      "valeur": 6.7
+     },
+     {
+      "annee": 2023,
+      "valeur": 7.5
+     }
+    ],
+    "valeur_num": 7.0,
+    "comparaison_num": 12.5,
+    "comparaison_nom": "Ontario"
+   },
+   {
+    "nom": "Taux de pauvreté des enfants (MPC)",
+    "definition": "Part des moins de 18 ans vivant sous le seuil de la MPC.",
+    "valeur": "5,8 %",
+    "annee": "2024",
+    "tendance": "5,3 % (2022) → 6,3 % (2023) → 5,8 % (2024), selon la base 2023.",
+    "comparaison": "Ontario 13,2 %, Canada 11,5 % (2024).",
+    "cible": "Même cible fédérale (-50 % d'ici 2030 par rapport à 2015).",
+    "source_url": "https://www150.statcan.gc.ca/t1/tbl1/fr/tv.action?pid=1110013501",
+    "source_nom": "Statistique Canada",
+    "autres_sources": [],
+    "unite": "%",
+    "sens": "bas_mieux",
+    "serie": [
+     {
+      "annee": 2022,
+      "valeur": 5.3
+     },
+     {
+      "annee": 2023,
+      "valeur": 6.3
+     },
+     {
+      "annee": 2024,
+      "valeur": 5.8
+     }
+    ],
+    "valeur_num": 5.8,
+    "comparaison_num": 13.2,
+    "comparaison_nom": "Ontario"
+   },
+   {
+    "nom": "Taux de pauvreté des aînés de 65 ans et plus (MPC)",
+    "definition": "Part des 65 ans et plus vivant sous le seuil de la MPC.",
+    "valeur": "3,2 %",
+    "annee": "2024",
+    "tendance": "3,3 % (2022) → 3,8 % (2023) → 3,2 % (2024), base 2023.",
+    "comparaison": "Ontario 6,3 %, Canada 5,4 % (2024).",
+    "cible": null,
+    "source_url": "https://www150.statcan.gc.ca/t1/tbl1/fr/tv.action?pid=1110013501",
+    "source_nom": "Statistique Canada",
+    "autres_sources": [],
+    "unite": "%",
+    "sens": "bas_mieux",
+    "serie": [
+     {
+      "annee": 2022,
+      "valeur": 3.3
+     },
+     {
+      "annee": 2023,
+      "valeur": 3.8
+     },
+     {
+      "annee": 2024,
+      "valeur": 3.2
+     }
+    ],
+    "valeur_num": 3.2,
+    "comparaison_num": 5.4,
+    "comparaison_nom": "Canada"
+   },
+   {
+    "nom": "Insécurité alimentaire",
+    "definition": "Part des personnes vivant dans un ménage qui a manqué de nourriture ou a eu peur d'en manquer, faute d'argent, au cours de la dernière année.",
+    "valeur": "18,0 %",
+    "annee": "2024",
+    "tendance": "Hausse marquée : 11,0 % (2019) → 19,9 % (2023), légère baisse à 18,0 % en 2024.",
+    "comparaison": "Ontario 25,4 %, Canada 24,0 % (2024).",
+    "cible": null,
+    "source_url": "https://www150.statcan.gc.ca/t1/tbl1/fr/tv.action?pid=1310083401",
+    "source_nom": "Statistique Canada",
+    "autres_sources": [],
+    "unite": "%",
+    "sens": "bas_mieux",
+    "serie": [
+     {
+      "annee": 2018,
+      "valeur": 14.5
+     },
+     {
+      "annee": 2019,
+      "valeur": 11.0
+     },
+     {
+      "annee": 2020,
+      "valeur": 12.8
+     },
+     {
+      "annee": 2021,
+      "valeur": 14.8
+     },
+     {
+      "annee": 2022,
+      "valeur": 15.8
+     },
+     {
+      "annee": 2023,
+      "valeur": 19.9
+     },
+     {
+      "annee": 2024,
+      "valeur": 18.0
+     }
+    ],
+    "valeur_num": 18.0,
+    "comparaison_num": 24.0,
+    "comparaison_nom": "Canada"
+   },
+   {
+    "nom": "Enfants de 0 à 5 ans qui fréquentent un service de garde",
+    "definition": "Part des enfants de 0 à 5 ans qui fréquentent régulièrement un mode de garde autre que leurs parents.",
+    "valeur": "76,7 %",
+    "annee": "2025",
+    "tendance": "78,2 % (2019), 71,3 % (2022), 76,7 % (2025).",
+    "comparaison": "Ontario 49,8 %, Canada 57,7 % (2025).",
+    "cible": "Grand chantier pour les familles (2021) : compléter le réseau pour offrir une place à chaque enfant qui en a besoin.",
+    "source_url": "https://www150.statcan.gc.ca/t1/tbl1/fr/tv.action?pid=4210010301",
+    "source_nom": "Statistique Canada",
+    "autres_sources": [],
+    "unite": "%",
+    "sens": "haut_mieux",
+    "serie": [
+     {
+      "annee": 2019,
+      "valeur": 78.2
+     },
+     {
+      "annee": 2020,
+      "valeur": 75.2
+     },
+     {
+      "annee": 2022,
+      "valeur": 71.3
+     },
+     {
+      "annee": 2023,
+      "valeur": 75.0
+     },
+     {
+      "annee": 2025,
+      "valeur": 76.7
+     }
+    ],
+    "valeur_num": 76.7,
+    "comparaison_num": 49.8,
+    "comparaison_nom": "Ontario"
+   },
+   {
+    "nom": "Enfants en attente d'une place en service de garde",
+    "definition": "Nombre d'enfants inscrits au guichet (La Place 0-5) qui avaient besoin d'une place immédiatement et n'en avaient pas.",
+    "valeur": "30 688",
+    "annee": "31 mai 2025 (dernière donnée publiée)",
+    "tendance": "Pas de série comparable : le mode de calcul a changé avec le nouveau portail d'inscription. En incluant les besoins futurs : 59 675 enfants.",
+    "comparaison": "Pas de comparaison interprovinciale équivalente.",
+    "cible": "Grand chantier : une place pour chaque enfant (le réseau comptait environ 318 000 places au 30 juin 2026, dont 10 768 en réalisation).",
+    "source_url": "https://www.quebec.ca/gouvernement/politiques-orientations/plan-action-reseau-services-garde/statistiques",
+    "source_nom": "Gouvernement du Québec",
+    "autres_sources": [],
+    "unite": "enfants",
+    "sens": "bas_mieux"
+   },
+   {
+    "nom": "Parents ayant eu de la difficulté à trouver une place",
+    "definition": "Parmi les enfants de 0 à 5 ans qui fréquentent un service de garde, part dont les parents ont eu de la difficulté à trouver ce service.",
+    "valeur": "39,5 %",
+    "annee": "2025",
+    "tendance": "30,5 % (2019) → 43,8 % (2023) → 39,5 % (2025).",
+    "comparaison": "Ontario 52,4 %, Canada 49,7 % (2025).",
+    "cible": null,
+    "source_url": "https://www150.statcan.gc.ca/t1/tbl1/fr/tv.action?pid=4210000101",
+    "source_nom": "Statistique Canada",
+    "autres_sources": [],
+    "unite": "%",
+    "sens": "bas_mieux",
+    "serie": [
+     {
+      "annee": 2019,
+      "valeur": 30.5
+     },
+     {
+      "annee": 2020,
+      "valeur": 35.0
+     },
+     {
+      "annee": 2022,
+      "valeur": 38.6
+     },
+     {
+      "annee": 2023,
+      "valeur": 43.8
+     },
+     {
+      "annee": 2025,
+      "valeur": 39.5
+     }
+    ],
+    "valeur_num": 39.5,
+    "comparaison_num": 52.4,
+    "comparaison_nom": "Ontario"
+   },
+   {
+    "nom": "Personnes à l'assistance sociale",
+    "definition": "Nombre d'adultes et d'enfants à charge qui reçoivent une aide financière de dernier recours (aide sociale et solidarité sociale).",
+    "valeur": "327 123 personnes",
+    "annee": "juillet 2026",
+    "tendance": "350 467 (juillet 2024) → 340 459 (juillet 2025) → 327 123 (juillet 2026). Taux chez les 18-29 ans : 3,9 % en 2025 (7 % en 2001).",
+    "comparaison": "Pas de comparaison directe (programmes différents d'une province à l'autre).",
+    "cible": null,
+    "source_url": "https://www.donneesquebec.ca/recherche/dataset/01_clientele-aux-programmes-d-assistance-sociale",
+    "source_nom": "donneesquebec.ca",
+    "autres_sources": [],
+    "unite": "personnes",
+    "sens": "bas_mieux",
+    "serie": [
+     {
+      "annee": 2023,
+      "valeur": 333554
+     },
+     {
+      "annee": 2024,
+      "valeur": 350467
+     },
+     {
+      "annee": 2025,
+      "valeur": 340459
+     },
+     {
+      "annee": 2026,
+      "valeur": 327123
+     }
+    ],
+    "valeur_num": 327123
+   }
+  ],
+  "pieges": [
+   {
+    "titre": "",
+    "texte": "La MPC compare le revenu au coût d'un panier dans chaque région. Comme le logement a longtemps coûté moins cher au Québec, le seuil y est plus bas : le faible taux québécois reflète à la fois de bonnes politiques de transferts et des coûts de logement plus bas. Et le creux de 2020 vient surtout des aides temporaires de la pandémie, pas d'une amélioration durable."
+   },
+   {
+    "titre": "",
+    "texte": "Le nombre d'enfants « en attente » d'une place dépend de la façon de compter (besoin immédiat vs besoin futur, doublons, changement de portail) : 30 688 ou 59 675 selon la définition, pour la même date."
+   },
+   {
+    "titre": "",
+    "texte": "Aucune donnée récente et comparable sur le nombre de proches aidants n'a été trouvée dans les tableaux de Statistique Canada consultés (la dernière enquête détaillée par province date de 2018) : prudence avec les chiffres qui circulent."
+   }
+  ],
+  "motifs_seao": [
+   "Famille",
+   "Solidarité sociale",
+   "Curateur public",
+   "petite enfance"
+  ],
+  "themes_plateformes": [
+   "famille"
+  ]
+ },
+ {
+  "slug": "logement",
+  "nom": "Logement et habitation",
+  "accroche": "Loyers, accès à la propriété, construction, logement social : un enjeu partagé avec Ottawa et les villes.",
+  "cest_quoi": "Tout ce qui touche l'offre de logements (construction, logement social et abordable), les règles entre propriétaires et locataires et l'aide au loyer. Québec encadre les baux (Tribunal administratif du logement), finance le logement social et abordable par la Société d'habitation du Québec (SHQ) et verse l'allocation-logement. Ottawa agit par la SCHL (assurance hypothécaire, financement de la construction locative, Stratégie nationale sur le logement) et par les taux d'intérêt (Banque du Canada). Les municipalités ont un rôle central : zonage, permis de construire, taxes foncières et, souvent, gestion des offices d'habitation (HLM). Responsables : ministère des Affaires municipales et de l'Habitation (MAMH) et SHQ.",
+  "budget": {
+   "montant": "3 801,0 M$ pour tout le portefeuille Affaires municipales et Habitation (dépenses de programmes, mesures du Budget incluses) ; ce montant couvre aussi les transferts aux municipalités, pas seulement l'habitation",
+   "part": "2,8 % des dépenses de programmes",
+   "annee": "2026-2027",
+   "note": null,
+   "source_url": "https://cdn-contenu.quebec.ca/cdn-contenu/adm/min/secretariat-du-conseil-du-tresor/publications-adm/budgets/2026-2027/1_strategie_gestion_depenses.pdf",
+   "source_nom": "Gouvernement du Québec"
+  },
+  "kpis": [
+   {
+    "nom": "Taux d'inoccupation des logements locatifs, région de Montréal",
+    "definition": "Part des appartements locatifs (immeubles privés de 6 logements et plus) qui sont vides et prêts à louer lors de l'enquête d'octobre de la SCHL.",
+    "valeur": "3,3 %",
+    "annee": "octobre 2025",
+    "tendance": "Creux de 1,6 % en 2019, remontée à 3,5 % en 2021, rechute à 1,9 % en 2023, puis 2,5 % (2024) et 3,3 % (2025).",
+    "comparaison": "Toronto 3,0 %, Québec (RMR) 2,6 %, Gatineau 4,6 % (2025).",
+    "cible": null,
+    "source_url": "https://www150.statcan.gc.ca/t1/tbl1/fr/tv.action?pid=3410012701",
+    "source_nom": "Statistique Canada",
+    "autres_sources": [],
+    "unite": "%",
+    "sens": "",
+    "serie": [
+     {
+      "annee": 2015,
+      "valeur": 4.5
+     },
+     {
+      "annee": 2016,
+      "valeur": 4.6
+     },
+     {
+      "annee": 2017,
+      "valeur": 2.9
+     },
+     {
+      "annee": 2018,
+      "valeur": 2.0
+     },
+     {
+      "annee": 2019,
+      "valeur": 1.6
+     },
+     {
+      "annee": 2020,
+      "valeur": 3.3
+     },
+     {
+      "annee": 2021,
+      "valeur": 3.5
+     },
+     {
+      "annee": 2022,
+      "valeur": 2.2
+     },
+     {
+      "annee": 2023,
+      "valeur": 1.9
+     },
+     {
+      "annee": 2024,
+      "valeur": 2.5
+     },
+     {
+      "annee": 2025,
+      "valeur": 3.3
+     }
+    ],
+    "valeur_num": 3.3,
+    "comparaison_num": 3.0,
+    "comparaison_nom": "Toronto"
+   },
+   {
+    "nom": "Taux d'inoccupation, région de Québec",
+    "definition": "Même mesure pour la région métropolitaine de Québec.",
+    "valeur": "2,6 %",
+    "annee": "octobre 2025",
+    "tendance": "5,4 % (2016) → 0,9 % (2023, creux) → 2,6 % (2025).",
+    "comparaison": "Montréal 3,3 %, Toronto 3,0 % (2025).",
+    "cible": null,
+    "source_url": "https://www150.statcan.gc.ca/t1/tbl1/fr/tv.action?pid=3410012701",
+    "source_nom": "Statistique Canada",
+    "autres_sources": [],
+    "unite": "%",
+    "sens": "",
+    "serie": [
+     {
+      "annee": 2015,
+      "valeur": 4.3
+     },
+     {
+      "annee": 2016,
+      "valeur": 5.4
+     },
+     {
+      "annee": 2017,
+      "valeur": 4.7
+     },
+     {
+      "annee": 2018,
+      "valeur": 3.5
+     },
+     {
+      "annee": 2019,
+      "valeur": 2.5
+     },
+     {
+      "annee": 2020,
+      "valeur": 2.7
+     },
+     {
+      "annee": 2021,
+      "valeur": 2.7
+     },
+     {
+      "annee": 2022,
+      "valeur": 1.5
+     },
+     {
+      "annee": 2023,
+      "valeur": 0.9
+     },
+     {
+      "annee": 2024,
+      "valeur": 1.0
+     },
+     {
+      "annee": 2025,
+      "valeur": 2.6
+     }
+    ],
+    "valeur_num": 2.6,
+    "comparaison_num": 3.3,
+    "comparaison_nom": "Montréal"
+   },
+   {
+    "nom": "Loyer moyen d'un logement de 2 chambres, région de Montréal",
+    "definition": "Loyer mensuel moyen payé pour les appartements de 2 chambres dans les immeubles locatifs de 3 logements et plus (enquête SCHL d'octobre).",
+    "valeur": "1 346 $",
+    "annee": "octobre 2025",
+    "tendance": "Hausse de 77 % en 10 ans (760 $ en 2015), et de 44 % depuis 2021 (932 $).",
+    "comparaison": "Toronto 2 045 $, Québec (RMR) 1 276 $ (2025).",
+    "cible": null,
+    "source_url": "https://www150.statcan.gc.ca/t1/tbl1/fr/tv.action?pid=3410013301",
+    "source_nom": "Statistique Canada",
+    "autres_sources": [],
+    "unite": "$",
+    "sens": "bas_mieux",
+    "serie": [
+     {
+      "annee": 2015,
+      "valeur": 760
+     },
+     {
+      "annee": 2016,
+      "valeur": 791
+     },
+     {
+      "annee": 2017,
+      "valeur": 782
+     },
+     {
+      "annee": 2018,
+      "valeur": 809
+     },
+     {
+      "annee": 2019,
+      "valeur": 856
+     },
+     {
+      "annee": 2020,
+      "valeur": 903
+     },
+     {
+      "annee": 2021,
+      "valeur": 932
+     },
+     {
+      "annee": 2022,
+      "valeur": 1022
+     },
+     {
+      "annee": 2023,
+      "valeur": 1096
+     },
+     {
+      "annee": 2024,
+      "valeur": 1176
+     },
+     {
+      "annee": 2025,
+      "valeur": 1346
+     }
+    ],
+    "valeur_num": 1346,
+    "comparaison_num": 2045,
+    "comparaison_nom": "Toronto"
+   },
+   {
+    "nom": "Mises en chantier de logements",
+    "definition": "Nombre de nouveaux logements dont la construction a commencé dans l'année (maisons, condos, locatif), dans tout le Québec.",
+    "valeur": "59 864",
+    "annee": "2025",
+    "tendance": "Sommet de 67 810 en 2021, creux de 38 912 en 2023, reprise en 2024 (48 713) et 2025 (59 864).",
+    "comparaison": "Ontario 65 376, Canada 259 028 (2025). Rapporté à la population, le Québec (environ 9 millions d'habitants) a construit davantage que l'Ontario en 2025.",
+    "cible": null,
+    "source_url": "https://www150.statcan.gc.ca/t1/tbl1/fr/tv.action?pid=3410012601",
+    "source_nom": "Statistique Canada",
+    "autres_sources": [],
+    "unite": "logements",
+    "sens": "haut_mieux",
+    "serie": [
+     {
+      "annee": 2015,
+      "valeur": 37926
+     },
+     {
+      "annee": 2016,
+      "valeur": 38935
+     },
+     {
+      "annee": 2017,
+      "valeur": 46495
+     },
+     {
+      "annee": 2018,
+      "valeur": 46874
+     },
+     {
+      "annee": 2019,
+      "valeur": 47967
+     },
+     {
+      "annee": 2020,
+      "valeur": 54066
+     },
+     {
+      "annee": 2021,
+      "valeur": 67810
+     },
+     {
+      "annee": 2022,
+      "valeur": 57107
+     },
+     {
+      "annee": 2023,
+      "valeur": 38912
+     },
+     {
+      "annee": 2024,
+      "valeur": 48713
+     },
+     {
+      "annee": 2025,
+      "valeur": 59864
+     }
+    ],
+    "valeur_num": 59864,
+    "comparaison_num": 65376,
+    "comparaison_nom": "Ontario"
+   },
+   {
+    "nom": "Ménages qui consacrent 30 % ou plus de leur revenu au logement",
+    "definition": "Part des ménages dont le loyer ou les frais de propriété (hypothèque, taxes, énergie) dépassent 30 % du revenu avant impôt, le seuil d'abordabilité habituel.",
+    "valeur": "16,0 % de tous les ménages ; 25,0 % des ménages locataires",
+    "annee": "2021 (recensement)",
+    "tendance": "Pas de série comparable calculée ici ; le recensement de 2026 donnera une mise à jour.",
+    "comparaison": "Ontario 24,1 % (locataires 38,1 %), Canada 20,9 % (locataires 32,9 %).",
+    "cible": null,
+    "source_url": "https://www150.statcan.gc.ca/t1/tbl1/fr/tv.action?pid=9810024701",
+    "source_nom": "Statistique Canada",
+    "autres_sources": [],
+    "unite": "%",
+    "sens": "bas_mieux"
+   },
+   {
+    "nom": "Ménages en besoin impérieux de logement",
+    "definition": "Ménages dont le logement est inabordable, trop petit ou en mauvais état, et qui ne pourraient pas trouver mieux dans leur région sans y consacrer plus de 30 % de leur revenu.",
+    "valeur": "6,0 % des ménages (11,9 % des locataires)",
+    "annee": "2021 (recensement)",
+    "tendance": "Pas de série calculée ici.",
+    "comparaison": "Ontario 12,1 %, Canada 10,1 %.",
+    "cible": null,
+    "source_url": "https://www150.statcan.gc.ca/t1/tbl1/fr/tv.action?pid=9810024701",
+    "source_nom": "Statistique Canada",
+    "autres_sources": [],
+    "unite": "%",
+    "sens": "bas_mieux"
+   }
+  ],
+  "pieges": [
+   {
+    "titre": "",
+    "texte": "Le loyer moyen de la SCHL est la moyenne des loyers payés par tous les locataires, y compris ceux qui sont dans leur logement depuis 15 ans. Il est bien plus bas que le loyer demandé pour un logement libre aujourd'hui. À l'inverse, l'arrivée de nombreux logements neufs, plus chers, peut faire grimper la moyenne sans qu'aucun locataire existant ne paie plus."
+   },
+   {
+    "titre": "",
+    "texte": "Le taux d'inoccupation ne couvre que les immeubles locatifs construits pour la location (6 logements et plus dans ce tableau) : il exclut les condos loués et les duplex et triplex, très nombreux à Montréal."
+   },
+   {
+    "titre": "",
+    "texte": "Les données d'abordabilité du recensement de 2021 portent sur les revenus de 2020, gonflés temporairement par les prestations d'urgence de la pandémie (PCU) : elles donnent une image plus favorable que la réalité des années suivantes."
+   },
+   {
+    "titre": "",
+    "texte": "Le ratio prix des maisons/revenu demandé n'a pas pu être établi à partir d'une source officielle accessible pour cette fiche ; il est volontairement absent plutôt qu'approximatif."
+   }
+  ],
+  "motifs_seao": [
+   "habitation",
+   "OMH",
+   "-Ville de Montréal"
+  ],
+  "themes_plateformes": [
+   "logement"
+  ]
+ },
+ {
+  "slug": "justice",
+  "nom": "Justice et sécurité publique",
+  "accroche": "Tribunaux, police, prisons, sécurité civile : délais, confiance et sécurité.",
+  "cest_quoi": "Les tribunaux, les poursuites criminelles, l'aide juridique, les prisons, la police et la sécurité civile (sinistres, incendies). Ottawa écrit le Code criminel (ce qui est un crime et les peines), nomme les juges des cours supérieures et gère les pénitenciers (peines de 2 ans ou plus) et la GRC. Québec administre la justice : palais de justice, procureurs (DPCP), cour du Québec, prisons (peines de moins de 2 ans), Sûreté du Québec et indemnisation des victimes. Les municipalités paient et dirigent leurs corps de police (ex. SPVM) ou achètent les services de la SQ, et gèrent les cours municipales. Responsables : ministère de la Justice et ministère de la Sécurité publique.",
+  "budget": {
+   "montant": "3 852,6 M$ : Justice 1 680,5 M$ + Sécurité publique 2 172,1 M$ (dépenses de programmes, mesures du Budget incluses)",
+   "part": "2,9 % des dépenses de programmes (Justice 1,3 % ; Sécurité publique 1,6 %)",
+   "annee": "2026-2027",
+   "note": null,
+   "source_url": "https://cdn-contenu.quebec.ca/cdn-contenu/adm/min/secretariat-du-conseil-du-tresor/publications-adm/budgets/2026-2027/1_strategie_gestion_depenses.pdf",
+   "source_nom": "Gouvernement du Québec"
+  },
+  "kpis": [
+   {
+    "nom": "Indice de gravité de la criminalité (IGC)",
+    "definition": "Mesure de Statistique Canada qui compte les crimes déclarés à la police en donnant plus de poids aux crimes graves (un meurtre pèse beaucoup plus qu'un vol à l'étalage). Base 100 = Canada en 2006.",
+    "valeur": "61,6",
+    "annee": "2025",
+    "tendance": "Stable autour de 56-58 de 2015 à 2019, hausse jusqu'à 64,8 en 2024, baisse à 61,6 en 2025.",
+    "comparaison": "Ontario 57,2, Canada 75,0 (2025).",
+    "cible": null,
+    "source_url": "https://www150.statcan.gc.ca/t1/tbl1/fr/tv.action?pid=3510002601",
+    "source_nom": "Statistique Canada",
+    "autres_sources": [],
+    "unite": "indice",
+    "sens": "bas_mieux",
+    "serie": [
+     {
+      "annee": 2015,
+      "valeur": 56.95
+     },
+     {
+      "annee": 2016,
+      "valeur": 56.62
+     },
+     {
+      "annee": 2017,
+      "valeur": 57.86
+     },
+     {
+      "annee": 2018,
+      "valeur": 56.63
+     },
+     {
+      "annee": 2019,
+      "valeur": 55.91
+     },
+     {
+      "annee": 2020,
+      "valeur": 51.75
+     },
+     {
+      "annee": 2021,
+      "valeur": 56.79
+     },
+     {
+      "annee": 2022,
+      "valeur": 60.36
+     },
+     {
+      "annee": 2023,
+      "valeur": 62.59
+     },
+     {
+      "annee": 2024,
+      "valeur": 64.83
+     },
+     {
+      "annee": 2025,
+      "valeur": 61.55
+     }
+    ],
+    "valeur_num": 61.55,
+    "comparaison_num": 75.01,
+    "comparaison_nom": "Canada"
+   },
+   {
+    "nom": "Indice de gravité des crimes violents",
+    "definition": "Même indice, limité aux crimes contre la personne (voies de fait, agressions sexuelles, vols qualifiés, homicides, etc.).",
+    "valeur": "98,0",
+    "annee": "2025",
+    "tendance": "Forte hausse : 66,5 (2015) → 98,9 (2024), quasi stable en 2025 (98,0). Le Québec a rejoint la moyenne canadienne.",
+    "comparaison": "Ontario 74,9, Canada 97,2 (2025).",
+    "cible": null,
+    "source_url": "https://www150.statcan.gc.ca/t1/tbl1/fr/tv.action?pid=3510002601",
+    "source_nom": "Statistique Canada",
+    "autres_sources": [],
+    "unite": "indice",
+    "sens": "bas_mieux",
+    "serie": [
+     {
+      "annee": 2015,
+      "valeur": 66.47
+     },
+     {
+      "annee": 2016,
+      "valeur": 67.86
+     },
+     {
+      "annee": 2017,
+      "valeur": 72.83
+     },
+     {
+      "annee": 2018,
+      "valeur": 71.8
+     },
+     {
+      "annee": 2019,
+      "valeur": 75.29
+     },
+     {
+      "annee": 2020,
+      "valeur": 74.58
+     },
+     {
+      "annee": 2021,
+      "valeur": 84.16
+     },
+     {
+      "annee": 2022,
+      "valeur": 89.04
+     },
+     {
+      "annee": 2023,
+      "valeur": 93.69
+     },
+     {
+      "annee": 2024,
+      "valeur": 98.87
+     },
+     {
+      "annee": 2025,
+      "valeur": 97.99
+     }
+    ],
+    "valeur_num": 97.99,
+    "comparaison_num": 97.19,
+    "comparaison_nom": "Canada"
+   },
+   {
+    "nom": "Taux d'homicides",
+    "definition": "Nombre de victimes d'homicide par 100 000 habitants.",
+    "valeur": "0,97 par 100 000",
+    "annee": "2025",
+    "tendance": "Entre 0,8 et 1,3 depuis 2015 ; sommet de 1,29 en 2022.",
+    "comparaison": "Ontario 1,27, Canada 1,61 (2025) : le Québec est parmi les plus bas au pays.",
+    "cible": null,
+    "source_url": "https://www150.statcan.gc.ca/t1/tbl1/fr/tv.action?pid=3510006801",
+    "source_nom": "Statistique Canada",
+    "autres_sources": [],
+    "unite": "par 100 000",
+    "sens": "bas_mieux",
+    "serie": [
+     {
+      "annee": 2015,
+      "valeur": 0.97
+     },
+     {
+      "annee": 2016,
+      "valeur": 0.81
+     },
+     {
+      "annee": 2017,
+      "valeur": 1.12
+     },
+     {
+      "annee": 2018,
+      "valeur": 1.0
+     },
+     {
+      "annee": 2019,
+      "valeur": 0.92
+     },
+     {
+      "annee": 2020,
+      "valeur": 1.03
+     },
+     {
+      "annee": 2021,
+      "valeur": 1.05
+     },
+     {
+      "annee": 2022,
+      "valeur": 1.29
+     },
+     {
+      "annee": 2023,
+      "valeur": 1.2
+     },
+     {
+      "annee": 2024,
+      "valeur": 1.09
+     },
+     {
+      "annee": 2025,
+      "valeur": 0.97
+     }
+    ],
+    "valeur_num": 0.97,
+    "comparaison_num": 1.61,
+    "comparaison_nom": "Canada"
+   },
+   {
+    "nom": "Taux de classement pondéré des crimes",
+    "definition": "Part des crimes déclarés que la police a « résolus » (accusation portée ou affaire classée autrement), pondérée par la gravité.",
+    "valeur": "45,6 %",
+    "annee": "2025",
+    "tendance": "Entre 41,7 % (2015) et 45,6 % (2025), le plus haut de la décennie. Crimes violents : 62,4 %.",
+    "comparaison": "Ontario 39,8 %, Canada 36,6 % (2025).",
+    "cible": null,
+    "source_url": "https://www150.statcan.gc.ca/t1/tbl1/fr/tv.action?pid=3510002601",
+    "source_nom": "Statistique Canada",
+    "autres_sources": [],
+    "unite": "%",
+    "sens": "haut_mieux",
+    "serie": [
+     {
+      "annee": 2015,
+      "valeur": 41.67
+     },
+     {
+      "annee": 2019,
+      "valeur": 44.97
+     },
+     {
+      "annee": 2021,
+      "valeur": 42.18
+     },
+     {
+      "annee": 2023,
+      "valeur": 42.95
+     },
+     {
+      "annee": 2024,
+      "valeur": 42.74
+     },
+     {
+      "annee": 2025,
+      "valeur": 45.58
+     }
+    ],
+    "valeur_num": 45.58,
+    "comparaison_num": 36.64,
+    "comparaison_nom": "Canada"
+   },
+   {
+    "nom": "Délai médian de traitement des causes criminelles (adultes)",
+    "definition": "Nombre de jours médian entre la première et la dernière comparution devant un tribunal criminel pour adultes.",
+    "valeur": "217 jours",
+    "annee": "2020-2021 (dernière année publiée pour le Québec)",
+    "tendance": "Baisse de 217 jours (2013-2014) à 132 jours (2019-2020), après l'arrêt Jordan (2016) qui fixe des plafonds (18 mois en cour provinciale, 30 mois en cour supérieure), puis remontée pendant la pandémie. Statistique Canada ne publie plus de données pour le Québec depuis 2021-2022.",
+    "comparaison": "Canada 189 jours, Ontario 202 jours (2023-2024).",
+    "cible": "Plafonds constitutionnels de l'arrêt Jordan (Cour suprême, 2016).",
+    "source_url": "https://www150.statcan.gc.ca/t1/tbl1/fr/tv.action?pid=3510002901",
+    "source_nom": "Statistique Canada",
+    "autres_sources": [],
+    "unite": "jours",
+    "sens": "bas_mieux",
+    "serie": [
+     {
+      "annee": 2014,
+      "valeur": 217
+     },
+     {
+      "annee": 2015,
+      "valeur": 209
+     },
+     {
+      "annee": 2016,
+      "valeur": 199
+     },
+     {
+      "annee": 2017,
+      "valeur": 214
+     },
+     {
+      "annee": 2018,
+      "valeur": 190
+     },
+     {
+      "annee": 2019,
+      "valeur": 166
+     },
+     {
+      "annee": 2020,
+      "valeur": 132
+     },
+     {
+      "annee": 2021,
+      "valeur": 217
+     }
+    ],
+    "valeur_num": 217,
+    "comparaison_num": 187,
+    "comparaison_nom": "Canada (2020-2021)"
+   },
+   {
+    "nom": "Taux d'incarcération dans les prisons provinciales",
+    "definition": "Nombre moyen d'adultes détenus chaque jour dans les établissements provinciaux (peines de moins de 2 ans et détention provisoire), par 100 000 adultes.",
+    "valeur": "67,8 par 100 000",
+    "annee": "2023-2024",
+    "tendance": "Baisse de 77,4 (2014-2015) à 51,9 (2020-2021), puis remontée à 67,8.",
+    "comparaison": "Ontario 73,3 (2023-2024).",
+    "cible": null,
+    "source_url": "https://www150.statcan.gc.ca/t1/tbl1/fr/tv.action?pid=3510015401",
+    "source_nom": "Statistique Canada",
+    "autres_sources": [],
+    "unite": "par 100 000 adultes",
+    "sens": "",
+    "serie": [
+     {
+      "annee": 2015,
+      "valeur": 77.38
+     },
+     {
+      "annee": 2016,
+      "valeur": 75.74
+     },
+     {
+      "annee": 2017,
+      "valeur": 74.71
+     },
+     {
+      "annee": 2018,
+      "valeur": 71.68
+     },
+     {
+      "annee": 2019,
+      "valeur": 65.82
+     },
+     {
+      "annee": 2020,
+      "valeur": 62.96
+     },
+     {
+      "annee": 2021,
+      "valeur": 51.92
+     },
+     {
+      "annee": 2022,
+      "valeur": 56.17
+     },
+     {
+      "annee": 2023,
+      "valeur": 63.14
+     },
+     {
+      "annee": 2024,
+      "valeur": 67.81
+     }
+    ],
+    "valeur_num": 67.81,
+    "comparaison_num": 73.26,
+    "comparaison_nom": "Ontario"
+   }
+  ],
+  "pieges": [
+   {
+    "titre": "",
+    "texte": "L'IGC ne mesure que les crimes déclarés à la police. Une hausse peut venir d'une hausse réelle, mais aussi d'une meilleure dénonciation (ex. violence conjugale ou sexuelle) ou d'un changement de pratiques policières. Les enquêtes de victimisation (autodéclarées) sont un complément nécessaire."
+   },
+   {
+    "titre": "Avec moins de 100 homicides par an, quelques cas de plus ou de moins font bouger le taux sensiblement",
+    "texte": "il faut regarder des moyennes sur plusieurs années avant de parler de tendance."
+   },
+   {
+    "titre": "Un délai « médian » de 217 jours signifie que la moitié des causes prennent plus de temps",
+    "texte": "ce sont surtout les causes longues qui risquent un arrêt des procédures (arrêt Jordan), et la médiane ne les montre pas."
+   }
+  ],
+  "motifs_seao": [
+   "Justice",
+   "Sécurité publique",
+   "Sécurité intérieure",
+   "Sûreté du Québec",
+   "poursuites criminelles"
+  ],
+  "themes_plateformes": [
+   "justice"
+  ]
+ },
+ {
+  "slug": "culture",
+  "nom": "Langue, culture et identité",
+  "accroche": "Le français, la culture, les médias et le patrimoine : ce qui fait la spécificité du Québec.",
+  "cest_quoi": "La protection et la promotion du français, le soutien aux arts, au patrimoine, aux médias et aux bibliothèques, et l'intégration des personnes immigrantes (francisation). Québec légifère sur le français (Charte de la langue française, loi 96 de 2022), finance la culture (via le ministère et des sociétés comme le CALQ et la SODEC) et sélectionne la plupart de ses immigrants économiques. Ottawa a sa propre Loi sur les langues officielles, finance Radio-Canada, Téléfilm et le Conseil des arts du Canada, réglemente la radiodiffusion (CRTC) et fixe le nombre total d'immigrants et de résidents temporaires. Les municipalités gèrent les bibliothèques, les maisons de la culture et les événements locaux. Responsables : ministère de la Culture et des Communications, ministère de la Langue française, Office québécois de la langue française (OQLF) et ministère de l'Immigration, de la Francisation et de l'Intégration (MIFI).",
+  "budget": {
+   "montant": "1 030,0 M$ : Culture et Communications 946,6 M$ + Langue française 83,4 M$ (dépenses de programmes, mesures du Budget incluses). Si on ajoute l'Immigration, Francisation et Intégration (800,2 M$) : 1 830,2 M$",
+   "part": "0,8 % des dépenses de programmes (1,4 % avec le MIFI)",
+   "annee": "2026-2027",
+   "note": null,
+   "source_url": "https://cdn-contenu.quebec.ca/cdn-contenu/adm/min/secretariat-du-conseil-du-tresor/publications-adm/budgets/2026-2027/1_strategie_gestion_depenses.pdf",
+   "source_nom": "Gouvernement du Québec"
+  },
+  "kpis": [
+   {
+    "nom": "Français, langue parlée le plus souvent à la maison",
+    "definition": "Part de la population qui parle surtout le français à la maison (réponses multiples réparties également entre les langues).",
+    "valeur": "79,1 %",
+    "annee": "2021 (recensement)",
+    "tendance": "Baisse lente et continue : 83,1 % (2001), 81,2 % (2011), 80,6 % (2016), 79,1 % (2021). L'anglais monte à 11,7 % et les autres langues à 9,1 %.",
+    "comparaison": "Pas de comparaison pertinente avec les autres provinces ; la comparaison utile est dans le temps.",
+    "cible": null,
+    "source_url": "https://www150.statcan.gc.ca/t1/tbl1/fr/tv.action?pid=1510003301",
+    "source_nom": "Statistique Canada",
+    "autres_sources": [],
+    "unite": "%",
+    "sens": "haut_mieux",
+    "serie": [
+     {
+      "annee": 1996,
+      "valeur": 82.8
+     },
+     {
+      "annee": 2001,
+      "valeur": 83.1
+     },
+     {
+      "annee": 2006,
+      "valeur": 81.8
+     },
+     {
+      "annee": 2011,
+      "valeur": 81.2
+     },
+     {
+      "annee": 2016,
+      "valeur": 80.6
+     },
+     {
+      "annee": 2021,
+      "valeur": 79.1
+     }
+    ],
+    "valeur_num": 79.1
+   },
+   {
+    "nom": "Capacité de soutenir une conversation en français",
+    "definition": "Part de la population qui déclare pouvoir tenir une conversation en français (seul ou avec l'anglais).",
+    "valeur": "93,7 %",
+    "annee": "2021 (recensement)",
+    "tendance": "Très stable : 93,9 % (1996), 94,6 % (2001), 94,5 % (2016), 93,7 % (2021). Mais la part qui connaît le français seulement recule (56,1 % → 47,3 %) au profit du bilinguisme (37,8 % → 46,4 %).",
+    "comparaison": "Aucune.",
+    "cible": null,
+    "source_url": "https://www150.statcan.gc.ca/t1/tbl1/fr/tv.action?pid=1510000401",
+    "source_nom": "Statistique Canada",
+    "autres_sources": [],
+    "unite": "%",
+    "sens": "haut_mieux",
+    "serie": [
+     {
+      "annee": 1996,
+      "valeur": 93.9
+     },
+     {
+      "annee": 2001,
+      "valeur": 94.6
+     },
+     {
+      "annee": 2006,
+      "valeur": 94.5
+     },
+     {
+      "annee": 2011,
+      "valeur": 94.4
+     },
+     {
+      "annee": 2016,
+      "valeur": 94.5
+     },
+     {
+      "annee": 2021,
+      "valeur": 93.7
+     }
+    ],
+    "valeur_num": 93.7
+   },
+   {
+    "nom": "Première langue officielle parlée : français",
+    "definition": "Indicateur de Statistique Canada qui classe chaque personne selon la langue officielle qu'elle utilise d'abord (compte tenu de sa langue maternelle, de sa langue à la maison et de ses connaissances).",
+    "valeur": "84,1 %",
+    "annee": "2021 (recensement)",
+    "tendance": "Stable autour de 85-86 % de 1996 à 2016, recul à 84,1 % en 2021 ; l'anglais passe de 13,7 % à 14,9 %.",
+    "comparaison": "Aucune.",
+    "cible": null,
+    "source_url": "https://www150.statcan.gc.ca/t1/tbl1/fr/tv.action?pid=1510003201",
+    "source_nom": "Statistique Canada",
+    "autres_sources": [],
+    "unite": "%",
+    "sens": "haut_mieux",
+    "serie": [
+     {
+      "annee": 1996,
+      "valeur": 85.8
+     },
+     {
+      "annee": 2001,
+      "valeur": 86.3
+     },
+     {
+      "annee": 2006,
+      "valeur": 85.7
+     },
+     {
+      "annee": 2011,
+      "valeur": 85.5
+     },
+     {
+      "annee": 2016,
+      "valeur": 85.4
+     },
+     {
+      "annee": 2021,
+      "valeur": 84.1
+     }
+    ],
+    "valeur_num": 84.1
+   },
+   {
+    "nom": "Français, langue utilisée le plus souvent au travail",
+    "definition": "Part des travailleurs (ayant travaillé depuis janvier 2020) qui utilisent surtout le français au travail.",
+    "valeur": "79,5 % (85,0 % en incluant ceux qui utilisent français et anglais à égalité)",
+    "annee": "2021 (recensement)",
+    "tendance": "Série non calculée ici (tableau 2021 seulement). L'anglais est la langue principale de travail pour 14,1 % des travailleurs.",
+    "comparaison": "Aucune.",
+    "cible": "La Charte de la langue française fait du français la langue normale et habituelle du travail, sans pourcentage cible.",
+    "source_url": "https://www150.statcan.gc.ca/t1/tbl1/fr/tv.action?pid=9810051901",
+    "source_nom": "Statistique Canada",
+    "autres_sources": [],
+    "unite": "%",
+    "sens": "haut_mieux"
+   },
+   {
+    "nom": "Poids du secteur culturel dans l'économie",
+    "definition": "Produit intérieur brut (PIB) des activités culturelles (édition, audiovisuel, musique, arts de la scène, patrimoine, design, etc.) en pourcentage du PIB total.",
+    "valeur": "2,33 % (14,4 G$)",
+    "annee": "2024",
+    "tendance": "2,77 % (2015) → 2,34 % (2020) → 2,33 % (2024) : la culture croît moins vite que l'économie. Emplois culturels : 166 445 en 2024 (151 869 en 2015).",
+    "comparaison": "Ontario 2,49 %, Canada 2,16 % (2024).",
+    "cible": null,
+    "source_url": "https://www150.statcan.gc.ca/t1/tbl1/fr/tv.action?pid=3610045201",
+    "source_nom": "Statistique Canada",
+    "autres_sources": [],
+    "unite": "% du PIB",
+    "sens": "",
+    "serie": [
+     {
+      "annee": 2015,
+      "valeur": 2.77
+     },
+     {
+      "annee": 2016,
+      "valeur": 2.57
+     },
+     {
+      "annee": 2017,
+      "valeur": 2.58
+     },
+     {
+      "annee": 2018,
+      "valeur": 2.54
+     },
+     {
+      "annee": 2019,
+      "valeur": 2.53
+     },
+     {
+      "annee": 2020,
+      "valeur": 2.34
+     },
+     {
+      "annee": 2021,
+      "valeur": 2.32
+     },
+     {
+      "annee": 2022,
+      "valeur": 2.39
+     },
+     {
+      "annee": 2023,
+      "valeur": 2.41
+     },
+     {
+      "annee": 2024,
+      "valeur": 2.33
+     }
+    ],
+    "valeur_num": 2.33,
+    "comparaison_num": 2.16,
+    "comparaison_nom": "Canada"
+   }
+  ],
+  "pieges": [
+   {
+    "titre": "La baisse du français « à la maison » ne veut pas dire que moins de gens parlent français au Québec",
+    "texte": "la connaissance du français reste à 94 %. Elle reflète surtout l'immigration (des personnes qui parlent d'autres langues chez elles, mais souvent le français au travail ou à l'école). Il faut distinguer langue maternelle, langue d'usage à la maison, langue de travail et connaissance."
+   },
+   {
+    "titre": "Les résultats dépendent de la façon de traiter les réponses multiples (ex. « français et anglais »)",
+    "texte": "selon qu'on les répartit ou qu'on les compte deux fois, le pourcentage change de plusieurs points. Toujours vérifier la méthode avant de comparer deux chiffres qui circulent."
+   },
+   {
+    "titre": "",
+    "texte": "Le budget culturel de l'État est faible (moins de 1 % des dépenses), mais le secteur culturel pèse 14 G$ dans l'économie : juger la culture seulement par la dépense publique est trompeur."
+   }
+  ],
+  "motifs_seao": [
+   "Ministère de la Culture",
+   "Musée",
+   "Bibliothèque et Archives",
+   "Télé-Québec",
+   "langue française",
+   "Conservatoire",
+   "Société de développement des entreprises culturelles"
+  ],
+  "themes_plateformes": [
+   "culture"
+  ]
+ },
+ {
+  "slug": "economie",
+  "nom": "Économie, emploi et productivité",
+  "accroche": "La capacité à créer de la richesse et des emplois, face aux tarifs américains et au vieillissement.",
+  "cest_quoi": "C'est la capacité du Québec à produire de la richesse, à créer des emplois et à vendre ses produits ailleurs. Québec soutient les entreprises (subventions, prêts d'Investissement Québec, crédits d'impôt) par le ministère de l'Économie, de l'Innovation et de l'Énergie, et s'occupe de la formation de la main-d'œuvre (Emploi et Solidarité sociale, Services Québec). Ottawa contrôle les leviers macroéconomiques : taux d'intérêt (Banque du Canada), commerce international et négociation de l'ACEUM avec les États-Unis, assurance-emploi. Les municipalités jouent surtout un rôle d'accueil (zonage, parcs industriels, développement local).",
+  "budget": {
+   "montant": "4,5 G$ (portefeuille Économie, Innovation et Énergie)",
+   "part": "2,6 % des dépenses consolidées totales (171,6 G$)",
+   "annee": "2026-2027 (prévision, rapport préélectoral août 2026)",
+   "note": "Ce montant n'inclut pas les crédits d'impôt aux entreprises (dépenses fiscales) ni le portefeuille Emploi et Solidarité sociale (6,4 G$, surtout l'aide sociale).",
+   "source_url": "https://cdn-contenu.quebec.ca/cdn-contenu/adm/min/finances/publications-adm/Rapport_preelectoral/FR/MINFR_RP_2026.pdf",
+   "source_nom": "Gouvernement du Québec"
+  },
+  "kpis": [
+   {
+    "nom": "PIB réel par habitant (niveau de vie)",
+    "definition": "La valeur de tout ce qui est produit en un an, divisée par le nombre d'habitants, en retirant l'effet de l'inflation.",
+    "valeur": "53 812 $ par habitant (dollars enchaînés de 2017)",
+    "annee": "2024",
+    "tendance": "+0,9 %/an en moyenne depuis 2009; léger recul en 2023 et 2024 (−0,3 % en 2024). Selon le ministère des Finances, +4,8 % de 2018 à 2025.",
+    "comparaison": "Canada : 59 529 $ (2024). De 2018 à 2025 : Québec +4,8 %, Ontario +0,3 %, reste du Canada +0,2 %.",
+    "cible": "Objectif gouvernemental : réduire l'écart de richesse avec l'Ontario (rapport préélectoral 2026).",
+    "source_url": "https://statistique.quebec.ca/en/produit/publication/indicateurs-progres-produit-interieur-brut-reel-par-habitant",
+    "source_nom": "Institut de la statistique du Québec",
+    "autres_sources": [
+     {
+      "url": "https://cdn-contenu.quebec.ca/cdn-contenu/adm/min/finances/publications-adm/Rapport_preelectoral/FR/MINFR_RP_2026.pdf",
+      "nom": "Gouvernement du Québec"
+     }
+    ],
+    "unite": "$ enchaînés 2017 par habitant",
+    "sens": "haut_mieux"
+   },
+   {
+    "nom": "Écart de PIB par habitant avec l'Ontario",
+    "definition": "De combien le PIB par habitant du Québec est inférieur à celui de l'Ontario, en pourcentage.",
+    "valeur": "9,7 % (estimation)",
+    "annee": "2025",
+    "tendance": "Écart réduit de 13,7 % (2018) à 9,2 % (2024), puis légère remontée en 2025.",
+    "comparaison": "Exclure les résidents non permanents réduit l'écart : 11,9 % (vs 15,1 % en 2015) selon Desjardins.",
+    "cible": "Réduire l'écart de richesse avec l'Ontario (objectif du plan de retour à l'équilibre, rapport préélectoral 2026); aucune cible chiffrée confirmée dans les documents consultés.",
+    "source_url": "https://www.desjardins.com/fr/epargne-placements/etudes-economiques/quebec-ontario-rattrapage-economique-6-fevrier-2026.html",
+    "source_nom": "desjardins.com",
+    "autres_sources": [],
+    "unite": "% d'écart",
+    "sens": "bas_mieux",
+    "serie": [
+     {
+      "annee": 2018,
+      "valeur": 13.7
+     },
+     {
+      "annee": 2024,
+      "valeur": 9.2
+     },
+     {
+      "annee": 2025,
+      "valeur": 9.7
+     }
+    ],
+    "valeur_num": 9.7
+   },
+   {
+    "nom": "Productivité du travail (PIB par heure travaillée)",
+    "definition": "La richesse produite en moyenne pour chaque heure de travail. C'est le principal moteur du niveau de vie à long terme.",
+    "valeur": "82,18 $ par heure (dollars canadiens de 2024, parité de pouvoir d'achat)",
+    "annee": "2024",
+    "tendance": "Croissance d'environ 1 %/an en moyenne sur plus de 40 ans. Croissance du PIB réel par emploi : +2,9 % (2021), +1,4 % (2022), −2,2 % (2023), +0,7 % (2024), −1,1 % (2025).",
+    "comparaison": "Canada : 86,58 $; moyenne OCDE19 : 104,37 $ (environ 22 $ de plus par heure). De 2015 à 2024 : Québec +10,2 %, Ontario +4,0 % (Desjardins).",
+    "cible": null,
+    "source_url": "https://cpp.hec.ca/wp-content/uploads/2026/05/PP-2026-01.pdf",
+    "source_nom": "Centre sur la productivité et la prospérité (HEC)",
+    "autres_sources": [
+     {
+      "url": "https://cdn-contenu.quebec.ca/cdn-contenu/adm/min/finances/publications-adm/Rapport_preelectoral/FR/MINFR_RP_2026.pdf",
+      "nom": "Gouvernement du Québec"
+     }
+    ],
+    "unite": "$ CA 2024 PPA par heure",
+    "sens": "haut_mieux"
+   },
+   {
+    "nom": "Taux d'emploi des 25 à 64 ans",
+    "definition": "Part des personnes de 25 à 64 ans qui occupent un emploi.",
+    "valeur": "80,7 %",
+    "annee": "2025",
+    "tendance": "Forte hausse depuis 2010 (73,6 %); stable en 2025 (80,5 % en 2024).",
+    "comparaison": "Reste du Canada : 78,3 % (2025). Le Québec dépasse le reste du Canada depuis 2018.",
+    "cible": null,
+    "source_url": "https://statistique.quebec.ca/en/produit/publication/indicateurs-progres-taux-emploi",
+    "source_nom": "Institut de la statistique du Québec",
+    "autres_sources": [],
+    "unite": "%",
+    "sens": "haut_mieux",
+    "serie": [
+     {
+      "annee": 2010,
+      "valeur": 73.6
+     },
+     {
+      "annee": 2024,
+      "valeur": 80.5
+     },
+     {
+      "annee": 2025,
+      "valeur": 80.7
+     }
+    ],
+    "valeur_num": 80.7,
+    "comparaison_num": 78.3,
+    "comparaison_nom": "Reste du Canada (2025)"
+   },
+   {
+    "nom": "Taux de chômage",
+    "definition": "Part des personnes qui cherchent activement un emploi sans en trouver, parmi la population active.",
+    "valeur": "5,6 %",
+    "annee": "août 2026",
+    "tendance": "Moyenne annuelle : 5,3 % (2024), 5,6 % (2025). Emploi en baisse de 54 000 (−1,2 %) sur 12 mois en août 2026 : le Québec est la seule province en recul.",
+    "comparaison": "Ontario : 6,9 %; Canada : 6,4 % (août 2026).",
+    "cible": "Prévision du ministère des Finances : 5,6 % en 2026, 4,9 % en 2027.",
+    "source_url": "https://www150.statcan.gc.ca/n1/daily-quotidien/260904/dq260904a-fra.htm",
+    "source_nom": "Statistique Canada",
+    "autres_sources": [
+     {
+      "url": "https://cdn-contenu.quebec.ca/cdn-contenu/adm/min/finances/publications-adm/Rapport_preelectoral/FR/MINFR_RP_2026.pdf",
+      "nom": "Gouvernement du Québec"
+     }
+    ],
+    "unite": "%",
+    "sens": "bas_mieux",
+    "serie": [
+     {
+      "annee": 2024,
+      "valeur": 5.3
+     },
+     {
+      "annee": 2025,
+      "valeur": 5.6
+     }
+    ],
+    "valeur_num": 5.6,
+    "comparaison_num": 6.4,
+    "comparaison_nom": "Canada (août 2026)"
+   },
+   {
+    "nom": "Revenu disponible par habitant",
+    "definition": "L'argent qui reste aux ménages après impôts et transferts, par personne. Mesure le pouvoir d'achat réel des gens.",
+    "valeur": "38 400 $ (dollars courants)",
+    "annee": "2024",
+    "tendance": "+4,9 % en 2024 en dollars courants, +2,2 % après inflation. En termes réels : +10,3 % de 2018 à 2024.",
+    "comparaison": "Hausse réelle 2018-2024 : Ontario +2,8 %, reste du Canada +4,3 %.",
+    "cible": null,
+    "source_url": "https://statistique.quebec.ca/fr/communique/revenu-disponible-par-habitant-croissance-accelere-dans-presque-toutes-les-regions-quebec-2024",
+    "source_nom": "Institut de la statistique du Québec",
+    "autres_sources": [
+     {
+      "url": "https://www.desjardins.com/fr/epargne-placements/etudes-economiques/quebec-ontario-rattrapage-economique-6-fevrier-2026.html",
+      "nom": "desjardins.com"
+     }
+    ],
+    "unite": "$ courants par habitant",
+    "sens": "haut_mieux",
+    "serie": [
+     {
+      "annee": 2023,
+      "valeur": 36531
+     },
+     {
+      "annee": 2024,
+      "valeur": 38400
+     }
+    ],
+    "valeur_num": 38400
+   },
+   {
+    "nom": "Dépendance commerciale envers les États-Unis",
+    "definition": "Part des exportations internationales de marchandises du Québec qui vont aux États-Unis.",
+    "valeur": "69,8 % (84,8 G$ sur 121,6 G$)",
+    "annee": "2025",
+    "tendance": "73,6 % (2023), 73,3 % (2024), 69,8 % (2025) : première fois sous 70 % depuis 2020. Exportations vers les É.-U. : −6,9 % en 2025; vers les autres pays : en hausse.",
+    "comparaison": "Taux tarifaire effectif moyen américain en avril 2026 : 7,7 % pour le Québec contre 3,6 % pour le Canada (poids de l'aluminium, du bois d'œuvre, du manufacturier).",
+    "cible": null,
+    "source_url": "https://statistique.quebec.ca/en/produit/publication/commerce-international-marchandises-et-balance-commerciale-2025",
+    "source_nom": "Institut de la statistique du Québec",
+    "autres_sources": [
+     {
+      "url": "https://cdn-contenu.quebec.ca/cdn-contenu/adm/min/finances/publications-adm/Rapport_preelectoral/FR/MINFR_RP_2026.pdf",
+      "nom": "Gouvernement du Québec"
+     }
+    ],
+    "unite": "% des exportations",
+    "sens": "bas_mieux",
+    "serie": [
+     {
+      "annee": 2023,
+      "valeur": 73.6
+     },
+     {
+      "annee": 2024,
+      "valeur": 73.3
+     },
+     {
+      "annee": 2025,
+      "valeur": 69.8
+     }
+    ],
+    "valeur_num": 69.8
+   },
+   {
+    "nom": "Investissement privé par emploi",
+    "definition": "Ce que les entreprises dépensent en machines, technologies et bâtiments pour chaque emploi. Moins d'investissement = travailleurs moins équipés = moins de productivité.",
+    "valeur": "11 455 $ de moins par emploi que la moyenne OCDE19",
+    "annee": "2022",
+    "tendance": "Écart d'environ 9 500 $ par emploi au début des années 2000, qui s'est creusé. Investissement non résidentiel des entreprises : −0,8 % (2025), +0,2 % prévu en 2026.",
+    "comparaison": "Machines, matériel et propriété intellectuelle : 9 862 $ par emploi au Québec, environ le tiers de la Belgique et de la Suède.",
+    "cible": null,
+    "source_url": "https://cpp.hec.ca/wp-content/uploads/2026/05/PP-2026-01.pdf",
+    "source_nom": "Centre sur la productivité et la prospérité (HEC)",
+    "autres_sources": [
+     {
+      "url": "https://cdn-contenu.quebec.ca/cdn-contenu/adm/min/finances/publications-adm/Rapport_preelectoral/FR/MINFR_RP_2026.pdf",
+      "nom": "Gouvernement du Québec"
+     }
+    ],
+    "unite": "$ par emploi (écart avec OCDE19)",
+    "sens": "haut_mieux"
+   }
+  ],
+  "pieges": [
+   {
+    "titre": "PIB total vs PIB par habitant",
+    "texte": "en 2023-2024, la population a bondi (+1,8 % puis +2,0 %) grâce aux résidents temporaires. Le PIB total grimpe alors mécaniquement, sans que chaque personne soit plus riche. À l'inverse, en 2026, la population recule et le PIB par habitant peut s'améliorer même si l'économie ralentit. Toujours regarder le PIB par habitant, et idéalement par heure travaillée."
+   },
+   {
+    "titre": "Chômage bas ne veut pas dire économie en santé",
+    "texte": "en août 2026, le taux reste à 5,6 % alors que le Québec a perdu 54 000 emplois en un an. Le taux ne monte pas si les gens quittent la population active (retraites, départ de travailleurs temporaires)."
+   },
+   {
+    "titre": "« Les Québécois ne travaillent pas assez »",
+    "texte": "le Centre sur la productivité et la prospérité montre que les heures par emploi au Québec dépassent la moyenne OCDE19 (+78 h en 2024). Le retard de niveau de vie vient de la productivité par heure, pas du nombre d'heures."
+   }
+  ],
+  "motifs_seao": [
+   "Économie",
+   "Investissement Québec"
+  ],
+  "themes_plateformes": [
+   "economie",
+   "cout-vie"
+  ]
+ },
+ {
+  "slug": "finances",
+  "nom": "Finances publiques",
+  "accroche": "Revenus, dépenses, déficit et dette : les grands équilibres qui limitent ou permettent tout le reste.",
+  "cest_quoi": "C'est l'argent que l'État québécois perçoit (impôts, taxes, revenus d'Hydro-Québec, transferts d'Ottawa) et ce qu'il dépense pour les services publics. Le ministère des Finances prépare le budget et gère la dette; le Conseil du trésor encadre les dépenses des ministères. Ottawa verse environ 33 G$ par année au Québec (péréquation, transferts en santé et programmes sociaux). Les municipalités ont leurs propres budgets, financés surtout par l'impôt foncier. Deux lois encadrent le tout : la Loi sur l'équilibre budgétaire et la Loi sur la réduction de la dette (Fonds des générations).",
+  "budget": {
+   "montant": "Revenus 168,4 G$; dépenses 171,6 G$ (dont service de la dette 10,5 G$)",
+   "part": "Service de la dette : 6,1 % des dépenses consolidées totales (171,6 G$)",
+   "annee": "2026-2027 (prévision, rapport préélectoral août 2026)",
+   "note": null,
+   "source_url": "https://cdn-contenu.quebec.ca/cdn-contenu/adm/min/finances/publications-adm/Rapport_preelectoral/FR/MINFR_RP_2026.pdf",
+   "source_nom": "Gouvernement du Québec"
+  },
+  "kpis": [
+   {
+    "nom": "Solde budgétaire (au sens de la loi)",
+    "definition": "Revenus moins dépenses, après avoir mis de côté l'argent versé au Fonds des générations. C'est le « déficit » officiel suivi par la loi.",
+    "valeur": "−7,7 G$ (1,2 % du PIB)",
+    "annee": "2026-2027 (prévision)",
+    "tendance": "−7,8 G$ en 2025-2026 (réel), −5,7 G$ prévu en 2027-2028, retour à l'équilibre prévu en 2029-2030.",
+    "comparaison": "Une seule province affiche un déficit comptable plus faible en % du PIB en 2025-2026 (selon le ministère des Finances).",
+    "cible": "Équilibre budgétaire en 2029-2030 (Loi sur l'équilibre budgétaire, plan de mars 2025). Écarts à résorber non encore identifiés : 1,9 G$ (2028-2029) et 2,0 G$ (2029-2030).",
+    "source_url": "https://cdn-contenu.quebec.ca/cdn-contenu/adm/min/finances/publications-adm/Rapport_preelectoral/FR/MINFR_RP_2026.pdf",
+    "source_nom": "Gouvernement du Québec",
+    "autres_sources": [],
+    "unite": "G$",
+    "sens": "haut_mieux",
+    "serie": [
+     {
+      "annee": 2025,
+      "valeur": -7.791
+     },
+     {
+      "annee": 2026,
+      "valeur": -7.69
+     },
+     {
+      "annee": 2027,
+      "valeur": -5.695
+     },
+     {
+      "annee": 2028,
+      "valeur": -1.5
+     },
+     {
+      "annee": 2029,
+      "valeur": 0
+     },
+     {
+      "annee": 2030,
+      "valeur": 0.25
+     }
+    ],
+    "valeur_num": -7.69
+   },
+   {
+    "nom": "Déficit comptable",
+    "definition": "Revenus moins dépenses selon les normes comptables, avant le versement au Fonds des générations.",
+    "valeur": "−5,2 G$ (0,8 % du PIB)",
+    "annee": "2026-2027 (prévision)",
+    "tendance": "−5,5 G$ en 2025-2026 (réel, amélioration de 2,2 G$ par rapport au budget); surplus prévu dès 2029-2030.",
+    "comparaison": "N/D",
+    "cible": "Voir solde budgétaire.",
+    "source_url": "https://cdn-contenu.quebec.ca/cdn-contenu/adm/min/finances/publications-adm/Rapport_preelectoral/FR/MINFR_RP_2026.pdf",
+    "source_nom": "Gouvernement du Québec",
+    "autres_sources": [],
+    "unite": "G$",
+    "sens": "haut_mieux",
+    "serie": [
+     {
+      "annee": 2025,
+      "valeur": -5.502
+     },
+     {
+      "annee": 2026,
+      "valeur": -5.208
+     },
+     {
+      "annee": 2027,
+      "valeur": -3.194
+     },
+     {
+      "annee": 2028,
+      "valeur": -0.724
+     },
+     {
+      "annee": 2029,
+      "valeur": 0.79
+     },
+     {
+      "annee": 2030,
+      "valeur": 1.179
+     }
+    ],
+    "valeur_num": -5.208
+   },
+   {
+    "nom": "Dette nette en % du PIB",
+    "definition": "Ce que le gouvernement doit, moins ses actifs financiers (placements, participation dans Hydro-Québec…), comparé à la taille de l'économie.",
+    "valeur": "38,1 % du PIB (245,9 G$)",
+    "annee": "31 mars 2026",
+    "tendance": "Sommet de 53,4 % en 2014, 42,9 % en 2019, 37,5 % en 2023, puis légère remontée; 36,0 % prévu en 2031.",
+    "comparaison": "Au 31 mars 2026 (prévisions de mars 2026) : Ontario 36,9 %, moyenne des provinces 30,4 %, fédéral 46,0 %.",
+    "cible": "35,5 % du PIB en 2032-2033 et 32,5 % en 2037-2038 (plafonds légaux : 38 % et 35 %).",
+    "source_url": "https://cdn-contenu.quebec.ca/cdn-contenu/adm/min/finances/publications-adm/Rapport_preelectoral/FR/MINFR_RP_2026.pdf",
+    "source_nom": "Gouvernement du Québec",
+    "autres_sources": [
+     {
+      "url": "https://www.finances.gouv.qc.ca/Budget_et_mise_a_jour/budget/documents/Budget2627_PlanBudgetaire.pdf",
+      "nom": "Ministère des Finances du Québec"
+     }
+    ],
+    "unite": "% du PIB",
+    "sens": "bas_mieux",
+    "serie": [
+     {
+      "annee": 2014,
+      "valeur": 53.4
+     },
+     {
+      "annee": 2015,
+      "valeur": 52.6
+     },
+     {
+      "annee": 2016,
+      "valeur": 51.1
+     },
+     {
+      "annee": 2017,
+      "valeur": 48.9
+     },
+     {
+      "annee": 2018,
+      "valeur": 45.9
+     },
+     {
+      "annee": 2019,
+      "valeur": 42.9
+     },
+     {
+      "annee": 2020,
+      "valeur": 40.9
+     },
+     {
+      "annee": 2021,
+      "valeur": 43.1
+     },
+     {
+      "annee": 2022,
+      "valeur": 38.8
+     },
+     {
+      "annee": 2023,
+      "valeur": 37.5
+     },
+     {
+      "annee": 2024,
+      "valeur": 37.8
+     },
+     {
+      "annee": 2025,
+      "valeur": 38.3
+     },
+     {
+      "annee": 2026,
+      "valeur": 38.1
+     }
+    ],
+    "valeur_num": 38.1,
+    "comparaison_num": 36.9,
+    "comparaison_nom": "Ontario (31 mars 2026, prévision)"
+   },
+   {
+    "nom": "Service de la dette en % des revenus",
+    "definition": "La part des revenus de l'État qui sert à payer les intérêts sur la dette, au lieu de financer des services.",
+    "valeur": "6,2 % (10,5 G$)",
+    "annee": "2026-2027 (prévision)",
+    "tendance": "11,4 % en 2013-2014, 7,7 % en 2018-2019; remontée prévue à 6,5 % en 2029-2030. C'est le 4e poste de dépenses après la santé, l'éducation et l'enseignement supérieur.",
+    "comparaison": "N/D pour l'Ontario dans les documents consultés.",
+    "cible": "Maintenir à des niveaux « historiquement bas » (pas de cible chiffrée).",
+    "source_url": "https://www.finances.gouv.qc.ca/Budget_et_mise_a_jour/budget/documents/Budget2627_PlanBudgetaire.pdf",
+    "source_nom": "Ministère des Finances du Québec",
+    "autres_sources": [
+     {
+      "url": "https://cdn-contenu.quebec.ca/cdn-contenu/adm/min/finances/publications-adm/Rapport_preelectoral/FR/MINFR_RP_2026.pdf",
+      "nom": "Gouvernement du Québec"
+     }
+    ],
+    "unite": "% des revenus",
+    "sens": "bas_mieux",
+    "serie": [
+     {
+      "annee": 2014,
+      "valeur": 11.4
+     },
+     {
+      "annee": 2019,
+      "valeur": 7.7
+     },
+     {
+      "annee": 2027,
+      "valeur": 6.2
+     },
+     {
+      "annee": 2030,
+      "valeur": 6.5
+     }
+    ],
+    "valeur_num": 6.2
+   },
+   {
+    "nom": "Fonds des générations",
+    "definition": "Réserve où l'État place chaque année des revenus dédiés (redevances hydrauliques, etc.) qui ne peuvent servir qu'à rembourser la dette.",
+    "valeur": "16,6 G$ (6,8 % de la dette nette)",
+    "annee": "31 mars 2026",
+    "tendance": "Versements de 2,3 G$ (2025-2026) à 2,9 G$ (2030-2031); solde prévu de 29,4 G$ au 31 mars 2031.",
+    "comparaison": "Outil propre au Québec, pas d'équivalent en Ontario.",
+    "cible": "Atteinte des cibles de dette 2032-2033 et 2037-2038.",
+    "source_url": "https://cdn-contenu.quebec.ca/cdn-contenu/adm/min/finances/publications-adm/Rapport_preelectoral/FR/MINFR_RP_2026.pdf",
+    "source_nom": "Gouvernement du Québec",
+    "autres_sources": [],
+    "unite": "G$",
+    "sens": "haut_mieux",
+    "serie": [
+     {
+      "annee": 2026,
+      "valeur": 16.644
+     },
+     {
+      "annee": 2027,
+      "valeur": 18.541
+     },
+     {
+      "annee": 2028,
+      "valeur": 21.042
+     },
+     {
+      "annee": 2029,
+      "valeur": 23.668
+     },
+     {
+      "annee": 2030,
+      "valeur": 26.458
+     },
+     {
+      "annee": 2031,
+      "valeur": 29.387
+     }
+    ],
+    "valeur_num": 16.6
+   },
+   {
+    "nom": "Dette brute en % du PIB",
+    "definition": "Toutes les dettes contractées sur les marchés, moins le Fonds des générations, sans soustraire les autres actifs.",
+    "valeur": "41,1 % du PIB (265,5 G$)",
+    "annee": "31 mars 2026",
+    "tendance": "Prévue à 42,0 % en 2027, puis 41,5 % en 2031 (les investissements en infrastructures font monter la dette brute).",
+    "comparaison": "N/D",
+    "cible": null,
+    "source_url": "https://cdn-contenu.quebec.ca/cdn-contenu/adm/min/finances/publications-adm/Rapport_preelectoral/FR/MINFR_RP_2026.pdf",
+    "source_nom": "Gouvernement du Québec",
+    "autres_sources": [],
+    "unite": "% du PIB",
+    "sens": "bas_mieux",
+    "serie": [
+     {
+      "annee": 2026,
+      "valeur": 41.1
+     },
+     {
+      "annee": 2027,
+      "valeur": 42.0
+     },
+     {
+      "annee": 2028,
+      "valeur": 42.8
+     },
+     {
+      "annee": 2029,
+      "valeur": 42.8
+     },
+     {
+      "annee": 2030,
+      "valeur": 42.2
+     },
+     {
+      "annee": 2031,
+      "valeur": 41.5
+     }
+    ],
+    "valeur_num": 41.1
+   },
+   {
+    "nom": "Cote de crédit",
+    "definition": "Note donnée par des agences sur la capacité du Québec à rembourser. Une bonne note réduit le coût des emprunts.",
+    "valeur": "Moody's Aa2, S&P Global A+, Fitch AA−, Morningstar DBRS AA (low), JCR AAA — toutes avec perspective stable",
+    "annee": "6 mars 2026",
+    "tendance": "Le budget 2026-2027 signale que le Québec a subi une « décision défavorable » d'une agence de notation au cours de la dernière année (agence non nommée dans l'extrait consulté).",
+    "comparaison": "Moody's note mieux le Québec que l'Ontario; S&P et DBRS notent mieux l'Ontario; Fitch donne la même cote aux deux.",
+    "cible": "Respect du plan de retour à l'équilibre jugé « essentiel pour soutenir la cote ».",
+    "source_url": "https://www.finances.gouv.qc.ca/Budget_et_mise_a_jour/budget/documents/Budget2627_PlanBudgetaire.pdf",
+    "source_nom": "Ministère des Finances du Québec",
+    "autres_sources": [],
+    "unite": "cote",
+    "sens": null
+   },
+   {
+    "nom": "Revenus et dépenses en % du PIB",
+    "definition": "Le poids de l'État dans l'économie : ce qu'il perçoit et ce qu'il dépense, comparé à tout ce qui est produit.",
+    "valeur": "Revenus 25,2 %; dépenses 25,7 % du PIB",
+    "annee": "2026-2027",
+    "tendance": "Revenus : 26,1 % en 2018-2019 → 25,2 %. Dépenses : 24,4 % → 25,7 %. Retour visé à 24,4 % en 2029-2030.",
+    "comparaison": "N/D",
+    "cible": "Dépenses à 24,4 % du PIB en 2029-2030 (plan de retour à l'équilibre).",
+    "source_url": "https://cdn-contenu.quebec.ca/cdn-contenu/adm/min/finances/publications-adm/Rapport_preelectoral/FR/MINFR_RP_2026.pdf",
+    "source_nom": "Gouvernement du Québec",
+    "autres_sources": [],
+    "unite": "% du PIB (dépenses)",
+    "sens": null
+   }
+  ],
+  "pieges": [
+   {
+    "titre": "Dette brute, dette nette, déficits cumulés",
+    "texte": "trois chiffres différents. Au 31 mars 2026 : dette brute 265,5 G$ (41,1 % du PIB), dette nette 245,9 G$ (38,1 %), dette des déficits cumulés 127,4 G$ (19,7 %). La dette nette soustrait les actifs financiers; la dette des déficits cumulés soustrait aussi les routes, écoles et hôpitaux (on a emprunté pour les construire, ils ont une valeur). Préciser toujours lequel on cite."
+   },
+   {
+    "titre": "Changement de norme comptable",
+    "texte": "depuis le 1er avril 2026, la « dette nette » est remplacée par le « passif financier net ». Ce changement fait baisser le ratio de 0,9 point en 2026-2027 sans qu'aucun dollar de dette ne soit remboursé. Attention aux comparaisons avant/après."
+   },
+   {
+    "titre": "Déficit comptable vs solde budgétaire",
+    "texte": "le gouvernement peut afficher un surplus comptable tout en étant en déficit « au sens de la loi », parce que la loi soustrait les versements au Fonds des générations (2,5 G$ en 2026-2027)."
+   },
+   {
+    "titre": "Le ratio dette/PIB peut baisser sans remboursement",
+    "texte": "de 2019 à 2026, la croissance du PIB nominal (inflation comprise) a retranché 13,6 points au ratio, alors que les déficits et les investissements en ont ajouté 10,5."
+   }
+  ],
+  "motifs_seao": [
+   "Finances",
+   "Revenu Québec",
+   "Conseil du trésor",
+   "Centre d'acquisitions gouvernementales",
+   "Cybersécurité et du Numérique"
+  ],
+  "themes_plateformes": [
+   "finances"
+  ]
+ },
+ {
+  "slug": "energie",
+  "nom": "Énergie et environnement",
+  "accroche": "Hydro-Québec, électricité, climat, eau et territoire protégé.",
+  "cest_quoi": "L'énergie, c'est surtout l'électricité produite par Hydro-Québec, une société d'État qui appartient au gouvernement et lui verse un dividende. L'environnement couvre la lutte contre les changements climatiques (émissions de gaz à effet de serre, marché du carbone), la protection de l'eau, de la faune et des milieux naturels. Ministères responsables : Environnement, Lutte contre les changements climatiques, Faune et Parcs (MELCCFP); Économie, Innovation et Énergie (politique énergétique); Ressources naturelles et Forêts. Ottawa a aussi des compétences (pêches, navigation, évaluation de grands projets, normes fédérales). Les municipalités gèrent l'eau potable, les eaux usées et les matières résiduelles.",
+  "budget": {
+   "montant": "2,0 G$ (portefeuille Environnement, Lutte contre les changements climatiques, Faune et Parcs); 1,5 G$ (Ressources naturelles et Forêts)",
+   "part": "1,2 % des dépenses consolidées totales (171,6 G$) (Environnement); 0,9 % (Ressources naturelles)",
+   "annee": "2026-2027 (prévision)",
+   "note": "Hydro-Québec est hors budget : ses investissements (7,8 G$ en 2025) ne figurent pas dans les dépenses de l'État.",
+   "source_url": "https://cdn-contenu.quebec.ca/cdn-contenu/adm/min/finances/publications-adm/Rapport_preelectoral/FR/MINFR_RP_2026.pdf",
+   "source_nom": "Gouvernement du Québec"
+  },
+  "kpis": [
+   {
+    "nom": "Émissions de gaz à effet de serre (GES)",
+    "definition": "Quantité totale de gaz qui réchauffent le climat émise au Québec en un an, en millions de tonnes d'équivalent CO2 (Mt éq. CO2).",
+    "valeur": "78,0 Mt éq. CO2 (8,8 t par habitant)",
+    "annee": "2023",
+    "tendance": "−8,5 % depuis 1990 (85,2 Mt); −1,4 % par rapport à 2022; plus bas niveau de la série hors pandémie.",
+    "comparaison": "Le Québec émet 11,3 % des GES canadiens (693,9 Mt en 2023) alors qu'il compte environ 22 % de la population canadienne (calcul approximatif).",
+    "cible": "−37,5 % sous 1990 (soit environ 53,3 Mt) : cible reportée de 2030 à 2035 (annonce du 22 janvier 2026).",
+    "source_url": "https://www.environnement.gouv.qc.ca/changements/ges/2023/inventaire-ges-1990-2023.pdf",
+    "source_nom": "Ministère de l'Environnement",
+    "autres_sources": [
+     {
+      "url": "https://www.environnement.gouv.qc.ca/changements/ges/2023/tableaux-emissions-annuelles-ges-1990-2023.pdf",
+      "nom": "Ministère de l'Environnement"
+     },
+     {
+      "url": "https://www.lapresse.ca/actualites/environnement/2026-01-22/reduction-des-emissions-de-ges/quebec-reporte-l-atteinte-de-sa-cible-a-2035.php",
+      "nom": "lapresse.ca"
+     }
+    ],
+    "unite": "Mt éq. CO2",
+    "sens": "bas_mieux",
+    "serie": [
+     {
+      "annee": 2014,
+      "valeur": 78.0
+     },
+     {
+      "annee": 2015,
+      "valeur": 78.2
+     },
+     {
+      "annee": 2016,
+      "valeur": 78.1
+     },
+     {
+      "annee": 2017,
+      "valeur": 80.8
+     },
+     {
+      "annee": 2018,
+      "valeur": 80.6
+     },
+     {
+      "annee": 2019,
+      "valeur": 81.8
+     },
+     {
+      "annee": 2020,
+      "valeur": 73.9
+     },
+     {
+      "annee": 2021,
+      "valeur": 77.6
+     },
+     {
+      "annee": 2022,
+      "valeur": 79.1
+     },
+     {
+      "annee": 2023,
+      "valeur": 78.0
+     }
+    ],
+    "valeur_num": 78.0,
+    "comparaison_num": 53.3,
+    "comparaison_nom": "Cible (−37,5 % sous 1990, désormais 2035)"
+   },
+   {
+    "nom": "Part du transport dans les émissions",
+    "definition": "Proportion des GES qui vient des transports (voitures, camions, avions, bateaux, trains, véhicules hors route).",
+    "valeur": "44,8 % (34,9 Mt); le transport routier seul : 33,4 % du total",
+    "annee": "2023",
+    "tendance": "Émissions du transport : +27,7 % depuis 1990 (27,3 Mt en 1990).",
+    "comparaison": "Industrie : 31,7 %; agriculture : 9,9 %; bâtiments : 7,9 %.",
+    "cible": null,
+    "source_url": "https://www.environnement.gouv.qc.ca/changements/ges/2023/inventaire-ges-1990-2023.pdf",
+    "source_nom": "Ministère de l'Environnement",
+    "autres_sources": [],
+    "unite": "% des émissions",
+    "sens": "bas_mieux"
+   },
+   {
+    "nom": "Prix du carbone (marché Québec-Californie)",
+    "definition": "Prix payé par les grandes entreprises et les distributeurs de carburant pour une tonne de CO2 qu'ils ont le droit d'émettre. Plus il est élevé, plus polluer coûte cher.",
+    "valeur": "45,11 $ CA par tonne (unités de l'année courante)",
+    "annee": "Vente aux enchères du 19 août 2026",
+    "tendance": "Revenus pour le Québec : environ 312 M$ à cette vente, versés au Fonds d'électrification et de changements climatiques.",
+    "comparaison": "N/D",
+    "cible": null,
+    "source_url": "https://www.environnement.gouv.qc.ca/changements/carbone/ventes-encheres/avis-resultats.htm",
+    "source_nom": "Ministère de l'Environnement",
+    "autres_sources": [
+     {
+      "url": "https://www.lelezard.com/communique-22345553.html",
+      "nom": "lelezard.com"
+     }
+    ],
+    "unite": "$ CA/t",
+    "sens": null
+   },
+   {
+    "nom": "Résultat d'Hydro-Québec et contribution à l'État",
+    "definition": "Profit annuel de la société d'État et ce qu'elle rapporte au gouvernement (dividende, redevances, taxes).",
+    "valeur": "Bénéfice net 2,9 G$; dividende 2,2 G$; contribution totale aux revenus de l'État 4,4 G$",
+    "annee": "2025",
+    "tendance": "Bénéfice en hausse de 243 M$ (+9 %) sur 2024, gonflé par la vente d'une participation dans Innergex (256 M$). Premier semestre 2026 : 2,02 G$, en baisse de 257 M$.",
+    "comparaison": "N/D",
+    "cible": null,
+    "source_url": "https://www.hydroquebec.com/data/documents-donnees/pdf/hq-rapport-annuel-2025-francais.pdf",
+    "source_nom": "Hydro-Québec",
+    "autres_sources": [],
+    "unite": "G$ (bénéfice net)",
+    "sens": "haut_mieux"
+   },
+   {
+    "nom": "Solde des échanges d'électricité (exportations − importations)",
+    "definition": "Différence entre l'électricité vendue hors Québec et celle achetée à l'extérieur. Quand les réservoirs sont bas, Hydro-Québec exporte moins et achète plus.",
+    "valeur": "Ventes hors Québec 11,8 TWh; achats 15,2 TWh : importateur net d'environ 3,4 TWh (calcul)",
+    "annee": "2025",
+    "tendance": "2024 : ventes 15,1 TWh, achats 9,4 TWh. Faible hydraulicité depuis 2023. Ventes au Québec record : 184,9 TWh (2025).",
+    "comparaison": "Prix moyen des ventes hors Québec : 14,5 ¢/kWh en 2025 (9,9 ¢ en 2024).",
+    "cible": "Plan d'action 2035 : 135 à 160 G$ d'investissements 2024-2035 pour augmenter la production.",
+    "source_url": "https://www.hydroquebec.com/data/documents-donnees/pdf/hq-rapport-annuel-2025-francais.pdf",
+    "source_nom": "Hydro-Québec",
+    "autres_sources": [
+     {
+      "url": "https://www.finances.gouv.qc.ca/Budget_et_mise_a_jour/budget/documents/Budget2627_PlanBudgetaire.pdf",
+      "nom": "Ministère des Finances du Québec"
+     }
+    ],
+    "unite": "TWh (solde)",
+    "sens": "haut_mieux",
+    "serie": [
+     {
+      "annee": 2024,
+      "valeur": 5.7
+     },
+     {
+      "annee": 2025,
+      "valeur": -3.4
+     }
+    ],
+    "valeur_num": -3.4
+   },
+   {
+    "nom": "Tarif résidentiel d'électricité",
+    "definition": "Prix moyen payé par les ménages pour un kilowattheure.",
+    "valeur": "8,29 ¢/kWh",
+    "annee": "2025",
+    "tendance": "N/D sur 10 ans dans le document consulté.",
+    "comparaison": "Présenté par Hydro-Québec comme le plus bas en Amérique du Nord.",
+    "cible": null,
+    "source_url": "https://www.hydroquebec.com/data/documents-donnees/pdf/hq-rapport-annuel-2025-francais.pdf",
+    "source_nom": "Hydro-Québec",
+    "autres_sources": [],
+    "unite": "¢/kWh",
+    "sens": "bas_mieux"
+   },
+   {
+    "nom": "Territoire protégé",
+    "definition": "Part du territoire québécois protégée par une aire protégée ou une autre mesure de conservation.",
+    "valeur": "16,53 % (275 743 km²)",
+    "annee": "31 mars 2026",
+    "tendance": "Environ 200 000 km² supplémentaires à protéger d'ici 2030. Dans les Basses-terres du Saint-Laurent (sud habité) : 4,66 % seulement.",
+    "comparaison": "N/D",
+    "cible": "30 % en 2030 (engagement de la COP15, 2022).",
+    "source_url": "https://statistique.quebec.ca/vitrine/developpement-durable/strategie-2023-2028/nature-et-sante/territoires-proteges-conserves",
+    "source_nom": "Institut de la statistique du Québec",
+    "autres_sources": [
+     {
+      "url": "https://www.lapresse.ca/dialogue/opinions/2026-09-08/aires-protegees/une-cible-qu-il-faudra-atteindre-coute-que-coute.php",
+      "nom": "lapresse.ca"
+     }
+    ],
+    "unite": "% du territoire",
+    "sens": "haut_mieux"
+   }
+  ],
+  "pieges": [
+   {
+    "titre": "",
+    "texte": "« −19,7 % » ou « −8,5 % » ? Les deux chiffres sont officiels pour 2023. −8,5 % est la baisse réelle des émissions sur le territoire depuis 1990. −19,7 % compte en plus les droits d'émission achetés en Californie par les entreprises québécoises via le marché du carbone. Le ministre a cité « 20 % sous 1990 » : c'est le second chiffre."
+   },
+   {
+    "titre": "Hydro-Québec a gagné plus en 2025 tout en exportant moins d'électricité",
+    "texte": "les prix de vente à l'étranger étaient plus élevés et une vente d'actifs (Innergex) a gonflé le résultat. Un bénéfice élevé ne signifie pas des réservoirs pleins ni une capacité de production suffisante."
+   },
+   {
+    "titre": "GES par habitant bas ≠ effort",
+    "texte": "le Québec émet peu surtout grâce à l'hydroélectricité héritée des décennies passées. La tendance (−8,5 % en 33 ans, transport en hausse) dit mieux où en sont les efforts récents."
+   }
+  ],
+  "motifs_seao": [
+   "Hydro-Québec",
+   "Environnement",
+   "Ressources naturelles"
+  ],
+  "themes_plateformes": [
+   "energie"
+  ]
+ },
+ {
+  "slug": "agriculture",
+  "nom": "Agriculture, pêches et alimentation",
+  "accroche": "De la ferme et du bateau de pêche à l'assiette : revenus agricoles, relève, autonomie alimentaire.",
+  "cest_quoi": "C'est tout ce qui mène de la ferme et du bateau de pêche à l'assiette : production agricole, pêche commerciale, transformation des aliments, épiceries et restaurants (le « bioalimentaire »). Le ministère de l'Agriculture, des Pêcheries et de l'Alimentation (MAPAQ) soutient les producteurs, l'inspection des aliments et l'achat local; La Financière agricole gère l'assurance récolte et la stabilisation des revenus. Ottawa gère la gestion de l'offre (lait, œufs, volaille), le commerce international, l'inspection fédérale (ACIA) et les quotas de pêche en mer (Pêches et Océans Canada). Les municipalités et MRC appliquent le zonage agricole avec la Commission de protection du territoire agricole.",
+  "budget": {
+   "montant": "1,6 G$ (portefeuille Agriculture, Pêcheries et Alimentation)",
+   "part": "0,9 % des dépenses consolidées totales (171,6 G$)",
+   "annee": "2026-2027 (prévision)",
+   "note": null,
+   "source_url": "https://cdn-contenu.quebec.ca/cdn-contenu/adm/min/finances/publications-adm/Rapport_preelectoral/FR/MINFR_RP_2026.pdf",
+   "source_nom": "Gouvernement du Québec"
+  },
+  "kpis": [
+   {
+    "nom": "Revenu agricole net réalisé",
+    "definition": "Ce qui reste aux fermes après avoir payé leurs dépenses d'exploitation et l'amortissement, pour l'ensemble du Québec.",
+    "valeur": "318,9 M$ (données provisoires)",
+    "annee": "2025",
+    "tendance": "Effondrement en 2024 : 90,0 M$ (−81,7 %, données révisées de novembre 2025). Rebond de +305 % en 2025, porté par l'élevage (recettes +6,6 %) et des dépenses stables (+0,4 %).",
+    "comparaison": "Ontario : 2 004,1 M$ (2025); Canada : 8,3 G$ (2025).",
+    "cible": null,
+    "source_url": "https://www150.statcan.gc.ca/n1/daily-quotidien/260527/dq260527b-eng.htm",
+    "source_nom": "Statistique Canada",
+    "autres_sources": [
+     {
+      "url": "https://www150.statcan.gc.ca/n1/daily-quotidien/251126/dq251126a-fra.htm",
+      "nom": "Statistique Canada"
+     }
+    ],
+    "unite": "M$",
+    "sens": "haut_mieux",
+    "serie": [
+     {
+      "annee": 2024,
+      "valeur": 90.0
+     },
+     {
+      "annee": 2025,
+      "valeur": 318.9
+     }
+    ],
+    "valeur_num": 318.9,
+    "comparaison_num": 2004.1,
+    "comparaison_nom": "Ontario (2025)"
+   },
+   {
+    "nom": "Recettes monétaires agricoles",
+    "definition": "Ventes totales des fermes (produits vendus et paiements de programmes).",
+    "valeur": "13,5 G$ (13 543,1 M$)",
+    "annee": "2025",
+    "tendance": "+4,5 % en 2025.",
+    "comparaison": "Ontario : 24,1 G$ (+8,0 %).",
+    "cible": null,
+    "source_url": "https://www150.statcan.gc.ca/n1/daily-quotidien/260527/dq260527b-eng.htm",
+    "source_nom": "Statistique Canada",
+    "autres_sources": [],
+    "unite": "M$",
+    "sens": "haut_mieux"
+   },
+   {
+    "nom": "Hausse de la valeur des terres agricoles",
+    "definition": "Variation annuelle du prix moyen des terres en culture. Des terres trop chères freinent l'établissement des jeunes.",
+    "valeur": "+4,8 %",
+    "annee": "2025",
+    "tendance": "+13,3 % (2023), +7,7 % (2024), +4,8 % (2025) : ralentissement. Laurentides-Lanaudière : 24 000 $/acre en moyenne; Montérégie : 23 200 $/acre.",
+    "comparaison": "N/D (moyenne canadienne 2025 non extraite)",
+    "cible": null,
+    "source_url": "https://www.newswire.ca/fr/news-releases/la-valeur-des-terres-agricoles-au-canada-a-poursuivi-sa-progression-en-2025-selon-un-rapport-de-fac-878070251.html",
+    "source_nom": "newswire.ca",
+    "autres_sources": [
+     {
+      "url": "https://www.laterre.ca/actualites/economie/la-prudence-a-guide-les-achats-de-terres-au-quebec-en-2025/",
+      "nom": "laterre.ca"
+     }
+    ],
+    "unite": "% de hausse annuelle",
+    "sens": null,
+    "serie": [
+     {
+      "annee": 2023,
+      "valeur": 13.3
+     },
+     {
+      "annee": 2024,
+      "valeur": 7.7
+     },
+     {
+      "annee": 2025,
+      "valeur": 4.8
+     }
+    ],
+    "valeur_num": 4.8
+   },
+   {
+    "nom": "Taux de renouvellement des générations agricoles",
+    "definition": "Nombre de jeunes exploitants (relève) comparé aux exploitants près de la retraite. Indique si les fermes trouvent preneur.",
+    "valeur": "30 %",
+    "annee": "2021 (Recensement de l'agriculture)",
+    "tendance": "38 % en 2016 → 30 % en 2021. Âge moyen de la relève établie : 33,2 ans (34,2 en 2016). 20 % des fermes québécoises ont une relève.",
+    "comparaison": "Canada : 24 % (le Québec est au 1er rang). Fermes avec relève : Ontario 17 %.",
+    "cible": null,
+    "source_url": "https://cdn-contenu.quebec.ca/cdn-contenu/adm/min/agriculture-pecheries-alimentation/agriculture/devenir-agriculteur/ED_portrait_releve_agricole_MAPAQ.pdf",
+    "source_nom": "Gouvernement du Québec",
+    "autres_sources": [],
+    "unite": "%",
+    "sens": "haut_mieux",
+    "serie": [
+     {
+      "annee": 2016,
+      "valeur": 38
+     },
+     {
+      "annee": 2021,
+      "valeur": 30
+     }
+    ],
+    "valeur_num": 30,
+    "comparaison_num": 24,
+    "comparaison_nom": "Canada (2021)"
+   },
+   {
+    "nom": "Autosuffisance alimentaire (approximative)",
+    "definition": "Part des aliments consommés au Québec qui y sont produits.",
+    "valeur": "Environ 51 % (déclaration du ministre de l'Agriculture, vers 2020)",
+    "annee": "vers 2020",
+    "tendance": "Varie énormément selon les produits : autosuffisant en lait, œufs, volaille; excédentaire en porc, sirop d'érable, canneberge; environ 34 % pour les fruits et légumes.",
+    "comparaison": "N/D",
+    "cible": "Hausse visée à 55-56 % si les objectifs d'achat local sont atteints (selon les mêmes sources).",
+    "source_url": "https://www.ledevoir.com/politique/quebec/590083/le-gouvernement-veut-voir-l-autonomie-alimentaire-du-quebec-grimper",
+    "source_nom": "ledevoir.com",
+    "autres_sources": [],
+    "unite": "%",
+    "sens": "haut_mieux"
+   },
+   {
+    "nom": "Contenu québécois des achats alimentaires",
+    "definition": "Valeur des produits alimentaires québécois achetés au Québec (épiceries, restaurants, institutions).",
+    "valeur": "34,4 G$",
+    "annee": "2022",
+    "tendance": "Cible de +10 G$ (Politique bioalimentaire 2018-2025) atteinte trois ans en avance.",
+    "comparaison": "N/D",
+    "cible": "+10 G$ de contenu québécois d'ici 2025 (atteinte).",
+    "source_url": "https://www.quebec.ca/gouvernement/politiques-orientations/politique-bioalimentaire",
+    "source_nom": "Gouvernement du Québec",
+    "autres_sources": [],
+    "unite": "G$",
+    "sens": "haut_mieux"
+   },
+   {
+    "nom": "Exportations bioalimentaires internationales",
+    "definition": "Valeur des aliments et boissons du Québec vendus hors Canada.",
+    "valeur": "13,5 G$ (estimation)",
+    "annee": "2025",
+    "tendance": "+6,4 % en 2025 (+800 M$), dont préparations de cacao (+500 M$), érable-miel-sucre (+160 M$). Les exportations vers les É.-U. augmentent pour une 7e année.",
+    "comparaison": "N/D",
+    "cible": null,
+    "source_url": "https://cdn-contenu.quebec.ca/cdn-contenu/adm/min/agriculture-pecheries-alimentation/publications-adm/bulletins/Bioalimentaire-economique/BU_Bioalimentaire_economique_Apercu_2025-2026_MAPAQ.pdf",
+    "source_nom": "Gouvernement du Québec",
+    "autres_sources": [],
+    "unite": "G$",
+    "sens": "haut_mieux"
+   },
+   {
+    "nom": "Pêches maritimes : volumes et concentration",
+    "definition": "Quantité de poissons et fruits de mer débarqués et dépendance à quelques espèces.",
+    "valeur": "Homard et crabe des neiges : plus de 95 % de la valeur des débarquements",
+    "annee": "2024",
+    "tendance": "2015-2024 : volumes −46,3 %, valeur +38,1 %; crevette nordique : −97 % en volume. Record de 119 M$ pour le homard aux Îles-de-la-Madeleine en 2025.",
+    "comparaison": "N/D",
+    "cible": null,
+    "source_url": "https://ici.radio-canada.ca/nouvelle/2256052/productivite-pecheurs-baisse-declin-capture-quebec",
+    "source_nom": "ici.radio-canada.ca",
+    "autres_sources": [],
+    "unite": "% de la valeur (homard + crabe)",
+    "sens": "bas_mieux"
+   }
+  ],
+  "pieges": [
+   {
+    "titre": "« Le revenu agricole a bondi de 305 % »",
+    "texte": "oui, mais depuis un plancher historique (environ 80-90 M$ en 2024 pour tout le Québec). 318,9 M$ reste bas : l'Ontario, avec des recettes deux fois plus grandes, dégage 2,0 G$. Une hausse en pourcentage à partir d'une base très faible exagère l'amélioration."
+   },
+   {
+    "titre": "Valeur des pêches en hausse ≠ pêches en santé",
+    "texte": "la valeur augmente grâce aux prix du homard et du crabe, alors que les volumes pêchés ont presque diminué de moitié en dix ans et que la crevette a quasiment disparu."
+   },
+   {
+    "titre": "L'« autonomie alimentaire » n'a pas de définition officielle unique",
+    "texte": "selon qu'on mesure en calories, en dollars ou en volume, et qu'on inclut ou non les exportations, le chiffre change. Le « 51 % » souvent cité n'est pas une statistique annuelle officielle."
+   }
+  ],
+  "motifs_seao": [
+   "Agriculture",
+   "Financière agricole",
+   "Pêcheries"
+  ],
+  "themes_plateformes": [
+   "agriculture"
+  ]
+ },
+ {
+  "slug": "transport",
+  "nom": "Transport et infrastructures",
+  "accroche": "Routes, ponts, transport collectif et bâtiments publics : construire, mais surtout entretenir.",
+  "cest_quoi": "C'est l'état et le développement des routes, ponts, transports collectifs, ainsi que des bâtiments publics (écoles, hôpitaux). Le ministère des Transports et de la Mobilité durable (MTMD) gère environ 31 130 km de routes et plus de 9 900 structures (ponts, viaducs). Le Plan québécois des infrastructures (PQI), piloté par le Conseil du trésor, planifie 167 G$ d'investissements sur 10 ans. Les municipalités sont responsables des rues locales, de l'eau et de la majorité des sociétés de transport (STM, RTC…), avec des subventions de Québec. Ottawa gère les aéroports, ports, chemins de fer fédéraux et cofinance certains projets.",
+  "budget": {
+   "montant": "7,9 G$ (portefeuille Transports et Mobilité durable)",
+   "part": "4,6 % des dépenses consolidées totales (171,6 G$)",
+   "annee": "2026-2027 (prévision)",
+   "note": "Baisse de 14,2 % par rapport à 2025-2026 parce que des paiements pour la ligne bleue et le tramway de Québec ont été devancés en 2025-2026. Investissements prévus au PQI 2026-2036 : 35,7 G$ réseau routier, 12,8 G$ transport collectif.",
+   "source_url": "https://cdn-contenu.quebec.ca/cdn-contenu/adm/min/finances/publications-adm/Rapport_preelectoral/FR/MINFR_RP_2026.pdf",
+   "source_nom": "Gouvernement du Québec"
+  },
+  "kpis": [
+   {
+    "nom": "Déficit de maintien d'actifs (DMA) des infrastructures publiques",
+    "definition": "Coût des travaux nécessaires pour remettre en bon état les infrastructures publiques jugées en mauvais ou très mauvais état.",
+    "valeur": "44,8 G$ (9,7 % de la valeur de remplacement)",
+    "annee": "mars 2026",
+    "tendance": "+4,6 G$ en un an (40,2 G$ en 2025). 63 % du DMA est pris en charge par le PQI 2026-2036 (58 % au PQI précédent).",
+    "comparaison": "N/D",
+    "cible": null,
+    "source_url": "https://cdn-contenu.quebec.ca/cdn-contenu/adm/min/secretariat-du-conseil-du-tresor/publications-adm/budgets/2026-2027/6_plan_quebecois_infrastructures.pdf",
+    "source_nom": "Gouvernement du Québec",
+    "autres_sources": [],
+    "unite": "G$",
+    "sens": "bas_mieux",
+    "serie": [
+     {
+      "annee": 2025,
+      "valeur": 40.2
+     },
+     {
+      "annee": 2026,
+      "valeur": 44.8
+     }
+    ],
+    "valeur_num": 44.8
+   },
+   {
+    "nom": "DMA du réseau routier",
+    "definition": "Portion du déficit de maintien qui concerne les routes, ponts et ponceaux du MTMD.",
+    "valeur": "24,5 G$ (55 % du DMA total)",
+    "annee": "mars 2026",
+    "tendance": "22,5 G$ en 2025; 19,3 G$ en 2022. Seulement 43 % du DMA routier est pris en charge d'ici 2036.",
+    "comparaison": "Éducation : 9,8 G$ (94 % pris en charge).",
+    "cible": null,
+    "source_url": "https://cdn-contenu.quebec.ca/cdn-contenu/adm/min/secretariat-du-conseil-du-tresor/publications-adm/budgets/2026-2027/6_plan_quebecois_infrastructures.pdf",
+    "source_nom": "Gouvernement du Québec",
+    "autres_sources": [],
+    "unite": "G$",
+    "sens": "bas_mieux",
+    "serie": [
+     {
+      "annee": 2022,
+      "valeur": 19.3
+     },
+     {
+      "annee": 2025,
+      "valeur": 22.5
+     },
+     {
+      "annee": 2026,
+      "valeur": 24.5
+     }
+    ],
+    "valeur_num": 24.5
+   },
+   {
+    "nom": "Chaussées en bon état",
+    "definition": "Part des routes du réseau supérieur (sous responsabilité du MTMD) dont la chaussée est en bon état (cote A, B ou C).",
+    "valeur": "51 % (19 % en mauvais état, 30 % en très mauvais état)",
+    "annee": "2026-2027 (inventaire mars 2026)",
+    "tendance": "52 % l'année précédente; environ 50 % en 2022-2023.",
+    "comparaison": "Structures du MTMD : 57 % en bon état; ponceaux : 85 %.",
+    "cible": null,
+    "source_url": "https://cdn-contenu.quebec.ca/cdn-contenu/adm/min/secretariat-du-conseil-du-tresor/publications-adm/budgets/2026-2027/6_plan_quebecois_infrastructures.pdf",
+    "source_nom": "Gouvernement du Québec",
+    "autres_sources": [],
+    "unite": "%",
+    "sens": "haut_mieux",
+    "serie": [
+     {
+      "annee": 2026,
+      "valeur": 52
+     },
+     {
+      "annee": 2027,
+      "valeur": 51
+     }
+    ],
+    "valeur_num": 51
+   },
+   {
+    "nom": "Infrastructures publiques en bon état",
+    "definition": "Part de l'ensemble des infrastructures des organismes publics (écoles, hôpitaux, routes…) en bon état.",
+    "valeur": "54 %",
+    "annee": "2026-2027",
+    "tendance": "58 % au bilan précédent (2025-2026).",
+    "comparaison": "Cégeps : 35 %; organismes scolaires : 47 %; réseau routier : 56 %.",
+    "cible": null,
+    "source_url": "https://cdn-contenu.quebec.ca/cdn-contenu/adm/min/secretariat-du-conseil-du-tresor/publications-adm/budgets/2026-2027/6_plan_quebecois_infrastructures.pdf",
+    "source_nom": "Gouvernement du Québec",
+    "autres_sources": [],
+    "unite": "%",
+    "sens": "haut_mieux",
+    "serie": [
+     {
+      "annee": 2026,
+      "valeur": 58
+     },
+     {
+      "annee": 2027,
+      "valeur": 54
+     }
+    ],
+    "valeur_num": 54
+   },
+   {
+    "nom": "Investissements annuels dans le réseau routier",
+    "definition": "Sommes réellement dépensées chaque année pour les routes et ponts du MTMD.",
+    "valeur": "4,1 G$",
+    "annee": "2025-2026",
+    "tendance": "2,2 G$ en 2018-2019 (+86 %).",
+    "comparaison": "Transport collectif : 2,8 G$ en 2025-2026 (0,7 G$ en 2018-2019).",
+    "cible": null,
+    "source_url": "https://cdn-contenu.quebec.ca/cdn-contenu/adm/min/secretariat-du-conseil-du-tresor/publications-adm/budgets/2026-2027/6_plan_quebecois_infrastructures.pdf",
+    "source_nom": "Gouvernement du Québec",
+    "autres_sources": [],
+    "unite": "G$",
+    "sens": null,
+    "serie": [
+     {
+      "annee": 2019,
+      "valeur": 2.2
+     },
+     {
+      "annee": 2026,
+      "valeur": 4.1
+     }
+    ],
+    "valeur_num": 4.1
+   },
+   {
+    "nom": "Achalandage de la STM",
+    "definition": "Nombre de déplacements faits dans le métro et les autobus de Montréal en un an.",
+    "valeur": "293,9 millions de déplacements",
+    "annee": "2025",
+    "tendance": "−6,6 % par rapport à 2024 (grèves, baisse du nombre d'étudiants étrangers). Niveau par rapport à 2019 : N/D dans la source consultée.",
+    "comparaison": "N/D",
+    "cible": null,
+    "source_url": "https://www.stm.info/fr/presse/communiques/2026/rapport-d-activite-2025---la-stm-prend-les-moyens-necessaires-pour-proteger-sa-mission",
+    "source_nom": "STM",
+    "autres_sources": [],
+    "unite": "millions de déplacements",
+    "sens": "haut_mieux"
+   },
+   {
+    "nom": "DMA des infrastructures municipales",
+    "definition": "Retard d'entretien des infrastructures des villes (aqueducs, égouts, rues…), qui ne sont pas comptées dans le DMA du gouvernement.",
+    "valeur": "Plus de 50 G$ (estimation de l'Union des municipalités du Québec)",
+    "annee": "septembre 2026",
+    "tendance": "N/D",
+    "comparaison": "N/D",
+    "cible": "L'UMQ demande un fonds permanent dédié au maintien des infrastructures.",
+    "source_url": "https://www.newswire.ca/fr/news-releases/sondage-leger-la-majorite-des-quebecois-a-peur-de-manquer-d-eau-l-umq-demande-un-fonds-dedie-au-maintien-des-infrastructures-883796450.html",
+    "source_nom": "newswire.ca",
+    "autres_sources": [],
+    "unite": "G$ (au moins)",
+    "sens": "bas_mieux"
+   }
+  ],
+  "pieges": [
+   {
+    "titre": "Le DMA de 44,8 G$ n'inclut pas les infrastructures municipales ni celles des sociétés de transport",
+    "texte": "elles appartiennent à des « organismes subventionnés ». Le vrai retard d'entretien total au Québec est donc nettement plus élevé (plus de 50 G$ pour le seul monde municipal selon l'UMQ)."
+   },
+   {
+    "titre": "Plus d'argent investi ≠ routes en meilleur état",
+    "texte": "les investissements routiers ont presque doublé depuis 2018-2019, mais la part des chaussées en bon état stagne autour de 51-52 % et le DMA routier augmente (hausse du coût du bitume, nouveaux constats, vieillissement)."
+   },
+   {
+    "titre": "DMA « stable » en proportion",
+    "texte": "le gouvernement souligne que le DMA représente 9,7 % de la valeur de remplacement (9,3 % l'an dernier). En dollars, il a pourtant augmenté de 4,6 G$ en un an."
+   }
+  ],
+  "motifs_seao": [
+   "Transports",
+   "transport",
+   "ARTM",
+   "traversiers",
+   "Société québécoise des infrastructures"
+  ],
+  "themes_plateformes": [
+   "transport"
+  ]
+ },
+ {
+  "slug": "regions",
+  "nom": "Régions et territoire",
+  "accroche": "17 régions, plus de 1 100 municipalités et 11 nations autochtones : un Québec aux réalités très différentes.",
+  "cest_quoi": "Le Québec compte 17 régions administratives, des MRC et des municipalités, ainsi que 11 nations autochtones (10 Premières Nations et la nation inuite). Le ministère des Affaires municipales et de l'Habitation encadre les municipalités et leur verse des transferts; le Secrétariat aux relations avec les Premières Nations et les Inuit coordonne les relations avec les nations. Les municipalités gèrent les services de proximité (eau, voirie locale, loisirs, urbanisme) et se financent surtout par l'impôt foncier. Ottawa a une responsabilité constitutionnelle envers les Premières Nations (Loi sur les Indiens, financement des communautés). Les enjeux clés : vieillissement inégal selon les régions, occupation du territoire, vitalité économique et conditions de vie dans les communautés autochtones.",
+  "budget": {
+   "montant": "5,9 G$ (portefeuille Affaires municipales et Habitation)",
+   "part": "3,4 % des dépenses consolidées totales (171,6 G$)",
+   "annee": "2026-2027 (prévision)",
+   "note": "Comprend l'habitation (programmes de logement abordable) et le crédit d'impôt pour l'accès à la propriété. Les sommes pour les relations avec les Premières Nations et les Inuit sont réparties dans plusieurs portefeuilles (notamment Conseil exécutif, 0,6 G$).",
+   "source_url": "https://cdn-contenu.quebec.ca/cdn-contenu/adm/min/finances/publications-adm/Rapport_preelectoral/FR/MINFR_RP_2026.pdf",
+   "source_nom": "Gouvernement du Québec"
+  },
+  "kpis": [
+   {
+    "nom": "Croissance démographique par région",
+    "definition": "Variation de la population d'une région en un an, en nombre de personnes pour 1 000 habitants.",
+    "valeur": "De +15,7 ‰ (Lanaudière) à −0,8 ‰ (Gaspésie–Îles-de-la-Madeleine)",
+    "annee": "1er juillet 2024 au 1er juillet 2025",
+    "tendance": "Ralentissement partout : Montréal passe de +33,7 ‰ (2023-2024) à +2,6 ‰. 15 régions sur 17 ont crû; Gaspésie et Côte-Nord ont reculé.",
+    "comparaison": "Ensemble du Québec : +7,0 ‰ (+0,7 %) en 2024-2025; puis −0,1 % sur l'année civile 2025 (première baisse).",
+    "cible": null,
+    "source_url": "https://statistique.quebec.ca/fr/fichier/fiches-demographiques-regions-administratives-quebec-2025.pdf",
+    "source_nom": "Institut de la statistique du Québec",
+    "autres_sources": [
+     {
+      "url": "https://www.quebec.ca/nouvelles/actualites/details/naissances-deces-migrations-comment-la-population-du-quebec-a-t-elle-evolue-en-2025-70376",
+      "nom": "Gouvernement du Québec"
+     }
+    ],
+    "unite": "‰ (région la plus forte)",
+    "sens": null
+   },
+   {
+    "nom": "Part des 65 ans et plus par région",
+    "definition": "Proportion d'aînés dans la population. Plus elle est forte, plus les besoins en soins augmentent et moins il y a de travailleurs.",
+    "valeur": "Gaspésie–Îles-de-la-Madeleine 32,2 %; Bas-Saint-Laurent 29,8 %; Montréal 17,4 %; Nord-du-Québec 10,4 %",
+    "annee": "2025 (1er juillet)",
+    "tendance": "Ensemble du Québec : 21,7 %, part en hausse (le ministère des Finances parle d'un « sommet »).",
+    "comparaison": "Québec : 21,7 %.",
+    "cible": null,
+    "source_url": "https://statistique.quebec.ca/fr/fichier/fiches-demographiques-regions-administratives-quebec-2025.pdf",
+    "source_nom": "Institut de la statistique du Québec",
+    "autres_sources": [],
+    "unite": "% (région la plus âgée)",
+    "sens": null
+   },
+   {
+    "nom": "Solde naturel (naissances − décès)",
+    "definition": "Différence entre les naissances et les décès. Négatif = la population diminue sans immigration.",
+    "valeur": "−2 250 pour le Québec; décès plus nombreux que les naissances dans 12 régions sur 17",
+    "annee": "2025",
+    "tendance": "Positif jusqu'en 2022-2023 (+231), négatif depuis 2024. Fécondité : 1,36 enfant par femme (2025), près du creux historique de 1,35 (2024).",
+    "comparaison": "N/D",
+    "cible": null,
+    "source_url": "https://www.quebec.ca/nouvelles/actualites/details/naissances-deces-migrations-comment-la-population-du-quebec-a-t-elle-evolue-en-2025-70376",
+    "source_nom": "Gouvernement du Québec",
+    "autres_sources": [
+     {
+      "url": "https://statistique.quebec.ca/fr/fichier/fiches-demographiques-regions-administratives-quebec-2025.pdf",
+      "nom": "Institut de la statistique du Québec"
+     }
+    ],
+    "unite": "personnes",
+    "sens": "haut_mieux"
+   },
+   {
+    "nom": "Migration interrégionale",
+    "definition": "Déménagements d'une région à l'autre à l'intérieur du Québec.",
+    "valeur": "12 régions gagnantes, 5 perdantes (Montréal, Laval, Abitibi-Témiscamingue, Côte-Nord, Nord-du-Québec)",
+    "annee": "2024-2025",
+    "tendance": "Lanaudière et Laurentides : grandes gagnantes année après année. Pertes de Montréal stables; déficit accru en Abitibi-Témiscamingue et Nord-du-Québec.",
+    "comparaison": "N/D",
+    "cible": null,
+    "source_url": "https://statistique.quebec.ca/fr/fichier/fiches-demographiques-regions-administratives-quebec-2025.pdf",
+    "source_nom": "Institut de la statistique du Québec",
+    "autres_sources": [],
+    "unite": "qualitatif",
+    "sens": null
+   },
+   {
+    "nom": "Écarts de revenu disponible entre régions",
+    "definition": "Revenu disponible par habitant selon la région; mesure les écarts de niveau de vie sur le territoire.",
+    "valeur": "Laurentides : 40 100 $ (le plus élevé); Bas-Saint-Laurent et Mauricie : les plus faibles",
+    "annee": "2024",
+    "tendance": "Croissance plus forte en 2024 dans presque toutes les régions (sauf Nord-du-Québec). MRC la plus riche : Pays-d'en-Haut (51 900 $).",
+    "comparaison": "Québec : 38 400 $.",
+    "cible": null,
+    "source_url": "https://statistique.quebec.ca/fr/communique/revenu-disponible-par-habitant-croissance-accelere-dans-presque-toutes-les-regions-quebec-2024",
+    "source_nom": "Institut de la statistique du Québec",
+    "autres_sources": [],
+    "unite": "$ par habitant (région la plus élevée)",
+    "sens": null
+   },
+   {
+    "nom": "Chômage régional",
+    "definition": "Taux de chômage selon la région économique.",
+    "valeur": "De 1,9 % (Chaudière-Appalaches) à 8,8 % (Montréal)",
+    "annee": "août 2026",
+    "tendance": "N/D",
+    "comparaison": "Québec : 5,6 %.",
+    "cible": null,
+    "source_url": "https://www.guichetemplois.gc.ca/analyse-tendances/rapport-marche-travail/qc/apercu-marche-travail",
+    "source_nom": "guichetemplois.gc.ca",
+    "autres_sources": [],
+    "unite": "% (région la plus élevée)",
+    "sens": "bas_mieux"
+   },
+   {
+    "nom": "Premières Nations et Inuit",
+    "definition": "Poids démographique des peuples autochtones et structure d'âge du Nord-du-Québec (région où ils sont majoritaires).",
+    "valeur": "11 nations; environ 1 % de la population du Québec",
+    "annee": "données au 31 décembre 2022 (profil gouvernemental)",
+    "tendance": "Nord-du-Québec : âge moyen de 33,6 ans contre 43,1 ans au Québec; l'accroissement naturel y reste le moteur de la croissance.",
+    "comparaison": "Principales nations : Cris (~21 000), Innus (16 000+), Attikameks (~8 000), Algonquins (~6 000), Micmacs (5 000+).",
+    "cible": null,
+    "source_url": "https://www.quebec.ca/gouvernement/portrait-quebec/premieres-nations-inuits/profil-des-nations",
+    "source_nom": "Gouvernement du Québec",
+    "autres_sources": [
+     {
+      "url": "https://statistique.quebec.ca/fr/fichier/fiches-demographiques-regions-administratives-quebec-2025.pdf",
+      "nom": "Institut de la statistique du Québec"
+     }
+    ],
+    "unite": "% de la population",
+    "sens": null
+   }
+  ],
+  "pieges": [
+   {
+    "titre": "Une région « en croissance » peut vieillir et perdre ses naissances",
+    "texte": "dans 12 régions sur 17, il meurt plus de gens qu'il n'en naît. La croissance vient alors uniquement de l'immigration et des déménagements, qui peuvent s'inverser vite (comme Montréal en 2024-2025)."
+   },
+   {
+    "titre": "Les moyennes régionales cachent des écarts",
+    "texte": "le revenu disponible moyen des Laurentides (40 100 $) mélange des MRC aisées (Pays-d'en-Haut, 51 900 $) et d'autres beaucoup moins. Idem pour le chômage de « Montréal » (8,8 % pour la région économique de l'île, mais 6,5 % pour la région métropolitaine plus large)."
+   },
+   {
+    "titre": "",
+    "texte": "Les données sur les Premières Nations et les Inuit sont souvent incomplètes (communautés non recensées, définitions variables) : préférer les sources des nations elles-mêmes et du Secrétariat, et indiquer l'année."
+   }
+  ],
+  "motifs_seao": [
+   "Ville de",
+   "Municipalité",
+   "MRC ",
+   "Régie intermunicipale"
+  ],
+  "themes_plateformes": [
+   "agriculture"
+  ]
+ },
+ {
+  "slug": "immigration",
+  "nom": "Immigration et main-d'œuvre",
+  "accroche": "Combien de personnes accueillir, lesquelles, et comment les intégrer au travail et en français.",
+  "cest_quoi": "C'est le choix du nombre et du profil des personnes qui viennent vivre et travailler au Québec, et leur intégration (emploi, français). Grâce à l'Accord Canada-Québec, Québec planifie ses niveaux d'immigration permanente et sélectionne les immigrants économiques par le ministère de l'Immigration, de la Francisation et de l'Intégration (MIFI); Francisation Québec offre les cours de français. Ottawa accorde la résidence permanente, contrôle la sécurité et la santé, et gère seul plusieurs programmes temporaires (Programme de mobilité internationale, demandeurs d'asile). Pour les travailleurs étrangers temporaires et les étudiants étrangers, il faut le consentement de Québec (CAQ). Les municipalités et organismes locaux participent à l'accueil.",
+  "budget": {
+   "montant": "0,56 G$ (portefeuille Immigration, Francisation et Intégration)",
+   "part": "0,3 % des dépenses consolidées totales (171,6 G$)",
+   "annee": "2026-2027 (prévision)",
+   "note": "Les mesures d'emploi et de formation de la main-d'œuvre relèvent surtout du portefeuille Emploi et Solidarité sociale (6,4 G$, qui inclut l'aide sociale et un versement ponctuel pour l'épicerie et l'énergie de 335 M$).",
+   "source_url": "https://cdn-contenu.quebec.ca/cdn-contenu/adm/min/finances/publications-adm/Rapport_preelectoral/FR/MINFR_RP_2026.pdf",
+   "source_nom": "Gouvernement du Québec"
+  },
+  "kpis": [
+   {
+    "nom": "Postes vacants",
+    "definition": "Nombre de postes que les employeurs cherchent activement à pourvoir, et taux (postes vacants ÷ total des postes).",
+    "valeur": "123 700 postes; taux de 3,1 %",
+    "annee": "2e trimestre 2026",
+    "tendance": "Stable par rapport au 2e trimestre 2025; en baisse depuis les sommets post-pandémie (baisse de 13 250 au 3e trimestre 2025 sur un an). Santé et assistance sociale : 21,8 % des postes vacants (26 900).",
+    "comparaison": "N/D (comparaison Ontario non extraite)",
+    "cible": null,
+    "source_url": "https://statistique.quebec.ca/fr/document/postes-vacants-au-quebec/publication/postes-vacants-au-quebec-par-trimestre",
+    "source_nom": "Institut de la statistique du Québec",
+    "autres_sources": [
+     {
+      "url": "https://www.lapresse.ca/affaires/2026-09-17/quebec/le-secteur-sante-et-assistance-sociale-represente-le-cinquieme-des-postes-vacants.php",
+      "nom": "lapresse.ca"
+     },
+     {
+      "url": "https://cdn-contenu.quebec.ca/cdn-contenu/adm/min/agriculture-pecheries-alimentation/publications-adm/bulletins/Bioalimentaire-economique/BU_Bioalimentaire_economique_Apercu_2025-2026_MAPAQ.pdf",
+      "nom": "Gouvernement du Québec"
+     }
+    ],
+    "unite": "postes",
+    "sens": "bas_mieux"
+   },
+   {
+    "nom": "Résidents non permanents (RNP)",
+    "definition": "Personnes vivant au Québec avec un statut temporaire : travailleurs étrangers, étudiants étrangers, demandeurs d'asile.",
+    "valeur": "514 050",
+    "annee": "1er janvier 2026",
+    "tendance": "565 450 un an plus tôt (−51 400). L'accueil net de RNP est passé d'un sommet de 134 400 (2024) à environ 21 000 (2025). Part dans la population : 6,2 % (2025).",
+    "comparaison": "Ontario : 8,6 % de la population en 2025 (Desjardins).",
+    "cible": "Réduire progressivement : maximum de 65 000 travailleurs étrangers temporaires (PTET) et 110 000 étudiants étrangers d'ici fin 2029 (−13 % vs 2024).",
+    "source_url": "https://www.quebec.ca/nouvelles/actualites/details/naissances-deces-migrations-comment-la-population-du-quebec-a-t-elle-evolue-en-2025-70376",
+    "source_nom": "Gouvernement du Québec",
+    "autres_sources": [
+     {
+      "url": "https://cdn-contenu.quebec.ca/cdn-contenu/adm/min/finances/publications-adm/Rapport_preelectoral/FR/MINFR_RP_2026.pdf",
+      "nom": "Gouvernement du Québec"
+     },
+     {
+      "url": "https://cdn-contenu.quebec.ca/cdn-contenu/adm/min/immigration/publications-adm/plan-immigration/PL_immigration_2026_MIFI.pdf",
+      "nom": "Gouvernement du Québec"
+     },
+     {
+      "url": "https://www.desjardins.com/fr/epargne-placements/etudes-economiques/quebec-ontario-rattrapage-economique-6-fevrier-2026.html",
+      "nom": "desjardins.com"
+     }
+    ],
+    "unite": "personnes",
+    "sens": null,
+    "serie": [
+     {
+      "annee": 2025,
+      "valeur": 565450
+     },
+     {
+      "annee": 2026,
+      "valeur": 514050
+     }
+    ],
+    "valeur_num": 514050
+   },
+   {
+    "nom": "Immigrants permanents admis",
+    "definition": "Nombre de nouveaux résidents permanents admis au Québec pendant l'année.",
+    "valeur": "60 150 (incluant les admissions hors cible du PEQ-Diplômés)",
+    "annee": "2025",
+    "tendance": "Admissions régulières : 50 829 (2023), 51 019 (2024), 47 210 à 50 220 prévues (2025).",
+    "comparaison": "N/D",
+    "cible": "Plan 2026 : 43 000 à 47 000 admissions; orientation 2026-2029 : environ 45 000 par an.",
+    "source_url": "https://www.quebec.ca/nouvelles/actualites/details/naissances-deces-migrations-comment-la-population-du-quebec-a-t-elle-evolue-en-2025-70376",
+    "source_nom": "Gouvernement du Québec",
+    "autres_sources": [
+     {
+      "url": "https://cdn-contenu.quebec.ca/cdn-contenu/adm/min/immigration/publications-adm/plan-immigration/PL_immigration_2026_MIFI.pdf",
+      "nom": "Gouvernement du Québec"
+     }
+    ],
+    "unite": "personnes",
+    "sens": null,
+    "serie": [
+     {
+      "annee": 2023,
+      "valeur": 50829
+     },
+     {
+      "annee": 2024,
+      "valeur": 51019
+     },
+     {
+      "annee": 2025,
+      "valeur": 60150
+     }
+    ],
+    "valeur_num": 60150,
+    "comparaison_num": 45000,
+    "comparaison_nom": "Cible annuelle 2026-2029 (environ)"
+   },
+   {
+    "nom": "Connaissance du français à l'admission",
+    "definition": "Part des nouveaux immigrants permanents qui déclarent connaître le français au moment de leur admission.",
+    "valeur": "78 à 79 % (prévision)",
+    "annee": "2025",
+    "tendance": "66 % (2023), 73 % (2024), 78-79 % (2025 prévu), 76 % planifié en 2026.",
+    "comparaison": "N/D",
+    "cible": "Plus de 77 % sur la période 2026-2029.",
+    "source_url": "https://cdn-contenu.quebec.ca/cdn-contenu/adm/min/immigration/publications-adm/plan-immigration/PL_immigration_2026_MIFI.pdf",
+    "source_nom": "Gouvernement du Québec",
+    "autres_sources": [],
+    "unite": "%",
+    "sens": "haut_mieux",
+    "serie": [
+     {
+      "annee": 2023,
+      "valeur": 66
+     },
+     {
+      "annee": 2024,
+      "valeur": 73
+     },
+     {
+      "annee": 2025,
+      "valeur": 78.5
+     },
+     {
+      "annee": 2026,
+      "valeur": 76
+     }
+    ],
+    "valeur_num": 78.5,
+    "comparaison_num": 77,
+    "comparaison_nom": "Cible 2026-2029"
+   },
+   {
+    "nom": "Part des immigrants permanents déjà présents au Québec",
+    "definition": "Proportion des nouveaux résidents permanents qui vivaient déjà au Québec (souvent comme travailleurs ou étudiants temporaires).",
+    "valeur": "55 % (prévision)",
+    "annee": "2025",
+    "tendance": "38 % (2023), 45 % (2024), 55 % (2025), 54 % planifié en 2026.",
+    "comparaison": "N/D",
+    "cible": "65 % ou plus à la fin de la période 2026-2029.",
+    "source_url": "https://cdn-contenu.quebec.ca/cdn-contenu/adm/min/immigration/publications-adm/plan-immigration/PL_immigration_2026_MIFI.pdf",
+    "source_nom": "Gouvernement du Québec",
+    "autres_sources": [],
+    "unite": "%",
+    "sens": null,
+    "serie": [
+     {
+      "annee": 2023,
+      "valeur": 38
+     },
+     {
+      "annee": 2024,
+      "valeur": 45
+     },
+     {
+      "annee": 2025,
+      "valeur": 55
+     },
+     {
+      "annee": 2026,
+      "valeur": 54
+     }
+    ],
+    "valeur_num": 55
+   },
+   {
+    "nom": "Population totale et migration interprovinciale",
+    "definition": "Variation de la population et solde des départs vers les autres provinces.",
+    "valeur": "9,03 millions (−9 600, −0,1 %); solde interprovincial −7 600",
+    "annee": "2025",
+    "tendance": "Croissance record en 2023 (+1,8 %) et 2024 (+2,0 %), puis première baisse. Le ministère des Finances prévoit une baisse jusqu'en 2029 (−0,4 % en 2026).",
+    "comparaison": "Canada : +2,8 % (2023) et +3,0 % (2024).",
+    "cible": null,
+    "source_url": "https://www.quebec.ca/nouvelles/actualites/details/naissances-deces-migrations-comment-la-population-du-quebec-a-t-elle-evolue-en-2025-70376",
+    "source_nom": "Gouvernement du Québec",
+    "autres_sources": [
+     {
+      "url": "https://cdn-contenu.quebec.ca/cdn-contenu/adm/min/finances/publications-adm/Rapport_preelectoral/FR/MINFR_RP_2026.pdf",
+      "nom": "Gouvernement du Québec"
+     }
+    ],
+    "unite": "millions d'habitants",
+    "sens": null
+   }
+  ],
+  "pieges": [
+   {
+    "titre": "",
+    "texte": "Les seuils d'immigration permanente (environ 45 000 par an) ne disent presque rien de la croissance de la population : en 2023-2024, c'est l'immigration temporaire (+238 775 RNP en deux ans) qui a fait bondir la population, et c'est sa baisse qui la fait reculer en 2025-2026. Regarder les deux chiffres ensemble."
+   },
+   {
+    "titre": "",
+    "texte": "Une part croissante des « nouveaux » immigrants permanents sont déjà au Québec depuis des années (55 % en 2025) : leur admission ne fait pas arriver de nouvelles personnes, elle change leur statut."
+   },
+   {
+    "titre": "« Connaître le français » à l'admission est une déclaration, pas un niveau mesuré de maîtrise de la langue",
+    "texte": "le chiffre ne dit pas si la personne peut travailler en français."
+   },
+   {
+    "titre": "",
+    "texte": "Moins de postes vacants peut signifier moins de pénurie… ou une économie qui ralentit (moins d'embauches). En 2026, les deux effets jouent en même temps."
+   }
+  ],
+  "motifs_seao": [
+   "Immigration",
+   "Francisation"
+  ],
+  "themes_plateformes": [
+   "immigration"
+  ]
+ }
+]

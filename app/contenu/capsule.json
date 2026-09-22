@@ -1,0 +1,365 @@
+{
+ "maj_texte": "22 septembre 2026",
+ "chapeau": "Le Québec est l'une des sociétés les plus heureuses d'Amérique du Nord, mais pas l'une des plus riches. Qu'est-ce qui, selon la recherche, rendrait les Québécois à la fois plus prospères et plus heureux? Voici les leviers les mieux documentés, avec la solidité de la preuve, le délai avant d'en voir l'effet et ce qu'ils coûtent.",
+ "avertissement": "Ce n'est pas un programme politique et nous ne recommandons aucun levier. Les partis choisissent entre ces leviers selon leurs valeurs : croissance ou redistribution, État ou marché. Quand la recherche est divisée, nous présentons les deux côtés. La solidité de la preuve et le délai indiqués pour chaque levier sont notre lecture des études citées, et non un verdict officiel.",
+ "mesurer": [
+  {
+   "titre": "Le PIB par habitant : utile, mais incomplet",
+   "texte": "Le PIB mesure ce qu'une économie produit. C'est ce qui finance les services publics. Mais il ignore la répartition de la richesse, la qualité de vie et l'environnement. L'Irlande en est l'exemple extrême : son PIB est gonflé par la comptabilité des multinationales, si bien que le pays a dû créer un autre indicateur pour mesurer la richesse réelle de ses habitants.",
+   "source_nom": "OCDE, Beyond GDP",
+   "source_url": "https://www.oecd.org/en/publications/2018/11/beyond-gdp_g1g98ae6.html"
+  },
+  {
+   "titre": "Le bonheur se mesure aussi",
+   "texte": "Le World Happiness Report classe les pays selon la satisfaction de vie déclarée. Six facteurs expliquent environ les trois quarts des écarts : le revenu, le soutien social (avoir quelqu'un sur qui compter), l'espérance de vie en bonne santé, la liberté de faire ses choix, la générosité et l'absence de corruption. En 2026, le Canada est 25e sur 147, son pire rang. Le recul vient surtout des moins de 25 ans.",
+   "source_nom": "World Happiness Report 2026",
+   "source_url": "https://www.worldhappiness.report/news/world-happiness-report-2026-complex-global-picture-of-social-media-and-happiness/"
+  },
+  {
+   "titre": "Le Québec, champion canadien de la satisfaction de vie",
+   "texte": "Le rapport ne classe pas le Québec séparément. Mais selon Statistique Canada, 61 % des Québécois se disaient très satisfaits de leur vie en 2023 (8 à 10 sur 10), contre 50 % des Canadiens. C'est la proportion la plus élevée au pays.",
+   "source_nom": "Statistique Canada, 2024",
+   "source_url": "https://www150.statcan.gc.ca/n1/pub/11-627-m/11-627-m2024002-eng.htm"
+  },
+  {
+   "titre": "Les « budgets bien-être » : une bonne idée, peu de résultats mesurés",
+   "texte": "La Nouvelle-Zélande, le pays de Galles et l'Écosse ont tenté de piloter leur budget avec des indicateurs de bien-être. Bilan honnête : plus de transparence, mais aucun effet mesuré sur le bien-être lui-même. Le vérificateur général du pays de Galles conclut en 2025 que la loi « ne provoque pas le changement systémique voulu ». Un tableau de bord ne sert à rien s'il ne pèse pas sur les décisions.",
+   "source_nom": "Audit Wales, 2025",
+   "source_url": "https://www.audit.wales/news/ten-years-well-being-future-generations-act-has-increased-prominence-not-driving-system-wide"
+  }
+ ],
+ "forces": [
+  {
+   "titre": "Satisfaction de vie la plus élevée au Canada",
+   "texte": "61 % de Québécois très satisfaits de leur vie en 2023, contre 50 % au Canada.",
+   "source_nom": "Statistique Canada",
+   "source_url": "https://www150.statcan.gc.ca/n1/pub/11-627-m/11-627-m2024002-eng.htm"
+  },
+  {
+   "titre": "Le plus faible taux de pauvreté des provinces",
+   "texte": "7,4 % selon la mesure officielle en 2023, contre 10,2 % au Canada.",
+   "source_nom": "Statistique Canada, 2025",
+   "source_url": "https://www150.statcan.gc.ca/n1/daily-quotidien/250501/dq250501b-fra.htm"
+  },
+  {
+   "titre": "La plus grande confiance envers les institutions",
+   "texte": "36 % des Québécois avaient une grande confiance dans les institutions en 2023, le taux le plus élevé au Canada (Ontario : 25 %).",
+   "source_nom": "Statistique Canada, 2024",
+   "source_url": "https://www150.statcan.gc.ca/n1/daily-quotidien/240213/dq240213a-eng.htm"
+  },
+  {
+   "titre": "Premier au Canada en mathématiques",
+   "texte": "514 points au PISA 2022, contre 497 pour le Canada.",
+   "source_nom": "CMEC, PISA 2022",
+   "source_url": "https://cmec.ca/Publications/Lists/Publications/Attachments/438/PISA-2022_Canadian_Report_FR.pdf"
+  },
+  {
+   "titre": "Une électricité propre et bon marché",
+   "texte": "8,29 ¢/kWh à Montréal en 2025, le prix résidentiel le plus bas des grandes villes nord-américaines comparées (Toronto : 15,57 ¢).",
+   "source_nom": "Hydro-Québec, comparaison des prix 2025",
+   "source_url": "https://www.hydroquebec.com/data/documents-donnees/pdf/comparaison-prix-2025-en.pdf"
+  }
+ ],
+ "faiblesses": [
+  {
+   "titre": "Un niveau de vie sous celui des pays riches",
+   "texte": "18,6 % sous la moyenne de 19 pays comparables de l'OCDE en 2023, soit environ 12 000 $ de moins par habitant.",
+   "source_nom": "CPP, HEC Montréal, Bilan 2025",
+   "source_url": "https://cpp.hec.ca/wp-content/uploads/2025/05/PP-2024-01.pdf"
+  },
+  {
+   "titre": "Des entreprises qui investissent peu",
+   "texte": "En machines, équipements et propriété intellectuelle, les entreprises québécoises investissent environ la moitié de la moyenne de l'OCDE par emploi (2021).",
+   "source_nom": "CPP, HEC Montréal",
+   "source_url": "https://cpp.hec.ca/wp-content/uploads/2025/05/PP-2024-01.pdf"
+  },
+  {
+   "titre": "Plus de dépenses en santé, moins de services",
+   "texte": "De 2015 à 2023, les dépenses en santé ont augmenté plus vite que les revenus de l'État, alors que la quantité de services par habitant a diminué.",
+   "source_nom": "Commissaire à la santé et au bien-être, 2026",
+   "source_url": "https://www.csbe.gouv.qc.ca/salle-de-presse/communique/rapport-de-performance-reequilibrer-les-prioritespour-creer-plus-de-valeur-pour-la-population.html"
+  },
+  {
+   "titre": "Une population qui vieillit et ne se renouvelle plus",
+   "texte": "Plus de décès que de naissances pour la 2e année (2025) et 1,36 enfant par femme. Les 65 ans et plus sont maintenant plus nombreux que les moins de 20 ans.",
+   "source_nom": "Institut de la statistique du Québec, 2026",
+   "source_url": "https://statistique.quebec.ca/en/communique/births-deaths-migration-quebec-population-change-2025"
+  },
+  {
+   "titre": "Un écart de diplomation entre garçons et filles",
+   "texte": "78,2 % des garçons obtiennent un diplôme ou une qualification 7 ans après l'entrée au secondaire, contre 86,9 % des filles.",
+   "source_nom": "Institut de la statistique du Québec",
+   "source_url": "https://statistique.quebec.ca/vitrine/15-29-ans/theme/education/taux-diplomation-qualification-7-ans-apres-entree-secondaire"
+  }
+ ],
+ "leviers": [
+  {
+   "slug": "productivite",
+   "titre": "Hausser la productivité et l'investissement des entreprises",
+   "secteur": "economie",
+   "preuve": "debattue",
+   "delai": "long",
+   "resume": "Le niveau de vie dépend de ce que produit chaque heure de travail. C'est le principal frein à la richesse du Québec, selon la plupart des économistes.",
+   "effet": "Chaque heure travaillée au Québec produit 18,80 $ de moins que la moyenne de 19 pays de l'OCDE. La cause principale : les entreprises investissent peu en machines, en technologies et en propriété intellectuelle.",
+   "exemples": "La Suède et la Belgique investissent au moins 2,4 fois plus par emploi.",
+   "compromis": "Les règles qui stimulent la concurrence coûtent peu à l'État. Les subventions et crédits d'impôt coûtent cher et comportent des risques : selon le Vérificateur général, quatre entreprises de la filière batterie qui avaient reçu 676 M$ se sont placées à l'abri de leurs créanciers.",
+   "debat": "Le Centre sur la productivité et la prospérité (HEC) juge le retard grave et accuse des décennies d'aide de l'État à des entreprises peu productives. L'IRIS, de gauche, estime que le retard face à l'Ontario disparaît quand on tient compte des prix et de la structure de l'économie. En 2024, la productivité a crû de 2,0 % au Québec et reculé de 0,2 % en Ontario.",
+   "sources": [
+    {
+     "nom": "CPP, Bilan 2025",
+     "url": "https://cpp.hec.ca/wp-content/uploads/2025/05/PP-2024-01.pdf"
+    },
+    {
+     "nom": "IRIS, 2024",
+     "url": "https://iris-recherche.qc.ca/publications/comparaison-productivite-quebec-ontario/"
+    },
+    {
+     "nom": "Statistique Canada, 2025",
+     "url": "https://www150.statcan.gc.ca/n1/daily-quotidien/250520/dq250520b-fra.htm"
+    }
+   ],
+   "titre_court": "Productivité"
+  },
+  {
+   "slug": "petite-enfance",
+   "titre": "La petite enfance : des places en garde de qualité",
+   "secteur": "famille",
+   "preuve": "forte",
+   "delai": "court",
+   "resume": "Les services de garde à tarif réduit ont transformé le marché du travail québécois. C'est l'un des leviers les mieux documentés.",
+   "effet": "Selon Fortin, Godbout et St-Cerny, le programme amenait environ 69 700 mères de plus au travail en 2008, haussait le PIB d'environ 1,7 % et rapportait aux gouvernements plus qu'il ne coûtait (effet net de +919 M$). Les effets sur les enfants eux-mêmes sont contestés : une étude de Baker, Gruber et Milligan trouve des effets négatifs sur certains comportements.",
+   "compromis": "Le coût brut est élevé, mais en partie remboursé par les impôts des parents qui travaillent. La qualité est inégale : en 2014, environ 40 % des enfants en garderie privée non subventionnée étaient dans un milieu de qualité faible, contre 4 % en CPE. Plus de 30 000 enfants attendent encore une place.",
+   "debat": "L'effet sur l'emploi fait consensus. L'effet sur le développement des enfants dépend probablement de la qualité des services, mais cette explication reste une hypothèse.",
+   "quebec": "Effet sur l'emploi des mères observable environ cinq ans après la création du réseau.",
+   "sources": [
+    {
+     "nom": "Fortin, Godbout et St-Cerny",
+     "url": "https://journals.openedition.org/interventionseconomiques/1858?lang=en"
+    },
+    {
+     "nom": "Baker, Gruber et Milligan (2019)",
+     "url": "https://www.aeaweb.org/articles?id=10.1257%2Fpol.20170603"
+    },
+    {
+     "nom": "ISQ, Grandir en qualité",
+     "url": "http://www.stat.gouv.qc.ca/statistiques/education/milieu-garde/qualite-services-educatifs-2014.html"
+    }
+   ],
+   "titre_court": "Petite enfance"
+  },
+  {
+   "slug": "education",
+   "titre": "La qualité de l'éducation",
+   "secteur": "education",
+   "preuve": "moyenne",
+   "delai": "long",
+   "resume": "Ce qui compte pour la richesse d'un pays, c'est ce que les élèves apprennent vraiment, plus que le nombre d'années passées à l'école.",
+   "effet": "Selon Hanushek et Woessmann, une hausse de 25 points aux tests internationaux PISA serait associée à environ 25 % de revenu de plus par habitant sur 50 ans. Ce sont toutefois surtout des comparaisons entre pays.",
+   "compromis": "Coût élevé, résultats lents et difficiles à attribuer à une mesure précise. L'effet sur l'économie prend des décennies.",
+   "quebec": "Le Québec est premier au Canada en mathématiques (PISA 2022), mais seulement 78,2 % des garçons obtiennent un diplôme ou une qualification 7 ans après l'entrée au secondaire, contre 86,9 % des filles.",
+   "sources": [
+    {
+     "nom": "Hanushek et Woessmann (2021)",
+     "url": "https://hanushek.stanford.edu/sites/default/files/publications/Hanushek+Woessmann%202021%20OxfResEncEcoFin.pdf"
+    },
+    {
+     "nom": "CMEC, PISA 2022",
+     "url": "https://cmec.ca/Publications/Lists/Publications/Attachments/438/PISA-2022_Canadian_Report_FR.pdf"
+    }
+   ],
+   "titre_court": "Qualité de l'éducation"
+  },
+  {
+   "slug": "sante",
+   "titre": "La santé : première ligne et santé mentale",
+   "secteur": "sante",
+   "preuve": "forte",
+   "delai": "moyen",
+   "resume": "L'espérance de vie en bonne santé est l'un des trois principaux facteurs du bonheur. Les systèmes qui misent sur une première ligne forte (médecin ou infirmière de famille, cliniques) obtiennent de meilleurs résultats à moindre coût.",
+   "effet": "Les travaux de Barbara Starfield montrent qu'une première ligne forte améliore les résultats de santé et l'équité, à moindre coût. En santé mentale, les économistes Layard et Clark soutiennent que la psychothérapie fondée sur les preuves se paie elle-même, grâce aux prestations d'invalidité évitées.",
+   "compromis": "La main-d'œuvre est rare et les coûts augmentent plus vite que les revenus de l'État. Chaque dollar de plus en santé en est un de moins pour les autres missions.",
+   "debat": "Le débat public-privé en santé n'est pas tranché par ces études.",
+   "quebec": "Le Commissaire à la santé et au bien-être (2026) note de bons soins spécialisés, mais des faiblesses d'accès et de continuité, et une baisse des services par habitant malgré la hausse des dépenses. Le Québec a un programme de psychothérapie par paliers (PQPTM), dont aucune évaluation publique des effets n'a été trouvée.",
+   "sources": [
+    {
+     "nom": "Starfield et coll.",
+     "url": "https://pubmed.ncbi.nlm.nih.gov/16202000/"
+    },
+    {
+     "nom": "Layard et Clark (2015)",
+     "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4658447/"
+    },
+    {
+     "nom": "CSBE, 2026",
+     "url": "https://www.csbe.gouv.qc.ca/salle-de-presse/communique/rapport-de-performance-reequilibrer-les-prioritespour-creer-plus-de-valeur-pour-la-population.html"
+    }
+   ],
+   "titre_court": "Première ligne et santé mentale"
+  },
+  {
+   "slug": "logement",
+   "titre": "Construire plus de logements",
+   "secteur": "logement",
+   "preuve": "moyenne",
+   "delai": "moyen",
+   "resume": "Le coût du logement est l'une des principales sources d'insécurité financière. La question : comment construire plus, plus vite?",
+   "effet": "Le cas le plus étudié est Auckland, en Nouvelle-Zélande, qui a ouvert en 2016 environ les trois quarts de son territoire résidentiel à la densification. Selon Greenaway-McGrevy, les loyers seraient 23 % plus bas huit ans plus tard qu'en l'absence de réforme.",
+   "compromis": "Changer le zonage coûte peu à l'État, mais se heurte à l'opposition locale et à la pression sur les infrastructures. Le logement social coûte cher. La main-d'œuvre en construction est limitée.",
+   "debat": "L'économiste Cameron Murray conteste l'effet de la réforme d'Auckland. La gauche insiste sur le logement social et hors marché, que ces études n'évaluent pas.",
+   "quebec": "La SCHL estime que Montréal a le plus grand écart d'offre de logements des grandes villes canadiennes. En 2025, le Québec a connu un record de mises en chantier de logements locatifs.",
+   "sources": [
+    {
+     "nom": "Greenaway-McGrevy, Economic Inquiry",
+     "url": "https://onlinelibrary.wiley.com/doi/full/10.1111/ecin.70075"
+    },
+    {
+     "nom": "C. Murray, « The Auckland myth »",
+     "url": "https://www.fresheconomicthinking.com/p/the-auckland-myth-there-is-no-evidence"
+    },
+    {
+     "nom": "SCHL, 2025",
+     "url": "https://www.cmhc-schl.gc.ca/media-newsroom/news-releases/2025/cmhc-releases-latest-housing-supply-gaps-report"
+    }
+   ],
+   "titre_court": "Offre de logement"
+  },
+  {
+   "slug": "transparence",
+   "titre": "La confiance et la lutte contre la corruption",
+   "secteur": "justice",
+   "preuve": "moyenne",
+   "delai": "court",
+   "resume": "L'absence de corruption est l'un des six facteurs du bonheur. C'est aussi un levier économique : l'argent détourné ou gaspillé en contrats n'est plus disponible pour les services.",
+   "effet": "Knack et Keefer associent 10 points de confiance de plus à environ 0,8 point de croissance par année (29 pays). Au Québec, selon la juge Charbonneau elle-même, les coûts de construction des contrats publics ont baissé d'environ 30 % après sa commission, qui a coûté 44 M$. La Presse avait rapporté des baisses de prix de 20 à 33 % à Montréal dès 2012.",
+   "compromis": "Coût faible comparé aux sommes en jeu. Mais plus de contrôles alourdissent les processus et peuvent décourager des soumissionnaires.",
+   "debat": "Le chiffre de 30 % est une estimation de la présidente de la commission, et non une étude indépendante. La baisse des prix peut aussi avoir d'autres causes.",
+   "quebec": "La confiance envers les institutions était la plus élevée au Canada en 2023, mais des sondages de 2025 indiquent une érosion. C'est la raison d'être de Traçabilité Québec : rendre les contrats publics lisibles par tous.",
+   "sources": [
+    {
+     "nom": "Knack et Keefer (1997)",
+     "url": "https://academic.oup.com/qje/article-abstract/112/4/1251/1911732"
+    },
+    {
+     "nom": "Juge Charbonneau, Droit-inc (2021)",
+     "url": "https://www.droit-inc.com/conseils-carriere/nouvelles/la-juge-france-charbonneau-raconte-sa-commission"
+    },
+    {
+     "nom": "Statistique Canada, 2024",
+     "url": "https://www150.statcan.gc.ca/n1/daily-quotidien/240213/dq240213a-eng.htm"
+    }
+   ],
+   "titre_court": "Transparence et anticorruption"
+  },
+  {
+   "slug": "fiscalite",
+   "titre": "La fiscalité et l'efficacité de l'État",
+   "secteur": "finances",
+   "preuve": "debattue",
+   "delai": "moyen",
+   "resume": "Le Québec est la province qui prélève le plus d'impôts et de taxes (38,6 % du PIB en 2024), et aussi l'une des sociétés les moins inégalitaires.",
+   "effet": "Selon une étude de l'OCDE (Arnold et coll., 2011), les impôts les plus nuisibles à la croissance sont, dans l'ordre, l'impôt des sociétés, l'impôt des particuliers, puis les taxes à la consommation ; l'impôt foncier l'est le moins. Une méta-analyse de 2021 conclut toutefois que ces résultats sont moins robustes qu'on le croit.",
+   "compromis": "Une baisse d'impôt coûte des revenus à l'État, sauf si elle est compensée par une autre taxe.",
+   "debat": "À droite : une fiscalité lourde sur le travail et le capital freine l'investissement. À gauche : elle finance les services qui expliquent les faibles inégalités québécoises. Les deux s'appuient sur des faits exacts. Ils divergent sur les priorités.",
+   "sources": [
+    {
+     "nom": "CFFP, Bilan de la fiscalité 2026",
+     "url": "https://cffp.recherche.usherbrooke.ca/wp-content/uploads/2026/01/Bilan-de-la-fiscalite-au-Quebec_Edition-2026.pdf"
+    },
+    {
+     "nom": "Arnold et coll. (2011)",
+     "url": "https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1468-0297.2010.02415.x"
+    }
+   ],
+   "titre_court": "Fiscalité"
+  },
+  {
+   "slug": "liens-sociaux",
+   "titre": "Les liens sociaux et la communauté",
+   "secteur": "culture",
+   "preuve": "forte",
+   "delai": "moyen",
+   "resume": "Avoir quelqu'un sur qui compter est l'un des trois principaux facteurs du bonheur. C'est aussi un facteur de santé majeur.",
+   "effet": "Une méta-analyse de 148 études montre que des liens sociaux forts augmentent de 50 % la probabilité de survie. L'effet est comparable à celui du tabac.",
+   "compromis": "Coût faible. Mais la preuve que l'État sait « produire » des liens sociaux (lieux communautaires, soutien aux organismes) est beaucoup plus faible que la preuve de leur effet.",
+   "quebec": "Le Québec a le plus faible taux de bénévolat encadré au Canada (33 % en 2018), mais un bénévolat informel élevé (71 %).",
+   "sources": [
+    {
+     "nom": "Holt-Lunstad et coll. (2010)",
+     "url": "https://journals.plos.org/plosmedicine/article?id=10.1371%2Fjournal.pmed.1000316"
+    },
+    {
+     "nom": "Statistique Canada, bénévolat",
+     "url": "https://www150.statcan.gc.ca/n1/pub/75-006-x/2021001/article/00002-fra.htm"
+    }
+   ],
+   "titre_court": "Liens sociaux"
+  },
+  {
+   "slug": "energie",
+   "titre": "L'énergie propre et abordable",
+   "secteur": "energie",
+   "preuve": "moyenne",
+   "delai": "long",
+   "resume": "L'hydroélectricité donne au Québec une électricité parmi les moins chères et les plus propres du continent.",
+   "effet": "L'avantage de prix est un fait mesuré. Son effet sur la richesse est moins clair : le Québec reste en retard de productivité malgré une énergie bon marché.",
+   "compromis": "Prolonger cet avantage coûtera cher : le Plan d'action 2035 d'Hydro-Québec prévoit de 155 à 185 G$ d'investissements. Des tarifs bas aident les ménages, mais incitent peu à économiser l'énergie, et reportent une partie des coûts sur les entreprises ou sur la dette d'Hydro-Québec.",
+   "debat": "Faut-il vendre l'électricité à bas prix aux industries, pour les emplois, ou l'exporter à meilleur prix?",
+   "sources": [
+    {
+     "nom": "Hydro-Québec, Plan d'action 2035",
+     "url": "https://www.hydroquebec.com/data/a-propos/pdf/plan-action-2035.pdf"
+    },
+    {
+     "nom": "Hydro-Québec, comparaison des prix 2025",
+     "url": "https://www.hydroquebec.com/data/documents-donnees/pdf/comparaison-prix-2025-en.pdf"
+    }
+   ],
+   "titre_court": "Énergie propre"
+  },
+  {
+   "slug": "immigration",
+   "titre": "Une immigration bien intégrée",
+   "secteur": "immigration",
+   "preuve": "debattue",
+   "delai": "moyen",
+   "resume": "L'immigration ne rend pas une société plus riche par habitant du seul fait du nombre. C'est l'intégration au marché du travail qui fait la différence.",
+   "effet": "Le taux d'emploi des immigrants de 25 à 54 ans est passé de 69,9 % en 2012 à 81,9 % en 2022, au niveau de l'Ontario. Mais les immigrants restent souvent surqualifiés pour leur emploi.",
+   "compromis": "Une croissance rapide de la population met de la pression sur le logement et les services. Les travailleurs temporaires sont plus vulnérables.",
+   "debat": "L'économiste Pierre Fortin affirme qu'aucune preuve ne montre que plus d'immigration règle la pénurie de main-d'œuvre, puisque les immigrants font aussi augmenter la demande. La Banque du Canada voit dans la mauvaise intégration des immigrants qualifiés une cause du retard de productivité.",
+   "sources": [
+    {
+     "nom": "Institut du Québec, 2022",
+     "url": "https://institutduquebec.ca/publications/portrait-de-limmigration-au-quebec-lintegration-economique-a-la-hausse-mais-les-besoins-aussi"
+    },
+    {
+     "nom": "P. Fortin, mémoire au MIFI (2025)",
+     "url": "https://chairemacro.esg.uqam.ca/wp-content/uploads/sites/146/PFortin_Memoire-MIFI.pdf"
+    },
+    {
+     "nom": "Banque du Canada, 2024",
+     "url": "https://www.bankofcanada.ca/2024/03/time-to-break-the-glass-fixing-canadas-productivity-problem/"
+    }
+   ],
+   "titre_court": "Intégration des immigrants"
+  }
+ ],
+ "rapides": [
+  "Des transferts ciblés aux familles : la pauvreté des enfants a baissé rapidement après la création de l'Allocation canadienne pour enfants.",
+  "L'ouverture de places en garde éducative de qualité : effet sur l'emploi des parents en quelques années.",
+  "La transparence et la surveillance des contrats publics : baisse de prix observée dès l'année suivante à Montréal.",
+  "L'accès à la psychothérapie : effets cliniques rapides, retombées sur l'emploi en quelques années.",
+  "Des permis plus rapides et un zonage plus souple : les mises en chantier réagissent en 1 à 3 ans.",
+  "La formation des chômeurs : effets positifs après 2 ou 3 ans."
+ ],
+ "fond": [
+  "La productivité et l'investissement : le retard s'est accumulé sur 40 ans.",
+  "La qualité de l'éducation et la diplomation des garçons.",
+  "La démographie et le vieillissement : une génération.",
+  "La capacité énergétique : horizon 2035 à 2050.",
+  "La confiance envers les institutions : elle se perd vite et se reconstruit lentement.",
+  "La prévention en santé : effets sur la mortalité en 10 à 20 ans."
+ ],
+ "piege_court_terme": "Les mesures rapides sont souvent des transferts, qui déplacent du revenu, ou des règles, qui coûtent peu. Celles qui augmentent durablement la richesse sont presque toutes lentes. Un gouvernement élu pour quatre ans a donc intérêt à privilégier les premières. Ce n'est pas une critique d'un parti : c'est une contrainte bien connue du cycle électoral, que l'électeur peut garder en tête.",
+ "paradoxe": "Le Québec est plus heureux que riche. Deux lectures s'affrontent, toutes deux compatibles avec les faits. La première (le Centre sur la productivité et la prospérité, la droite économique) : ce bien-être repose sur une assiette fiscale plus petite que celle des pays comparables, et sans gains de productivité, le vieillissement et la dette vont éroder les services. La seconde (l'IRIS, la gauche) : le PIB surestime le retard, et le modèle québécois transforme efficacement une richesse moyenne en bien-être élevé. Trancher entre les deux est un choix de valeurs, pas une question que la recherche peut régler.",
+ "transparence": "Tous ces leviers ont un point commun : ils passent par des décisions de dépense publique. Savoir où va l'argent, à quel prix et avec quel résultat, c'est la condition pour juger si un levier est bien utilisé. C'est aussi, en soi, l'un des leviers les moins coûteux. Pour aller plus loin, explorez les contrats publics dans « Ce qui ne fait pas de sens » et la grille du « Meilleur des mondes »."
+}

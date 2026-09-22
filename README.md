@@ -23,6 +23,29 @@ accusation; chaque écart mérite une explication avant une interprétation.
   - **Donnée aberrante** : ratio invraisemblable, classé comme erreur de saisie
     probable plutôt que présenté comme un scandale.
 
+## Sections du site
+
+- **Élection 2026** (`/election`) : dates de vote, enjeux mesurés, comparateur des
+  plateformes (masqué tant que le mode prudent est actif), « Décoder la campagne »
+  et trois jeux (« Devinez le chiffre », promesses à l'aveugle, simulateur de budget).
+- **Comprendre** : 13 secteurs de l'État avec 90 indicateurs sourcés et leurs
+  courbes (`/secteurs`), « L'économie expliquée » (budget, déficit, dette, lexique),
+  « Le Québec dans le Canada », « Lois et projets », capsule « Québec prospère ».
+- **Suivre l'argent** : les contrats du SEAO, les signaux, les dossiers.
+- **À propos** : charte éditoriale, méthode, journal des corrections.
+
+Le contenu éditorial vit dans `app/contenu/*.json`; `app/sections.py` ne fait que
+le mettre en page et le croiser avec les contrats du SEAO.
+
+### Mode prudent (Loi électorale)
+
+`app/contenu/reglages.json` → `mode_prudent: true` masque tout ce qui présente les
+partis. Motif : pendant la période électorale, toute visibilité donnée à un parti
+par un tiers — même neutre — est une dépense électorale, sauf exception
+(directive D-31 : tous les partis autorisés, aucun commentaire, méthode publiée).
+À valider auprès d'Élections Québec avant de désactiver. `publish_demo.sh` refuse
+aussi de publier le jour du scrutin (art. 429.1).
+
 ## Architecture
 
 ```

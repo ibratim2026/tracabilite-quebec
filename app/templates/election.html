@@ -1,0 +1,126 @@
+{% extends "base.html" %}
+{% block titre %}Élection 2026 — Traçabilité Québec{% endblock %}
+{% block contenu %}
+<div class="surtitre">Élection générale du {{ e.date_scrutin_texte }}</div>
+<h1>Élection 2026 : comprendre avant de choisir</h1>
+<p class="chapeau">{{ e.chapeau }}{% if e.chapeau_source %} <a class="source" href="{{ e.chapeau_source.url }}">(source)</a>{% endif %}</p>
+
+<div class="bandeau-election">
+  <div><div class="chiffre" id="jours">{{ e.jours_restants }}</div><div class="detail">jours avant le scrutin</div></div>
+  <p>Le vote a lieu le <strong>{{ e.date_scrutin_texte }}</strong>. Vous pouvez aussi voter
+  par anticipation ou au bureau du directeur du scrutin.
+  <a href="{{ e.lien_dgeq }}">Tout savoir sur Élections Québec →</a></p>
+</div>
+
+<div data-parcours></div>
+
+<a class="bandeau-election carte-lien" href="/election/jouer">
+  <div><div class="surtitre">Testez-vous</div>
+  {% if prudent %}<strong>Deux jeux pour y voir clair</strong> : devinez les vrais
+  chiffres du Québec, puis essayez de boucler le budget.{% else %}<strong>Trois jeux pour y voir clair</strong> : devinez les vrais chiffres du Québec,
+  choisissez des promesses sans savoir de quel parti elles viennent, puis essayez
+  de boucler le budget.{% endif %}</div>
+  <span class="actu-lien">Jouer →</span>
+</a>
+
+<div class="grille-cartes">
+  <a class="carte carte-lien" href="/election/comparateur/">
+    <div class="surtitre">Comparateur</div>
+    <h3>Ce que chaque parti propose, thème par thème</h3>
+    {% if prudent %}<p>Où trouver les plateformes officielles et les comparateurs
+    des médias.</p>{% else %}<p>La même grille pour tous les partis, les engagements cités tels quels,
+    avec leur coût annoncé et leur source.</p>{% endif %}
+  </a>
+  <a class="carte carte-lien" href="/secteurs">
+    <div class="surtitre">Secteurs et indicateurs</div>
+    <h3>Où en est le Québec, secteur par secteur</h3>
+    <p>Santé, éducation, logement, économie… Ce que fait chaque secteur, ce
+    qu'il coûte, et les indicateurs qui disent s'il va bien.</p>
+  </a>
+  <a class="carte carte-lien" href="/economie-expliquee">
+    <div class="surtitre">L'économie expliquée</div>
+    <h3>Budget, déficit, dette : le lexique du débat</h3>
+    <p>Où va l'argent du Québec, pourquoi deux chiffres de déficit, les trois
+    dettes et le sens des mots qu'on entend aux débats.</p>
+  </a>
+  <a class="carte carte-lien" href="/election/decoder">
+    <div class="surtitre">Décoder la campagne</div>
+    <h3>Les notions et les affirmations à démêler</h3>
+    <p>Déficit ou dette? Québec ou Ottawa? Les notions qu'on confond, et où
+    vérifier une affirmation.</p>
+  </a>
+  <a class="carte carte-lien" href="/lois-et-projets">
+    <div class="surtitre">Le bilan</div>
+    <h3>Les lois adoptées et les grands projets</h3>
+    <p>Ce qui a changé pendant la dernière législature, ce qui est mort au
+    feuilleton, et ce que coûtent vraiment les grands chantiers.</p>
+  </a>
+</div>
+
+{% if e.enjeux %}
+<h2>Ce qui préoccupe les électeurs</h2>
+<p class="explication">{{ e.enjeux.intro }}</p>
+<div class="graphique">
+  {% set maxp = e.enjeux.liste | map(attribute='pct') | max %}
+  {% for x in e.enjeux.liste %}
+  <div class="ligne-graphique">
+    <div class="etiquette-barre">{% if x.secteur %}<a href="/secteurs/{{ x.secteur }}">{{ x.enjeu }}</a>{% else %}{{ x.enjeu }}{% endif %}</div>
+    <div class="piste">
+      <div class="barre-h" style="width: {{ (100 * x.pct / maxp) | round(1) }}%"></div>
+      <span class="valeur-barre">{{ x.pct }} %</span>
+    </div>
+  </div>
+  {% endfor %}
+  <p class="source">Source : <a href="{{ e.enjeux.source_url }}">{{ e.enjeux.source_nom }}</a>. {{ e.enjeux.note }}</p>
+</div>
+{% endif %}
+
+<h2>Les dates à retenir</h2>
+<ul class="dates-cles">
+  {% for d in e.dates %}
+  <li><strong>{{ d.date }}</strong><span>{{ d.quoi }}</span></li>
+  {% endfor %}
+</ul>
+{% if e.pieces_identite %}<p class="explication">{{ e.pieces_identite }}</p>{% endif %}
+<p class="source">Source : <a href="{{ e.lien_dgeq }}">Élections Québec</a>. Vérifiez votre
+bureau de vote et votre inscription sur leur site.</p>
+
+{% if p and not prudent %}
+<h2>Les partis</h2>
+<p class="explication">{{ p.note_partis }}</p>
+<div class="grille-cartes">
+  {% for pa in p.partis %}
+  <div class="carte">
+    <h3>{{ pa.nom }}</h3>
+    <p>Chef ou cheffe : {{ pa.chef }}<br>
+    {% if pa.plateforme_url %}<a href="{{ pa.plateforme_url }}">{{ pa.plateforme_libelle or "Plateforme officielle" }}</a>{% else %}<span class="vide">Plateforme non publiée</span>{% endif %}
+    {% if pa.cadre and pa.cadre.url %} · <a href="{{ pa.cadre.url }}">Cadre financier</a>{% endif %}</p>
+    {% if pa.cadre and pa.cadre.texte %}<p>{{ pa.cadre.texte }}</p>{% endif %}
+  </div>
+  {% endfor %}
+</div>
+{% endif %}
+
+<h2>Comment lire une promesse électorale</h2>
+<p class="explication">La grille du <a href="/meilleur-des-mondes">meilleur des
+mondes</a> sert aussi à juger une promesse. Avant d'y croire, ou de la rejeter,
+posez-lui ces questions :</p>
+<ol class="questions">
+  {% for q in e.lire_une_promesse %}
+  <li><strong>{{ q.question }}</strong><span>{{ q.pourquoi }}</span></li>
+  {% endfor %}
+</ol>
+
+<div class="note-verif">Page mise à jour le {{ e.maj_texte }}. Traçabilité Québec ne
+soutient aucun parti. Les partis sont présentés en ordre alphabétique, avec la
+même grille. Une erreur ou un oubli? Écrivez-nous (voir <a href="/a-propos">À propos</a>) :
+les corrections sont publiées et datées.</div>
+<script>
+(function () {
+  var d = new Date("{{ e.date_scrutin }}T00:00:00-04:00");
+  var n = Math.max(0, Math.ceil((d - new Date()) / 864e5));
+  var el = document.getElementById("jours");
+  if (el) el.textContent = n;
+})();
+</script>
+{% endblock %}

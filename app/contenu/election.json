@@ -1,0 +1,177 @@
+{
+ "date_scrutin": "2026-10-05",
+ "date_scrutin_texte": "lundi 5 octobre 2026",
+ "maj_texte": "22 septembre 2026",
+ "lien_dgeq": "https://www.electionsquebec.qc.ca/voter/elections-en-cours-et-a-venir/",
+ "chapeau": "Une élection, c'est un choix entre des façons de gérer un budget d'environ 170 milliards de dollars par année. Cette section vous aide à juger par vous-même : où en est chaque secteur, ce qui a changé depuis 2022, ce que coûtent les grands projets et comment démêler le vrai du slogan.",
+ "dates": [
+  {
+   "date": "27 août",
+   "quoi": "Déclenchement des élections : 39 jours de campagne."
+  },
+  {
+   "date": "Jusqu'au 1er octobre, 14 h",
+   "quoi": "Inscription ou modification à la liste électorale."
+  },
+  {
+   "date": "25-26 septembre et 29 septembre au 1er octobre",
+   "quoi": "Vote au bureau du directeur du scrutin de votre circonscription."
+  },
+  {
+   "date": "Dimanche 27 et lundi 28 septembre",
+   "quoi": "Vote par anticipation, de 9 h 30 à 20 h."
+  },
+  {
+   "date": "Lundi 5 octobre",
+   "quoi": "Jour du scrutin, de 9 h 30 à 20 h. 127 circonscriptions, deux de plus qu'en 2022."
+  }
+ ],
+ "enjeux": {
+  "intro": "Si le prochain gouvernement ne devait régler qu'un seul enjeu, lequel? Voici la réponse de 5 572 Québécois, sondés par Segma Recherche pour Radio-Canada du 8 au 17 septembre 2026. Le coût de la vie domine chez les 18-34 ans (48 %), la santé chez les 65 ans et plus (37 %).",
+  "liste": [
+   {
+    "enjeu": "Coût de la vie",
+    "pct": 38,
+    "secteur": "economie"
+   },
+   {
+    "enjeu": "Accès aux soins de santé",
+    "pct": 25,
+    "secteur": "sante"
+   },
+   {
+    "enjeu": "Logement abordable",
+    "pct": 10,
+    "secteur": "logement"
+   },
+   {
+    "enjeu": "Guerre tarifaire",
+    "pct": 9,
+    "secteur": "economie"
+   },
+   {
+    "enjeu": "Éducation",
+    "pct": 7,
+    "secteur": "education"
+   },
+   {
+    "enjeu": "Itinérance",
+    "pct": 3,
+    "secteur": "famille"
+   }
+  ],
+  "source_nom": "Segma Recherche pour Radio-Canada, septembre 2026",
+  "source_url": "https://qc125.com/proj/2026-09-13-segma.pdf",
+  "note": "Une seule réponse par personne."
+ },
+ "lire_une_promesse": [
+  {
+   "question": "Qui paie, et combien, au total?",
+   "pourquoi": "Un coût annuel de 500 M$ représente 2 G$ sur un mandat. Une promesse sérieuse donne son coût complet et dit d'où vient l'argent : nouveaux revenus, compressions ailleurs ou nouvelle dette."
+  },
+  {
+   "question": "Est-ce que Québec a vraiment le levier?",
+   "pourquoi": "Certaines promesses touchent des compétences fédérales ou municipales. Voyez « Qui décide quoi? » dans la page Décoder la campagne."
+  },
+  {
+   "question": "Quel indicateur va bouger, et de combien?",
+   "pourquoi": "« Améliorer l'accès aux soins » ne se vérifie pas. « Inscrire 500 000 personnes de plus à un médecin de famille d'ici 2028 », oui. Les pages Secteurs donnent les indicateurs de départ."
+  },
+  {
+   "question": "En combien de temps?",
+   "pourquoi": "Former un médecin prend plus de dix ans et bâtir un hôpital, six à dix ans. Une promesse qui annonce des résultats rapides sur un chantier long mérite des questions."
+  },
+  {
+   "question": "Est-ce que ça a déjà été essayé?",
+   "pourquoi": "Ici ou ailleurs, beaucoup de mesures ont déjà été testées. Leur bilan réel est le meilleur prédicteur."
+  },
+  {
+   "question": "Qu'est-ce qu'on ne fera pas à la place?",
+   "pourquoi": "Chaque dollar dépensé ici ne l'est pas ailleurs. Une promesse honnête nomme ses compromis."
+  }
+ ],
+ "decoder_chapeau": "Les campagnes électorales mélangent souvent les notions, les paliers de gouvernement et les ordres de grandeur. Voici de quoi s'y retrouver, sans prendre parti.",
+ "qui_fait_quoi": [
+  {
+   "palier": "Québec (l'Assemblée nationale)",
+   "responsable_de": "Santé et services sociaux, éducation (des CPE à l'université), justice civile et administration des tribunaux, routes et transport collectif (avec les villes), énergie et Hydro-Québec, ressources naturelles, environnement, langue et culture, sélection des immigrants économiques, aide sociale, droit du travail, impôt québécois."
+  },
+  {
+   "palier": "Ottawa (le Parlement fédéral)",
+   "responsable_de": "Défense, affaires étrangères, commerce international et tarifs douaniers, monnaie et taux d'intérêt (Banque du Canada), assurance-emploi, pensions de vieillesse, droit criminel, citoyenneté, niveaux d'immigration temporaire (étudiants, travailleurs), Premières Nations (en grande partie), transferts en santé aux provinces."
+  },
+  {
+   "palier": "Les municipalités",
+   "responsable_de": "Zonage et permis de construire (un levier clé pour le logement), eau potable et égouts, routes locales, déneigement, police municipale, transport en commun local (avec Québec), taxe foncière, loisirs et bibliothèques."
+  }
+ ],
+ "notions": [
+  {
+   "titre": "Le déficit et la dette, ce n'est pas la même chose",
+   "texte": "Le <strong>déficit</strong>, c'est quand l'État dépense plus qu'il ne perçoit pendant <em>une</em> année. La <strong>dette</strong>, c'est l'accumulation de tous les emprunts passés, y compris ceux faits pour bâtir des routes, des écoles et des hôpitaux. On peut réduire le déficit alors que la dette continue d'augmenter, et c'est même fréquent."
+  },
+  {
+   "titre": "Le déficit : 5,5 ou 7,8 milliards? Les deux sont vrais",
+   "texte": "Pour 2025-2026, le déficit <strong>comptable</strong> est de 5,5 G$. Mais au sens de la <strong>Loi sur l'équilibre budgétaire</strong>, qui compte aussi l'argent versé au Fonds des générations pour rembourser la dette, il est de 7,8 G$. Les deux chiffres circulent dans la campagne. Pour 2026-2027, le ministère des Finances prévoit 5,2 G$ au sens comptable et 7,7 G$ au sens de la loi.",
+   "source_nom": "Rapport préélectoral, août 2026",
+   "source_url": "https://cdn-contenu.quebec.ca/cdn-contenu/adm/min/finances/publications-adm/Rapport_preelectoral/FR/MINFR_RP_2026.pdf"
+  },
+  {
+   "titre": "Une promesse, un cadre financier et un budget, ce n'est pas pareil",
+   "texte": "Le <strong>cadre financier</strong> d'un parti additionne le coût de ses promesses et dit comment il les paierait. Il n'est pas vérifié par un organisme indépendant. Le <strong>rapport préélectoral</strong> du ministère des Finances, lui, est examiné par la Vérificatrice générale. En 2026, elle a jugé ses prévisions « plausibles », tout en qualifiant de « défi » le ralentissement des dépenses qu'il suppose. Le <strong>budget</strong>, enfin, n'est adopté qu'après l'élection.",
+   "source_nom": "Vérificatrice générale, communiqué C2026-3",
+   "source_url": "https://www.vgq.qc.ca/fr/communique/C2026-3"
+  },
+  {
+   "titre": "« Les plus taxés d'Amérique du Nord » : ça dépend de la méthode",
+   "texte": "Si l'on compare les impôts et taxes au PIB, le Québec est premier (38,6 %). Si l'on regarde seulement l'impôt sur le revenu des particuliers, il est deuxième. Et si l'on tient compte des crédits remboursables et des allocations versées aux familles, il passe derrière quatre provinces de l'Atlantique. Même question, trois réponses honnêtes.",
+   "source_nom": "La Vérif, Radio-Canada, 7 septembre 2026",
+   "source_url": "https://ici.radio-canada.ca/nouvelle/2281411/la-verif-quebec-taxes-impots-duhaime-elections"
+  },
+  {
+   "titre": "Un milliard, c'est combien pour le Québec?",
+   "texte": "Le Québec compte environ 9 millions d'habitants. Un milliard de dollars équivaut donc à un peu plus de 110 $ par personne. Une promesse de 5 G$ représente environ 550 $ par Québécois. C'est un repère utile pour juger de l'ampleur d'une mesure."
+  },
+  {
+   "titre": "Une baisse d'impôt coûte aussi de l'argent",
+   "texte": "Une baisse d'impôt se paie comme une dépense : c'est un revenu en moins pour l'État. Pour comparer des plateformes, il faut additionner les deux : nouvelles dépenses et revenus perdus."
+  },
+  {
+   "titre": "Le montant par année ou le montant total?",
+   "texte": "Les annonces mélangent souvent un montant annuel et un montant sur 5 ou 10 ans. « 3 G$ pour le logement » peut vouloir dire 3 G$ par an ou 300 M$ par an pendant 10 ans. Vérifiez toujours la période."
+  },
+  {
+   "titre": "Le PIB total ou le PIB par habitant?",
+   "texte": "Le PIB total peut augmenter simplement parce que la population augmente. Pour savoir si les gens s'enrichissent, on regarde le PIB <em>par habitant</em>, ou mieux, le revenu disponible par habitant : ce qui reste après les impôts et les transferts."
+  },
+  {
+   "titre": "Un sondage n'est pas une prédiction",
+   "texte": "Un sondage mesure les intentions de vote à un moment donné. Pour les sondages Web, la marge d'erreur n'est donnée qu'« à des fins de comparaison », car l'échantillon n'est pas aléatoire. À deux semaines du vote, environ 40 % des électeurs décidés disaient encore pouvoir changer d'avis. Enfin, avec 127 circonscriptions, la répartition régionale des votes compte autant que le total : un parti peut obtenir beaucoup de votes et peu de sièges.",
+   "source_nom": "Léger, rapport du 21 septembre 2026",
+   "source_url": "https://documents.leger360.com/hubfs/%C3%89tudes%20M%C3%A9diatiques/%C3%89tudes%20M%C3%A9diatiques%20-%202026/9.%20%C3%89tudes%20m%C3%A9diatiques%20septembre%202026/QC%20Pol%2021%20September/Rapport%20intentions%20de%20vote%20-%2021%20septembre%202026.pdf"
+  }
+ ],
+ "mythes": [],
+ "chapeau_source": {
+  "nom": "Rapport préélectoral, ministère des Finances, août 2026",
+  "url": "https://cdn-contenu.quebec.ca/cdn-contenu/adm/min/finances/publications-adm/Rapport_preelectoral/FR/MINFR_RP_2026.pdf"
+ },
+ "pieces_identite": "Apportez l'une de ces pièces : carte d'assurance maladie, permis de conduire, passeport canadien, certificat de statut d'Indien ou carte d'identité des Forces canadiennes.",
+ "verificateurs": [
+  {
+   "nom": "La Vérif (Radio-Canada)",
+   "url": "https://ici.radio-canada.ca/info/dossier/562966/la-verif",
+   "quoi": "vérifie les cadres financiers des cinq partis et les affirmations des chefs."
+  },
+  {
+   "nom": "VérifRadar",
+   "url": "https://verif.quebec/",
+   "quoi": "vérifie les rumeurs et les contenus viraux sur les réseaux sociaux."
+  },
+  {
+   "nom": "Les Décrypteurs (Radio-Canada)",
+   "url": "https://ici.radio-canada.ca/decrypteurs",
+   "quoi": "désinformation en ligne et contenus trompeurs."
+  }
+ ]
+}

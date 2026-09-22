@@ -14,6 +14,14 @@
 
 set -e
 cd "$(dirname "$0")"
+
+# Jour du scrutin : la Loi électorale (art. 429.1) interdit la publicité
+# ayant trait à l'élection. On ne publie rien ce jour-là.
+JOURS_SANS_PUBLICATION="2026-10-05"
+if [[ " $JOURS_SANS_PUBLICATION " == *" $(date +%F) "* ]]; then
+  echo "Jour du scrutin ($(date +%F)) : publication annulée." >> data/demo.log
+  exit 0
+fi
 exec >> data/demo.log 2>&1
 
 echo ""

@@ -149,7 +149,31 @@ def injecter_derniere_maj():
     from datetime import datetime
     t = datetime.fromtimestamp(BASE.stat().st_mtime)
     return {"derniere_maj":
-            f"{t.day} {MOIS_FR[t.month - 1]} {t.year}, {t.hour} h {t.minute:02d}"}
+            f"{t.day} {MOIS_FR[t.month - 1]} {t.year}, {t.hour} h {t.minute:02d}",
+            "periode_fin": periode_fin(),
+            "v_statique": version_statique()}
+
+
+def version_statique():
+    """Suffixe anti-cache des fichiers CSS/JS : change dès qu'un fichier change."""
+    dossier = Path(__file__).resolve().parent / "static"
+    return int(max(f.stat().st_mtime for f in dossier.iterdir() if f.is_file()))
+
+
+def periode_fin():
+    """Mois le plus récent couvert par les fichiers ingérés (ex. « août 2026 »)."""
+    import re
+    c = sqlite3.connect(BASE)
+    try:
+        noms = [r[0] for r in c.execute("SELECT nom FROM fichier_ingere")]
+    finally:
+        c.close()
+    mois = sorted(m.group(1) for n in noms
+                  if (m := re.search(r"(\d{4}-\d{2})", n)))
+    if not mois:
+        return ""
+    a, m = mois[-1].split("-")
+    return f"{MOIS_FR[int(m) - 1]} {a}"
 
 
 _cache_stats = {}
@@ -590,6 +614,12 @@ def fiche_saaqclic():
 def methodologie():
     return render_template("methodologie.html", s=stats_globales(),
                            types=TYPES_SIGNAUX)
+
+
+from sections import bp as sections_bp  # noqa: E402
+
+app.extensions["tq_db"] = db
+app.register_blueprint(sections_bp)
 
 
 if __name__ == "__main__":

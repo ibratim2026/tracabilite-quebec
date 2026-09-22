@@ -1,0 +1,143 @@
+{% extends "base.html" %}
+{% block titre %}L'économie expliquée : budget, déficit, dette — Traçabilité Québec{% endblock %}
+{% block contenu %}
+<div class="surtitre">Comprendre</div>
+<h1>L'économie expliquée : budget, déficit, dette</h1>
+<p class="chapeau">Aux débats, on parle de milliards, de déficit, de dette, de
+«&nbsp;cadre financier&nbsp;» et d'«&nbsp;effet dynamique&nbsp;». Voici comment fonctionne l'argent de
+l'État québécois, avec les vrais chiffres de {{ e.annee }}, et le sens des mots
+qu'on entend en campagne.</p>
+
+<div class="themes">
+  <a class="onglet" href="#budget">Le budget en un coup d'œil</a>
+  <a class="onglet" href="#deficit">Les deux déficits</a>
+  <a class="onglet" href="#dette">Les trois dettes</a>
+  <a class="onglet" href="#leviers">Qui tient quels leviers</a>
+  <a class="onglet" href="#lexique">Lexique du débat</a>
+</div>
+
+{# ------------------------------------------------ 1. Budget #}
+{% set rev = e.revenus | sum(attribute='montant') %}
+{% set dep = e.depenses | sum(attribute='montant') %}
+{% set echelle = [rev, dep] | max %}
+<h2 id="budget">1. D'où vient l'argent, où il va</h2>
+<p class="explication">Chaque bloc est proportionnel à son montant. Survolez-le
+pour voir le détail. En {{ e.annee }}, le Québec prévoit percevoir
+{{ ('%.1f' % rev) | replace('.', ',') }} G$ et dépenser environ 171,6 G$.</p>
+<div class="flux">
+  <div class="flux-ligne">
+    <div class="flux-etiquette">Revenus</div>
+    <div class="flux-barre">
+      {% for r in e.revenus %}
+      <div class="flux-bloc flux-rev{{ loop.index }}" style="width: {{ (100 * r.montant / echelle) | round(2) }}%"
+           title="{{ r.nom }} : {{ ('%.1f' % r.montant) | replace('.', ',') }} G$" tabindex="0">
+        <span>{{ ('%.0f' % r.montant) }} G$</span></div>
+      {% endfor %}
+    </div>
+  </div>
+  <div class="flux-ligne">
+    <div class="flux-etiquette">Dépenses</div>
+    <div class="flux-barre">
+      {% for d in e.depenses %}
+      <div class="flux-bloc flux-dep{{ loop.index }}" style="width: {{ (100 * d.montant / echelle) | round(2) }}%"
+           title="{{ d.nom }} : {{ ('%.1f' % d.montant) | replace('.', ',') }} G$" tabindex="0">
+        <span>{{ ('%.0f' % d.montant) }}</span></div>
+      {% endfor %}
+    </div>
+  </div>
+  <div class="legende flux-legende">
+    {% for r in e.revenus %}<span><i class="pastille flux-rev{{ loop.index }}"></i>{{ r.nom }} — {{ ('%.1f' % r.montant) | replace('.', ',') }} G$</span>{% endfor %}
+  </div>
+  <div class="legende flux-legende">
+    {% for d in e.depenses %}<span><i class="pastille flux-dep{{ loop.index }}"></i>{{ d.nom }} — {{ ('%.1f' % d.montant) | replace('.', ',') }} G$ ({{ (100 * d.montant / dep) | round(0) | int }} %)</span>{% endfor %}
+  </div>
+  <p class="explication" style="margin-top:0.6rem">La barre des dépenses dépasse celle des revenus :
+  cet écart, c'est le déficit. Il s'ajoute à la dette.</p>
+  <p class="source">{{ e.note_depenses }} Source : <a href="{{ e.source_url }}">{{ e.source_nom }}</a>.</p>
+</div>
+
+<div class="deux-colonnes">
+  <div class="carte">
+    <h3>Sur 100 $ dépensés par Québec…</h3>
+    <ul class="prose">
+      {% for d in e.depenses %}<li><strong>{{ (100 * d.montant / dep) | round(0) | int }} $</strong> {{ d.nom | lower }}</li>{% endfor %}
+    </ul>
+  </div>
+  <div class="carte">
+    <h3>Si le Québec était un ménage</h3>
+    <p>{{ e.menage.intro }}</p>
+    <table class="table-details">
+      {% for l in e.menage.lignes %}<tr><th>{{ l.quoi }}</th><td>{{ l.valeur }}</td></tr>{% endfor %}
+    </table>
+    <details><summary>Les limites de cette image</summary><p>{{ e.menage.limites }}</p></details>
+  </div>
+</div>
+
+{# ------------------------------------------------ 2. Déficit (cascade) #}
+<h2 id="deficit">2. Pourquoi on entend deux chiffres de déficit</h2>
+<p class="explication">Le déficit n'est pas seulement « revenus moins dépenses ».
+Voici, étape par étape, comment on passe des revenus au déficit officiel. Les
+deux chiffres qu'on entend en campagne sont vrais : ils ne mesurent pas la même chose.</p>
+<div class="cascade">
+  {% for c in e.cascade %}
+  <div class="cascade-ligne cascade-{{ c.type }}{{ ' cascade-negatif' if c.montant < 0 }}">
+    <div class="cascade-nom"><strong>{{ c.etape }}</strong>{% if c.note %}<span>{{ c.note }}</span>{% endif %}</div>
+    <div class="cascade-barre"><div style="width: {{ (100 * (c.montant | abs) / 172) | round(2) }}%"></div></div>
+    <div class="cascade-montant">{{ ('%+.1f' % c.montant) | replace('.', ',') | replace('+', '') }} G$</div>
+  </div>
+  {% endfor %}
+</div>
+<p class="source">Source : <a href="{{ e.source_url }}">{{ e.source_nom }}</a>, tableau du cadre financier.</p>
+
+{# ------------------------------------------------ 3. Dettes #}
+<h2 id="dette">3. Les trois dettes du Québec ({{ e.dette_date }})</h2>
+<p class="explication">Quand quelqu'un parle de « la dette », demandez-lui laquelle.
+Les trois chiffres sont exacts.</p>
+<div class="graphique">
+  {% set mxd = e.dettes | map(attribute='montant') | max %}
+  {% for d in e.dettes %}
+  <div class="ligne-graphique">
+    <div class="etiquette-barre"><strong>{{ d.nom }}</strong></div>
+    <div class="piste">
+      <div class="barre-h" style="width: {{ (100 * d.montant / mxd) | round(1) }}%"></div>
+      <span class="valeur-barre">{{ ('%.1f' % d.montant) | replace('.', ',') }} G$ <small>({{ ('%.1f' % d.pct_pib) | replace('.', ',') }} % du PIB · {{ ((d.montant * 1e9 / e.population) / 100) | round(0) | int * 100 }} $ par habitant)</small></span>
+    </div>
+  </div>
+  <p class="detail" style="margin: 0 0 0.6rem">{{ d.definition }}</p>
+  {% endfor %}
+  <p class="source">Source : <a href="{{ e.source_url }}">{{ e.source_nom }}</a>. Montant par habitant : calcul sur une population de 9,03 millions.</p>
+</div>
+{% for p in e.pieges %}<div class="piege"><strong>{{ p.titre }}</strong><br>{{ p.texte }}</div>{% endfor %}
+
+{# ------------------------------------------------ 4. Leviers #}
+<h2 id="leviers">4. Qui tient quels leviers de l'économie?</h2>
+<p class="explication">Un gouvernement du Québec ne contrôle pas tout. Avant de
+juger une promesse économique, vérifiez qui tient vraiment le levier.</p>
+<table>
+  <thead><tr><th>Levier</th><th>Qui décide</th><th>À savoir</th></tr></thead>
+  <tbody>
+  {% for l in e.leviers %}<tr><td>{{ l.levier }}</td><td><strong>{{ l.qui }}</strong></td><td class="detail">{{ l.note }}</td></tr>{% endfor %}
+  </tbody>
+</table>
+
+{# ------------------------------------------------ 5. Lexique #}
+<h2 id="lexique">5. Le lexique du débat</h2>
+<p class="explication">Les mots qu'on entend dans les débats et les annonces, en
+langage clair. Tapez un mot pour filtrer.</p>
+<input type="search" class="filtre-lexique" placeholder="Chercher un terme : dette, péréquation, austérité…" aria-label="Filtrer le lexique" data-filtre-lexique>
+<dl class="lexique">
+  {% for t in e.lexique %}
+  <div class="terme" data-terme="{{ (t.terme ~ ' ' ~ t.definition) | lower }}">
+    <dt id="terme-{{ loop.index }}">{{ t.terme }}</dt>
+    <dd>{{ t.definition }}
+      {% if t.voir %} <a href="/secteurs/{{ t.voir }}">Voir le secteur →</a>{% elif t.voir_url %} <a href="{{ t.voir_url }}">En savoir plus →</a>{% endif %}</dd>
+  </div>
+  {% endfor %}
+</dl>
+<p class="vide" data-lexique-vide hidden>Aucun terme trouvé. Un mot manque? Signalez-le sur
+<a href="https://github.com/ibratim2026/tracabilite-quebec/issues">la page du projet</a>.</p>
+
+<div class="note-verif">Page mise à jour le {{ e.maj_texte }}. Les définitions sont
+volontairement simples. Pour le détail, consultez les documents budgétaires du
+<a href="https://www.finances.gouv.qc.ca/">ministère des Finances du Québec</a>.</div>
+{% endblock %}

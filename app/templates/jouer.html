@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+{% block titre %}Testez-vous — Élection 2026 — Traçabilité Québec{% endblock %}
+{% block contenu %}
+<h1>Testez-vous</h1>
+<p class="chapeau">{{ 'Deux' if prudent else 'Trois' }} jeux courts pour voir le Québec autrement. Aucune
+inscription : vos réponses restent dans votre navigateur.</p>
+
+<div data-parcours></div>
+
+{% if quiz %}
+<section class="jeu" id="devinez">
+  <h2>1. Devinez le chiffre</h2>
+  <p class="explication">Huit questions sur le Québec d'aujourd'hui. Glissez le
+  curseur vers votre meilleure estimation, puis découvrez le vrai chiffre et sa source.</p>
+  <div data-quiz data-nombre="8"><script type="application/json">{{ quiz | tojson }}</script></div>
+</section>
+{% endif %}
+
+{% if aveugle and aveugle.themes and not prudent %}
+<section class="jeu" id="aveugle">
+  <h2>2. Les promesses à l'aveugle</h2>
+  <p class="explication">Pour chaque thème, vous voyez une proposition phare de
+  chaque parti, sans son nom. Choisissez celle qui vous convainc le plus. Les
+  partis sont révélés à la fin. Beaucoup de gens sont surpris.</p>
+  <div data-aveugle><script type="application/json">{{ aveugle | tojson }}</script></div>
+</section>
+{% endif %}
+
+{% if budget %}
+<section class="jeu" id="budget">
+  <h2>{{ '2' if prudent else '3' }}. Jouez au ministre des Finances</h2>
+  <p class="explication">Voici le vrai budget du Québec ({{ budget.annee }}), par
+  grande mission. Augmentez ou réduisez chaque poste, touchez aux impôts, et voyez
+  le solde bouger. Vous découvrirez vite pourquoi chaque promesse a un prix.</p>
+  <div data-budget><script type="application/json">{{ budget | tojson }}</script></div>
+  <p class="source">Source : <a href="{{ budget.source_url }}">{{ budget.source_nom }}</a>.
+  Simulation simplifiée : elle ne tient pas compte des effets d'une mesure sur
+  l'économie, qui peuvent être importants.</p>
+</section>
+{% endif %}
+{% endblock %}

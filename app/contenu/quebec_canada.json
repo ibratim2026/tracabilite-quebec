@@ -1,0 +1,415 @@
+{
+ "maj_texte": "22 septembre 2026",
+ "chapeau": "Le Québec fait partie du Canada depuis 1867, mais il n'a jamais adhéré à la Constitution de 1982. Il a tenu deux référendums sur la souveraineté, et les deux gouvernements négocient régulièrement sur l'argent et le partage des pouvoirs. Voici les faits de base : qui décide quoi, combien d'argent circule entre les deux gouvernements, quelles ententes le Québec a obtenues et quels dossiers sont ouverts en 2026.",
+ "avertissement": "L'avenir constitutionnel du Québec est un enjeu de cette campagne. Nous ne prenons aucune position. Quand un chiffre est contesté, comme le « solde fiscal », nous présentons les estimations des différents camps, avec leur source et leur orientation.",
+ "reperes": [
+  {
+   "chiffre": "21,8 %",
+   "libelle": "part du Québec dans la population canadienne (9 016 222 habitants au 1er avril 2026)",
+   "source_nom": "Statistique Canada, 17 juin 2026",
+   "source_url": "https://www150.statcan.gc.ca/n1/daily-quotidien/260617/dq260617a-fra.htm"
+  },
+  {
+   "chiffre": "19,8 %",
+   "libelle": "part du Québec dans le PIB canadien (2024)",
+   "source_nom": "Statistique Canada, tableau 36-10-0222-01 (calcul Traçabilité Québec)",
+   "source_url": "https://www150.statcan.gc.ca/t1/tbl1/fr/tv.action?pid=3610022201"
+  },
+  {
+   "chiffre": "78 / 343",
+   "libelle": "sièges du Québec à la Chambre des communes (et 24 sur 105 au Sénat)",
+   "source_nom": "Élections Canada",
+   "source_url": "https://www.elections.ca/content.aspx?section=res&dir=cir%2Fred%2Fallo&document=index&lang=f"
+  },
+  {
+   "chiffre": "3 / 9",
+   "libelle": "juges de la Cour suprême obligatoirement issus du Québec",
+   "source_nom": "Loi sur la Cour suprême, art. 6",
+   "source_url": "https://laws-lois.justice.gc.ca/fra/lois/s-26/page-1.html"
+  },
+  {
+   "chiffre": "30,3 G$",
+   "libelle": "principaux transferts fédéraux au Québec en 2026-2027 (3 317 $ par habitant, 5e sur 10 provinces)",
+   "source_nom": "Finances Canada, déc. 2025 (estimations préliminaires)",
+   "source_url": "https://www.canada.ca/fr/ministere-finances/programmes/transferts-federaux/principaux-transferts-federaux.html"
+  },
+  {
+   "chiffre": "19,6 %",
+   "libelle": "part des transferts fédéraux dans les revenus totaux du Québec en 2026-2027",
+   "source_nom": "Ministère des Finances du Québec, Rapport préélectoral, août 2026",
+   "source_url": "https://cdn-contenu.quebec.ca/cdn-contenu/adm/min/finances/publications-adm/Rapport_preelectoral/FR/MINFR_RP_2026.pdf"
+  }
+ ],
+ "chronologie": [
+  {
+   "annee": "1867",
+   "titre": "Naissance du Canada",
+   "texte": "La Loi constitutionnelle de 1867 crée une fédération de quatre provinces, dont le Québec. Elle partage les pouvoirs entre Ottawa (art. 91) et les provinces (art. 92 et 93).",
+   "source_url": "https://laws-lois.justice.gc.ca/fra/const/page-1.html"
+  },
+  {
+   "annee": "1965",
+   "titre": "Régime de rentes du Québec",
+   "texte": "Le Québec crée son propre régime de retraite public au lieu d'adhérer au Régime de pensions du Canada. La même année, la doctrine Gérin-Lajoie affirme son droit d'agir à l'international dans ses compétences.",
+   "source_url": "https://www.retraitequebec.gouv.qc.ca/fr/"
+  },
+  {
+   "annee": "1980",
+   "titre": "Premier référendum",
+   "texte": "La question porte sur un mandat de négocier la souveraineté-association. Le Non l'emporte avec 59,56 % des voix (participation de 85,6 %).",
+   "source_url": "https://www.thecanadianencyclopedia.ca/en/article/quebec-referendum-1980"
+  },
+  {
+   "annee": "1982",
+   "titre": "Rapatriement sans le Québec",
+   "texte": "La Constitution est rapatriée avec la Charte canadienne des droits, avec l'accord d'Ottawa et de 9 provinces, mais sans celui du Québec. Elle s'applique quand même au Québec.",
+   "source_url": "https://laws-lois.justice.gc.ca/fra/const/"
+  },
+  {
+   "annee": "1990",
+   "titre": "Échec du lac Meech",
+   "texte": "L'accord de 1987, qui reconnaissait le Québec comme « société distincte », meurt le 23 juin 1990 faute d'être ratifié par toutes les provinces.",
+   "source_url": "https://www.thecanadianencyclopedia.ca/en/article/the-charlottetown-accord"
+  },
+  {
+   "annee": "1991",
+   "titre": "Accord Canada-Québec sur l'immigration",
+   "texte": "Le Québec obtient la sélection des immigrants économiques et la responsabilité de leur intégration, avec une compensation fédérale annuelle.",
+   "source_url": "https://cdn-contenu.quebec.ca/cdn-contenu/adm/min/immigration/publications-adm/accord/AC_canada_quebec_immigration_MIDI.pdf"
+  },
+  {
+   "annee": "1992",
+   "titre": "Rejet de Charlottetown",
+   "texte": "Au référendum du 26 octobre, le nouvel accord constitutionnel est rejeté par 54,3 % des Canadiens et 56,7 % des Québécois.",
+   "source_url": "https://www.electionsquebec.qc.ca/en/results-and-statistics/referendum-on-the-charlottetown-constitutional-accord/"
+  },
+  {
+   "annee": "1995",
+   "titre": "Deuxième référendum",
+   "texte": "La question porte sur la souveraineté assortie d'une offre de partenariat. Le Non l'emporte avec 50,58 % des voix, avec une participation record de 93,52 %.",
+   "source_url": "https://www.electionsquebec.qc.ca/en/results-and-statistics/1995-referendum-on-quebecs-accession-to-sovereignty/"
+  },
+  {
+   "annee": "1998",
+   "titre": "Renvoi sur la sécession",
+   "texte": "Selon la Cour suprême, le Québec ne peut pas faire sécession unilatéralement. En revanche, une majorité claire sur une question claire obligerait le Canada à négocier.",
+   "source_url": "https://decisions.scc-csc.ca/scc-csc/scc-csc/fr/item/1643/index.do"
+  },
+  {
+   "annee": "2000",
+   "titre": "Loi sur la clarté et loi 99",
+   "texte": "Ottawa donne aux Communes le pouvoir de juger si une question et une majorité sont claires. Québec réplique en inscrivant dans une loi la règle du 50 % plus une voix.",
+   "source_url": "https://laws-lois.justice.gc.ca/fra/lois/c-31.8/"
+  },
+  {
+   "annee": "2002",
+   "titre": "Commission Séguin",
+   "texte": "Une commission québécoise conclut à un « déséquilibre fiscal » : Ottawa aurait plus d'argent que ses responsabilités ne l'exigent, et les provinces pas assez.",
+   "source_url": "https://www.bibliotheque.assnat.qc.ca/guides/fr/les-commissions-d-enquete-au-quebec-depuis-1867/7719-commission-seguin-2002"
+  },
+  {
+   "annee": "2006",
+   "titre": "Motion sur la nation et place à l'UNESCO",
+   "texte": "Les Communes reconnaissent, par 266 voix contre 16, que les Québécois forment une nation au sein d'un Canada uni. La motion est symbolique. La même année, un accord donne au Québec un représentant à l'UNESCO.",
+   "source_url": "https://ici.radio-canada.ca/nouvelle/331287/vote-nation"
+  },
+  {
+   "annee": "2021",
+   "titre": "Garderies : retrait avec compensation",
+   "texte": "Ottawa verse 6 G$ sur 5 ans au Québec, sans conditions, pour son réseau de garderies. L'entente est prolongée en 2025 pour 2026-2031 (9,83 G$).",
+   "source_url": "https://www.lapresse.ca/actualites/politique/2021-04-20/garderies/ottawa-versera-6-milliards-a-quebec-sans-condition-dit-eric-girard.php"
+  },
+  {
+   "annee": "2026",
+   "titre": "Loi 21 en Cour suprême et guerre tarifaire",
+   "texte": "En mars, la Cour suprême entend la contestation de la loi sur la laïcité et de l'usage de la disposition de dérogation (décision attendue). En septembre, Ottawa riposte aux tarifs américains de 50 %.",
+   "source_url": "https://www.lapresse.ca/actualites/politique/2026-03-23/le-debat-sur-la-loi-21-s-est-amorce-en-cour-supreme-avec-les-parties-en-appel.php"
+  }
+ ],
+ "competences": {
+  "quebec": [
+   "Santé et hôpitaux",
+   "Éducation (primaire à l'université)",
+   "Droit civil (Code civil du Québec)",
+   "Municipalités",
+   "Administration de la justice (tribunaux, police provinciale)",
+   "Ressources naturelles",
+   "Aide sociale et services sociaux",
+   "Services de garde (en pratique)"
+  ],
+  "ottawa": [
+   "Défense et armée",
+   "Monnaie, banques et Banque du Canada",
+   "Droit criminel",
+   "Citoyenneté, passeports et asile",
+   "Assurance-emploi",
+   "Postes et télécommunications",
+   "Commerce international et traités",
+   "Pêches et navigation",
+   "Relations avec les Premières Nations (91(24))"
+  ],
+  "partagees": [
+   "Immigration (Accord Canada-Québec de 1991)",
+   "Agriculture",
+   "Pensions de vieillesse (RRQ au Québec)",
+   "Impôts et taxes (deux déclarations au Québec)",
+   "Environnement (en pratique)",
+   "Transports (selon le mode)"
+  ],
+  "source_url": "https://laws-lois.justice.gc.ca/fra/const/page-1.html"
+ },
+ "argent": {
+  "intro": "Chaque année, Ottawa verse de l'argent aux provinces par trois grands transferts. Les deux premiers sont répartis selon la population. La péréquation, elle, va aux provinces dont la capacité de percevoir des impôts est sous la moyenne canadienne. Elle est payée à même les impôts fédéraux de tous les Canadiens, pas par les autres provinces. Le Québec reçoit la plus grosse somme en dollars, mais il se classe 5e sur 10 par habitant.",
+  "annee": "2026-2027",
+  "transferts": [
+   {
+    "nom": "Transfert canadien en matière de santé (TCS)",
+    "montant_g": 12.457,
+    "explication": "Il est réparti selon la population et augmente d'au moins 5 % par an jusqu'en 2027-2028. Le budget du Québec inscrit 9,1 G$, car une partie du TCS est versée sous forme de points d'impôt (l'abattement spécial du Québec). Il couvre environ 21 % des dépenses de santé des provinces.",
+    "source_url": "https://www.canada.ca/fr/ministere-finances/programmes/transferts-federaux/principaux-transferts-federaux.html"
+   },
+   {
+    "nom": "Transfert canadien en matière de programmes sociaux (TCPS)",
+    "montant_g": 3.892,
+    "explication": "Il finance l'éducation postsecondaire, l'aide sociale et les services de garde. Il est réparti selon la population. Le budget du Québec inscrit 1,3 G$ net de l'abattement.",
+    "source_url": "https://www.canada.ca/fr/ministere-finances/programmes/transferts-federaux/principaux-transferts-federaux.html"
+   },
+   {
+    "nom": "Péréquation",
+    "montant_g": 13.907,
+    "explication": "C'est environ 51 % de l'enveloppe canadienne de 27,2 G$, ce qui place le Québec au 1er rang en dollars. Par habitant, c'est environ 1 525 $, soit le 5e rang sur 7 provinces bénéficiaires. La péréquation représente environ 8 % des revenus du gouvernement du Québec.",
+    "source_url": "https://www.canada.ca/fr/ministere-finances/programmes/transferts-federaux/principaux-transferts-federaux.html"
+   }
+  ],
+  "solde_fiscal": {
+   "texte": "Le « solde fiscal » compare les impôts que le fédéral perçoit au Québec aux dépenses fédérales faites au Québec. Le résultat dépend beaucoup des choix de méthode : où compter les dépenses d'un ministère situé à Ottawa, comment répartir la dette et le déficit fédéraux. Les estimations ci-dessous ne sont pas comparables entre elles, et nous n'en retenons aucune. Tout le monde s'entend sur les impôts perçus et sur les transferts directs. Le désaccord porte surtout sur les achats de biens et services du fédéral et sur les intérêts de la dette.",
+   "estimations": [
+    {
+     "qui": "Statistique Canada (comptes économiques provinciaux)",
+     "orientation": "Agence statistique fédérale, non partisane",
+     "resultat": "Le fédéral a perçu 84,4 G$ au Québec et y a dépensé 111,1 G$, soit un écart d'environ 27 G$ en faveur du Québec (environ 3 000 $ par habitant). Une partie de l'écart vient du déficit fédéral, qui est réparti entre les provinces.",
+     "annee": "2024",
+     "url": "https://www150.statcan.gc.ca/t1/tbl1/fr/tv.action?pid=3610045001"
+    },
+    {
+     "qui": "Bibliothèque du Parlement",
+     "orientation": "Service de recherche du Parlement, non partisan",
+     "resultat": "De 2015 à 2024, seules l'Alberta et la Colombie-Britannique ont versé plus au fédéral qu'elles n'en ont reçu. Le Québec a reçu plus qu'il n'a versé.",
+     "annee": "2015-2024",
+     "url": "https://notesdelacolline.ca/2026/07/07/resume-la-repartition-des-revenus-et-des-depenses-du-gouvernement-federal-par-province-2/"
+    },
+    {
+     "qui": "« Budget de l'an 1 » d'un Québec souverain",
+     "orientation": "Souverainiste (document d'un parti)",
+     "resultat": "Il attribue au Québec moins de dépenses fédérales (18,2 % contre 19,6 % selon StatCan) et plus de revenus (18,1 % contre 17,3 %), ce qui réduit l'écart. Il prévoit 8,8 G$ d'économies liées aux chevauchements.",
+     "annee": "2023",
+     "url": "https://www.lapresse.ca/affaires/27-milliards/notre-deficit-envers-ottawa-atteint-un-sommet/2026-03-27/un-calcul-sujet-aux-controverses.php",
+     "partisan": true
+    },
+    {
+     "qui": "Économistes interrogés par La Presse",
+     "orientation": "Deux souverainistes, d'avis opposés sur la méthode",
+     "resultat": "Nicolas Marceau (UQAM) juge la méthode de StatCan « ni adéquate ni transparente ». François Vaillancourt (UdeM) la considère fiable à plus ou moins 10 % et estime qu'une correction pourrait alourdir l'écart.",
+     "annee": "2026",
+     "url": "https://www.lapresse.ca/affaires/27-milliards/notre-deficit-envers-ottawa-atteint-un-sommet/2026-03-27/un-calcul-sujet-aux-controverses.php"
+    }
+   ]
+  }
+ },
+ "ententes": [
+  {
+   "titre": "Accord Canada-Québec sur l'immigration",
+   "annee": "1991",
+   "texte": "Le Québec sélectionne les immigrants économiques et les réfugiés réinstallés, et il s'occupe de leur intégration et de la francisation. Ottawa décide du regroupement familial, des demandes d'asile, de l'admissibilité et des visas. Les deux gouvernements gèrent ensemble les travailleurs et étudiants temporaires, sauf le Programme de mobilité internationale, qui relève d'Ottawa seul. Compensation : 867,3 M$ par an.",
+   "source_url": "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/transparency/committees/cimm-may-04-2026/quebec-key-facts.html"
+  },
+  {
+   "titre": "Droit de retrait avec compensation (garderies)",
+   "annee": "2021",
+   "texte": "Quand Ottawa crée un programme dans une compétence provinciale, le Québec réclame sa part sans conditions. Pour les garderies, il a obtenu 6 G$ sur 5 ans, puis 9,83 G$ pour 2026-2031. Pour les soins dentaires et l'assurance médicaments, aucune entente de ce type n'a été conclue.",
+   "source_url": "https://ici.radio-canada.ca/nouvelle/2145959/entente-ottawa-provinces-garderies-prolongation"
+  },
+  {
+   "titre": "Régime de rentes du Québec",
+   "annee": "1965",
+   "texte": "Le Québec a son propre régime de retraite public, coordonné avec le Régime de pensions du Canada. Il a aussi son propre régime d'assurance parentale depuis 2006.",
+   "source_url": "https://www.retraitequebec.gouv.qc.ca/fr/"
+  },
+  {
+   "titre": "Revenu Québec perçoit les impôts",
+   "annee": "1954",
+   "texte": "Le Québec est la seule province qui perçoit elle-même son impôt sur le revenu, d'où deux déclarations de revenus. Revenu Québec perçoit aussi la TPS pour Ottawa. Une partie des transferts est versée sous forme de points d'impôt (abattement de 16,5 points).",
+   "source_url": "https://www.canada.ca/fr/ministere-finances/programmes/transferts-federaux/abattement-impot-quebec.html"
+  },
+  {
+   "titre": "Harmonisation TPS-TVQ",
+   "annee": "2011",
+   "texte": "Depuis 2013, la TVQ ne s'applique plus sur la TPS et son assiette est alignée sur celle de la TPS. Ottawa a versé 2,2 G$ de compensation, et le Québec perçoit toujours les deux taxes.",
+   "source_url": "https://www.canada.ca/fr/nouvelles/archive/2011/10/harmonisation-taxe-vente-quebec.html"
+  },
+  {
+   "titre": "Présence internationale (Francophonie, UNESCO)",
+   "annee": "2006",
+   "texte": "Le Québec a son réseau de délégations à l'étranger. Il est membre à part entière de l'Organisation internationale de la Francophonie et, depuis l'accord de 2006, il a un représentant au sein de la délégation canadienne à l'UNESCO.",
+   "source_url": "https://www.mrif.gouv.qc.ca/content/documents/fr/unesco.pdf"
+  }
+ ],
+ "dossiers": [
+  {
+   "titre": "Financement de la santé",
+   "demande": "Le gouvernement du Québec demande une hausse du TCS d'au moins 5 % par an après 2027-2028, au lieu du plancher de 3 % prévu, et la reconduction des fonds ciblés en santé mentale et en soins à domicile. Les provinces réunies en juillet réclament une hausse importante, sans chiffre commun.",
+   "situation": "Ottawa n'a prévu aucune hausse du TCS dans son budget de novembre 2025. En juillet 2026, le premier ministre fédéral a lié tout réinvestissement à des gains de productivité. Les discussions se poursuivent en vue du budget de l'automne.",
+   "date": "23 juillet 2026",
+   "sources": [
+    {
+     "nom": "La Presse canadienne / La Presse, 22 juillet 2026",
+     "url": "https://www.lapresse.ca/actualites/sante/2026-07-22/conseil-de-la-federation/les-provinces-demandent-plus-de-financement-a-mark-carney.php"
+    },
+    {
+     "nom": "Le Reflet du Lac (La Presse canadienne), 23 juillet 2026",
+     "url": "https://www.lerefletdulac.com/nouvelles-nationales/reinvestissement-en-sante-carney-demande-des-gains-de-productivite/"
+    }
+   ]
+  },
+  {
+   "titre": "Tarifs américains et révision de l'ACEUM",
+   "demande": "Le Québec réclame d'être mieux informé par Ottawa. Il fixe des lignes à ne pas franchir : la gestion de l'offre, la culture et le français. Il rappelle qu'il peut se déclarer « non lié » par une entente qui toucherait ses compétences.",
+   "situation": "Les négociations ont échoué en août. Washington impose 50 % de droits sur de nombreux produits canadiens, et environ 7,7 G$ d'exportations québécoises sont touchées. Les contre-tarifs d'Ottawa (environ 700 produits) sont en vigueur depuis le 8 septembre 2026.",
+   "date": "8 septembre 2026",
+   "sources": [
+    {
+     "nom": "Radio-Canada, 13 août 2026",
+     "url": "https://ici.radio-canada.ca/nouvelle/2275129/negociations-aceum-ottawa-washington-quebec"
+    },
+    {
+     "nom": "Radio-Canada, 22 août 2026",
+     "url": "https://ici.radio-canada.ca/nouvelle/2277038/reponse-canada-carney-tarifs-americains"
+    },
+    {
+     "nom": "Protégez-Vous, septembre 2026",
+     "url": "https://www.protegez-vous.ca/nouvelles/argent/contre-tarifs-canada-septembre-2026"
+    }
+   ]
+  },
+  {
+   "titre": "Commerce entre les provinces",
+   "demande": "Ottawa (Loi C-5, 2025) et les provinces veulent réduire les obstacles au commerce intérieur et à la mobilité des travailleurs.",
+   "situation": "Le Québec a adopté la loi 112 le 29 octobre 2025 : un produit vendu légalement ailleurs au Canada peut l'être au Québec sans exigence supplémentaire. Certaines exceptions demeurent, notamment pour la langue française.",
+   "date": "29 octobre 2025",
+   "sources": [
+    {
+     "nom": "Gouvernement du Québec",
+     "url": "https://www.quebec.ca/nouvelles/actualites/details/projet-de-loi-no-112-elimination-dirritants-commerciaux-quebec-facilite-le-commerce-des-produits-et-la-mobilite-de-la-main-doeuvre-au-canada-66715"
+    },
+    {
+     "nom": "FCEI",
+     "url": "https://www.cfib-fcei.ca/fr/medias/la-fcei-salue-ladoption-du-projet-de-loi-112-visant-reduire-les-barrieres-interprovinciales"
+    }
+   ]
+  },
+  {
+   "titre": "Loi 21, loi 96 et disposition de dérogation",
+   "demande": "Des groupes contestent la loi sur la laïcité. Le gouvernement du Québec plaide que c'est un débat politique et que son usage préventif de la disposition de dérogation est légitime. Ottawa intervient seulement sur la dérogation : il soutient qu'elle ne peut suspendre des droits que temporairement et qu'elle doit être encadrée.",
+   "situation": "La Cour suprême a entendu la cause en mars 2026 (sept juges, audience record). Aucune décision n'a été rendue au 22 septembre 2026. La loi 96 fait aussi l'objet de plusieurs contestations, dont certaines ont mené à des suspensions partielles.",
+   "date": "22 septembre 2026",
+   "sources": [
+    {
+     "nom": "La Presse, 9 juin 2026",
+     "url": "https://www.lapresse.ca/actualites/politique/2026-06-09/loi-sur-la-laicite-de-l-etat/une-decision-de-la-cour-supreme-n-importe-quand-a-partir-de-maintenant.php"
+    },
+    {
+     "nom": "Radio-Canada, mars 2026",
+     "url": "https://ici.radio-canada.ca/nouvelle/2241665/loi-21-clause-derogatoire-ontario-saskatchewan-alberta-quebec-cour-supreme"
+    },
+    {
+     "nom": "Le Devoir, septembre 2026",
+     "url": "https://www.ledevoir.com/actualites/justice/1009430/documents-electoraux-devront-aussi-etre-envoyes-anglais-tranche-cour-superieure"
+    }
+   ]
+  },
+  {
+   "titre": "Demandeurs d'asile et immigration temporaire",
+   "demande": "Le gouvernement du Québec réclame 733 M$ pour les coûts liés aux demandeurs d'asile en 2024, une meilleure répartition des demandeurs entre les provinces et moins de travailleurs temporaires admis par Ottawa seul.",
+   "situation": "Ottawa dit avoir versé plus de 1,5 G$ au Québec en 2024-2025, dont un paiement unique de 581 M$, et juge en faire assez. Le Québec répond que l'Accord ne couvre pas ces coûts. Le nombre de résidents non permanents au Québec a baissé à 514 050 au 1er janvier 2026.",
+   "date": "2 décembre 2025",
+   "sources": [
+    {
+     "nom": "Radio-Canada, 2 décembre 2025",
+     "url": "https://ici.radio-canada.ca/nouvelle/2210909/demandeurs-asile-ottawa-quebec-remboursement"
+    },
+    {
+     "nom": "IRCC, 4 mai 2026",
+     "url": "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/transparency/committees/cimm-may-04-2026/quebec-key-facts.html"
+    }
+   ]
+  },
+  {
+   "titre": "Programmes fédéraux : dentaire, médicaments, logement",
+   "demande": "Le gouvernement du Québec demande un droit de retrait avec pleine compensation sans conditions pour les soins dentaires et l'assurance médicaments. En logement, il demande la liberté de gérer les fonds fédéraux.",
+   "situation": "Le régime fédéral de soins dentaires s'applique au Québec sans entente (1,6 million d'inscrits). Il n'y a aucune entente sur l'assurance médicaments. En logement, deux ententes ont été signées le 21 janvier 2026 : près de 1 G$ pour les infrastructures et un partenariat avec Maisons Canada.",
+   "date": "21 janvier 2026",
+   "sources": [
+    {
+     "nom": "Radio-Canada, 21 janvier 2026",
+     "url": "https://ici.radio-canada.ca/nouvelle/2222126/logement-annonce-quebec-ottawa-carney-legault"
+    },
+    {
+     "nom": "Santé Canada, novembre 2025",
+     "url": "https://www.canada.ca/fr/sante-canada/nouvelles/2025/11/le-regime-canadien-de-soins-dentaires-franchit-de-nouvelles-etapes-importantes-au-quebec-alors-que-le-gouvernement-du-canada-renforce-lacces-aux-so.html"
+    },
+    {
+     "nom": "CBC, 2026",
+     "url": "https://www.cbc.ca/news/politics/pharmacare-future-carney-government-budget-provinces-territories-9.6985015"
+    }
+   ]
+  }
+ ],
+ "confusions": [
+  {
+   "affirmation": "« Ottawa paie la santé. »",
+   "reponse": "Non. La santé est une compétence provinciale. Le TCS couvre environ 21 % des dépenses de santé des provinces en 2026-2027. Au Québec, le budget inscrit 9,1 G$ de transferts fédéraux pour la santé, alors que la mission Santé et services sociaux coûte environ 70 G$.",
+   "source_nom": "Ministère des Finances du Québec, Rapport préélectoral, août 2026",
+   "source_url": "https://cdn-contenu.quebec.ca/cdn-contenu/adm/min/finances/publications-adm/Rapport_preelectoral/FR/MINFR_RP_2026.pdf"
+  },
+  {
+   "affirmation": "« Le Québec vit de la péréquation. »",
+   "reponse": "À nuancer. Le Québec reçoit la plus grosse somme (13,9 G$) parce qu'il est populeux. Par habitant, il reçoit environ 1 525 $, bien moins que les provinces de l'Atlantique (plus de 3 000 $). La péréquation représente environ 8 % des revenus du gouvernement du Québec.",
+   "source_nom": "Finances Canada, principaux transferts fédéraux",
+   "source_url": "https://www.canada.ca/fr/ministere-finances/programmes/transferts-federaux/principaux-transferts-federaux.html"
+  },
+  {
+   "affirmation": "« Les provinces riches envoient des chèques de péréquation au Québec. »",
+   "reponse": "Non. La péréquation est un programme fédéral, payé à même les impôts fédéraux de tous les Canadiens, y compris les Québécois. Aucune province ne verse d'argent à une autre.",
+   "source_nom": "Finances Canada, programme de péréquation",
+   "source_url": "https://www.canada.ca/fr/ministere-finances/programmes/transferts-federaux/perequation.html"
+  },
+  {
+   "affirmation": "« Le Québec n'a pas signé la Constitution, donc elle ne s'applique pas. »",
+   "reponse": "Faux. La Loi constitutionnelle de 1982, y compris la Charte canadienne, s'applique au Québec. En 1982, la Cour suprême a jugé que le Québec n'avait pas de droit de veto. Le refus d'adhérer a une portée politique, pas juridique.",
+   "source_nom": "Justice Canada, Lois constitutionnelles",
+   "source_url": "https://laws-lois.justice.gc.ca/fra/const/"
+  },
+  {
+   "affirmation": "« Le Québec contrôle toute son immigration. »",
+   "reponse": "Non. Il sélectionne les immigrants économiques et fixe ses cibles, mais Ottawa décide du regroupement familial, des demandes d'asile, de l'admissibilité, des visas et d'une grande part des permis temporaires.",
+   "source_nom": "IRCC, Quebec Key Facts, 4 mai 2026",
+   "source_url": "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/transparency/committees/cimm-may-04-2026/quebec-key-facts.html"
+  },
+  {
+   "affirmation": "« La motion de 2006 a fait du Québec une nation dans la Constitution. »",
+   "reponse": "Non. La motion adoptée par la Chambre des communes (266 voix contre 16) est symbolique et ne modifie pas la Constitution.",
+   "source_nom": "Radio-Canada, 27 novembre 2006",
+   "source_url": "https://ici.radio-canada.ca/nouvelle/331287/vote-nation"
+  }
+ ],
+ "a_verifier": [
+  "Décision de la Cour suprême sur la loi 21 (en délibéré au 22 septembre 2026)",
+  "Chiffres du « Livre bleu » (écart de 15,2 G$, données 2021-2022), rapportés par La Métropole mais non vérifiés dans le document original",
+  "Solde fédéral au Québec en 2024 : 26,6 G$ dans le tableau StatCan 36-10-0450-01 (consulté le 22 septembre 2026) contre 27,1 G$ selon La Presse (27 mars 2026), probablement à cause d'une révision",
+  "Montant et échéance de l'entente bilatérale asymétrique en santé (environ 2,5 G$, échéance en 2027)",
+  "Transferts 2026-2027 de Finances Canada : estimations préliminaires de décembre 2025",
+  "Estimations de population au 1er juillet 2026 (Statistique Canada, publication attendue à la fin de septembre)",
+  "Nombre exact de représentations du Québec à l'étranger",
+  "Éventuelle reprise des négociations Canada–États-Unis après le 8 septembre 2026"
+ ]
+}

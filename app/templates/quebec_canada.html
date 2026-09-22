@@ -1,0 +1,111 @@
+{% extends "base.html" %}
+{% block titre %}Le Québec dans le Canada — Traçabilité Québec{% endblock %}
+{% block contenu %}
+<div class="surtitre">Comprendre</div>
+<h1>Le Québec dans le Canada : comment ça fonctionne</h1>
+<p class="chapeau">{{ q.chapeau }}</p>
+<div class="encadre encadre-bleu">{{ q.avertissement }}</div>
+
+<div class="themes">
+  <a class="onglet" href="#place">Notre place</a>
+  <a class="onglet" href="#histoire">Les grandes dates</a>
+  <a class="onglet" href="#competences">Qui décide quoi</a>
+  <a class="onglet" href="#argent">L'argent</a>
+  <a class="onglet" href="#ententes">Les ententes</a>
+  <a class="onglet" href="#dossiers">Les dossiers en cours</a>
+  <a class="onglet" href="#confusions">Ce qu'on confond</a>
+</div>
+
+<h2 id="place">La place du Québec dans le Canada</h2>
+<div class="cartes-stats">
+  {% for r in q.reperes %}
+  <div class="carte"><div class="chiffre">{{ r.chiffre }}</div>
+    <div class="etiquette">{{ r.libelle }}</div>
+    <div class="source"><a href="{{ r.source_url }}">{{ r.source_nom }}</a></div></div>
+  {% endfor %}
+</div>
+
+<h2 id="histoire">Les grandes dates</h2>
+<ol class="frise">
+  {% for c in q.chronologie %}
+  <li><span class="frise-annee">{{ c.annee }}</span>
+    <div><strong>{{ c.titre }}</strong><p>{{ c.texte }}{% if c.source_url %} <a class="source" href="{{ c.source_url }}">(source)</a>{% endif %}</p></div></li>
+  {% endfor %}
+</ol>
+
+<h2 id="competences">Qui décide quoi</h2>
+<p class="explication">La Constitution partage les pouvoirs entre Ottawa et les
+provinces. Certains domaines sont exclusifs, d'autres sont partagés.</p>
+<div class="qui-fait-quoi">
+  <div class="carte"><h3>Québec</h3><ul class="prose">{% for x in q.competences.quebec %}<li>{{ x }}</li>{% endfor %}</ul></div>
+  <div class="carte"><h3>Partagé</h3><ul class="prose">{% for x in q.competences.partagees %}<li>{{ x }}</li>{% endfor %}</ul></div>
+  <div class="carte"><h3>Ottawa</h3><ul class="prose">{% for x in q.competences.ottawa %}<li>{{ x }}</li>{% endfor %}</ul></div>
+</div>
+{% if q.competences.source_url %}<p class="source">Source : <a href="{{ q.competences.source_url }}">Lois constitutionnelles de 1867 à 1982</a></p>{% endif %}
+
+<h2 id="argent">L'argent entre Québec et Ottawa</h2>
+<p class="explication">{{ q.argent.intro }}</p>
+{% if q.argent.transferts %}
+<div class="graphique">
+  {% set mx = q.argent.transferts | map(attribute='montant_g') | max %}
+  {% for t in q.argent.transferts %}
+  <div class="ligne-graphique">
+    <div class="etiquette-barre"><strong>{{ t.nom }}</strong></div>
+    <div class="piste">
+      <div class="barre-h" style="width: {{ (100 * t.montant_g / mx) | round(1) }}%"></div>
+      <span class="valeur-barre">{{ ('%.1f' % t.montant_g) | replace('.', ',') }} G$</span>
+    </div>
+  </div>
+  <p class="detail" style="margin: 0 0 0.6rem">{{ t.explication }} <a class="source" href="{{ t.source_url }}">(source)</a></p>
+  {% endfor %}
+  <p class="source">Montants {{ q.argent.annee }}.</p>
+</div>
+{% endif %}
+{% if q.argent.solde_fiscal %}
+<h3>Le Québec donne-t-il plus qu'il ne reçoit?</h3>
+<p class="explication">{{ q.argent.solde_fiscal.texte }}</p>
+<table class="table-cartes">
+  <thead><tr><th>Qui a fait le calcul</th><th>Orientation</th><th>Résultat</th><th>Année</th></tr></thead>
+  <tbody>
+  {% for e in q.argent.solde_fiscal.estimations if not (prudent and e.partisan) %}
+  <tr><td><a href="{{ e.url }}"><strong>{{ e.qui }}</strong></a></td><td class="detail" data-label="Orientation">{{ e.orientation }}</td><td data-label="Résultat">{{ e.resultat }}</td><td data-label="Année">{{ e.annee }}</td></tr>
+  {% endfor %}
+  </tbody>
+</table>
+{% endif %}
+
+<h2 id="ententes">Les ententes particulières</h2>
+<div class="grille-cartes">
+  {% for e in q.ententes %}
+  <div class="carte"><div class="surtitre">{{ e.annee }}</div><h3>{{ e.titre }}</h3>
+    <p>{{ e.texte }} {% if e.source_url %}<a class="source" href="{{ e.source_url }}">(source)</a>{% endif %}</p></div>
+  {% endfor %}
+</div>
+
+<h2 id="dossiers">Ce qui se passe en ce moment</h2>
+<p class="explication">Les dossiers ouverts entre les deux gouvernements, avec ce
+que chacun demande et où en est la situation.</p>
+{% for d in q.dossiers %}
+<details class="loi">
+  <summary><h3>{{ d.titre }}</h3><div class="meta">{{ d.date }}</div></summary>
+  <div class="corps">
+    <p><strong>L'enjeu :</strong> {{ d.demande }}</p>
+    <p><strong>Où on en est :</strong> {{ d.situation }}</p>
+    <p class="source">Sources : {% for s in d.sources %}<a href="{{ s.url }}">{{ s.nom }}</a>{{ ' · ' if not loop.last }}{% endfor %}</p>
+  </div>
+</details>
+{% endfor %}
+
+<h2 id="confusions">Ce qu'on confond souvent</h2>
+{% for c in q.confusions %}
+<div class="mythe">
+  <span class="affirmation">« {{ c.affirmation }} »</span>
+  <p>{{ c.reponse }}</p>
+  <span class="source">Source : <a href="{{ c.source_url }}">{{ c.source_nom }}</a></span>
+</div>
+{% endfor %}
+
+<div class="note-verif">Page mise à jour le {{ q.maj_texte }}. Traçabilité Québec ne
+prend pas position sur l'avenir politique du Québec. Voir aussi
+<a href="/economie-expliquee#leviers">qui tient quels leviers de l'économie</a>.</div>
+{% endblock %}

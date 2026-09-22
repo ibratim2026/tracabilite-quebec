@@ -1,0 +1,2044 @@
+{
+ "maj_texte": "22 septembre 2026",
+ "note": "Les engagements sont résumés au plus près du texte des partis, avec un lien vers la source : plateforme, cadre financier ou communiqué officiel. Quand un parti n'a pas publié de document consolidé, certains engagements proviennent du comparateur de Radio-Canada (mention « Radio-Canada »). La même grille de 14 thèmes s'applique à tous. Aucun commentaire ni appréciation n'est ajouté.",
+ "note_partis": "Partis présentés en ordre alphabétique. Tous ont publié un cadre financier. Chaque cadre part des chiffres du rapport préélectoral du ministère des Finances (déficit prévu de 7,7 G$ en 2026-2027 au sens de la Loi sur l'équilibre budgétaire).",
+ "partis": [
+  {
+   "slug": "caq",
+   "nom": "Coalition avenir Québec",
+   "chef": "Christine Fréchette",
+   "plateforme_url": "https://coalitionavenirquebec.org/fr/blog/",
+   "cadre": {
+    "url": "https://coalitionavenirquebec.org/wp-content/uploads/2026/08/cadre-financier-v8-30-aout.pdf",
+    "texte": "Cadre financier publié le 30 août. Retour à l'équilibre prévu en 2029-2030."
+   },
+   "plateforme_libelle": "Engagements publiés un à un (pas de plateforme consolidée)"
+  },
+  {
+   "slug": "pcq",
+   "nom": "Parti conservateur du Québec",
+   "chef": "Éric Duhaime",
+   "plateforme_url": "https://conservateur.quebec/plateforme-electorale/",
+   "cadre": {
+    "url": "https://conservateur.quebec/wp-content/uploads/2026/09/Cadre-Financier_VF.pdf",
+    "texte": "Cadre financier publié le 9 septembre. Retour à l'équilibre prévu en 2029-2030."
+   },
+   "plateforme_libelle": "Plateforme officielle"
+  },
+  {
+   "slug": "plq",
+   "nom": "Parti libéral du Québec",
+   "chef": "Charles Milliard",
+   "plateforme_url": "https://plq.org/engagements/",
+   "cadre": {
+    "url": "https://plq.org/PLQ_Cadre_financier.pdf",
+    "texte": "Cadre financier publié le 13 septembre. Retour à l'équilibre prévu en 2029-2030."
+   },
+   "plateforme_libelle": "Page officielle des engagements"
+  },
+  {
+   "slug": "pq",
+   "nom": "Parti québécois",
+   "chef": "Paul St-Pierre Plamondon",
+   "plateforme_url": "https://pq.org/nouvelles/",
+   "cadre": {
+    "url": "https://pq.org/wp-content/uploads/2026/09/PQ-Cadre-financier-20260915_NUMERIQUE-3.pdf",
+    "texte": "Cadre financier publié le 15 septembre. Retour à l'équilibre prévu en 2028-2029."
+   },
+   "plateforme_libelle": "Engagements publiés un à un (pas de plateforme consolidée)"
+  },
+  {
+   "slug": "qs",
+   "nom": "Québec solidaire",
+   "chef": "Ruba Ghazal et Sol Zanetti (co-porte-parole)",
+   "plateforme_url": "https://cdn.prod.website-files.com/6a58006e8d06c0d8d7cc521d/6ab01e99dcf871bb13392026_Plateforme.pdf",
+   "cadre": {
+    "url": "https://cdn.prod.website-files.com/6a58006e8d06c0d8d7cc521d/6aa4411450f96f1574c97b58_cadrev6.pdf",
+    "texte": "Cadre financier publié le 11 septembre. Retour à l'équilibre prévu en 2029-2030."
+   },
+   "plateforme_libelle": "Plateforme officielle"
+  }
+ ],
+ "themes": [
+  {
+   "slug": "sante",
+   "nom": "Santé",
+   "question": "Comment améliorer l'accès aux soins, et avec quelle part du privé?"
+  },
+  {
+   "slug": "education",
+   "nom": "Éducation",
+   "question": "Où investir pour que plus de jeunes réussissent?"
+  },
+  {
+   "slug": "cout-vie",
+   "nom": "Coût de la vie et impôts",
+   "question": "Qui paie moins, qui paie plus, et comment c'est financé?"
+  },
+  {
+   "slug": "logement",
+   "nom": "Logement",
+   "question": "Comment construire plus de logements abordables, plus vite?"
+  },
+  {
+   "slug": "economie",
+   "nom": "Économie et emploi",
+   "question": "Comment augmenter la richesse et faire face aux tarifs américains?"
+  },
+  {
+   "slug": "finances",
+   "nom": "Finances publiques",
+   "question": "Quand revenir à l'équilibre budgétaire, et à quel prix?"
+  },
+  {
+   "slug": "energie",
+   "nom": "Énergie et environnement",
+   "question": "Comment utiliser l'électricité et atteindre les cibles climatiques?"
+  },
+  {
+   "slug": "transport",
+   "nom": "Transport et infrastructures",
+   "question": "Quels projets, et comment entretenir ce qui existe?"
+  },
+  {
+   "slug": "agriculture",
+   "nom": "Agriculture et régions",
+   "question": "Comment soutenir les agriculteurs et l'occupation du territoire?"
+  },
+  {
+   "slug": "immigration",
+   "nom": "Immigration et main-d'œuvre",
+   "question": "Combien d'immigrants accueillir, et comment les intégrer?"
+  },
+  {
+   "slug": "culture",
+   "nom": "Langue, culture et identité",
+   "question": "Comment protéger le français et soutenir la culture?"
+  },
+  {
+   "slug": "question-nationale",
+   "nom": "Question nationale",
+   "question": "Le Québec doit-il tenir un référendum sur sa souveraineté?"
+  },
+  {
+   "slug": "justice",
+   "nom": "Justice, sécurité et gouvernance",
+   "question": "Comment rendre l'État plus efficace, plus transparent et plus sûr?"
+  },
+  {
+   "slug": "famille",
+   "nom": "Famille et services sociaux",
+   "question": "Comment soutenir les familles, les aînés et les plus vulnérables?"
+  }
+ ],
+ "engagements": [
+  {
+   "parti": "caq",
+   "theme": "sante",
+   "texte": "Après 6 mois d'attente, chirurgie proposée ailleurs dans le réseau public; après 9 mois, au privé pour certaines chirurgies (d'abord orthopédie et chirurgie plastique), sans frais pour le patient; financé à même le budget de Santé Québec.",
+   "cout": null,
+   "echeance": null,
+   "source_url": "https://coalitionavenirquebec.org/fr/blog/2026/08/31/lequipe-frechette-accelerera-lacces-aux-soins-pour-reduire-les-listes-dattente/",
+   "source_nom": "CAQ, site officiel",
+   "source_date": "2026-08-31",
+   "phare": true
+  },
+  {
+   "parti": "caq",
+   "theme": "sante",
+   "texte": "Recours aux cliniques privées pour 100 000 examens d'imagerie supplémentaires par année (IRM, scans, échographies).",
+   "cout": "39,5 M$/an",
+   "echeance": null,
+   "source_url": "https://coalitionavenirquebec.org/fr/blog/2026/08/31/lequipe-frechette-accelerera-lacces-aux-soins-pour-reduire-les-listes-dattente/",
+   "source_nom": "CAQ, site officiel",
+   "source_date": "2026-08-31"
+  },
+  {
+   "parti": "caq",
+   "theme": "sante",
+   "texte": "Soutien à domicile : 1 G$ additionnel sur quatre ans, pour atteindre 400 M$ de plus par année à la fin du mandat.",
+   "cout": "1 G$ sur 4 ans",
+   "echeance": "fin du mandat",
+   "source_url": "https://coalitionavenirquebec.org/fr/blog/2026/08/29/lequipe-christine-frechette-investira-1-g-en-soutien-a-domicile/",
+   "source_nom": "CAQ, site officiel",
+   "source_date": "2026-08-29"
+  },
+  {
+   "parti": "caq",
+   "theme": "sante",
+   "texte": "Couvrir une deuxième prothèse auditive pour les personnes admissibles et permettre la vente libre d'aides auditives (pertes légères à modérées).",
+   "cout": "40 M$/an",
+   "echeance": null,
+   "source_url": "https://coalitionavenirquebec.org/fr/blog/2026/09/11/lequipe-frechette-rendra-plus-accessibles-les-protheses-auditives/",
+   "source_nom": "CAQ, site officiel",
+   "source_date": "2026-09-11"
+  },
+  {
+   "parti": "caq",
+   "theme": "sante",
+   "texte": "Ouvrir la discussion avec les médecins sur une pratique mixte public-privé avec présence minimale au public, en vue des prochaines négociations.",
+   "cout": null,
+   "echeance": "prochaines négociations",
+   "source_url": "https://coalitionavenirquebec.org/fr/blog/2026/08/31/lequipe-frechette-accelerera-lacces-aux-soins-pour-reduire-les-listes-dattente/",
+   "source_nom": "CAQ, site officiel",
+   "source_date": "2026-08-31"
+  },
+  {
+   "parti": "caq",
+   "theme": "education",
+   "texte": "Grande région de Québec : près de 800 M$ pour construire et rénover des écoles (15 nouveaux projets s'ajoutant à 6 en cours).",
+   "cout": "≈ 800 M$",
+   "echeance": null,
+   "source_url": "https://coalitionavenirquebec.org/fr/blog/2026/09/11/lequipe-frechette-presente-une-plateforme-pragmatique-et-visionnaire-pour-la-grande-region-de-quebec/",
+   "source_nom": "CAQ, site officiel",
+   "source_date": "2026-09-11",
+   "phare": true
+  },
+  {
+   "parti": "caq",
+   "theme": "education",
+   "texte": "200 M$ pour construire des gymnases dans les écoles et 150 M$ pour rénover les cours d'école (dans une enveloppe de 650 M$ incluant 300 M$ en infrastructures récréatives).",
+   "cout": "650 M$ (dont 350 M$ en milieu scolaire)",
+   "echeance": null,
+   "source_url": "https://coalitionavenirquebec.org/fr/blog/2026/09/04/lequipe-christine-frechette-augmentera-linvestissement-dans-les-infrastructures-recreatives-sportives-et-de-plein-air/",
+   "source_nom": "CAQ, site officiel",
+   "source_date": "2026-09-04"
+  },
+  {
+   "parti": "caq",
+   "theme": "education",
+   "texte": "S'oppose à la tenue d'états généraux sur l'éducation; ne forcerait plus les municipalités à céder des terrains pour construire des écoles.",
+   "cout": null,
+   "echeance": null,
+   "source_url": "https://ici.radio-canada.ca/info/2026/elections-quebec/comparateur-programmes-plateformes-partis/",
+   "source_nom": "Radio-Canada",
+   "source_date": "2026-09-22 (mise à jour du comparateur)"
+  },
+  {
+   "parti": "caq",
+   "theme": "cout-vie",
+   "texte": "Aucune réduction d'impôt des particuliers tant que l'équilibre budgétaire n'est pas atteint.",
+   "cout": null,
+   "echeance": "équilibre prévu 2029-2030",
+   "source_url": "https://ici.radio-canada.ca/info/2026/elections-quebec/comparateur-programmes-plateformes-partis/",
+   "source_nom": "Radio-Canada",
+   "source_date": "2026-09-22 (mise à jour du comparateur)",
+   "phare": true
+  },
+  {
+   "parti": "caq",
+   "theme": "cout-vie",
+   "texte": "Crédit d'impôt pour soutien aux aînés bonifié de 200 $ (maximum de 2 000 $ à 2 200 $, 70 ans et plus à revenu modique).",
+   "cout": "≈ 180-190 M$/an (CFFP, tabl. 6)",
+   "echeance": "dès l'année d'imposition 2026",
+   "source_url": "https://coalitionavenirquebec.org/fr/blog/2026/09/03/lequipe-christine-frechette-aidera-les-aines-a-mieux-faire-face-au-cout-de-la-vie/",
+   "source_nom": "CAQ, site officiel",
+   "source_date": "2026-09-03"
+  },
+  {
+   "parti": "caq",
+   "theme": "cout-vie",
+   "texte": "Travailleurs de 65 ans et plus : jusqu'à 35 000 $ de revenu de travail protégés de l'impôt s'ils occupent un emploi ciblé dans un service essentiel en pénurie (avantage jusqu'à 6 650 $/an).",
+   "cout": "80 M$/an (CFFP, tabl. 5)",
+   "echeance": null,
+   "source_url": "https://coalitionavenirquebec.org/fr/blog/2026/09/03/lequipe-christine-frechette-aidera-les-aines-a-mieux-faire-face-au-cout-de-la-vie/",
+   "source_nom": "CAQ, site officiel",
+   "source_date": "2026-09-03"
+  },
+  {
+   "parti": "caq",
+   "theme": "cout-vie",
+   "texte": "Renouveler la loi plafonnant à l'inflation ou à 3 % les hausses de tarifs de services publics (loi échéant le 31 déc. 2026); limiter à 3 % les hausses de tarifs résidentiels d'Hydro-Québec.",
+   "cout": null,
+   "echeance": "avant/après le 31 déc. 2026",
+   "source_url": "https://ici.radio-canada.ca/info/2026/elections-quebec/comparateur-programmes-plateformes-partis/",
+   "source_nom": "Radio-Canada",
+   "source_date": "2026-09-22 (mise à jour du comparateur)"
+  },
+  {
+   "parti": "caq",
+   "theme": "logement",
+   "texte": "Crédit d'impôt remboursable pour l'achat d'une première habitation porté de 1 400 $ à 7 000 $ (neuf et existant).",
+   "cout": "150 M$/an (CFFP, tabl. 5)",
+   "echeance": null,
+   "source_url": "https://coalitionavenirquebec.org/fr/blog/2026/09/07/lequipe-frechette-facilitera-lacces-a-la-propriete-pour-les-premiers-acheteurs/",
+   "source_nom": "CAQ, site officiel",
+   "source_date": "2026-09-07",
+   "phare": true
+  },
+  {
+   "parti": "caq",
+   "theme": "logement",
+   "texte": "Revoir le Code selon le risque réel, réduire certains délais de moitié, soustraire à la loi R-20 les rénovations légères dans les immeubles de moins de 8 logements.",
+   "cout": null,
+   "echeance": null,
+   "source_url": "https://coalitionavenirquebec.org/fr/blog/2026/09/04/construire-plus-plus-vite-et-a-moindre-cout-le-plan-de-lequipe-christine-frechette/",
+   "source_nom": "CAQ, site officiel",
+   "source_date": "2026-09-04"
+  },
+  {
+   "parti": "caq",
+   "theme": "logement",
+   "texte": "Financer 2 000 logements abordables pour aînés autonomes; crédit d'impôt de 7 500 $ pour adapter une résidence afin d'accueillir un proche aîné.",
+   "cout": "225 M$ (logements) + ≈ 4 M$/an (crédit)",
+   "echeance": null,
+   "source_url": "https://coalitionavenirquebec.org/fr/blog/2026/08/28/lequipe-christine-frechette-propose-des-solutions-pour-mieux-loger-nos-aines/",
+   "source_nom": "CAQ, site officiel",
+   "source_date": "2026-08-28"
+  },
+  {
+   "parti": "caq",
+   "theme": "logement",
+   "texte": "Itinérance : 100 M$ de plus en aide au logement (1 000 PSL-Prévention et 1 000 PSL avec accompagnement); fonds d'urgence de 250 M$ pour les municipalités; plan national d'action (forum au printemps 2027).",
+   "cout": "100 M$ + 250 M$",
+   "echeance": "plan : printemps 2027",
+   "source_url": "https://coalitionavenirquebec.org/fr/blog/2026/09/18/lequipe-frechette-sengage-a-mieux-accompagner-les-municipalites-en-matiere-ditinerance-et-dinfrastructures/",
+   "source_nom": "CAQ, site officiel",
+   "source_date": "2026-09-18"
+  },
+  {
+   "parti": "caq",
+   "theme": "economie",
+   "texte": "Stratégie maritime Horizon Saint-Laurent 2027-2032 : corridor Québec–Europe–Afrique du Nord, envoyé spécial, 300 M$ en infrastructures portuaires (objectif de mobiliser près de 2 G$ privés et fédéraux), 90 M$ pour la construction navale.",
+   "cout": "390 M$",
+   "echeance": "2027-2032",
+   "source_url": "https://coalitionavenirquebec.org/fr/blog/2026/09/20/faire-du-fleuve-un-moteur-economique-pour-le-quebec-lequipe-frechette-devoile-horizon-saint-laurent/",
+   "source_nom": "CAQ, site officiel",
+   "source_date": "2026-09-20",
+   "phare": true
+  },
+  {
+   "parti": "caq",
+   "theme": "economie",
+   "texte": "Tarifs américains : au moins 15 % de matériaux québécois ou canadiens dans certains contrats (MTQ, Santé Québec, SQI); groupe tactique d'Investissement Québec International pour remplacer des fournisseurs américains; plan d'achat québécois avec cibles publiques dans chaque organisme public.",
+   "cout": null,
+   "echeance": null,
+   "source_url": "https://ici.radio-canada.ca/info/2026/elections-quebec/comparateur-programmes-plateformes-partis/",
+   "source_nom": "Radio-Canada",
+   "source_date": "2026-09-22 (mise à jour du comparateur)"
+  },
+  {
+   "parti": "caq",
+   "theme": "economie",
+   "texte": "400 M$ sur quatre ans pour bonifier le Programme de formation de courte durée (≈ 25 000 personnes); modifier l'application de la loi du 1 %.",
+   "cout": "400 M$ sur 4 ans",
+   "echeance": "4 ans",
+   "source_url": "https://coalitionavenirquebec.org/fr/blog/2026/09/10/lequipe-frechette-veut-mieux-accompagner-les-travailleurs-face-aux-transformations-economiques/",
+   "source_nom": "CAQ, site officiel",
+   "source_date": "2026-09-10"
+  },
+  {
+   "parti": "caq",
+   "theme": "finances",
+   "texte": "Retour à l'équilibre budgétaire en 2029-2030 (trajectoire du Rapport préélectoral maintenue); engagements de 9,2 G$ (9,7 G$ avec service de la dette), dont 8 G$ de « mesures prévues et non annoncées » au 30 août.",
+   "cout": "9,2 G$ sur 5 ans",
+   "echeance": "2029-2030",
+   "source_url": "https://coalitionavenirquebec.org/wp-content/uploads/2026/08/cadre-financier-v8-30-aout.pdf",
+   "source_nom": "CAQ, site officiel",
+   "source_date": "2026-08-30",
+   "phare": true
+  },
+  {
+   "parti": "caq",
+   "theme": "finances",
+   "texte": "Abolir plus de 2 900 postes additionnels d'ici le 31 mars 2029 par départs volontaires (55 ans et plus), hors santé, éducation et enseignement supérieur; règle « une exigence ajoutée, deux retirées ».",
+   "cout": "économie nette 507 M$ sur 5 ans",
+   "echeance": "31 mars 2029",
+   "source_url": "https://coalitionavenirquebec.org/fr/blog/2026/09/02/lequipe-christine-frechette-poursuivra-la-modernisation-de-letat/",
+   "source_nom": "CAQ, site officiel",
+   "source_date": "2026-09-02"
+  },
+  {
+   "parti": "caq",
+   "theme": "finances",
+   "texte": "Versements au Fonds des générations maintenus; dette nette de 36,4 % du PIB en 2030-2031.",
+   "cout": null,
+   "echeance": "2030-2031",
+   "source_url": "https://coalitionavenirquebec.org/wp-content/uploads/2026/08/cadre-financier-v8-30-aout.pdf",
+   "source_nom": "CAQ, site officiel",
+   "source_date": "2026-08-30"
+  },
+  {
+   "parti": "caq",
+   "theme": "energie",
+   "texte": "Réaliser le plan d'investissement de 200 G$ d'Hydro-Québec; conclure l'entente de Churchill Falls (accès à 10 000 MW jusqu'en 2077, 55 G$ d'investissements d'Hydro-Québec).",
+   "cout": "hors cadre financier",
+   "echeance": "jusqu'en 2077 (entente)",
+   "source_url": "https://coalitionavenirquebec.org/fr/blog/2026/09/21/lequipe-frechette-mise-sur-les-forces-du-quebec-pour-batir-une-nation-plus-autonome-et-plus-forte/",
+   "source_nom": "CAQ, site officiel",
+   "source_date": "2026-09-21",
+   "phare": true
+  },
+  {
+   "parti": "caq",
+   "theme": "energie",
+   "texte": "Réduire les GES de 37,5 % d'ici 2030 (vs 1990) et carboneutralité en 2050; ouverture à relancer le gaz de schiste sous trois conditions.",
+   "cout": null,
+   "echeance": "2030 / 2050",
+   "source_url": "https://ici.radio-canada.ca/info/2026/elections-quebec/comparateur-programmes-plateformes-partis/",
+   "source_nom": "Radio-Canada",
+   "source_date": "2026-09-22 (mise à jour du comparateur)"
+  },
+  {
+   "parti": "caq",
+   "theme": "transport",
+   "texte": "PQI porté à 180 G$, dont 75 % au maintien des actifs.",
+   "cout": "+6,2 G$ sur 2026-2031 (cadre)",
+   "echeance": "10 ans",
+   "source_url": "https://coalitionavenirquebec.org/wp-content/uploads/2026/08/cadre-financier-v8-30-aout.pdf",
+   "source_nom": "CAQ, site officiel",
+   "source_date": "2026-08-30",
+   "phare": true
+  },
+  {
+   "parti": "caq",
+   "theme": "transport",
+   "texte": "Troisième lien : choisir l'une des 21 propositions de consortiums et lancer le projet au prochain mandat (autoroutier, à l'est, avec le privé); terminer le tramway (TramCité).",
+   "cout": null,
+   "echeance": "prochain mandat",
+   "source_url": "https://ici.radio-canada.ca/info/2026/elections-quebec/comparateur-programmes-plateformes-partis/",
+   "source_nom": "Radio-Canada",
+   "source_date": "2026-09-22 (mise à jour du comparateur)"
+  },
+  {
+   "parti": "caq",
+   "theme": "transport",
+   "texte": "Infrastructures municipales : fusion des programmes en un transfert annuel unique et 1 G$ supplémentaire, priorité à l'eau.",
+   "cout": "1 G$",
+   "echeance": "à compter de 2027",
+   "source_url": "https://coalitionavenirquebec.org/fr/blog/2026/09/18/lequipe-frechette-sengage-a-mieux-accompagner-les-municipalites-en-matiere-ditinerance-et-dinfrastructures/",
+   "source_nom": "CAQ, site officiel",
+   "source_date": "2026-09-18"
+  },
+  {
+   "parti": "caq",
+   "theme": "agriculture",
+   "texte": "Doubler l'enveloppe du partage des redevances sur les ressources naturelles pour les régions ressources (38 M$ à 76 M$/an).",
+   "cout": "38 M$/an",
+   "echeance": "2027",
+   "source_url": "https://coalitionavenirquebec.org/fr/blog/2026/08/24/les-regions-ressources-au-coeur-dun-engagement-important-pour-lequipe-christine-frechette/",
+   "source_nom": "CAQ, site officiel",
+   "source_date": "2026-08-24",
+   "phare": true
+  },
+  {
+   "parti": "caq",
+   "theme": "agriculture",
+   "texte": "Plan agricole de 56 M$ : FIRA de 50 M$ à 100 M$; maintien du remboursement de la bourse du carbone aux producteurs; défense intégrale de la gestion de l'offre.",
+   "cout": "56 M$",
+   "echeance": null,
+   "source_url": "https://coalitionavenirquebec.org/fr/blog/2026/09/09/lequipe-frechette-veut-faire-grandir-les-fermes-et-la-releve-agricole/",
+   "source_nom": "CAQ, site officiel",
+   "source_date": "2026-09-09"
+  },
+  {
+   "parti": "caq",
+   "theme": "agriculture",
+   "texte": "Pacte forestier : projets pilotes régionaux, Chantier national, réforme du régime forestier; 144 M$ additionnels pour moderniser l'industrie.",
+   "cout": "144 M$",
+   "echeance": "appel à projets après l'élection",
+   "source_url": "https://coalitionavenirquebec.org/fr/blog/2026/09/08/lequipe-frechette-initiera-un-pacte-forestier-avec-les-acteurs-de-la-foret/",
+   "source_nom": "CAQ, site officiel",
+   "source_date": "2026-09-08"
+  },
+  {
+   "parti": "caq",
+   "theme": "immigration",
+   "texte": "Maintenir jusqu'en 2029 le seuil d'immigration permanente à 45 000 par an.",
+   "cout": null,
+   "echeance": "2029",
+   "source_url": "https://ici.radio-canada.ca/info/2026/elections-quebec/comparateur-programmes-plateformes-partis/",
+   "source_nom": "Radio-Canada",
+   "source_date": "2026-09-22 (mise à jour du comparateur)",
+   "phare": true
+  },
+  {
+   "parti": "caq",
+   "theme": "immigration",
+   "texte": "Utiliser le PSTQ pour arrimer la sélection aux compétences recherchées (ex. défense).",
+   "cout": null,
+   "echeance": null,
+   "source_url": "https://coalitionavenirquebec.org/fr/blog/2026/09/10/lequipe-frechette-veut-mieux-accompagner-les-travailleurs-face-aux-transformations-economiques/",
+   "source_nom": "CAQ, site officiel",
+   "source_date": "2026-09-10"
+  },
+  {
+   "parti": "caq",
+   "theme": "culture",
+   "texte": "Dans les 100 premiers jours : projet de loi renouvelant la disposition de souveraineté parlementaire de la loi 96; loi 101 élargie à la formation professionnelle et à la formation générale des adultes.",
+   "cout": null,
+   "echeance": "100 premiers jours",
+   "source_url": "https://coalitionavenirquebec.org/fr/blog/2026/08/29/lequipe-christine-frechette-ne-reculera-jamais-devant-la-protection-et-la-valorisation-du-francais-au-quebec/",
+   "source_nom": "CAQ, site officiel",
+   "source_date": "2026-08-29",
+   "phare": true
+  },
+  {
+   "parti": "caq",
+   "theme": "culture",
+   "texte": "Près de 610 M$ dans la Stratégie québécoise de l'audiovisuel 2026-2031.",
+   "cout": "≈ 610 M$",
+   "echeance": "2026-2031",
+   "source_url": "https://ici.radio-canada.ca/info/2026/elections-quebec/comparateur-programmes-plateformes-partis/",
+   "source_nom": "Radio-Canada",
+   "source_date": "2026-09-22 (mise à jour du comparateur)"
+  },
+  {
+   "parti": "caq",
+   "theme": "question-nationale",
+   "texte": "Adopter une constitution québécoise (incluant la doctrine Gérin-Lajoie) et modifier la section québécoise de la Loi constitutionnelle de 1867 (laïcité, tradition civiliste, modèle d'intégration de la « loi 84 »).",
+   "cout": null,
+   "echeance": null,
+   "source_url": "https://ici.radio-canada.ca/info/2026/elections-quebec/comparateur-programmes-plateformes-partis/",
+   "source_nom": "Radio-Canada",
+   "source_date": "2026-09-22 (mise à jour du comparateur)",
+   "phare": true
+  },
+  {
+   "parti": "caq",
+   "theme": "justice",
+   "texte": "300 policiers (SQ et corps municipaux), 50 procureurs au DPCP, deux pôles contre la cybercriminalité (Montréal, Québec), équipes mixtes police-santé en région.",
+   "cout": "176,4 M$ (policiers) + 14 M$/4 ans + 13,3 M$",
+   "echeance": null,
+   "source_url": "https://coalitionavenirquebec.org/fr/blog/2026/09/12/lequipe-frechette-protegera-mieux-les-quebecois-face-a-la-nouvelle-criminalite/",
+   "source_nom": "CAQ, site officiel",
+   "source_date": "2026-09-12",
+   "phare": true
+  },
+  {
+   "parti": "caq",
+   "theme": "famille",
+   "texte": "RQAP : +2 semaines de congé de paternité, meilleures prestations en deuil périnatal, transfert à un grand-parent ou proche.",
+   "cout": "financé par le Fonds d'assurance parentale",
+   "echeance": null,
+   "source_url": "https://coalitionavenirquebec.org/fr/blog/2026/08/28/plus-de-temps-et-plus-de-flexibilite-pour-les-familles-lequipe-frechette-bonifiera-le-rqap/",
+   "source_nom": "CAQ, site officiel",
+   "source_date": "2026-08-28",
+   "phare": true
+  },
+  {
+   "parti": "caq",
+   "theme": "famille",
+   "texte": "25 000 places à tarif réduit d'ici 2030 (création et conversion; 15 000 déjà annoncées selon RC); prime de 10 000 $ aux nouvelles éducatrices diplômées (2 ans en réseau subventionné).",
+   "cout": null,
+   "echeance": "2030",
+   "source_url": "https://coalitionavenirquebec.org/fr/blog/2026/09/05/lequipe-frechette-ajoutera-encore-plus-de-places-en-garderie/",
+   "source_nom": "CAQ, site officiel",
+   "source_date": "2026-09-05"
+  },
+  {
+   "parti": "caq",
+   "theme": "famille",
+   "texte": "1 000 $ dans le REEE de chaque enfant né à compter de l'automne 2027; supplément rentrée scolaire jusqu'à 250 $/enfant; nouveau crédit frais de garde en milieu scolaire (jusqu'à 1 309 $/enfant).",
+   "cout": "218,8 M$/4 ans (REEE); 115 M$/an et 110 M$/an (CFFP)",
+   "echeance": "automne 2027",
+   "source_url": "https://coalitionavenirquebec.org/fr/blog/2026/09/07/lequipe-frechette-allegera-les-depenses-scolaires-des-familles/",
+   "source_nom": "CAQ, site officiel",
+   "source_date": "2026-09-07"
+  },
+  {
+   "parti": "caq",
+   "theme": "famille",
+   "texte": "Supplément pour enfant handicapé +50 $/mois (291 $) et SEHNSE +100 $/mois; 500 places d'hébergement pour aînés avec partenaires privés (nouveau modèle).",
+   "cout": "30 M$/an; 200 M$",
+   "echeance": null,
+   "source_url": "https://coalitionavenirquebec.org/fr/blog/2026/08/31/lequipe-christine-frechette-soutiendra-davantage-les-familles-avec-des-enfants-en-situation-de-handicap/",
+   "source_nom": "CAQ, site officiel",
+   "source_date": "2026-08-31"
+  },
+  {
+   "parti": "caq",
+   "theme": "famille",
+   "texte": "Violence conjugale : une ressource de plus dans chacune des 164 maisons d'hébergement et 8 nouvelles maisons de première étape.",
+   "cout": "53,4 M$ sur 4 ans",
+   "echeance": "4 ans",
+   "source_url": "https://coalitionavenirquebec.org/fr/blog/2026/08/30/lequipe-christine-frechette-renforcera-les-services-offerts-aux-femmes-dans-toutes-les-regions-du-quebec/",
+   "source_nom": "CAQ, site officiel",
+   "source_date": "2026-08-30"
+  },
+  {
+   "parti": "plq",
+   "theme": "sante",
+   "texte": "Plateforme de télésanté universelle sans rendez-vous (financée par le PQI-RI selon le cadre).",
+   "cout": null,
+   "echeance": null,
+   "source_url": "https://plq.org/engagements/",
+   "source_nom": "PLQ, site officiel",
+   "source_date": "consulté le 2026-09-22 (page non datée)",
+   "phare": true
+  },
+  {
+   "parti": "plq",
+   "theme": "sante",
+   "texte": "Soutien à domicile bonifié de 700 M$; 80 M$ sur quatre ans pour l'adaptation des domiciles; PEFSAD élargi aux services à la personne.",
+   "cout": "700 M$ + 80 M$/4 ans",
+   "echeance": "4 ans",
+   "source_url": "https://plq.org/engagements/",
+   "source_nom": "PLQ, site officiel",
+   "source_date": "consulté le 2026-09-22 (page non datée)"
+  },
+  {
+   "parti": "plq",
+   "theme": "sante",
+   "texte": "Porter progressivement la prévention à 5 % des dépenses de santé; conserver Santé Québec; 50 M$/an dans les CLSC (point d'ancrage).",
+   "cout": "50 M$/an (CLSC)",
+   "echeance": "d'ici la fin de la prochaine décennie (5 %)",
+   "source_url": "https://ici.radio-canada.ca/info/2026/elections-quebec/comparateur-programmes-plateformes-partis/",
+   "source_nom": "Radio-Canada",
+   "source_date": "2026-09-22 (mise à jour du comparateur)"
+  },
+  {
+   "parti": "plq",
+   "theme": "sante",
+   "texte": "Parité salariale avec l'Ontario dans le réseau de la santé en Outaouais.",
+   "cout": "90-98 M$/an (CFFP, tabl. 6)",
+   "echeance": "à compter de 2027-2028",
+   "source_url": "https://plq.org/PLQ_Cadre_financier.pdf",
+   "source_nom": "PLQ, site officiel",
+   "source_date": "2026-09-13"
+  },
+  {
+   "parti": "plq",
+   "theme": "education",
+   "texte": "Tenir des états généraux sur l'éducation.",
+   "cout": null,
+   "echeance": null,
+   "source_url": "https://plq.org/engagements/",
+   "source_nom": "PLQ, site officiel",
+   "source_date": "consulté le 2026-09-22 (page non datée)",
+   "phare": true
+  },
+  {
+   "parti": "plq",
+   "theme": "education",
+   "texte": "1 000 ressources spécialisées dans les écoles publiques (400 professionnels, 600 techniciens en éducation spécialisée).",
+   "cout": "50-100 M$/an (CFFP, tabl. 6)",
+   "echeance": "à compter de 2027-2028",
+   "source_url": "https://plq.org/engagements/",
+   "source_nom": "PLQ, site officiel",
+   "source_date": "consulté le 2026-09-22 (page non datée)"
+  },
+  {
+   "parti": "plq",
+   "theme": "education",
+   "texte": "Retirer les dispositions réduisant les places au collégial anglophone et maintenir la répartition 85 % / 15 %; compenser les stages dans le réseau public.",
+   "cout": "stages : 375 M$/an dès 2028-2029 (CFFP)",
+   "echeance": null,
+   "source_url": "https://ici.radio-canada.ca/info/2026/elections-quebec/comparateur-programmes-plateformes-partis/",
+   "source_nom": "Radio-Canada",
+   "source_date": "2026-09-22 (mise à jour du comparateur)"
+  },
+  {
+   "parti": "plq",
+   "theme": "cout-vie",
+   "texte": "Annuler les mesures de détaxation de la CAQ (remboursement de la taxe de bienvenue et congé de TVQ sur certains aliments) pour financer d'autres mesures.",
+   "cout": "+243 à 250 M$/an de revenus (CFFP)",
+   "echeance": "2027-2028",
+   "source_url": "https://plq.org/PLQ_Cadre_financier.pdf",
+   "source_nom": "PLQ, site officiel",
+   "source_date": "2026-09-13",
+   "phare": true
+  },
+  {
+   "parti": "plq",
+   "theme": "cout-vie",
+   "texte": "Réduire graduellement le taux d'imposition des PME de 11,5 % à 10 %.",
+   "cout": "250 M$/an dès 2028-2029 (CFFP)",
+   "echeance": "graduel",
+   "source_url": "https://plq.org/engagements/",
+   "source_nom": "PLQ, site officiel",
+   "source_date": "consulté le 2026-09-22 (page non datée)"
+  },
+  {
+   "parti": "plq",
+   "theme": "cout-vie",
+   "texte": "Mettre fin à la publicité gouvernementale servant à promouvoir le gouvernement.",
+   "cout": null,
+   "echeance": null,
+   "source_url": "https://plq.org/engagements/",
+   "source_nom": "PLQ, site officiel",
+   "source_date": "consulté le 2026-09-22 (page non datée)"
+  },
+  {
+   "parti": "plq",
+   "theme": "logement",
+   "texte": "Construire, à terme, 100 000 logements par an; cible de 50 % des logements financés par la SHQ en préfabriqué; prêts sans intérêt d'Investissement Québec au préfabriqué.",
+   "cout": null,
+   "echeance": "« à terme »",
+   "source_url": "https://plq.org/engagements/",
+   "source_nom": "PLQ, site officiel",
+   "source_date": "consulté le 2026-09-22 (page non datée)",
+   "phare": true
+  },
+  {
+   "parti": "plq",
+   "theme": "logement",
+   "texte": "40 000 unités abordables (construction et acquisition); part hors marché à 20 % en 2050.",
+   "cout": null,
+   "echeance": "2050 (20 %)",
+   "source_url": "https://plq.org/engagements/",
+   "source_nom": "PLQ, site officiel",
+   "source_date": "consulté le 2026-09-22 (page non datée)"
+  },
+  {
+   "parti": "plq",
+   "theme": "logement",
+   "texte": "Remboursement de 36 % de la TVQ sur un logement neuf (≤ 500 000 $), jusqu'à 10 000 $ (plex : jusqu'à 30 000 $); report de l'impôt sur le gain en capital réinvesti dans du logement neuf (jusqu'à 1 M$).",
+   "cout": "100-125 M$/an (CFFP)",
+   "echeance": null,
+   "source_url": "https://plq.org/engagements/",
+   "source_nom": "PLQ, site officiel",
+   "source_date": "consulté le 2026-09-22 (page non datée)"
+  },
+  {
+   "parti": "plq",
+   "theme": "logement",
+   "texte": "Itinérance : 60 M$ de plus par année; sommet national; plafond des hausses de loyer et de services en RPA, justifiées devant le TAL.",
+   "cout": "60 M$/an",
+   "echeance": null,
+   "source_url": "https://plq.org/engagements/",
+   "source_nom": "PLQ, site officiel",
+   "source_date": "consulté le 2026-09-22 (page non datée)"
+  },
+  {
+   "parti": "plq",
+   "theme": "economie",
+   "texte": "Tarifs : congé temporaire de cotisation au FSS; conversion de 25 % de l'aide aux PME en aide non remboursable; réduire d'au moins 15 % la part des exportations vers les États-Unis.",
+   "cout": "FSS : 300 M$/an en 2026-27 et 2027-28 (CFFP)",
+   "echeance": "2026-2028 (congé FSS)",
+   "source_url": "https://plq.org/engagements/",
+   "source_nom": "PLQ, site officiel",
+   "source_date": "consulté le 2026-09-22 (page non datée)",
+   "phare": true
+  },
+  {
+   "parti": "plq",
+   "theme": "economie",
+   "texte": "Exemption de base au FSS; marge préférentielle de 15 % aux appels d'offres; paiement des fournisseurs en 30 jours; manufacturier de 12 % à 15 % du PIB d'ici 2035.",
+   "cout": "FSS : 400-800 M$/an en 2029-2031 (CFFP)",
+   "echeance": "2035 (manufacturier)",
+   "source_url": "https://plq.org/engagements/",
+   "source_nom": "PLQ, site officiel",
+   "source_date": "consulté le 2026-09-22 (page non datée)"
+  },
+  {
+   "parti": "plq",
+   "theme": "economie",
+   "texte": "Recentrer les crédits d'impôt aux entreprises (dont CRIC et C3i) : réduction de 13 % des 4,6 G$ d'aide fiscale à terme.",
+   "cout": "+50 à 600 M$/an de revenus (CFFP)",
+   "echeance": "progressif",
+   "source_url": "https://plq.org/PLQ_Cadre_financier.pdf",
+   "source_nom": "PLQ, site officiel",
+   "source_date": "2026-09-13"
+  },
+  {
+   "parti": "plq",
+   "theme": "finances",
+   "texte": "Équilibre en 2029-2030; élimination complète de l'écart à résorber de 5,85 G$; engagements de 11,9 G$ (incluant PQI et service de la dette); provisions ramenées à 4 G$ sur 5 ans.",
+   "cout": "11,9 G$",
+   "echeance": "2029-2030",
+   "source_url": "https://plq.org/PLQ_Cadre_financier.pdf",
+   "source_nom": "PLQ, site officiel",
+   "source_date": "2026-09-13",
+   "phare": true
+  },
+  {
+   "parti": "plq",
+   "theme": "finances",
+   "texte": "Réduire d'environ 12 000 ETC sur cinq ans (gestion et administration), par attrition et départs volontaires, jamais par coupes paramétriques.",
+   "cout": "« Modernisation et efficacité de l'État » : jusqu'à 1,7 G$/an en 2030-31 (CFFP)",
+   "echeance": "5 ans",
+   "source_url": "https://plq.org/engagements/",
+   "source_nom": "PLQ, site officiel",
+   "source_date": "consulté le 2026-09-22 (page non datée)"
+  },
+  {
+   "parti": "plq",
+   "theme": "finances",
+   "texte": "Limiter les dépenses de portefeuilles à 1 % en 2028-2029 et 2029-2030 tout en maintenant la santé à ≈ 5 % et l'éducation à plus de 3 %; dette nette de 36,7 % du PIB en 2030-2031.",
+   "cout": null,
+   "echeance": "2028-2030",
+   "source_url": "https://ici.radio-canada.ca/info/2026/elections-quebec/comparateur-programmes-plateformes-partis/",
+   "source_nom": "Radio-Canada",
+   "source_date": "2026-09-22 (mise à jour du comparateur)"
+  },
+  {
+   "parti": "plq",
+   "theme": "energie",
+   "texte": "Appuie le marché du carbone en vigueur; aucune annonce de campagne sur le sujet (selon Radio-Canada). Engagement spécifique sur Hydro-Québec : non publié au 22 sept. 2026.",
+   "cout": null,
+   "echeance": null,
+   "source_url": "https://ici.radio-canada.ca/info/2026/elections-quebec/comparateur-programmes-plateformes-partis/",
+   "source_nom": "Radio-Canada",
+   "source_date": "2026-09-22 (mise à jour du comparateur)",
+   "phare": true
+  },
+  {
+   "parti": "plq",
+   "theme": "transport",
+   "texte": "PQI rehaussé à 195 G$ sur 10 ans à compter de 2027 (8,1 G$ dans le premier mandat); obligation légale de 75 % au maintien des actifs; horizon de planification du PQI à 25 ans.",
+   "cout": "+8,1 G$ sur 2027-2031",
+   "echeance": "10 ans",
+   "source_url": "https://plq.org/PLQ_Cadre_financier.pdf",
+   "source_nom": "PLQ, site officiel",
+   "source_date": "2026-09-13",
+   "phare": true
+  },
+  {
+   "parti": "plq",
+   "theme": "transport",
+   "texte": "Part des infrastructures municipales dans le PQI de 4,4 % à 8 %; financement pérenne du transport collectif; partenaire de Montréal pour le métro.",
+   "cout": null,
+   "echeance": "premier mandat (8 %)",
+   "source_url": "https://plq.org/engagements/",
+   "source_nom": "PLQ, site officiel",
+   "source_date": "consulté le 2026-09-22 (page non datée)"
+  },
+  {
+   "parti": "plq",
+   "theme": "transport",
+   "texte": "Troisième lien : poursuivre les études, sans échéancier; études des prochaines phases du tramway; Laurentienne en boulevard urbain; A-50 à quatre voies en 10 ans.",
+   "cout": null,
+   "echeance": "A-50 : 10 ans",
+   "source_url": "https://ici.radio-canada.ca/info/2026/elections-quebec/comparateur-programmes-plateformes-partis/",
+   "source_nom": "Radio-Canada",
+   "source_date": "2026-09-22 (mise à jour du comparateur)"
+  },
+  {
+   "parti": "plq",
+   "theme": "agriculture",
+   "texte": "Redistribuer 560 M$ du Fonds vert aux agriculteurs sur quatre ans; réformer la Financière agricole; pérenniser les travailleurs de rang.",
+   "cout": "560 M$/4 ans",
+   "echeance": "4 ans",
+   "source_url": "https://plq.org/engagements/",
+   "source_nom": "PLQ, site officiel",
+   "source_date": "consulté le 2026-09-22 (page non datée)",
+   "phare": true
+  },
+  {
+   "parti": "plq",
+   "theme": "agriculture",
+   "texte": "Projet de loi sur le régime forestier dès la première année; fonds pour les collectivités minières; compléter la couverture cellulaire.",
+   "cout": null,
+   "echeance": "1re année (forêt)",
+   "source_url": "https://plq.org/engagements/",
+   "source_nom": "PLQ, site officiel",
+   "source_date": "consulté le 2026-09-22 (page non datée)"
+  },
+  {
+   "parti": "plq",
+   "theme": "immigration",
+   "texte": "Miser de nouveau sur l'immigration pour la main-d'œuvre; seuil permanent non précisé, « entre 45 000 et 70 000 » selon Radio-Canada (Wikipédia indique 70 000 : à vérifier). Impliquer les régions dans la définition de leur capacité d'accueil.",
+   "cout": null,
+   "echeance": null,
+   "source_url": "https://ici.radio-canada.ca/info/2026/elections-quebec/comparateur-programmes-plateformes-partis/",
+   "source_nom": "Radio-Canada",
+   "source_date": "2026-09-22 (mise à jour du comparateur)",
+   "phare": true
+  },
+  {
+   "parti": "plq",
+   "theme": "immigration",
+   "texte": "Francisation : +138,41 M$ sur 4 ans, délais ramenés à six semaines; délai porté de six mois à deux ans avant la communication exclusive en français avec les nouveaux arrivants.",
+   "cout": "138,41 M$/4 ans",
+   "echeance": "4 ans",
+   "source_url": "https://plq.org/engagements/",
+   "source_nom": "PLQ, site officiel",
+   "source_date": "consulté le 2026-09-22 (page non datée)"
+  },
+  {
+   "parti": "plq",
+   "theme": "culture",
+   "texte": "Plan langue française de 380 M$ sur quatre ans (livre jeunesse à chaque élève du primaire, stratégie de lecture inscrite à la Charte, zones où le français est fragilisé).",
+   "cout": "380 M$/4 ans",
+   "echeance": "4 ans",
+   "source_url": "https://plq.org/engagements/",
+   "source_nom": "PLQ, site officiel",
+   "source_date": "consulté le 2026-09-22 (page non datée)",
+   "phare": true
+  },
+  {
+   "parti": "plq",
+   "theme": "culture",
+   "texte": "Ne pas renouveler en 2029 la disposition de dérogation protégeant la Loi sur la laïcité de l'État.",
+   "cout": null,
+   "echeance": "2029",
+   "source_url": "https://ici.radio-canada.ca/info/2026/elections-quebec/comparateur-programmes-plateformes-partis/",
+   "source_nom": "Radio-Canada",
+   "source_date": "2026-09-22 (mise à jour du comparateur)"
+  },
+  {
+   "parti": "plq",
+   "theme": "question-nationale",
+   "texte": "S'oppose à la tenue d'un référendum; « reprendre la place du Québec à la table canadienne », ententes avec l'Ontario.",
+   "cout": null,
+   "echeance": null,
+   "source_url": "https://ici.radio-canada.ca/info/2026/elections-quebec/comparateur-programmes-plateformes-partis/",
+   "source_nom": "Radio-Canada",
+   "source_date": "2026-09-22 (mise à jour du comparateur)",
+   "phare": true
+  },
+  {
+   "parti": "plq",
+   "theme": "justice",
+   "texte": "Rendre publics les avis du MCN sur les projets numériques lancés sous la CAQ et, à l'avenir, pour tout projet de plus de 25 M$; contrats évitant la captivité envers un fournisseur (ex. SIFA).",
+   "cout": null,
+   "echeance": null,
+   "source_url": "https://plq.org/engagements/",
+   "source_nom": "PLQ, site officiel",
+   "source_date": "consulté le 2026-09-22 (page non datée)",
+   "phare": true
+  },
+  {
+   "parti": "plq",
+   "theme": "justice",
+   "texte": "Encadrer le jeu en ligne (accréditation par la RACJ, interdiction de publicité) et les marchés prédictifs (AMF et RACJ).",
+   "cout": "+320 à 350 M$/an de revenus (CFFP)",
+   "echeance": "2027-2028",
+   "source_url": "https://plq.org/engagements/",
+   "source_nom": "PLQ, site officiel",
+   "source_date": "consulté le 2026-09-22 (page non datée)"
+  },
+  {
+   "parti": "plq",
+   "theme": "famille",
+   "texte": "RQAP : 2 semaines partageables de plus (ou versement équivalent), 4 semaines aux pères en deuil périnatal.",
+   "cout": null,
+   "echeance": null,
+   "source_url": "https://plq.org/engagements/",
+   "source_nom": "PLQ, site officiel",
+   "source_date": "consulté le 2026-09-22 (page non datée)",
+   "phare": true
+  },
+  {
+   "parti": "plq",
+   "theme": "famille",
+   "texte": "5 000 places en CPE d'ici cinq ans et conversion de 10 000 places non subventionnées.",
+   "cout": null,
+   "echeance": "5 ans",
+   "source_url": "https://plq.org/engagements/",
+   "source_nom": "PLQ, site officiel",
+   "source_date": "consulté le 2026-09-22 (page non datée)"
+  },
+  {
+   "parti": "plq",
+   "theme": "famille",
+   "texte": "200 M$ de plus sur quatre ans aux organismes communautaires; commission spéciale sur la santé mentale des jeunes; dossier jeunesse relevant du premier ministre.",
+   "cout": "200 M$/4 ans",
+   "echeance": "4 ans",
+   "source_url": "https://plq.org/engagements/",
+   "source_nom": "PLQ, site officiel",
+   "source_date": "consulté le 2026-09-22 (page non datée)"
+  },
+  {
+   "parti": "pq",
+   "theme": "sante",
+   "texte": "Abolir Santé Québec (économie minimale de 40 M$) et décentraliser la gestion du réseau.",
+   "cout": "−40 à −100 M$/an (CFFP)",
+   "echeance": null,
+   "source_url": "https://pq.org/nouvelles/le-parti-quebecois-abolira-sante-quebec-afin-de-reinvestir-largent-dans-des-soins-directs-a-la-population/",
+   "source_nom": "PQ, site officiel",
+   "source_date": "2026-08-21",
+   "phare": true
+  },
+  {
+   "parti": "pq",
+   "theme": "sante",
+   "texte": "Budget de santé publique et prévention +550 M$ sur 4 ans; CLSC comme porte d'entrée (+150 M$ sur 4 ans); plus de places en médecine, dont en région.",
+   "cout": "550 M$ + 150 M$ sur 4 ans",
+   "echeance": "4 ans",
+   "source_url": "https://pq.org/nouvelles/sante-et-service-sociaux-investir-en-prevention-et-faire-des-clsc-la-veritable-porte-dentree-du-reseau/",
+   "source_nom": "PQ, site officiel",
+   "source_date": "2026-09-12"
+  },
+  {
+   "parti": "pq",
+   "theme": "sante",
+   "texte": "Soins à domicile : budget +50 % (≈ 1,3 G$ de plus sur 4 ans selon RC); adaptation de domicile +10 M$/an.",
+   "cout": "1,3 G$ sur 4 ans (CFFP : 325 M$/an)",
+   "echeance": "4 ans",
+   "source_url": "https://pq.org/nouvelles/le-parti-quebecois-presente-son-plan-pour-le-soutien-a-domicile-des-aines/",
+   "source_nom": "PQ, site officiel",
+   "source_date": "2026-09-07"
+  },
+  {
+   "parti": "pq",
+   "theme": "sante",
+   "texte": "Doubler l'enveloppe de la Politique de déplacement des usagers (régions); abolir le programme des maisons des aînés (selon RC).",
+   "cout": "5 à 20 M$/an (CFFP)",
+   "echeance": null,
+   "source_url": "https://pq.org/nouvelles/le-parti-quebecois-presente-deux-engagements-majeurs-pour-ameliorer-la-qualite-de-vie-des-citoyens-des-regions/",
+   "source_nom": "PQ, site officiel",
+   "source_date": "2026-08-07"
+  },
+  {
+   "parti": "pq",
+   "theme": "education",
+   "texte": "Cinq chantiers : formation professionnelle et décrochage, culture québécoise (œuvres communes obligatoires), 60 minutes d'activité physique par jour, civisme et violence, mixité scolaire; états généraux dans les 100 premiers jours (RC).",
+   "cout": null,
+   "echeance": "100 premiers jours (états généraux)",
+   "source_url": "https://pq.org/nouvelles/un-gouvernement-du-parti-quebecois-lancera-cinq-grands-chantiers-en-education/",
+   "source_nom": "PQ, site officiel",
+   "source_date": "2026-09-02",
+   "phare": true
+  },
+  {
+   "parti": "pq",
+   "theme": "education",
+   "texte": "Loi 101 au cégep; 10 % de la note consacrée à la qualité du français dans tous les travaux.",
+   "cout": null,
+   "echeance": null,
+   "source_url": "https://pq.org/nouvelles/le-parti-quebecois-sengage-a-renverser-le-declin-du-francais/",
+   "source_nom": "PQ, site officiel",
+   "source_date": "2026-08-30"
+  },
+  {
+   "parti": "pq",
+   "theme": "education",
+   "texte": "Rémunérer les stages en santé, enseignement et petite enfance dans le secteur public; +10 M$/an pour la santé mentale étudiante.",
+   "cout": "10 M$/an (santé mentale)",
+   "echeance": null,
+   "source_url": "https://pq.org/nouvelles/un-gouvernement-du-parti-quebecois-remunerera-des-stages-pratiques-de-formation/",
+   "source_nom": "PQ, site officiel",
+   "source_date": "2026-09-16"
+  },
+  {
+   "parti": "pq",
+   "theme": "cout-vie",
+   "texte": "Abolir la TVQ sur tous les biens usagés (dont les véhicules).",
+   "cout": "150 à 600 M$/an (CFFP)",
+   "echeance": "à compter de 2027-2028",
+   "source_url": "https://pq.org/nouvelles/le-parti-quebecois-va-detaxer-les-biens-et-les-voitures-usages-pour-retourner-des-milliers-de-dollars-dans-le-portefeuille-des-familles/",
+   "source_nom": "PQ, site officiel",
+   "source_date": "2026-09-01",
+   "phare": true
+  },
+  {
+   "parti": "pq",
+   "theme": "cout-vie",
+   "texte": "Réduire de moitié la TVQ sur l'essence pendant au moins un an (≈ 7 ¢/L) et verser 125 $ aux personnes dont le revenu est inférieur à 40 000 $ (financé par le FECC).",
+   "cout": "350 M$/an sur 2 ans (TVQ); 450 M$/an (remboursement, via FECC)",
+   "echeance": "au moins 1 an",
+   "source_url": "https://pq.org/nouvelles/le-parti-quebecois-sattaque-a-la-hausse-du-cout-de-lessence-en-reduisant-les-taxes-et-en-offrant-un-remboursement-aux-menages-les-moins-nantis/",
+   "source_nom": "PQ, site officiel",
+   "source_date": "2026-09-11"
+  },
+  {
+   "parti": "pq",
+   "theme": "cout-vie",
+   "texte": "Annuler la baisse de TVQ sur certains produits d'épicerie et réinvestir 100 M$/an en aide et sécurité alimentaire.",
+   "cout": "coût nul (100 M$/an réaffectés)",
+   "echeance": null,
+   "source_url": "https://pq.org/nouvelles/le-parti-quebecois-va-investir-100-millions-de-dollars-supplementaire-pour-financer-laide-et-la-securite-alimentaire/",
+   "source_nom": "PQ, site officiel",
+   "source_date": "2026-09-04"
+  },
+  {
+   "parti": "pq",
+   "theme": "logement",
+   "texte": "Remboursement de TVQ jusqu'à 45 000 $ pour premiers acheteurs de maisons neuves et autoconstruction; crédit première habitation de 1 400 $ à 3 000 $.",
+   "cout": "70 M$/an + 55 M$/an (CFFP)",
+   "echeance": null,
+   "source_url": "https://pq.org/nouvelles/le-parti-quebecois-presente-son-plan-dacces-a-la-propriete/",
+   "source_nom": "PQ, site officiel",
+   "source_date": "2026-09-09",
+   "phare": true
+  },
+  {
+   "parti": "pq",
+   "theme": "logement",
+   "texte": "Harmoniser le Code du bâtiment, certifier le préfabriqué, cible de 30 jours pour les permis; réduire l'immigration pour équilibrer l'offre et la demande.",
+   "cout": null,
+   "echeance": null,
+   "source_url": "https://pq.org/nouvelles/le-parti-quebecois-presente-son-plan-dacces-a-la-propriete/",
+   "source_nom": "PQ, site officiel",
+   "source_date": "2026-09-09"
+  },
+  {
+   "parti": "pq",
+   "theme": "logement",
+   "texte": "Itinérance réduite de 50 % d'ici 2030 : 1 G$ sur 4 ans (400 M$ logement, 600 M$ programmes sociaux), 2 000 logements dédiés sur une cible de 20 000 logements sociaux; projet Agora Déclic (144 logements pour jeunes de la DPJ).",
+   "cout": "1 G$/4 ans; Agora : 70 M$",
+   "echeance": "2030",
+   "source_url": "https://pq.org/nouvelles/un-gouvernement-du-parti-quebecois-investira-un-milliard-de-dollars-pour-reduire-litinerance-de-50-dici-2030/",
+   "source_nom": "PQ, site officiel",
+   "source_date": "2026-09-18"
+  },
+  {
+   "parti": "pq",
+   "theme": "economie",
+   "texte": "Abolir le Fonds de développement économique pour baisser l'impôt des sociétés de 11,5 % à 9,5 % sur un mandat; secrétariat à la déréglementation.",
+   "cout": "réforme à coût nul (≈ 2,5 G$/an à terme)",
+   "echeance": "un mandat",
+   "source_url": "https://pq.org/nouvelles/le-parti-quebecois-offre-une-baisse-dimpot-significative-de-pres-de-20-aux-pme-quebecoises/",
+   "source_nom": "PQ, site officiel",
+   "source_date": "2026-08-28",
+   "phare": true
+  },
+  {
+   "parti": "pq",
+   "theme": "economie",
+   "texte": "Tarifs : « équipe Québec » pour les négociations; aide ponctuelle et ciblée aux secteurs touchés dès le premier jour; défiscaliser les nouveaux revenus d'exportation vers de nouveaux marchés. Opposé aux contre-tarifs canadiens « dollar pour dollar ».",
+   "cout": "diversification : 20-45 M$/an (CFFP)",
+   "echeance": "premier jour",
+   "source_url": "https://ici.radio-canada.ca/info/2026/elections-quebec/comparateur-programmes-plateformes-partis/",
+   "source_nom": "Radio-Canada",
+   "source_date": "2026-09-22 (mise à jour du comparateur)"
+  },
+  {
+   "parti": "pq",
+   "theme": "economie",
+   "texte": "Libéraliser la vente d'alcools artisanaux (vente directe sans la SAQ, fin de la majoration SAQ hors intermédiaire).",
+   "cout": "−25 M$/an (CFFP)",
+   "echeance": null,
+   "source_url": "https://pq.org/nouvelles/vente-de-vins-cidres-et-spiritueux-quebecois-le-parti-quebecois-veut-liberaliser-un-systeme-qui-date-de-la-prohibition/",
+   "source_nom": "PQ, site officiel",
+   "source_date": "2026-08-13"
+  },
+  {
+   "parti": "pq",
+   "theme": "finances",
+   "texte": "Équilibre budgétaire dès 2028-2029 (surplus de 49 M$ après Fonds des générations), un an plus tôt que la loi; écarts à résorber de 1,85 G$ en 2028-2029 et 250 M$ en 2029-2030 selon la CFFP.",
+   "cout": "nouvelles dépenses : 6,5 G$ sur 5 ans",
+   "echeance": "2028-2029",
+   "source_url": "https://pq.org/wp-content/uploads/2026/09/PQ-Cadre-financier-20260915_NUMERIQUE-3.pdf",
+   "source_nom": "PQ, site officiel",
+   "source_date": "2026-09-15",
+   "phare": true
+  },
+  {
+   "parti": "pq",
+   "theme": "finances",
+   "texte": "Réduire les coûts de rémunération du secteur public de 2,5 % sur trois ans (1,6 G$/an à terme) par attrition et départs volontaires; « réduction de la bureaucratie » de 6,6 G$ (cadre) — 6,3 G$ selon le tableau reproduit par la CFFP.",
+   "cout": "−6,3 à −6,6 G$ sur 5 ans",
+   "echeance": "3 ans / 5 ans",
+   "source_url": "https://pq.org/nouvelles/un-gouvernement-du-parti-quebecois-lancera-un-grand-menage-dans-la-bureaucratie-afin-de-recentrer-letat-sur-ses-missions-fondamentales/",
+   "source_nom": "PQ, site officiel",
+   "source_date": "2026-08-31"
+  },
+  {
+   "parti": "pq",
+   "theme": "finances",
+   "texte": "Provisions pour éventualités de 5 G$ (1 G$/an); versements au Fonds des générations maintenus; dette nette de 35,5 % du PIB en fin de mandat; directeur parlementaire du budget au sein du VGQ.",
+   "cout": null,
+   "echeance": "fin de mandat",
+   "source_url": "https://pq.org/wp-content/uploads/2026/09/PQ-Cadre-financier-20260915_NUMERIQUE-3.pdf",
+   "source_nom": "PQ, site officiel",
+   "source_date": "2026-09-15"
+  },
+  {
+   "parti": "pq",
+   "theme": "energie",
+   "texte": "Plan environnement 2026-2034 : carboneutralité en 2050, cible flexible de −42,5 % en 2034, loi-cadre climat et budgets carbone quinquennaux; FECC recentré sur l'électrification.",
+   "cout": null,
+   "echeance": "2034 / 2050",
+   "source_url": "https://pq.org/nouvelles/le-plan-environnement-du-parti-quebecois-2026-2034-prendre-ses-responsabilites-senrichir-et-ameliorer-notre-qualite-de-vie/",
+   "source_nom": "PQ, site officiel",
+   "source_date": "2026-08-12",
+   "phare": true
+  },
+  {
+   "parti": "pq",
+   "theme": "energie",
+   "texte": "Efficacité énergétique comme « prochaine Baie-James » (rabais thermopompes et VE); publier les critères d'attribution des mégawatts et les études McKinsey sur la filière batterie.",
+   "cout": null,
+   "echeance": null,
+   "source_url": "https://ici.radio-canada.ca/info/2026/elections-quebec/comparateur-programmes-plateformes-partis/",
+   "source_nom": "Radio-Canada",
+   "source_date": "2026-09-22 (mise à jour du comparateur)"
+  },
+  {
+   "parti": "pq",
+   "theme": "energie",
+   "texte": "Atteindre 30 % de territoire protégé d'ici 2030; hausser les redevances sur l'eau des grands préleveurs industriels.",
+   "cout": null,
+   "echeance": "2030",
+   "source_url": "https://ici.radio-canada.ca/info/2026/elections-quebec/comparateur-programmes-plateformes-partis/",
+   "source_nom": "Radio-Canada",
+   "source_date": "2026-09-22 (mise à jour du comparateur)"
+  },
+  {
+   "parti": "pq",
+   "theme": "transport",
+   "texte": "Passe mobilité à 95 $/mois valide dans toutes les sociétés de transport du Québec (financée par le FECC).",
+   "cout": "137 M$/an (CFFP)",
+   "echeance": null,
+   "source_url": "https://pq.org/nouvelles/le-plan-environnement-du-parti-quebecois-2026-2034-prendre-ses-responsabilites-senrichir-et-ameliorer-notre-qualite-de-vie/",
+   "source_nom": "PQ, site officiel",
+   "source_date": "2026-08-12",
+   "phare": true
+  },
+  {
+   "parti": "pq",
+   "theme": "transport",
+   "texte": "Troisième lien Québec-Lévis consacré au transport en commun; retrait du Québec du projet de TGV Alto; priorité à l'entretien routier; travaux de l'A-20 amorcés d'ici 2030.",
+   "cout": null,
+   "echeance": "A-20 : 2030",
+   "source_url": "https://ici.radio-canada.ca/info/2026/elections-quebec/comparateur-programmes-plateformes-partis/",
+   "source_nom": "Radio-Canada",
+   "source_date": "2026-09-22 (mise à jour du comparateur)"
+  },
+  {
+   "parti": "pq",
+   "theme": "transport",
+   "texte": "Mandater CDPQ Infra pour un projet structurant dans l'Est de Montréal (Honoré-Beaugrand–Pointe-de-l'Île, puis Repentigny); remplacer les trains M-73.",
+   "cout": null,
+   "echeance": "après la fin du REM de l'Ouest (2027)",
+   "source_url": "https://pq.org/nouvelles/un-projet-structurant-pour-lest-et-lentretien-du-metro-le-parti-quebecois-presente-ses-priorites-en-transport-collectif-pour-montreal/",
+   "source_nom": "PQ, site officiel",
+   "source_date": "2026-09-21"
+  },
+  {
+   "parti": "pq",
+   "theme": "agriculture",
+   "texte": "Budget de l'Agriculture de 0,9 % à 1,5 % en 10 ans (au moins 450 M$ de plus sur 4 ans); zéro perte nette de territoire agricole; cible de 75 % d'achats québécois dans les institutions.",
+   "cout": "450 M$/4 ans",
+   "echeance": "10 ans",
+   "source_url": "https://pq.org/nouvelles/le-parti-quebecois-sengage-a-investir-un-minimum-de-450-millions-de-dollars-en-agriculture-et-presente-un-plan-costaud-pour-les-producteurs-agricoles/",
+   "source_nom": "PQ, site officiel",
+   "source_date": "2026-09-10",
+   "phare": true
+  },
+  {
+   "parti": "pq",
+   "theme": "agriculture",
+   "texte": "10 % des redevances minières aux régions (≈ 48 M$); nouveau régime forestier avant la fin de 2027; politique d'achat de bois local.",
+   "cout": "48 M$",
+   "echeance": "fin 2027 (forêt)",
+   "source_url": "https://pq.org/nouvelles/le-parti-quebecois-au-service-de-labitibi-temiscamingue-et-des-regions/",
+   "source_nom": "PQ, site officiel",
+   "source_date": "2026-09-03"
+  },
+  {
+   "parti": "pq",
+   "theme": "immigration",
+   "texte": "Seuil permanent de 35 000/an; réduire de moitié l'immigration temporaire (réduction de 200 000 à 250 000 personnes); moratoire sur l'immigration permanente de l'international jusqu'à l'atteinte de cet objectif.",
+   "cout": null,
+   "echeance": null,
+   "source_url": "https://pq.org/nouvelles/le-parti-quebecois-promet-une-baisse-significative-des-seuils-dimmigration/",
+   "source_nom": "PQ, site officiel",
+   "source_date": "2026-08-29",
+   "phare": true
+  },
+  {
+   "parti": "pq",
+   "theme": "immigration",
+   "texte": "40 000 travailleurs du PTET, permis régionaux et sectoriels; 50 000 étudiants internationaux au maximum; exigences de français rehaussées.",
+   "cout": null,
+   "echeance": null,
+   "source_url": "https://ici.radio-canada.ca/info/2026/elections-quebec/comparateur-programmes-plateformes-partis/",
+   "source_nom": "Radio-Canada",
+   "source_date": "2026-09-22 (mise à jour du comparateur)"
+  },
+  {
+   "parti": "pq",
+   "theme": "culture",
+   "texte": "Nouvelle loi sur la langue française; loi 101 aux enfants des immigrants temporaires établis depuis plus de 12 mois; enquête sur la langue de socialisation (Montréal, Laval).",
+   "cout": null,
+   "echeance": null,
+   "source_url": "https://pq.org/nouvelles/le-parti-quebecois-sengage-a-renverser-le-declin-du-francais/",
+   "source_nom": "PQ, site officiel",
+   "source_date": "2026-08-30",
+   "phare": true
+  },
+  {
+   "parti": "pq",
+   "theme": "culture",
+   "texte": "« 2 pour 1 » culturel pour les 25 ans et moins; 8 M$/an pour les livres scolaires; musées gratuits un dimanche par mois; CALQ à 200 M$; soutien doublé à la Fondation des artistes.",
+   "cout": "≈ 35 M$/an (2 pour 1) + 8 M$ + 5 M$ + 35 M$ (CFFP)",
+   "echeance": "5 ans (CALQ)",
+   "source_url": "https://pq.org/nouvelles/le-parti-quebecois-sengage-a-favoriser-lacces-des-jeunes-a-la-culture-quebecoise-et-a-mieux-accompagner-les-artistes-du-quebec/",
+   "source_nom": "PQ, site officiel",
+   "source_date": "2026-09-06"
+  },
+  {
+   "parti": "pq",
+   "theme": "question-nationale",
+   "texte": "Consultation sur l'indépendance au cours d'un premier mandat, mais pas de référendum tant que Donald Trump est président des États-Unis; ministre responsable du processus d'indépendance.",
+   "cout": "préparation : 10 M$/an puis 110 M$ en 2029-2030 (CFFP)",
+   "echeance": "premier mandat",
+   "source_url": "https://pq.org/nouvelles/le-parti-quebecois-sengage-a-ne-pas-tenir-de-referendum-tant-que-donald-trump-sera-president/",
+   "source_nom": "PQ, site officiel",
+   "source_date": "2026-08-18",
+   "phare": true
+  },
+  {
+   "parti": "pq",
+   "theme": "question-nationale",
+   "texte": "Commission itinérante sur une constitution provisoire d'un Québec indépendant; Livre bleu sur l'indépendance (juillet 2026).",
+   "cout": null,
+   "echeance": null,
+   "source_url": "https://ici.radio-canada.ca/info/2026/elections-quebec/comparateur-programmes-plateformes-partis/",
+   "source_nom": "Radio-Canada",
+   "source_date": "2026-09-22 (mise à jour du comparateur)"
+  },
+  {
+   "parti": "pq",
+   "theme": "justice",
+   "texte": "Gel du salaire des députés, ministres et dirigeants de sociétés d'État jusqu'à l'équilibre; loi sur l'exemplarité et l'imputabilité dans les 100 premiers jours (auditions en commission des PDG nommés).",
+   "cout": "−2 à −4 M$/an (CFFP)",
+   "echeance": "100 premiers jours",
+   "source_url": "https://pq.org/nouvelles/exemplarite-de-letat-un-gouvernement-du-parti-quebecois-gelera-le-salaire-des-deputes-ministres-et-dirigeants-des-societes-detat/",
+   "source_nom": "PQ, site officiel",
+   "source_date": "2026-09-05",
+   "phare": true
+  },
+  {
+   "parti": "pq",
+   "theme": "justice",
+   "texte": "Pause et audit des projets informatiques (ex. SIFA); fin des annonces gouvernementales financées par des fonds publics l'été précédant une élection; 100 nouveaux procureurs.",
+   "cout": null,
+   "echeance": null,
+   "source_url": "https://ici.radio-canada.ca/info/2026/elections-quebec/comparateur-programmes-plateformes-partis/",
+   "source_nom": "Radio-Canada",
+   "source_date": "2026-09-22 (mise à jour du comparateur)"
+  },
+  {
+   "parti": "pq",
+   "theme": "justice",
+   "texte": "Chauffeurs « au rabais » : sanctions accrues visant aussi les employeurs, contrôleurs routiers renforcés, surveillance aux frontières.",
+   "cout": null,
+   "echeance": null,
+   "source_url": "https://pq.org/nouvelles/sanctions-et-surveillance-mettons-fin-au-phenomene-des-chauffeurs-au-rabais/",
+   "source_nom": "PQ, site officiel",
+   "source_date": "2026-08-14"
+  },
+  {
+   "parti": "pq",
+   "theme": "famille",
+   "texte": "10 000 places en CPE en 4 ans (25 000 d'ici 2030 avec les 15 000 en cours); supplément famille nombreuse jusqu'à 700 $ (3e et 4e enfant); RQAP bonifié (minimum 300 $/semaine, taux de remplacement relevés, période portée à 3 ans); FIV : 2e et 3e cycles remboursés.",
+   "cout": null,
+   "echeance": "2030",
+   "source_url": "https://pq.org/nouvelles/freiner-le-declin-de-la-natalite-un-gouvernement-du-parti-quebecois-va-agir-pour-que-chaque-projet-familial-desire-puisse-se-concretiser/",
+   "source_nom": "PQ, site officiel",
+   "source_date": "2026-09-20",
+   "phare": true
+  },
+  {
+   "parti": "pq",
+   "theme": "famille",
+   "texte": "Six maisons d'hébergement de 1re étape (70 à 80 places); 35 M$ sur 4 ans (1re étape) et 52 M$ sur 4 ans (2e étape).",
+   "cout": "87 M$/4 ans",
+   "echeance": "4 ans",
+   "source_url": "https://pq.org/nouvelles/le-parti-quebecois-veut-renforcer-le-reseau-des-maisons-dhebergement-pour-femmes-partout-au-quebec/",
+   "source_nom": "PQ, site officiel",
+   "source_date": "2026-09-13"
+  },
+  {
+   "parti": "qs",
+   "theme": "sante",
+   "texte": "Jusqu'à 400 points d'accès de première ligne, principalement via les CLSC.",
+   "cout": "1,7 à 1,8 G$/an (CFFP)",
+   "echeance": "à compter de 2027-2028",
+   "source_url": "https://cdn.prod.website-files.com/6a58006e8d06c0d8d7cc521d/6ab01e99dcf871bb13392026_Plateforme.pdf",
+   "source_nom": "QS, cadre financier",
+   "source_date": "2026-09-15 (version du PDF)",
+   "phare": true
+  },
+  {
+   "parti": "qs",
+   "theme": "sante",
+   "texte": "Mettre graduellement fin au financement des cliniques privées; loi de « bouclier budgétaire » contre l'austérité en santé; doubler le budget de la santé publique.",
+   "cout": "prévention : 200 M$/an (CFFP)",
+   "echeance": "graduel",
+   "source_url": "https://cdn.prod.website-files.com/6a58006e8d06c0d8d7cc521d/6ab01e99dcf871bb13392026_Plateforme.pdf",
+   "source_nom": "QS, cadre financier",
+   "source_date": "2026-09-15 (version du PDF)"
+  },
+  {
+   "parti": "qs",
+   "theme": "sante",
+   "texte": "Assurance dentaire et oculaire gratuite pour les moins de 18 ans; RAMQ élargie aux 65 ans et plus (aides à la mobilité, lunettes, prothèses auditives).",
+   "cout": "60 à 240 M$/an (CFFP)",
+   "echeance": "graduel",
+   "source_url": "https://cdn.prod.website-files.com/6a58006e8d06c0d8d7cc521d/6ab01e99dcf871bb13392026_Plateforme.pdf",
+   "source_nom": "QS, cadre financier",
+   "source_date": "2026-09-15 (version du PDF)"
+  },
+  {
+   "parti": "qs",
+   "theme": "sante",
+   "texte": "Régime d'assurance médicaments universel public et Pharma-Québec; réforme de la rémunération des médecins (économies).",
+   "cout": "économies : −1,64 à −3,3 G$/an (Pharma-Québec) et −0,2 à −1,1 G$/an (médecins) (CFFP)",
+   "echeance": "à compter de 2027-2028",
+   "source_url": "https://cdn.prod.website-files.com/6a58006e8d06c0d8d7cc521d/6aa4411450f96f1574c97b58_cadrev6.pdf",
+   "source_nom": "QS, cadre financier",
+   "source_date": "2026-09-11"
+  },
+  {
+   "parti": "qs",
+   "theme": "education",
+   "texte": "Réseau scolaire commun : financement public des écoles privées seulement si non sélectives et gratuites; accès gratuit aux programmes particuliers.",
+   "cout": "130 à 340 M$/an (CFFP)",
+   "echeance": null,
+   "source_url": "https://cdn.prod.website-files.com/6a58006e8d06c0d8d7cc521d/6ab01e99dcf871bb13392026_Plateforme.pdf",
+   "source_nom": "QS, cadre financier",
+   "source_date": "2026-09-15 (version du PDF)",
+   "phare": true
+  },
+  {
+   "parti": "qs",
+   "theme": "education",
+   "texte": "Gratuité scolaire complète graduelle du primaire à l'université; dîners gratuits universels à l'école.",
+   "cout": "frais postsecondaires : 170 à 350 M$/an; dîners : 100 à 480 M$/an (CFFP)",
+   "echeance": "graduel",
+   "source_url": "https://cdn.prod.website-files.com/6a58006e8d06c0d8d7cc521d/6ab01e99dcf871bb13392026_Plateforme.pdf",
+   "source_nom": "QS, cadre financier",
+   "source_date": "2026-09-15 (version du PDF)"
+  },
+  {
+   "parti": "qs",
+   "theme": "education",
+   "texte": "2 000 professionnels et employés de soutien (1 500 soutien, 500 professionnels); états généraux sur l'éducation; rémunération des stages obligatoires.",
+   "cout": "stages : 250 à 500 M$/an (CFFP)",
+   "echeance": null,
+   "source_url": "https://ici.radio-canada.ca/info/2026/elections-quebec/comparateur-programmes-plateformes-partis/",
+   "source_nom": "Radio-Canada",
+   "source_date": "2026-09-22 (mise à jour du comparateur)"
+  },
+  {
+   "parti": "qs",
+   "theme": "cout-vie",
+   "texte": "Salaire minimum à 20 $/h dès le 1er mai 2027, puis indexé.",
+   "cout": "transition : 330 M$ la 1re année (CFFP)",
+   "echeance": "1er mai 2027",
+   "source_url": "https://ici.radio-canada.ca/info/2026/elections-quebec/comparateur-programmes-plateformes-partis/",
+   "source_nom": "Radio-Canada",
+   "source_date": "2026-09-22 (mise à jour du comparateur)",
+   "phare": true
+  },
+  {
+   "parti": "qs",
+   "theme": "cout-vie",
+   "texte": "Impôt sur les fortunes nettes de plus de 25 M$ (1 % de 25 à 100 M$, 2 % au-delà); nouvelle table d'impôt (hausse au-delà d'environ 113 500 $ selon QS); gains en capital inclus à 100 %.",
+   "cout": "revenus : ≈ 5 G$/an (fortunes) + 2 à 2,3 G$/an (réforme) (CFFP)",
+   "echeance": "2027-2028",
+   "source_url": "https://cdn.prod.website-files.com/6a58006e8d06c0d8d7cc521d/6aa4411450f96f1574c97b58_cadrev6.pdf",
+   "source_nom": "QS, cadre financier",
+   "source_date": "2026-09-11"
+  },
+  {
+   "parti": "qs",
+   "theme": "cout-vie",
+   "texte": "Revenu minimum garanti graduel au premier mandat; plafonnement des marges des grandes épiceries (2 % selon RC); 15 épiceries publiques; TVQ abolie sur biens usagés et produits d'hygiène.",
+   "cout": "pauvreté : 1,9 à 2 G$/an; détaxe : 700 à 760 M$/an (CFFP)",
+   "echeance": "premier mandat",
+   "source_url": "https://ici.radio-canada.ca/info/2026/elections-quebec/comparateur-programmes-plateformes-partis/",
+   "source_nom": "Radio-Canada",
+   "source_date": "2026-09-22 (mise à jour du comparateur)"
+  },
+  {
+   "parti": "qs",
+   "theme": "logement",
+   "texte": "50 000 logements sociaux et communautaires au premier mandat (moitié construits, moitié retirés du marché); 20 % du parc locatif hors marché d'ici 2050.",
+   "cout": "160 à 400 M$/an au budget (CFFP)",
+   "echeance": "premier mandat / 2050",
+   "source_url": "https://cdn.prod.website-files.com/6a58006e8d06c0d8d7cc521d/6ab01e99dcf871bb13392026_Plateforme.pdf",
+   "source_nom": "QS, cadre financier",
+   "source_date": "2026-09-15 (version du PDF)",
+   "phare": true
+  },
+  {
+   "parti": "qs",
+   "theme": "logement",
+   "texte": "Gel des loyers à l'inflation dès la 1re année (maximum 3 % selon RC), registre national des loyers, abolition de la section F du bail, droit au logement dans la Charte.",
+   "cout": "20 M$/an (TAL) (CFFP)",
+   "echeance": "1re année",
+   "source_url": "https://cdn.prod.website-files.com/6a58006e8d06c0d8d7cc521d/6ab01e99dcf871bb13392026_Plateforme.pdf",
+   "source_nom": "QS, cadre financier",
+   "source_date": "2026-09-15 (version du PDF)"
+  },
+  {
+   "parti": "qs",
+   "theme": "logement",
+   "texte": "Premiers acheteurs : prêt public jusqu'à 15 % d'une maison neuve ou 5 % d'une existante (max. 50 000 $); gain en capital imposé à 100 % sur la vente d'immeubles locatifs; taxe sur logements vacants.",
+   "cout": "50 M$/an (petits propriétaires) (CFFP)",
+   "echeance": null,
+   "source_url": "https://ici.radio-canada.ca/info/2026/elections-quebec/comparateur-programmes-plateformes-partis/",
+   "source_nom": "Radio-Canada",
+   "source_date": "2026-09-22 (mise à jour du comparateur)"
+  },
+  {
+   "parti": "qs",
+   "theme": "economie",
+   "texte": "« Provision Trump » de 1 G$ par année pendant deux ans (subventions salariales, aide financière).",
+   "cout": "2 G$",
+   "echeance": "2027-2029",
+   "source_url": "https://cdn.prod.website-files.com/6a58006e8d06c0d8d7cc521d/6aa4411450f96f1574c97b58_cadrev6.pdf",
+   "source_nom": "QS, cadre financier",
+   "source_date": "2026-09-11",
+   "phare": true
+  },
+  {
+   "parti": "qs",
+   "theme": "economie",
+   "texte": "Hausser les tarifs d'exportation d'Hydro-Québec vers les États-Unis; nouvelle politique industrielle; impôt minimum et hausse de 1,5 point de l'impôt des grandes sociétés; taxe GAFAM.",
+   "cout": "revenus : jusqu'à 950 M$/an (hausse d'impôt) (CFFP)",
+   "echeance": null,
+   "source_url": "https://ici.radio-canada.ca/info/2026/elections-quebec/comparateur-programmes-plateformes-partis/",
+   "source_nom": "Radio-Canada",
+   "source_date": "2026-09-22 (mise à jour du comparateur)"
+  },
+  {
+   "parti": "qs",
+   "theme": "economie",
+   "texte": "Réduction du temps de travail, droit au télétravail volontaire; annulation du retour forcé des fonctionnaires trois jours par semaine.",
+   "cout": null,
+   "echeance": null,
+   "source_url": "https://cdn.prod.website-files.com/6a58006e8d06c0d8d7cc521d/6ab01e99dcf871bb13392026_Plateforme.pdf",
+   "source_nom": "QS, cadre financier",
+   "source_date": "2026-09-15 (version du PDF)"
+  },
+  {
+   "parti": "qs",
+   "theme": "finances",
+   "texte": "Déficit éliminé dès la 3e année; équilibre en 2029-2030; suspension de la majeure partie des versements au Fonds des générations (10,2 G$) et création d'un Fonds d'urgence climatique (500 M$/an).",
+   "cout": "dépenses nettes +43,3 G$, revenus nets +45,1 G$ sur 5 ans (CFFP)",
+   "echeance": "2029-2030",
+   "source_url": "https://cdn.prod.website-files.com/6a58006e8d06c0d8d7cc521d/6aa4411450f96f1574c97b58_cadrev6.pdf",
+   "source_nom": "QS, cadre financier",
+   "source_date": "2026-09-11",
+   "phare": true
+  },
+  {
+   "parti": "qs",
+   "theme": "finances",
+   "texte": "Dette nette à 40,4 % du PIB en 2030-2031 (2,3 points au-dessus du ratio actuel selon QS).",
+   "cout": null,
+   "echeance": "2030-2031",
+   "source_url": "https://cdn.prod.website-files.com/6a58006e8d06c0d8d7cc521d/6aa4411450f96f1574c97b58_cadrev6.pdf",
+   "source_nom": "QS, cadre financier",
+   "source_date": "2026-09-11"
+  },
+  {
+   "parti": "qs",
+   "theme": "energie",
+   "texte": "GES −37,5 % (idéalement −45 %) d'ici 2030; carboneutralité au plus tard en 2050; interdiction des véhicules neufs à essence dès 2035; plan de transition déposé avec chaque budget.",
+   "cout": "plan climat : 430 à 500 M$/an (CFFP)",
+   "echeance": "2030 / 2035 / 2050",
+   "source_url": "https://cdn.prod.website-files.com/6a58006e8d06c0d8d7cc521d/6ab01e99dcf871bb13392026_Plateforme.pdf",
+   "source_nom": "QS, cadre financier",
+   "source_date": "2026-09-15 (version du PDF)",
+   "phare": true
+  },
+  {
+   "parti": "qs",
+   "theme": "energie",
+   "texte": "Interdire tout nouveau projet d'exploration, d'extraction et de transport d'énergies fossiles (dont gaz de schiste); protéger Hydro-Québec de toute privatisation; éoliennes publiques.",
+   "cout": "revenus éoliens : 500 M$/an (CFFP)",
+   "echeance": null,
+   "source_url": "https://cdn.prod.website-files.com/6a58006e8d06c0d8d7cc521d/6ab01e99dcf871bb13392026_Plateforme.pdf",
+   "source_nom": "QS, cadre financier",
+   "source_date": "2026-09-15 (version du PDF)"
+  },
+  {
+   "parti": "qs",
+   "theme": "transport",
+   "texte": "Transport collectif gratuit pour les 25 ans et moins et 65 ans et plus, crédit d'impôt de 20 % pour les autres; 23 G$ sur 10 ans pour le transport collectif (ligne orange à Laval, Est de Montréal).",
+   "cout": "250 à 270 M$/an (gratuité) (CFFP); 23 G$/10 ans",
+   "echeance": "10 ans",
+   "source_url": "https://ici.radio-canada.ca/info/2026/elections-quebec/comparateur-programmes-plateformes-partis/",
+   "source_nom": "Radio-Canada",
+   "source_date": "2026-09-22 (mise à jour du comparateur)",
+   "phare": true
+  },
+  {
+   "parti": "qs",
+   "theme": "transport",
+   "texte": "Contre le troisième lien et le REM de l'Est; garantit la phase 2 du tramway de Québec; relance du tramway de Gatineau; 1 G$ pour Maisonneuve-Rosemont au premier mandat.",
+   "cout": "PQI +26,8 G$ sur 2027-2031 (CFFP)",
+   "echeance": "premier mandat",
+   "source_url": "https://ici.radio-canada.ca/info/2026/elections-quebec/comparateur-programmes-plateformes-partis/",
+   "source_nom": "Radio-Canada",
+   "source_date": "2026-09-22 (mise à jour du comparateur)"
+  },
+  {
+   "parti": "qs",
+   "theme": "agriculture",
+   "texte": "Cible de 75 % d'achat local dans les institutions publiques; fonds de 500 M$ pour agriculteurs touchés par les désastres climatiques; interdire l'achat de terres par des fonds privés.",
+   "cout": "agriculture et pêches : ≈ 200 M$/an (CFFP)",
+   "echeance": null,
+   "source_url": "https://ici.radio-canada.ca/info/2026/elections-quebec/comparateur-programmes-plateformes-partis/",
+   "source_nom": "Radio-Canada",
+   "source_date": "2026-09-22 (mise à jour du comparateur)",
+   "phare": true
+  },
+  {
+   "parti": "qs",
+   "theme": "agriculture",
+   "texte": "Décentralisation vers MRC et municipalités; redistribution régionale des redevances minières; protection de 30 % du territoire dans chaque région.",
+   "cout": "200 M$/an (redevances) (CFFP)",
+   "echeance": null,
+   "source_url": "https://cdn.prod.website-files.com/6a58006e8d06c0d8d7cc521d/6ab01e99dcf871bb13392026_Plateforme.pdf",
+   "source_nom": "QS, cadre financier",
+   "source_date": "2026-09-15 (version du PDF)"
+  },
+  {
+   "parti": "qs",
+   "theme": "immigration",
+   "texte": "70 000 immigrants permanents par an; PEQ rétabli et PEQ-Régions; fin des permis de travail fermés (pression sur Ottawa).",
+   "cout": null,
+   "echeance": null,
+   "source_url": "https://ici.radio-canada.ca/info/2026/elections-quebec/comparateur-programmes-plateformes-partis/",
+   "source_nom": "Radio-Canada",
+   "source_date": "2026-09-22 (mise à jour du comparateur)",
+   "phare": true
+  },
+  {
+   "parti": "qs",
+   "theme": "immigration",
+   "texte": "Francisation : 100 M$ de plus, dont 30 M$ en milieu de travail, cours rémunérés en partie par l'employeur.",
+   "cout": "100 M$/an (CFFP)",
+   "echeance": null,
+   "source_url": "https://ici.radio-canada.ca/info/2026/elections-quebec/comparateur-programmes-plateformes-partis/",
+   "source_nom": "Radio-Canada",
+   "source_date": "2026-09-22 (mise à jour du comparateur)"
+  },
+  {
+   "parti": "qs",
+   "theme": "culture",
+   "texte": "Loi 101 aux entreprises de 10 employés et plus; abolir « certaines mesures discriminatoires » de la loi 96; retirer les dispositions « liberticides » des lois 21 et 94.",
+   "cout": null,
+   "echeance": null,
+   "source_url": "https://cdn.prod.website-files.com/6a58006e8d06c0d8d7cc521d/6ab01e99dcf871bb13392026_Plateforme.pdf",
+   "source_nom": "QS, cadre financier",
+   "source_date": "2026-09-15 (version du PDF)",
+   "phare": true
+  },
+  {
+   "parti": "qs",
+   "theme": "culture",
+   "texte": "Doubler le soutien du CALQ et de la SODEC (380 M$ de plus par an); passe-culture pour les 12 à 18 ans; sécurité du revenu des artistes.",
+   "cout": "510 à 600 M$/an (CFFP)",
+   "echeance": null,
+   "source_url": "https://ici.radio-canada.ca/info/2026/elections-quebec/comparateur-programmes-plateformes-partis/",
+   "source_nom": "Radio-Canada",
+   "source_date": "2026-09-22 (mise à jour du comparateur)"
+  },
+  {
+   "parti": "qs",
+   "theme": "question-nationale",
+   "texte": "Assemblée constituante coconstruite avec les Premières Nations et les Inuit dès l'arrivée au pouvoir; constitution soumise à un référendum menant à la déclaration d'indépendance; citoyenneté québécoise accélérée pour les résidents permanents.",
+   "cout": "200 à 220 M$/an (CFFP)",
+   "echeance": "premier mandat",
+   "source_url": "https://cdn.prod.website-files.com/6a58006e8d06c0d8d7cc521d/6ab01e99dcf871bb13392026_Plateforme.pdf",
+   "source_nom": "QS, cadre financier",
+   "source_date": "2026-09-15 (version du PDF)",
+   "phare": true
+  },
+  {
+   "parti": "qs",
+   "theme": "justice",
+   "texte": "Scrutin proportionnel mixte compensatoire, droit de vote à 16 ans, référendums d'initiative populaire.",
+   "cout": null,
+   "echeance": null,
+   "source_url": "https://cdn.prod.website-files.com/6a58006e8d06c0d8d7cc521d/6ab01e99dcf871bb13392026_Plateforme.pdf",
+   "source_nom": "QS, cadre financier",
+   "source_date": "2026-09-15 (version du PDF)",
+   "phare": true
+  },
+  {
+   "parti": "qs",
+   "theme": "justice",
+   "texte": "Carence de cinq ans avant qu'un ex-élu fasse du lobbyisme; protection des lanceurs d'alerte; accès réel à l'information; amendes proportionnelles au revenu et au chiffre d'affaires.",
+   "cout": "revenus d'amendes : 60 M$/an (particuliers) + 100 à 260 M$/an (sociétés) (CFFP)",
+   "echeance": null,
+   "source_url": "https://cdn.prod.website-files.com/6a58006e8d06c0d8d7cc521d/6ab01e99dcf871bb13392026_Plateforme.pdf",
+   "source_nom": "QS, cadre financier",
+   "source_date": "2026-09-15 (version du PDF)"
+  },
+  {
+   "parti": "qs",
+   "theme": "justice",
+   "texte": "Ministère Femmes et Égalité des genres; 10 jours d'absence rémunérée pour victimes de violence conjugale; 600 M$ pour jusqu'à 1 000 places en maisons d'hébergement (RC).",
+   "cout": "50 M$/an (ministère) (CFFP)",
+   "echeance": null,
+   "source_url": "https://ici.radio-canada.ca/info/2026/elections-quebec/comparateur-programmes-plateformes-partis/",
+   "source_nom": "Radio-Canada",
+   "source_date": "2026-09-22 (mise à jour du comparateur)"
+  },
+  {
+   "parti": "qs",
+   "theme": "famille",
+   "texte": "Compléter le réseau des CPE (5 000 éducatrices d'ici 2030, 30 000 places selon RC); rattrapage salarial en petite enfance.",
+   "cout": "30 à 610 M$/an (CFFP)",
+   "echeance": "2030",
+   "source_url": "https://cdn.prod.website-files.com/6a58006e8d06c0d8d7cc521d/6ab01e99dcf871bb13392026_Plateforme.pdf",
+   "source_nom": "QS, cadre financier",
+   "source_date": "2026-09-15 (version du PDF)",
+   "phare": true
+  },
+  {
+   "parti": "qs",
+   "theme": "famille",
+   "texte": "Allocation famille +200 $ par enfant (modulée); 10 semaines de RQAP réservées au 2e parent; achats groupés de fournitures scolaires.",
+   "cout": null,
+   "echeance": null,
+   "source_url": "https://ici.radio-canada.ca/info/2026/elections-quebec/comparateur-programmes-plateformes-partis/",
+   "source_nom": "Radio-Canada",
+   "source_date": "2026-09-22 (mise à jour du comparateur)"
+  },
+  {
+   "parti": "qs",
+   "theme": "famille",
+   "texte": "Financement à la mission du communautaire (1 G$ de plus par an selon RC); itinérance : 1,5 G$ d'ici 2030-2031, 6 000 logements dédiés.",
+   "cout": "400 M$ à 1,07 G$/an (CFFP)",
+   "echeance": "2030-2031",
+   "source_url": "https://ici.radio-canada.ca/info/2026/elections-quebec/comparateur-programmes-plateformes-partis/",
+   "source_nom": "Radio-Canada",
+   "source_date": "2026-09-22 (mise à jour du comparateur)"
+  },
+  {
+   "parti": "pcq",
+   "theme": "sante",
+   "texte": "Utiliser sa carte d'assurance maladie pour un traitement au privé, sans frais, si le public ne peut soigner dans un délai médicalement raisonnable; permettre l'assurance privée duplicative.",
+   "cout": "« Addition du privé en santé » : économies de 220 M$ à 1,14 G$/an (CFFP)",
+   "echeance": null,
+   "source_url": "https://www.pcqorg.ca/wp-content/uploads/2026/08/Plateforme-eelectorale_version-finale-1-1.pdf",
+   "source_nom": "pcqorg.ca",
+   "source_date": "2026-08-12 (version du PDF)",
+   "phare": true
+  },
+  {
+   "parti": "pcq",
+   "theme": "sante",
+   "texte": "Abolir Santé Québec; relever les admissions en médecine (de 400 à 500 selon RC); plus d'IPS; ratios sécuritaires; rôle élargi des paramédics.",
+   "cout": "médecins : 30-120 M$/an; IPS : 18-129 M$/an (CFFP)",
+   "echeance": null,
+   "source_url": "https://ici.radio-canada.ca/info/2026/elections-quebec/comparateur-programmes-plateformes-partis/",
+   "source_nom": "Radio-Canada",
+   "source_date": "2026-09-22 (mise à jour du comparateur)"
+  },
+  {
+   "parti": "pcq",
+   "theme": "sante",
+   "texte": "Plan de soins à domicile.",
+   "cout": "624 M$ sur 5 ans (CFFP)",
+   "echeance": "5 ans",
+   "source_url": "https://conservateur.quebec/wp-content/uploads/2026/09/Cadre-Financier_VF.pdf",
+   "source_nom": "PCQ, site officiel",
+   "source_date": "2026-09-09"
+  },
+  {
+   "parti": "pcq",
+   "theme": "education",
+   "texte": "Passe sport : 100 $/an de rabais sur une activité physique (revenu familial < 100 000 $); 4 périodes d'éducation physique au lieu de 3; tests physiques standardisés.",
+   "cout": "370 M$ sur 5 ans",
+   "echeance": null,
+   "source_url": "https://conservateur.quebec/wp-content/uploads/2026/09/Cadre-Financier_VF.pdf",
+   "source_nom": "PCQ, site officiel",
+   "source_date": "2026-09-09",
+   "phare": true
+  },
+  {
+   "parti": "pcq",
+   "theme": "education",
+   "texte": "Libre choix de l'école au-delà du lieu de résidence; financement direct des écoles; centres de services scolaires réduits à 17.",
+   "cout": null,
+   "echeance": null,
+   "source_url": "https://ici.radio-canada.ca/info/2026/elections-quebec/comparateur-programmes-plateformes-partis/",
+   "source_nom": "Radio-Canada",
+   "source_date": "2026-09-22 (mise à jour du comparateur)"
+  },
+  {
+   "parti": "pcq",
+   "theme": "cout-vie",
+   "texte": "« Plus importante baisse d'impôt des particuliers et de taxes à la consommation de l'histoire du Québec » : montant personnel de base porté graduellement de 18 952 $ à 35 243 $ en 2030 (CFFP); 11 166 $ de moins par ménage moyen sur le mandat (PCQ).",
+   "cout": "24,75 G$ sur 5 ans",
+   "echeance": "2027-2031",
+   "source_url": "https://conservateur.quebec/wp-content/uploads/2026/09/Cadre-Financier_VF.pdf",
+   "source_nom": "PCQ, site officiel",
+   "source_date": "2026-09-09",
+   "phare": true
+  },
+  {
+   "parti": "pcq",
+   "theme": "cout-vie",
+   "texte": "Abolir la TVQ sur tous les biens usagés; suspendre 5 mois la taxe sur l'essence (19,2 ¢/L).",
+   "cout": "2,77 G$ (biens usagés) + 570 M$ (essence) sur 5 ans",
+   "echeance": "essence : 2026-2027",
+   "source_url": "https://conservateur.quebec/wp-content/uploads/2026/09/Cadre-Financier_VF.pdf",
+   "source_nom": "PCQ, site officiel",
+   "source_date": "2026-09-09"
+  },
+  {
+   "parti": "pcq",
+   "theme": "logement",
+   "texte": "Déréglementer la construction (avec ou sans l'aval des syndicats), simplifier le Code du bâtiment, exempter la construction résidentielle de la loi R-20.",
+   "cout": null,
+   "echeance": null,
+   "source_url": "https://ici.radio-canada.ca/info/2026/elections-quebec/comparateur-programmes-plateformes-partis/",
+   "source_nom": "Radio-Canada",
+   "source_date": "2026-09-22 (mise à jour du comparateur)",
+   "phare": true
+  },
+  {
+   "parti": "pcq",
+   "theme": "logement",
+   "texte": "Cesser de construire des HLM et miser sur l'Allocation-logement; guichet unique d'aide au logement.",
+   "cout": null,
+   "echeance": null,
+   "source_url": "https://www.pcqorg.ca/wp-content/uploads/2026/08/Plateforme-eelectorale_version-finale-1-1.pdf",
+   "source_nom": "pcqorg.ca",
+   "source_date": "2026-08-12 (version du PDF)"
+  },
+  {
+   "parti": "pcq",
+   "theme": "logement",
+   "texte": "Contrôle des loyers : exclure les logements rénovés depuis moins de 5 ans, vacants depuis un an ou loués plus de 2 500 $/mois; permettre un dépôt de garantie; réformer le TAL.",
+   "cout": null,
+   "echeance": null,
+   "source_url": "https://ici.radio-canada.ca/info/2026/elections-quebec/comparateur-programmes-plateformes-partis/",
+   "source_nom": "Radio-Canada",
+   "source_date": "2026-09-22 (mise à jour du comparateur)"
+  },
+  {
+   "parti": "pcq",
+   "theme": "economie",
+   "texte": "Baisser l'impôt général des sociétés de 11,5 % à 4,7 % en quatre ans, financé par la réduction des aides aux entreprises (abolition du FDE, recentrage d'Investissement Québec, réduction de crédits d'impôt).",
+   "cout": "17,46 G$ net sur 5 ans (coût statique 23,28 G$)",
+   "echeance": "2030-2031",
+   "source_url": "https://conservateur.quebec/wp-content/uploads/2026/09/Cadre-Financier_VF.pdf",
+   "source_nom": "PCQ, site officiel",
+   "source_date": "2026-09-09",
+   "phare": true
+  },
+  {
+   "parti": "pcq",
+   "theme": "economie",
+   "texte": "Tarifs : abattre les barrières interprovinciales (reconnaissance mutuelle, marchés publics, camionnage); déréglementation avec règle « un pour un ».",
+   "cout": "revenus attendus : 6,83 G$ (barrières) et 13,69 G$ (déréglementation) sur 5 ans",
+   "echeance": null,
+   "source_url": "https://conservateur.quebec/wp-content/uploads/2026/09/Cadre-Financier_VF.pdf",
+   "source_nom": "PCQ, site officiel",
+   "source_date": "2026-09-09"
+  },
+  {
+   "parti": "pcq",
+   "theme": "economie",
+   "texte": "Réformer le modèle syndical : vote secret obligatoire, cotisations excluant les activités politiques; métiers réglementés de 25 à 7.",
+   "cout": null,
+   "echeance": null,
+   "source_url": "https://ici.radio-canada.ca/info/2026/elections-quebec/comparateur-programmes-plateformes-partis/",
+   "source_nom": "Radio-Canada",
+   "source_date": "2026-09-22 (mise à jour du comparateur)"
+  },
+  {
+   "parti": "pcq",
+   "theme": "finances",
+   "texte": "Déficit zéro en quatre ans (surplus de 336 M$ en 2029-2030 et 1,89 G$ en 2030-2031); loi limitant la croissance des dépenses à l'inflation plus la croissance démographique; ni écart à résorber, ni baisse des provisions, ni réduction des versements au Fonds des générations.",
+   "cout": "réduction nette des dépenses : 36,6 G$ sur 5 ans (CFFP)",
+   "echeance": "2029-2030",
+   "source_url": "https://conservateur.quebec/wp-content/uploads/2026/09/Cadre-Financier_VF.pdf",
+   "source_nom": "PCQ, site officiel",
+   "source_date": "2026-09-09",
+   "phare": true
+  },
+  {
+   "parti": "pcq",
+   "theme": "finances",
+   "texte": "Réduire la fonction publique de 20 000 ETC en cinq ans par gel d'embauche et attrition (≈ 21 000 au 31 mars 2031 selon la trajectoire du cadre); ministères ramenés à 20 au maximum; examen de tous les programmes.",
+   "cout": "≈ 3,75 à 4,35 G$ sur 5 ans",
+   "echeance": "5 ans",
+   "source_url": "https://conservateur.quebec/wp-content/uploads/2026/09/Cadre-Financier_VF.pdf",
+   "source_nom": "PCQ, site officiel",
+   "source_date": "2026-09-09"
+  },
+  {
+   "parti": "pcq",
+   "theme": "finances",
+   "texte": "Dette nette de 35,8 % du PIB en 2030-2031.",
+   "cout": null,
+   "echeance": "2030-2031",
+   "source_url": "https://cffp.recherche.usherbrooke.ca/wp-content/uploads/2026/09/r2026-19_cadres_financiers_Qc_vf.pdf",
+   "source_nom": "Chaire en fiscalité (Sherbrooke)",
+   "source_date": "2026-09-19"
+  },
+  {
+   "parti": "pcq",
+   "theme": "energie",
+   "texte": "Retirer le Québec du marché du carbone (SPEDE) et abolir le Fonds d'électrification et de changements climatiques (FECC).",
+   "cout": "SPEDE : −4,47 G$ de revenus; FECC : économies de 657 M$ à 1,76 G$/an (CFFP)",
+   "echeance": "à compter de 2027-2028",
+   "source_url": "https://conservateur.quebec/wp-content/uploads/2026/09/Cadre-Financier_VF.pdf",
+   "source_nom": "PCQ, site officiel",
+   "source_date": "2026-09-09",
+   "phare": true
+  },
+  {
+   "parti": "pcq",
+   "theme": "energie",
+   "texte": "Exploiter le gaz naturel de l'Utica (16 % de redevances à l'État, 3 % de la production aux propriétaires et municipalités), financé par le privé, acceptabilité mesurée localement.",
+   "cout": "revenus : 758 M$ sur 5 ans",
+   "echeance": null,
+   "source_url": "https://conservateur.quebec/wp-content/uploads/2026/09/Cadre-Financier_VF.pdf",
+   "source_nom": "PCQ, site officiel",
+   "source_date": "2026-09-09"
+  },
+  {
+   "parti": "pcq",
+   "theme": "energie",
+   "texte": "Rabais de 2 000 $ pour véhicule électrique reconduit un an, puis réduit graduellement sur quatre ans.",
+   "cout": null,
+   "echeance": "5 ans",
+   "source_url": "https://ici.radio-canada.ca/info/2026/elections-quebec/comparateur-programmes-plateformes-partis/",
+   "source_nom": "Radio-Canada",
+   "source_date": "2026-09-22 (mise à jour du comparateur)"
+  },
+  {
+   "parti": "pcq",
+   "theme": "transport",
+   "texte": "Entretien porté de 65 % à 75-80 % des investissements tant que le déficit de maintien d'actifs persiste; nouveaux projets limités à ceux à « fort impact économique ».",
+   "cout": null,
+   "echeance": null,
+   "source_url": "https://www.pcqorg.ca/wp-content/uploads/2026/08/Plateforme-eelectorale_version-finale-1-1.pdf",
+   "source_nom": "pcqorg.ca",
+   "source_date": "2026-08-12 (version du PDF)",
+   "phare": true
+  },
+  {
+   "parti": "pcq",
+   "theme": "transport",
+   "texte": "Troisième lien : pont entre le sud de l'île d'Orléans et Beaumont, possiblement en PPP, expropriations non exclues; stopper le tramway de Québec; opposé au TGV Alto; villes libres de quitter une société de transport.",
+   "cout": null,
+   "echeance": null,
+   "source_url": "https://ici.radio-canada.ca/info/2026/elections-quebec/comparateur-programmes-plateformes-partis/",
+   "source_nom": "Radio-Canada",
+   "source_date": "2026-09-22 (mise à jour du comparateur)"
+  },
+  {
+   "parti": "pcq",
+   "theme": "transport",
+   "texte": "Amorcer au premier mandat la finalisation de l'A-20.",
+   "cout": null,
+   "echeance": "premier mandat",
+   "source_url": "https://ici.radio-canada.ca/info/2026/elections-quebec/comparateur-programmes-plateformes-partis/",
+   "source_nom": "Radio-Canada",
+   "source_date": "2026-09-22 (mise à jour du comparateur)"
+  },
+  {
+   "parti": "pcq",
+   "theme": "agriculture",
+   "texte": "17 tables régionales décisionnelles; programmes municipaux abolis et fonds versés directement aux régions; sommet municipal et régional; défusions facilitées.",
+   "cout": null,
+   "echeance": null,
+   "source_url": "https://www.pcqorg.ca/wp-content/uploads/2026/08/Plateforme-eelectorale_version-finale-1-1.pdf",
+   "source_nom": "pcqorg.ca",
+   "source_date": "2026-08-12 (version du PDF)",
+   "phare": true
+  },
+  {
+   "parti": "pcq",
+   "theme": "agriculture",
+   "texte": "Assouplir la protection du territoire agricole (dézonage de terres moins productives); régime forestier revu la première année; redevances redistribuées aux régions.",
+   "cout": null,
+   "echeance": "1re année (forêt)",
+   "source_url": "https://ici.radio-canada.ca/info/2026/elections-quebec/comparateur-programmes-plateformes-partis/",
+   "source_nom": "Radio-Canada",
+   "source_date": "2026-09-22 (mise à jour du comparateur)"
+  },
+  {
+   "parti": "pcq",
+   "theme": "immigration",
+   "texte": "Régionaliser l'immigration (MRC et municipalités fixent besoins et capacité d'accueil); revoir la grille pour limiter l'immigration de pays non démocratiques; réduire les services aux demandeurs d'asile.",
+   "cout": null,
+   "echeance": null,
+   "source_url": "https://ici.radio-canada.ca/info/2026/elections-quebec/comparateur-programmes-plateformes-partis/",
+   "source_nom": "Radio-Canada",
+   "source_date": "2026-09-22 (mise à jour du comparateur)",
+   "phare": true
+  },
+  {
+   "parti": "pcq",
+   "theme": "immigration",
+   "texte": "Seuil annuel d'immigration permanente : non publié au 22 sept. 2026 dans les sources consultées.",
+   "cout": null,
+   "echeance": null,
+   "source_url": "https://ici.radio-canada.ca/info/2026/elections-quebec/comparateur-programmes-plateformes-partis/",
+   "source_nom": "Radio-Canada",
+   "source_date": "2026-09-22 (mise à jour du comparateur)"
+  },
+  {
+   "parti": "pcq",
+   "theme": "culture",
+   "texte": "Affirmer le caractère français du Québec et reconnaître la minorité anglo-québécoise; doter le Québec d'un hymne national; crédits d'impôt culturels et médias épargnés par les compressions.",
+   "cout": null,
+   "echeance": null,
+   "source_url": "https://www.pcqorg.ca/wp-content/uploads/2026/08/Plateforme-eelectorale_version-finale-1-1.pdf",
+   "source_nom": "pcqorg.ca",
+   "source_date": "2026-08-12 (version du PDF)",
+   "phare": true
+  },
+  {
+   "parti": "pcq",
+   "theme": "question-nationale",
+   "texte": "Autonomie au sein du Canada : loi-bouclier contre les intrusions fédérales, constitution québécoise, réaffirmer le non-consentement à 1982, citoyenneté québécoise; s'oppose à un référendum et bloquerait tout projet de référendum s'il détient la balance du pouvoir.",
+   "cout": null,
+   "echeance": null,
+   "source_url": "https://www.pcqorg.ca/wp-content/uploads/2026/08/Plateforme-eelectorale_version-finale-1-1.pdf",
+   "source_nom": "pcqorg.ca",
+   "source_date": "2026-08-12 (version du PDF)",
+   "phare": true
+  },
+  {
+   "parti": "pcq",
+   "theme": "justice",
+   "texte": "Conseil du trésor rebaptisé « Conseil du trésor et de l'efficacité gouvernementale » avec Secrétariat à la libéralisation; numérisation accélérée selon la commission Gallant.",
+   "cout": "numérique : économies de 400 M$ à 1,2 G$/an (CFFP)",
+   "echeance": null,
+   "source_url": "https://conservateur.quebec/wp-content/uploads/2026/09/Cadre-Financier_VF.pdf",
+   "source_nom": "PCQ, site officiel",
+   "source_date": "2026-09-09",
+   "phare": true
+  },
+  {
+   "parti": "pcq",
+   "theme": "justice",
+   "texte": "Engagements en justice et sécurité publique (police, tribunaux) : non publié au 22 sept. 2026 dans les sources consultées.",
+   "cout": null,
+   "echeance": null,
+   "source_url": "https://www.pcqorg.ca/wp-content/uploads/2026/08/Plateforme-eelectorale_version-finale-1-1.pdf",
+   "source_nom": "pcqorg.ca",
+   "source_date": "2026-08-12 (version du PDF)"
+  },
+  {
+   "parti": "pcq",
+   "theme": "famille",
+   "texte": "Allocation de garde à domicile de 100 $ par semaine (5 000 $/an, imposable) si un parent travaille à temps plein et que l'enfant ne fréquente pas un SGEE; crédit pour frais de garde bonifié dès le 1er avril 2027; pas de nouvelles places en CPE.",
+   "cout": "1 G$ sur 5 ans (allocation)",
+   "echeance": "1er avril 2027",
+   "source_url": "https://conservateur.quebec/wp-content/uploads/2026/09/Cadre-Financier_VF.pdf",
+   "source_nom": "PCQ, site officiel",
+   "source_date": "2026-09-09",
+   "phare": true
+  },
+  {
+   "parti": "pcq",
+   "theme": "famille",
+   "texte": "Incitatifs financiers et baisses d'impôt dès la naissance d'un enfant (forme non précisée).",
+   "cout": null,
+   "echeance": null,
+   "source_url": "https://ici.radio-canada.ca/info/2026/elections-quebec/comparateur-programmes-plateformes-partis/",
+   "source_nom": "Radio-Canada",
+   "source_date": "2026-09-22 (mise à jour du comparateur)"
+  },
+  {
+   "parti": "pcq",
+   "theme": "famille",
+   "texte": "Itinérance : 125 médecins communautaires par an, 350 M$ pour une branche de médecine familiale (DPJ, itinérance, dépendance); tâches administratives des travailleurs sociaux allégées de 30 %.",
+   "cout": "350 M$",
+   "echeance": null,
+   "source_url": "https://ici.radio-canada.ca/info/2026/elections-quebec/comparateur-programmes-plateformes-partis/",
+   "source_nom": "Radio-Canada",
+   "source_date": "2026-09-22 (mise à jour du comparateur)"
+  }
+ ],
+ "evaluations": [
+  {
+   "qui": "Chaire en fiscalité et en finances publiques, Université de Sherbrooke",
+   "orientation": "chaire universitaire ; reçoit un financement du ministère des Finances",
+   "constat": "Synthèse des cinq cadres financiers (19 septembre 2026). Tous partent du rapport préélectoral et « sur papier, ça balance » pour tous les partis. La Chaire précise ne porter « aucune appréciation de la pertinence des mesures ».",
+   "url": "https://cffp.recherche.usherbrooke.ca/wp-content/uploads/2026/09/r2026-19_cadres_financiers_Qc_vf.pdf"
+  }
+ ]
+}

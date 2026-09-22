@@ -1,0 +1,96 @@
+{
+ "maj_texte": "22 septembre 2026",
+ "source_nom": "Rapport préélectoral sur l'état des finances publiques du Québec, ministère des Finances, août 2026",
+ "source_url": "https://cdn-contenu.quebec.ca/cdn-contenu/adm/min/finances/publications-adm/Rapport_preelectoral/FR/MINFR_RP_2026.pdf",
+ "annee": "2026-2027",
+ "population": 9030000,
+ "revenus": [
+  {"nom": "Revenus du Québec (impôts, taxes, sociétés d'État comme Hydro-Québec)", "montant": 135.343},
+  {"nom": "Transferts d'Ottawa (péréquation, santé, programmes sociaux)", "montant": 33.046}
+ ],
+ "depenses": [
+  {"nom": "Santé et services sociaux", "montant": 69.99},
+  {"nom": "Éducation et culture", "montant": 38.38},
+  {"nom": "Économie et environnement", "montant": 23.87},
+  {"nom": "Soutien aux personnes et aux familles", "montant": 17.25},
+  {"nom": "Gouverne et justice", "montant": 12.19},
+  {"nom": "Intérêts sur la dette", "montant": 10.516}
+ ],
+ "note_depenses": "Le total des missions (161,7 G$) inclut une réallocation de 0,6 G$ en cours d'année ; le total officiel des dépenses est de 171,6 G$. Regroupement par mission : Traçabilité Québec, à partir des 25 portefeuilles ministériels.",
+ "cascade": [
+  {"etape": "Revenus", "montant": 168.389, "type": "total"},
+  {"etape": "Dépenses", "montant": -171.597, "type": "variation"},
+  {"etape": "Provision pour imprévus", "montant": -2.0, "type": "variation", "note": "Un coussin gardé pour les mauvaises surprises (ex. un choc économique)."},
+  {"etape": "Déficit comptable", "montant": -5.208, "type": "sous-total", "note": "Le déficit au sens des normes comptables."},
+  {"etape": "Versement au Fonds des générations", "montant": -2.482, "type": "variation", "note": "De l'argent réservé chaque année au remboursement de la dette."},
+  {"etape": "Solde au sens de la loi", "montant": -7.69, "type": "total", "note": "Le « déficit officiel » que suit la Loi sur l'équilibre budgétaire."}
+ ],
+ "dettes": [
+  {"nom": "Dette brute", "montant": 265.547, "pct_pib": 41.1, "definition": "Tout ce que le gouvernement a emprunté sur les marchés, moins le Fonds des générations."},
+  {"nom": "Dette nette", "montant": 245.907, "pct_pib": 38.1, "definition": "La dette brute moins les actifs financiers (placements, participation dans Hydro-Québec…). C'est celle que visent les cibles de la loi."},
+  {"nom": "Déficits cumulés", "montant": 127.4, "pct_pib": 19.7, "definition": "La part de la dette qui a servi à payer des dépenses courantes (« l'épicerie »), sans actif en contrepartie. Le reste a servi à bâtir des routes, des écoles et des hôpitaux, qui ont une valeur."}
+ ],
+ "dette_date": "31 mars 2026",
+ "leviers": [
+  {"levier": "Taux d'intérêt", "qui": "Banque du Canada", "note": "Ni Québec ni Ottawa ne les fixent directement. Ils influencent l'inflation, les hypothèques et le coût de la dette."},
+  {"levier": "Tarifs douaniers et accords commerciaux", "qui": "Ottawa", "note": "Les contre-tarifs et la négociation avec les États-Unis sont fédéraux. Québec peut aider ses entreprises touchées."},
+  {"levier": "Monnaie, assurance-emploi, pensions de vieillesse", "qui": "Ottawa", "note": ""},
+  {"levier": "Impôt sur le revenu", "qui": "Québec et Ottawa", "note": "Les Québécois paient deux impôts sur le revenu : un à Québec, un à Ottawa."},
+  {"levier": "Taxes de vente", "qui": "Québec (TVQ) et Ottawa (TPS)", "note": ""},
+  {"levier": "Dépenses en santé, éducation, services sociaux", "qui": "Québec", "note": "Avec une partie de l'argent qui vient d'Ottawa (transferts)."},
+  {"levier": "Tarifs d'électricité", "qui": "Québec", "note": "Hydro-Québec appartient au gouvernement. La loi plafonne actuellement la hausse des tarifs résidentiels."},
+  {"levier": "Salaire minimum, droit du travail", "qui": "Québec", "note": "Sauf pour les entreprises de compétence fédérale (banques, télécommunications, transport interprovincial)."},
+  {"levier": "Taxe foncière, zonage, permis de construire", "qui": "Municipalités", "note": "Un levier clé pour le logement."}
+ ],
+ "menage": {
+  "intro": "Imaginons que le Québec soit un ménage qui gagne 100 000 $ par année. En gardant les mêmes proportions que le vrai budget :",
+  "lignes": [
+   {"quoi": "Revenus de l'année", "valeur": "100 000 $"},
+   {"quoi": "Dépenses de l'année", "valeur": "101 900 $"},
+   {"quoi": "dont les intérêts sur ses dettes", "valeur": "6 200 $"},
+   {"quoi": "Ce qu'il doit (dette nette)", "valeur": "146 000 $, soit environ un an et demi de revenus"}
+  ],
+  "limites": "L'image a ses limites. Contrairement à un ménage, l'État ne prend pas sa retraite et ne meurt pas : il n'a jamais à rembourser toute sa dette d'un coup. Une partie de la dette a servi à bâtir des routes, des écoles et des hôpitaux qui durent des décennies, comme une hypothèque sur une maison. Enfin, l'État peut changer ses revenus en changeant les impôts, ce qu'un ménage ne peut pas faire. C'est la taille de la dette par rapport à l'économie (le ratio dette/PIB) qui compte le plus."
+ },
+ "pieges": [
+  {"titre": "Le ratio dette/PIB peut baisser sans qu'on rembourse un dollar", "texte": "De 2019 à 2026, la croissance de l'économie (inflation comprise) a fait baisser le ratio de 13,6 points, alors que les déficits et les investissements l'ont fait monter de 10,5 points. Le ratio a donc baissé, même si la dette en dollars a augmenté."},
+  {"titre": "Le changement de nom qui fait baisser la dette", "texte": "Depuis le 1er avril 2026, la « dette nette » est remplacée par le « passif financier net ». Ce changement comptable fait baisser le ratio de 0,9 point sans qu'aucun dollar ne soit remboursé. Attention aux comparaisons avant et après."}
+ ],
+ "lexique": [
+  {"terme": "Austérité", "definition": "Politique qui réduit fortement la croissance des dépenses publiques (ou hausse les impôts) pour rétablir l'équilibre budgétaire. Le mot est souvent utilisé comme critique ; ses défenseurs parlent plutôt de « rigueur » ou de « saine gestion ».", "voir": "finances"},
+  {"terme": "Banque du Canada", "definition": "La banque centrale du pays. Elle fixe le taux directeur, qui influence tous les taux d'intérêt, pour garder l'inflation autour de 2 %. Elle est indépendante du gouvernement."},
+  {"terme": "Budget", "definition": "Le plan des revenus et des dépenses de l'État pour une année (du 1er avril au 31 mars). Il est présenté par le ministre des Finances et adopté par l'Assemblée nationale. Il n'y en aura pas avant la fin de l'élection."},
+  {"terme": "Bureaucratie (réduire la)", "definition": "Expression qui désigne les dépenses administratives : postes de gestion, soutien, processus. Réduire la bureaucratie peut dégager de l'argent pour les services, mais la frontière entre « administratif » et « service » est souvent floue.", "voir": "finances"},
+  {"terme": "Cadre financier", "definition": "Le document où un parti additionne le coût de ses promesses et explique comment il les paierait. Il n'est pas vérifié par un organisme indépendant, contrairement au rapport préélectoral du ministère des Finances."},
+  {"terme": "Compressions", "definition": "Réductions de dépenses dans un programme ou un ministère. On parle parfois de « compressions » même quand un budget augmente moins vite que les coûts (par exemple, moins vite que l'inflation et le vieillissement)."},
+  {"terme": "Cote de crédit", "definition": "Note donnée par des agences (Moody's, S&P, Fitch…) sur la capacité du Québec à rembourser ses emprunts. Une bonne cote réduit les intérêts à payer.", "voir": "finances"},
+  {"terme": "Croissance des dépenses", "definition": "Le rythme auquel les dépenses augmentent d'une année à l'autre. Pour maintenir les services, il faut en général une croissance d'au moins l'inflation plus le coût du vieillissement de la population. En dessous, il faut faire des choix."},
+  {"terme": "Déficit", "definition": "Quand l'État dépense plus qu'il ne perçoit pendant une année. Au Québec, deux déficits circulent : le déficit comptable et le solde au sens de la loi, qui compte aussi les versements au Fonds des générations.", "voir": "finances"},
+  {"terme": "Dette", "definition": "L'accumulation de tous les emprunts passés. On distingue la dette brute, la dette nette et les déficits cumulés (voir le graphique plus haut). Toujours vérifier de laquelle on parle.", "voir": "finances"},
+  {"terme": "Dépenses fiscales", "definition": "Crédits d'impôt, déductions et exemptions. Ce sont des dépenses « cachées » : l'État ne verse pas d'argent, mais il renonce à en percevoir."},
+  {"terme": "Effet dynamique", "definition": "L'idée qu'une baisse d'impôt stimule l'économie et rapporte ainsi une partie de son coût en nouveaux revenus. L'effet existe, mais son ampleur est très débattue. Un cadre financier qui compte beaucoup sur lui prend un risque."},
+  {"terme": "Équilibre budgétaire", "definition": "Quand les revenus égalent les dépenses. La Loi sur l'équilibre budgétaire oblige le gouvernement à présenter un plan pour y revenir après un déficit."},
+  {"terme": "Fonds des générations", "definition": "Une réserve créée en 2006 où l'État place chaque année des revenus dédiés, comme les redevances sur l'eau, pour rembourser la dette. Il contenait 16,6 G$ au 31 mars 2026. C'est un outil propre au Québec.", "voir": "finances"},
+  {"terme": "Gré à gré", "definition": "Contrat public accordé sans appel d'offres. C'est légal dans certains cas (urgence, fournisseur unique), mais la concurrence fait généralement baisser les prix.", "voir_url": "/ce-qui-ne-fait-pas-de-sens?type=GRE_A_GRE"},
+  {"terme": "Indexation", "definition": "Hausse automatique d'un montant (impôt, tarif, prestation) selon l'inflation. Indexer les paliers d'impôt évite qu'on paie plus d'impôt simplement parce que les salaires suivent l'inflation."},
+  {"terme": "Inflation", "definition": "La hausse générale des prix. Elle réduit le pouvoir d'achat de ceux dont les revenus n'augmentent pas au même rythme. Elle fait aussi grossir les revenus de l'État (les taxes suivent les prix)."},
+  {"terme": "Investissement public", "definition": "Dépenses pour des biens durables : routes, écoles, hôpitaux, transport collectif. Elles sont surtout financées par emprunt et figurent au Plan québécois des infrastructures (PQI).", "voir": "transport"},
+  {"terme": "Maintien d'actifs", "definition": "L'entretien et la rénovation de ce qui existe déjà (routes, ponts, écoles). Le « déficit de maintien d'actifs » mesure le retard d'entretien accumulé : 44,8 G$ en 2026.", "voir": "transport"},
+  {"terme": "Masse salariale", "definition": "L'ensemble des salaires versés par l'État. C'est la plus grosse part des dépenses publiques, car la santé et l'éducation reposent sur le personnel."},
+  {"terme": "Péréquation", "definition": "Programme fédéral qui verse de l'argent aux provinces dont la capacité de percevoir des impôts est sous la moyenne, pour qu'elles puissent offrir des services comparables. Elle fait partie des transferts d'Ottawa au Québec."},
+  {"terme": "PIB (produit intérieur brut)", "definition": "La valeur de tout ce qui est produit dans l'économie en un an. Pour savoir si les gens s'enrichissent, on regarde le PIB par habitant, pas le PIB total.", "voir": "economie"},
+  {"terme": "Plan québécois des infrastructures (PQI)", "definition": "Le plan sur 10 ans des investissements publics en infrastructures : 167 G$ pour 2026-2036. Environ 71 % servent au maintien de ce qui existe déjà.", "voir_url": "/lois-et-projets"},
+  {"terme": "Privé en santé", "definition": "Selon les propositions, il peut s'agir de cliniques privées payées par l'État (le patient ne paie pas), de médecins qui pratiquent hors du régime public (le patient paie) ou d'assurances privées. Ce sont des choses très différentes.", "voir": "sante"},
+  {"terme": "Productivité", "definition": "Ce qu'on produit en moyenne par heure travaillée. C'est le principal moteur du niveau de vie à long terme. Elle augmente surtout avec l'investissement en équipements, en technologie et en formation.", "voir": "economie"},
+  {"terme": "Provision pour éventualités", "definition": "Un montant mis de côté dans le budget pour les imprévus (ralentissement économique, catastrophe). Si on la réduit pour financer des promesses, on a moins de marge en cas de coup dur."},
+  {"terme": "Rapport préélectoral", "definition": "Le portrait des finances publiques que le ministère des Finances doit publier avant chaque élection, examiné par la Vérificatrice générale. C'est le point de départ commun de tous les cadres financiers.", "voir_url": "https://cdn-contenu.quebec.ca/cdn-contenu/adm/min/finances/publications-adm/Rapport_preelectoral/FR/MINFR_RP_2026.pdf"},
+  {"terme": "Récession", "definition": "Une baisse de l'activité économique qui dure (souvent définie comme deux trimestres de recul du PIB). Elle fait baisser les revenus de l'État et monter certaines dépenses, comme l'aide sociale."},
+  {"terme": "Revenus autonomes", "definition": "Les revenus que le Québec perçoit lui-même : impôts, taxes, bénéfices des sociétés d'État (Hydro-Québec, Loto-Québec, SAQ). Par opposition aux transferts d'Ottawa."},
+  {"terme": "Service de la dette", "definition": "Les intérêts payés chaque année sur la dette : environ 10,5 G$ en 2026-2027, soit près de 29 M$ par jour. Cet argent ne finance aucun service.", "voir": "finances"},
+  {"terme": "Sociétés d'État", "definition": "Entreprises qui appartiennent au gouvernement : Hydro-Québec, Loto-Québec, la SAQ, Investissement Québec… Leurs bénéfices font partie des revenus de l'État."},
+  {"terme": "Tarifs (douaniers)", "definition": "Taxes sur les produits importés. Les tarifs américains frappent les exportations québécoises ; les « contre-tarifs » sont ceux qu'Ottawa impose en réponse. Québec ne fixe aucun tarif douanier.", "voir": "economie"},
+  {"terme": "Taux marginal d'imposition", "definition": "Le taux d'impôt payé sur le prochain dollar gagné. Ce n'est pas le taux payé sur tout son revenu : passer à un palier supérieur ne fait payer le taux plus élevé que sur la partie qui dépasse le seuil."},
+  {"terme": "Transferts fédéraux", "definition": "L'argent qu'Ottawa verse au Québec : environ 33 G$ en 2026-2027, soit environ 20 % des revenus. Ils comprennent la péréquation et les transferts pour la santé et les programmes sociaux. Leur montant futur se négocie et n'est pas garanti."},
+  {"terme": "Transferts aux personnes", "definition": "L'argent versé directement aux citoyens : allocations familiales, aide sociale, crédits d'impôt remboursables. Ils agissent vite sur la pauvreté, mais coûtent cher s'ils sont larges."}
+ ]
+}

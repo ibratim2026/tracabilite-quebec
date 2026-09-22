@@ -1,0 +1,81 @@
+{% extends "base.html" %}
+{% block titre %}Lois et grands projets — Traçabilité Québec{% endblock %}
+{% block contenu %}
+<h1>Lois et grands projets</h1>
+<p class="chapeau">{{ l.chapeau }}</p>
+
+<div class="themes">
+  <a class="onglet" href="#projets">Grands projets et leurs coûts</a>
+  <a class="onglet" href="#lois">Lois adoptées</a>
+  <a class="onglet" href="#mortes">Mortes au feuilleton</a>
+  {% if l.mesures %}<a class="onglet" href="#mesures">Ce qui change pour votre portefeuille</a>{% endif %}
+</div>
+
+<h2 id="projets">Les grands projets : coût annoncé et coût actuel</h2>
+<p class="explication">{{ l.projets_intro }}</p>
+{% if haltere %}
+<figure class="infographie" style="max-width:none">
+  <div class="ig-titre">Coût annoncé au départ (gris) et coût actuel (bleu), en milliards</div>
+  <div data-haltere><script type="application/json">{{ haltere | tojson }}</script></div>
+  <figcaption>Survolez un projet pour voir les montants. Un coût qui augmente n'est pas
+  forcément une mauvaise gestion : la portée du projet a pu changer. Voir les détails
+  et les sources dans le tableau ci-dessous.</figcaption>
+</figure>
+{% endif %}
+<table class="table-projets">
+  <thead><tr><th>Projet</th><th class="num">Coût annoncé</th><th class="num">Coût actuel</th><th>Échéance</th><th>Statut</th></tr></thead>
+  <tbody>
+  {% for pr in l.projets %}
+  <tr>
+    <td><strong>{{ pr.nom }}</strong><br><span class="detail">{{ pr.resume }}</span>
+      <br><span class="source">{% for so in pr.sources %}<a href="{{ so.url }}">{{ so.nom }}</a>{{ ' · ' if not loop.last }}{% endfor %}</span></td>
+    <td class="num" data-label="Coût annoncé">{{ pr.cout_initial or '—' }}</td>
+    <td class="num" data-label="Coût actuel">{% if pr.cout_actuel %}<strong>{{ pr.cout_actuel }}</strong>{% else %}—{% endif %}</td>
+    <td data-label="Échéance">{{ pr.echeance_actuelle or '—' }}{% if pr.echeance_initiale %}<br><span class="detail">prévu : {{ pr.echeance_initiale }}</span>{% endif %}</td>
+    <td class="statut-projet" data-label="Statut">{{ pr.statut }}</td>
+  </tr>
+  {% endfor %}
+  </tbody>
+</table>
+{% if l.pqi %}<div class="encadre encadre-bleu"><strong>{{ l.pqi.titre }}</strong><br>{{ l.pqi.texte }}
+  <span class="source"><a href="{{ l.pqi.source_url }}">{{ l.pqi.source_nom }}</a></span></div>{% endif %}
+
+<h2 id="lois">Les lois qui ont changé les choses (43<sup>e</sup> législature, 2022-2026)</h2>
+<p class="explication">{{ l.lois_intro }} Cliquez sur une loi pour voir ce
+qu'elle change et les arguments des deux côtés.</p>
+{% for x in l.adoptees %}
+<details class="loi">
+  <summary><h3>{{ x.numero }} · {{ x.titre }}</h3>
+    <div class="meta">{% if x.secteur and secteurs.get(x.secteur) %}{{ secteurs[x.secteur].nom }} · {% endif %}sanctionnée le {{ x.date }}</div></summary>
+  <div class="corps">
+    <p><strong>Ce que ça change :</strong> {{ x.change }}</p>
+    {% if x.cout %}<p><strong>Coût ou impact budgétaire :</strong> {{ x.cout }}</p>{% endif %}
+    {% if (x.pour or x.contre) and not prudent %}
+    <div class="pour-contre">
+      <div><strong>Ce que disent les partisans</strong>{{ x.pour }}</div>
+      <div><strong>Ce que disent les critiques</strong>{{ x.contre }}</div>
+    </div>{% endif %}
+    <p class="source"><a href="{{ x.url }}">Texte et étapes sur le site de l'Assemblée nationale</a></p>
+  </div>
+</details>
+{% endfor %}
+
+<h2 id="mortes">Morts au feuilleton</h2>
+<p class="explication">{{ l.mortes_intro }}</p>
+{% for x in l.mortes %}
+<div class="encadre encadre-gris"><strong>{{ x.numero }} · {{ x.titre }}</strong><br>{{ x.change }}
+  {% if x.url %}<span class="source"><a href="{{ x.url }}">Assemblée nationale</a></span>{% endif %}</div>
+{% endfor %}
+
+{% if l.mesures %}
+<h2 id="mesures">Ce qui change pour votre portefeuille</h2>
+{% for m in l.mesures %}
+<div class="encadre encadre-bleu"><strong>{{ m.titre }}</strong>{% if m.date %} <span class="detail">({{ m.date }})</span>{% endif %}<br>{{ m.texte }}
+  <span class="source"><a href="{{ m.source_url }}">{{ m.source_nom }}</a></span></div>
+{% endfor %}
+{% endif %}
+
+<div class="note-verif">Mis à jour le {{ l.maj_texte }}. Sources : Assemblée
+nationale du Québec, Plan québécois des infrastructures, documents budgétaires
+et médias cités.</div>
+{% endblock %}

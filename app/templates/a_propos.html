@@ -1,0 +1,154 @@
+{% extends "base.html" %}
+{% block titre %}À propos — Traçabilité Québec{% endblock %}
+{% block contenu %}
+<section class="apropos-hero">
+  <div class="surtitre">À propos</div>
+  <h1>Rendre l'argent public lisible, et les décisions compréhensibles</h1>
+  <p class="chapeau">Traçabilité Québec est un projet citoyen indépendant. Il part
+  d'une idée simple : chaque Québécois devrait pouvoir voir où va l'argent public
+  et comprendre ce que change une décision politique, sans avoir à croire qui que
+  ce soit sur parole. Ici, chaque chiffre renvoie à sa source.</p>
+</section>
+
+<div class="cartes-stats">
+  <div class="carte"><div class="chiffre">{{ chiffres.contrats | nombre }}</div>
+    <div class="etiquette">contrats publics consolidés, mis à jour chaque jour</div></div>
+  <div class="carte"><div class="chiffre">{{ chiffres.indicateurs }}</div>
+    <div class="etiquette">indicateurs sourcés dans {{ chiffres.secteurs }} secteurs de l'État</div></div>
+  <div class="carte"><div class="chiffre">{{ chiffres.lois }}</div>
+    <div class="etiquette">lois de la dernière législature expliquées</div></div>
+  <div class="carte"><div class="chiffre">0 $</div>
+    <div class="etiquette">de publicité, de commandite ou de financement politique</div></div>
+</div>
+
+<h2>Pourquoi ce site existe</h2>
+<div class="prose">
+<p>Aujourd'hui, l'information publique pousse souvent aux extrêmes : d'un côté la
+confiance aveugle, de l'autre le soupçon permanent. Entre les deux, il manque un
+endroit qui dit simplement ce que montrent les données, ce qu'elles ne montrent
+pas, et où aller vérifier.</p>
+<p>Les données existent déjà : contrats publics, budgets, statistiques, lois. Mais
+elles sont dispersées, techniques et rarement expliquées. Traçabilité Québec les
+rassemble et les traduit en langage clair, pour que chacun puisse se faire sa
+propre idée.</p>
+</div>
+
+<h2>Ce que vous trouverez ici</h2>
+<div class="grille-cartes">
+  <a class="carte carte-lien" href="/">
+    <div class="surtitre">Suivre l'argent</div>
+    <h3>Les contrats publics, un par un</h3>
+    <p>Qui achète quoi, à qui, à quel prix et par quel mode d'attribution. Les
+    écarts qui méritent une explication sont repérés par des règles objectives.</p>
+  </a>
+  <a class="carte carte-lien" href="/secteurs">
+    <div class="surtitre">Comprendre</div>
+    <h3>L'état du Québec, secteur par secteur</h3>
+    <p>Ce que fait chaque secteur, ce qu'il coûte, les indicateurs qui disent s'il
+    va bien, et les chiffres qui trompent.</p>
+  </a>
+  <a class="carte carte-lien" href="/election">
+    <div class="surtitre">Élection 2026</div>
+    <h3>Des outils pour choisir</h3>
+    <p>Dates, notions à démêler, jeux pour tester ses connaissances et comparer
+    les propositions, sans jamais dire pour qui voter.</p>
+  </a>
+</div>
+
+<h2>Notre charte</h2>
+<ol class="charte">
+  <li><strong>Aucun parti, aucun financement politique.</strong> Le site ne soutient
+  aucun parti ni aucun candidat, n'en reçoit aucun argent et n'affiche pas de publicité.</li>
+  <li><strong>Chaque chiffre a une source.</strong> Un lien mène au document
+  d'origine. Si une information n'est pas vérifiable, nous le disons au lieu de la
+  présenter comme un fait.</li>
+  <li><strong>La même grille pour tous.</strong> Quand des partis sont présentés,
+  c'est en ordre alphabétique, avec les mêmes questions et le même espace.</li>
+  <li><strong>Un signal n'est pas une accusation.</strong> Un écart dans les données
+  mérite une explication avant une interprétation. Nous ne désignons pas de coupables.</li>
+  <li><strong>Nous montrons aussi ce qui va bien.</strong> La transparence, c'est
+  aussi dire ce qui fonctionne.</li>
+  <li><strong>Quand la recherche est divisée, nous présentons les deux côtés.</strong>
+  Choisir entre des valeurs revient aux citoyens, pas à nous.</li>
+  <li><strong>Les erreurs sont corrigées publiquement.</strong> Chaque correction
+  est datée et listée plus bas.</li>
+</ol>
+
+<h2>Comment le site est fait</h2>
+<ol class="etapes-fabrication">
+  <li><strong>Collecte</strong><span>Chaque matin, les nouvelles données ouvertes du
+  SEAO (Système électronique d'appel d'offres) sont téléchargées depuis Données
+  Québec. Les fichiers d'origine sont conservés tels quels.</span></li>
+  <li><strong>Consolidation</strong><span>Les {{ chiffres.fichiers }} fichiers publiés
+  sont regroupés en une seule base : un enregistrement par contrat, dans son état le
+  plus récent.</span></li>
+  <li><strong>Signaux</strong><span>Des règles simples et publiques repèrent les
+  écarts : dépassement de coût, contrat sans appel d'offres au-dessus du seuil,
+  soumissionnaire unique, modifications en série. Voir la
+  <a href="/methodologie">méthodologie</a>.</span></li>
+  <li><strong>Contexte</strong><span>Les indicateurs, les lois et les projets
+  viennent de sources officielles (Institut de la statistique du Québec,
+  Statistique Canada, ministère des Finances, Assemblée nationale, Conseil du
+  trésor) et de la recherche publiée. Chaque élément porte son lien.</span></li>
+  <li><strong>Publication</strong><span>Le site est régénéré et publié
+  automatiquement chaque semaine. La date de la dernière mise à jour des données
+  est indiquée en haut de chaque page.</span></li>
+</ol>
+
+<div class="encadre encadre-bleu"><strong>Outils utilisés.</strong> La recherche
+documentaire, l'analyse des données et le code du site sont réalisés avec l'aide
+d'outils d'intelligence artificielle. C'est justement pourquoi chaque affirmation
+renvoie à sa source : vous n'avez pas à nous croire, vous pouvez vérifier. Les
+choix éditoriaux sont validés par une personne.</div>
+
+<h2>Qui est derrière</h2>
+<div class="prose">
+<p>Traçabilité Québec est créé et maintenu par <strong>William Carrier</strong>,
+à titre personnel et bénévole. Le projet n'est lié à aucun parti, syndicat,
+entreprise ou groupe de pression.</p>
+<p>Le code du site est public sur
+<a href="https://github.com/ibratim2026/tracabilite-quebec">GitHub</a> : n'importe qui
+peut voir comment les chiffres sont calculés et refaire les calculs.</p>
+</div>
+
+<h2>Ce que ce site n'est pas</h2>
+<ul class="prose">
+  <li><strong>Pas un média d'opinion.</strong> Nous ne publions ni éditorial, ni
+  recommandation de vote.</li>
+  <li><strong>Pas un tribunal.</strong> Un contrat signalé n'est pas un contrat
+  frauduleux. La plupart des écarts ont une explication légitime.</li>
+  <li><strong>Pas une source officielle.</strong> Les données du SEAO sont saisies
+  par les organismes publics et peuvent contenir des erreurs. En cas de doute, la
+  source officielle fait foi.</li>
+</ul>
+
+<h2>Période électorale</h2>
+<div class="prose">
+<p>Pendant la campagne, le site présente de l'information factuelle et
+n'engage aucune dépense de publicité électorale au sens de la Loi électorale du
+Québec. Par prudence, les contenus qui présentent les partis sont soumis aux
+règles d'Élections Québec sur les comparatifs de programmes. Le jour du scrutin,
+aucune mise à jour n'est publiée.</p>
+</div>
+
+<h2>Corrections</h2>
+{% if corrections %}
+<ul class="prose">
+  {% for c in corrections %}<li><strong>{{ c.date }}</strong> : {{ c.texte }}{% if c.page %} (<a href="{{ c.page }}">page</a>){% endif %}</li>{% endfor %}
+</ul>
+{% else %}
+<p class="explication">Aucune correction publiée à ce jour. Si vous repérez une
+erreur, elle sera corrigée et listée ici avec sa date.</p>
+{% endif %}
+
+<h2>Nous écrire</h2>
+<div class="prose">
+<p>Une erreur, un oubli, un traitement inégal, une idée de dossier? Ouvrez un
+signalement sur <a href="https://github.com/ibratim2026/tracabilite-quebec/issues">la
+page publique du projet</a>. Chaque signalement reçoit une réponse.</p>
+</div>
+
+<div class="note-verif">Données : <a href="https://www.donneesquebec.ca/recherche/dataset/systeme-electronique-dappel-doffres-seao">SEAO,
+Données Québec</a>, diffusées par le Secrétariat du Conseil du trésor.
+Voir aussi la <a href="/methodologie">méthodologie détaillée</a>.</div>
+{% endblock %}
