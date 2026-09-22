@@ -1,0 +1,65 @@
+{% extends "base.html" %}
+{% block titre %}On clarifie — les questions que tout le monde se pose — Traçabilité Québec{% endblock %}
+{% block contenu %}
+<div class="surtitre">Capsule</div>
+<h1>On clarifie</h1>
+<p class="chapeau">{{ f.chapeau }}</p>
+
+<section class="bande bande-bleue">
+  <div class="surtitre">La règle de cette page</div>
+  <h2>Des chiffres, leurs sources, et la limite entre les deux</h2>
+  <div class="grille-cartes">
+    <div class="carte"><h3>Ce que disent les données</h3>
+      <p>Chaque réponse s'appuie sur une source officielle, datée et cliquable.
+      Quand les sources se contredisent, on donne les deux.</p></div>
+    <div class="carte"><h3>Ce qui reste débattu</h3>
+      <p>Quand la réponse dépend d'un choix de valeurs ou d'une méthode contestée,
+      c'est dit dans un bloc séparé. On ne tranche pas.</p></div>
+    <div class="carte"><h3>Aucun parti</h3>
+      <p>On corrige des chiffres, pas des adversaires. Aucune réponse ne vise ni ne
+      soutient un parti.</p></div>
+  </div>
+</section>
+
+<input type="search" class="filtre-lexique" data-filtre-faq
+       placeholder="Chercher une question : immigration, loyers, dette, médecin…"
+       aria-label="Chercher dans les questions">
+
+<nav class="themes" data-faq-categories>
+  <a class="onglet actif" href="#toutes" data-cat="toutes">Toutes</a>
+  {% for c in f.categories %}
+  <a class="onglet" href="#{{ c.slug }}" data-cat="{{ c.slug }}">{{ c.nom }}</a>
+  {% endfor %}
+</nav>
+
+{% for c in f.categories %}
+<section class="faq-categorie" data-cat="{{ c.slug }}" id="{{ c.slug }}">
+  <h2>{{ c.nom }}</h2>
+  {% for q in c.questions %}
+  <details class="faq" data-faq="{{ (q.question ~ ' ' ~ q.reponse_courte ~ ' ' ~ q.details) | lower }}">
+    <summary>
+      <span class="faq-question">{{ q.question }}</span>
+      <span class="faq-plus" aria-hidden="true"></span>
+    </summary>
+    <div class="faq-corps">
+      <p class="faq-courte">{{ q.reponse_courte }}</p>
+      <p>{{ q.details }}</p>
+      {% if q.debat %}
+      <div class="faq-debat"><strong>Ce qui reste débattu :</strong> {{ q.debat }}</div>
+      {% endif %}
+      <p class="source">Sources : {% for s in q.sources %}<a href="{{ s.url }}">{{ s.nom }}</a>{{ ' · ' if not loop.last }}{% endfor %}
+        {% if c.secteur %} · <a href="/secteurs/{{ c.secteur }}">Voir les indicateurs du secteur →</a>{% endif %}</p>
+    </div>
+  </details>
+  {% endfor %}
+</section>
+{% endfor %}
+
+<p class="vide" data-faq-vide hidden>Aucune question ne correspond. Il vous manque une
+réponse? <a href="https://github.com/ibratim2026/tracabilite-quebec/issues">Posez-la</a> :
+on l'ajoutera si on trouve une source solide.</p>
+
+<div class="note-verif">Mis à jour le {{ f.maj_texte }}. Une réponse vous semble
+incomplète ou dépassée? Signalez-la : les corrections sont publiées et datées sur la
+page <a href="/a-propos">À propos</a>.</div>
+{% endblock %}

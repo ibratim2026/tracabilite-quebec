@@ -39,10 +39,11 @@ NAVIGATION = [
               ("/election/decoder", "Décoder la campagne"), ("/election/jouer", "Testez-vous")]},
     {"cle": "comprendre", "nom": "Comprendre", "url": "/secteurs",
      "prefixes": ["/etat-du-quebec", "/secteurs", "/economie-expliquee", "/quebec-canada",
-                  "/lois-et-projets", "/quebec-prospere"],
+                  "/lois-et-projets", "/quebec-prospere", "/on-clarifie"],
      "sous": [("/etat-du-quebec", "L'état du Québec"), ("/secteurs", "Secteurs et indicateurs"), ("/economie-expliquee", "L'économie expliquée"),
               ("/quebec-canada", "Le Québec dans le Canada"),
-              ("/lois-et-projets", "Lois et projets"), ("/quebec-prospere", "Québec prospère")]},
+              ("/lois-et-projets", "Lois et projets"), ("/on-clarifie", "On clarifie"),
+              ("/quebec-prospere", "Québec prospère")]},
     {"cle": "argent", "nom": "Suivre l'argent", "url": "/",
      "prefixes": ["/ce-qui-ne-fait-pas-de-sens", "/aux-nouvelles", "/meilleur-des-mondes",
                   "/recherche", "/contrat", "/organisme", "/fournisseur"],
@@ -378,6 +379,14 @@ def lois_et_projets():
                if pr.get("cout_initial_num") and pr.get("cout_actuel_num")]
     return render_template("lois.html", l=l, haltere=haltere,
                            secteurs={s["slug"]: s for s in charger("secteurs") or []})
+
+
+@bp.route("/on-clarifie")
+def faq():
+    f = charger("faq")
+    if not f:
+        abort(404)
+    return render_template("faq.html", f=f)
 
 
 # ---------------------------------------------------------------- Capsule

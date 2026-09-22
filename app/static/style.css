@@ -826,3 +826,32 @@ a.etoile:hover { color: var(--ambre); text-decoration: none; }
   .indice-anneau::after { width: 58px; height: 58px; }
   .indice-resume { grid-column: 1 / -1; }
 }
+
+/* ============================ FAQ « On clarifie » ======================== */
+.faq-categorie { margin: 1.8rem 0; }
+.faq-categorie[hidden] { display: none; }
+.faq { background: var(--surface); border: 1px solid var(--bordure); border-radius: var(--r-l);
+  margin: .6rem 0; box-shadow: var(--ombre-1); transition: var(--t); overflow: hidden; }
+.faq[hidden] { display: none; }
+.faq:hover { border-color: var(--bordure-forte); }
+.faq[open] { box-shadow: var(--ombre-2); }
+.faq summary { cursor: pointer; list-style: none; display: flex; align-items: flex-start;
+  justify-content: space-between; gap: 1rem; padding: 1rem 1.2rem; }
+.faq summary::-webkit-details-marker { display: none; }
+.faq-question { font-weight: 650; color: var(--encre); font-size: 1.02rem; line-height: 1.35; }
+.faq-plus { position: relative; width: 20px; height: 20px; flex: none; margin-top: .15rem; }
+.faq-plus::before, .faq-plus::after { content: ""; position: absolute; background: var(--bleu);
+  border-radius: 2px; transition: var(--t); }
+.faq-plus::before { top: 9px; left: 2px; width: 16px; height: 2.5px; }
+.faq-plus::after { top: 2px; left: 8.75px; width: 2.5px; height: 16px; }
+.faq[open] .faq-plus::after { transform: rotate(90deg); opacity: 0; }
+.faq[open] .faq-question { color: var(--bleu-fonce); }
+.faq-corps { padding: 0 1.2rem 1.1rem; max-width: 78ch; }
+.faq-courte { font-size: 1.05rem; font-weight: 600; color: var(--encre); margin-bottom: .6rem;
+  border-left: 3px solid var(--bleu); padding-left: .8rem; }
+.faq-corps p { margin-bottom: .6rem; color: var(--gris); }
+.faq-debat { background: var(--jaune-pale); border-left: 3px solid var(--ambre);
+  border-radius: 0 var(--r-m) var(--r-m) 0; padding: .7rem .9rem; margin: .6rem 0;
+  font-size: .93rem; color: var(--encre); }
+.faq-debat strong { color: var(--jaune); }
+[data-filtre-faq] { margin-bottom: .6rem; }

@@ -1,0 +1,660 @@
+{
+ "maj_texte": "22 septembre 2026",
+ "chapeau": "« On clarifie » répond aux questions que les Québécois posent le plus souvent en ligne sur les sujets chauds de l'heure. Chaque réponse s'appuie sur des chiffres sourcés, avec l'année et le lien vers le document d'origine. Et chaque fois que c'est nécessaire, elle sépare nettement ce que les données montrent de ce qui reste débattu — quand deux sources crédibles se contredisent, les deux sont présentées.",
+ "categories": [
+  {
+   "slug": "immigration",
+   "nom": "Immigration",
+   "secteur": "immigration",
+   "questions": [
+    {
+     "question": "Qui décide du nombre d'immigrants au Québec : Québec ou Ottawa ?",
+     "reponse_courte": "Les deux, chacun sur une partie. Québec fixe ses cibles d'immigration permanente et sélectionne les immigrants économiques ; Ottawa décide du regroupement familial, de l'asile, de l'admissibilité, des visas et d'une bonne part de l'immigration temporaire.",
+     "details": "L'Accord Canada-Québec de 1991 donne au Québec « la pleine responsabilité de la planification des niveaux d'immigration, ainsi que de la sélection, de la francisation et de l'intégration ». Québec délivre le Certificat de sélection du Québec pour l'immigration économique, les réfugiés sélectionnés à l'étranger et les cas humanitaires ; Ottawa accorde ensuite le statut de résident permanent et applique les règles d'admissibilité (santé, sécurité, criminalité). Restent entièrement fédéraux le regroupement familial, les demandes d'asile déposées sur place, les visas et le Programme de mobilité internationale. Pour les travailleurs étrangers temporaires et les étudiants étrangers, le consentement du Québec est requis avant la délivrance du permis fédéral.",
+     "debat": "Le partage lui-même. Le Québec réclame des pouvoirs supplémentaires, notamment sur l'immigration temporaire qui relève d'Ottawa seul.",
+     "sources": [
+      {
+       "nom": "Plan annuel d'immigration 2026, ministère de l'Immigration, de la Francisation et de l'Intégration (6 novembre 2025)",
+       "url": "https://cdn-contenu.quebec.ca/cdn-contenu/adm/min/immigration/publications-adm/plan-immigration/PL_immigration_2026_MIFI.pdf"
+      },
+      {
+       "nom": "Accord Canada-Québec relatif à l'immigration et à l'admission temporaire des aubains (1991), Immigration, Réfugiés et Citoyenneté Canada",
+       "url": "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/mandate/policies-operational-instructions-agreements/agreements/federal-provincial-territorial/quebec/canada-quebec-accord-relating-immigration-temporary-admission-aliens.html"
+      }
+     ]
+    },
+    {
+     "question": "Combien d'immigrants le Québec accueille-t-il vraiment ?",
+     "reponse_courte": "Environ 45 000 immigrants permanents par année. Mais ce chiffre ne dit presque rien de la croissance de la population : ce sont les résidents temporaires qui l'ont fait bouger.",
+     "details": "La cible du Plan d'immigration 2026 est de 43 000 à 47 000 admissions permanentes (immigration économique 27 500 à 30 100 ; regroupement familial 9 600 à 10 400 ; réfugiés 5 500 à 6 000). Le nombre de résidents non permanents, lui, est passé de 565 452 au 1er janvier 2025 à 514 039 au 1er janvier 2026, puis à 492 374 au 1er avril 2026. Entre 2023 et 2024, la hausse des résidents non permanents et des immigrants expliquait la totalité de la croissance de la population, l'accroissement naturel étant négatif depuis 2024 ; en 2025, la population du Québec a reculé pour la première fois, à 9 033 887 personnes. Autre nuance : en 2025, 55 % des nouveaux résidents permanents vivaient déjà au Québec, souvent comme travailleurs ou étudiants temporaires — leur admission change leur statut, elle ne fait pas arriver une nouvelle personne.",
+     "debat": "Le niveau souhaitable, la capacité d'accueil et la répartition entre immigration permanente et temporaire. À noter aussi : Statistique Canada a révisé sa méthode de calcul des résidents non permanents en 2025 (l'estimation québécoise au 1er avril 2025 est passée de 612 400 à 560 800), donc deux chiffres publiés à un an d'intervalle peuvent différer sans qu'aucune personne ne soit arrivée ou partie.",
+     "sources": [
+      {
+       "nom": "Plan annuel d'immigration 2026, ministère de l'Immigration, de la Francisation et de l'Intégration (6 novembre 2025)",
+       "url": "https://cdn-contenu.quebec.ca/cdn-contenu/adm/min/immigration/publications-adm/plan-immigration/PL_immigration_2026_MIFI.pdf"
+      },
+      {
+       "nom": "Le bilan démographique du Québec, édition 2026, Institut de la statistique du Québec (13 mai 2026)",
+       "url": "https://statistique.quebec.ca/fr/fichier/bilan-demographique-quebec-edition-2026.pdf"
+      },
+      {
+       "nom": "Statistique Canada, tableau 17-10-0121-01, résidents non permanents (diffusion du 17 juin 2026)",
+       "url": "https://www150.statcan.gc.ca/t1/tbl1/fr/tv.action?pid=1710012101"
+      },
+      {
+       "nom": "Rapport préélectoral sur l'état des finances publiques du Québec, ministère des Finances, août 2026",
+       "url": "https://cdn-contenu.quebec.ca/cdn-contenu/adm/min/finances/publications-adm/Rapport_preelectoral/FR/MINFR_RP_2026.pdf"
+      }
+     ]
+    },
+    {
+     "question": "Combien y a-t-il de demandeurs d'asile au Québec, et qui paie pour eux ?",
+     "reponse_courte": "Environ 190 000 personnes ayant demandé l'asile vivaient au Québec au début de 2026, soit un peu plus du tiers du total canadien. Québec a réclamé 733 M$ à Ottawa pour la seule année 2024 ; Ottawa affirme avoir versé plus de 1,5 G$ en 2024-2025.",
+     "details": "L'Institut de la statistique du Québec recense 191 492 demandeurs d'asile au 1er janvier 2026 ; Statistique Canada en compte 190 300 au 1er avril 2026, soit 36,2 % du total canadien, alors que le Québec représente environ 22 % de la population du pays. Ce sont des personnes présentes, à tous les stades du processus. Le flux, lui, s'est effondré : 57 820 demandes déposées au Québec en 2024, 39 420 en 2025 et 8 670 de janvier à juillet 2026 — mais environ 298 000 dossiers restaient en attente à la Commission de l'immigration et du statut de réfugié en février 2026, ce qui explique que le nombre de personnes présentes baisse lentement. Sur les coûts, Québec évalue à plus de 1 G$ ses dépenses de 2021 à 2023 et réclame 733 M$ pour 2024 (dont 507,7 M$ d'aide sociale de dernier recours) ; Ottawa compte de son côté la subvention annuelle de l'Accord Canada-Québec (867,3 M$ en 2024-2025) et un paiement ponctuel de 581,3 M$ lié aux demandeurs d'asile.",
+     "debat": "Le désaccord sur les coûts est factuel autant que politique : Québec soutient que la subvention de l'Accord finance la francisation et l'intégration des immigrants permanents et ne couvre donc pas les demandeurs d'asile, Ottawa l'inclut dans son total. Aucun règlement n'a été trouvé au 22 septembre 2026. Un chiffre d'environ 87 000, avancé par la Table de concertation des organismes au service des personnes réfugiées et immigrantes à partir de données d'août 2025, circule aussi : il ne recouvre ni le même ensemble de personnes ni la même date que la série officielle.",
+     "sources": [
+      {
+       "nom": "Le bilan démographique du Québec, édition 2026, Institut de la statistique du Québec (13 mai 2026)",
+       "url": "https://statistique.quebec.ca/fr/fichier/bilan-demographique-quebec-edition-2026.pdf"
+      },
+      {
+       "nom": "Statistique Canada, tableau 17-10-0121-01, résidents non permanents (diffusion du 17 juin 2026)",
+       "url": "https://www150.statcan.gc.ca/t1/tbl1/fr/tv.action?pid=1710012101"
+      },
+      {
+       "nom": "Immigration, Réfugiés et Citoyenneté Canada, données ouvertes sur les demandes d'asile (mise à jour du 31 juillet 2026)",
+       "url": "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/reports-statistics/statistics-open-data/immigration-stats/asylum-claims.html"
+      },
+      {
+       "nom": "IRCC, note au comité CIMM sur l'asile, 20 avril 2026",
+       "url": "https://www.canada.ca/fr/immigration-refugies-citoyennete/organisation/transparence/comites/cimm-20-avr-2026/asile.html"
+      },
+      {
+       "nom": "IRCC, note au comité CIMM, faits saillants sur le Québec, 4 mai 2026",
+       "url": "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/transparency/committees/cimm-may-04-2026/quebec-key-facts.html"
+      },
+      {
+       "nom": "Radio-Canada, « Demandeurs d'asile : Québec réclame 733 millions à Ottawa », 2 décembre 2025",
+       "url": "https://ici.radio-canada.ca/nouvelle/2210909/demandeurs-asile-ottawa-quebec-remboursement"
+      },
+      {
+       "nom": "Pivot, « Élections et immigration : des chiffres contestés », 22 septembre 2026",
+       "url": "https://pivot.quebec/2026/09/22/elections-et-immigration-des-chiffres-contestes-et-des-droits-marginalises/"
+      }
+     ]
+    },
+    {
+     "question": "Est-ce que l'immigration est responsable de la crise du logement ?",
+     "reponse_courte": "Elle fait partie de la demande, mais aucune étude ne lui attribue l'essentiel de la hausse, et aucune estimation chiffrée propre au Québec n'existe. Les causes documentées sont multiples.",
+     "details": "La demande des résidents temporaires est réelle et surtout locative : pour 1 000 personnes, ils occupent 357 logements, dont 316 en location, contre 397 logements (126 en location) pour les personnes nées au Canada, selon le Recensement de 2021. TD Economics estime que le ralentissement démographique réduit la croissance des loyers d'environ 2 points de pourcentage par année jusqu'en 2027 — mais à l'échelle du Canada, sans ventilation par province. La SCHL attribue la détente du marché locatif de 2025 autant à la baisse de la demande étudiante et temporaire qu'à la livraison de 31 000 logements locatifs neufs au Québec, sans quantifier la part de chacune. Des chercheurs cités par Radio-Canada rappellent d'autres causes mesurées : construction insuffisante depuis des décennies, taux d'intérêt, pénurie de main-d'œuvre et de matériaux, sous-investissement public depuis les années 1980. Sur l'économie, le PIB réel par habitant du Québec a augmenté de 4,8 % entre 2018 et 2025, contre 0,3 % en Ontario, et l'accroissement naturel de la population est négatif depuis 2024.",
+     "debat": "La part exacte attribuable à la démographie : personne ne l'a chiffrée pour le Québec, dans un sens comme dans l'autre. Et aucune étude québécoise récente ne chiffre l'apport ou le coût budgétaire net des personnes immigrantes — les travaux disponibles sont canadiens.",
+     "sources": [
+      {
+       "nom": "Statistique Canada, « Utilisation des logements par les immigrants et les résidents temporaires », mai 2025",
+       "url": "https://www150.statcan.gc.ca/n1/pub/36-28-0001/2025005/article/00003-fra.htm"
+      },
+      {
+       "nom": "TD Economics, « Dialing Back Immigration: The Intended and Unintended Impacts », 28 octobre 2025",
+       "url": "https://economics.td.com/fr-dial-back-of-immigration-intended-impacts"
+      },
+      {
+       "nom": "SCHL, Rapport sur le marché locatif 2025 (enquête d'octobre 2025, publiée le 11 décembre 2025)",
+       "url": "https://www.cmhc-schl.gc.ca/professionals/housing-markets-data-and-research/market-reports/rental-market-reports-major-centres"
+      },
+      {
+       "nom": "Radio-Canada, « Crise du logement au Canada : des causes multiples, pas juste l'immigration »",
+       "url": "https://ici.radio-canada.ca/rci/fr/nouvelle/2044773/crise-logement-causes-multiples-immigration-armony-lizarralde-hernandez"
+      },
+      {
+       "nom": "IRIS (institut de recherche progressiste), « La crise du logement est-elle causée par l'immigration ? », 19 décembre 2023",
+       "url": "https://iris-recherche.qc.ca/blogue/logement/crise-logement-immigration/"
+      },
+      {
+       "nom": "Rapport préélectoral sur l'état des finances publiques du Québec, ministère des Finances, août 2026",
+       "url": "https://cdn-contenu.quebec.ca/cdn-contenu/adm/min/finances/publications-adm/Rapport_preelectoral/FR/MINFR_RP_2026.pdf"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "slug": "langue-francaise",
+   "nom": "Langue française",
+   "secteur": "culture",
+   "questions": [
+    {
+     "question": "Le français recule-t-il vraiment au Québec ?",
+     "reponse_courte": "Cela dépend de la mesure, et les deux réponses sont exactes. Le français comme langue parlée à la maison recule lentement ; le français compris et parlé reste très stable, autour de 94 %.",
+     "details": "Au recensement de 2021, 79,1 % de la population parlait le plus souvent français à la maison, contre 83,1 % en 2001, 81,2 % en 2011 et 80,6 % en 2016. En parallèle, 93,7 % déclaraient pouvoir soutenir une conversation en français, une proportion quasi inchangée depuis 1996 (93,9 %). Ce qui change, c'est la composition : la part qui connaît seulement le français est passée de 56,1 % à 47,3 %, au profit du bilinguisme (37,8 % à 46,4 %). Le français comme première langue officielle parlée était à 84,1 % en 2021, contre 85 à 86 % de 1996 à 2016.",
+     "debat": "La gravité du recul et ses causes. Le Commissaire à la langue française conclut dans son rapport annuel 2025-2026 à un recul du français sur le marché du travail et dans les usages sociaux ; d'autres analyses insistent sur la stabilité de la connaissance du français. Les deux s'appuient sur des chiffres exacts, mais pas sur les mêmes.",
+     "sources": [
+      {
+       "nom": "Statistique Canada, tableau 15-10-0033-01, langue parlée à la maison",
+       "url": "https://www150.statcan.gc.ca/t1/tbl1/fr/tv.action?pid=1510003301"
+      },
+      {
+       "nom": "Statistique Canada, tableau 15-10-0004-01, connaissance des langues officielles",
+       "url": "https://www150.statcan.gc.ca/t1/tbl1/fr/tv.action?pid=1510000401"
+      },
+      {
+       "nom": "Statistique Canada, tableau 15-10-0032-01, première langue officielle parlée",
+       "url": "https://www150.statcan.gc.ca/t1/tbl1/fr/tv.action?pid=1510003201"
+      },
+      {
+       "nom": "Commissaire à la langue française, rapport annuel 2025-2026, 3 juin 2026",
+       "url": "https://www.commissairelanguefrancaise.quebec/nouvelles/communique/rapport-annuel-regard-avenir/"
+      }
+     ]
+    },
+    {
+     "question": "Le recensement de 2026 a-t-il montré une baisse du français ?",
+     "reponse_courte": "Impossible à dire : les données linguistiques du recensement de 2026 ne sont pas encore publiées. Elles sont attendues le 8 septembre 2027.",
+     "details": "Le recensement a bien été mené en mai 2026, mais selon le calendrier officiel de Statistique Canada, la première diffusion — les chiffres de population et des logements — est prévue le 10 février 2027, et les données sur la langue le 8 septembre 2027. Les données linguistiques les plus récentes restent donc celles de 2021. Toute affirmation chiffrée présentée comme venant « du recensement de 2026 » sur la langue est, à ce jour, impossible à sourcer.",
+     "debat": null,
+     "sources": [
+      {
+       "nom": "Statistique Canada, calendrier de diffusion du Recensement de 2026",
+       "url": "https://www12.statcan.gc.ca/census-recensement/releaseschedule-calendrierdediffusion/upcomingreleases-diffusionsavenir-fra.cfm"
+      }
+     ]
+    },
+    {
+     "question": "Dans quelle langue travaille-t-on vraiment au Québec ?",
+     "reponse_courte": "Le français est la langue la plus utilisée au travail pour 72,9 % des travailleurs québécois — mais pour 51,5 % seulement sur l'île de Montréal, où 24 % travaillent surtout en anglais.",
+     "details": "Selon l'Étude sur la situation des langues parlées au Québec de l'Institut de la statistique du Québec (45 280 répondants, collecte de 2024), dans les situations formelles de travail : ensemble du Québec, français 72,9 %, français et anglais 13,2 %, anglais 12,1 % ; île de Montréal, français 51,5 %, français et anglais 21,0 %, anglais 24,0 % ; Capitale-Nationale, français 88,0 % ; ailleurs au Québec, 87,1 %. Utilisé au moins parfois, le français touche 94,2 % des travailleurs québécois et l'anglais 56,8 % ; 51 % des travailleurs utilisent les deux langues. Dans les commerces, 96 % des consommateurs utilisent le français au moins parfois pour s'adresser au personnel.",
+     "debat": "L'interprétation : bilinguisme fonctionnel ou recul du français comme langue commune du travail ? Attention aussi à un piège de comparaison — cette enquête est nouvelle (première édition en 2024) et ne fournit pas de série dans le temps : il ne faut pas comparer son 51,5 % au 43 % d'une étude de l'Office québécois de la langue française de mars 2024, dont les définitions et les territoires diffèrent.",
+     "sources": [
+      {
+       "nom": "Institut de la statistique du Québec, Étude sur la situation des langues parlées au Québec, fascicule 2, octobre 2025",
+       "url": "https://statistique.quebec.ca/fr/fichier/eslpq2024-utilisation-langues-travail-commerces.pdf"
+      }
+     ]
+    },
+    {
+     "question": "Les nouveaux immigrants parlent-ils français ?",
+     "reponse_courte": "À l'admission, 78 à 79 % des nouveaux résidents permanents déclaraient connaître le français en 2025, contre 66 % en 2023. Mais « déclarer connaître » n'est pas la même chose que « pouvoir travailler en français ».",
+     "details": "La part des immigrants permanents déclarant connaître le français à l'admission est passée de 66 % en 2023 à 73 % en 2024 puis 78 à 79 % en 2025 ; le Plan d'immigration 2026 vise 76 % pour l'année en cours et plus de 77 % sur 2026-2029. Ce chiffre est une déclaration, pas un niveau mesuré de maîtrise. Du côté de l'usage réel, l'enquête de l'Institut de la statistique du Québec mesure qu'en 2024, le français était la langue la plus fréquente au travail pour 69,5 % des personnes nées à l'étranger qui parlent français à la maison, et pour 25,5 % de celles qui ne le parlent pas à la maison, contre 82,2 % des personnes nées au Canada parlant français à la maison.",
+     "debat": "L'efficacité de la francisation. Le Commissaire à la langue française a publié en juin 2026 une évaluation de Francisation Québec et, en octobre 2025, un rapport sur les étudiants internationaux et le français.",
+     "sources": [
+      {
+       "nom": "Plan annuel d'immigration 2026, ministère de l'Immigration, de la Francisation et de l'Intégration (6 novembre 2025)",
+       "url": "https://cdn-contenu.quebec.ca/cdn-contenu/adm/min/immigration/publications-adm/plan-immigration/PL_immigration_2026_MIFI.pdf"
+      },
+      {
+       "nom": "Institut de la statistique du Québec, Étude sur la situation des langues parlées au Québec, fascicule 2, octobre 2025",
+       "url": "https://statistique.quebec.ca/fr/fichier/eslpq2024-utilisation-langues-travail-commerces.pdf"
+      },
+      {
+       "nom": "Commissaire à la langue française, publications",
+       "url": "https://www.commissairelanguefrancaise.quebec/publications/rapport/"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "slug": "sante",
+   "nom": "Santé",
+   "secteur": "sante",
+   "questions": [
+    {
+     "question": "Pourquoi attend-on si longtemps aux urgences ?",
+     "reponse_courte": "La durée moyenne d'un séjour sur civière est de 16 h 48 en 2025-2026, contre une norme clinique de 8 à 12 heures. Elle a baissé de 24 minutes en un an, mais reste au-dessus du niveau d'avant la pandémie.",
+     "details": "La séquence : environ 15 h 12 d'avril 2019 à février 2020, 16 h 45 en 2021-2022, 17 h 12 en 2024-2025, 16 h 48 en 2025-2026. La cible du plan stratégique du ministère était de 15 h en 2025-2026, non atteinte, et de 14 h en 2026-2027. En 2025-2026, 5,3 % des séjours ont dépassé 48 heures et le délai moyen de prise en charge médicale était de 165 minutes. Deux précisions pour bien lire ce chiffre : il ne décrit que les patients installés sur civière, pas ceux qui attendent assis, et c'est une moyenne, tirée vers le haut par quelques séjours très longs. Une baisse de la moyenne peut aussi masquer une hausse du nombre de personnes qui repartent sans avoir vu de médecin.",
+     "debat": "Les causes : manque de personnel, manque de lits d'hospitalisation qui bloquent la sortie des urgences, ou manque d'accès en première ligne qui amène des patients à l'urgence faute d'alternative.",
+     "sources": [
+      {
+       "nom": "Ministère de la Santé et des Services sociaux, indicateur « durée moyenne de séjour sur civière »",
+       "url": "https://msss.gouv.qc.ca/repertoires/indicateurs-gestion/indicateur-000027/"
+      }
+     ]
+    },
+    {
+     "question": "Manque-t-on de médecins au Québec ?",
+     "reponse_courte": "Le Québec a plus de médecins par habitant que la moyenne canadienne et que l'Ontario. Le problème mesuré n'est pas le nombre de médecins, mais le volume de services rendus.",
+     "details": "En 2024, le Québec comptait 260,2 médecins par 100 000 habitants, contre 241,1 au Canada et 221,1 en Ontario ; pour les médecins de famille seulement, 129,2 contre 107,3 en Ontario. Au 31 mars 2026, le Collège des médecins comptait 26 775 médecins inscrits, dont 23 288 membres actifs exerçant au Québec, 350 de plus qu'un an plus tôt. Pourtant, le Commissaire à la santé et au bien-être établit dans son rapport de performance du 11 juin 2026 qu'entre 2015 et 2023, les dépenses publiques de santé ont crû plus vite que les revenus de l'État et que le PIB, alors que le volume de services par habitant diminuait : visites chez les médecins −1,3 % par an, hospitalisations de courte durée −1,6 %, jours de présence à l'hôpital −1,9 %, chirurgies −0,8 %. Le Québec compte 2,3 lits d'hôpitaux pour 1 000 habitants, au 17e rang sur 18 pays comparés, et 39 % des bâtiments du réseau sont en mauvais ou très mauvais état.",
+     "debat": "Les causes de cet écart entre les ressources et les services rendus : organisation du travail, tâches administratives, mode de rémunération, vieillissement de la population, état des installations. Le rapport pose le constat ; son explication fait l'objet d'interprétations divergentes.",
+     "sources": [
+      {
+       "nom": "Institut canadien d'information sur la santé, série contextuelle sur le Québec",
+       "url": "https://www.cihi.ca/en/health-system-context-series-quebec"
+      },
+      {
+       "nom": "Institut canadien d'information sur la santé, médecins par 100 000 habitants",
+       "url": "https://www.cihi.ca/en/indicators/physicians-per-100000-population-by-specialty"
+      },
+      {
+       "nom": "Collège des médecins du Québec, bilan des effectifs médicaux au 31 mars 2026",
+       "url": "https://www.cmq.org/fr/actualites/bilan-effectifs-medicaux-20260331"
+      },
+      {
+       "nom": "Commissaire à la santé et au bien-être, Rapport de performance, 11 juin 2026",
+       "url": "https://www.csbe.gouv.qc.ca/publication/rapport-performance-2025-2026.html"
+      }
+     ]
+    },
+    {
+     "question": "Le Québec dépense-t-il trop en santé ?",
+     "reponse_courte": "Il dépense moins par habitant que presque toutes les autres provinces — mais la santé accapare plus de 4 dollars sur 10 de ses dépenses.",
+     "details": "En 2025, les dépenses totales de santé, publiques et privées, s'élevaient à 9 320 $ par habitant au Québec, l'avant-dernier rang le plus bas après l'Ontario (9 045 $), pour une moyenne canadienne de 9 626 $ ; la Nouvelle-Écosse dépense 11 617 $, Terre-Neuve-et-Labrador 11 109 $. Au budget 2026-2027 du Québec, la mission Santé et services sociaux représente 70,0 G$, soit environ 43 % du total des missions. Attention au raccourci : dépenser moins par habitant ne veut pas dire être plus efficace, car les salaires, la structure d'âge de la population et l'étendue de la couverture publique varient d'une province à l'autre.",
+     "debat": "Le niveau souhaitable de dépense, et surtout sa répartition — c'est précisément l'objet du rapport du Commissaire à la santé et au bien-être.",
+     "sources": [
+      {
+       "nom": "Institut canadien d'information sur la santé, Tendances des dépenses nationales de santé 2025 (27 novembre 2025)",
+       "url": "https://www.cihi.ca/en/national-health-expenditure-trends/nhex-trends-reports/nhex-trends-2025-snapshot"
+      },
+      {
+       "nom": "Rapport préélectoral sur l'état des finances publiques du Québec, ministère des Finances, août 2026",
+       "url": "https://cdn-contenu.quebec.ca/cdn-contenu/adm/min/finances/publications-adm/Rapport_preelectoral/FR/MINFR_RP_2026.pdf"
+      }
+     ]
+    },
+    {
+     "question": "Est-ce que le privé réglerait les listes d'attente ?",
+     "reponse_courte": "Les études disponibles ne montrent pas qu'un réseau privé parallèle réduit l'attente au public ; plusieurs mesurent l'effet inverse. Sur la sous-traitance de chirurgies payées par l'État à des cliniques privées, il n'existe pas d'évaluation chiffrée québécoise.",
+     "details": "Un article du Journal de l'Association médicale canadienne (25 mai 2026) rappelle l'expérience du Manitoba dans les années 1990, où la pratique mixte était permise en ophtalmologie : les patients payants attendaient 4 semaines, les patients du public traités par des ophtalmologistes sans activité privée 10 semaines, et ceux traités par des ophtalmologistes en pratique mixte 23 semaines ; l'écart a disparu après le rétablissement de l'interdiction. Le Collège des médecins du Québec cite le chercheur Olivier Jacques : « Aucune étude n'a pu démontrer que l'existence d'un réseau privé réduisait la liste d'attente au public », l'argument étant que les deux réseaux puisent dans la même main-d'œuvre. Le Québec comptait 848 médecins non participants à la RAMQ, contre 18 dans tout le reste du Canada ; depuis le 24 avril 2025, le devenir exige une autorisation préalable de Santé Québec. Par ailleurs le privé est déjà très présent ailleurs : environ 71 % des dépenses de santé sont publiques au Canada, le privé payant surtout les médicaments hors hôpital, les soins dentaires et les soins de la vue — au Québec, 64,4 % de la dépense en médicaments était privée en 2024.",
+     "debat": "Presque tout le reste : l'effet de la sous-traitance de chirurgies publiques à des cliniques privées, non évalué au Québec, le coût comparé des deux modes de prestation et la question de principe. Les constats ci-dessus portent sur le privé parallèle avec pratique mixte, pas sur le recours ponctuel du réseau public à des fournisseurs privés — une distinction souvent perdue dans le débat.",
+     "sources": [
+      {
+       "nom": "Mayall, Hastings et Manns, « Un système de santé privé parallèle... », Journal de l'Association médicale canadienne, 25 mai 2026",
+       "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13218602/"
+      },
+      {
+       "nom": "Collège des médecins du Québec, « Place du privé en santé : des faits et des chiffres pour y voir plus clair », 7 juillet 2025",
+       "url": "https://www.cmq.org/fr/informer-sante/infocmq/pratique-medicale/place-prive-sante"
+      },
+      {
+       "nom": "RAMQ, modification de la marche à suivre pour devenir non participant, 2 mai 2025",
+       "url": "https://www.ramq.gouv.qc.ca/fr/professionnels/actualites/2025-05-02/modification-marche-a-suivre-devenir-non-participant"
+      },
+      {
+       "nom": "Institut canadien d'information sur la santé, Tendances des dépenses nationales de santé 2025",
+       "url": "https://www.cihi.ca/en/national-health-expenditure-trends/nhex-trends-reports/nhex-trends-2025-snapshot"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "slug": "logement",
+   "nom": "Logement",
+   "secteur": "logement",
+   "questions": [
+    {
+     "question": "Est-ce vrai que les loyers ont doublé depuis 2018 ?",
+     "reponse_courte": "Non. Ils ont beaucoup augmenté, mais pas doublé : le loyer moyen au Québec est passé de 761 $ à 1 232 $, soit 62 % de plus.",
+     "details": "« La Vérif » de Radio-Canada a examiné cette affirmation le 1er septembre 2026 et l'a jugée exagérée. Sur la même période, la mensualité hypothécaire a augmenté d'environ 43 % dans la région de Montréal et de 28 % dans la région de Québec. Pour la région de Montréal, l'enquête d'octobre 2025 de la SCHL donne un loyer moyen de 1 346 $ pour un logement de 2 chambres, en hausse de 7,2 % sur un an, contre 1 277 $ dans la région de Québec et 1 550 $ pour l'ensemble du Canada. Une précision importante : le loyer moyen de la SCHL est la moyenne de tous les loyers payés, y compris par des locataires en place depuis quinze ans. Il est nettement plus bas que le loyer demandé aujourd'hui pour un logement libre — c'est pourquoi beaucoup de gens qui cherchent un logement trouvent ce chiffre irréaliste.",
+     "debat": null,
+     "sources": [
+      {
+       "nom": "La Vérif, Radio-Canada, « Les loyers et les hypothèques ont-ils doublé depuis 2018 ? », 1er septembre 2026",
+       "url": "https://ici.radio-canada.ca/nouvelle/2279805/verif-pspp-loyers-hypotheques-logement-elections-quebec"
+      },
+      {
+       "nom": "SCHL, Rapport sur le marché locatif 2025 (enquête d'octobre 2025, publiée le 11 décembre 2025)",
+       "url": "https://www.cmhc-schl.gc.ca/professionals/housing-markets-data-and-research/market-reports/rental-market-reports-major-centres"
+      }
+     ]
+    },
+    {
+     "question": "Pourquoi les loyers montent-ils autant, même quand il y a plus de logements vides ?",
+     "reponse_courte": "Parce que la hausse se concentre au moment où un logement change de locataire, et parce que construire coûte beaucoup plus cher qu'avant.",
+     "details": "Sur l'île de Montréal en octobre 2025, le loyer moyen d'un logement vacant était de 1 573 $ contre 1 275 $ pour un logement occupé, un écart de 23 % ; pour les 2 chambres au premier trimestre de 2025, la SCHL mesure un loyer affiché de 1 890 $ contre 1 220 $ pour un logement occupé, le ratio le plus élevé des grandes villes canadiennes (Toronto 1,26, Edmonton 1,03). Côté coûts, l'indice des prix de la construction résidentielle a augmenté de plus de 65 % depuis la fin de 2019, contre 17,2 % d'inflation générale, la main-d'œuvre étant aujourd'hui le principal moteur ; au deuxième trimestre de 2026, ces coûts ont encore augmenté de 2,6 % à Québec et 2,5 % à Montréal en un seul trimestre, les deux plus fortes hausses au pays. Enfin, les logements vides ne sont pas ceux qu'on cherche : à Montréal en 2025, 5,9 % des logements à plus de 1 900 $ étaient vacants, contre 1,6 % de ceux sous 1 300 $.",
+     "debat": "Le poids relatif de chaque cause. Personne ne l'a chiffré pour le Québec.",
+     "sources": [
+      {
+       "nom": "SCHL, « Rent control and the affordability of rental housing in Canada », août 2025",
+       "url": "https://www.cmhc-schl.gc.ca/professionals/housing-markets-data-and-research/housing-research/research-reports/accelerate-supply/rent-control-affordability-rental-housing-canada"
+      },
+      {
+       "nom": "Desjardins, Études économiques, coûts de construction au Québec, 27 octobre 2025",
+       "url": "https://www.desjardins.com/fr/epargne-placements/etudes-economiques/quebec-construction-27-octobre-2025.html"
+      },
+      {
+       "nom": "Statistique Canada, indice des prix de la construction de bâtiments, 2e trimestre de 2026",
+       "url": "https://www150.statcan.gc.ca/n1/daily-quotidien/260724/dq260724b-fra.htm"
+      },
+      {
+       "nom": "SCHL, Rapport sur le marché locatif 2025 (enquête d'octobre 2025, publiée le 11 décembre 2025)",
+       "url": "https://www.cmhc-schl.gc.ca/professionals/housing-markets-data-and-research/market-reports/rental-market-reports-major-centres"
+      }
+     ]
+    },
+    {
+     "question": "De combien mon loyer peut-il augmenter cette année ?",
+     "reponse_courte": "Quand le Tribunal administratif du logement fixe le loyer, le pourcentage de base est de 3,1 % pour les baux renouvelés entre le 2 avril 2026 et le 1er avril 2027. Ce pourcentage ne s'applique pas aux augmentations convenues directement entre locataire et propriétaire.",
+     "details": "Le taux est calculé selon une nouvelle méthode depuis le 1er janvier 2026 : quatre indicateurs au lieu de treize, dont la moyenne de la variation de l'indice des prix à la consommation du Québec sur trois ans, ce qui lisse les pics d'inflation. L'ancienne méthode reste applicable aux avis de modification de bail donnés avant le 1er janvier 2026, avec un pourcentage de base de 4,5 % pour les baux débutant entre le 2 avril 2025 et le 1er avril 2026. Des ajustements s'ajoutent si les taxes municipales ou scolaires, les assurances ou des travaux majeurs dépassent le taux de base. Un taux distinct de 6,7 % s'applique à la part du loyer correspondant aux services rattachés à la personne du locataire, dans les résidences pour aînés.",
+     "debat": "L'opportunité d'un plafond légal d'augmentation, que le Québec n'a pas : ici, l'augmentation n'est encadrée que si le locataire la refuse et que le Tribunal est saisi.",
+     "sources": [
+      {
+       "nom": "Tribunal administratif du logement, pourcentages applicables à la fixation de loyer 2026",
+       "url": "https://www.tal.gouv.qc.ca/fr/actualites/detail?code=diffusion-des-pourcentages-applicables-a-la-fixation-de-loyer-2026"
+      },
+      {
+       "nom": "Gouvernement du Québec, « Pourcentages applicables 2026 : quelques précisions importantes »",
+       "url": "https://www.quebec.ca/nouvelles/actualites/details/pourcentages-applicables-2026-quelques-precisions-importantes-68210"
+      },
+      {
+       "nom": "Tribunal administratif du logement, méthode de calcul de l'augmentation de loyer",
+       "url": "https://www.tal.gouv.qc.ca/fr/calcul-pour-l-augmentation-de-loyer"
+      }
+     ]
+    },
+    {
+     "question": "Construit-on assez de logements, et qu'est-ce que l'État peut faire ?",
+     "reponse_courte": "La construction est repartie — 59 864 mises en chantier en 2025 — mais reste sous ce que la SCHL juge nécessaire. Chaque outil public a des effets mesurés, et ils sont rarement ceux qu'on attend.",
+     "details": "Les mises en chantier au Québec sont passées d'un sommet de 67 810 en 2021 à un creux de 38 912 en 2023, puis 48 713 en 2024 et 59 864 en 2025 ; rapporté à la population, le Québec a construit davantage que l'Ontario en 2025. Selon « La Vérif », l'estimation la plus optimiste de la SCHL pour la capacité annuelle du Québec est de 72 134 logements, ce qui rend une cible de 100 000 par année improbable. Sur les outils : une revue SCHL de 49 études conclut que le contrôle des loyers ralentit en moyenne de 8 points de pourcentage la croissance des loyers visés, mais s'accompagne souvent d'une hausse de 11 points des loyers non visés, d'une baisse de la mobilité et d'un entretien moins soutenu. La réforme du zonage d'Auckland, qui a « surzoné » les trois quarts du sol résidentiel en 2016, aurait laissé les loyers environ 28 % plus bas qu'ils ne l'auraient été sans elle — mais l'effet vient de l'ampleur de la réforme, les surzonages localisés n'ayant pas produit de réponse mesurable. L'OCDE prévient que là où l'offre est rigide, une hausse des allocations-logement peut pousser les loyers à la hausse. Enfin, le Vérificateur général du Québec relève qu'au 31 décembre 2024, 50 684 suppléments au loyer étaient autorisés mais seulement 37 120 versés, et que le délai moyen de développement d'un projet est passé de 11 mois (1998-2002) à plus de 42 mois (2015-2020).",
+     "debat": "L'effet du contrôle des loyers sur la construction neuve (la SCHL et l'OCDE penchent vers un frein, d'autres font valoir que le Québec livre plus de logements locatifs que l'Ontario et la Colombie-Britannique malgré un encadrement strict), l'effet d'éviction du logement social sur la construction privée, et la question de savoir si construire davantage suffit à restaurer l'abordabilité. Ce qui n'est pas débattu : le levier le plus direct sur l'offre — zonage, permis, taxe foncière — appartient aux municipalités, pas au gouvernement du Québec.",
+     "sources": [
+      {
+       "nom": "Statistique Canada, tableau 34-10-0126-01, mises en chantier (données SCHL)",
+       "url": "https://www150.statcan.gc.ca/t1/tbl1/fr/tv.action?pid=3410012601"
+      },
+      {
+       "nom": "La Vérif, Radio-Canada, « Construire 100 000 logements par année », 31 août 2026",
+       "url": "https://ici.radio-canada.ca/nouvelle/2279285/verif-logements-habitation-milliard-plq-schl-"
+      },
+      {
+       "nom": "SCHL, « Rent control and the affordability of rental housing in Canada », août 2025",
+       "url": "https://www.cmhc-schl.gc.ca/professionals/housing-markets-data-and-research/housing-research/research-reports/accelerate-supply/rent-control-affordability-rental-housing-canada"
+      },
+      {
+       "nom": "Greenaway-McGrevy et So, « Can Zoning Reform Reduce Housing Costs? Evidence from Rents in Auckland », Université d'Auckland, 2024",
+       "url": "https://www.auckland.ac.nz/assets/business/our-research/docs/economic-policy-centre/Can%20Zoning%20Reform%20Reduce%20Housing%20Costs.%20Evidence%20from%20Rents%20in%20Auckland.pdf"
+      },
+      {
+       "nom": "OCDE, Brick by Brick: Building Better Housing Policies, 2021",
+       "url": "https://www.oecd.org/content/dam/oecd/en/publications/reports/2021/05/brick-by-brick_eb010639/b453b043-en.pdf"
+      },
+      {
+       "nom": "Vérificateur général du Québec, audit sur l'accessibilité aux logements subventionnés, mai 2025",
+       "url": "https://www.vgq.qc.ca/Fichiers/Publications/rapport-annuel/214/VGQ_mai2025_chapitre2_web.pdf"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "slug": "cout-de-la-vie",
+   "nom": "Coût de la vie et impôts",
+   "secteur": "finances",
+   "questions": [
+    {
+     "question": "Les Québécois sont-ils vraiment les plus taxés en Amérique du Nord ?",
+     "reponse_courte": "Ça dépend entièrement de la mesure, et les trois réponses possibles sont toutes défendables. Sur l'ensemble des recettes fiscales rapportées à l'économie, oui. Sur l'impôt des particuliers seul, le Québec est 2e. Une fois les crédits et allocations pris en compte, il est 5e.",
+     "details": "Selon le Bilan de la fiscalité au Québec de la Chaire en fiscalité de l'Université de Sherbrooke, les recettes fiscales représentaient 38,6 % du PIB en 2024, le poids le plus élevé des dix provinces et le 11e rang sur 32 économies avancées de l'OCDE. Pour l'impôt sur le revenu des particuliers seul, le Québec est 2e au Canada, derrière la Nouvelle-Écosse ; « La Vérif » calcule que si le système néo-écossais s'appliquait ici, les Québécois paieraient 4,1 G$ de plus. En tenant compte des crédits d'impôt remboursables et des allocations, le Québec tombe au 5e rang, derrière quatre provinces de l'Atlantique. Le résultat dépend aussi du type de ménage : une famille monoparentale de deux enfants gagnant 67 % du salaire moyen a la charge fiscale nette la plus faible des dix provinces — elle est même négative — tandis qu'une personne seule à revenu élevé a la plus lourde.",
+     "debat": "Quelle mesure est « la bonne ». La Chaire en fiscalité précise elle-même que son ratio « ne donne aucune indication quant au poids de l'imposition individuelle » et que « la contrepartie en biens et en services publics offerte par l'État n'apparaît pas » dans le calcul. L'Institut Fraser (organisme pro-marché) situe la « journée d'affranchissement de l'impôt » du Québec au 27 juin 2026, la plus tardive au pays ; l'IRIS (institut progressiste) conteste cette méthode, qui agrège des prélèvements hétérogènes et masque, derrière une moyenne, l'écart réel entre les ménages.",
+     "sources": [
+      {
+       "nom": "Bilan de la fiscalité au Québec, édition 2026, Chaire en fiscalité et en finances publiques, Université de Sherbrooke (8 janvier 2026)",
+       "url": "https://cffp.recherche.usherbrooke.ca/wp-content/uploads/2026/01/Bilan-de-la-fiscalite-au-Quebec_Edition-2026.pdf"
+      },
+      {
+       "nom": "La Vérif, Radio-Canada, « Les Québécois sont-ils les plus taxés d'Amérique du Nord ? », 7 septembre 2026",
+       "url": "https://ici.radio-canada.ca/nouvelle/2281411/la-verif-quebec-taxes-impots-duhaime-elections"
+      },
+      {
+       "nom": "Institut Fraser (orientation pro-marché), Tax Freedom Day 2026",
+       "url": "https://www.fraserinstitute.org/studies/canadians-celebrate-tax-freedom-day-on-june-9-2026"
+      },
+      {
+       "nom": "IRIS (institut progressiste), critique de la méthode de l'Institut Fraser",
+       "url": "https://iris-recherche.qc.ca/blogue/travail-et-emploi/les-gadgets-anti-impot-de-l-institut-fraser/"
+      }
+     ]
+    },
+    {
+     "question": "Où va l'argent de mes impôts, et d'où vient-il ?",
+     "reponse_courte": "Un peu plus de 4 dollars sur 10 vont à la santé et aux services sociaux, environ 2,4 à l'éducation et à la culture. Du côté des revenus, l'impôt des particuliers fournit 30 % du total et les transferts d'Ottawa près de 20 %.",
+     "details": "Pour 2026-2027, le gouvernement du Québec prévoit 168,4 G$ de revenus et 171,6 G$ de dépenses. Les revenus se répartissent ainsi : impôt des particuliers 50,9 G$ (30,3 %), taxes à la consommation 30,7 G$ (18,2 %), revenus divers 15,8 G$ (9,4 %), impôts des sociétés 14,7 G$ (8,7 %), cotisations pour les services de santé 9,5 G$ (5,7 %), droits et redevances 6,5 G$ (3,9 %), entreprises du gouvernement dont Hydro-Québec 5,9 G$ (3,5 %), impôt foncier scolaire 1,3 G$ — et transferts fédéraux 33,0 G$ (19,6 %). Les dépenses vont à la santé et aux services sociaux (70,0 G$), à l'éducation et à la culture (38,4 G$), à l'économie et à l'environnement (23,9 G$), au soutien aux personnes et aux familles (17,3 G$), à la gouverne et à la justice (12,2 G$) et aux intérêts de la dette (10,5 G$).",
+     "debat": "Rien sur les montants. Le débat porte sur la répartition souhaitable et sur l'efficacité de chaque dollar dépensé.",
+     "sources": [
+      {
+       "nom": "Rapport préélectoral sur l'état des finances publiques du Québec, ministère des Finances, août 2026",
+       "url": "https://cdn-contenu.quebec.ca/cdn-contenu/adm/min/finances/publications-adm/Rapport_preelectoral/FR/MINFR_RP_2026.pdf"
+      }
+     ]
+    },
+    {
+     "question": "Pourquoi tout coûte plus cher, surtout l'épicerie ?",
+     "reponse_courte": "Depuis la fin de 2019, les prix ont augmenté d'environ 26 % au Québec, mais l'épicerie d'environ 32 %. C'est pourquoi la hausse se sent davantage au supermarché qu'ailleurs.",
+     "details": "Selon l'indice des prix à la consommation de Statistique Canada, données d'août 2026 diffusées le 14 septembre 2026, l'inflation sur douze mois était de 3,1 % au Québec et de 3,0 % au Canada ; pour les aliments achetés en magasin, 2,3 % au Québec et 2,8 % au Canada. Depuis décembre 2019, le cumul atteint 26,1 % pour l'ensemble des prix au Québec et 31,5 % pour l'épicerie (24,5 % et 33,6 % au Canada). En août 2026, pour la première fois depuis juillet 2024, l'inflation alimentaire est passée sous l'inflation d'ensemble. À retenir aussi : l'inflation ralentit, mais les prix ne baissent pas — un taux de 3 % signifie que les prix continuent de monter, un peu moins vite.",
+     "debat": "Les causes de la hausse alimentaire — coûts de production et de transport, concentration du commerce de détail, climat — et les moyens d'agir. Les leviers macroéconomiques (taux d'intérêt, monnaie, tarifs douaniers) relèvent de la Banque du Canada et d'Ottawa, pas du gouvernement du Québec.",
+     "sources": [
+      {
+       "nom": "Statistique Canada, indice des prix à la consommation, août 2026 (diffusion du 14 septembre 2026)",
+       "url": "https://www150.statcan.gc.ca/n1/daily-quotidien/260914/dq260914a-fra.htm"
+      }
+     ]
+    },
+    {
+     "question": "Est-ce que le Québec s'appauvrit ?",
+     "reponse_courte": "Non. Il produit moins de richesse par habitant que la moyenne canadienne, mais son écart avec l'Ontario s'est réduit et le revenu disponible des ménages a progressé plus vite qu'ailleurs au pays.",
+     "details": "Le PIB réel par habitant du Québec était de 53 812 $ en 2024, contre 59 529 $ pour le Canada. L'écart avec l'Ontario est passé de 13,7 % en 2018 à 9,2 % en 2024, avant de remonter à environ 9,7 % en 2025. Le revenu disponible par habitant a augmenté de 10,3 % en termes réels entre 2018 et 2024, contre 2,8 % en Ontario et 4,3 % dans le reste du Canada. La faiblesse mesurée est la productivité, pas le nombre d'heures : le PIB par heure travaillée était de 82,18 $ au Québec en 2024, contre 86,58 $ au Canada et 104,37 $ dans la moyenne de dix-neuf pays de l'OCDE, alors que les heures travaillées par emploi au Québec dépassent cette même moyenne. Piège de lecture à connaître : quand la population bondit, le PIB total grimpe mécaniquement sans que personne ne soit plus riche ; quand elle recule, le PIB par habitant peut s'améliorer même si l'économie ralentit.",
+     "debat": "Les causes du retard de productivité et les moyens d'y remédier.",
+     "sources": [
+      {
+       "nom": "Institut de la statistique du Québec, PIB réel par habitant",
+       "url": "https://statistique.quebec.ca/en/produit/publication/indicateurs-progres-produit-interieur-brut-reel-par-habitant"
+      },
+      {
+       "nom": "Desjardins, Études économiques, « Québec-Ontario : rattrapage économique », 6 février 2026",
+       "url": "https://www.desjardins.com/fr/epargne-placements/etudes-economiques/quebec-ontario-rattrapage-economique-6-fevrier-2026.html"
+      },
+      {
+       "nom": "Centre sur la productivité et la prospérité, HEC Montréal, 2026",
+       "url": "https://cpp.hec.ca/wp-content/uploads/2026/05/PP-2026-01.pdf"
+      },
+      {
+       "nom": "Rapport préélectoral sur l'état des finances publiques du Québec, ministère des Finances, août 2026",
+       "url": "https://cdn-contenu.quebec.ca/cdn-contenu/adm/min/finances/publications-adm/Rapport_preelectoral/FR/MINFR_RP_2026.pdf"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "slug": "dette-deficit",
+   "nom": "Dette et déficit",
+   "secteur": "finances",
+   "questions": [
+    {
+     "question": "C'est quoi, le vrai déficit du Québec ? On entend deux chiffres différents.",
+     "reponse_courte": "Les deux chiffres sont exacts : ils ne mesurent pas la même chose. Pour 2025-2026, le déficit est de 5,5 G$ au sens comptable et de 7,8 G$ au sens de la Loi sur l'équilibre budgétaire.",
+     "details": "Le déficit comptable, c'est revenus moins dépenses. Le solde « au sens de la loi » retranche en plus les sommes versées au Fonds des générations, réservées au remboursement de la dette — 2,5 G$ en 2026-2027. Pour 2026-2027, la prévision est de −5,2 G$ (0,8 % du PIB) au sens comptable et de −7,7 G$ (1,2 % du PIB) au sens de la loi. Le retour à l'équilibre est prévu par la loi pour 2029-2030, avec des écarts encore à résorber de 1,9 G$ en 2028-2029 et 2,0 G$ en 2029-2030. Le gouvernement peut donc afficher un surplus comptable tout en étant en déficit « légal ».",
+     "debat": "La trajectoire de retour à l'équilibre repose sur des hypothèses — croissance économique, renouvellement de transferts fédéraux, rendement d'Hydro-Québec — jugées plus ou moins prudentes selon les analystes. À savoir : les cadres financiers des partis ne sont pas audités ; seul le rapport préélectoral du ministère des Finances est examiné par le Vérificateur général.",
+     "sources": [
+      {
+       "nom": "Rapport préélectoral sur l'état des finances publiques du Québec, ministère des Finances, août 2026",
+       "url": "https://cdn-contenu.quebec.ca/cdn-contenu/adm/min/finances/publications-adm/Rapport_preelectoral/FR/MINFR_RP_2026.pdf"
+      }
+     ]
+    },
+    {
+     "question": "Quelle est la différence entre le déficit et la dette ? Et la dette augmente-t-elle ?",
+     "reponse_courte": "Le déficit est le manque d'une année ; la dette est le cumul de tout ce qui a été emprunté. La dette augmente en dollars, mais elle diminue par rapport à la taille de l'économie.",
+     "details": "Au 31 mars 2026 : dette brute 265,5 G$ (41,1 % du PIB), dette nette 245,9 G$ (38,1 %), dette des déficits cumulés 127,4 G$ (19,7 %). La dette nette soustrait les actifs financiers de l'État ; la dette des déficits cumulés soustrait en plus les routes, écoles et hôpitaux, qui ont une valeur. Le sommet de la dette nette fut 53,4 % du PIB en 2014 ; elle était à 42,9 % en 2019. Comparaison au 31 mars 2026 : Ontario 36,9 %, moyenne des provinces 30,4 %, gouvernement fédéral 46,0 %. Les cibles légales sont 35,5 % en 2032-2033 et 32,5 % en 2037-2038. Deux pièges de comparaison : depuis le 1er avril 2026, une norme comptable remplace la « dette nette » par le « passif financier net », ce qui fait baisser le ratio de 0,9 point sans qu'un dollar soit remboursé ; et de 2019 à 2026, la croissance du PIB nominal a retranché 13,6 points au ratio alors que les déficits en ajoutaient 10,5.",
+     "debat": "Le bon niveau de dette et le rythme auquel il faudrait la réduire.",
+     "sources": [
+      {
+       "nom": "Rapport préélectoral sur l'état des finances publiques du Québec, ministère des Finances, août 2026",
+       "url": "https://cdn-contenu.quebec.ca/cdn-contenu/adm/min/finances/publications-adm/Rapport_preelectoral/FR/MINFR_RP_2026.pdf"
+      },
+      {
+       "nom": "Plan budgétaire 2026-2027, ministère des Finances du Québec",
+       "url": "https://www.finances.gouv.qc.ca/Budget_et_mise_a_jour/budget/documents/Budget2627_PlanBudgetaire.pdf"
+      }
+     ]
+    },
+    {
+     "question": "Combien coûtent les intérêts sur la dette ?",
+     "reponse_courte": "10,5 G$ en 2026-2027, soit 6,2 % des revenus de l'État — le 4e poste de dépenses, après la santé, l'éducation et l'enseignement supérieur.",
+     "details": "Cette part était de 11,4 % en 2013-2014 et de 7,7 % en 2018-2019 ; elle est prévue à 6,5 % en 2029-2030. Le Fonds des générations, la réserve dédiée au remboursement de la dette, valait 16,6 G$ au 31 mars 2026, soit 6,8 % de la dette nette, avec des versements annuels prévus de 2,3 à 2,9 G$. Au 6 mars 2026, les cotes de crédit du Québec étaient Aa2 (Moody's), A+ (S&P), AA− (Fitch), AA bas (DBRS) et AAA (JCR), toutes avec perspective stable.",
+     "debat": "L'utilité du Fonds des générations : emprunter pour placer, quand le rendement des placements dépasse le coût des emprunts, est un choix financier qui a ses défenseurs et ses critiques.",
+     "sources": [
+      {
+       "nom": "Rapport préélectoral sur l'état des finances publiques du Québec, ministère des Finances, août 2026",
+       "url": "https://cdn-contenu.quebec.ca/cdn-contenu/adm/min/finances/publications-adm/Rapport_preelectoral/FR/MINFR_RP_2026.pdf"
+      },
+      {
+       "nom": "Plan budgétaire 2026-2027, ministère des Finances du Québec",
+       "url": "https://www.finances.gouv.qc.ca/Budget_et_mise_a_jour/budget/documents/Budget2627_PlanBudgetaire.pdf"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "slug": "energie",
+   "nom": "Énergie",
+   "secteur": "energie",
+   "questions": [
+    {
+     "question": "Pourquoi l'électricité coûte-t-elle si peu cher au Québec ?",
+     "reponse_courte": "Parce qu'un très grand volume d'électricité — 165 térawattheures par année — est vendu aux Québécois à un coût fixé par la loi plutôt qu'au prix du marché. C'est le « bloc patrimonial », l'héritage des barrages construits et payés au cours des décennies passées.",
+     "details": "La Loi sur Hydro-Québec (article 22.0.0.1) oblige la société d'État à fournir aux marchés québécois un volume d'électricité patrimoniale de 165 TWh. Depuis la refonte de 2025, c'est le gouvernement qui détermine le coût de cette électricité à récupérer dans les tarifs, coût indexé à la moyenne de la variation de l'indice des prix à la consommation du Québec sur trois ans. L'électricité consommée au-delà du bloc est acquise au prix du marché. Le résultat, au 1er avril 2025, pour 1 000 kWh par mois avant taxes : Montréal 8,29 ¢/kWh, Winnipeg 10,53, Vancouver 12,60, Ottawa 14,35, Toronto 15,57, Boston 47,87, New York 52,48. Un ménage montréalais paie donc environ six fois moins qu'un ménage new-yorkais. Une croyance à corriger au passage : le prix de 2,79 ¢/kWh, souvent cité comme « le prix du bloc patrimonial », date de la loi de 2000 ; il a été indexé depuis et ne figure plus tel quel dans la loi. Le volume de 165 TWh, lui, y est toujours.",
+     "debat": "Jusqu'où maintenir un tarif inférieur au coût de remplacement de l'électricité, alors que la prochaine production coûtera plus cher que l'ancienne.",
+     "sources": [
+      {
+       "nom": "Loi sur Hydro-Québec, chapitre H-5, LégisQuébec",
+       "url": "https://www.legisquebec.gouv.qc.ca/fr/document/lc/H-5"
+      },
+      {
+       "nom": "Hydro-Québec, Comparaison des prix de l'électricité dans les grandes villes nord-américaines, édition 2025",
+       "url": "https://www.hydroquebec.com/data/documents-donnees/pdf/comparaison-prix-electricite-2025.pdf"
+      }
+     ]
+    },
+    {
+     "question": "Qui décide des hausses de tarifs d'électricité, et de combien sera la prochaine ?",
+     "reponse_courte": "La Régie de l'énergie fixe les tarifs après audience publique, mais depuis 2025 le gouvernement peut lui imposer un plafond qu'elle est tenue de respecter. La hausse résidentielle du 1er avril 2026 a été de 3,0 %.",
+     "details": "La Loi sur la Régie de l'énergie, modifiée en 2025, prévoit à son article 52.4.1 que le gouvernement « peut établir un taux maximal applicable à la hausse de ces tarifs » et que « la Régie est tenue de fixer les tarifs concernés de manière que leur hausse n'excède pas ce taux ». La Régie procède à une révision tarifaire aux trois ans, les tarifs entrant en vigueur le 1er avril. Par sa décision D-2026-033 du 16 mars 2026, elle a fixé la hausse résidentielle à 3,0 % au 1er avril 2026, puis 3,0 % en 2027 et 2,6 % en 2028 — soit le plafond fixé par décret gouvernemental. La hausse moyenne toutes clientèles confondues est de 3,2 %. Concrètement, cela représente environ 2,30 $ à 2,40 $ de plus par mois pour un appartement de 68 m² et 5,46 $ à 6,70 $ pour une maison de 158 m².",
+     "debat": "L'équilibre entre le maintien de tarifs bas et le financement des investissements nécessaires à l'augmentation de la production.",
+     "sources": [
+      {
+       "nom": "Loi sur la Régie de l'énergie, chapitre R-6.01, LégisQuébec",
+       "url": "https://www.legisquebec.gouv.qc.ca/fr/document/lc/R-6.01"
+      },
+      {
+       "nom": "Régie de l'énergie, décision D-2026-033, 16 mars 2026 (dossier R-4307-2025)",
+       "url": "https://www.regie-energie.qc.ca/fr/participants/dossiers/R-4307-2025/doc/R-4307-2025-A-0067-Dec-Som-2026_03_16.pdf"
+      },
+      {
+       "nom": "Régie de l'énergie, communiqué sur la hausse tarifaire de 2026",
+       "url": "https://www.regie-energie.qc.ca/fr/nouvelles/communiques/la-regie-de-lenergie-estime-la-hausse-tarifaire-moyenne-a-32-pour-lensemble-de-la-clientele-dhydro-quebec-a-compter-du-1er-avril-2026"
+      }
+     ]
+    },
+    {
+     "question": "Est-ce qu'on manque d'électricité au Québec ?",
+     "reponse_courte": "Pas aujourd'hui, mais la marge disparaît autour de 2028, et à l'horizon 2035 une partie importante des besoins prévus n'a pas encore de source identifiée.",
+     "details": "Selon l'état d'avancement 2025 du Plan d'approvisionnement d'Hydro-Québec, déposé à la Régie de l'énergie le 31 octobre 2025, les besoins passent de 199,3 TWh en 2026 à 244,5 TWh en 2035, alors que les approvisionnements existants déclinent de 197,3 à 192,9 TWh. Le besoin résiduel atteint 19,1 TWh en 2030 et 51,6 TWh en 2035 ; une partie est couverte par des approvisionnements déjà prévus, mais 28 TWh restent sans source identifiée en 2035. La marge du bloc patrimonial tombe à zéro à partir de 2028. Le Plan d'action 2035 d'Hydro-Québec prévoit 60 TWh additionnels, 8 000 à 9 000 MW et des investissements de 90 à 110 G$ ; un appel d'offres éolien de 5 à 10 TWh a été lancé au printemps 2026. Par ailleurs, les réservoirs sont au plus bas en 21 ans (86 TWh au 1er janvier 2026, contre 97 en 2024, sur une capacité de 178 TWh), et Hydro-Québec a importé plus d'électricité qu'elle n'en a exporté au deuxième trimestre de 2026.",
+     "debat": "Le rythme et le choix des nouvelles sources, le niveau de demande à satisfaire — notamment celle des centres de données — et l'acceptabilité des projets : deux projets éoliens en terres agricoles, représentant environ 247 MW, ont été refusés par la Commission de protection du territoire agricole, dont un en mai 2026.",
+     "sources": [
+      {
+       "nom": "Hydro-Québec, État d'avancement 2025 du Plan d'approvisionnement 2023-2032, déposé à la Régie de l'énergie le 31 octobre 2025",
+       "url": "https://www.regie-energie.qc.ca/storage/app/media/Suivis/Suivi%20D-2023-109/etat-davancement-2025.pdf"
+      },
+      {
+       "nom": "Hydro-Québec, Plan d'action 2035",
+       "url": "https://www.hydroquebec.com/data/a-propos/pdf/plan-action-2035.pdf"
+      },
+      {
+       "nom": "Hydro-Québec, rapport annuel 2025",
+       "url": "https://www.hydroquebec.com/data/documents-donnees/pdf/hq-rapport-annuel-2025-francais.pdf"
+      },
+      {
+       "nom": "Radio-Canada, niveau des réservoirs d'Hydro-Québec",
+       "url": "https://ici.radio-canada.ca/nouvelle/2259399/reservoir-caniapiscau-hydro-quebec-niveau"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "slug": "comment-ca-marche",
+   "nom": "Comment ça marche",
+   "secteur": null,
+   "questions": [
+    {
+     "question": "Comment un gouvernement est-il formé ? Le parti avec le plus de sièges gagne-t-il automatiquement ?",
+     "reponse_courte": "Non, pas automatiquement. Le critère juridique n'est pas le nombre de sièges, mais le fait de disposer de l'appui d'une majorité de députés. Le premier ministre sortant reste en poste jusqu'à la nomination de son successeur.",
+     "details": "Le 5 octobre 2026, les électeurs éliront 127 députés, sur une nouvelle carte électorale adoptée en juin 2026 — deux circonscriptions de plus qu'auparavant. L'Assemblée nationale formule la règle ainsi : pour être invité à former un gouvernement par le lieutenant-gouverneur, le premier ministre « doit disposer de l'appui d'une majorité d'élus », et le chef du parti ayant remporté le plus de sièges le devient « normalement ». Le lieutenant-gouverneur nomme le premier ministre et les ministres, mais son rôle est « devenu avant tout symbolique » et ses gestes sont conformes à l'avis du gouvernement. La confiance de l'Assemblée est une convention, pas une loi : depuis 2009, le Règlement de l'Assemblée nationale énumère les cinq seules situations où elle peut être mise en cause, dont la motion de censure et l'adoption d'un projet de loi de crédits. Un gouvernement minoritaire reste en fonction tant qu'il n'est pas défait sur l'une d'elles. Enfin, le premier ministre sortant ne disparaît pas le soir du vote : la Loi sur l'exécutif prévoit que les ministres « restent en office » jusqu'à la désignation de leurs successeurs.",
+     "debat": "Rien sur ces règles elles-mêmes. Le mode de scrutin — majoritaire uninominal à un tour — fait l'objet d'un débat public ancien, qui sort du cadre de cette réponse.",
+     "sources": [
+      {
+       "nom": "Assemblée nationale du Québec, lexique : premier ministre",
+       "url": "https://www.assnat.qc.ca/fr/patrimoine/lexique/premier-ministre.html"
+      },
+      {
+       "nom": "Assemblée nationale du Québec, lexique : gouvernement minoritaire",
+       "url": "https://www.assnat.qc.ca/fr/patrimoine/lexique/gouvernement-minoritaire.html"
+      },
+      {
+       "nom": "Assemblée nationale du Québec, lexique : motion de censure",
+       "url": "https://www.assnat.qc.ca/fr/patrimoine/lexique/motion-de-censure.html"
+      },
+      {
+       "nom": "Loi sur l'exécutif, chapitre E-18, LégisQuébec",
+       "url": "https://www.legisquebec.gouv.qc.ca/fr/document/lc/E-18"
+      },
+      {
+       "nom": "Élections Québec, la nouvelle carte électorale provinciale",
+       "url": "https://www.electionsquebec.qc.ca/actualites/decouvrez-la-nouvelle-carte-electorale-provinciale/"
+      }
+     ]
+    },
+    {
+     "question": "Que faudrait-il, légalement, pour tenir un référendum ?",
+     "reponse_courte": "Un processus encadré par la Loi sur la consultation populaire : une question adoptée par l'Assemblée nationale sur proposition du premier ministre, un décret du gouvernement, deux comités nationaux financés à parts égales par l'État, et une campagne de cinq à six semaines.",
+     "details": "La question est proposée à l'Assemblée par le premier ministre (article 8) ; le débat est prioritaire et plafonné à 35 heures (article 9). Un décret du gouvernement ordonne ensuite la tenue du référendum et en fixe la date (article 13), et il ne peut être pris avant le 18e jour suivant la saisine de l'Assemblée (article 14). Le scrutin a lieu le cinquième ou le sixième lundi suivant le décret. Chaque option est portée par un comité national : les députés disposent de cinq jours pour s'inscrire, et si aucun ne le fait pour une option, le directeur général des élections peut inviter de trois à vingt électeurs à former le comité. Le ministre des Finances verse à chaque comité, dans les trois jours du décret, un montant identique fixé par l'Assemblée (article 40). Les plafonds sont de 1,00 $ par électeur pour un comité national et de 3 000 $ par électeur à chacun des comités. Une brochure unique, à espace égal pour chaque option, est envoyée aux électeurs au plus tard dix jours avant le scrutin. Un Conseil du référendum formé de trois juges de la Cour du Québec tranche les contestations.",
+     "debat": "Pour un référendum portant sur la souveraineté, trois textes s'ajoutent et ne disent pas la même chose. Le Renvoi relatif à la sécession du Québec (Cour suprême, 1998) écarte tout droit de sécession unilatérale mais crée une obligation de négocier en cas de « majorité claire » à une « question claire », en laissant aux acteurs politiques le soin de juger de cette clarté. La Loi de clarification fédérale (2000) confie à la Chambre des communes l'évaluation de la clarté de la question puis de la majorité, sans fixer aucun seuil chiffré. La loi 99 du Québec (article 4) prévoit que « l'option gagnante est celle qui obtient la majorité des votes déclarés valides, soit 50 % de ces votes plus un vote ». Aucun tribunal n'a tranché la question de l'articulation entre la loi québécoise et la loi fédérale : c'est un fait juridique, pas une opinion.",
+     "sources": [
+      {
+       "nom": "Loi sur la consultation populaire, chapitre C-64.1, LégisQuébec",
+       "url": "https://www.legisquebec.gouv.qc.ca/fr/document/lc/C-64.1"
+      },
+      {
+       "nom": "Renvoi relatif à la sécession du Québec, [1998] 2 R.C.S. 217, Cour suprême du Canada",
+       "url": "https://decisions.scc-csc.ca/scc-csc/scc-csc/fr/item/1643/index.do"
+      },
+      {
+       "nom": "Loi de clarification, L.C. 2000, ch. 26",
+       "url": "https://laws-lois.justice.gc.ca/fra/lois/c-31.8/"
+      },
+      {
+       "nom": "Loi sur l'exercice des droits fondamentaux et des prérogatives du peuple québécois et de l'État du Québec, chapitre E-20.2",
+       "url": "https://www.legisquebec.gouv.qc.ca/fr/document/lc/E-20.2"
+      },
+      {
+       "nom": "Élections Québec, les référendums",
+       "url": "https://www.electionsquebec.qc.ca/en/understand/understanding-democracy-and-elections/referendums/"
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "a_verifier": [
+  "Nombre de Québécois en attente au guichet d'accès à un médecin de famille en 2026 : la source officielle de la RAMQ (mise à jour du 25 août 2026) n'est pas téléchargeable automatiquement, et des chiffres très divergents circulent (de 359 000 à 2 millions) selon la définition retenue. Aucun n'est publié ici.",
+  "Part exacte des dépenses privées de santé propre au Québec : à extraire des tableaux détaillés de l'Institut canadien d'information sur la santé. Le chiffre canadien (environ 71 % de dépenses publiques) est utilisé en attendant.",
+  "Décompte 2026 des médecins non participants à la RAMQ : le chiffre publié de 848 date de juillet 2025.",
+  "Affirmation selon laquelle les chirurgies réalisées au privé coûteraient « 35 % plus cher » qu'au public : source primaire introuvable, donc non publiée.",
+  "Le taux de base de 3,1 % du Tribunal administratif du logement pour 2026 est-il encore ventilé entre logement chauffé et non chauffé sous la nouvelle méthode ? À confirmer auprès du Tribunal.",
+  "Hausse cumulative des coûts de construction : trois chiffres circulent (+65 % depuis la fin de 2019, +66 % depuis 2019, +71 % depuis 2017 ; le Vérificateur général retient +44 % à Montréal de janvier 2019 à juin 2024). La formulation datée de Desjardins est retenue ici.",
+  "Nombre de ménages en attente d'un HLM au Québec : il n'existe apparemment aucune statistique officielle publiée en continu. Les chiffres qui circulent ne sont pas publiés ici.",
+  "Élasticités chiffrées du document analytique 2026-14 de la Banque du Canada sur le lien entre croissance démographique et loyers : document non récupéré.",
+  "Révision de septembre 2026 des résidents non permanents par Statistique Canada : l'Institut de la statistique du Québec prévient qu'elle « pourrait être plus importante qu'à l'habitude ». La série officielle s'arrêtait au 1er avril 2026 au moment de la rédaction.",
+  "Taux d'emploi et de chômage de 2025 des personnes immigrantes au Québec : à extraire du tableau de l'Institut de la statistique du Québec plutôt que d'un graphique.",
+  "Aucune étude québécoise récente ne chiffre l'apport ou le coût budgétaire net des personnes immigrantes : rien n'est publié sur ce point.",
+  "Hausse tarifaire résidentielle d'électricité d'avril 2025 : non trouvée avec une source primaire.",
+  "Décompte officiel des projets industriels refusés ou mis en attente faute d'électricité : inexistant. Seuls des refus de projets éoliens par la Commission de protection du territoire agricole sont documentés.",
+  "Écart entre l'« électricité patrimoniale utilisée » inscrite au bilan d'Hydro-Québec (177,5 à 178,9 TWh) et les 165 TWh de la loi : vraisemblablement les pertes de transport et de distribution, à confirmer.",
+  "Montants en dollars propres à la famille québécoise dans l'étude 2026 de l'Institut Fraser : site inaccessible au robot, seule la date du 27 juin 2026 est confirmée. Aucune estimation équivalente produite par une source gouvernementale ou universitaire neutre n'a été trouvée.",
+  "Titre et numéro de chapitre exacts de la loi de juin 2026 établissant la carte électorale à 127 circonscriptions : non trouvés. À noter, l'article 14 de la Loi électorale, dans la consolidation à jour au 1er juillet 2026, plafonne toujours le nombre de circonscriptions à 125.",
+  "Le seuil de la majorité absolue (64 sièges sur 127) est une déduction arithmétique : aucune loi québécoise ne définit de seuil de majorité pour former un gouvernement, et aucune source officielle ne publie ce chiffre. Il n'est donc pas affirmé ici.",
+  "Issue de la demande d'autorisation d'appel à la Cour suprême dans l'affaire Henderson, et issue de la démarche parlementaire fédérale visant l'abrogation de la Loi sur la clarté déposée le 2 juin 2026 : non trouvées.",
+  "Formulation exacte des motifs de l'arrêt 2021 QCCA 565 sur l'article 4 de la loi 99 : le texte intégral n'a pas pu être lu ; ce qui est rapporté vient du sommaire officiel de SOQUIJ.",
+  "Le détail des questions posées par les lecteurs du Devoir et par le public de Radio-Canada n'a pas pu être extrait (pages inaccessibles au robot). L'existence et le format de ces rubriques sont confirmés ; leur contenu ne l'est pas."
+ ]
+}

@@ -634,6 +634,43 @@
     afficher();
   }
 
+  /* ---------------------------------------------------------- FAQ « On clarifie » */
+  function faq(champ) {
+    var questions = document.querySelectorAll("[data-faq]");
+    var sections = document.querySelectorAll(".faq-categorie");
+    var vide = document.querySelector("[data-faq-vide]");
+    var onglets = document.querySelectorAll("[data-faq-categories] a");
+    var categorie = "toutes";
+    function norm(t) { return t.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase(); }
+
+    function appliquer() {
+      var q = norm((champ && champ.value || "").trim()), n = 0;
+      questions.forEach(function (el) {
+        var sec = el.closest(".faq-categorie");
+        var ok = (!q || norm(el.dataset.faq).indexOf(q) >= 0)
+              && (categorie === "toutes" || sec.dataset.cat === categorie);
+        el.hidden = !ok;
+        if (ok) n++;
+        if (q && ok) el.open = true;
+      });
+      sections.forEach(function (sec) {
+        sec.hidden = ![].some.call(sec.querySelectorAll("[data-faq]"), function (e) { return !e.hidden; });
+      });
+      if (vide) vide.hidden = n > 0;
+    }
+    if (champ) champ.addEventListener("input", appliquer);
+    onglets.forEach(function (a) {
+      a.addEventListener("click", function (ev) {
+        ev.preventDefault();
+        categorie = a.dataset.cat;
+        onglets.forEach(function (x) { x.classList.toggle("actif", x === a); });
+        marquer("faq");
+        appliquer();
+      });
+    });
+    appliquer();
+  }
+
   /* ---------------------------------------------------------- filtre du lexique */
   function lexique(champ) {
     var termes = document.querySelectorAll("[data-terme]");
@@ -660,6 +697,7 @@
     document.querySelectorAll("[data-filtre-lexique]").forEach(lexique);
     document.querySelectorAll("[data-priorites]").forEach(priorites);
     document.querySelectorAll("[data-indice]").forEach(indice);
+    if (document.querySelector("[data-faq]")) faq(document.querySelector("[data-filtre-faq]"));
     majParcours();
     // Sous-navigation : amener l'onglet actif dans la zone visible (téléphone).
     var actif = document.querySelector(".sous-nav a.actif");
