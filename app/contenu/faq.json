@@ -450,6 +450,22 @@
        "url": "https://cdn-contenu.quebec.ca/cdn-contenu/adm/min/finances/publications-adm/Rapport_preelectoral/FR/MINFR_RP_2026.pdf"
       }
      ]
+    },
+    {
+     "question": "Est-ce que vos chiffres tiennent compte de l'inflation ?",
+     "reponse_courte": "Oui, quand on compare des années différentes. Les montants d'une seule année, eux, sont affichés tels quels.",
+     "details": "Un dollar de 2017 vaut environ 1,27 $ de 2025 : entre ces deux années, les prix ont monté d'environ 27 % au Québec (indice des prix à la consommation, Statistique Canada). Sur ce site, les budgets d'une année donnée sont affichés en dollars de l'année, les comparaisons dans le temps sont converties en dollars constants, et la dette comme le déficit sont rapportés au PIB, ce qui corrige à la fois l'inflation et la croissance. Exemple : le budget initial de SAAQclic, 638 M$ en 2017, équivaut à environ 809 M$ de 2025 ; la dérive vers au moins 1,1 G$ représente donc environ 1,4 fois le budget de départ en termes réels, et non 1,7 fois.",
+     "debat": "Aucun débat sur la méthode, mais une limite : l'indice des prix mesure un panier moyen de consommation. Il reflète mal le coût de la construction ou des technologies de l'information, qui évoluent parfois beaucoup plus vite. Pour un projet d'infrastructure, la correction par l'indice général est donc une approximation prudente.",
+     "sources": [
+      {
+       "nom": "Statistique Canada, IPC du Québec, moyennes annuelles (tableau 18-10-0005-01)",
+       "url": "https://www150.statcan.gc.ca/t1/tbl1/fr/tv.action?pid=1810000501"
+      },
+      {
+       "nom": "Méthodologie de Traçabilité Québec",
+       "url": "/methodologie#inflation"
+      }
+     ]
     }
    ]
   },

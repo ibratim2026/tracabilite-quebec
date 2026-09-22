@@ -13,6 +13,7 @@ qu'on entend en campagne.</p>
   <a class="onglet" href="#deficit">Les deux déficits</a>
   <a class="onglet" href="#dette">Les trois dettes</a>
   <a class="onglet" href="#leviers">Qui tient quels leviers</a>
+  <a class="onglet" href="#inflation">Et l'inflation?</a>
   <a class="onglet" href="#lexique">Lexique du débat</a>
 </div>
 
@@ -122,8 +123,30 @@ juger une promesse économique, vérifiez qui tient vraiment le levier.</p>
   </tbody>
 </table>
 
+{# ------------------------------------------------ 4 bis. Inflation #}
+<h2 id="inflation">5. Et l'inflation dans tout ça?</h2>
+<p class="explication">Comparer un montant de 2015 à un montant de 2026 sans corriger
+la hausse des prix, c'est fausser la comparaison. Voici comment ce site s'y prend, et
+un convertisseur pour faire le calcul vous-même.</p>
+<div class="grille-cartes">
+  <div class="carte"><h3>Les budgets d'une année</h3>
+    <p>Affichés tels quels, en dollars de l'année. C'est ce que l'État perçoit et
+    dépense vraiment cette année-là.</p></div>
+  <div class="carte"><h3>Les comparaisons dans le temps</h3>
+    <p>Converties en dollars constants avec l'indice des prix du Québec, pour que
+    la hausse des prix ne soit pas prise pour une hausse de dépense.</p></div>
+  <div class="carte"><h3>La dette et le déficit</h3>
+    <p>Rapportés au PIB. C'est la mesure qui tient compte à la fois de l'inflation
+    et de la croissance de l'économie.</p></div>
+</div>
+<div class="convertisseur" data-inflation>
+  <script type="application/json">{{ inflation | tojson }}</script>
+</div>
+<p class="source">Source : <a href="{{ inflation.source_url }}">{{ inflation.source_nom }}</a>.
+{{ inflation.note }}</p>
+
 {# ------------------------------------------------ 5. Lexique #}
-<h2 id="lexique">5. Le lexique du débat</h2>
+<h2 id="lexique">6. Le lexique du débat</h2>
 <p class="explication">Les mots qu'on entend dans les débats et les annonces, en
 langage clair. Tapez un mot pour filtrer.</p>
 <input type="search" class="filtre-lexique" placeholder="Chercher un terme : dette, péréquation, austérité…" aria-label="Filtrer le lexique" data-filtre-lexique>

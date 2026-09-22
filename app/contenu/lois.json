@@ -132,7 +132,8 @@
      "nom": "Conseil du trésor, tableau de bord des projets de 20 M$ et plus (données ouvertes, 20 août 2026)",
      "url": "https://www.donneesquebec.ca/recherche/dataset/67d85a7a-10af-4af0-b4da-abc64cfd735a/resource/1f3ea7fa-d8c6-4054-937d-fcc76be81803/download/donnees_ouvertes_tb_20260820.csv"
     }
-   ]
+   ],
+   "annee_initiale": 2022
   },
   {
    "nom": "Nouveau complexe hospitalier de l'Hôpital de l'Enfant-Jésus (CHU de Québec)",
@@ -151,7 +152,8 @@
      "nom": "Conseil du trésor, tableau de bord des projets de 20 M$ et plus (données ouvertes, 20 août 2026)",
      "url": "https://www.donneesquebec.ca/recherche/dataset/67d85a7a-10af-4af0-b4da-abc64cfd735a/resource/1f3ea7fa-d8c6-4054-937d-fcc76be81803/download/donnees_ouvertes_tb_20260820.csv"
     }
-   ]
+   ],
+   "annee_initiale": 2018
   },
   {
    "nom": "Nouveau pont de l'Île-d'Orléans",
@@ -239,7 +241,8 @@
      "nom": "La Presse, 16 février 2026",
      "url": "https://www.lapresse.ca/actualites/2026-02-16/fiasco-saaqclic/quelles-sont-les-recommandations-du-rapport-gallant.php"
     }
-   ]
+   ],
+   "annee_initiale": 2017
   },
   {
    "nom": "Musée national de l'histoire du Québec (ex-Espace bleu de la Capitale-Nationale)",

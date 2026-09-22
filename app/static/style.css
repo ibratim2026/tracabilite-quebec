@@ -855,3 +855,17 @@ a.etoile:hover { color: var(--ambre); text-decoration: none; }
   font-size: .93rem; color: var(--encre); }
 .faq-debat strong { color: var(--jaune); }
 [data-filtre-faq] { margin-bottom: .6rem; }
+
+/* Convertisseur d'inflation */
+.convertisseur { background: var(--surface); border: 1px solid var(--bordure);
+  border-radius: var(--r-l); padding: 1.2rem 1.35rem; box-shadow: var(--ombre-1);
+  max-width: 640px; margin: 1rem 0; }
+.conv-ligne { display: flex; flex-wrap: wrap; align-items: center; gap: .5rem; font-size: .98rem; }
+.conv-montant { width: 110px; padding: .5rem .7rem; font: inherit; border: 1px solid var(--bordure);
+  border-radius: var(--r-s); background: var(--surface); color: var(--encre); }
+.conv-annee { padding: .5rem .7rem; font: inherit; border: 1px solid var(--bordure);
+  border-radius: var(--r-s); background: var(--surface); color: var(--encre); }
+.conv-montant:focus, .conv-annee:focus { outline: none; border-color: var(--bleu);
+  box-shadow: 0 0 0 4px var(--bleu-pale); }
+.conv-resultat { font-size: 2.1rem; font-weight: 800; letter-spacing: -.03em; color: var(--bleu-fonce);
+  margin: .6rem 0 .2rem; font-variant-numeric: tabular-nums; }

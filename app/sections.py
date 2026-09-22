@@ -248,6 +248,28 @@ def secteur(slug):
                            p=p)
 
 
+# ---------------------------------------------------------------- Inflation
+
+def convertir_dollars(montant, annee_depart, annee_cible=None):
+    """Convertit un montant en dollars d'une autre année, avec l'IPC du Québec.
+    Comparer 638 M$ de 2017 à 1,1 G$ de 2027 sans cette correction, c'est
+    confondre la hausse des prix avec un dépassement de coût."""
+    infl = charger("inflation")
+    if not infl or montant is None:
+        return None
+    indice = infl["indice"]
+    cible = str(annee_cible or infl["annee_reference"])
+    depart = str(annee_depart)
+    if depart not in indice or cible not in indice:
+        return None
+    return montant * indice[cible] / indice[depart]
+
+
+@bp.app_context_processor
+def injecter_inflation():
+    return {"inflation": charger("inflation"), "convertir_dollars": convertir_dollars}
+
+
 # ---------------------------------------------------------------- Indice « état du Québec »
 
 def note_sur_100(valeur, borne0, borne100):
@@ -373,10 +395,18 @@ def quebec_canada():
 @bp.route("/lois-et-projets")
 def lois_et_projets():
     l = charger("lois") or {}
-    haltere = [{"nom": pr.get("nom_court", pr["nom"]), "initial": pr["cout_initial_num"],
-                "actuel": pr["cout_actuel_num"], "note": pr.get("statut")}
-               for pr in l.get("projets", [])
-               if pr.get("cout_initial_num") and pr.get("cout_actuel_num")]
+    haltere = []
+    for pr in l.get("projets", []):
+        if not (pr.get("cout_initial_num") and pr.get("cout_actuel_num")):
+            continue
+        haltere.append({"nom": pr.get("nom_court", pr["nom"]), "initial": pr["cout_initial_num"],
+                        "actuel": pr["cout_actuel_num"], "note": pr.get("statut")})
+        if pr.get("annee_initiale"):
+            constant = convertir_dollars(pr["cout_initial_num"], pr["annee_initiale"])
+            if constant:
+                pr["cout_initial_constant"] = round(constant, 2)
+                pr["hausse_reelle"] = round(pr["cout_actuel_num"] / constant, 2)
+                pr["hausse_nominale"] = round(pr["cout_actuel_num"] / pr["cout_initial_num"], 2)
     return render_template("lois.html", l=l, haltere=haltere,
                            secteurs={s["slug"]: s for s in charger("secteurs") or []})
 

@@ -634,6 +634,43 @@
     afficher();
   }
 
+  /* ---------------------------------------------------------- convertisseur d'inflation */
+  function inflation(el) {
+    var d = donnees(el);
+    if (!d || !d.indice) return;
+    var annees = Object.keys(d.indice).sort();
+    var ref = d.annee_reference;
+
+    var l1 = h("div", "conv-ligne", null, el);
+    var champ = h("input", "conv-montant", null, l1);
+    champ.type = "number"; champ.value = 100; champ.min = 0; champ.step = 10;
+    champ.setAttribute("aria-label", "Montant en dollars");
+    h("span", null, "$ en", l1);
+    var select = h("select", "conv-annee", null, l1);
+    annees.forEach(function (a) {
+      var o = h("option", null, a, select);
+      o.value = a;
+      if (a === "2015") o.selected = true;
+    });
+    h("span", null, "valent aujourd'hui", l1);
+
+    var res = h("div", "conv-resultat", null, el);
+    var note = h("p", "detail", null, el);
+
+    function calculer() {
+      var a = select.value, m = parseFloat(champ.value || 0);
+      var v = m * d.indice[ref] / d.indice[a];
+      res.textContent = nf(v, 2) + " $";
+      var hausse = 100 * (d.indice[ref] / d.indice[a] - 1);
+      note.textContent = "Les prix ont augmenté de " + nf(hausse, 1) + " % entre "
+        + a + " et " + ref + ". Autrement dit, " + nf(m, 0) + " $ de " + ref
+        + " valaient " + nf(m * d.indice[a] / d.indice[ref], 2) + " $ en " + a + ".";
+    }
+    champ.addEventListener("input", calculer);
+    select.addEventListener("change", calculer);
+    calculer();
+  }
+
   /* ---------------------------------------------------------- FAQ « On clarifie » */
   function faq(champ) {
     var questions = document.querySelectorAll("[data-faq]");
@@ -697,6 +734,7 @@
     document.querySelectorAll("[data-filtre-lexique]").forEach(lexique);
     document.querySelectorAll("[data-priorites]").forEach(priorites);
     document.querySelectorAll("[data-indice]").forEach(indice);
+    document.querySelectorAll("[data-inflation]").forEach(inflation);
     if (document.querySelector("[data-faq]")) faq(document.querySelector("[data-filtre-faq]"));
     majParcours();
     // Sous-navigation : amener l'onglet actif dans la zone visible (téléphone).

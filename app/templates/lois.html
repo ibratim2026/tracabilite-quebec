@@ -17,7 +17,10 @@
 <figure class="infographie" style="max-width:none">
   <div class="ig-titre">Coût annoncé au départ (gris) et coût actuel (bleu), en milliards</div>
   <div data-haltere><script type="application/json">{{ haltere | tojson }}</script></div>
-  <figcaption>Survolez un projet pour voir les montants. Un coût qui augmente n'est pas
+  <figcaption>Montants en dollars courants, c'est-à-dire ceux de l'année où ils
+  ont été annoncés. Quand l'année de l'annonce est connue, le tableau donne aussi
+  le coût converti en dollars de 2025, pour séparer la hausse des prix du vrai
+  dépassement. Survolez un projet pour voir les montants. Un coût qui augmente n'est pas
   forcément une mauvaise gestion : la portée du projet a pu changer. Voir les détails
   et les sources dans le tableau ci-dessous.</figcaption>
 </figure>
@@ -29,10 +32,13 @@
   <tr>
     <td><strong>{{ pr.nom }}</strong><br><span class="detail">{{ pr.resume }}</span>
       <br><span class="source">{% for so in pr.sources %}<a href="{{ so.url }}">{{ so.nom }}</a>{{ ' · ' if not loop.last }}{% endfor %}</span></td>
-    <td class="num" data-label="Coût annoncé">{{ pr.cout_initial or '—' }}</td>
+    <td class="num" data-label="Coût annoncé">{{ pr.cout_initial or '—' }}
+      {% if pr.cout_initial_constant %}<br><span class="detail">soit {{ '%.1f' % pr.cout_initial_constant | float }} G$ en dollars de 2025</span>{% endif %}</td>
     <td class="num" data-label="Coût actuel">{% if pr.cout_actuel %}<strong>{{ pr.cout_actuel }}</strong>{% else %}—{% endif %}</td>
     <td data-label="Échéance">{{ pr.echeance_actuelle or '—' }}{% if pr.echeance_initiale %}<br><span class="detail">prévu : {{ pr.echeance_initiale }}</span>{% endif %}</td>
-    <td class="statut-projet" data-label="Statut">{{ pr.statut }}</td>
+    <td class="statut-projet" data-label="Statut">{{ pr.statut }}
+      {% if pr.hausse_reelle %}<br><span class="detail">×{{ ('%.1f' % pr.hausse_nominale) | replace('.', ',') }} en dollars courants,
+      <strong>×{{ ('%.1f' % pr.hausse_reelle) | replace('.', ',') }} une fois l'inflation retirée</strong></span>{% endif %}</td>
   </tr>
   {% endfor %}
   </tbody>

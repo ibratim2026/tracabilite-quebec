@@ -79,6 +79,61 @@ récent.</p>
   l'ensemble des dépenses publiques du Québec.</li>
 </ul>
 
+<h2 id="inflation">Comment on traite l'inflation</h2>
+<div class="prose">
+<p>Un dollar de 2017 n'est pas un dollar de 2026. Comparer sans corriger, c'est
+prendre la hausse des prix pour un dépassement de coût. Trois règles :</p>
+<ol>
+  <li><strong>Les montants d'une année donnée</strong> (budget, contrats octroyés en
+  2026) sont affichés tels quels, en dollars de l'année.</li>
+  <li><strong>Les comparaisons dans le temps</strong> sont converties en dollars
+  constants avec l'indice des prix à la consommation du Québec. Quand l'année de
+  l'annonce d'un projet est connue, le tableau des grands projets donne les deux :
+  la hausse en dollars courants et la hausse réelle.</li>
+  <li><strong>La dette et le déficit</strong> sont rapportés au PIB, ce qui corrige à
+  la fois l'inflation et la croissance de l'économie.</li>
+</ol>
+<p>Exemple concret : le budget initial de SAAQclic était de 638 M$ en 2017. En
+dollars de 2025, cela représente environ 809 M$. La dérive vers au moins 1,1 G$ est
+donc de l'ordre de 1,4 fois en termes réels, et non de 1,7 fois comme le suggère la
+comparaison brute. Le dépassement reste important : il est simplement plus petit
+qu'il n'en a l'air. Le <a href="/economie-expliquee#inflation">convertisseur</a>
+permet de refaire ce calcul pour n'importe quel montant depuis 1990.</p>
+<p class="source">Série utilisée :
+<a href="https://www150.statcan.gc.ca/t1/tbl1/fr/tv.action?pid=1810000501">Statistique
+Canada, tableau 18-10-0005-01, IPC du Québec, moyennes annuelles</a>.</p>
+</div>
+
+<h2 id="verifier">Ne nous croyez pas. Vérifiez.</h2>
+<div class="prose">
+<p>Ce site demande de la confiance, et la confiance se vérifie. Voici comment nous
+prendre en défaut, si nous avons tort :</p>
+<ol>
+  <li><strong>Les données brutes sont publiques.</strong> Téléchargez les mêmes
+  fichiers que nous sur
+  <a href="https://www.donneesquebec.ca/recherche/dataset/systeme-electronique-dappel-doffres-seao">Données
+  Québec</a>. Nous ne les modifions pas : nous les consolidons.</li>
+  <li><strong>Le code est public.</strong> Les règles de détection des signaux, les
+  calculs de notes et les conversions d'inflation sont lisibles ligne par ligne sur
+  <a href="https://github.com/ibratim2026/tracabilite-quebec">GitHub</a>. Si un calcul
+  est faux, il est visible.</li>
+  <li><strong>Chaque chiffre porte sa source.</strong> Cliquez : vous arrivez au
+  document officiel, pas à un article qui cite un article.</li>
+  <li><strong>Les repères de la note sur 100 sont affichés</strong>, et vous pouvez
+  changer les pondérations. Si notre note vous semble arrangée, refaites-la.</li>
+  <li><strong>Nos désaccords avec l'État sont documentés.</strong> Quand la version
+  officielle a été démentie, nous le montrons : la commission Gallant a conclu que la
+  SAAQ avait caché le coût réel de SAAQclic, et le Vérificateur général a constaté que
+  des centaines de millions ont été versés à des entreprises de la filière batterie
+  aujourd'hui insolvables. Nous ne blanchissons personne.</li>
+  <li><strong>Ce qu'on ignore est écrit.</strong> Quand une donnée n'existe pas ou que
+  deux sources officielles se contredisent, nous l'écrivons au lieu de choisir la plus
+  commode. Voir la capsule <a href="/on-clarifie">« On clarifie »</a>.</li>
+</ol>
+<p>Si vous trouvez une erreur, <a href="https://github.com/ibratim2026/tracabilite-quebec/issues">signalez-la</a> :
+elle sera corrigée et la correction sera datée publiquement.</p>
+</div>
+
 <h2>Corrections</h2>
 <p>Vous représentez un organisme ou une entreprise et constatez une erreur?
 Les corrections à la source se font auprès du SEAO; notre base reflétera la
