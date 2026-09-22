@@ -1,0 +1,509 @@
+<!doctype html>
+<html lang="fr" data-theme="clair">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Maquette — Traçabilité Québec, direction « outil moderne »</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+/* ============================================================
+   Jetons de design — « outil moderne »
+   ============================================================ */
+:root {
+  color-scheme: light;
+  /* Surfaces : 3 niveaux au lieu d'un seul */
+  --fond: #f5f7fa;
+  --surface: #ffffff;
+  --surface-2: #eef2f7;
+  --bordure: #dfe6ee;
+  --bordure-forte: #c7d3e0;
+
+  /* Encre */
+  --encre: #0f1b2a;
+  --encre-2: #4a5a6e;
+  --encre-3: #7b8a9c;
+
+  /* Marque */
+  --bleu: #2e6be6;
+  --bleu-fonce: #12325f;
+  --bleu-pale: #e7efff;
+  /* Accent chaud, réservé aux signaux */
+  --ambre: #e07b00;
+  --ambre-pale: #fff3e0;
+  --rouge: #d64545;
+  --rouge-pale: #fdecec;
+  --vert: #1a8f5a;
+  --vert-pale: #e6f5ee;
+
+  /* Profondeur */
+  --ombre-1: 0 1px 2px rgba(15,27,42,.06), 0 1px 3px rgba(15,27,42,.04);
+  --ombre-2: 0 2px 4px rgba(15,27,42,.06), 0 6px 16px rgba(15,27,42,.08);
+  --ombre-3: 0 8px 24px rgba(15,27,42,.12), 0 2px 6px rgba(15,27,42,.08);
+
+  --r-s: 8px; --r-m: 14px; --r-l: 20px; --r-xl: 28px;
+  --t: 160ms cubic-bezier(.2,.7,.4,1);
+}
+:root[data-theme="sombre"] {
+  color-scheme: dark;
+  --fond: #0b1220;
+  --surface: #111c2e;
+  --surface-2: #16233a;
+  --bordure: #23334d;
+  --bordure-forte: #33486b;
+  --encre: #eef3fa;
+  --encre-2: #a9b8cc;
+  --encre-3: #7f90a6;
+  --bleu: #5b91ff;
+  --bleu-fonce: #cfe0ff;
+  --bleu-pale: #17274a;
+  --ambre: #ffab3d;
+  --ambre-pale: #38270f;
+  --rouge: #ff7a7a;
+  --rouge-pale: #3a1c1c;
+  --vert: #43c98c;
+  --vert-pale: #10301f;
+  --ombre-1: 0 1px 2px rgba(0,0,0,.4);
+  --ombre-2: 0 2px 6px rgba(0,0,0,.45);
+  --ombre-3: 0 10px 30px rgba(0,0,0,.55);
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: Inter, -apple-system, "Segoe UI", Roboto, sans-serif;
+  background: var(--fond); color: var(--encre);
+  line-height: 1.6; font-size: 16px;
+  font-feature-settings: "cv05" 1, "ss01" 1;
+  -webkit-font-smoothing: antialiased;
+}
+.contenant { max-width: 1120px; margin: 0 auto; padding: 0 20px; }
+a { color: var(--bleu); text-decoration: none; }
+
+/* Échelle typographique affirmée */
+h1 { font-size: clamp(2rem, 1.3rem + 2.6vw, 2.9rem); line-height: 1.08;
+     letter-spacing: -0.033em; font-weight: 800; }
+h2 { font-size: clamp(1.35rem, 1.1rem + 0.9vw, 1.7rem); line-height: 1.2;
+     letter-spacing: -0.022em; font-weight: 700; margin-bottom: .4rem; }
+h3 { font-size: 1.05rem; letter-spacing: -0.012em; font-weight: 700; }
+.chapeau { font-size: 1.15rem; color: var(--encre-2); max-width: 66ch; margin-top: .9rem; }
+.surtitre { font-size: .75rem; font-weight: 700; letter-spacing: .09em;
+  text-transform: uppercase; color: var(--bleu); }
+.num { font-variant-numeric: tabular-nums; }
+
+/* ===================== En-tête ===================== */
+.entete {
+  position: sticky; top: 0; z-index: 30;
+  background: color-mix(in srgb, var(--surface) 82%, transparent);
+  backdrop-filter: saturate(180%) blur(12px);
+  border-bottom: 1px solid var(--bordure);
+}
+.entete-haut { display: flex; align-items: center; gap: 1rem; padding: .7rem 0; }
+.logo { display: flex; align-items: center; gap: .55rem; font-weight: 800;
+  letter-spacing: -.02em; font-size: 1.05rem; color: var(--encre); }
+.logo .marque { width: 26px; height: 26px; border-radius: 8px;
+  background: linear-gradient(140deg, var(--bleu), #7aa7ff); position: relative;
+  box-shadow: var(--ombre-1); flex: none; }
+.logo .marque::after { content: ""; position: absolute; inset: 7px 6px;
+  border-left: 2px solid #fff; border-bottom: 2px solid #fff; border-radius: 0 0 0 3px; }
+.recherche { margin-left: auto; display: flex; align-items: center; gap: .5rem;
+  background: var(--surface-2); border: 1px solid var(--bordure);
+  border-radius: 999px; padding: .45rem .9rem; min-width: 260px; transition: var(--t); }
+.recherche:focus-within { border-color: var(--bleu); box-shadow: 0 0 0 4px var(--bleu-pale); }
+.recherche input { border: 0; background: none; outline: none; color: var(--encre);
+  font: inherit; font-size: .92rem; width: 100%; }
+.bouton-theme { border: 1px solid var(--bordure); background: var(--surface);
+  color: var(--encre-2); border-radius: 999px; padding: .45rem .8rem; cursor: pointer;
+  font: inherit; font-size: .85rem; transition: var(--t); }
+.bouton-theme:hover { border-color: var(--bordure-forte); color: var(--encre); }
+
+.nav { display: flex; gap: .15rem; overflow-x: auto; scrollbar-width: none; }
+.nav::-webkit-scrollbar { display: none; }
+.nav a { padding: .55rem .85rem .75rem; font-size: .93rem; font-weight: 500;
+  color: var(--encre-2); border-bottom: 2.5px solid transparent; white-space: nowrap; transition: var(--t); }
+.nav a:hover { color: var(--encre); }
+.nav a.actif { color: var(--encre); border-bottom-color: var(--bleu); font-weight: 600; }
+.pastille-live { display: inline-block; width: 6px; height: 6px; border-radius: 50%;
+  background: var(--ambre); vertical-align: 3px; margin-left: 5px;
+  box-shadow: 0 0 0 0 color-mix(in srgb, var(--ambre) 60%, transparent);
+  animation: pulse 2.4s infinite; }
+@keyframes pulse { 70% { box-shadow: 0 0 0 7px transparent; } 100% { box-shadow: 0 0 0 0 transparent; } }
+
+/* ===================== Héros ===================== */
+.heros { position: relative; overflow: hidden; padding: 3.2rem 0 2.4rem;
+  background:
+    radial-gradient(900px 340px at 82% -10%, color-mix(in srgb, var(--bleu) 18%, transparent), transparent 70%),
+    radial-gradient(620px 300px at 8% 10%, color-mix(in srgb, var(--ambre) 10%, transparent), transparent 70%); }
+.heros::before { content: ""; position: absolute; inset: 0;
+  background-image: linear-gradient(var(--bordure) 1px, transparent 1px),
+                    linear-gradient(90deg, var(--bordure) 1px, transparent 1px);
+  background-size: 34px 34px; opacity: .35; mask-image: radial-gradient(circle at 50% 0%, #000, transparent 72%); }
+.heros > * { position: relative; }
+.etiquette-maj { display: inline-flex; align-items: center; gap: .45rem;
+  background: var(--surface); border: 1px solid var(--bordure); box-shadow: var(--ombre-1);
+  border-radius: 999px; padding: .3rem .8rem; font-size: .83rem; color: var(--encre-2); }
+.etiquette-maj b { color: var(--encre); font-weight: 600; }
+.actions { display: flex; gap: .7rem; flex-wrap: wrap; margin-top: 1.4rem; }
+.btn { display: inline-flex; align-items: center; gap: .5rem; border-radius: var(--r-m);
+  padding: .75rem 1.2rem; font-weight: 600; font-size: .95rem; border: 1px solid transparent;
+  cursor: pointer; transition: var(--t); }
+.btn-primaire { background: var(--bleu); color: #fff; box-shadow: var(--ombre-2); }
+.btn-primaire:hover { transform: translateY(-1px); box-shadow: var(--ombre-3); }
+.btn-second { background: var(--surface); color: var(--encre); border-color: var(--bordure); box-shadow: var(--ombre-1); }
+.btn-second:hover { border-color: var(--bordure-forte); transform: translateY(-1px); }
+
+/* ===================== Cartes de chiffres ===================== */
+.grille-stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 1rem; margin: 2rem 0; }
+.stat { background: var(--surface); border: 1px solid var(--bordure); border-radius: var(--r-l);
+  padding: 1.15rem 1.25rem; box-shadow: var(--ombre-1); transition: var(--t); position: relative; overflow: hidden; }
+.stat:hover { box-shadow: var(--ombre-3); transform: translateY(-2px); border-color: var(--bordure-forte); }
+.stat .etiquette { font-size: .82rem; color: var(--encre-2); display: flex; align-items: center;
+  justify-content: space-between; gap: .5rem; }
+.stat .valeur { font-size: 2.3rem; font-weight: 800; letter-spacing: -.03em;
+  line-height: 1.05; margin: .35rem 0 .15rem; }
+.stat .detail { font-size: .84rem; color: var(--encre-3); }
+.delta { font-size: .78rem; font-weight: 700; border-radius: 999px; padding: .12rem .5rem;
+  display: inline-flex; align-items: center; gap: .2rem; }
+.delta-hausse { background: var(--rouge-pale); color: var(--rouge); }
+.delta-baisse { background: var(--vert-pale); color: var(--vert); }
+.delta-neutre { background: var(--surface-2); color: var(--encre-2); }
+.spark { display: block; width: 100%; height: 34px; margin-top: .6rem; }
+
+/* ===================== Cartes de section ===================== */
+.grille-cartes { display: grid; grid-template-columns: repeat(auto-fit, minmax(270px, 1fr)); gap: 1rem; }
+.carte { display: block; background: var(--surface); border: 1px solid var(--bordure);
+  border-radius: var(--r-l); padding: 1.3rem; box-shadow: var(--ombre-1);
+  color: var(--encre); transition: var(--t); position: relative; }
+.carte:hover { transform: translateY(-3px); box-shadow: var(--ombre-3); border-color: var(--bordure-forte); }
+.carte p { color: var(--encre-2); font-size: .94rem; margin-top: .4rem; }
+.carte .fleche { position: absolute; right: 1.2rem; bottom: 1.1rem; color: var(--bleu);
+  opacity: 0; transform: translateX(-6px); transition: var(--t); font-weight: 700; }
+.carte:hover .fleche { opacity: 1; transform: translateX(0); }
+.icone { width: 38px; height: 38px; border-radius: 11px; display: grid; place-items: center;
+  background: var(--bleu-pale); color: var(--bleu); margin-bottom: .8rem; font-size: 1.05rem; }
+.icone-ambre { background: var(--ambre-pale); color: var(--ambre); }
+
+/* ===================== Bandes ===================== */
+.bande { background: var(--surface); border-top: 1px solid var(--bordure);
+  border-bottom: 1px solid var(--bordure); padding: 2.6rem 0; margin: 2.6rem 0; }
+.section { padding: .6rem 0 1.2rem; }
+
+/* ===================== Indicateur ===================== */
+.kpi { background: var(--surface); border: 1px solid var(--bordure); border-radius: var(--r-l);
+  padding: 1.2rem; box-shadow: var(--ombre-1); display: flex; flex-direction: column; gap: .5rem; }
+.kpi-tete { display: flex; align-items: flex-start; justify-content: space-between; gap: .6rem; }
+.statut { width: 9px; height: 9px; border-radius: 50%; flex: none; margin-top: .45rem; }
+.statut-rouge { background: var(--rouge); box-shadow: 0 0 0 4px var(--rouge-pale); }
+.statut-ambre { background: var(--ambre); box-shadow: 0 0 0 4px var(--ambre-pale); }
+.statut-vert { background: var(--vert); box-shadow: 0 0 0 4px var(--vert-pale); }
+.kpi .valeur { font-size: 1.9rem; font-weight: 800; letter-spacing: -.03em; }
+.kpi .def { font-size: .88rem; color: var(--encre-2); }
+.meta { display: flex; gap: 1.2rem; font-size: .83rem; color: var(--encre-3); flex-wrap: wrap; }
+.meta b { color: var(--encre-2); font-weight: 600; }
+
+/* ===================== Haltère ===================== */
+.projet { background: var(--surface); border: 1px solid var(--bordure); border-radius: var(--r-l);
+  padding: 1.1rem 1.3rem; box-shadow: var(--ombre-1); margin-bottom: .8rem; transition: var(--t); }
+.projet:hover { box-shadow: var(--ombre-2); }
+.projet-tete { display: flex; justify-content: space-between; align-items: baseline; gap: 1rem; flex-wrap: wrap; }
+.ratio { font-weight: 800; color: var(--ambre); font-size: 1.05rem; }
+.piste { position: relative; height: 34px; margin-top: .3rem; }
+.piste .rail { position: absolute; top: 15px; left: 0; right: 0; height: 4px;
+  background: var(--surface-2); border-radius: 4px; }
+.piste .segment { position: absolute; top: 15px; height: 4px; border-radius: 4px;
+  background: linear-gradient(90deg, var(--bordure-forte), var(--ambre)); }
+.pt { position: absolute; top: 9px; width: 16px; height: 16px; border-radius: 50%;
+  border: 3px solid var(--surface); transform: translateX(-8px); }
+.pt-depart { background: var(--encre-3); }
+.pt-actuel { background: var(--ambre); box-shadow: 0 0 0 4px var(--ambre-pale); }
+.piste .lib { position: absolute; top: 0; font-size: .76rem; color: var(--encre-3);
+  transform: translateX(-50%); white-space: nowrap; }
+
+/* ===================== Divers ===================== */
+.segmente { display: inline-flex; background: var(--surface-2); border-radius: 999px;
+  padding: 4px; gap: 2px; border: 1px solid var(--bordure); }
+.segmente button { border: 0; background: none; font: inherit; font-size: .88rem; font-weight: 600;
+  color: var(--encre-2); padding: .4rem .9rem; border-radius: 999px; cursor: pointer; transition: var(--t); }
+.segmente button[aria-pressed="true"] { background: var(--surface); color: var(--encre); box-shadow: var(--ombre-1); }
+.puces { display: flex; flex-wrap: wrap; gap: .4rem; margin-top: .6rem; }
+.puce { background: var(--bleu-pale); color: var(--bleu-fonce); border-radius: 999px;
+  padding: .25rem .7rem; font-size: .85rem; font-weight: 600; }
+.note { border-left: 3px solid var(--ambre); background: var(--ambre-pale); color: var(--encre);
+  border-radius: 0 var(--r-m) var(--r-m) 0; padding: .9rem 1.1rem; font-size: .93rem; max-width: 70ch; }
+.pied { padding: 2.4rem 0 3rem; color: var(--encre-3); font-size: .88rem; border-top: 1px solid var(--bordure); margin-top: 2rem; }
+.comparaison { background: var(--surface-2); border: 1px dashed var(--bordure-forte);
+  border-radius: var(--r-m); padding: .8rem 1rem; font-size: .9rem; color: var(--encre-2); margin: 1rem 0; }
+
+@media (prefers-reduced-motion: reduce) { * { transition: none !important; animation: none !important; } }
+@media (max-width: 720px) {
+  .recherche { display: none; }
+  .stat .valeur { font-size: 2rem; }
+}
+</style>
+</head>
+<body>
+
+<header class="entete">
+  <div class="contenant entete-haut">
+    <a class="logo" href="#"><span class="marque"></span>Traçabilité <span style="font-weight:500;color:var(--encre-2)">Québec</span></a>
+    <div class="recherche">
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" style="color:var(--encre-3);flex:none"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+      <input placeholder="Fournisseur, organisme, projet…">
+    </div>
+    <button class="bouton-theme" id="bascule">Mode sombre</button>
+  </div>
+  <nav class="contenant nav">
+    <a href="#" class="actif">Élection 2026<span class="pastille-live"></span></a>
+    <a href="#">Comprendre</a>
+    <a href="#">Suivre l'argent</a>
+    <a href="#">À propos</a>
+  </nav>
+</header>
+
+<section class="heros">
+  <div class="contenant">
+    <span class="etiquette-maj"><span style="width:7px;height:7px;border-radius:50%;background:var(--vert);display:inline-block"></span>
+      Données à jour au <b>22 septembre 2026</b> · 13 jours avant le scrutin</span>
+    <h1 style="margin-top:1rem">Où va l'argent public<br>au Québec?</h1>
+    <p class="chapeau">Les contrats publics, les indicateurs de chaque secteur et le coût
+    réel des grands projets. Chaque chiffre renvoie à sa source officielle.</p>
+    <div class="actions">
+      <button class="btn btn-primaire">Explorer les contrats
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></button>
+      <button class="btn btn-second">Section Élection 2026</button>
+    </div>
+
+    <div class="grille-stats">
+      <div class="stat">
+        <div class="etiquette">Contrats suivis <span class="delta delta-neutre">SEAO</span></div>
+        <div class="valeur num">229 167</div>
+        <div class="detail">janvier 2025 → août 2026</div>
+        <svg class="spark" viewBox="0 0 120 34" preserveAspectRatio="none" aria-hidden="true">
+          <path d="M0 28 L20 26 L40 22 L60 19 L80 13 L100 9 L120 4" fill="none" stroke="var(--bleu)" stroke-width="2.2" stroke-linecap="round"/>
+          <path d="M0 28 L20 26 L40 22 L60 19 L80 13 L100 9 L120 4 L120 34 L0 34 Z" fill="var(--bleu)" opacity=".10"/>
+        </svg>
+      </div>
+      <div class="stat">
+        <div class="etiquette">Dette nette / PIB <span class="delta delta-hausse">▲ 0,6 pt</span></div>
+        <div class="valeur num">38,1 %</div>
+        <div class="detail">245,9 G$ au 31 mars 2026</div>
+        <svg class="spark" viewBox="0 0 120 34" preserveAspectRatio="none" aria-hidden="true">
+          <path d="M0 6 L20 10 L40 16 L60 22 L80 26 L100 24 L120 21" fill="none" stroke="var(--ambre)" stroke-width="2.2" stroke-linecap="round"/>
+          <path d="M0 6 L20 10 L40 16 L60 22 L80 26 L100 24 L120 21 L120 34 L0 34 Z" fill="var(--ambre)" opacity=".10"/>
+        </svg>
+      </div>
+      <div class="stat">
+        <div class="etiquette">Gré à gré en 2026 <span class="delta delta-neutre">part de la valeur</span></div>
+        <div class="valeur num">23 %</div>
+        <div class="detail">contrats sans appel d'offres</div>
+        <svg class="spark" viewBox="0 0 120 34" preserveAspectRatio="none" aria-hidden="true">
+          <path d="M0 20 L20 18 L40 21 L60 17 L80 19 L100 16 L120 15" fill="none" stroke="var(--encre-3)" stroke-width="2.2" stroke-linecap="round"/>
+        </svg>
+      </div>
+      <div class="stat">
+        <div class="etiquette">Déficit 2026-2027 <span class="delta delta-neutre">au sens de la loi</span></div>
+        <div class="valeur num">7,7 G$</div>
+        <div class="detail">1,2 % du PIB</div>
+        <svg class="spark" viewBox="0 0 120 34" preserveAspectRatio="none" aria-hidden="true">
+          <path d="M0 24 L20 30 L40 27 L60 22 L80 16 L100 12 L120 10" fill="none" stroke="var(--vert)" stroke-width="2.2" stroke-linecap="round"/>
+          <path d="M0 24 L20 30 L40 27 L60 22 L80 16 L100 12 L120 10 L120 34 L0 34 Z" fill="var(--vert)" opacity=".10"/>
+        </svg>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="contenant comparaison">
+  <strong>Maquette</strong> — même contenu que le site actuel, nouvelle direction visuelle
+  « outil moderne » : échelle typographique affirmée, trois niveaux de profondeur, accent
+  ambre réservé aux signaux, chiffres en vedette avec tendance, mode sombre. Le site réel
+  n'est pas modifié.
+</div>
+
+<div class="contenant section">
+  <div class="surtitre">Comprendre</div>
+  <h2>Par où commencer</h2>
+  <div class="grille-cartes" style="margin-top:1.2rem">
+    <a class="carte" href="#">
+      <div class="icone">◧</div>
+      <h3>Secteurs et indicateurs</h3>
+      <p>13 secteurs, 90 indicateurs sourcés, leurs courbes et les chiffres qui trompent.</p>
+      <span class="fleche">→</span>
+    </a>
+    <a class="carte" href="#">
+      <div class="icone icone-ambre">◔</div>
+      <h3>L'économie expliquée</h3>
+      <p>Budget, déficit, dette et le lexique des mots qu'on entend aux débats.</p>
+      <span class="fleche">→</span>
+    </a>
+    <a class="carte" href="#">
+      <div class="icone">⚑</div>
+      <h3>Le Québec dans le Canada</h3>
+      <p>Qui décide quoi, combien d'argent circule, quels dossiers sont ouverts.</p>
+      <span class="fleche">→</span>
+    </a>
+  </div>
+</div>
+
+<div class="bande">
+  <div class="contenant">
+    <div style="display:flex;justify-content:space-between;align-items:center;gap:1rem;flex-wrap:wrap">
+      <div>
+        <div class="surtitre">Santé et services sociaux</div>
+        <h2>Les indicateurs à surveiller</h2>
+      </div>
+      <div class="segmente">
+        <button aria-pressed="true">5 ans</button>
+        <button aria-pressed="false">10 ans</button>
+        <button aria-pressed="false">Comparer</button>
+      </div>
+    </div>
+
+    <div class="grille-cartes" style="margin-top:1.3rem">
+      <div class="kpi">
+        <div class="kpi-tete">
+          <div><div style="font-weight:700">Séjour moyen sur civière</div>
+            <div class="def">Temps passé aux urgences avant un lit</div></div>
+          <span class="statut statut-rouge" title="Loin de la cible"></span>
+        </div>
+        <div class="valeur num">16 h 48 <span class="delta delta-hausse" style="vertical-align:.5rem">▲ 1 h 12</span></div>
+        <svg viewBox="0 0 300 80" style="width:100%;height:80px" aria-hidden="true">
+          <line x1="0" y1="20" x2="300" y2="20" stroke="var(--bordure)" stroke-width="1"/>
+          <line x1="0" y1="50" x2="300" y2="50" stroke="var(--bordure)" stroke-width="1"/>
+          <path d="M6 58 L60 52 L114 44 L168 38 L222 30 L286 22" fill="none" stroke="var(--bleu)" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M6 58 L60 52 L114 44 L168 38 L222 30 L286 22 L286 80 L6 80 Z" fill="var(--bleu)" opacity=".09"/>
+          <circle cx="286" cy="22" r="5" fill="var(--bleu)" stroke="var(--surface)" stroke-width="2.5"/>
+        </svg>
+        <div class="meta"><span>2021 → <b>2026</b></span><span>Cible : <b>aucune</b></span><span>Source : <b>MSSS</b></span></div>
+      </div>
+
+      <div class="kpi">
+        <div class="kpi-tete">
+          <div><div style="font-weight:700">Genoux opérés dans le délai</div>
+            <div class="def">Prothèses faites en moins de 6 mois</div></div>
+          <span class="statut statut-ambre"></span>
+        </div>
+        <div class="valeur num">42 % <span class="delta delta-baisse" style="vertical-align:.5rem">▲ 6 pts</span></div>
+        <svg viewBox="0 0 300 80" style="width:100%;height:80px" aria-hidden="true">
+          <line x1="0" y1="26" x2="300" y2="26" stroke="var(--bordure)" stroke-width="1"/>
+          <line x1="0" y1="26" x2="300" y2="26" stroke="var(--encre-3)" stroke-width="1.5" stroke-dasharray="0"/>
+          <text x="296" y="20" text-anchor="end" font-size="11" fill="var(--encre-3)">Ontario 82 %</text>
+          <path d="M6 66 L60 70 L114 64 L168 58 L222 54 L286 48" fill="none" stroke="var(--bleu)" stroke-width="2.6" stroke-linecap="round"/>
+          <circle cx="286" cy="48" r="5" fill="var(--bleu)" stroke="var(--surface)" stroke-width="2.5"/>
+        </svg>
+        <div class="meta"><span>2021 → <b>2025</b></span><span>Source : <b>ICIS</b></span></div>
+      </div>
+
+      <div class="kpi">
+        <div class="kpi-tete">
+          <div><div style="font-weight:700">Médecin de famille</div>
+            <div class="def">Personnes avec un fournisseur habituel</div></div>
+          <span class="statut statut-vert"></span>
+        </div>
+        <div class="valeur num">74 % <span class="delta delta-baisse" style="vertical-align:.5rem">▲ 3 pts</span></div>
+        <svg viewBox="0 0 300 80" style="width:100%;height:80px" aria-hidden="true">
+          <line x1="0" y1="30" x2="300" y2="30" stroke="var(--bordure)" stroke-width="1"/>
+          <path d="M6 60 L60 56 L114 52 L168 46 L222 42 L286 36" fill="none" stroke="var(--bleu)" stroke-width="2.6" stroke-linecap="round"/>
+          <path d="M6 60 L60 56 L114 52 L168 46 L222 42 L286 36 L286 80 L6 80 Z" fill="var(--bleu)" opacity=".09"/>
+          <circle cx="286" cy="36" r="5" fill="var(--bleu)" stroke="var(--surface)" stroke-width="2.5"/>
+        </svg>
+        <div class="meta"><span>2020 → <b>2024</b></span><span>Source : <b>Radio-Canada</b></span></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="contenant section">
+  <div class="surtitre">Suivre l'argent</div>
+  <h2>Coût annoncé, coût actuel</h2>
+  <p class="chapeau" style="font-size:1rem">Un coût qui augmente n'est pas forcément une faute :
+  la portée du projet a pu changer. Mais l'écart mérite une explication.</p>
+
+  <div style="margin-top:1.4rem">
+    <div class="projet">
+      <div class="projet-tete"><h3>Tunnel Louis-Hippolyte-La Fontaine</h3><span class="ratio">×2,2</span></div>
+      <div class="piste">
+        <div class="rail"></div>
+        <div class="segment" style="left:16%;width:20%"></div>
+        <div class="pt pt-depart" style="left:16%"></div>
+        <div class="pt pt-actuel" style="left:36%"></div>
+        <span class="lib" style="left:16%">1,25 G$ annoncé</span>
+        <span class="lib" style="left:36%;color:var(--ambre);font-weight:700">2,80 G$ aujourd'hui</span>
+      </div>
+    </div>
+    <div class="projet">
+      <div class="projet-tete"><h3>Prolongement de la ligne bleue</h3><span class="ratio">×1,2</span></div>
+      <div class="piste">
+        <div class="rail"></div>
+        <div class="segment" style="left:82%;width:14%"></div>
+        <div class="pt pt-depart" style="left:82%"></div>
+        <div class="pt pt-actuel" style="left:96%"></div>
+        <span class="lib" style="left:76%">6,40 G$</span>
+        <span class="lib" style="left:94%;color:var(--ambre);font-weight:700">7,58 G$</span>
+      </div>
+    </div>
+    <div class="projet">
+      <div class="projet-tete"><h3>SAAQclic</h3><span class="ratio">×1,7</span></div>
+      <div class="piste">
+        <div class="rail"></div>
+        <div class="segment" style="left:8%;width:6%"></div>
+        <div class="pt pt-depart" style="left:8%"></div>
+        <div class="pt pt-actuel" style="left:14%"></div>
+        <span class="lib" style="left:8%">638 M$</span>
+        <span class="lib" style="left:16%;color:var(--ambre);font-weight:700">1,1 G$</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="note" style="margin-top:1.2rem"><strong>Un signal n'est pas une accusation.</strong>
+  Chaque écart mérite une explication avant une interprétation.</div>
+</div>
+
+<div class="bande">
+  <div class="contenant" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1.6rem;align-items:center">
+    <div>
+      <div class="surtitre">Testez-vous</div>
+      <h2>Devinez le chiffre</h2>
+      <p class="chapeau" style="font-size:1rem">Huit questions sur le Québec d'aujourd'hui.
+      La plupart des gens se trompent d'au moins 15 points.</p>
+      <div class="puces">
+        <span class="puce">Santé</span><span class="puce">Logement</span>
+        <span class="puce">Économie</span><span class="puce">Éducation</span>
+      </div>
+    </div>
+    <div class="carte" style="box-shadow:var(--ombre-3)">
+      <div class="etiquette" style="font-size:.78rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--encre-3)">Question 3 sur 8</div>
+      <div style="height:6px;background:var(--surface-2);border-radius:999px;margin:.5rem 0 1rem;overflow:hidden">
+        <div style="width:37%;height:100%;background:linear-gradient(90deg,var(--bleu),#7aa7ff);border-radius:999px"></div>
+      </div>
+      <h3 style="font-size:1.15rem;line-height:1.3">Quelle part des chaussées du Québec est en bon état?</h3>
+      <div style="margin:1.4rem 0 .4rem;position:relative;height:40px">
+        <div style="position:absolute;top:18px;left:0;right:0;height:5px;background:var(--surface-2);border-radius:999px"></div>
+        <div style="position:absolute;top:18px;left:0;width:51%;height:5px;background:var(--bleu);border-radius:999px"></div>
+        <div style="position:absolute;top:9px;left:51%;width:23px;height:23px;border-radius:50%;background:var(--surface);border:3px solid var(--bleu);box-shadow:var(--ombre-2);transform:translateX(-11px)"></div>
+      </div>
+      <div style="display:flex;justify-content:space-between;font-size:.82rem;color:var(--encre-3)"><span>0 %</span><span>100 %</span></div>
+      <button class="btn btn-primaire" style="width:100%;justify-content:center;margin-top:1rem">Valider mon estimation</button>
+    </div>
+  </div>
+</div>
+
+<footer class="pied">
+  <div class="contenant">
+    <strong style="color:var(--encre)">Traçabilité Québec</strong> — maquette de la direction
+    « outil moderne ». Police Inter, accent ambre, profondeur à trois niveaux, mode sombre.
+    <br>Comparez avec le site actuel : <a href="http://localhost:5071/">localhost:5071</a>
+  </div>
+</footer>
+
+<script>
+var b = document.getElementById("bascule");
+b.addEventListener("click", function () {
+  var sombre = document.documentElement.dataset.theme === "sombre";
+  document.documentElement.dataset.theme = sombre ? "clair" : "sombre";
+  b.textContent = sombre ? "Mode sombre" : "Mode clair";
+});
+</script>
+</body>
+</html>

@@ -71,9 +71,8 @@ def page_hors_demo():
 <h1>Cette page n'est pas dans la démo</h1>
 <p class="explication">Vous consultez la <strong>version démo statique</strong>
 de Traçabilité Québec : elle contient les pages principales et quelques
-centaines de fiches, mais pas les 215 000 contrats ni la recherche en direct.
-La version complète tourne pour l'instant en local — un site public complet
-est prévu.</p>
+centaines de fiches de contrats, mais pas la totalité des contrats ni la
+recherche en direct. La version complète est en préparation.</p>
 <p><a href="{BASE}/">← Retour à l'accueil de la démo</a> ·
 <a href="https://github.com/ibratim2026/tracabilite-quebec">Code source sur GitHub</a></p>
 </main></body></html>"""

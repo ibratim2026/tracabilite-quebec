@@ -15,8 +15,21 @@
   "use strict";
 
   var NS = "http://www.w3.org/2000/svg";
-  var ENCRE = "#21272e", GRIS = "#5b6673", GRILLE = "#e3e8ed",
-      BLEU = "#2563a8", GRIS_MARQUE = "#9aa5b0", SURFACE = "#ffffff";
+
+  // Les couleurs viennent des jetons CSS : elles suivent donc le mode sombre.
+  function jeton(nom, secours) {
+    var v = getComputedStyle(document.documentElement).getPropertyValue(nom).trim();
+    return v || secours;
+  }
+  var GRIS, GRILLE, BLEU, GRIS_MARQUE, SURFACE;
+  function relireCouleurs() {
+    GRIS = jeton("--gris", "#4a5a6e");
+    GRILLE = jeton("--bordure", "#dfe6ee");
+    BLEU = jeton("--bleu", "#2e6be6");
+    GRIS_MARQUE = jeton("--gris-badge", "#7b8a9c");
+    SURFACE = jeton("--surface", "#ffffff");
+  }
+  relireCouleurs();
 
   function donnees(el) {
     var s = el.querySelector('script[type="application/json"]');
@@ -469,7 +482,28 @@
     });
   }
 
+  /* ---------------------------------------------------------- thème clair/sombre */
+  function theme() {
+    var b = document.getElementById("bascule-theme");
+    if (!b) return;
+    b.addEventListener("click", function () {
+      var sombre = document.documentElement.dataset.theme === "sombre";
+      document.documentElement.dataset.theme = sombre ? "clair" : "sombre";
+      try { localStorage.setItem("tq-theme", sombre ? "clair" : "sombre"); } catch (e) { /* ignoré */ }
+      // Les graphiques sont dessinés en SVG : on les redessine aux couleurs du thème.
+      relireCouleurs();
+      document.querySelectorAll("[data-graph-serie], [data-haltere]").forEach(function (el) {
+        var svg = el.querySelector("svg"), tab = el.querySelector(".tq-table"), scroll = el.querySelector(".ig-scroll");
+        if (svg) svg.remove();
+        if (tab) tab.remove();
+        if (scroll) scroll.remove();
+        (el.hasAttribute("data-haltere") ? haltere : grapheSerie)(el);
+      });
+    });
+  }
+
   function init() {
+    theme();
     var chemin = location.pathname.replace(/^\/tracabilite-quebec/, "").replace(/\/$/, "") || "/";
     if (/^\/(election|secteurs|lois-et-projets|quebec-prospere|economie-expliquee|quebec-canada)/.test(chemin)) marquer("page:" + chemin);
     document.querySelectorAll("[data-graph-serie]").forEach(grapheSerie);

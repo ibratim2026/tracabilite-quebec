@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" role="img" aria-label="Traçabilité Québec">
+  <rect width="32" height="32" rx="8" fill="#12325f"/>
+  <rect x="7" y="19" width="4" height="7" rx="1.4" fill="#7aa7ff"/>
+  <rect x="14" y="15" width="4" height="11" rx="1.4" fill="#9dbdff"/>
+  <rect x="21" y="11" width="4" height="15" rx="1.4" fill="#e07b00"/>
+  <path d="M7.5 15.5 L14 11.5 L20 8 L25.5 5.5" fill="none" stroke="#fff" stroke-width="2.1"
+        stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M20.3 5.4 L26 5 L25.6 10.7" fill="none" stroke="#fff" stroke-width="2.1"
+        stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
