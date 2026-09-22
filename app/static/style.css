@@ -729,9 +729,9 @@ a.bandeau-election:hover { text-decoration: none; box-shadow: var(--ombre-3); tr
 /* Le lys bleu remplace la flèche; une variante ambre marque ce qui est
    cliquable. Les navigateurs sans curseur SVG (Safari) reprennent les
    curseurs du système, et les champs de saisie gardent le curseur texte. */
-body { cursor: url("curseur-lys.svg") 15 2, auto; }
+body { cursor: url("curseur-lys.svg") 4 1, auto; }
 a, button, summary, label, .onglet, .carte-lien, .tq-priorite, .tq-option,
 [role="button"], input[type="range"], select {
-  cursor: url("curseur-lys-actif.svg") 15 2, pointer;
+  cursor: url("curseur-lys-actif.svg") 4 1, pointer;
 }
 input[type="search"], input[type="text"], textarea { cursor: text; }
