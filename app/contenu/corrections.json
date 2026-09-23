@@ -1,6 +1,16 @@
 [
  {
   "date": "22 septembre 2026",
+  "texte": "Notre réponse sur l'hébergement des aînés disait que le nombre total de personnes en attente n'avait pas pu être obtenu, et ne montrait que les 726 patients hospitalisés rapportés par un média. Le ministère publie pourtant la file complète par période : 3 069 personnes au 24 mars 2026. Nous ne montrions qu'un quart du problème.",
+  "page": "/on-clarifie"
+ },
+ {
+  "date": "22 septembre 2026",
+  "texte": "Nous écrivions que la contribution mensuelle en CHSLD public était indexée tous les trois mois selon la pension de la Sécurité de la vieillesse. C'est faux : le règlement l'indexe le 1er janvier de chaque année selon l'indice des rentes. Corrigé.",
+  "page": "/on-clarifie"
+ },
+ {
+  "date": "22 septembre 2026",
   "texte": "Les comparaisons de coûts dans le temps ne tenaient pas compte de l'inflation. Nous comparions des dollars de 2017 à des dollars de 2026 comme s'ils valaient la même chose, ce qui exagérait les dépassements. Nous avons intégré l'indice des prix du Québec et affichons désormais, quand l'année d'annonce est connue, la hausse en dollars courants et la hausse réelle. Exemple : SAAQclic passe de « ×1,7 » à « ×1,4 une fois l'inflation retirée ».",
   "page": "/lois-et-projets"
  },
