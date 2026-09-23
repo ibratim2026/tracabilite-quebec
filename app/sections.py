@@ -34,7 +34,8 @@ def charger(nom):
 # appartient à la rubrique dont un préfixe correspond à son chemin.
 NAVIGATION = [
     {"cle": "election", "nom": "Élection 2026", "url": "/election", "prefixes": ["/election"],
-     "sous": [("/election", "Vue d'ensemble"), ("/election/mieux-voter", "Mieux voter"),
+     "sous": [("/election", "Vue d'ensemble"), ("/election/mandat-en-cours", "Mandat en cours"),
+              ("/election/mieux-voter", "Mieux voter"),
               ("/election/comparateur/", "Comparateur"),
               ("/election/decoder", "Décoder la campagne"), ("/election/jouer", "Testez-vous")]},
     {"cle": "comprendre", "nom": "Comprendre", "url": "/secteurs",
@@ -80,10 +81,20 @@ def injecter_navigation():
 @bp.app_context_processor
 def injecter_reglages():
     """mode_prudent : masque tout contenu qui nomme ou présente les partis
-    (Loi électorale, visibilité donnée par un tiers en période électorale)."""
+    (Loi électorale, visibilité donnée par un tiers en période électorale).
+
+    La contrainte tombe au lendemain du scrutin. On la laisse donc expirer
+    toute seule plutôt que de dépendre d'un drapeau qu'il faudrait penser à
+    baisser : les pages promettent au lecteur une date, le code la tient.
+    Rien ne paraît en ligne pour autant tant que le site n'est pas republié.
+    """
+    from datetime import date
     r = charger("reglages") or {}
-    return {"prudent": r.get("mode_prudent", False),
-            "note_prudent": r.get("note_prudent", "")}
+    prudent = r.get("mode_prudent", False)
+    echeance = r.get("prudent_jusqu_au")
+    if prudent and echeance and date.today() > date.fromisoformat(echeance):
+        prudent = False
+    return {"prudent": prudent, "note_prudent": r.get("note_prudent", "")}
 
 
 # ---------------------------------------------------------------- Élection
@@ -97,6 +108,24 @@ def election():
                                       - date.today()).days)
     return render_template("election.html", e=e, a=charger("a_venir"),
                            p=charger("plateformes"), secteurs=charger("secteurs"))
+
+
+@bp.route("/election/mandat-en-cours")
+def mandat():
+    from datetime import date
+    m = charger("mandat")
+    if not m:
+        abort(404)
+    lois = charger("lois") or {}
+    # Le décompte du mandat se calcule, il ne se recopie pas : la page reste
+    # juste le lendemain comme la veille.
+    debut, fin = date(2022, 10, 3), date(2026, 8, 27)
+    ecoule = (min(date.today(), fin) - debut).days
+    compte = {"jours": ecoule, "annees": round(ecoule / 365.25, 1),
+              "adoptees": len(lois.get("adoptees", [])),
+              "mortes": len(lois.get("mortes", [])),
+              "projets": len(lois.get("projets", []))}
+    return render_template("mandat.html", m=m, compte=compte)
 
 
 @bp.route("/election/comparateur/")

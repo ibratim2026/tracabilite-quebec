@@ -1,0 +1,95 @@
+{% extends "base.html" %}
+{% block titre %}Le mandat en cours : dates, bilan législatif, promesses — Traçabilité Québec{% endblock %}
+{% block contenu %}
+<div class="surtitre">Élection 2026</div>
+<h1>Le mandat en cours</h1>
+<p class="chapeau">{{ m.chapeau }}</p>
+
+<section class="bande bande-bleue">
+  <div class="surtitre">Le cadre</div>
+  <h2>{{ m.cadre.titre }}</h2>
+  <div class="cartes-stats">
+    <div class="carte"><div class="chiffre">{{ m.cadre.debut }}</div>
+      <div class="etiquette">Début du mandat · {{ m.cadre.debut_note }}</div></div>
+    <div class="carte"><div class="chiffre">{{ m.cadre.fin }}</div>
+      <div class="etiquette">Fin du mandat · {{ m.cadre.fin_note }}</div></div>
+    <div class="carte"><div class="chiffre">{{ m.cadre.scrutin }}</div>
+      <div class="etiquette">Prochain scrutin · {{ m.cadre.scrutin_note }}</div></div>
+  </div>
+  <p class="revelation-chute">Le mandat aura duré {{ m.cadre.duree_texte }},
+  soit {{ compte.jours | nombre }} jours.</p>
+  <p>{{ m.cadre.pourquoi }}</p>
+  <p class="source">Sources : {% for s in m.cadre.sources %}<a href="{{ s.url }}">{{ s.nom }}</a>{{ ' · ' if not loop.last }}{% endfor %}</p>
+</section>
+
+<h2>{{ m.bilan_legislatif.titre }}</h2>
+<p class="explication">{{ m.bilan_legislatif.intro }}</p>
+<div class="cartes-stats">
+  <div class="carte"><div class="chiffre">{{ compte.adoptees }}</div>
+    <div class="etiquette">lois adoptées et suivies ici</div></div>
+  <div class="carte"><div class="chiffre">{{ compte.mortes }}</div>
+    <div class="etiquette">projets de loi morts au feuilleton</div></div>
+  <div class="carte"><div class="chiffre">{{ compte.projets }}</div>
+    <div class="etiquette">grands projets suivis, coût annoncé contre coût actuel</div></div>
+</div>
+<div class="encadre encadre-gris">{{ m.bilan_legislatif.note }}</div>
+<p><a class="tq-bouton" href="{{ m.bilan_legislatif.lien }}">{{ m.bilan_legislatif.lien_texte }} →</a></p>
+
+{% if prudent %}
+<section class="bande bande-claire" id="suspendu">
+  <div class="surtitre">Pourquoi cette page s'arrête ici</div>
+  <h2>{{ m.suspendu.titre }}</h2>
+  <div class="prose">
+    <p>{{ m.suspendu.pourquoi }}</p>
+    <p>{{ m.suspendu.quoi_alors }}</p>
+    <p><strong>Ce qui s'affichera le 6 octobre :</strong></p>
+    <ul>{% for c in m.suspendu.contient %}<li>{{ c }}</li>{% endfor %}</ul>
+  </div>
+</section>
+{% else %}
+<h2>{{ m.bilan.promesses.titre }}</h2>
+{% if m.bilan.a_rafraichir %}
+<div class="encadre encadre-jaune">{{ m.bilan.avertissement }}</div>
+{% endif %}
+<p class="explication"><strong>{{ m.bilan.promesses.total }}</strong>
+{{ m.bilan.promesses.total_note }}</p>
+<div class="graphique">
+  {% set mx = m.bilan.promesses.etats | map(attribute='pct') | max %}
+  {% for e in m.bilan.promesses.etats %}
+  <div class="ligne-graphique">
+    <div class="etiquette-barre">{{ e.nom }}</div>
+    <div class="piste">
+      <div class="barre-h{{ ' barre-autres' if e.nom in ('Rompues', 'En suspens') }}"
+           style="width: {{ (100 * e.pct / mx) | round(1) }}%"></div>
+      <span class="valeur-barre">{{ e.pct }} %</span>
+    </div>
+  </div>
+  {% endfor %}
+</div>
+<div class="encadre encadre-bleu">{{ m.bilan.promesses.lecture }}</div>
+<p class="source">Sources : {% for s in m.bilan.promesses.sources %}<a href="{{ s.url }}">{{ s.nom }}</a>{{ ' · ' if not loop.last }}{% endfor %}</p>
+{% endif %}
+
+<h2>{{ m.methode.titre }}</h2>
+<div class="grille-cartes">
+  {% for p in m.methode.points %}
+  <div class="carte"><h3>{{ p.titre }}</h3><p>{{ p.texte }}</p></div>
+  {% endfor %}
+</div>
+
+<section class="bande bande-bleue">
+  <div class="surtitre">Ne nous croyez pas</div>
+  <h2>{{ m.verifier.titre }}</h2>
+  <p>{{ m.verifier.intro }}</p>
+  <div class="grille-cartes">
+    {% for l in m.verifier.liens %}
+    <a class="carte carte-lien" href="{{ l.url }}"><h3>{{ l.nom }}</h3><p>{{ l.quoi }}</p></a>
+    {% endfor %}
+  </div>
+</section>
+
+<div class="note-verif">Mis à jour le {{ m.maj_texte }}. Les décomptes de lois et de projets
+sont calculés à partir des données publiées sur ce site et se mettent à jour avec elles.
+Une erreur? <a href="https://github.com/ibratim2026/tracabilite-quebec/issues">Signalez-la</a> :
+les corrections sont publiées et datées sur la page <a href="/a-propos">À propos</a>.</div>
+{% endblock %}

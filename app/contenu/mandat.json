@@ -1,0 +1,146 @@
+{
+ "maj_texte": "22 septembre 2026",
+ "chapeau": "Une élection, c'est d'abord un bilan qu'on approuve ou qu'on rejette. Cette page regarde le mandat qui s'achève : combien de temps il a duré, ce que l'Assemblée a adopté, ce qui a été promis en 2022 et ce qui en est advenu. Les faits institutionnels sont ici en tout temps. L'évaluation du bilan, elle, est suspendue pendant la campagne — nous expliquons pourquoi plus bas.",
+ "cadre": {
+  "titre": "Le mandat en dates",
+  "debut": "3 octobre 2022",
+  "debut_note": "Élection générale. 125 circonscriptions.",
+  "fin": "27 août 2026",
+  "fin_note": "Dissolution de l'Assemblée nationale. Fin des travaux parlementaires.",
+  "scrutin": "5 octobre 2026",
+  "scrutin_note": "Élection générale. 127 circonscriptions, deux de plus qu'en 2022.",
+  "duree_texte": "3 ans et 11 mois",
+  "pourquoi": "La date n'est pas choisie par le gouvernement. Depuis 2013, la Loi électorale fixe l'élection générale au premier lundi d'octobre de la quatrième année civile suivant la précédente. C'est ce qui rend la fin d'un mandat prévisible : on connaissait la date du 5 octobre 2026 depuis le lendemain du scrutin de 2022.",
+  "sources": [
+   {
+    "nom": "Élections Québec",
+    "url": "https://www.electionsquebec.qc.ca/"
+   },
+   {
+    "nom": "Assemblée nationale du Québec — la 43e législature",
+    "url": "https://www.assnat.qc.ca/fr/deputes/index.html"
+   }
+  ]
+ },
+ "bilan_legislatif": {
+  "titre": "Ce que l'Assemblée a produit",
+  "intro": "Ces chiffres ne sont pas une évaluation : ce sont des décomptes. Ils proviennent du suivi que ce site tient déjà, loi par loi et projet par projet, et chacun renvoie à sa source officielle.",
+  "note": "Un projet de loi « mort au feuilleton » est un projet déposé mais non adopté avant la fin des travaux. Il n'a aucun effet juridique et doit être redéposé de zéro par la prochaine législature.",
+  "lien": "/lois-et-projets",
+  "lien_texte": "Voir le détail, loi par loi"
+ },
+ "methode": {
+  "titre": "Comment juger un bilan sans se faire avoir",
+  "points": [
+   {
+    "titre": "Séparez ce qui a été adopté de ce qui a été annoncé",
+    "texte": "Une annonce n'est pas une loi, une loi n'est pas un budget, et un budget n'est pas une dépense réalisée. Les quatre se ressemblent dans un communiqué et n'ont rien à voir dans les faits. Le seul test fiable : est-ce que l'argent est sorti, et est-ce que le service existe ?"
+   },
+   {
+    "titre": "Distinguez ce qu'un gouvernement contrôle de ce qu'il subit",
+    "texte": "L'inflation mondiale, les taux d'intérêt, les tarifs américains et une pandémie ne se décident pas à Québec. La réponse à ces chocs, oui. Reprocher un choc à un gouvernement est aussi trompeur que de lui attribuer une embellie mondiale."
+   },
+   {
+    "titre": "Comparez en dollars constants",
+    "texte": "Un budget « record » en dollars courants peut être une baisse réelle. Nos conversions utilisent l'indice des prix du Québec, et chaque page qui compare des années le signale."
+   },
+   {
+    "titre": "Méfiez-vous du taux de promesses tenues",
+    "texte": "Un gouvernement qui fait 150 promesses faciles obtiendra un meilleur pourcentage qu'un gouvernement qui en fait 40 difficiles. Le taux mesure la discipline, pas l'ambition ni la qualité. Regardez toujours le dénominateur."
+   },
+   {
+    "titre": "Un chiffre sans année ne vaut rien",
+    "texte": "« On a investi X milliards » — sur combien d'années ? À partir de quelle base ? Comparé à quoi ? Un montant sans période de référence est une impression, pas une mesure."
+   }
+  ]
+ },
+ "verifier": {
+  "titre": "Où vérifier un bilan vous-même",
+  "intro": "Ces organismes sont indépendants du gouvernement et publient leurs constats. Ils sont la meilleure source pour juger un mandat — bien meilleure que nous, et bien meilleure qu'un parti.",
+  "liens": [
+   {
+    "nom": "Vérificateur général du Québec",
+    "quoi": "Audite la gestion des ministères et des organismes. Ses rapports nomment les problèmes de gestion, chiffres à l'appui.",
+    "url": "https://www.vgq.qc.ca/"
+   },
+   {
+    "nom": "Protecteur du citoyen",
+    "quoi": "Enquête sur les plaintes des citoyens contre l'administration publique et publie un rapport annuel.",
+    "url": "https://protecteurducitoyen.qc.ca/"
+   },
+   {
+    "nom": "Commissaire à l'éthique et à la déontologie",
+    "quoi": "Applique le code d'éthique des députés. Ses rapports d'enquête sont déposés à l'Assemblée nationale et publiés intégralement.",
+    "url": "https://www.ced-qc.ca/fr/"
+   },
+   {
+    "nom": "Commissaire à la santé et au bien-être",
+    "quoi": "Évalue la performance du système de santé et de services sociaux.",
+    "url": "https://www.csbe.gouv.qc.ca/"
+   },
+   {
+    "nom": "Le Polimètre (Université Laval et Vox Pop Labs)",
+    "quoi": "Suit publiquement le sort de chaque promesse électorale, avec une méthodologie publiée.",
+    "url": "https://polimeter.org/fr"
+   },
+   {
+    "nom": "Assemblée nationale — travaux parlementaires",
+    "quoi": "Le texte de chaque projet de loi, les votes et les débats, en intégral.",
+    "url": "https://www.assnat.qc.ca/fr/travaux-parlementaires/index.html"
+   }
+  ]
+ },
+ "suspendu": {
+  "titre": "Le bilan du gouvernement sortant est suspendu jusqu'au 6 octobre",
+  "pourquoi": "Pendant la période électorale, la Loi électorale du Québec encadre toute visibilité qu'un tiers donne à un parti ou à un candidat. Publier le bilan du gouvernement sortant — ce qu'il a promis, tenu, raté — reviendrait à porter un jugement sur un parti qui se présente devant les électeurs. Pour un tiers non autorisé comme ce site, cela constitue une dépense électorale, peu importe la rigueur du travail et peu importe qu'il soit favorable ou défavorable.",
+  "quoi_alors": "Le contenu est écrit, sourcé et prêt. Il s'affichera automatiquement le lendemain du scrutin, quand la contrainte tombe. D'ici là, les organismes de surveillance listés au bas de cette page publient leurs propres constats, et les médias accrédités ont le droit de faire ce travail — pas nous.",
+  "contient": [
+   "Les 150 promesses de la campagne de 2022 et leur sort, selon le suivi du Polimètre",
+   "La composition du Conseil des ministres et qui détenait quelle responsabilité",
+   "Les constats des organismes de surveillance publiés pendant le mandat",
+   "Les projets de loi morts au feuilleton à la dissolution, et ce qu'ils contenaient"
+  ]
+ },
+ "bilan": {
+  "a_rafraichir": true,
+  "avertissement": "Ces chiffres datent d'avant le scrutin et doivent être revérifiés à la publication : le Polimètre produit une mise à jour finale après la fin d'un mandat.",
+  "promesses": {
+   "titre": "Les promesses de 2022",
+   "total": 150,
+   "total_note": "engagements recensés par le Polimètre pour la campagne de 2022, contre 251 en 2018.",
+   "etats": [
+    {
+     "nom": "Réalisées",
+     "pct": 48
+    },
+    {
+     "nom": "Partiellement réalisées",
+     "pct": 25
+    },
+    {
+     "nom": "En voie de réalisation",
+     "pct": 8
+    },
+    {
+     "nom": "Rompues",
+     "pct": 17
+    },
+    {
+     "nom": "En suspens",
+     "pct": 2
+    }
+   ],
+   "lecture": "Un taux de promesses tenues ne mesure pas la qualité d'un mandat : il mesure l'écart entre ce qui a été dit et ce qui a été fait. Une promesse facile tenue et une promesse difficile tenue comptent pareil. Le Polimètre publie sa méthodologie et le détail de chaque engagement.",
+   "sources": [
+    {
+     "nom": "Polimètre — Université Laval et Vox Pop Labs",
+     "url": "https://polimeter.org/fr"
+    },
+    {
+     "nom": "Radio-Canada — bilan des promesses (11 avril 2025)",
+     "url": "https://ici.radio-canada.ca/info/long-format/2244728/bilan-francois-legault-caq-promesses-polimetre"
+    }
+   ]
+  }
+ }
+}
