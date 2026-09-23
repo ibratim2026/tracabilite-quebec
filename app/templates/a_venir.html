@@ -1,0 +1,93 @@
+{% extends "base.html" %}
+{% block titre %}Ce qui s'en vient : la facture des prochaines années — Traçabilité Québec{% endblock %}
+{% block contenu %}
+<div class="surtitre">Comprendre</div>
+<h1>Ce qui s'en vient</h1>
+<p class="chapeau">{{ a.chapeau }}</p>
+
+<section class="bande bande-bleue">
+  <div class="surtitre">L'essentiel</div>
+  <h2>Des factures déjà là, peu importe qui gouverne</h2>
+  <div class="cartes-stats">
+    {% for p in a.postes | selectattr('montant_g') | sort(attribute='montant_g', reverse=True) | list %}
+    {% if loop.index <= 4 %}
+    <div class="carte"><div class="chiffre">{{ p.montant }}</div>
+      <div class="etiquette">{{ p.titre }}{% if p.horizon %} · {{ p.horizon }}{% endif %}</div></div>
+    {% endif %}
+    {% endfor %}
+  </div>
+  <p class="source">{{ a.avertissement }}</p>
+</section>
+
+<h2>Les postes, un par un</h2>
+<p class="explication">Chaque poste indique s'il est <strong>déjà inscrit à un plan
+officiel</strong> ou s'il s'agit d'une <strong>estimation faite par un tiers</strong>,
+comme une association municipale ou un institut de recherche. La différence compte :
+la première est un engagement, la seconde est un ordre de grandeur.</p>
+
+{% set mx = (a.postes | map(attribute='montant_g') | select | list | max) or 1 %}
+<div class="graphique">
+  {% for p in a.postes | selectattr('montant_g') | sort(attribute='montant_g', reverse=True) %}
+  <div class="ligne-graphique">
+    <div class="etiquette-barre"><a href="#{{ p.slug }}">{{ p.titre }}</a></div>
+    <div class="piste">
+      <div class="barre-h{{ ' barre-autres' if p.statut and 'estimation' in p.statut }}"
+           style="width: {{ (100 * p.montant_g / mx) | round(1) }}%"
+           title="{{ p.titre }} : {{ p.montant }}"></div>
+      <span class="valeur-barre">{{ p.montant }}{% if p.horizon %} <small>{{ p.horizon }}</small>{% endif %}</span>
+    </div>
+  </div>
+  {% endfor %}
+  <div class="legende">
+    <span><i class="pastille" style="background: var(--bleu)"></i>Inscrit à un plan officiel</span>
+    <span><i class="pastille" style="background: var(--gris-badge)"></i>Estimation d'un tiers</span>
+  </div>
+</div>
+
+{% for p in a.postes %}
+<div class="poste" id="{{ p.slug }}">
+  <div class="poste-tete">
+    <h3>{{ p.titre }}</h3>
+    <div class="poste-montant">{{ p.montant }}{% if p.horizon %}<span class="detail"> {{ p.horizon }}</span>{% endif %}</div>
+  </div>
+  <div class="poste-meta">
+    <span class="badge {{ 'badge-bleu' if p.statut and 'officiel' in p.statut else 'badge-gris' }}">{{ p.statut }}</span>
+    {% if p.secteur %}<a class="badge badge-gris" href="/secteurs/{{ p.secteur }}">Voir le secteur →</a>{% endif %}
+  </div>
+  <p>{{ p.resume }}</p>
+  {% if p.qui_paie %}<p class="detail"><strong>Qui paie :</strong> {{ p.qui_paie }}</p>{% endif %}
+  <p class="source">Sources : {% for s in p.sources %}<a href="{{ s.url }}">{{ s.nom }}</a>{{ ' · ' if not loop.last }}{% endfor %}</p>
+</div>
+{% endfor %}
+
+{% if a.municipal %}
+<section class="bande bande-claire">
+  <div class="surtitre">Le nœud du problème</div>
+  <h2>Pourquoi la facture des villes remonte à Québec</h2>
+  <div class="prose">
+    <p>{{ a.municipal.intro }}</p>
+    {% if a.municipal.part_impot_foncier %}
+    <p><strong>{{ a.municipal.part_impot_foncier }}</strong></p>{% endif %}
+    <p>{{ a.municipal.explication }}</p>
+    <p class="source">Sources : {% for s in a.municipal.sources %}<a href="{{ s.url }}">{{ s.nom }}</a>{{ ' · ' if not loop.last }}{% endfor %}</p>
+  </div>
+</section>
+{% endif %}
+
+<h2>Comment lire ces montants</h2>
+<ul class="prose">
+  <li><strong>Ils ne s'additionnent pas.</strong> Les horizons diffèrent (5, 10 ou 20 ans)
+  et certains montants se recoupent : un projet inscrit au Plan québécois des
+  infrastructures fait déjà partie de l'enveloppe globale.</li>
+  <li><strong>Un retard d'entretien n'est pas une dette.</strong> C'est le coût estimé
+  pour remettre en état ce qui existe. On peut l'étaler, mais pas le faire disparaître :
+  reporter l'entretien coûte généralement plus cher au bout du compte.</li>
+  <li><strong>Une partie sera payée par emprunt</strong>, donc apparaîtra dans la dette
+  et dans les intérêts des années suivantes. Voir
+  <a href="/economie-expliquee#dette">les trois dettes du Québec</a>.</li>
+</ul>
+
+<div class="note-verif">Mis à jour le {{ a.maj_texte }}. Ces montants viennent de
+documents publics : ils indiquent ce qui attend le prochain gouvernement, quel qu'il
+soit. Traçabilité Québec ne prend pas position sur la façon de les financer.</div>
+{% endblock %}

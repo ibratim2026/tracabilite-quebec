@@ -86,7 +86,7 @@ def main():
     graines = ["/", "/aux-nouvelles", "/aux-nouvelles/saaqclic",
                "/meilleur-des-mondes", "/meilleur-des-mondes/saaqclic",
                "/methodologie", "/election", "/election/comparateur/",
-               "/election/decoder", "/election/mieux-voter", "/election/jouer", "/etat-du-quebec", "/secteurs", "/economie-expliquee", "/quebec-canada", "/lois-et-projets", "/on-clarifie",
+               "/election/decoder", "/election/mieux-voter", "/election/jouer", "/etat-du-quebec", "/secteurs", "/economie-expliquee", "/quebec-canada", "/lois-et-projets", "/on-clarifie", "/ce-qui-s-en-vient",
                "/quebec-prospere", "/a-propos", "/donnees"]
     for t in TYPES:
         for pg in range(1, PAGES_PAR_TYPE + 1):

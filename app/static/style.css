@@ -882,3 +882,14 @@ a.etoile:hover { color: var(--ambre); text-decoration: none; }
   border-radius: 0 var(--r-m) var(--r-m) 0; padding: .7rem .9rem; margin: .6rem 0;
   font-size: .93rem; color: var(--encre); }
 .faq-origine strong { color: var(--bleu-fonce); }
+
+/* Ce qui s'en vient */
+.poste { background: var(--surface); border: 1px solid var(--bordure); border-radius: var(--r-l);
+  padding: 1.1rem 1.3rem; margin: .8rem 0; box-shadow: var(--ombre-1); max-width: 900px; }
+.poste-tete { display: flex; justify-content: space-between; align-items: baseline;
+  gap: 1rem; flex-wrap: wrap; }
+.poste-tete h3 { margin: 0; }
+.poste-montant { font-size: 1.5rem; font-weight: 800; letter-spacing: -.02em;
+  color: var(--bleu-fonce); font-variant-numeric: tabular-nums; }
+.poste-meta { display: flex; gap: .4rem; flex-wrap: wrap; margin: .4rem 0 .6rem; }
+.poste p { font-size: .95rem; }

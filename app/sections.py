@@ -39,10 +39,11 @@ NAVIGATION = [
               ("/election/decoder", "Décoder la campagne"), ("/election/jouer", "Testez-vous")]},
     {"cle": "comprendre", "nom": "Comprendre", "url": "/secteurs",
      "prefixes": ["/etat-du-quebec", "/secteurs", "/economie-expliquee", "/quebec-canada",
-                  "/lois-et-projets", "/quebec-prospere", "/on-clarifie"],
+                  "/lois-et-projets", "/quebec-prospere", "/on-clarifie", "/ce-qui-s-en-vient"],
      "sous": [("/etat-du-quebec", "L'état du Québec"), ("/secteurs", "Secteurs et indicateurs"), ("/economie-expliquee", "L'économie expliquée"),
               ("/quebec-canada", "Le Québec dans le Canada"),
-              ("/lois-et-projets", "Lois et projets"), ("/on-clarifie", "On clarifie"),
+              ("/lois-et-projets", "Lois et projets"), ("/ce-qui-s-en-vient", "Ce qui s'en vient"),
+              ("/on-clarifie", "On clarifie"),
               ("/quebec-prospere", "Québec prospère")]},
     {"cle": "argent", "nom": "Suivre l'argent", "url": "/",
      "prefixes": ["/ce-qui-ne-fait-pas-de-sens", "/aux-nouvelles", "/meilleur-des-mondes",
@@ -410,6 +411,14 @@ def lois_et_projets():
                 pr["hausse_nominale"] = round(pr["cout_actuel_num"] / pr["cout_initial_num"], 2)
     return render_template("lois.html", l=l, haltere=haltere,
                            secteurs={s["slug"]: s for s in charger("secteurs") or []})
+
+
+@bp.route("/ce-qui-s-en-vient")
+def a_venir():
+    a = charger("a_venir")
+    if not a:
+        abort(404)
+    return render_template("a_venir.html", a=a)
 
 
 @bp.route("/on-clarifie")
