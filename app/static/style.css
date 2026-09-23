@@ -943,3 +943,31 @@ a.tq-bouton { display: inline-block; text-decoration: none; }
 .revelation-levier h3 { color: var(--bleu-fonce); }
 .revelation-argent p, .revelation-levier p { margin: 0; font-size: .96rem; }
 .preuve-titre { margin: 1.6rem 0 .2rem; font-size: 1.05rem; }
+
+/* ===================== Mandat en cours : tracker des promesses =========== */
+.promesse { background: var(--surface); border: 1px solid var(--bordure);
+  border-radius: var(--r-l); padding: 1.1rem 1.3rem; margin: .8rem 0;
+  box-shadow: var(--ombre-1); max-width: 900px; }
+.promesse-tete { display: flex; justify-content: space-between; align-items: baseline;
+  gap: 1rem; flex-wrap: wrap; margin-bottom: .7rem; }
+.promesse-tete h3 { margin: 0; }
+.promesse-corps { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem 1.8rem;
+  border-top: 1px solid var(--bordure); padding-top: .9rem; }
+.promesse h4 { margin: 0 0 .3rem; font-size: .78rem; text-transform: uppercase;
+  letter-spacing: .09em; color: var(--gris); }
+.promesse p { margin: 0; font-size: .94rem; }
+.promesse-impact { margin-top: .9rem; background: var(--bleu-pale); border-radius: var(--r-m);
+  border-left: 3px solid var(--bleu); padding: .85rem 1rem; }
+.promesse-impact h4 { color: var(--bleu-fonce); }
+.promesse-impact p + p { margin-top: .5rem; }
+.promesse .source { margin-top: .9rem; }
+.legende-statuts span { display: block; margin-bottom: .2rem; }
+@media (max-width: 700px) { .promesse-corps { grid-template-columns: 1fr; } }
+/* Une pastille de 10 px a besoin de la couleur pleine : le fond pâle des
+   badges, pensé pour du texte, disparaît à cette taille. */
+.pastille-statut { padding: 0; }
+.pastille-statut.badge-vert { background: var(--vert); }
+.pastille-statut.badge-bleu { background: var(--bleu); }
+.pastille-statut.badge-jaune { background: var(--jaune); }
+.pastille-statut.badge-rouge { background: var(--rouge); }
+.pastille-statut.badge-gris { background: var(--gris-badge); }

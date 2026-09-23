@@ -141,6 +141,252 @@
      "url": "https://ici.radio-canada.ca/info/long-format/2244728/bilan-francois-legault-caq-promesses-polimetre"
     }
    ]
+  },
+  "tracker": {
+   "titre": "Les promesses, une par une",
+   "intro": "Onze engagements parmi les plus suivis de la campagne de 2022. Ce n'est pas la liste complète — le Polimètre en recensait 150 — mais ce sont ceux dont on peut mesurer l'aboutissement avec des chiffres publics. Chaque ligne relie la promesse à ce que nos propres données mesurent.",
+   "statuts": [
+    {
+     "cle": "realisee",
+     "nom": "Réalisée",
+     "couleur": "vert",
+     "quoi": "La mesure est en vigueur."
+    },
+    {
+     "cle": "partielle",
+     "nom": "Partiellement réalisée",
+     "couleur": "bleu",
+     "quoi": "La mesure existe, mais la cible annoncée n'est pas atteinte."
+    },
+    {
+     "cle": "reportee",
+     "nom": "Reportée",
+     "couleur": "jaune",
+     "quoi": "L'échéance annoncée est dépassée ou repoussée."
+    },
+    {
+     "cle": "abandonnee",
+     "nom": "Abandonnée",
+     "couleur": "rouge",
+     "quoi": "Le gouvernement a mis fin au projet."
+    },
+    {
+     "cle": "inconnu",
+     "nom": "Bilan non publié",
+     "couleur": "gris",
+     "quoi": "Aucune donnée officielle ne permet de juger."
+    }
+   ],
+   "promesses": [
+    {
+     "slug": "impot",
+     "titre": "Baisser l'impôt des particuliers",
+     "statut": "realisee",
+     "secteur": "finances",
+     "promis": "Réduire d'un point de pourcentage le taux des deux premiers paliers d'imposition.",
+     "fait": "Annoncé au budget de mars 2023, en vigueur depuis le 1er juillet 2023. Le taux du premier palier passe de 15 % à 14 %, celui du deuxième de 20 % à 19 %.",
+     "impact": "Jusqu'à 814 $ par année pour une personne seule et 1 627 $ pour un couple, pour environ 4,6 millions de contribuables. La mesure représente 9,2 G$ sur cinq ans ; l'IRIS chiffrait à 4,1 G$ par année le manque à gagner pour le Trésor.",
+     "sources": [
+      {
+       "nom": "Gouvernement du Québec — la baisse d'impôt en vigueur depuis le 1er juillet 2023",
+       "url": "https://www.quebec.ca/nouvelles/actualites/details/impot-des-particuliers-la-baisse-dimpot-des-contribuables-quebecois-se-concretise-depuis-le-1er-juillet-49431"
+      },
+      {
+       "nom": "IRIS — effets de la baisse d'impôt de 2023",
+       "url": "https://iris-recherche.qc.ca/publications/baisses-impot-qc-2023/"
+      }
+     ]
+    },
+    {
+     "slug": "hydro",
+     "titre": "Plafonner la hausse des tarifs d'électricité à 3 %",
+     "statut": "realisee",
+     "secteur": "energie",
+     "lien": "/lois-et-projets",
+     "promis": "Limiter à 3 % par année l'indexation des tarifs résidentiels d'Hydro-Québec.",
+     "fait": "Le projet de loi 2 a été adopté en 2023. Le plafond est inscrit dans la loi. Une mesure jumelle, la loi 1 de 2022, plafonne aussi les tarifs gouvernementaux.",
+     "impact": "Le plafond vise le tarif résidentiel. Il ne s'applique pas aux clients commerciaux et industriels : en 2025, des hausses de 4,8 % par année leur ont été proposées. Voir aussi ce que l'électricité rapporte au trésor public.",
+     "lien_texte": "L'électricité dans « Relever le Québec »",
+     "lien_url": "/relever-le-quebec#electricite",
+     "sources": [
+      {
+       "nom": "Gouvernement du Québec — adoption du projet de loi 2",
+       "url": "https://www.quebec.ca/nouvelles/actualites/details/adoption-du-projet-de-loi-no-2-hausse-des-tarifs-dhydro-quebec-limitee-a-3-pour-les-quebecois-45784"
+      }
+     ]
+    },
+    {
+     "slug": "sante-quebec",
+     "titre": "Réformer la gouvernance du réseau de la santé",
+     "statut": "realisee",
+     "secteur": "sante",
+     "lien_texte": "La loi 15 dans notre suivi",
+     "lien_url": "/lois-et-projets",
+     "promis": "Créer une agence responsable de la gestion opérationnelle du réseau.",
+     "fait": "La loi 15, adoptée en 2023, crée Santé Québec. La loi 10 de 2023 vise aussi à réduire le recours aux agences privées de personnel.",
+     "impact": "La structure existe. Son effet sur l'accès aux soins se mesure ailleurs : notre page des secteurs suit les indicateurs de santé, et la file d'attente pour un médecin de famille est traitée dans « On clarifie ».",
+     "sources": [
+      {
+       "nom": "Assemblée nationale — travaux parlementaires",
+       "url": "https://www.assnat.qc.ca/fr/travaux-parlementaires/index.html"
+      }
+     ]
+    },
+    {
+     "slug": "lois-identitaires",
+     "titre": "Défendre les lois 21 et 96",
+     "statut": "realisee",
+     "secteur": "justice",
+     "promis": "Maintenir et défendre la loi sur la laïcité de l'État et la loi sur la langue officielle et commune.",
+     "fait": "Les deux lois demeurent en vigueur. La loi 52 de 2024 renouvelle la disposition de dérogation protégeant la loi 21, et la loi 94 de 2025 étend des règles de laïcité aux écoles.",
+     "impact": "Les contestations judiciaires se poursuivent. Nous ne les commentons pas : les jugements sont publics et c'est aux tribunaux de trancher.",
+     "sources": [
+      {
+       "nom": "Assemblée nationale — travaux parlementaires",
+       "url": "https://www.assnat.qc.ca/fr/travaux-parlementaires/index.html"
+      }
+     ]
+    },
+    {
+     "slug": "medecin",
+     "titre": "Donner accès à un médecin de famille",
+     "statut": "partielle",
+     "secteur": "sante",
+     "promis": "Que chaque Québécois qui le souhaite ait accès à un médecin de famille.",
+     "fait": "Plusieurs lois ont visé l'accès : la loi 83 de 2025 oblige les nouveaux médecins à passer cinq ans dans le réseau public, la loi 2 de 2025 touche la rémunération et l'accès, et la loi 19 de 2026 encadre l'entente avec les médecins de famille.",
+     "impact": "Au 1er juillet 2026, 359 061 personnes étaient inscrites au guichet d'accès à un médecin de famille. L'objectif n'est pas atteint.",
+     "lien_texte": "La question dans « On clarifie »",
+     "lien_url": "/on-clarifie",
+     "sources": [
+      {
+       "nom": "Gouvernement du Québec — guichet d'accès à un médecin de famille",
+       "url": "https://www.quebec.ca/sante/trouver-une-ressource/guichet-acces-medecin-famille"
+      }
+     ]
+    },
+    {
+     "slug": "aines",
+     "titre": "Construire des maisons des aînés",
+     "statut": "partielle",
+     "secteur": "sante",
+     "promis": "Remplacer une partie des CHSLD par des maisons des aînés et des maisons alternatives.",
+     "fait": "3 168 nouvelles places créées sur une cible de 3 480, soit 91 %. La cible initiale de 5 700 places d'ici 2029 a été révisée à la baisse par le ministère, qui invoque des projections préliminaires et les paramètres budgétaires confirmés.",
+     "impact": "Environ 2,13 G$ pour les 18 projets de 20 M$ et plus. Le coût moyen par place atteignait 804 425 $ en 2023, jusqu'à 1,6 M$ pour certains sites. Au 24 mars 2026, 3 069 personnes attendaient une place en hébergement de longue durée.",
+     "lien_texte": "Le projet dans notre suivi",
+     "lien_url": "/lois-et-projets",
+     "sources": [
+      {
+       "nom": "MSSS — La fierté de vieillir, bilan de la première année",
+       "url": "https://publications.msss.gouv.qc.ca/msss/fichiers/2025/25-830-23W.pdf"
+      }
+     ]
+    },
+    {
+     "slug": "domicile",
+     "titre": "Virer vers le soutien à domicile",
+     "statut": "partielle",
+     "secteur": "sante",
+     "promis": "Augmenter fortement les heures de services de soutien à domicile.",
+     "fait": "L'offre est passée de 19,5 millions d'heures au 31 mars 2019 à 34,7 millions au 31 mars 2026. La cible est de 40,4 millions d'heures en 2027.",
+     "impact": "La hausse est réelle et documentée. Mais le Commissaire à la santé et au bien-être chiffrait en 2023 à 10,7 % la part des heures requises à domicile qui étaient effectivement fournies, contre 98,9 % en CHSLD.",
+     "lien_texte": "Le détail dans « On clarifie »",
+     "lien_url": "/on-clarifie",
+     "sources": [
+      {
+       "nom": "Commissaire à la santé et au bien-être — Bien vieillir chez soi, tome 4",
+       "url": "https://www.csbe.gouv.qc.ca/publication/bien-vieillir-chez-soi-tome-4-transformation-simpose.html"
+      }
+     ]
+    },
+    {
+     "slug": "troisieme-lien",
+     "titre": "Construire un troisième lien Québec-Lévis",
+     "statut": "reportee",
+     "secteur": "transport",
+     "promis": "Réaliser une nouvelle traverse entre Québec et Lévis.",
+     "fait": "Le projet a changé plusieurs fois de forme depuis 2021 : tunnel, abandon en 2023, relance ensuite. En juillet 2025, un pont-tunnel était estimé entre 5,3 et 9,3 G$. Un avis d'intérêt international lancé en juin 2026 a reçu 21 propositions.",
+     "impact": "Aucun coût ni échéancier officiels à ce jour, et aucune structure construite. 34 M$ ont été dépensés sur le projet depuis 2018.",
+     "lien_texte": "Le projet dans notre suivi",
+     "lien_url": "/lois-et-projets",
+     "sources": [
+      {
+       "nom": "Gouvernement du Québec — avis d'intérêt international",
+       "url": "https://www.quebec.ca/nouvelles/actualites/details/troisieme-lien-entre-quebec-et-levis-publication-dun-avis-dinteret-international-67709"
+      }
+     ]
+    },
+    {
+     "slug": "tramway",
+     "titre": "Réaliser le tramway de Québec",
+     "statut": "reportee",
+     "secteur": "transport",
+     "promis": "Mettre en service un tramway dans la Capitale-Nationale.",
+     "fait": "En décembre 2024, le coût a été fixé à 7,6 G$ et la mise en service reportée à 2033, avec CDPQ Infra comme maître d'œuvre.",
+     "impact": "L'échéance initiale était l'automne 2026 — c'est-à-dire maintenant. Le coût final est attendu en 2027.",
+     "lien_texte": "Le projet dans notre suivi",
+     "lien_url": "/lois-et-projets",
+     "sources": [
+      {
+       "nom": "Traçabilité Québec — suivi des grands projets",
+       "url": "/lois-et-projets"
+      }
+     ]
+    },
+    {
+     "slug": "northvolt",
+     "titre": "Implanter l'usine Northvolt en Montérégie",
+     "statut": "abandonnee",
+     "secteur": "economie",
+     "promis": "Accueillir une usine de batteries présentée comme le plus grand investissement privé de l'histoire du Québec. 2,7 G$ promis par Québec et Ottawa en septembre 2023.",
+     "fait": "La maison mère suédoise a fait faillite en 2025. Québec a mis fin à l'entente le 2 septembre 2025.",
+     "impact": "270 M$ investis dans la maison mère sont perdus, ce que Québec a confirmé. Un prêt de 240 M$ pour le terrain a été en partie récupéré. Northvolt avait reçu 510 M$ au total ; près de 800 M$ promis n'ont pas été versés.",
+     "lien_texte": "Le projet dans notre suivi",
+     "lien_url": "/lois-et-projets",
+     "sources": [
+      {
+       "nom": "La Presse — Québec récupère 200 M$ des comptes de Northvolt",
+       "url": "https://www.lapresse.ca/affaires/2025-09-05/quebec-recupere-200-millions-des-comptes-de-northvolt.php"
+      }
+     ]
+    },
+    {
+     "slug": "logements",
+     "titre": "Livrer 8 000 logements sociaux et abordables",
+     "statut": "inconnu",
+     "secteur": "logement",
+     "promis": "8 000 logements annoncés en novembre 2023, avec 1,8 G$ sur cinq ans.",
+     "fait": "La moitié du financement vient d'un transfert fédéral de 900 M$. Plusieurs lois ont touché le logement pendant le mandat : bail et évictions (loi 31), moratoire sur certaines évictions (loi 65), pouvoirs des municipalités (loi 22).",
+     "impact": "Le nombre de logements effectivement livrés n'a pas été publié. Nous laissons la case vide plutôt que d'estimer.",
+     "lien_texte": "Le projet dans notre suivi",
+     "lien_url": "/lois-et-projets",
+     "sources": [
+      {
+       "nom": "Traçabilité Québec — suivi des grands projets",
+       "url": "/lois-et-projets"
+      }
+     ]
+    }
+   ],
+   "note": "Le statut décrit un fait vérifiable, pas un jugement. « Abandonnée » signifie que le gouvernement a mis fin au projet, pas qu'il a eu tort de le faire. « Bilan non publié » signifie qu'aucune donnée officielle ne permet de trancher — c'est un constat sur l'information disponible, pas sur le travail accompli."
   }
+ },
+ "chiens_de_garde": {
+  "titre": "Ce que les organismes de surveillance ont relevé",
+  "intro": "Ces constats ne sont pas les nôtres. Ils viennent d'institutions indépendantes du gouvernement, dont c'est le mandat légal, et ils sont publics.",
+  "constats": [
+   {
+    "organisme": "Vérificatrice générale du Québec",
+    "date": "juin 2026",
+    "quoi": "Sur l'aide publique à la filière batterie : environ 2,2 G$ d'aide autorisée à 11 entreprises, dont environ 1,9 G$ déjà versés, et des pertes estimées à 375,2 M$ — environ 15 % de l'aide autorisée. Ces pertes viennent à 95 % de Northvolt et de Lion Électrique.",
+    "url": "https://www.vgq.qc.ca/"
+   },
+   {
+    "organisme": "Commission Gallant",
+    "date": "février 2026",
+    "quoi": "Sur le programme informatique de la SAAQ : la commission a conclu que la SAAQ avait caché le coût total et les dépassements du programme, et a formulé 26 recommandations. Le dossier d'affaires de 2017 prévoyait 638 M$ ; le coût atteint au moins 1,1 G$ d'ici mars 2027.",
+    "url": "https://www.quebec.ca/"
+   }
+  ],
+  "note": "Nous citons ces constats parce qu'ils sont documentés et contradictoires — les organismes visés ont pu répondre. Nous n'y ajoutons aucun commentaire."
  }
 }

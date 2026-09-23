@@ -68,6 +68,66 @@
 </div>
 <div class="encadre encadre-bleu">{{ m.bilan.promesses.lecture }}</div>
 <p class="source">Sources : {% for s in m.bilan.promesses.sources %}<a href="{{ s.url }}">{{ s.nom }}</a>{{ ' · ' if not loop.last }}{% endfor %}</p>
+
+{% set tr = m.bilan.tracker %}
+<h2 id="tracker">{{ tr.titre }}</h2>
+<p class="explication">{{ tr.intro }}</p>
+
+<nav class="themes" data-promesses-filtres>
+  <a class="onglet actif" href="#tracker" data-statut="toutes">Toutes
+    <span class="compte">{{ tr.promesses | length }}</span></a>
+  {% for s in tr.statuts %}
+  {% set n = tr.promesses | selectattr('statut', 'equalto', s.cle) | list | length %}
+  {% if n %}
+  <a class="onglet" href="#tracker" data-statut="{{ s.cle }}">{{ s.nom }}
+    <span class="compte">{{ n }}</span></a>
+  {% endif %}
+  {% endfor %}
+</nav>
+
+<div class="legende legende-statuts">
+  {% for s in tr.statuts %}
+  <span><i class="pastille pastille-statut badge-{{ s.couleur }}"></i>{{ s.nom }} — {{ s.quoi }}</span>
+  {% endfor %}
+</div>
+
+{% for p in tr.promesses %}
+{% set s = tr.statuts | selectattr('cle', 'equalto', p.statut) | first %}
+<div class="promesse" data-promesse="{{ p.statut }}" id="p-{{ p.slug }}">
+  <div class="promesse-tete">
+    <h3>{{ p.titre }}</h3>
+    <span class="badge badge-{{ s.couleur }}">{{ s.nom }}</span>
+  </div>
+  <div class="promesse-corps">
+    <div><h4>Ce qui était promis</h4><p>{{ p.promis }}</p></div>
+    <div><h4>Ce qui a été fait</h4><p>{{ p.fait }}</p></div>
+  </div>
+  <div class="promesse-impact">
+    <h4>Ce qu'on peut mesurer</h4>
+    <p>{{ p.impact }}</p>
+    {% if p.lien_url %}<p><a href="{{ p.lien_url }}">{{ p.lien_texte }} →</a></p>{% endif %}
+  </div>
+  <p class="source">Sources : {% for x in p.sources %}<a href="{{ x.url }}">{{ x.nom }}</a>{{ ' · ' if not loop.last }}{% endfor %}
+    {% if p.secteur %} · <a href="/secteurs/{{ p.secteur }}">Indicateurs du secteur →</a>{% endif %}</p>
+</div>
+{% endfor %}
+
+<div class="encadre encadre-gris">{{ tr.note }}</div>
+
+<section class="bande bande-claire">
+  <div class="surtitre">Constats indépendants</div>
+  <h2>{{ m.chiens_de_garde.titre }}</h2>
+  <p class="explication">{{ m.chiens_de_garde.intro }}</p>
+  {% for c in m.chiens_de_garde.constats %}
+  <div class="encadre encadre-rouge">
+    <strong>{{ c.organisme }}, {{ c.date }}</strong>
+    <p>{{ c.quoi }}</p>
+    <p class="source"><a href="{{ c.url }}">Consulter l'organisme</a></p>
+  </div>
+  {% endfor %}
+  <p class="detail">{{ m.chiens_de_garde.note }}</p>
+</section>
+
 {% endif %}
 
 <h2>{{ m.methode.titre }}</h2>

@@ -672,6 +672,23 @@
   }
 
   /* ---------------------------------------------------------- FAQ « On clarifie » */
+  // Tracker des promesses : filtre par statut. Le compte reste visible pour
+  // qu'on voie tout de suite combien de promesses chaque statut couvre.
+  function promesses() {
+    var lignes = document.querySelectorAll("[data-promesse]");
+    var onglets = document.querySelectorAll("[data-promesses-filtres] a");
+    onglets.forEach(function (o) {
+      o.addEventListener("click", function (e) {
+        e.preventDefault();
+        var cible = o.dataset.statut;
+        onglets.forEach(function (x) { x.classList.toggle("actif", x === o); });
+        lignes.forEach(function (l) {
+          l.hidden = cible !== "toutes" && l.dataset.promesse !== cible;
+        });
+      });
+    });
+  }
+
   function faq(champ) {
     var questions = document.querySelectorAll("[data-faq]");
     var sections = document.querySelectorAll(".faq-categorie");
@@ -736,6 +753,7 @@
     document.querySelectorAll("[data-indice]").forEach(indice);
     document.querySelectorAll("[data-inflation]").forEach(inflation);
     if (document.querySelector("[data-faq]")) faq(document.querySelector("[data-filtre-faq]"));
+    if (document.querySelector("[data-promesses-filtres]")) promesses();
     majParcours();
     // Sous-navigation : amener l'onglet actif dans la zone visible (téléphone).
     var actif = document.querySelector(".sous-nav a.actif");
