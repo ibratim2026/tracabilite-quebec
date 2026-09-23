@@ -104,6 +104,26 @@
 </div>
 {% endif %}
 
+{% if a %}
+<section class="bande bande-bleue">
+  <div class="surtitre">Avant de choisir</div>
+  <h2>La facture que le prochain gouvernement hérite</h2>
+  <p>Une partie des dépenses des dix prochaines années est déjà décidée : elle est
+  inscrite dans des plans signés et dans l'état physique des routes, des écoles et
+  des conduites d'eau. Quel que soit le parti élu, c'est le même parc à entretenir.</p>
+  <div class="cartes-stats">
+    {% for p in a.postes | selectattr('nature', 'equalto', 'stock')
+                        | sort(attribute='montant_g', reverse=True) %}
+    {% if loop.index <= 3 %}
+    <div class="carte"><div class="chiffre">{{ p.montant }}</div>
+      <div class="etiquette">{{ p.titre }}</div></div>
+    {% endif %}
+    {% endfor %}
+  </div>
+  <p><a class="tq-bouton" href="/ce-qui-s-en-vient">Voir les onze postes, un par un →</a></p>
+</section>
+{% endif %}
+
 <h2><svg class="illu illu-titre" viewBox="0 0 120 100" aria-hidden="true"><use href="/static/illustrations.svg#calendrier"/></svg>Les dates à retenir</h2>
 <ul class="dates-cles">
   {% for d in e.dates %}

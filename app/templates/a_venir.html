@@ -9,10 +9,11 @@
   <div class="surtitre">L'essentiel</div>
   <h2>Des factures déjà là, peu importe qui gouverne</h2>
   <div class="cartes-stats">
-    {% for p in a.postes | selectattr('montant_g') | sort(attribute='montant_g', reverse=True) | list %}
+    {% for p in a.postes | selectattr('nature', 'equalto', 'stock')
+                        | sort(attribute='montant_g', reverse=True) %}
     {% if loop.index <= 4 %}
     <div class="carte"><div class="chiffre">{{ p.montant }}</div>
-      <div class="etiquette">{{ p.titre }}{% if p.horizon %} · {{ p.horizon }}{% endif %}</div></div>
+      <div class="etiquette">{{ p.titre }}</div></div>
     {% endif %}
     {% endfor %}
   </div>
@@ -25,33 +26,51 @@ officiel</strong> ou s'il s'agit d'une <strong>estimation faite par un tiers</st
 comme une association municipale ou un institut de recherche. La différence compte :
 la première est un engagement, la seconde est un ordre de grandeur.</p>
 
-{% set mx = (a.postes | map(attribute='montant_g') | select | list | max) or 1 %}
+{% macro barres(postes, titre, note) %}
+{% set liste = postes | sort(attribute='montant_g', reverse=True) | list %}
+{% set mx = (liste | map(attribute='montant_g') | max) or 1 %}
+<h3 class="titre-graphique">{{ titre }}</h3>
+<p class="explication">{{ note }}</p>
 <div class="graphique">
-  {% for p in a.postes | selectattr('montant_g') | sort(attribute='montant_g', reverse=True) %}
+  {% for p in liste %}
   <div class="ligne-graphique">
     <div class="etiquette-barre"><a href="#{{ p.slug }}">{{ p.titre }}</a></div>
     <div class="piste">
-      <div class="barre-h{{ ' barre-autres' if p.statut and 'estimation' in p.statut }}"
+      <div class="barre-h{{ ' barre-autres' if 'estimation' in p.statut }}"
            style="width: {{ (100 * p.montant_g / mx) | round(1) }}%"
            title="{{ p.titre }} : {{ p.montant }}"></div>
-      <span class="valeur-barre">{{ p.montant }}{% if p.horizon %} <small>{{ p.horizon }}</small>{% endif %}</span>
+      <span class="valeur-barre">{{ p.montant }}</span>
     </div>
   </div>
   {% endfor %}
-  <div class="legende">
-    <span><i class="pastille" style="background: var(--bleu)"></i>Inscrit à un plan officiel</span>
-    <span><i class="pastille" style="background: var(--gris-badge)"></i>Estimation d'un tiers</span>
-  </div>
+</div>
+{% endmacro %}
+
+{{ barres(a.postes | selectattr('nature', 'equalto', 'stock') | list,
+   "Ce qu'il faut rattraper ou construire",
+   "Des sommes à investir une fois, étalées sur cinq à vingt ans selon le poste.") }}
+
+{{ barres(a.postes | selectattr('nature', 'equalto', 'annuel') | list,
+   "Ce qui revient chaque année",
+   "Des dépenses annuelles récurrentes : le montant indiqué est ce qu'elles
+   coûteront par année à l'échéance. Elles ne se comparent pas aux barres du
+   haut, qui sont des sommes uniques.") }}
+
+<div class="legende">
+  <span><i class="pastille" style="background: var(--bleu)"></i>Inscrit à un plan officiel</span>
+  <span><i class="pastille" style="background: var(--gris-badge)"></i>Estimation d'un tiers</span>
 </div>
 
 {% for p in a.postes %}
 <div class="poste" id="{{ p.slug }}">
   <div class="poste-tete">
     <h3>{{ p.titre }}</h3>
-    <div class="poste-montant">{{ p.montant }}{% if p.horizon %}<span class="detail"> {{ p.horizon }}</span>{% endif %}</div>
+    <div class="poste-montant">{{ p.montant }}</div>
   </div>
+  {% if p.horizon %}<p class="detail poste-horizon">{{ p.horizon }}</p>{% endif %}
   <div class="poste-meta">
-    <span class="badge {{ 'badge-bleu' if p.statut and 'officiel' in p.statut else 'badge-gris' }}">{{ p.statut }}</span>
+    <span class="badge {{ 'badge-bleu' if 'officiel' in p.statut else 'badge-gris' }}">{{ p.statut }}</span>
+    <span class="badge badge-gris">{{ 'revient chaque année' if p.nature == 'annuel' else 'somme unique' }}</span>
     {% if p.secteur %}<a class="badge badge-gris" href="/secteurs/{{ p.secteur }}">Voir le secteur →</a>{% endif %}
   </div>
   <p>{{ p.resume }}</p>
@@ -67,8 +86,8 @@ la première est un engagement, la seconde est un ordre de grandeur.</p>
   <div class="prose">
     <p>{{ a.municipal.intro }}</p>
     {% if a.municipal.part_impot_foncier %}
-    <p><strong>{{ a.municipal.part_impot_foncier }}</strong></p>{% endif %}
-    <p>{{ a.municipal.explication }}</p>
+    <p class="chiffre-cle">{{ a.municipal.part_impot_foncier }}</p>{% endif %}
+    {% for par in a.municipal.paragraphes %}<p>{{ par }}</p>{% endfor %}
     <p class="source">Sources : {% for s in a.municipal.sources %}<a href="{{ s.url }}">{{ s.nom }}</a>{{ ' · ' if not loop.last }}{% endfor %}</p>
   </div>
 </section>
@@ -86,6 +105,24 @@ la première est un engagement, la seconde est un ordre de grandeur.</p>
   et dans les intérêts des années suivantes. Voir
   <a href="/economie-expliquee#dette">les trois dettes du Québec</a>.</li>
 </ul>
+
+{% if a.a_verifier %}
+<details class="faq" id="reserves">
+  <summary>
+    <span class="faq-question">Ce que nous n'avons pas pu confirmer ({{ a.a_verifier | length }})</span>
+    <span class="faq-plus" aria-hidden="true"></span>
+  </summary>
+  <div class="faq-corps">
+    <p class="faq-courte">Les limites que nous avons rencontrées en montant cette page :
+    écarts entre deux documents officiels, chiffres repris dans les médias qu'on ne
+    retrouve pas dans le rapport d'origine, sources fermées aux robots. On les publie
+    plutôt que de les taire.</p>
+    <ul class="prose">
+      {% for r in a.a_verifier %}<li>{{ r }}</li>{% endfor %}
+    </ul>
+  </div>
+</details>
+{% endif %}
 
 <div class="note-verif">Mis à jour le {{ a.maj_texte }}. Ces montants viennent de
 documents publics : ils indiquent ce qui attend le prochain gouvernement, quel qu'il

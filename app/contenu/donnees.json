@@ -34,5 +34,11 @@
   "description": "Indice des prix à la consommation du Québec",
   "lignes": 36,
   "octets": 446
+ },
+ {
+  "fichier": "depenses-a-venir.csv",
+  "description": "Dépenses publiques déjà engagées pour les prochaines années",
+  "lignes": 11,
+  "octets": 5016
  }
 ]

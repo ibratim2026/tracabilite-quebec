@@ -123,6 +123,17 @@ def main():
                      ecrire("indice-prix-quebec.csv", ["annee", "indice_2002_100"],
                             sorted(infl["indice"].items()))))
 
+    # 7. Les dépenses déjà engagées pour les prochaines années.
+    aven = json.loads((CONTENU / "a_venir.json").read_text())
+    lignes = [(p["slug"], p["titre"], p["montant"], p.get("montant_g"), p.get("nature"),
+               p.get("horizon"), p.get("statut"), p.get("secteur"),
+               " · ".join(s["url"] for s in p.get("sources", [])))
+              for p in aven["postes"]]
+    fichiers.append(("Dépenses publiques déjà engagées pour les prochaines années", len(lignes),
+                     ecrire("depenses-a-venir.csv",
+                            ["poste", "titre", "montant", "montant_g", "nature", "horizon",
+                             "statut", "secteur", "sources"], lignes)))
+
     catalogue = [{"fichier": nom, "description": d, "lignes": lg, "octets": o}
                  for d, lg, (nom, o) in fichiers]
     (SORTIE / "catalogue.json").write_text(json.dumps(catalogue, ensure_ascii=False, indent=1))

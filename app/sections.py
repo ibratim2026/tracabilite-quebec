@@ -95,7 +95,7 @@ def election():
     if e.get("date_scrutin"):
         e["jours_restants"] = max(0, (date.fromisoformat(e["date_scrutin"])
                                       - date.today()).days)
-    return render_template("election.html", e=e,
+    return render_template("election.html", e=e, a=charger("a_venir"),
                            p=charger("plateformes"), secteurs=charger("secteurs"))
 
 

@@ -893,3 +893,11 @@ a.etoile:hover { color: var(--ambre); text-decoration: none; }
   color: var(--bleu-fonce); font-variant-numeric: tabular-nums; }
 .poste-meta { display: flex; gap: .4rem; flex-wrap: wrap; margin: .4rem 0 .6rem; }
 .poste p { font-size: .95rem; }
+
+/* Ce qui s'en vient : deux graphiques qui ne se comparent pas */
+.titre-graphique { margin: 1.8rem 0 .2rem; font-size: 1.12rem; }
+.poste-horizon { margin: -.2rem 0 .5rem; }
+.chiffre-cle { font-size: 1.15rem; font-weight: 700; letter-spacing: -.01em;
+  border-left: 3px solid var(--bleu); padding-left: .8rem; margin: 1rem 0; }
+.bande-bleue .chiffre-cle { border-left-color: currentColor; }
+a.tq-bouton { display: inline-block; text-decoration: none; }
