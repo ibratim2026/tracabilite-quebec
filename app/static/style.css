@@ -931,3 +931,15 @@ a.tq-bouton { display: inline-block; text-decoration: none; }
   .revelation-corps { grid-template-columns: 1fr; gap: 1.1rem; }
   .revelation:not(.bande) { padding: 1.3rem 1.2rem; }
 }
+.revelation-argent, .revelation-levier { max-width: 940px; margin-top: 1.1rem;
+  padding-top: 1rem; border-top: 1px solid var(--bordure); }
+.bande-bleue .revelation-argent, .bande-bleue .revelation-levier { border-top-color: rgba(255,255,255,.18); }
+.revelation-argent h3, .revelation-levier h3 { margin: 0 0 .4rem; font-size: .84rem;
+  text-transform: uppercase; letter-spacing: .09em; color: var(--gris); }
+.bande-bleue .revelation-argent h3, .bande-bleue .revelation-levier h3 { color: #ffc46b; }
+.revelation-levier { border-top: none; background: var(--bleu-pale); border-radius: var(--r-m);
+  padding: 1rem 1.15rem; border-left: 3px solid var(--bleu); }
+.bande-bleue .revelation-levier { background: rgba(255,255,255,.08); border-left-color: #ffb24d; }
+.revelation-levier h3 { color: var(--bleu-fonce); }
+.revelation-argent p, .revelation-levier p { margin: 0; font-size: .96rem; }
+.preuve-titre { margin: 1.6rem 0 .2rem; font-size: 1.05rem; }

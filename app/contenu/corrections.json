@@ -1,6 +1,11 @@
 [
  {
   "date": "22 septembre 2026",
+  "texte": "La première version de « Relever le Québec » rapprochait les 477,7 M$ d'impôt minier de 2024 d'une production de 3,9 G$ à la tête du puits, ce qui suggérait un taux d'environ 12 %. C'était faux : le ministère publie deux blocs de données, l'un en dollars canadiens (3,92 G$ de production, 157,4 M$ de droits) et l'autre en dollars américains (3,50 G$ US, 233,9 M$ US), et les 477,7 M$ additionnent les deux après conversion. Nous comparions un total à une moitié. La page donne maintenant les deux blocs séparément, avec leur taux respectif de 4,0 % et 6,7 %.",
+  "page": "/relever-le-quebec"
+ },
+ {
+  "date": "22 septembre 2026",
   "texte": "Notre réponse sur l'hébergement des aînés disait que le nombre total de personnes en attente n'avait pas pu être obtenu, et ne montrait que les 726 patients hospitalisés rapportés par un média. Le ministère publie pourtant la file complète par période : 3 069 personnes au 24 mars 2026. Nous ne montrions qu'un quart du problème.",
   "page": "/on-clarifie"
  },

@@ -5,6 +5,21 @@
 <h1>Relever le Québec</h1>
 <p class="chapeau">{{ r.chapeau }}</p>
 
+<section class="bande bande-bleue" id="leviers">
+  <div class="surtitre">La grille de lecture</div>
+  <h2>{{ r.leviers.titre }}</h2>
+  <p>{{ r.leviers.intro }}</p>
+  <div class="grille-cartes">
+    {% for c in r.leviers.cartes %}
+    <div class="carte"><h3>{{ c.nom }}</h3><p>{{ c.texte }}</p></div>
+    {% endfor %}
+  </div>
+  <h3 class="preuve-titre">{{ r.leviers.preuve_titre }}</h3>
+  <p class="revelation-chute">{{ r.leviers.preuve }}</p>
+  <p class="detail">{{ r.leviers.nuance }}</p>
+  <p class="source">Sources : {% for s in r.leviers.sources %}<a href="{{ s.url }}">{{ s.nom }}</a>{{ ' · ' if not loop.last }}{% endfor %}</p>
+</section>
+
 <nav class="themes">
   {% for x in r.revelations %}
   <a class="onglet" href="#{{ x.slug }}">{{ x.etiquette }}</a>
@@ -27,6 +42,14 @@
       <h3>Ce qu'on en fait</h3>
       <p>{{ x.on_en_fait }}</p>
     </div>
+  </div>
+  <div class="revelation-argent">
+    <h3>Où va l'argent</h3>
+    <p>{{ x.ou_va_argent }}</p>
+  </div>
+  <div class="revelation-levier">
+    <h3>Ce qui le ramènerait ici</h3>
+    <p>{{ x.levier }}</p>
   </div>
   <p class="source">Sources : {% for s in x.sources %}<a href="{{ s.url }}">{{ s.nom }}</a>{{ ' · ' if not loop.last }}{% endfor %}</p>
 </section>

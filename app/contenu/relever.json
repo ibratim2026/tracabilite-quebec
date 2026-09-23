@@ -1,6 +1,6 @@
 {
  "maj_texte": "22 septembre 2026",
- "chapeau": "Ce site passe son temps à mesurer ce que le Québec dépense. Cette page fait l'inverse : elle regarde ce qu'il possède. Pas pour dire qu'on est riches et qu'on l'ignore — pour montrer, chiffre par chiffre, où la valeur est créée et où elle nous échappe. Le fil conducteur est simple et il revient huit fois : le Québec est riche en matière, et pauvre en transformation.",
+ "chapeau": "Ce site passe son temps à mesurer ce que le Québec dépense. Cette page fait l'inverse : elle regarde ce qu'il possède, et surtout ce que cette richesse lui rapporte vraiment. Chaque bloc pose les trois mêmes questions : qu'est-ce qu'on a, où va l'argent, et qu'est-ce qui le ramènerait ici. Le fil conducteur revient huit fois : le Québec est riche en matière, et pauvre en transformation.",
  "revelations": [
   {
    "slug": "niobium",
@@ -17,9 +17,19 @@
     {
      "nom": "Explore les mines — Niobec",
      "url": "https://explorelesmines.com/fr/company/niobec/"
+    },
+    {
+     "nom": "IAMGOLD — vente de Niobec à un consortium mené par Magris, avec CEF Holdings et Temasek, pour 530 M$ US (communiqué, 2015)",
+     "url": "https://www.newswire.ca/news-releases/iamgold-cleared-to-complete-sale-of-niobec-for-a-total-consideration-of-us530-million-516468421.html"
+    },
+    {
+     "nom": "Ministère des Ressources naturelles et des Forêts — quantité, valeur à la tête du puits et droits versés par mine, 2024 (février 2026)",
+     "url": "https://cdn-contenu.quebec.ca/cdn-contenu/ressources-naturelles/mines/Documents/donnees/Quantites-valeurs-droits.pdf"
     }
    ],
-   "etiquette": "Le niobium"
+   "etiquette": "Le niobium",
+   "ou_va_argent": "La mine a été vendue en janvier 2015 par IAMGOLD, pour 530 M$ US, à un consortium : Magris Resources, de Toronto ; CEF Holdings, société d'investissement de Hong Kong détenue à parts égales par Cheung Kong et la Banque CIBC ; et Temasek, le fonds souverain de Singapour. En 2024, Niobec a vendu 6 946 980 kg de niobium, pour une valeur à la tête du puits de 137,4 M$, et versé 7,29 M$ de droits miniers — soit 5,3 %, un des meilleurs taux du tableau.",
+   "levier": "Voici la phrase à retenir : le fonds souverain de Singapour détient une part de la seule mine de niobium d'Amérique du Nord, et l'État québécois n'en détient aucune. Singapour a utilisé le levier n° 2 sur notre ressource ; nous utilisons le n° 1 sur la nôtre. Ce n'est pas une injustice, c'est une transaction de 2015 que personne n'a bloquée — et le type de participation qu'Investissement Québec prend ailleurs."
   },
   {
    "slug": "graphite",
@@ -40,9 +50,15 @@
     {
      "nom": "Gouvernement du Québec — appui à Nouveau Monde Graphite",
      "url": "https://www.quebec.ca/nouvelles/actualites/details/appui-a-nouveau-monde-graphite-quebec-mise-sur-la-filiere-des-mineraux-critiques-et-strategiques-70478"
+    },
+    {
+     "nom": "Ministère des Ressources naturelles et des Forêts — quantité, valeur à la tête du puits et droits versés par mine, 2024 (février 2026)",
+     "url": "https://cdn-contenu.quebec.ca/cdn-contenu/ressources-naturelles/mines/Documents/donnees/Quantites-valeurs-droits.pdf"
     }
    ],
-   "etiquette": "Le graphite"
+   "etiquette": "Le graphite",
+   "ou_va_argent": "La seule mine de graphite en production au Québec en 2024, Lac-des-Îles de Graphite Nordique, a vendu 12 442 tonnes pour une valeur à la tête du puits de 9,2 M$ et versé 91 840 $ de droits miniers. C'est exactement 1 % : le taux de l'impôt minier minimum, celui qu'un exploitant paie quand son profit imposable n'en génère pas davantage. Même chose pour le lithium de North American Lithium — 19,4 M$ de valeur, 194 085 $ versés, 1 % pile.",
+   "levier": "C'est le levier n° 3 qui compte ici, et il est déjà en chantier. Le graphite brut vaut peu ; l'anode vaut cher. L'usine de matériaux de batterie de Bécancour existe précisément pour garder cette étape. Tant qu'elle ne tourne pas, le concentré part et la plus-value se fait à l'autre bout du monde."
   },
   {
    "slug": "aluminium",
@@ -65,22 +81,30 @@
      "url": "https://aluquebec.com/industrie/production-primaire"
     }
    ],
-   "etiquette": "L'aluminium"
+   "etiquette": "L'aluminium",
+   "ou_va_argent": "L'aluminium primaire est coulé ici, avec de l'électricité québécoise, puis expédié en lingots. La transformation qui reste au Québec est réelle — environ 30 000 emplois et 11,6 G$ de revenus estimés dans plus de 1 700 entreprises — mais elle s'arrête avant le laminage, l'étape où la tôle prend sa valeur.",
+   "levier": "Levier n° 3, encore, et le plus cher de la page : un laminoir industriel se compte en milliards et ne se décide pas seul. Le fait à retenir n'est pas qu'il faut en construire un — c'est que son absence est identifiée depuis des années comme le maillon manquant de la chaîne, et que chaque lingot qui part sans passer par là emporte la marge avec lui."
   },
   {
    "slug": "impot-minier",
-   "question": "La roche, ça rapporte combien à l'État ?",
+   "question": "Pourquoi la roche rapporte-t-elle si peu ?",
    "chiffre": "477,7 M$",
-   "punch": "d'impôt minier versé en 2024, sur une production évaluée à 3,9 G$ à la tête du puits.",
-   "on_a": "Quinze métaux et treize minéraux sont produits au Québec. Par ordre de valeur : l'or, le fer, le nickel, le titane, le niobium, le cuivre, le zinc. L'impôt minier versé en 2024 est en hausse de 10,8 % sur 2023.",
-   "on_en_fait": "Deux précautions, parce qu'elles comptent. L'impôt minier n'est pas le seul versement des minières : elles paient aussi l'impôt des sociétés et les taxes sur la masse salariale, qui ne sont pas dans ce chiffre. Et la valeur « à la tête du puits » est la valeur du minerai à la sortie de la mine, pas celle du produit fini — ce qui est précisément le sujet de cette page.",
+   "punch": "d'impôt minier pour tout le secteur en 2024. Hydro-Québec, à elle seule, a versé 4,4 G$ au trésor public.",
+   "on_a": "Quinze métaux et treize minéraux sont produits au Québec : or, fer, nickel, titane, niobium, cuivre, zinc, lithium, graphite. Et le détail est public — le ministère publie chaque année ce que chaque mine a vendu, ce que ça valait à la sortie du trou, et ce qu'elle a versé.",
+   "on_en_fait": "Un exploitant verse le plus élevé de deux montants : un impôt minier minimum calculé sur la valeur de production, ou un impôt sur le profit. Quand une mine paie exactement 1 %, c'est qu'elle est au minimum — donc qu'elle ne dégage pas de profit imposable. En 2024, c'est le cas du lithium, du graphite et du diamant : les trois filières qu'on présente comme l'avenir versent le plancher.",
    "sources": [
     {
      "nom": "Gouvernement du Québec, quantités, valeurs et droits versés par les sociétés minières (données 2024, mise à jour du 21 juillet 2026)",
      "url": "https://www.quebec.ca/agriculture-environnement-et-ressources-naturelles/mines/donnees-cartes-minieres/quantites-valeurs-redevances"
+    },
+    {
+     "nom": "Ministère des Ressources naturelles et des Forêts — quantité, valeur à la tête du puits et droits versés par mine, 2024 (février 2026)",
+     "url": "https://cdn-contenu.quebec.ca/cdn-contenu/ressources-naturelles/mines/Documents/donnees/Quantites-valeurs-droits.pdf"
     }
    ],
-   "etiquette": "L'impôt minier"
+   "etiquette": "L'impôt minier",
+   "ou_va_argent": "Le ministère publie le détail, mine par mine. En dollars canadiens : 3,92 G$ de valeur à la tête du puits, 157,4 M$ de droits versés, soit 4,0 %. Les sociétés qui déclarent en devise américaine ajoutent 3,50 G$ US de valeur et 233,9 M$ US de droits, soit 6,7 %. Converti et additionné, cela donne les 477,7 M$ annoncés. Les écarts entre mines sont énormes : 7,3 % pour Canadian Malartic, 5,3 % pour Niobec, 1,6 % pour le titane de Rio Tinto Fer et Titane, et 1,0 % — le minimum — pour le lithium, le graphite et le diamant.",
+   "levier": "Le levier n° 1 a une limite écrite noir sur blanc par l'État lui-même. La note 3 du document ministériel précise que la valeur ajoutée par le traitement « est exemptée de l'impôt minier », et que cette plus-value « n'appartient pas aux Québécois et Québécoises ». Autrement dit : le régime est conçu pour ne taxer que la roche. Tout ce qui se crée après l'extraction lui échappe par définition — et relève de l'impôt des sociétés, qui ne s'applique que si l'usine est ici. C'est la phrase qui résume toute cette page, et elle vient du ministère."
   },
   {
    "slug": "eau",
@@ -99,7 +123,9 @@
      "url": "https://www.quebec.ca/nouvelles/actualites/details/gestion-durable-et-responsable-de-leau-au-quebec-le-seuil-dassujettissement-a-la-redevance-pour-lutilisation-de-leau-officiellement-abaisse-a-50-000-litres-par-jour-67966"
     }
    ],
-   "etiquette": "L'eau"
+   "etiquette": "L'eau",
+   "ou_va_argent": "Les redevances alimentent le Fonds bleu, annoncé avec une dotation de 500 M$ sur cinq ans. Combien les redevances rapportent réellement par année n'apparaît pas dans les sources consultées pour cette page : nous laissons la case vide plutôt que d'estimer.",
+   "levier": "C'est le levier le plus direct de toute la page, et le seul qui ne demande ni usine, ni capital, ni partenaire : le taux est fixé par règlement. Il a déjà été multiplié par quinze en 2024 par cette seule voie. Ce qui ne veut pas dire qu'il est sans conséquence pour les entreprises visées — simplement que le mécanisme, lui, tient en une ligne de texte réglementaire."
   },
   {
    "slug": "electricite",
@@ -116,9 +142,15 @@
     {
      "nom": "La Presse — Hydro-Québec importe plus qu'elle exporte (28 novembre 2025)",
      "url": "https://www.lapresse.ca/affaires/2025-11-28/electricite/hydro-quebec-importe-plus-qu-elle-exporte.php"
+    },
+    {
+     "nom": "Hydro-Québec — résultats financiers et contribution à l'économie du Québec",
+     "url": "https://nouvelles.hydroquebec.com/nouvelles/communiques/tout-quebec/hydro-quebec-devoile-resultats-financiers-solides-contribution-majeure-economie-quebec.html"
     }
    ],
-   "etiquette": "L'électricité"
+   "etiquette": "L'électricité",
+   "ou_va_argent": "Hydro-Québec appartient à 100 % à l'État québécois. En 2025, sa contribution au trésor public a atteint 4,4 G$, dont 2,2 G$ de dividende versé directement au gouvernement, son actionnaire unique.",
+   "levier": "C'est la démonstration que le reste de la page cherche. Le Québec a pris une filière entière et l'a mise dans ses coffres ; soixante ans plus tard, elle rapporte neuf fois l'ensemble des droits miniers. La question aujourd'hui n'est plus de savoir si le modèle rapporte, mais comment financer les quelque 100 G$ nécessaires pour le maintenir — et cette facture-là est dans notre page sur ce qui s'en vient."
   },
   {
    "slug": "foret",
@@ -137,7 +169,9 @@
      "url": "https://www.quebec.ca/nouvelles/actualites/details/calcul-possibilites-forestieres"
     }
    ],
-   "etiquette": "La forêt"
+   "etiquette": "La forêt",
+   "ou_va_argent": "Contrairement aux mines, la forêt publique appartient déjà collectivement : l'État en est propriétaire et attribue les volumes de récolte. Ce que rapportent les droits de coupe n'apparaît pas dans les sources consultées ici, et nous ne l'inventons pas.",
+   "levier": "Le levier n'est donc pas la propriété — elle est acquise. Il est dans le n° 3 : ce qu'on fait du bois une fois coupé. C'est le même motif que l'aluminium et le graphite, appliqué à la seule ressource de cette page que les Québécois possèdent déjà en entier."
   },
   {
    "slug": "savoir",
@@ -152,7 +186,9 @@
      "url": "https://www.scientifique-en-chef.gouv.qc.ca/chiffre-cle/effort-global-quebec/depense-interieure-brute-de-r-d-pib-le-quebec-est-toujours-bon-premier-au-canada-mais/"
     }
    ],
-   "etiquette": "Le savoir"
+   "etiquette": "Le savoir",
+   "ou_va_argent": "La recherche ne verse pas de redevances : elle coûte avant de rapporter. Une bonne part de l'effort québécois est déjà publique — crédits d'impôt, universités, centres de recherche — et le 2,53 % du PIB est la somme de tout cela, public et privé confondus.",
+   "levier": "C'est le seul bloc où le levier n'est ni une usine, ni un contrat, ni une participation : c'est une ligne reconduite ou non dans un budget, chaque année. Six centièmes de point en vingt-quatre ans, c'est le résultat cumulé de vingt-quatre décisions de ce genre. C'est aussi le levier le plus lent : il ne produit rien avant une décennie."
   }
  ],
  "question_chine": {
@@ -175,15 +211,56 @@
  },
  "regle": {
   "titre": "La même règle, huit fois",
-  "texte": "Relisez les huit blocs : le motif ne change pas. Le Québec a le niobium mais pas le récit. Il a le graphite mais pas l'usine d'anode. Il a l'aluminium mais pas le laminoir. Il a le minerai mais compte la valeur à la sortie du trou. Il a l'eau mais la tarifait au prix d'un café. Il a l'électricité mais sa marge est engagée. Il a la forêt mais la question de ce qu'on fait du bois reste ouverte. Il a des chercheurs mais n'a pas bougé d'un pouce en vingt-quatre ans.",
-  "chute": "Ce n'est pas un complot, et personne ne nous vole. C'est un choix d'étape, répété pendant des décennies, dans huit filières différentes. Un choix, ça se change."
+  "texte": "Relisez les huit blocs : le motif ne change pas. Le Québec a le niobium, mais c'est Singapour qui en détient une part. Il a le graphite, mais la mine paie le minimum et l'anode se fabrique ailleurs. Il a l'aluminium, mais pas le laminoir. Il a un régime minier qui, de l'aveu même du ministère, ne taxe que la roche et laisse filer tout ce qu'on en fait. Il a l'eau, et il la tarifait au prix d'un café. Il a la forêt, qui lui appartient déjà, et la question de ce qu'on en fait reste ouverte. Il a des chercheurs, et n'a pas bougé d'un pouce en vingt-quatre ans.",
+  "chute": "Ce n'est pas un complot, et personne ne nous vole : la plupart de ces situations découlent de règles publiques, votées, consultables. C'est un choix d'étape — taxer la roche plutôt que garder l'usine — répété pendant des décennies dans huit filières. Et Hydro-Québec prouve qu'un autre ordre de grandeur existe. Un choix, ça se change."
  },
  "limites": [
-  "Cette page ne dit pas quoi faire. Construire un laminoir, hausser une redevance ou financer la recherche sont des décisions politiques avec des coûts, des risques et des perdants. Nous montrons l'écart ; l'arbitrage appartient aux électeurs.",
+  "Décrire un levier n'est pas le recommander. Prendre une participation engage de l'argent public et comporte un risque réel : les 1,1 G$ du Québec dans Nemaska Lithium ne rapporteront rien tant que l'usine de Bécancour n'aura pas démarré, prévue pour 2028.",
+  "La comparaison entre Hydro-Québec et l'impôt minier oppose deux choses de nature différente — le dividende d'une société d'État et une taxe sur une ressource privée. Elle sert à donner un ordre de grandeur, pas à conclure qu'il faudrait nationaliser les mines.",
   "Cette page ne nomme aucun parti et n'évalue aucun programme. Les chiffres présentés traversent plusieurs gouvernements et plusieurs décennies.",
-  "Le niveau des redevances minières fait l'objet d'un débat public réel et ancien. Les comparaisons entre régimes fiscaux miniers sont techniquement difficiles, et nous n'en publions pas.",
+  "Les minières ne versent pas que l'impôt minier : elles paient aussi l'impôt des sociétés et les taxes sur la masse salariale, qui ne figurent pas dans le 477,7 M$. Le niveau des redevances fait l'objet d'un débat public ancien, et les comparaisons entre régimes fiscaux miniers sont techniquement difficiles.",
+  "Le rendement annuel des redevances sur l'eau et des droits de coupe forestiers n'a pas été retrouvé dans les sources consultées. Nous laissons ces cases vides plutôt que de les estimer.",
   "Le taux de récolte forestière de 68 % n'est pas une mesure de gaspillage. Un arbre non coupé a une valeur écologique que nos tableaux ne savent pas chiffrer.",
-  "Plusieurs chiffres de transformation (aluminium, emplois, revenus) proviennent d'associations sectorielles et non de l'État. Nous le signalons plutôt que de les présenter comme des statistiques officielles.",
+  "Plusieurs chiffres de transformation de l'aluminium proviennent d'une association sectorielle et non de l'État. Nous le signalons plutôt que de les présenter comme des statistiques officielles.",
   "La part chinoise du raffinage varie de 60 % à plus de 90 % selon le minéral, l'année et la source. Nous donnons les fourchettes plutôt qu'un chiffre unique."
- ]
+ ],
+ "leviers": {
+  "titre": "Relever, ça veut dire quoi ?",
+  "intro": "Montrer une richesse ne sert à rien si on ne dit pas comment elle pourrait rapporter ici. Il n'existe que trois mécanismes pour qu'une ressource verse de l'argent dans les coffres publics. Le Québec les utilise déjà tous les trois, à des degrés très différents. Chaque bloc de cette page se termine donc par la même question : lequel des trois s'applique, et qu'est-ce qu'il donne aujourd'hui ?",
+  "cartes": [
+   {
+    "nom": "1. La redevance",
+    "texte": "L'État taxe la ressource au moment où elle sort du sol. C'est l'impôt minier : 477,7 M$ pour tout le secteur en 2024. Par construction, il ne touche que la roche — jamais ce qu'on en fait ensuite."
+   },
+   {
+    "nom": "2. La participation",
+    "texte": "L'État devient actionnaire et touche sa part des profits. Investissement Québec détient 46,1 % de Nemaska Lithium, après 1,1 G$ engagés depuis 2020. L'usine de Bécancour doit démarrer en 2028 : d'ici là, c'est de l'argent public à risque."
+   },
+   {
+    "nom": "3. La transformation",
+    "texte": "On garde l'étape qui crée la valeur. C'est la seule des trois qui échappe entièrement à l'impôt minier — et la seule qui laisse des usines et des emplois derrière elle."
+   }
+  ],
+  "preuve_titre": "Le Québec l'a déjà fait une fois",
+  "preuve": "En 2025, Hydro-Québec a versé 4,4 G$ au trésor public québécois, dont 2,2 G$ de dividende au gouvernement, son actionnaire unique. C'est neuf fois ce que l'ensemble de l'industrie minière a versé en droits miniers la même année. Une seule société d'État, issue d'une décision prise il y a soixante ans, rapporte neuf fois toutes les mines du Québec réunies.",
+  "nuance": "Ce n'est un argument ni pour ni contre nationaliser quoi que ce soit — les contextes n'ont rien à voir, et Hydro-Québec doit elle-même investir environ 100 G$ d'ici 2035. C'est la preuve d'une chose seulement : l'ordre de grandeur est atteignable, et il dépend du mécanisme choisi.",
+  "sources": [
+   {
+    "nom": "Hydro-Québec — résultats financiers et contribution à l'économie du Québec",
+    "url": "https://nouvelles.hydroquebec.com/nouvelles/communiques/tout-quebec/hydro-quebec-devoile-resultats-financiers-solides-contribution-majeure-economie-quebec.html"
+   },
+   {
+    "nom": "Ministère des Ressources naturelles et des Forêts — quantité, valeur à la tête du puits et droits versés par mine, 2024 (février 2026)",
+    "url": "https://cdn-contenu.quebec.ca/cdn-contenu/ressources-naturelles/mines/Documents/donnees/Quantites-valeurs-droits.pdf"
+   },
+   {
+    "nom": "Rio Tinto — participation majoritaire dans Nemaska Lithium (Québec conserve 46,1 %)",
+    "url": "https://www.riotinto.com/en/news/releases/2026/rio-tinto-assumes-majority-interest-and-management-responsibilities-at-nemaska-lithium"
+   },
+   {
+    "nom": "Gouvernement du Québec — investissement final d'Investissement Québec dans Nemaska Lithium",
+    "url": "https://www.quebec.ca/nouvelles/actualites/details/transformation-de-mineraux-critiques-et-strategiques-quebec-confirme-son-dernier-investissement-dans-le-projet-de-nemaska-lithium-68610"
+   }
+  ]
+ }
 }
