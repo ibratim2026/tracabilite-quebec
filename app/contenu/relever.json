@@ -1,0 +1,189 @@
+{
+ "maj_texte": "22 septembre 2026",
+ "chapeau": "Ce site passe son temps à mesurer ce que le Québec dépense. Cette page fait l'inverse : elle regarde ce qu'il possède. Pas pour dire qu'on est riches et qu'on l'ignore — pour montrer, chiffre par chiffre, où la valeur est créée et où elle nous échappe. Le fil conducteur est simple et il revient huit fois : le Québec est riche en matière, et pauvre en transformation.",
+ "revelations": [
+  {
+   "slug": "niobium",
+   "question": "Savez-vous ce qu'est le niobium ?",
+   "chiffre": "3",
+   "punch": "mines de niobium dans le monde. Deux au Brésil. Une à Saint-Honoré, au Saguenay.",
+   "on_a": "La mine Niobec extrait du niobium depuis 1976. C'est la seule source de pyrochlore en exploitation en Amérique du Nord, et elle fournit de 8 à 10 % du niobium produit sur la planète. Le niobium sert à faire des aciers plus résistants avec moins de métal : oléoducs, ponts, châssis d'automobile, aimants d'appareils d'imagerie médicale.",
+   "on_en_fait": "Le Québec est, depuis cinquante ans, un des trois fournisseurs mondiaux d'un métal sans lequel une bonne partie des infrastructures modernes seraient plus lourdes et plus chères. Ce n'est pas un secret : c'est simplement une richesse dont on ne parle jamais.",
+   "sources": [
+    {
+     "nom": "Centre d'études sur les ressources minérales, UQAC — fiche Niobium (septembre 2020)",
+     "url": "https://cerm.uqac.ca/trcm/wp-content/uploads/sites/4/2021/05/FI_01_Niobium_2020_FINAL_sept2020.pdf"
+    },
+    {
+     "nom": "Explore les mines — Niobec",
+     "url": "https://explorelesmines.com/fr/company/niobec/"
+    }
+   ],
+   "etiquette": "Le niobium"
+  },
+  {
+   "slug": "graphite",
+   "question": "Où se fabrique la valeur d'une batterie ?",
+   "chiffre": "90 %",
+   "punch": "du graphite d'anode de la planète est raffiné en Chine.",
+   "on_a": "La seule mine de graphite en exploitation en Amérique du Nord se trouve au Québec. Le projet Matawinie de Nouveau Monde Graphite, à Saint-Michel-des-Saints, vise une production moyenne de 106 000 tonnes de concentré par année, avec une usine de matériaux de batterie à Bécancour ; l'ensemble dépasse le milliard de dollars. Le Québec produit aussi du fer de haute pureté, de l'oxyde de scandium, du titane et du niobium, et abrite près de la moitié des projets de lithium du Canada.",
+   "on_en_fait": "Voici la nuance qui change tout. Le minerai n'est pas « vendu aux Chinois » : ce qui est chinois, c'est l'étape d'après. La Chine raffine plus de 90 % du graphite d'anode et des terres rares, et traite de 60 à 76 % du lithium et du cobalt mondiaux. Sortir la roche du sol, c'est le début de la chaîne. La valeur se fabrique à l'étape suivante — et cette étape a une adresse.",
+   "sources": [
+    {
+     "nom": "Bibliothèque du Parlement, Notes de la Colline — chaîne d'approvisionnement en minéraux critiques (23 septembre 2025)",
+     "url": "https://notesdelacolline.ca/2025/09/23/chaine-dapprovisionnement-en-mineraux-critiques-batir-la-resilience-du-canada-2/"
+    },
+    {
+     "nom": "RBC — Transformation des minéraux critiques : le retard de l'Occident en matière de raffinage",
+     "url": "https://www.rbc.com/fr/leadership-avise/energie/transformation-des-mineraux-critiques-retard-de-loccident-en-matiere-de-raffinage-et-technologies-disponibles-pour-combler-les-lacunes/"
+    },
+    {
+     "nom": "Gouvernement du Québec — appui à Nouveau Monde Graphite",
+     "url": "https://www.quebec.ca/nouvelles/actualites/details/appui-a-nouveau-monde-graphite-quebec-mise-sur-la-filiere-des-mineraux-critiques-et-strategiques-70478"
+    }
+   ],
+   "etiquette": "Le graphite"
+  },
+  {
+   "slug": "aluminium",
+   "question": "Pourquoi n'y a-t-il pas de laminoir au Québec ?",
+   "chiffre": "0",
+   "punch": "laminoir industriel en sol québécois, pour le premier producteur d'aluminium du pays.",
+   "on_a": "Le Québec fournit 84 % de l'aluminium canadien, coulé avec de l'hydroélectricité. La filière compte environ 40 000 emplois, dont près de 30 000 dans la transformation, répartis dans plus de 1 700 entreprises et associés à des revenus estimés à 11,6 G$.",
+   "on_en_fait": "En temps normal, 94 % de la production canadienne part aux États-Unis, largement sous forme de lingots de laminage destinés aux grands laminoirs américains. L'absence de laminoir industriel au Québec est identifiée comme un trou dans la chaîne de valeur. Autrement dit : on coule le métal, on l'expédie, et on rachète la tôle.",
+   "sources": [
+    {
+     "nom": "AluQuébec — Mesure de la transformation de l'aluminium au Québec (rapport 2022)",
+     "url": "https://aluquebec.com/media/oqzdvmnb/aluquebec-estimation-du-niveau-d-activite-de-transformation-de-l-aluminium-au-quebec-2022-rapport-final-revise-160523-f.pdf"
+    },
+    {
+     "nom": "AluQuébec — la transformation de l'aluminium au Québec",
+     "url": "https://aluquebec.com/industrie/transformation/"
+    },
+    {
+     "nom": "AluQuébec — production primaire",
+     "url": "https://aluquebec.com/industrie/production-primaire"
+    }
+   ],
+   "etiquette": "L'aluminium"
+  },
+  {
+   "slug": "impot-minier",
+   "question": "La roche, ça rapporte combien à l'État ?",
+   "chiffre": "477,7 M$",
+   "punch": "d'impôt minier versé en 2024, sur une production évaluée à 3,9 G$ à la tête du puits.",
+   "on_a": "Quinze métaux et treize minéraux sont produits au Québec. Par ordre de valeur : l'or, le fer, le nickel, le titane, le niobium, le cuivre, le zinc. L'impôt minier versé en 2024 est en hausse de 10,8 % sur 2023.",
+   "on_en_fait": "Deux précautions, parce qu'elles comptent. L'impôt minier n'est pas le seul versement des minières : elles paient aussi l'impôt des sociétés et les taxes sur la masse salariale, qui ne sont pas dans ce chiffre. Et la valeur « à la tête du puits » est la valeur du minerai à la sortie de la mine, pas celle du produit fini — ce qui est précisément le sujet de cette page.",
+   "sources": [
+    {
+     "nom": "Gouvernement du Québec, quantités, valeurs et droits versés par les sociétés minières (données 2024, mise à jour du 21 juillet 2026)",
+     "url": "https://www.quebec.ca/agriculture-environnement-et-ressources-naturelles/mines/donnees-cartes-minieres/quantites-valeurs-redevances"
+    }
+   ],
+   "etiquette": "L'impôt minier"
+  },
+  {
+   "slug": "eau",
+   "question": "Combien coûte un million de litres d'eau ?",
+   "chiffre": "37,13 $",
+   "punch": "le million de litres prélevés, pour la plupart des usages industriels visés, à compter de 2026.",
+   "on_a": "Le Québec dispose d'une des plus grandes réserves d'eau douce de la planète. Depuis 2024, les taux de redevance ont été relevés pour financer le Fonds bleu, doté de 500 M$ sur cinq ans, et le seuil d'assujettissement descend de 75 000 à 50 000 litres par jour en 2026.",
+   "on_en_fait": "Le point de comparaison est là : avant la réforme, le tarif général était de 2,50 $ le million de litres, et les embouteilleurs payaient 70 $. Les nouveaux taux — 37,13 $ le million de litres pour les usages généraux, 159,14 $ quand l'eau est incorporée au produit — représentent une hausse de dix à quinze fois. Et l'ordre de grandeur surprend encore : un million de litres pour le prix d'un souper à deux.",
+   "sources": [
+    {
+     "nom": "Ministère des Finances — redevance exigible pour l'utilisation de l'eau",
+     "url": "https://www.finances.gouv.qc.ca/ministere/environnement_economie_verte/mesures-ecofiscales/fiches/redevance_exigible_utilisation_eau.asp"
+    },
+    {
+     "nom": "Gouvernement du Québec — seuil d'assujettissement abaissé à 50 000 litres par jour",
+     "url": "https://www.quebec.ca/nouvelles/actualites/details/gestion-durable-et-responsable-de-leau-au-quebec-le-seuil-dassujettissement-a-la-redevance-pour-lutilisation-de-leau-officiellement-abaisse-a-50-000-litres-par-jour-67966"
+    }
+   ],
+   "etiquette": "L'eau"
+  },
+  {
+   "slug": "electricite",
+   "question": "Et si la marge avait déjà disparu ?",
+   "chiffre": "2025",
+   "punch": "première année de l'histoire d'Hydro-Québec où l'entreprise a importé plus d'électricité qu'elle n'en a exporté.",
+   "on_a": "Hydro-Québec a dégagé un bénéfice net de 2,9 G$ en 2025, porté par des ventes record au Québec, et 1,7 G$ de revenus d'exportation. Le prix moyen obtenu à l'exportation est passé de 10 ¢ à 15 ¢ le kilowattheure, pendant qu'un client résidentiel de Montréal payait en moyenne 8,29 ¢.",
+   "on_en_fait": "Les exportations nettes ont fondu : 23 TWh en 2023, 15,1 TWh en 2024, 11,8 TWh en 2025, avec des réservoirs bas et une troisième année consécutive d'achats d'électricité. L'entreprise prévoit environ 100 G$ d'investissements d'ici 2035 pour ajouter 11 000 MW. La leçon est inconfortable : le surplus qu'on croyait tenir en réserve est déjà engagé.",
+   "sources": [
+    {
+     "nom": "La Presse — Hydro-Québec, bénéfice de 2,9 G$ et ventes record en 2025 (26 février 2026)",
+     "url": "https://www.lapresse.ca/affaires/2026-02-26/profit-de-2-9-milliards-pour-hydro-quebec/ventes-d-electricite-record-au-quebec-en-2025.php"
+    },
+    {
+     "nom": "La Presse — Hydro-Québec importe plus qu'elle exporte (28 novembre 2025)",
+     "url": "https://www.lapresse.ca/affaires/2025-11-28/electricite/hydro-quebec-importe-plus-qu-elle-exporte.php"
+    }
+   ],
+   "etiquette": "L'électricité"
+  },
+  {
+   "slug": "foret",
+   "question": "Combien d'arbres qu'on a le droit de couper restent debout ?",
+   "chiffre": "68 %",
+   "punch": "de la possibilité forestière est effectivement récoltée en forêt publique.",
+   "on_a": "Le Bureau du forestier en chef calcule chaque année le volume de bois qui peut être prélevé sans compromettre le renouvellement de la forêt. L'industrie en récolte en moyenne 68 % ; le gouvernement vise 80 % à l'horizon 2080. Les feux de 2023 ont forcé une révision à la baisse de la possibilité.",
+   "on_en_fait": "Il faut lire ce chiffre avec prudence, et c'est la raison pour laquelle il est ici : un arbre laissé debout n'est pas une perte. Il stocke du carbone, il abrite le caribou, il vaut quelque chose qu'aucun de nos tableaux ne compte. La question honnête n'est pas « pourquoi on ne coupe pas tout », c'est « qu'est-ce qu'on fait du bois qu'on coupe ».",
+   "sources": [
+    {
+     "nom": "Bureau du forestier en chef — possibilités forestières",
+     "url": "https://forestierenchef.gouv.qc.ca/possibilites-forestieres/"
+    },
+    {
+     "nom": "Gouvernement du Québec — les forêts publiques du Québec sont-elles surexploitées ?",
+     "url": "https://www.quebec.ca/nouvelles/actualites/details/calcul-possibilites-forestieres"
+    }
+   ],
+   "etiquette": "La forêt"
+  },
+  {
+   "slug": "savoir",
+   "question": "Et si la plus grosse ressource n'était pas dans le sol ?",
+   "chiffre": "+0,06",
+   "punch": "point de PIB consacré à la recherche, en vingt-quatre ans.",
+   "on_a": "Le Québec consacrait 2,53 % de son PIB à la recherche et développement en 2023. C'est le premier rang parmi les provinces canadiennes, devant l'Ontario (2,26 %). Ce n'est pas rien.",
+   "on_en_fait": "En 2000, la proportion était de 2,47 %. Vingt-quatre ans plus tard, elle a gagné six centièmes de point, et reste sous la moyenne de l'OCDE (2,70 %). Pendant ce temps, la Corée du Sud a ajouté 2,91 points et atteint 4,96 %, Israël 2,54 points et 6,35 %, les États-Unis 0,83 point et 3,45 %. Le Québec n'a pas reculé. Il n'a pas bougé, pendant que d'autres couraient.",
+   "sources": [
+    {
+     "nom": "Scientifique en chef du Québec — dépense intérieure brute de R-D en % du PIB (données Statistique Canada et OCDE, 2025)",
+     "url": "https://www.scientifique-en-chef.gouv.qc.ca/chiffre-cle/effort-global-quebec/depense-interieure-brute-de-r-d-pib-le-quebec-est-toujours-bon-premier-au-canada-mais/"
+    }
+   ],
+   "etiquette": "Le savoir"
+  }
+ ],
+ "question_chine": {
+  "titre": "« Est-ce qu'on vend nos mines aux Chinois ? »",
+  "paragraphes": [
+   "C'est la question qui revient le plus souvent, et elle mérite une réponse précise plutôt qu'un oui ou un non.",
+   "Sur la propriété, il y a un précédent réel et documenté. En novembre 2022, à la suite d'un examen de sécurité nationale, Ottawa a ordonné à trois entreprises chinoises de se départir de leurs participations dans des sociétés canadiennes de minéraux critiques : Sinomine dans Power Metals, Chengze Lithium dans Lithium Chile, et Zangge Mining dans Ultra Lithium. Ce sont des sociétés canadiennes, pas des mines québécoises en exploitation, et l'État fédéral a le pouvoir de bloquer ce type de prise de participation — il l'a utilisé.",
+   "Mais la dépendance réelle n'est pas là. Elle est dans l'étape de transformation. On peut posséder cent pour cent d'une mine et rester dépendant, si le seul endroit au monde qui sait transformer économiquement ce qu'on en sort se trouve ailleurs. C'est le cas pour le graphite d'anode, les terres rares, et en bonne partie le lithium et le cobalt. La question la plus utile n'est donc pas « à qui appartient le trou », c'est « qui possède l'usine d'après »."
+  ],
+  "sources": [
+   {
+    "nom": "La Presse — le Canada ordonne à des entreprises chinoises de céder leurs investissements (2 novembre 2022)",
+    "url": "https://www.lapresse.ca/affaires/2022-11-02/mineraux-rares/le-canada-ordonne-a-des-entreprises-chinoises-de-ceder-leurs-investissements.php"
+   },
+   {
+    "nom": "Bibliothèque du Parlement — chaîne d'approvisionnement en minéraux critiques",
+    "url": "https://notesdelacolline.ca/2025/09/23/chaine-dapprovisionnement-en-mineraux-critiques-batir-la-resilience-du-canada-2/"
+   }
+  ]
+ },
+ "regle": {
+  "titre": "La même règle, huit fois",
+  "texte": "Relisez les huit blocs : le motif ne change pas. Le Québec a le niobium mais pas le récit. Il a le graphite mais pas l'usine d'anode. Il a l'aluminium mais pas le laminoir. Il a le minerai mais compte la valeur à la sortie du trou. Il a l'eau mais la tarifait au prix d'un café. Il a l'électricité mais sa marge est engagée. Il a la forêt mais la question de ce qu'on fait du bois reste ouverte. Il a des chercheurs mais n'a pas bougé d'un pouce en vingt-quatre ans.",
+  "chute": "Ce n'est pas un complot, et personne ne nous vole. C'est un choix d'étape, répété pendant des décennies, dans huit filières différentes. Un choix, ça se change."
+ },
+ "limites": [
+  "Cette page ne dit pas quoi faire. Construire un laminoir, hausser une redevance ou financer la recherche sont des décisions politiques avec des coûts, des risques et des perdants. Nous montrons l'écart ; l'arbitrage appartient aux électeurs.",
+  "Cette page ne nomme aucun parti et n'évalue aucun programme. Les chiffres présentés traversent plusieurs gouvernements et plusieurs décennies.",
+  "Le niveau des redevances minières fait l'objet d'un débat public réel et ancien. Les comparaisons entre régimes fiscaux miniers sont techniquement difficiles, et nous n'en publions pas.",
+  "Le taux de récolte forestière de 68 % n'est pas une mesure de gaspillage. Un arbre non coupé a une valeur écologique que nos tableaux ne savent pas chiffrer.",
+  "Plusieurs chiffres de transformation (aluminium, emplois, revenus) proviennent d'associations sectorielles et non de l'État. Nous le signalons plutôt que de les présenter comme des statistiques officielles.",
+  "La part chinoise du raffinage varie de 60 % à plus de 90 % selon le minéral, l'année et la source. Nous donnons les fourchettes plutôt qu'un chiffre unique."
+ ]
+}

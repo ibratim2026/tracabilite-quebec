@@ -1,0 +1,71 @@
+{% extends "base.html" %}
+{% block titre %}Relever le Québec : ce qu'on a, ce qu'on en fait — Traçabilité Québec{% endblock %}
+{% block contenu %}
+<div class="surtitre">Comprendre</div>
+<h1>Relever le Québec</h1>
+<p class="chapeau">{{ r.chapeau }}</p>
+
+<nav class="themes">
+  {% for x in r.revelations %}
+  <a class="onglet" href="#{{ x.slug }}">{{ x.etiquette }}</a>
+  {% endfor %}
+</nav>
+
+{% for x in r.revelations %}
+<section class="revelation{{ ' bande bande-bleue' if loop.index0 % 2 }}" id="{{ x.slug }}">
+  <div class="revelation-tete">
+    <div class="surtitre">{{ x.question }}</div>
+    <div class="revelation-chiffre">{{ x.chiffre }}</div>
+    <p class="revelation-punch">{{ x.punch }}</p>
+  </div>
+  <div class="revelation-corps">
+    <div>
+      <h3>Ce qu'on a</h3>
+      <p>{{ x.on_a }}</p>
+    </div>
+    <div>
+      <h3>Ce qu'on en fait</h3>
+      <p>{{ x.on_en_fait }}</p>
+    </div>
+  </div>
+  <p class="source">Sources : {% for s in x.sources %}<a href="{{ s.url }}">{{ s.nom }}</a>{{ ' · ' if not loop.last }}{% endfor %}</p>
+</section>
+{% endfor %}
+
+<section class="bande bande-claire" id="chine">
+  <div class="surtitre">La question qu'on nous pose</div>
+  <h2>{{ r.question_chine.titre }}</h2>
+  <div class="prose">
+    {% for p in r.question_chine.paragraphes %}<p>{{ p }}</p>{% endfor %}
+  </div>
+  <p class="source">Sources : {% for s in r.question_chine.sources %}<a href="{{ s.url }}">{{ s.nom }}</a>{{ ' · ' if not loop.last }}{% endfor %}</p>
+</section>
+
+<section class="bande bande-bleue">
+  <div class="surtitre">Le fil conducteur</div>
+  <h2>{{ r.regle.titre }}</h2>
+  <p>{{ r.regle.texte }}</p>
+  <p class="revelation-chute">{{ r.regle.chute }}</p>
+</section>
+
+<div class="grille-cartes">
+  <a class="carte carte-lien" href="/ce-qui-s-en-vient">
+    <h3>Ce qui s'en vient</h3>
+    <p>L'autre moitié du portrait : les factures déjà engagées pour les dix
+    prochaines années.</p></a>
+  <a class="carte carte-lien" href="/quebec-prospere">
+    <h3>Québec prospère</h3>
+    <p>Ce que la recherche dit du chemin le plus court vers un Québec plus
+    riche et plus heureux.</p></a>
+</div>
+
+<h2>Ce que cette page ne dit pas</h2>
+<ul class="prose">
+  {% for l in r.limites %}<li>{{ l }}</li>{% endfor %}
+</ul>
+
+<div class="note-verif">Mis à jour le {{ r.maj_texte }}. Chaque chiffre de cette page
+renvoie à sa source. Si l'un d'eux est dépassé ou mal lu,
+<a href="https://github.com/ibratim2026/tracabilite-quebec/issues">signalez-le</a> :
+les corrections sont publiées et datées sur la page <a href="/a-propos">À propos</a>.</div>
+{% endblock %}
