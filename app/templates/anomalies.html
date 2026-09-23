@@ -24,21 +24,38 @@ Et, dans le dernier onglet, ce qui a coûté moins cher que prévu.</p>
 
 {# ---------------------------------------------- À examiner en priorité #}
 {% if type_filtre == 'CUMUL' %}
+<p class="explication">« Argent attribué » : la somme des montants octroyés au départ.
+« Dépensé au final » : ce que l'organisme a déclaré avoir payé pour les contrats
+terminés. Quand des contrats sont encore en cours, la dépense finale n'est pas connue
+et la case l'indique.</p>
 <table class="table-cartes">
-  <thead><tr><th>Contrat</th><th>Organisme</th><th>Fournisseur</th>
-    <th>Signaux cumulés</th><th class="num">Montant</th></tr></thead>
+  <thead><tr><th>Contrat</th><th>Organisme et fournisseur</th>
+    <th>Signaux cumulés</th><th class="num">Argent attribué</th>
+    <th class="num">Dépensé au final</th><th class="num">Écart</th></tr></thead>
   <tbody>
   {% for l in lignes %}
     <tr>
       <td><span class="etoile" title="Cumule {{ l.nb_signaux }} signaux">★</span>
         <a href="/contrat/{{ l.ocid }}">{{ (l.titre or '(sans titre)') | truncate(62) }}</a></td>
-      <td data-label="Organisme"><a href="/organisme?nom={{ l.acheteur_nom | urlencode }}">{{ (l.acheteur_nom or '—') | truncate(38) }}</a></td>
-      <td data-label="Fournisseur">{% if l.fournisseur %}<a href="/fournisseur?nom={{ l.fournisseur | urlencode }}">{{ l.fournisseur | truncate(30) }}</a>{% else %}—{% endif %}</td>
+      <td data-label="Organisme"><a href="/organisme?nom={{ l.acheteur_nom | urlencode }}">{{ (l.acheteur_nom or '—') | truncate(38) }}</a>
+        {% if l.fournisseur %}<br><span class="detail"><a href="/fournisseur?nom={{ l.fournisseur | urlencode }}">{{ l.fournisseur | truncate(34) }}</a></span>{% endif %}</td>
       <td data-label="Signaux">{% for code in l.signaux.split(',') %}<span class="badge badge-{{ types[code].couleur }}">{{ noms_signaux[code] }}</span> {% endfor %}</td>
-      <td class="num" data-label="Montant">{{ l.montant | montant }}</td>
+      <td class="num" data-label="Argent attribué">{{ l.montant_octroye | montant }}</td>
+      <td class="num" data-label="Dépensé au final">
+        {% if l.montant_final %}{{ l.montant_final | montant }}
+          {% if l.en_cours %}<br><span class="detail">+ {{ l.en_cours }} contrat(s) en cours</span>{% endif %}
+        {% elif l.en_cours %}<span class="detail">en cours</span>
+        {% else %}<span class="detail">non déclaré</span>{% endif %}</td>
+      <td class="num" data-label="Écart">
+        {% if l.montant_final and l.montant_octroye %}
+          {% set ecart = l.montant_final / l.montant_octroye %}
+          <span class="badge {{ 'badge-rouge' if ecart > 1.005 else ('badge-vert' if ecart < 0.995 else 'badge-gris') }}">
+            {{ '+' if ecart > 1 }}{{ ((ecart - 1) * 100) | round(0) | int }} %</span>
+          <br><span class="detail">{{ (l.montant_final - l.montant_octroye) | montant }}</span>
+        {% else %}—{% endif %}</td>
     </tr>
   {% else %}
-    <tr><td colspan="5">Aucun contrat ne cumule trois signaux ou plus.</td></tr>
+    <tr><td colspan="6">Aucun contrat ne cumule trois signaux ou plus.</td></tr>
   {% endfor %}
   </tbody>
 </table>

@@ -536,12 +536,18 @@ def anomalies():
             SELECT p.ocid, p.titre, p.acheteur_nom, p.methode,
                    (SELECT COUNT(DISTINCT type) FROM signal x WHERE x.ocid = p.ocid) AS nb_signaux,
                    (SELECT GROUP_CONCAT(DISTINCT type) FROM signal x WHERE x.ocid = p.ocid) AS signaux,
-                   (SELECT MAX(montant) FROM octroi o WHERE o.ocid = p.ocid) AS montant,
+                   (SELECT SUM(montant) FROM octroi o WHERE o.ocid = p.ocid) AS montant_octroye,
+                   (SELECT SUM(c.montant) FROM contrat c
+                    WHERE c.ocid = p.ocid AND c.statut = 'terminated') AS montant_final,
+                   (SELECT COUNT(*) FROM contrat c
+                    WHERE c.ocid = p.ocid AND c.statut IN ('active', 'pending')) AS en_cours,
                    (SELECT fournisseur_nom FROM octroi o WHERE o.ocid = p.ocid
                     ORDER BY montant DESC LIMIT 1) AS fournisseur
             FROM processus p
             WHERE (SELECT COUNT(DISTINCT type) FROM signal x WHERE x.ocid = p.ocid) >= 3
-            ORDER BY nb_signaux DESC, montant DESC LIMIT 50 OFFSET ?
+            ORDER BY nb_signaux DESC,
+                     COALESCE(montant_final - montant_octroye, 0) DESC,
+                     montant_octroye DESC LIMIT 50 OFFSET ?
         """, ((page - 1) * 50,)).fetchall()
         return render_template("anomalies.html", lignes=lignes,
                                types={**TYPES_SIGNAUX, **VUES_SPECIALES},
