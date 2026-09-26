@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Méthodologie — Traçabilité Québec</title>
+<link rel="stylesheet" href="/tracabilite-quebec/static/style.css?v=1790131314">
+<link rel="icon" href="/tracabilite-quebec/static/logo.svg" type="image/svg+xml">
+<meta name="theme-color" content="#12325f">
+<meta name="description" content="Où va l'argent public au Québec : contrats publics, indicateurs de chaque secteur et coût réel des grands projets. Chaque chiffre renvoie à sa source.">
+</head>
+<body>
+<header class="entete">
+  <div class="contenant">
+    <a class="logo" href="/tracabilite-quebec/">
+      <svg viewBox="0 0 32 32" aria-hidden="true">
+        <rect width="32" height="32" rx="8" fill="#12325f"/>
+        <rect x="7" y="19" width="4" height="7" rx="1.4" fill="#7aa7ff"/>
+        <rect x="14" y="15" width="4" height="11" rx="1.4" fill="#9dbdff"/>
+        <rect x="21" y="11" width="4" height="15" rx="1.4" fill="#e07b00"/>
+        <path d="M7.5 15.5 L14 11.5 L20 8 L25.5 5.5" fill="none" stroke="#fff" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M20.3 5.4 L26 5 L25.6 10.7" fill="none" stroke="#fff" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      Traçabilité <span>Québec</span></a>
+    
+    <span class="mention-demo" title="Date de la dernière mise à jour des données">Données à jour au 23 septembre 2026, 6 h 30</span>
+    
+  </div>
+  <nav class="contenant nav-principale" aria-label="Navigation principale">
+    
+    <a href="/tracabilite-quebec/election/" class="nav-election ">Élection 2026</a>
+    
+    <a href="/tracabilite-quebec/secteurs/" class="">Comprendre</a>
+    
+    <a href="/tracabilite-quebec/" class="">Suivre l&#39;argent</a>
+    
+    <a href="/tracabilite-quebec/a-propos/" class="actif">À propos</a>
+    
+  </nav>
+</header>
+
+<nav class="sous-nav" aria-label="À propos">
+  <div class="contenant">
+    
+    <a href="/tracabilite-quebec/a-propos/">Qui fait ce site</a>
+    
+    <a href="/tracabilite-quebec/methodologie/" class=actif aria-current=page>Méthodologie</a>
+    
+    <a href="/tracabilite-quebec/donnees/">Données brutes</a>
+    
+  </div>
+</nav>
+
+
+<main class="contenant">
+
+<h1>Méthodologie</h1>
+
+<h2>Notre posture</h2>
+<p>Traçabilité Québec est un outil <strong>pro-transparence et anti-complot</strong>.
+Nous ne disons jamais « le gouvernement cache quelque chose ». Nous disons :
+« voici ce que les données publiques permettent de voir, voici ce qu'elles ne
+permettent pas encore de voir, et voici ce qui mérite une explication ».
+Un signal n'est pas une accusation. Un écart n'est pas un scandale. Une donnée
+manquante n'est pas une preuve.</p>
+
+<h2>D'où viennent les données</h2>
+<p>Toutes les données proviennent des
+<a href="https://www.donneesquebec.ca/recherche/dataset/systeme-electronique-dappel-doffres-seao">données
+ouvertes du Système électronique d'appel d'offres (SEAO)</a>, le système officiel
+par lequel les organismes publics québécois — ministères, organismes, réseaux de
+la santé et de l'éducation, municipalités — publient leurs appels d'offres et les
+résultats de leurs contrats. Elles sont diffusées par le Secrétariat du Conseil
+du trésor au standard international
+<a href="https://standard.open-contracting.org/">Open Contracting</a>.</p>
+<p>Période actuellement intégrée : <strong>44 fichiers de
+données couvrant janvier 2025 à juin 2026</strong>, soit
+229 167 processus d'achat consolidés et
+228,71 G$ en contrats octroyés. L'historique remonte à
+2009 et sera intégré progressivement.</p>
+
+<h2>Ce que les données contiennent — et ne contiennent pas</h2>
+<ul>
+  <li><strong>Elles contiennent :</strong> qui achète, qui reçoit (avec le numéro
+  d'entreprise du Québec), combien a été octroyé, par quel mécanisme (appel
+  d'offres ouvert, sur invitation, gré à gré), les modifications au contrat
+  (avenants) et la dépense finale des contrats terminés.</li>
+  <li><strong>Elles ne contiennent pas :</strong> les salaires du secteur public,
+  les transferts entre organismes, le service de la dette, les dépenses sous les
+  seuils de publication, ni la justification d'affaires derrière chaque achat.
+  Le SEAO montre les <em>contrats publics</em>, pas l'ensemble des dépenses de
+  l'État.</li>
+  <li><strong>Elles sont déclaratives :</strong> ce sont les organismes publics
+  eux-mêmes qui saisissent les données. Des erreurs de saisie existent et sont
+  documentées. Quand un ratio est invraisemblable, nous le classons comme
+  « donnée aberrante » plutôt que de le présenter comme un dépassement réel.</li>
+</ul>
+
+<h2>Les signaux « Ce qui ne fait pas de sens »</h2>
+<p>Chaque signal est une règle objective appliquée uniformément à tous les
+contrats. Aucune sélection manuelle, aucun ciblage.</p>
+<dl class="regles">
+  
+  <dt><span class="badge badge-rouge">Dépassement de coût</span></dt>
+  <dd>La dépense finale déclarée au SEAO excède le montant octroyé. Explications possibles et fréquentes : élargissement de la portée des travaux, imprévus de chantier, prolongation, options exercées, indexation prévue au contrat — ou erreur de saisie. Un dépassement n&#39;est pas une faute en soi : il mérite une explication.</dd>
+  
+  <dt><span class="badge badge-bleu">Gré à gré 100 k$ et plus</span></dt>
+  <dd>Contrat conclu sans appel d&#39;offres ouvert au-dessus du seuil où un appel d&#39;offres public est normalement attendu. La loi prévoit des exceptions légitimes : fournisseur unique, urgence, sécurité, services professionnels particuliers. Le signal indique seulement que le mécanisme concurrentiel habituel n&#39;a pas été utilisé.</dd>
+  
+  <dt><span class="badge badge-violet">Soumissionnaire unique</span></dt>
+  <dd>Un appel d&#39;offres ouvert a été publié, mais une seule entreprise a soumissionné. Explications possibles : marché très spécialisé, région éloignée, exigences restrictives, délais courts. Un taux élevé de soumissionnaires uniques chez un organisme peut indiquer des devis mal calibrés — ou un marché peu concurrentiel.</dd>
+  
+  <dt><span class="badge badge-jaune">Avenants en série</span></dt>
+  <dd>Trois modifications ou plus au contrat initial. Les avenants sont un mécanisme normal et légal; leur multiplication peut toutefois signaler une planification initiale déficiente ou un contrat dont la portée réelle diffère de ce qui a été mis en concurrence.</dd>
+  
+  <dt><span class="badge badge-gris">Donnée aberrante</span></dt>
+  <dd>Le ratio entre la dépense finale et le montant octroyé est invraisemblable (plus de 20×). Dans la quasi-totalité des cas, il s&#39;agit d&#39;une erreur de saisie dans les données sources du SEAO. Nous le signalons comme un problème de qualité de données, pas comme un dépassement réel.</dd>
+  
+</dl>
+<p>Seuils : un dépassement est signalé à partir de +10 % (gravité 1), +25 %
+(gravité 2) et +50 % (gravité 3), uniquement pour les contrats d'au moins
+25 000 $. Le seuil de 100 000 $ pour le gré à gré correspond au niveau au-delà
+duquel un appel d'offres public est normalement attendu pour la plupart des
+organismes. Un ratio dépense finale / montant octroyé supérieur à 20 est traité
+comme une erreur de saisie probable.</p>
+
+<h2>Consolidation</h2>
+<p>Le SEAO publie un journal d'événements : avis, octroi, modification,
+terminaison. Nous consolidons ces événements par processus d'achat (identifiant
+« ocid ») en conservant l'état le plus récent de chaque information. Chaque
+fiche indique le nombre d'événements consolidés et le fichier source le plus
+récent.</p>
+
+<h2>Limites connues</h2>
+<ul>
+  <li>Les fichiers mensuels de novembre 2025 à mars 2026 sont absents du
+  catalogue officiel; cette période est couverte par les fichiers hebdomadaires,
+  qui peuvent être moins complets.</li>
+  <li>Une même entreprise peut apparaître sous plusieurs graphies; le
+  regroupement par NEQ est en cours de développement.</li>
+  <li>Les montants incluent généralement les options et peuvent inclure ou non
+  les taxes selon la saisie de l'organisme.</li>
+  <li>Cet outil couvre les contrats publiés au SEAO. Il ne prétend pas couvrir
+  l'ensemble des dépenses publiques du Québec.</li>
+</ul>
+
+<h2 id="inflation">Comment on traite l'inflation</h2>
+<div class="prose">
+<p>Un dollar de 2017 n'est pas un dollar de 2026. Comparer sans corriger, c'est
+prendre la hausse des prix pour un dépassement de coût. Trois règles :</p>
+<ol>
+  <li><strong>Les montants d'une année donnée</strong> (budget, contrats octroyés en
+  2026) sont affichés tels quels, en dollars de l'année.</li>
+  <li><strong>Les comparaisons dans le temps</strong> sont converties en dollars
+  constants avec l'indice des prix à la consommation du Québec. Quand l'année de
+  l'annonce d'un projet est connue, le tableau des grands projets donne les deux :
+  la hausse en dollars courants et la hausse réelle.</li>
+  <li><strong>La dette et le déficit</strong> sont rapportés au PIB, ce qui corrige à
+  la fois l'inflation et la croissance de l'économie.</li>
+</ol>
+<p>Exemple concret : le budget initial de SAAQclic était de 638 M$ en 2017. En
+dollars de 2025, cela représente environ 809 M$. La dérive vers au moins 1,1 G$ est
+donc de l'ordre de 1,4 fois en termes réels, et non de 1,7 fois comme le suggère la
+comparaison brute. Le dépassement reste important : il est simplement plus petit
+qu'il n'en a l'air. Le <a href="/tracabilite-quebec/economie-expliquee/">convertisseur</a>
+permet de refaire ce calcul pour n'importe quel montant depuis 1990.</p>
+<p class="source">Série utilisée :
+<a href="https://www150.statcan.gc.ca/t1/tbl1/fr/tv.action?pid=1810000501">Statistique
+Canada, tableau 18-10-0005-01, IPC du Québec, moyennes annuelles</a>.</p>
+</div>
+
+<h2 id="verifier">Ne nous croyez pas. Vérifiez.</h2>
+<div class="prose">
+<p>Ce site demande de la confiance, et la confiance se vérifie. Voici comment nous
+prendre en défaut, si nous avons tort :</p>
+<ol>
+  <li><strong>Nos fichiers de travail sont téléchargeables</strong> sur la page
+  <a href="/tracabilite-quebec/donnees/">Données brutes</a> : signaux détectés, économies réalisées,
+  indicateurs, grands projets, série d'inflation. Et la source d'origine reste
+  publique :
+  <a href="https://www.donneesquebec.ca/recherche/dataset/systeme-electronique-dappel-doffres-seao">Données
+  Québec</a>. Nous ne les modifions pas : nous les consolidons.</li>
+  <li><strong>Le code est public.</strong> Les règles de détection des signaux, les
+  calculs de notes et les conversions d'inflation sont lisibles ligne par ligne sur
+  <a href="https://github.com/ibratim2026/tracabilite-quebec">GitHub</a>. Si un calcul
+  est faux, il est visible.</li>
+  <li><strong>Chaque chiffre porte sa source.</strong> Cliquez : vous arrivez au
+  document officiel, pas à un article qui cite un article.</li>
+  <li><strong>Les repères de la note sur 100 sont affichés</strong>, et vous pouvez
+  changer les pondérations. Si notre note vous semble arrangée, refaites-la.</li>
+  <li><strong>Nos désaccords avec l'État sont documentés.</strong> Quand la version
+  officielle a été démentie, nous le montrons : la commission Gallant a conclu que la
+  SAAQ avait caché le coût réel de SAAQclic, et le Vérificateur général a constaté que
+  des centaines de millions ont été versés à des entreprises de la filière batterie
+  aujourd'hui insolvables. Nous ne blanchissons personne.</li>
+  <li><strong>Ce qu'on ignore est écrit.</strong> Quand une donnée n'existe pas ou que
+  deux sources officielles se contredisent, nous l'écrivons au lieu de choisir la plus
+  commode. Voir la capsule <a href="/tracabilite-quebec/on-clarifie/">« On clarifie »</a>.</li>
+</ol>
+<p>Si vous trouvez une erreur, <a href="https://github.com/ibratim2026/tracabilite-quebec/issues">signalez-la</a> :
+elle sera corrigée et la correction sera datée publiquement.</p>
+</div>
+
+<h2 id="corrections">Corrections</h2>
+<p>Nos erreurs, datées. Voir aussi le <a href="/tracabilite-quebec/a-propos/">journal complet</a>.</p>
+<p>Vous représentez un organisme ou une entreprise et constatez une erreur?
+Les corrections à la source se font auprès du SEAO; notre base reflétera la
+correction à la mise à jour suivante des données ouvertes.</p>
+
+</main>
+
+<footer class="pied">
+  <div class="contenant">
+    <p><strong>Traçabilité Québec</strong> — un outil d'intelligence citoyenne.
+    Posture éditoriale : pro-transparence, anti-complot. Un signal n'est pas une
+    accusation; chaque écart mérite une explication avant une interprétation.</p>
+    <p>Source des données : <a href="https://www.donneesquebec.ca/recherche/dataset/systeme-electronique-dappel-doffres-seao">
+    Système électronique d'appel d'offres (SEAO), données ouvertes — Données Québec</a>,
+    diffusées par le Secrétariat du Conseil du trésor. Les données sources peuvent
+    contenir des erreurs de saisie; voir la <a href="/tracabilite-quebec/methodologie/">méthodologie</a>.</p>
+    <p>Site indépendant, non partisan, sans publicité ni financement politique.
+    <a href="/tracabilite-quebec/a-propos/">Qui fait ce site et comment</a>.</p>
+  </div>
+</footer>
+<script>window.TQ_BASE = "/tracabilite-quebec"; window.TQ_PRUDENT = true;</script>
+<script src="/tracabilite-quebec/static/interactif.js?v=1790131314" defer></script>
+</body>
+</html>

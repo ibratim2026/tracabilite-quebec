@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Données brutes à télécharger — Traçabilité Québec</title>
+<link rel="stylesheet" href="/tracabilite-quebec/static/style.css?v=1790131314">
+<link rel="icon" href="/tracabilite-quebec/static/logo.svg" type="image/svg+xml">
+<meta name="theme-color" content="#12325f">
+<meta name="description" content="Où va l'argent public au Québec : contrats publics, indicateurs de chaque secteur et coût réel des grands projets. Chaque chiffre renvoie à sa source.">
+</head>
+<body>
+<header class="entete">
+  <div class="contenant">
+    <a class="logo" href="/tracabilite-quebec/">
+      <svg viewBox="0 0 32 32" aria-hidden="true">
+        <rect width="32" height="32" rx="8" fill="#12325f"/>
+        <rect x="7" y="19" width="4" height="7" rx="1.4" fill="#7aa7ff"/>
+        <rect x="14" y="15" width="4" height="11" rx="1.4" fill="#9dbdff"/>
+        <rect x="21" y="11" width="4" height="15" rx="1.4" fill="#e07b00"/>
+        <path d="M7.5 15.5 L14 11.5 L20 8 L25.5 5.5" fill="none" stroke="#fff" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M20.3 5.4 L26 5 L25.6 10.7" fill="none" stroke="#fff" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      Traçabilité <span>Québec</span></a>
+    
+    <span class="mention-demo" title="Date de la dernière mise à jour des données">Données à jour au 23 septembre 2026, 6 h 30</span>
+    
+  </div>
+  <nav class="contenant nav-principale" aria-label="Navigation principale">
+    
+    <a href="/tracabilite-quebec/election/" class="nav-election ">Élection 2026</a>
+    
+    <a href="/tracabilite-quebec/secteurs/" class="">Comprendre</a>
+    
+    <a href="/tracabilite-quebec/" class="">Suivre l&#39;argent</a>
+    
+    <a href="/tracabilite-quebec/a-propos/" class="actif">À propos</a>
+    
+  </nav>
+</header>
+
+<nav class="sous-nav" aria-label="À propos">
+  <div class="contenant">
+    
+    <a href="/tracabilite-quebec/a-propos/">Qui fait ce site</a>
+    
+    <a href="/tracabilite-quebec/methodologie/">Méthodologie</a>
+    
+    <a href="/tracabilite-quebec/donnees/" class=actif aria-current=page>Données brutes</a>
+    
+  </div>
+</nav>
+
+
+<main class="contenant">
+
+<div class="surtitre">À propos</div>
+<h1>Les données, sans passer par nous</h1>
+<p class="chapeau">Tout ce que ce site affiche vient de fichiers publics et de
+calculs que vous pouvez refaire. Voici nos fichiers de travail, en format ouvert.
+Si un de nos chiffres est faux, ces fichiers permettent de le prouver.</p>
+
+<section class="bande bande-bleue">
+  <div class="surtitre">Trois niveaux</div>
+  <h2>Remonter la chaîne jusqu'à la source</h2>
+  <div class="grille-cartes">
+    <a class="carte carte-lien" href="https://www.donneesquebec.ca/recherche/dataset/systeme-electronique-dappel-doffres-seao">
+      <h3>1. La source officielle</h3>
+      <p>Les fichiers du SEAO, publiés par le Secrétariat du Conseil du trésor sur
+      Données Québec. Nous ne les modifions jamais.</p></a>
+    <a class="carte carte-lien" href="#fichiers">
+      <h3>2. Nos consolidations</h3>
+      <p>Ce que notre pipeline en tire : signaux détectés, économies, indicateurs.
+      Format CSV, ouvrable dans Excel ou Numbers.</p></a>
+    <a class="carte carte-lien" href="https://github.com/ibratim2026/tracabilite-quebec">
+      <h3>3. Le code</h3>
+      <p>Les règles de détection, les calculs de notes et les conversions
+      d'inflation, lisibles ligne par ligne.</p></a>
+  </div>
+</section>
+
+<h2 id="fichiers">Les fichiers</h2>
+<table class="table-cartes">
+  <thead><tr><th>Fichier</th><th>Contenu</th><th class="num">Lignes</th><th class="num">Taille</th></tr></thead>
+  <tbody>
+  
+  <tr>
+    <td><a href="/tracabilite-quebec/non-inclus/" download><strong>signaux.csv.zip</strong></a></td>
+    <td data-label="Contenu">Tous les signaux détectés dans les contrats publics</td>
+    <td class="num" data-label="Lignes">52 721</td>
+    <td class="num" data-label="Taille">5.0 Mo</td>
+  </tr>
+  
+  <tr>
+    <td><a href="/tracabilite-quebec/non-inclus/" download><strong>a-examiner-en-priorite.csv</strong></a></td>
+    <td data-label="Contenu">Contrats cumulant au moins trois signaux</td>
+    <td class="num" data-label="Lignes">133</td>
+    <td class="num" data-label="Taille">0.0 Mo</td>
+  </tr>
+  
+  <tr>
+    <td><a href="/tracabilite-quebec/non-inclus/" download><strong>economies-realisees.csv.zip</strong></a></td>
+    <td data-label="Contenu">Contrats terminés sous le montant octroyé</td>
+    <td class="num" data-label="Lignes">28 794</td>
+    <td class="num" data-label="Taille">3.0 Mo</td>
+  </tr>
+  
+  <tr>
+    <td><a href="/tracabilite-quebec/non-inclus/" download><strong>indicateurs.csv</strong></a></td>
+    <td data-label="Contenu">Les indicateurs de chaque secteur</td>
+    <td class="num" data-label="Lignes">90</td>
+    <td class="num" data-label="Taille">0.0 Mo</td>
+  </tr>
+  
+  <tr>
+    <td><a href="/tracabilite-quebec/non-inclus/" download><strong>grands-projets.csv</strong></a></td>
+    <td data-label="Contenu">Grands projets publics : coût annoncé et coût actuel</td>
+    <td class="num" data-label="Lignes">23</td>
+    <td class="num" data-label="Taille">0.0 Mo</td>
+  </tr>
+  
+  <tr>
+    <td><a href="/tracabilite-quebec/non-inclus/" download><strong>indice-prix-quebec.csv</strong></a></td>
+    <td data-label="Contenu">Indice des prix à la consommation du Québec</td>
+    <td class="num" data-label="Lignes">36</td>
+    <td class="num" data-label="Taille">0.0 Mo</td>
+  </tr>
+  
+  <tr>
+    <td><a href="/tracabilite-quebec/non-inclus/" download><strong>depenses-a-venir.csv</strong></a></td>
+    <td data-label="Contenu">Dépenses publiques déjà engagées pour les prochaines années</td>
+    <td class="num" data-label="Lignes">11</td>
+    <td class="num" data-label="Taille">0.0 Mo</td>
+  </tr>
+  
+  </tbody>
+</table>
+<p class="explication">Les deux plus gros fichiers sont compressés (.zip) pour ne pas
+alourdir chaque publication du site. Encodage UTF-8, séparateur virgule.</p>
+
+<h2>Ce que vous pouvez vérifier avec ça</h2>
+<ul class="prose">
+  <li><strong>Recompter nos signaux.</strong> Le fichier des signaux contient l'identifiant
+  de chaque contrat et son lien vers l'avis officiel au SEAO. Vous pouvez remonter
+  n'importe quelle ligne jusqu'à sa source.</li>
+  <li><strong>Refaire la note « état du Québec ».</strong> Le fichier des indicateurs donne
+  chaque valeur, son année et l'adresse de sa source. Les repères de calcul sont
+  affichés sur la page de la note.</li>
+  <li><strong>Contester un écart de coût.</strong> Le fichier des grands projets donne le coût
+  annoncé, le coût actuel, l'année d'annonce quand elle est connue, et les sources.</li>
+  <li><strong>Vérifier nos conversions d'inflation</strong> avec la série officielle de
+  l'indice des prix.</li>
+</ul>
+
+<div class="note-verif">Licence : les données du SEAO restent soumises à la licence de
+Données Québec. Nos fichiers dérivés et notre code peuvent être réutilisés librement,
+avec mention de la source. Mise à jour à chaque publication du site.
+Voir aussi la <a href="/tracabilite-quebec/methodologie/">méthodologie</a>.</div>
+
+</main>
+
+<footer class="pied">
+  <div class="contenant">
+    <p><strong>Traçabilité Québec</strong> — un outil d'intelligence citoyenne.
+    Posture éditoriale : pro-transparence, anti-complot. Un signal n'est pas une
+    accusation; chaque écart mérite une explication avant une interprétation.</p>
+    <p>Source des données : <a href="https://www.donneesquebec.ca/recherche/dataset/systeme-electronique-dappel-doffres-seao">
+    Système électronique d'appel d'offres (SEAO), données ouvertes — Données Québec</a>,
+    diffusées par le Secrétariat du Conseil du trésor. Les données sources peuvent
+    contenir des erreurs de saisie; voir la <a href="/tracabilite-quebec/methodologie/">méthodologie</a>.</p>
+    <p>Site indépendant, non partisan, sans publicité ni financement politique.
+    <a href="/tracabilite-quebec/a-propos/">Qui fait ce site et comment</a>.</p>
+  </div>
+</footer>
+<script>window.TQ_BASE = "/tracabilite-quebec"; window.TQ_PRUDENT = true;</script>
+<script src="/tracabilite-quebec/static/interactif.js?v=1790131314" defer></script>
+</body>
+</html>
