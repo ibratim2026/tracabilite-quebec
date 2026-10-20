@@ -1,0 +1,44 @@
+[
+ {
+  "fichier": "signaux.csv.zip",
+  "description": "Tous les signaux détectés dans les contrats publics",
+  "lignes": 52721,
+  "octets": 5036130
+ },
+ {
+  "fichier": "a-examiner-en-priorite.csv",
+  "description": "Contrats cumulant au moins trois signaux",
+  "lignes": 133,
+  "octets": 41934
+ },
+ {
+  "fichier": "economies-realisees.csv.zip",
+  "description": "Contrats terminés sous le montant octroyé",
+  "lignes": 28794,
+  "octets": 3013148
+ },
+ {
+  "fichier": "indicateurs.csv",
+  "description": "Les indicateurs de chaque secteur",
+  "lignes": 90,
+  "octets": 44098
+ },
+ {
+  "fichier": "grands-projets.csv",
+  "description": "Grands projets publics : coût annoncé et coût actuel",
+  "lignes": 23,
+  "octets": 9049
+ },
+ {
+  "fichier": "indice-prix-quebec.csv",
+  "description": "Indice des prix à la consommation du Québec",
+  "lignes": 36,
+  "octets": 446
+ },
+ {
+  "fichier": "depenses-a-venir.csv",
+  "description": "Dépenses publiques déjà engagées pour les prochaines années",
+  "lignes": 11,
+  "octets": 5016
+ }
+]
